@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <main className="shell">
       <header className="topbar">
-        <div><a className="wordmark" href="#top"><strong>TL;DR</strong> Markets</a><p>Macro intelligence, for everyone.</p></div>
+        <div><a className="wordmark" href="#top"><strong>TLDR</strong> Macro</a><p>Market intelligence, for everyone.</p></div>
         <span>Sample edition</span>
       </header>
 
@@ -50,10 +50,10 @@ export default function Home() {
       </section>
 
       <section className="regime-bar" aria-label="Macro conditions at a glance">
-        <article><span>Growth</span><strong>Resilient</strong><a href="https://www.bea.gov/data/gdp/gross-domestic-product" target="_blank" rel="noreferrer">BEA ↗</a></article>
-        <article><span>Inflation</span><strong>Cooling</strong><a href="https://www.bea.gov/news/current-releases" target="_blank" rel="noreferrer">BEA ↗</a></article>
-        <article><span>Policy</span><strong>Restrictive</strong><a href="https://www.federalreserve.gov/monetarypolicy.htm" target="_blank" rel="noreferrer">Fed ↗</a></article>
-        <article><span>Watch</span><strong>Oil</strong><a href="https://www.eia.gov/petroleum/" target="_blank" rel="noreferrer">EIA ↗</a></article>
+        <article><span>Growth</span><strong>The economy is still expanding.</strong><p>Consumer and business spending can support company sales and jobs.</p><a href="https://www.bea.gov/data/gdp/gross-domestic-product" target="_blank" rel="noreferrer">BEA ↗</a></article>
+        <article><span>Inflation</span><strong>Prices are rising more slowly.</strong><p>Household budgets get some relief when everyday costs stop accelerating as quickly.</p><a href="https://www.bea.gov/news/current-releases" target="_blank" rel="noreferrer">BEA ↗</a></article>
+        <article><span>Policy</span><strong>High rates make borrowing more expensive.</strong><p>An AI startup financing data centers—or a shopper carrying card debt—pays more for credit.</p><a href="https://www.federalreserve.gov/monetarypolicy.htm" target="_blank" rel="noreferrer">Fed ↗</a></article>
+        <article><span>Watch</span><strong>Oil can raise costs across the economy.</strong><p>Your favorite cosmetics shop may pay more for packaging, production, and delivery.</p><a href="https://www.eia.gov/petroleum/" target="_blank" rel="noreferrer">EIA ↗</a></article>
       </section>
 
       <section className="market-strip" aria-label="Market pulse">

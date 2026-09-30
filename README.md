@@ -1,8 +1,8 @@
-# TL;DR Markets
+# TLDR Macro
 
-**Macro intelligence, for everyone.**
+**Market intelligence, for everyone.**
 
-TL;DR Markets explains what moved, why it matters, and what comes next without assuming a finance background. It is educational context, not investment advice.
+TLDR Macro explains what moved, why it matters, and what comes next without assuming a finance background. It is educational context, not investment advice.
 
 ## Editorial standard
 
@@ -10,6 +10,7 @@ TL;DR Markets explains what moved, why it matters, and what comes next without a
 - Primary sources come first: BEA, BLS, Federal Reserve, Treasury, SEC, EIA, FRED, exchanges, and company investor relations.
 - Sentences are short, factual, and neutral.
 - Define specialized terms on first use; never assume the reader knows finance vocabulary.
+- Explain abstract signals with a familiar household or business example whenever it improves understanding.
 - Uncertainty appears as a question or conditional mechanism, never as unsupported certainty.
 - Market reaction is separated from interpretation.
 - State that concision omits nuance and link readers to the complete release and methodology.
