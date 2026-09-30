@@ -1,10 +1,10 @@
 const markets = [
-  { name: "S&P 500", value: "4,357.2", move: "+0.43%", positive: true, note: "Tracks 500 large U.S. companies. Stocks moved higher.", href: "https://fred.stlouisfed.org/series/SP500" },
-  { name: "Nasdaq", value: "13,457.8", move: "+0.72%", positive: true, note: "A technology-heavy stock index. Growth companies led gains.", href: "https://fred.stlouisfed.org/series/NASDAQCOM" },
-  { name: "Dow Jones", value: "33,891.2", move: "+0.36%", positive: true, note: "Tracks 30 established U.S. companies. The index edged up.", href: "https://fred.stlouisfed.org/series/DJIA" },
-  { name: "10Y Treasury", value: "5.18%", move: "−0.11%", positive: false, note: "The yield on 10-year U.S. government debt moved lower.", href: "https://fred.stlouisfed.org/series/DGS10" },
-  { name: "WTI Oil", value: "$86.40", move: "+1.30%", positive: false, note: "The main U.S. crude-oil benchmark rose, adding inflation pressure.", href: "https://fred.stlouisfed.org/series/DCOILWTICO" },
-  { name: "Gold", value: "$2,380", move: "+0.60%", positive: true, note: "A widely held store-of-value asset. Its price moved higher.", href: "https://fred.stlouisfed.org/series/GOLDAMGBD228NLBM" },
+  { name: "S&P 500", value: "4,357.2", move: "+0.43%", positive: true, note: "The index rose as yields eased. Diversified U.S. stock portfolios gained, though one day does not establish a trend.", href: "https://fred.stlouisfed.org/series/SP500" },
+  { name: "Nasdaq", value: "13,457.8", move: "+0.72%", positive: true, note: "The technology-heavy index outpaced the broader market. Falling yields may have supported growth-company valuations.", href: "https://fred.stlouisfed.org/series/NASDAQCOM" },
+  { name: "Dow Jones", value: "33,891.2", move: "+0.36%", positive: true, note: "The index of 30 established companies edged higher. Portfolios tilted toward large, mature businesses received a smaller lift.", href: "https://fred.stlouisfed.org/series/DJIA" },
+  { name: "10Y Treasury", value: "5.18%", move: "−0.11%", positive: false, note: "The yield on 10-year U.S. government debt fell. Lower yields can reduce borrowing pressure and support stock valuations.", href: "https://fred.stlouisfed.org/series/DGS10" },
+  { name: "WTI Oil", value: "$86.40", move: "+1.30%", positive: false, note: "The main U.S. crude-oil benchmark rose amid supply uncertainty. Fuel, shipping, and production costs could increase.", href: "https://fred.stlouisfed.org/series/DCOILWTICO" },
+  { name: "Gold", value: "$2,380", move: "+0.60%", positive: true, note: "Gold rose while inflation and geopolitical risks remained. The move may reflect demand for assets viewed as defensive.", href: "https://fred.stlouisfed.org/series/GOLDAMGBD228NLBM" },
 ];
 
 const developments = [
@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <main className="shell">
       <header className="topbar">
-        <div><a className="wordmark" href="#top"><strong>TLDR</strong> Macro</a><p>Market intelligence, for everyone.</p></div>
+        <div><a className="wordmark" href="#top"><strong>TL;DR</strong> Macro</a><p>Market intelligence, for everyone.</p></div>
         <span>Sample edition</span>
       </header>
 
@@ -43,9 +43,13 @@ export default function Home() {
           <h1>Inflation cools,<br />stocks climb</h1>
           <p className="lead-summary">Inflation came in below expectations. Treasury yields fell. Stocks rose as growth remained resilient. Oil remained an upside risk to inflation.</p>
         </div>
-        <div className="lead-visual" role="img" aria-label="Abstract sunrise over a financial city skyline">
-          <span className="sun" /><span className="skyline">▥ ▥ ▤ ▥ ▥</span>
-          <time><b>SEP 30</b><small>Sample</small></time>
+        <div className="lead-lens">
+          <p className="section-label">Read the day in three steps</p>
+          <ol>
+            <li><span>1</span><div><strong>What changed?</strong><p>Inflation came in below expectations.</p></div></li>
+            <li><span>2</span><div><strong>What moved?</strong><p>Bond yields fell and major stock indexes rose.</p></div></li>
+            <li><span>3</span><div><strong>What could change it?</strong><p>Higher oil prices could put inflation pressure back into the system.</p></div></li>
+          </ol>
         </div>
       </section>
 
@@ -114,7 +118,7 @@ export default function Home() {
         <article className="bottom-line">
           <p className="section-label">Bottom line</p>
           <div className="bottom-summary"><span>↗</span><div><h2>Inflation slowed. Growth held. Stocks rose.</h2><p>Cooler inflation reduced immediate pressure on the Fed. Oil could change that path if energy costs rise further.</p></div></div>
-          <div className="takeaways"><p className="section-label">Key takeaways</p><ul><li>Inflation cooled during the period.</li><li>Growth remained resilient despite higher rates.</li><li>Falling yields supported equity valuations.</li><li>Oil remains an upside inflation risk.</li></ul></div>
+          <div className="takeaways"><h3>Key takeaways</h3><ul><li>Inflation cooled during the period.</li><li>Growth remained resilient despite higher rates.</li><li>Falling yields supported stock valuations.</li><li>Oil remains an upside inflation risk.</li></ul></div>
         </article>
       </section>
 

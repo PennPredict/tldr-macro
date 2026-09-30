@@ -1,8 +1,8 @@
-# TLDR Macro
+# TL;DR Macro
 
 **Market intelligence, for everyone.**
 
-TLDR Macro explains what moved, why it matters, and what comes next without assuming a finance background. It is educational context, not investment advice.
+TL;DR Macro explains what moved, why it matters, and what comes next without assuming a finance background. It is educational context, not investment advice.
 
 ## Editorial standard
 

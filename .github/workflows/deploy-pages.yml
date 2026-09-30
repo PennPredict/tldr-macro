@@ -1,4 +1,4 @@
-name: Deploy TLDR Macro to GitHub Pages
+name: Deploy TL;DR Macro to GitHub Pages
 
 on:
   push:
