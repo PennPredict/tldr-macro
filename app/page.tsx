@@ -46,13 +46,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="regime-bar" aria-label="Macro conditions at a glance">
-        <article><span>Growth</span><strong>The economy is still expanding.</strong><p>Consumer and business spending can support company sales and jobs.</p><a href="https://www.bea.gov/data/gdp/gross-domestic-product" target="_blank" rel="noreferrer">BEA ↗</a></article>
-        <article><span>Inflation</span><strong>Prices are rising more slowly.</strong><p>Household budgets get some relief when everyday costs stop accelerating as quickly.</p><a href="https://www.bea.gov/news/current-releases" target="_blank" rel="noreferrer">BEA ↗</a></article>
-        <article><span>Policy</span><strong>High rates make borrowing more expensive.</strong><p>An AI startup financing data centers—or a shopper carrying card debt—pays more for credit.</p><a href="https://www.federalreserve.gov/monetarypolicy.htm" target="_blank" rel="noreferrer">Fed ↗</a></article>
-        <article><span>Watch</span><strong>Oil can raise costs across the economy.</strong><p>Your favorite cosmetics shop may pay more for packaging, production, and delivery.</p><a href="https://www.eia.gov/petroleum/" target="_blank" rel="noreferrer">EIA ↗</a></article>
-      </section>
-
       <section className="market-strip" aria-label="Market pulse">
         {markets.map((market) => (
           <article className="market-card" key={market.name}>
@@ -84,22 +77,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bottom-grid">
-        <article className="watch-panel">
-          <p className="section-label">What to watch next</p>
-          <ul>
-            <li><time><b>OCT</b>3</time><div><strong>Jobs report</strong><p>Will labor demand continue to cool?</p><a href="https://www.bls.gov/schedule/news_release/empsit.htm" target="_blank" rel="noreferrer">BLS ↗</a></div></li>
-            <li><time><b>OCT</b>5</time><div><strong>Fed meeting minutes</strong><p>How divided were policymakers?</p><a href="https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" target="_blank" rel="noreferrer">Federal Reserve ↗</a></div></li>
-            <li><time><b>OCT</b>10</time><div><strong>Consumer Price Index (CPI)</strong><p>CPI tracks how prices change for a basket of household goods and services. Did everyday price pressure ease?</p><a href="https://www.bls.gov/schedule/news_release/cpi.htm" target="_blank" rel="noreferrer">U.S. Bureau of Labor Statistics ↗</a></div></li>
-            <li><time><b>OCT</b>15</time><div><strong>Energy developments</strong><p>Could supply uncertainty move oil?</p><a href="https://www.eia.gov/outlooks/steo/" target="_blank" rel="noreferrer">EIA ↗</a></div></li>
-          </ul>
-        </article>
-
-        <article className="bottom-line">
-          <p className="section-label">Bottom line</p>
-          <div className="bottom-summary"><span>↗</span><div><h2>Inflation slowed. Growth held. Stocks rose.</h2><p>Cooler inflation reduced immediate pressure on the Fed. Oil could change that path if energy costs rise further.</p></div></div>
-          <div className="takeaways"><h3>Key takeaways</h3><ul><li>Inflation cooled during the period.</li><li>Growth remained resilient despite higher rates.</li><li>Falling yields supported stock valuations.</li><li>Oil remains an upside inflation risk.</li></ul></div>
-        </article>
+      <section className="watch-panel">
+        <p className="section-label">What to watch next</p>
+        <ul>
+          <li><time><b>OCT</b>3</time><div><strong>Jobs report</strong><p>Will labor demand continue to cool?</p><a href="https://www.bls.gov/schedule/news_release/empsit.htm" target="_blank" rel="noreferrer">BLS ↗</a></div></li>
+          <li><time><b>OCT</b>5</time><div><strong>Federal Reserve meeting minutes</strong><p>How divided were policymakers?</p><a href="https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" target="_blank" rel="noreferrer">Federal Reserve ↗</a></div></li>
+          <li><time><b>OCT</b>10</time><div><strong>Consumer Price Index (CPI)</strong><p>CPI tracks prices for a basket of household goods and services. Did everyday price pressure ease?</p><a href="https://www.bls.gov/schedule/news_release/cpi.htm" target="_blank" rel="noreferrer">U.S. Bureau of Labor Statistics ↗</a></div></li>
+          <li><time><b>OCT</b>15</time><div><strong>Energy developments</strong><p>Could supply uncertainty move oil?</p><a href="https://www.eia.gov/outlooks/steo/" target="_blank" rel="noreferrer">EIA ↗</a></div></li>
+        </ul>
       </section>
 
       <aside className="nuance-note">
