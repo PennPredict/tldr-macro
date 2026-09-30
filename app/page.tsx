@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <main className="shell">
       <header className="topbar">
-        <div><a className="wordmark" href="#top"><strong>TLDR</strong> Markets</a><p>Market intelligence, for everyone.</p></div>
+        <div><a className="wordmark" href="#top"><strong>TL;DR</strong> Markets</a><p>Macro intelligence, for everyone.</p></div>
         <span>Sample edition</span>
       </header>
 
@@ -47,6 +47,13 @@ export default function Home() {
           <span className="sun" /><span className="skyline">▥ ▥ ▤ ▥ ▥</span>
           <time><b>SEP 30</b><small>Sample</small></time>
         </div>
+      </section>
+
+      <section className="regime-bar" aria-label="Macro conditions at a glance">
+        <article><span>Growth</span><strong>Resilient</strong><a href="https://www.bea.gov/data/gdp/gross-domestic-product" target="_blank" rel="noreferrer">BEA ↗</a></article>
+        <article><span>Inflation</span><strong>Cooling</strong><a href="https://www.bea.gov/news/current-releases" target="_blank" rel="noreferrer">BEA ↗</a></article>
+        <article><span>Policy</span><strong>Restrictive</strong><a href="https://www.federalreserve.gov/monetarypolicy.htm" target="_blank" rel="noreferrer">Fed ↗</a></article>
+        <article><span>Watch</span><strong>Oil</strong><a href="https://www.eia.gov/petroleum/" target="_blank" rel="noreferrer">EIA ↗</a></article>
       </section>
 
       <section className="market-strip" aria-label="Market pulse">
