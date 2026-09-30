@@ -1,10 +1,10 @@
 const markets = [
-  { name: "S&P 500", value: "4,357.2", move: "+0.43%", positive: true, href: "https://fred.stlouisfed.org/series/SP500" },
-  { name: "Nasdaq", value: "13,457.8", move: "+0.72%", positive: true, href: "https://fred.stlouisfed.org/series/NASDAQCOM" },
-  { name: "Dow Jones", value: "33,891.2", move: "+0.36%", positive: true, href: "https://fred.stlouisfed.org/series/DJIA" },
-  { name: "10Y Treasury", value: "5.18%", move: "−0.11%", positive: false, href: "https://fred.stlouisfed.org/series/DGS10" },
-  { name: "WTI Oil", value: "$86.40", move: "+1.30%", positive: false, href: "https://fred.stlouisfed.org/series/DCOILWTICO" },
-  { name: "Gold", value: "$2,380", move: "+0.60%", positive: true, href: "https://fred.stlouisfed.org/series/GOLDAMGBD228NLBM" },
+  { name: "S&P 500", value: "4,357.2", move: "+0.43%", positive: true, note: "Broad U.S. equities moved higher.", href: "https://fred.stlouisfed.org/series/SP500" },
+  { name: "Nasdaq", value: "13,457.8", move: "+0.72%", positive: true, note: "Growth stocks led the advance.", href: "https://fred.stlouisfed.org/series/NASDAQCOM" },
+  { name: "Dow Jones", value: "33,891.2", move: "+0.36%", positive: true, note: "Blue-chip stocks edged upward.", href: "https://fred.stlouisfed.org/series/DJIA" },
+  { name: "10Y Treasury", value: "5.18%", move: "−0.11%", positive: false, note: "Yields eased from recent highs.", href: "https://fred.stlouisfed.org/series/DGS10" },
+  { name: "WTI Oil", value: "$86.40", move: "+1.30%", positive: false, note: "Oil rose, adding inflation pressure.", href: "https://fred.stlouisfed.org/series/DCOILWTICO" },
+  { name: "Gold", value: "$2,380", move: "+0.60%", positive: true, note: "Gold moved higher as demand held.", href: "https://fred.stlouisfed.org/series/GOLDAMGBD228NLBM" },
 ];
 
 const developments = [
@@ -50,10 +50,11 @@ export default function Home() {
       </section>
 
       <section className="market-strip" aria-label="Market pulse">
-        {markets.map((market, index) => (
+        {markets.map((market) => (
           <article className="market-card" key={market.name}>
             <span>{market.name}</span><div><strong>{market.value}</strong><b className={market.positive ? "good" : "risk"}>{market.move}</b></div>
-            <div className={`spark ${market.positive ? "spark-up" : "spark-down"}`} aria-hidden="true"><i style={{width: `${55 + index * 7}%`}} /></div>
+            <div className={`spark ${market.positive ? "spark-up" : "spark-down"}`} aria-hidden="true"><i /><b /></div>
+            <p className="market-note">{market.note}</p>
             <a className="micro-source" href={market.href} target="_blank" rel="noreferrer">FRED ↗</a>
           </article>
         ))}
