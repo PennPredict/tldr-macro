@@ -10,7 +10,9 @@ TL;DR Macro explains what moved, why it matters, and what comes next without ass
 - Primary sources come first: BEA, BLS, Federal Reserve, Treasury, SEC, EIA, FRED, exchanges, and company investor relations.
 - Sentences are short, factual, and neutral.
 - Define specialized terms on first use; never assume the reader knows finance vocabulary.
+- Write the full term followed immediately by its acronym in parentheses, then explain what it measures.
 - Explain abstract signals with a familiar household or business example whenever it improves understanding.
+- Connect each headline to an everyday consequence such as prices, jobs, borrowing, savings, or portfolio exposure.
 - Uncertainty appears as a question or conditional mechanism, never as unsupported certainty.
 - Market reaction is separated from interpretation.
 - State that concision omits nuance and link readers to the complete release and methodology.

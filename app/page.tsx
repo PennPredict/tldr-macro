@@ -1,32 +1,24 @@
 const markets = [
-  { name: "S&P 500", value: "4,357.2", move: "+0.43%", positive: true, note: "The index rose as yields eased. Diversified U.S. stock portfolios gained, though one day does not establish a trend.", href: "https://fred.stlouisfed.org/series/SP500" },
+  { name: "S&P 500", value: "4,357.2", move: "+0.43%", positive: true, note: "The Standard & Poor’s 500 (S&P 500) tracks large U.S. companies. Its rise lifted many retirement and index-fund portfolios.", href: "https://fred.stlouisfed.org/series/SP500" },
   { name: "Nasdaq", value: "13,457.8", move: "+0.72%", positive: true, note: "The technology-heavy index outpaced the broader market. Falling yields may have supported growth-company valuations.", href: "https://fred.stlouisfed.org/series/NASDAQCOM" },
   { name: "Dow Jones", value: "33,891.2", move: "+0.36%", positive: true, note: "The index of 30 established companies edged higher. Portfolios tilted toward large, mature businesses received a smaller lift.", href: "https://fred.stlouisfed.org/series/DJIA" },
   { name: "10Y Treasury", value: "5.18%", move: "−0.11%", positive: false, note: "The yield on 10-year U.S. government debt fell. Lower yields can reduce borrowing pressure and support stock valuations.", href: "https://fred.stlouisfed.org/series/DGS10" },
-  { name: "WTI Oil", value: "$86.40", move: "+1.30%", positive: false, note: "The main U.S. crude-oil benchmark rose amid supply uncertainty. Fuel, shipping, and production costs could increase.", href: "https://fred.stlouisfed.org/series/DCOILWTICO" },
+  { name: "WTI Oil", value: "$86.40", move: "+1.30%", positive: false, note: "West Texas Intermediate (WTI), a U.S. oil benchmark, rose. Higher oil can raise fuel, shipping, packaging, and production costs.", href: "https://fred.stlouisfed.org/series/DCOILWTICO" },
   { name: "Gold", value: "$2,380", move: "+0.60%", positive: true, note: "Gold rose while inflation and geopolitical risks remained. The move may reflect demand for assets viewed as defensive.", href: "https://fred.stlouisfed.org/series/GOLDAMGBD228NLBM" },
 ];
 
 const developments = [
-  { n: "1", tone: "mint", title: "Inflation cools more than expected", body: "The Personal Consumption Expenditures price index rose 0.3%, below the 0.4% forecast. It is the Federal Reserve’s preferred measure of consumer inflation.", why: "Slower inflation can reduce pressure for another interest-rate increase. Will the next release confirm the trend?", source: "BEA", href: "https://www.bea.gov/news/current-releases" },
-  { n: "2", tone: "blue", title: "Economic growth revised higher", body: "Gross domestic product—the broadest measure of economic output—was revised higher. Consumer and business spending supported growth.", why: "Growth can support company profits while giving the Federal Reserve room to keep rates high. Which effect will matter more?", source: "BEA", href: "https://www.bea.gov/data/gdp/gross-domestic-product" },
-  { n: "3", tone: "violet", title: "Stocks move higher", body: "The S&P 500 rose 0.4%. The technology-heavy Nasdaq gained 0.7% as government-bond yields fell.", why: "Lower yields can increase what investors are willing to pay for future company profits. Economic growth can also support those profits.", source: "FRED", href: "https://fred.stlouisfed.org/categories/32255" },
-  { n: "4", tone: "orange", title: "Oil remains an inflation risk", body: "Oil remained elevated amid uncertainty around regional supply.", why: "Higher energy costs can lift inflation and weaken consumer demand. Watch whether the move persists.", source: "EIA", href: "https://www.eia.gov/petroleum/" },
-];
-
-const connections = [
-  { icon: "↓", title: "Inflation cools", note: "PCE: 0.3% vs. 0.4% expected." },
-  { icon: "🏛", title: "Fed pressure eases", note: "Less need for an immediate rate increase." },
-  { icon: "%", title: "Bond yields decline", note: "The return offered by 10-year government debt falls." },
-  { icon: "↗", title: "Stocks rise", note: "Lower yields can raise the value of future company profits." },
-  { icon: "!", title: "Risks remain", note: "Oil and geopolitics could lift inflation." },
+  { n: "1", tone: "mint", title: "Inflation cools more than expected", body: "The Personal Consumption Expenditures (PCE) price index rose 0.3%, below the 0.4% forecast. PCE tracks the prices people pay and is the Federal Reserve’s preferred inflation measure.", why: "Slower inflation can reduce pressure for another interest-rate increase. That can eventually affect mortgages, car loans, credit cards, and business borrowing.", source: "U.S. Bureau of Economic Analysis (BEA)", href: "https://www.bea.gov/news/current-releases" },
+  { n: "2", tone: "blue", title: "Economic growth revised higher", body: "Gross domestic product (GDP)—the broadest measure of economic output—was revised higher. Consumer and business spending supported growth.", why: "Stronger GDP can support jobs and company sales. It can also keep interest rates high if demand adds inflation pressure.", source: "U.S. Bureau of Economic Analysis (BEA)", href: "https://www.bea.gov/data/gdp/gross-domestic-product" },
+  { n: "3", tone: "violet", title: "Stocks move higher", body: "The S&P 500 rose 0.4%. The technology-heavy Nasdaq gained 0.7% as government-bond yields fell.", why: "Lower yields can increase what investors are willing to pay for future company profits. Economic growth can also support those profits.", source: "Federal Reserve Economic Data (FRED)", href: "https://fred.stlouisfed.org/categories/32255" },
+  { n: "4", tone: "orange", title: "Oil remains an inflation risk", body: "Oil remained elevated amid uncertainty around regional supply. Oil powers transportation and is used in plastics, chemicals, and manufacturing.", why: "Higher oil can move through supply chains: delivery and production cost more, businesses may raise prices, and households have less left to spend.", source: "U.S. Energy Information Administration (EIA)", href: "https://www.eia.gov/petroleum/" },
 ];
 
 const updates = [
-  ["▣", "Jobs market mixed", "Openings fell as consumer confidence weakened.", "BLS", "https://www.bls.gov/jlt/"],
-  ["◎", "Global rates", "Japan and Europe also face elevated sovereign yields.", "BIS", "https://www.bis.org/statistics/"],
-  ["▦", "Earnings calendar", "Upcoming reports may test current profit expectations.", "SEC", "https://www.sec.gov/edgar/search/"],
-  ["◉", "Other assets", "The dollar was quieter while gold remained firm.", "FRED", "https://fred.stlouisfed.org/categories/15"],
+  ["▣", "Jobs market mixed", "Job openings fell. Fewer openings can mean workers have less leverage to change jobs or negotiate pay.", "U.S. Bureau of Labor Statistics (BLS)", "https://www.bls.gov/jlt/"],
+  ["◎", "Global borrowing costs", "Government-bond yields stayed high in Japan and Europe. That can raise loan costs for households and businesses worldwide.", "Bank for International Settlements (BIS)", "https://www.bis.org/statistics/"],
+  ["▦", "Earnings calendar", "Company earnings reveal whether sales and profits justify current stock prices—and whether hiring or investment may change.", "U.S. Securities and Exchange Commission (SEC)", "https://www.sec.gov/edgar/search/"],
+  ["◉", "U.S. dollar", "The dollar changed little. A stronger dollar can make imports cheaper for Americans but make U.S. products more expensive overseas.", "Federal Reserve Economic Data (FRED)", "https://fred.stlouisfed.org/categories/15"],
 ];
 
 export default function Home() {
@@ -41,15 +33,16 @@ export default function Home() {
         <div className="lead-copy">
           <p className="section-label">Today&apos;s brief</p>
           <h1>Inflation cools,<br />stocks climb</h1>
-          <p className="lead-summary">Inflation came in below expectations. Treasury yields fell. Stocks rose as growth remained resilient. Oil remained an upside risk to inflation.</p>
+          <p className="lead-summary">Inflation came in below expectations. Government-bond yields fell and stocks rose. Oil remained a risk because higher energy costs can spread into transportation, production, and household prices.</p>
         </div>
         <div className="lead-lens">
-          <p className="section-label">Read the day in three steps</p>
-          <ol>
-            <li><span>1</span><div><strong>What changed?</strong><p>Inflation came in below expectations.</p></div></li>
-            <li><span>2</span><div><strong>What moved?</strong><p>Bond yields fell and major stock indexes rose.</p></div></li>
-            <li><span>3</span><div><strong>What could change it?</strong><p>Higher oil prices could put inflation pressure back into the system.</p></div></li>
-          </ol>
+          <p className="section-label">How today&apos;s story connects</p>
+          <div className="mini-chain">
+            <div><span>↓</span><strong>Inflation cools</strong><small>Prices rose more slowly.</small></div><b>→</b>
+            <div><span>🏛</span><strong>Fed pressure eases</strong><small>Less need to raise rates.</small></div><b>→</b>
+            <div><span>%</span><strong>Borrowing pressure falls</strong><small>Loans and valuations get relief.</small></div>
+          </div>
+          <a className="chain-source" href="https://www.bea.gov/news/current-releases" target="_blank" rel="noreferrer">Read the full BEA inflation release ↗</a>
         </div>
       </section>
 
@@ -84,19 +77,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-block connection-card">
-        <p className="section-label">How today&apos;s stories connect</p>
-        <div className="connection-flow">
-          {connections.map((item, index) => (
-            <div className="connection-step" key={item.title}>
-              <div className="flow-top"><span>{item.icon}</span>{index < connections.length - 1 && <i>→</i>}</div>
-              <strong>{item.title}</strong><p>{item.note}</p>
-            </div>
-          ))}
-        </div>
-        <p className="connection-source">Framework based on the <a href="https://www.bea.gov/news/current-releases" target="_blank" rel="noreferrer">BEA inflation release</a> and <a href="https://fred.stlouisfed.org/series/DGS10" target="_blank" rel="noreferrer">Treasury yield data</a>.</p>
-      </section>
-
       <section className="section-block">
         <p className="section-label">Other notable updates</p>
         <div className="update-grid">
@@ -110,7 +90,7 @@ export default function Home() {
           <ul>
             <li><time><b>OCT</b>3</time><div><strong>Jobs report</strong><p>Will labor demand continue to cool?</p><a href="https://www.bls.gov/schedule/news_release/empsit.htm" target="_blank" rel="noreferrer">BLS ↗</a></div></li>
             <li><time><b>OCT</b>5</time><div><strong>Fed meeting minutes</strong><p>How divided were policymakers?</p><a href="https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" target="_blank" rel="noreferrer">Federal Reserve ↗</a></div></li>
-            <li><time><b>OCT</b>10</time><div><strong>Consumer Price Index</strong><p>The CPI is a widely watched measure of consumer inflation. Did price pressure ease?</p><a href="https://www.bls.gov/schedule/news_release/cpi.htm" target="_blank" rel="noreferrer">BLS ↗</a></div></li>
+            <li><time><b>OCT</b>10</time><div><strong>Consumer Price Index (CPI)</strong><p>CPI tracks how prices change for a basket of household goods and services. Did everyday price pressure ease?</p><a href="https://www.bls.gov/schedule/news_release/cpi.htm" target="_blank" rel="noreferrer">U.S. Bureau of Labor Statistics ↗</a></div></li>
             <li><time><b>OCT</b>15</time><div><strong>Energy developments</strong><p>Could supply uncertainty move oil?</p><a href="https://www.eia.gov/outlooks/steo/" target="_blank" rel="noreferrer">EIA ↗</a></div></li>
           </ul>
         </article>
