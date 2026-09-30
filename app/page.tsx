@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <main className="shell">
       <header className="topbar">
-        <div><a className="wordmark" href="#top"><strong>TLDR</strong> Markets</a><p>The day&apos;s markets, in plain English.</p></div>
+        <div><a className="wordmark" href="#top"><strong>TLDR</strong> Markets</a><p>Market intelligence, for everyone.</p></div>
         <span>Sample edition</span>
       </header>
 
@@ -108,7 +108,7 @@ export default function Home() {
         </article>
       </section>
 
-      <footer><span>Educational context, not investment advice.</span><span>Facts · Reaction · Relevance · What&apos;s next</span></footer>
+      <footer><span>Understand what moved, why it matters, and what comes next—without a finance degree.</span><span>Educational context, not investment advice.</span></footer>
     </main>
   );
 }
