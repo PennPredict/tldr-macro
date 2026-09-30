@@ -9,8 +9,10 @@ TL;DR Markets explains what moved, why it matters, and what comes next without a
 - Every factual claim links to a visible source.
 - Primary sources come first: BEA, BLS, Federal Reserve, Treasury, SEC, EIA, FRED, exchanges, and company investor relations.
 - Sentences are short, factual, and neutral.
+- Define specialized terms on first use; never assume the reader knows finance vocabulary.
 - Uncertainty appears as a question or conditional mechanism, never as unsupported certainty.
 - Market reaction is separated from interpretation.
+- State that concision omits nuance and link readers to the complete release and methodology.
 - Published corrections remain visible.
 
 ## GitHub Pages launch
