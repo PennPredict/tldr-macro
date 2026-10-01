@@ -100,10 +100,7 @@ export default function Home() {
         <div className="event-list">{events.map((event) => <article key={event.date}><time>{event.date}</time><div className="event-main"><h3>{event.title}</h3><p>{event.question}</p></div><div className="scenario hotter"><b>Hotter / stronger</b><p>{event.hot}</p></div><div className="scenario cooler"><b>Cooler / weaker</b><p>{event.cool}</p></div><a href={event.href} target="_blank" rel="noreferrer">{event.source} ↗</a></article>)}</div>
       </section>
 
-      <section className="bottom-line"><p className="section-label">Bottom line</p><blockquote>Inflation showed progress while economic growth remained resilient—a combination that supported stocks. Elevated oil remains the counter-risk because higher energy costs could push inflation and borrowing pressure back up.</blockquote><ul><li>Inflation moved in the Fed&apos;s preferred direction.</li><li>Growth still supported jobs and company sales.</li><li>Oil could reverse some of the improvement.</li></ul></section>
-
-      <aside className="nuance"><strong>Concision leaves out nuance.</strong><p>Source links provide the full release, definitions, methodology, revisions, and context. Read them before drawing a conclusion.</p></aside>
-      <footer><span>Every claim sourced. Facts first.</span><span>Educational context, not investment advice.</span></footer>
+      <footer><span><strong>Concision leaves out nuance.</strong> Use the source links for full releases, methodology, revisions, and context.</span><span>Educational context, not investment advice.</span></footer>
     </main>
   );
 }
