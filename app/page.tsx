@@ -11,24 +11,24 @@ const markets = [
 
 const secondary = [
   {
-    number: "02", label: "Growth", title: "Economic growth was revised higher",
-    impact: [["↗", "GDP revised up"], ["$", "Company sales hold up"], ["+", "Jobs and earnings get support"]],
-    text: "Gross domestic product (GDP)—the broadest measure of economic output—was revised higher as consumer and business spending held up.",
-    why: "Stronger growth can support jobs and company sales, but it can also keep interest rates high if demand adds inflation pressure.",
+    number: "02", label: "Growth", title: "The economy grew more than first estimated",
+    stat: "Total output: revised higher", impact: [["↗", "People and businesses spend"], ["$", "Companies sell more"], ["+", "Jobs can stay supported"]],
+    text: "The total value of goods and services produced in the country was revised higher because households and businesses kept spending. This measure matters because producing and selling more usually supports company revenue, hiring, and wages.",
+    why: "Healthy growth can protect jobs and household income. If spending stays too strong, however, businesses may keep raising prices and interest rates may remain high.",
     source: "U.S. Bureau of Economic Analysis (BEA)", href: "https://www.bea.gov/data/gdp/gross-domestic-product",
   },
   {
-    number: "03", label: "Markets", title: "Stocks rose as bond yields fell",
-    impact: [["↓", "Bond yields fall"], ["%", "Financing pressure eases"], ["↗", "Stock values get relief"]],
-    text: "The Standard & Poor’s 500 (S&P 500) gained 0.4%. The technology-heavy Nasdaq rose 0.7% as government-bond yields moved lower.",
-    why: "Lower yields reduce the rate used to value future profits today, which can make stocks—especially growth companies—more attractive.",
+    number: "03", label: "Markets", title: "Stocks rose as borrowing pressure eased",
+    stat: "Broad stocks: +0.4%", impact: [["↓", "Government yields fall"], ["%", "Money costs less to borrow"], ["↗", "Stocks get support"]],
+    text: "Large U.S. companies gained about 0.4%, while technology shares rose about 0.7%. Investors reacted to lower government borrowing rates, which influence loans and how companies are valued.",
+    why: "When borrowing rates fall, companies can finance expansion more cheaply. Future profits also become more valuable in today’s dollars, which can lift stock prices, especially for fast-growing businesses.",
     source: "Federal Reserve Economic Data (FRED)", href: "https://fred.stlouisfed.org/categories/32255",
   },
   {
-    number: "04", label: "Energy", title: "Oil remains the main inflation counter-risk",
-    impact: [["▲", "Oil stays elevated"], ["→", "Shipping costs rise"], ["$", "Fuel and goods may cost more"]],
+    number: "04", label: "Energy", title: "Higher oil prices could reach household budgets",
+    stat: "U.S. crude oil: $86.40", impact: [["▲", "Oil stays expensive"], ["→", "Transport costs rise"], ["$", "Fuel and goods may cost more"]],
     text: "West Texas Intermediate (WTI), a U.S. crude-oil benchmark, remained elevated amid uncertainty around regional supply.",
-    why: "Oil moves through supply chains. Fuel, shipping, plastics, packaging, and production can cost more, leaving households with less to spend.",
+    why: "Oil is used to move goods and make products such as plastics and packaging. Higher costs can reach gas stations and store shelves, leaving households with less money for other purchases.",
     source: "U.S. Energy Information Administration (EIA)", href: "https://www.eia.gov/petroleum/",
   },
 ];
@@ -87,22 +87,22 @@ export default function Home() {
         <p className="section-label">The big story</p>
         <article className="lead-story">
           <div className="story-meta"><span>01</span><b>Inflation</b></div>
-          <div><h2 id="stories-title">Inflation cooled more than expected</h2><div className="impact-flow"><div><span>↓</span><b>PCE inflation cools</b></div><i>→</i><div><span>%</span><b>Rate pressure eases</b></div><i>→</i><div><span>$</span><b>Loans may get less expensive</b></div></div><p>The Personal Consumption Expenditures (PCE) price index rose 0.3%, below the 0.4% forecast. PCE tracks the prices people pay and is the Federal Reserve’s preferred inflation measure. The softer reading reduced expectations for another near-term interest-rate increase.</p><p className="why"><strong>Why it matters</strong> Less Federal Reserve tightening can lower expected rates and Treasury yields. That can support stocks and eventually reduce pressure on mortgages, car loans, credit cards, and business borrowing.</p><a className="source-link" href="https://www.bea.gov/news/current-releases" target="_blank" rel="noreferrer">U.S. Bureau of Economic Analysis (BEA) ↗</a></div>
+          <div className="story-content"><div className="story-copy"><h2 id="stories-title">Prices rose more slowly than expected</h2><p>A broad measure of what people pay for goods and services rose 0.3%, less than the 0.4% economists expected. Slower price growth reduces pressure on the Federal Reserve to raise interest rates again.</p><p className="why"><strong>Why it matters</strong> If price increases keep slowing, borrowing costs may eventually ease. That can reduce pressure on mortgages, car loans, credit cards, and the loans businesses use to hire or expand.</p><a className="source-link" href="https://www.bea.gov/news/current-releases" target="_blank" rel="noreferrer">U.S. Bureau of Economic Analysis (BEA) ↗</a></div><aside className="impact-box"><small>Broad price measure</small><strong>+0.3%</strong><p>Forecast: +0.4%</p><div className="impact-flow"><div><span>↓</span><b>Prices cool</b></div><i>↓</i><div><span>%</span><b>Rate pressure eases</b></div><i>↓</i><div><span>$</span><b>Loans may get cheaper</b></div></div></aside></div>
         </article>
 
         <div className="other-heading"><p className="section-label">Three other things that matter</p></div>
         <div className="secondary-list">
-          {secondary.map((story) => <article key={story.number}><div className="story-meta"><span>{story.number}</span><b>{story.label}</b></div><div><h3>{story.title}</h3><div className="impact-flow compact">{story.impact.map(([icon,text],index) => <span className="impact-step" key={text}><span><i>{icon}</i><b>{text}</b></span>{index < story.impact.length - 1 && <em>→</em>}</span>)}</div><p>{story.text}</p><p className="why"><strong>Why it matters</strong> {story.why}</p><a className="source-link" href={story.href} target="_blank" rel="noreferrer">{story.source} ↗</a></div></article>)}
+          {secondary.map((story) => <article key={story.number}><div className="story-meta"><span>{story.number}</span><b>{story.label}</b></div><div className="story-content"><div className="story-copy"><h3>{story.title}</h3><p>{story.text}</p><p className="why"><strong>Why it matters</strong> {story.why}</p><a className="source-link" href={story.href} target="_blank" rel="noreferrer">{story.source} ↗</a></div><aside className="impact-box compact"><small>{story.stat}</small><div className="impact-flow">{story.impact.map(([icon,text],index) => <span className="impact-step" key={text}><span><i>{icon}</i><b>{text}</b></span>{index < story.impact.length - 1 && <em>↓</em>}</span>)}</div></aside></div></article>)}
         </div>
       </section>
 
       <section className="notable" aria-labelledby="notable-title">
-        <div className="section-heading"><div><p className="section-label">Worth knowing</p><h2 id="notable-title">Other notable updates</h2></div></div>
+        <div className="section-heading"><h2 id="notable-title">Noteworthy Updates</h2></div>
         <div className="notable-list">{notable.map(([title, text, source, href]) => <article key={title}><h3>{title}</h3><p>{text}</p><a href={href} target="_blank" rel="noreferrer">{source} ↗</a></article>)}</div>
       </section>
 
       <section className="watch" aria-labelledby="watch-title">
-        <div className="section-heading"><div><p className="section-label">Interpret the next move</p><h2 id="watch-title">What to watch next</h2></div><p>Compare the result with expectations—not only the prior number.</p></div>
+        <div className="section-heading"><h2 id="watch-title">What to Watch For</h2><p>Compare the result with expectations, not only the prior number.</p></div>
         <div className="event-list">{events.map((event) => <article key={event.date}><time>{event.date}</time><div className="event-main"><h3>{event.title}</h3><p>{event.question}</p></div><div className="scenario hotter"><b>Hotter / stronger</b><p>{event.hot}</p></div><div className="scenario cooler"><b>Cooler / weaker</b><p>{event.cool}</p></div><a href={event.href} target="_blank" rel="noreferrer">{event.source} ↗</a></article>)}</div>
       </section>
 
