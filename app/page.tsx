@@ -12,18 +12,21 @@ const markets = [
 const secondary = [
   {
     number: "02", label: "Growth", title: "Economic growth was revised higher",
+    impact: [["↗", "GDP revised up"], ["$", "Company sales hold up"], ["+", "Jobs and earnings get support"]],
     text: "Gross domestic product (GDP)—the broadest measure of economic output—was revised higher as consumer and business spending held up.",
     why: "Stronger growth can support jobs and company sales, but it can also keep interest rates high if demand adds inflation pressure.",
     source: "U.S. Bureau of Economic Analysis (BEA)", href: "https://www.bea.gov/data/gdp/gross-domestic-product",
   },
   {
     number: "03", label: "Markets", title: "Stocks rose as bond yields fell",
+    impact: [["↓", "Bond yields fall"], ["%", "Financing pressure eases"], ["↗", "Stock values get relief"]],
     text: "The Standard & Poor’s 500 (S&P 500) gained 0.4%. The technology-heavy Nasdaq rose 0.7% as government-bond yields moved lower.",
     why: "Lower yields reduce the rate used to value future profits today, which can make stocks—especially growth companies—more attractive.",
     source: "Federal Reserve Economic Data (FRED)", href: "https://fred.stlouisfed.org/categories/32255",
   },
   {
     number: "04", label: "Energy", title: "Oil remains the main inflation counter-risk",
+    impact: [["▲", "Oil stays elevated"], ["→", "Shipping costs rise"], ["$", "Fuel and goods may cost more"]],
     text: "West Texas Intermediate (WTI), a U.S. crude-oil benchmark, remained elevated amid uncertainty around regional supply.",
     why: "Oil moves through supply chains. Fuel, shipping, plastics, packaging, and production can cost more, leaving households with less to spend.",
     source: "U.S. Energy Information Administration (EIA)", href: "https://www.eia.gov/petroleum/",
@@ -67,7 +70,7 @@ export default function Home() {
       </header>
 
       <section className="market-section" id="top" aria-labelledby="market-title">
-        <div className="section-heading"><div><p className="section-label">Five-second scan</p><h2 id="market-title">Market snapshot</h2></div><p>Sample figures · source links beneath</p></div>
+        <div className="section-heading market-heading"><h2 id="market-title">Market Snapshot</h2></div>
         <div className="market-grid">
           {markets.map((market) => (
             <article className="market" key={market.name}>
@@ -84,12 +87,12 @@ export default function Home() {
         <p className="section-label">The big story</p>
         <article className="lead-story">
           <div className="story-meta"><span>01</span><b>Inflation</b></div>
-          <div><h2 id="stories-title">Inflation cooled more than expected</h2><p>The Personal Consumption Expenditures (PCE) price index rose 0.3%, below the 0.4% forecast. PCE tracks the prices people pay and is the Federal Reserve’s preferred inflation measure. The softer reading reduced expectations for another near-term interest-rate increase.</p><p className="why"><strong>Why it matters</strong> Less Federal Reserve tightening can lower expected rates and Treasury yields. That can support stocks and eventually reduce pressure on mortgages, car loans, credit cards, and business borrowing.</p><a className="source-link" href="https://www.bea.gov/news/current-releases" target="_blank" rel="noreferrer">U.S. Bureau of Economic Analysis (BEA) ↗</a></div>
+          <div><h2 id="stories-title">Inflation cooled more than expected</h2><div className="impact-flow"><div><span>↓</span><b>PCE inflation cools</b></div><i>→</i><div><span>%</span><b>Rate pressure eases</b></div><i>→</i><div><span>$</span><b>Loans may get less expensive</b></div></div><p>The Personal Consumption Expenditures (PCE) price index rose 0.3%, below the 0.4% forecast. PCE tracks the prices people pay and is the Federal Reserve’s preferred inflation measure. The softer reading reduced expectations for another near-term interest-rate increase.</p><p className="why"><strong>Why it matters</strong> Less Federal Reserve tightening can lower expected rates and Treasury yields. That can support stocks and eventually reduce pressure on mortgages, car loans, credit cards, and business borrowing.</p><a className="source-link" href="https://www.bea.gov/news/current-releases" target="_blank" rel="noreferrer">U.S. Bureau of Economic Analysis (BEA) ↗</a></div>
         </article>
 
         <div className="other-heading"><p className="section-label">Three other things that matter</p></div>
         <div className="secondary-list">
-          {secondary.map((story) => <article key={story.number}><div className="story-meta"><span>{story.number}</span><b>{story.label}</b></div><div><h3>{story.title}</h3><p>{story.text}</p><p className="why"><strong>Why it matters</strong> {story.why}</p><a className="source-link" href={story.href} target="_blank" rel="noreferrer">{story.source} ↗</a></div></article>)}
+          {secondary.map((story) => <article key={story.number}><div className="story-meta"><span>{story.number}</span><b>{story.label}</b></div><div><h3>{story.title}</h3><div className="impact-flow compact">{story.impact.map(([icon,text],index) => <span className="impact-step" key={text}><span><i>{icon}</i><b>{text}</b></span>{index < story.impact.length - 1 && <em>→</em>}</span>)}</div><p>{story.text}</p><p className="why"><strong>Why it matters</strong> {story.why}</p><a className="source-link" href={story.href} target="_blank" rel="noreferrer">{story.source} ↗</a></div></article>)}
         </div>
       </section>
 
