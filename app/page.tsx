@@ -1,8 +1,12 @@
+import Sparkline from "./Sparkline";
+
 const markets = [
   { name:"S&P 500", value:"4,357.2", move:"+0.43%", description:"The Standard & Poor’s 500 (S&P 500), a gauge of large U.S. companies, rose 0.43% as inflation cooled; lower expected interest rates could continue to support stock prices.", tone:"up", href:"https://fred.stlouisfed.org/series/SP500", range:"Day range 4,321–4,365", points:[64,72,59,67,48,54,35,43,28,31,22,26] },
   { name:"10Y Treasury yield", value:"5.18%", move:"−0.11%", description:"The 10-year Treasury yield, a benchmark for mortgages and business loans, fell to 5.18% after softer inflation; a further decline could gradually reduce borrowing pressure.", tone:"down", href:"https://fred.stlouisfed.org/series/DGS10", range:"Day range 5.16–5.29%", points:[27,23,31,20,28,38,36,45,43,54,58,53] },
   { name:"WTI crude oil", value:"$86.40", move:"+1.30%", description:"West Texas Intermediate (WTI), the main U.S. crude-oil benchmark, rose 1.30% amid supply uncertainty; sustained gains could raise fuel, shipping, and household costs.", tone:"risk", href:"https://fred.stlouisfed.org/series/DCOILWTICO", range:"Day range $84.92–$86.71", points:[67,61,70,53,48,55,39,46,32,38,29,34] },
   { name:"Gold", value:"$2,380", move:"+0.60%", description:"Gold, an asset often used to store value during uncertainty, rose 0.60% as geopolitical risks persisted; continued demand could indicate investors remain cautious despite rising stocks.", tone:"up", href:"https://fred.stlouisfed.org/series/GOLDAMGBD228NLBM", range:"Day range $2,351–$2,386", points:[56,47,52,38,44,49,35,41,27,33,24,29] },
+  { name:"U.S. Dollar Index", value:"104.2", move:"−0.18%", description:"The U.S. Dollar Index (DXY), which compares the dollar with major currencies, fell 0.18% as rate expectations eased; a softer dollar can reduce pressure on U.S. exporters and emerging markets.", tone:"down", href:"https://fred.stlouisfed.org/series/DTWEXBGS", range:"Day range 103.9–104.6", points:[104.5,104.4,104.45,104.3,104.35,104.2,104.28,104.12,104.18,104.05,104.1,104.02] },
+  { name:"VIX volatility", value:"17.8", move:"−3.20%", description:"The Cboe Volatility Index (VIX), a measure of expected stock-market swings, fell 3.20% as inflation fears eased; a lower reading suggests investors are demanding less protection against near-term turbulence.", tone:"caution", href:"https://fred.stlouisfed.org/series/VIXCLS", range:"Day range 17.5–18.9", points:[18.8,18.6,18.7,18.3,18.45,18.1,18.2,17.95,18.05,17.8,17.9,17.8] },
 ];
 
 const secondary = [
@@ -68,18 +72,7 @@ export default function Home() {
           {markets.map((market) => (
             <article className="market" key={market.name}>
               <h3>{market.name}</h3><div className="market-value"><strong>{market.value}</strong><b className={market.tone}>{market.move}</b></div>
-              <div className={`line ${market.tone}`} aria-hidden="true">
-                <i className="baseline" />
-                {market.points.slice(0,-1).map((point,index) => {
-                  const next = market.points[index + 1];
-                  const dx = 100 / (market.points.length - 1);
-                  const dy = next - point;
-                  const angle = Math.atan2(dy, dx) * 180 / Math.PI;
-                  const width = Math.sqrt(dx * dx + dy * dy);
-                  return <i className="spark-segment" key={index} style={{left:`${index * dx}%`,top:`${point}%`,width:`${width}%`,transform:`rotate(${angle}deg)`}} />;
-                })}
-                <span className="endpoint" style={{top:`${market.points.at(-1)}%`}} />
-              </div>
+              <Sparkline points={market.points} tone={market.tone as "up" | "down" | "risk" | "caution"} />
               <div className="chart-meta"><span>Open</span><b>{market.range}</b><span>Now</span></div>
               <p>{market.description}</p><a href={market.href} target="_blank" rel="noreferrer">FRED ↗</a>
             </article>
