@@ -1,10 +1,8 @@
 const markets = [
-  ["S&P 500", "4,357.2", "+0.43%", "The Standard & Poor’s 500 (S&P 500), a gauge of large U.S. companies, rose 0.43% as inflation cooled; lower expected interest rates could continue to support stock prices.", "up", "https://fred.stlouisfed.org/series/SP500"],
-  ["Nasdaq", "13,457.8", "+0.72%", "The Nasdaq Composite, a stock index weighted toward technology companies, rose 0.72% as bond yields fell; cheaper financing could benefit growth companies that rely on future profits.", "up", "https://fred.stlouisfed.org/series/NASDAQCOM"],
-  ["Dow Jones", "33,891.2", "+0.36%", "The Dow Jones Industrial Average, a basket of 30 established U.S. companies, rose 0.36% as rate concerns eased; continued gains would signal that the rally extends beyond technology.", "up", "https://fred.stlouisfed.org/series/DJIA"],
-  ["10Y Treasury", "5.18%", "−0.11%", "The 10-year Treasury yield, a benchmark for mortgages and business loans, fell to 5.18% after softer inflation; a further decline could gradually reduce borrowing pressure.", "down", "https://fred.stlouisfed.org/series/DGS10"],
-  ["WTI oil", "$86.40", "+1.30%", "West Texas Intermediate (WTI), the main U.S. crude-oil benchmark, rose 1.30% amid supply uncertainty; sustained gains could raise fuel, shipping, and household costs.", "risk", "https://fred.stlouisfed.org/series/DCOILWTICO"],
-  ["Gold", "$2,380", "+0.60%", "Gold, an asset often used to store value during uncertainty, rose 0.60% as geopolitical risks persisted; continued demand could indicate investors remain cautious despite rising stocks.", "up", "https://fred.stlouisfed.org/series/GOLDAMGBD228NLBM"],
+  { name:"S&P 500", value:"4,357.2", move:"+0.43%", description:"The Standard & Poor’s 500 (S&P 500), a gauge of large U.S. companies, rose 0.43% as inflation cooled; lower expected interest rates could continue to support stock prices.", tone:"up", href:"https://fred.stlouisfed.org/series/SP500", range:"Day range 4,321–4,365", points:[64,72,59,67,48,54,35,43,28,31,22,26] },
+  { name:"10Y Treasury yield", value:"5.18%", move:"−0.11%", description:"The 10-year Treasury yield, a benchmark for mortgages and business loans, fell to 5.18% after softer inflation; a further decline could gradually reduce borrowing pressure.", tone:"down", href:"https://fred.stlouisfed.org/series/DGS10", range:"Day range 5.16–5.29%", points:[27,23,31,20,28,38,36,45,43,54,58,53] },
+  { name:"WTI crude oil", value:"$86.40", move:"+1.30%", description:"West Texas Intermediate (WTI), the main U.S. crude-oil benchmark, rose 1.30% amid supply uncertainty; sustained gains could raise fuel, shipping, and household costs.", tone:"risk", href:"https://fred.stlouisfed.org/series/DCOILWTICO", range:"Day range $84.92–$86.71", points:[67,61,70,53,48,55,39,46,32,38,29,34] },
+  { name:"Gold", value:"$2,380", move:"+0.60%", description:"Gold, an asset often used to store value during uncertainty, rose 0.60% as geopolitical risks persisted; continued demand could indicate investors remain cautious despite rising stocks.", tone:"up", href:"https://fred.stlouisfed.org/series/GOLDAMGBD228NLBM", range:"Day range $2,351–$2,386", points:[56,47,52,38,44,49,35,41,27,33,24,29] },
 ];
 
 const secondary = [
@@ -67,11 +65,23 @@ export default function Home() {
       <section className="market-section" id="top" aria-labelledby="market-title">
         <div className="section-heading"><div><p className="section-label">Five-second scan</p><h2 id="market-title">Market snapshot</h2></div><p>Sample figures · source links beneath</p></div>
         <div className="market-grid">
-          {markets.map(([name, value, move, description, tone, href]) => (
-            <article className="market" key={name}>
-              <h3>{name}</h3><div className="market-value"><strong>{value}</strong><b className={tone}>{move}</b></div>
-              <div className={`line ${tone}`} aria-hidden="true"><i /><span /></div>
-              <p>{description}</p><a href={href} target="_blank" rel="noreferrer">FRED ↗</a>
+          {markets.map((market) => (
+            <article className="market" key={market.name}>
+              <h3>{market.name}</h3><div className="market-value"><strong>{market.value}</strong><b className={market.tone}>{market.move}</b></div>
+              <div className={`line ${market.tone}`} aria-hidden="true">
+                <i className="baseline" />
+                {market.points.slice(0,-1).map((point,index) => {
+                  const next = market.points[index + 1];
+                  const dx = 100 / (market.points.length - 1);
+                  const dy = next - point;
+                  const angle = Math.atan2(dy, dx) * 180 / Math.PI;
+                  const width = Math.sqrt(dx * dx + dy * dy);
+                  return <i className="spark-segment" key={index} style={{left:`${index * dx}%`,top:`${point}%`,width:`${width}%`,transform:`rotate(${angle}deg)`}} />;
+                })}
+                <span className="endpoint" style={{top:`${market.points.at(-1)}%`}} />
+              </div>
+              <div className="chart-meta"><span>Open</span><b>{market.range}</b><span>Now</span></div>
+              <p>{market.description}</p><a href={market.href} target="_blank" rel="noreferrer">FRED ↗</a>
             </article>
           ))}
         </div>
