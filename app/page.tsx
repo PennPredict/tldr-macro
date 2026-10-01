@@ -64,28 +64,7 @@ export default function Home() {
         <div className="edition"><span>Sample edition</span><time>Sep 30, 2026</time></div>
       </header>
 
-      <section className="hero" id="top">
-        <div className="hero-story">
-          <p className="section-label">Today&apos;s brief</p>
-          <h1>Inflation cools.<br /><em>Stocks climb.</em></h1>
-          <p className="hero-copy">Inflation came in below expectations, reducing pressure on the Federal Reserve to raise interest rates again. Government-bond yields fell and stocks rose while economic growth remained resilient. Oil is the main counter-risk because higher energy costs can spread through transportation, production, and household prices.</p>
-        </div>
-        <aside className="hero-chain" aria-label="How today's stories connect">
-          <p className="section-label">How today&apos;s stories connect</p>
-          <div><span aria-hidden="true">↓</span><p><strong>Inflation cools</strong><small>Prices rose more slowly.</small></p></div><b>↓</b>
-          <div><span aria-hidden="true">⌂</span><p><strong>Fed pressure eases</strong><small>Less need to raise rates.</small></p></div><b>↓</b>
-          <div><span aria-hidden="true">%</span><p><strong>Treasury yields fall</strong><small>Expected borrowing costs decline.</small></p></div><b>↓</b>
-          <div><span aria-hidden="true">↗</span><p><strong>Stocks get relief</strong><small>Lower rates support valuations.</small></p></div>
-          <em>Oil remains the counter-risk: higher energy costs could restart inflation pressure.</em>
-        </aside>
-      </section>
-
-      <section className="changed" aria-labelledby="changed-title">
-        <h2 id="changed-title">What changed today</h2>
-        <ul><li>Inflation surprised lower</li><li>Rate-hike expectations eased</li><li>Treasury yields declined</li><li>Stocks rose</li><li>Oil remained the inflation counter-risk</li></ul>
-      </section>
-
-      <section className="market-section" aria-labelledby="market-title">
+      <section className="market-section" id="top" aria-labelledby="market-title">
         <div className="section-heading"><div><p className="section-label">Five-second scan</p><h2 id="market-title">Market snapshot</h2></div><p>Sample figures · source links beneath</p></div>
         <div className="market-grid">
           {markets.map(([name, value, move, description, tone, href]) => (
