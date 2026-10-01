@@ -1,10 +1,10 @@
 const markets = [
-  ["S&P 500", "4,357.2", "+0.43%", "U.S. large-company stocks", "up", "https://fred.stlouisfed.org/series/SP500"],
-  ["Nasdaq", "13,457.8", "+0.72%", "Technology-heavy U.S. stocks", "up", "https://fred.stlouisfed.org/series/NASDAQCOM"],
-  ["Dow Jones", "33,891.2", "+0.36%", "30 established U.S. companies", "up", "https://fred.stlouisfed.org/series/DJIA"],
-  ["10Y Treasury", "5.18%", "−0.11%", "Benchmark U.S. borrowing rate", "down", "https://fred.stlouisfed.org/series/DGS10"],
-  ["WTI oil", "$86.40", "+1.30%", "Main U.S. crude-oil benchmark", "risk", "https://fred.stlouisfed.org/series/DCOILWTICO"],
-  ["Gold", "$2,380", "+0.60%", "Store-of-value asset", "up", "https://fred.stlouisfed.org/series/GOLDAMGBD228NLBM"],
+  ["S&P 500", "4,357.2", "+0.43%", "The Standard & Poor’s 500 (S&P 500), a gauge of large U.S. companies, rose 0.43% as inflation cooled; lower expected interest rates could continue to support stock prices.", "up", "https://fred.stlouisfed.org/series/SP500"],
+  ["Nasdaq", "13,457.8", "+0.72%", "The Nasdaq Composite, a stock index weighted toward technology companies, rose 0.72% as bond yields fell; cheaper financing could benefit growth companies that rely on future profits.", "up", "https://fred.stlouisfed.org/series/NASDAQCOM"],
+  ["Dow Jones", "33,891.2", "+0.36%", "The Dow Jones Industrial Average, a basket of 30 established U.S. companies, rose 0.36% as rate concerns eased; continued gains would signal that the rally extends beyond technology.", "up", "https://fred.stlouisfed.org/series/DJIA"],
+  ["10Y Treasury", "5.18%", "−0.11%", "The 10-year Treasury yield, a benchmark for mortgages and business loans, fell to 5.18% after softer inflation; a further decline could gradually reduce borrowing pressure.", "down", "https://fred.stlouisfed.org/series/DGS10"],
+  ["WTI oil", "$86.40", "+1.30%", "West Texas Intermediate (WTI), the main U.S. crude-oil benchmark, rose 1.30% amid supply uncertainty; sustained gains could raise fuel, shipping, and household costs.", "risk", "https://fred.stlouisfed.org/series/DCOILWTICO"],
+  ["Gold", "$2,380", "+0.60%", "Gold, an asset often used to store value during uncertainty, rose 0.60% as geopolitical risks persisted; continued demand could indicate investors remain cautious despite rising stocks.", "up", "https://fred.stlouisfed.org/series/GOLDAMGBD228NLBM"],
 ];
 
 const secondary = [
@@ -60,14 +60,24 @@ export default function Home() {
   return (
     <main className="shell">
       <header className="topbar">
-        <div><a className="wordmark" href="#top"><strong>TL;DR</strong> Macro</a><p>The day&apos;s markets, in plain English.</p></div>
+        <div><a className="wordmark" href="#top"><strong>TL;DR</strong> Macro</a><p>Market intelligence for everyone.</p></div>
         <div className="edition"><span>Sample edition</span><time>Sep 30, 2026</time></div>
       </header>
 
       <section className="hero" id="top">
-        <p className="section-label">Today&apos;s brief</p>
-        <h1>Inflation cools.<br /><em>Stocks climb.</em></h1>
-        <p className="hero-copy">Inflation came in below expectations, reducing pressure on the Federal Reserve to raise interest rates again. Government-bond yields fell and stocks rose while economic growth remained resilient. Oil is the main counter-risk because higher energy costs can spread through transportation, production, and household prices.</p>
+        <div className="hero-story">
+          <p className="section-label">Today&apos;s brief</p>
+          <h1>Inflation cools.<br /><em>Stocks climb.</em></h1>
+          <p className="hero-copy">Inflation came in below expectations, reducing pressure on the Federal Reserve to raise interest rates again. Government-bond yields fell and stocks rose while economic growth remained resilient. Oil is the main counter-risk because higher energy costs can spread through transportation, production, and household prices.</p>
+        </div>
+        <aside className="hero-chain" aria-label="How today's stories connect">
+          <p className="section-label">How today&apos;s stories connect</p>
+          <div><span aria-hidden="true">↓</span><p><strong>Inflation cools</strong><small>Prices rose more slowly.</small></p></div><b>↓</b>
+          <div><span aria-hidden="true">⌂</span><p><strong>Fed pressure eases</strong><small>Less need to raise rates.</small></p></div><b>↓</b>
+          <div><span aria-hidden="true">%</span><p><strong>Treasury yields fall</strong><small>Expected borrowing costs decline.</small></p></div><b>↓</b>
+          <div><span aria-hidden="true">↗</span><p><strong>Stocks get relief</strong><small>Lower rates support valuations.</small></p></div>
+          <em>Oil remains the counter-risk: higher energy costs could restart inflation pressure.</em>
+        </aside>
       </section>
 
       <section className="changed" aria-labelledby="changed-title">
@@ -86,17 +96,6 @@ export default function Home() {
             </article>
           ))}
         </div>
-      </section>
-
-      <section className="connect" aria-labelledby="connect-title">
-        <div className="connect-intro"><p className="section-label">The mechanism</p><h2 id="connect-title">How today&apos;s stories connect</h2><p>One economic release changed expectations across rates and stocks.</p></div>
-        <div className="causal-chain">
-          <div><span>01</span><strong>Inflation cools</strong><p>Prices rose more slowly.</p></div><b>→</b>
-          <div><span>02</span><strong>Fed pressure eases</strong><p>Less need to raise rates.</p></div><b>→</b>
-          <div><span>03</span><strong>Treasury yields fall</strong><p>Expected interest rates decline.</p></div><b>→</b>
-          <div><span>04</span><strong>Stocks get relief</strong><p>Lower rates support valuations.</p></div>
-        </div>
-        <a className="source-link" href="https://www.bea.gov/news/current-releases" target="_blank" rel="noreferrer">U.S. Bureau of Economic Analysis release ↗</a>
       </section>
 
       <section className="stories" aria-labelledby="stories-title">
