@@ -13,25 +13,29 @@ const secondary = [
   {
     number: "02", label: "Growth", title: "The economy grew more than first estimated",
     stat: "Total output: revised higher", impact: [["↗", "People and businesses spend"], ["$", "Companies sell more"], ["+", "Jobs can stay supported"]],
-    text: "The total value of goods and services produced in the country was revised higher because households and businesses kept spending. This measure matters because producing and selling more usually supports company revenue, hiring, and wages.",
-    why: "Healthy growth can protect jobs and household income. If spending stays too strong, however, businesses may keep raising prices and interest rates may remain high.",
+    text: "Gross domestic product (GDP), the total value of goods and services produced in the country, was revised higher relative to the government’s first estimate. The revision indicates that household and business spending was stronger than first calculated. Keep an eye on hiring and wages, since stronger production can support jobs but may also keep interest rates high if demand pushes prices upward.",
+    why: "GDP shows whether the economy is producing and selling more or less. Growth can protect jobs and income, while growth that runs too hot can keep borrowing costs elevated.",
     source: "U.S. Bureau of Economic Analysis (BEA)", href: "https://www.bea.gov/data/gdp/gross-domestic-product",
   },
   {
     number: "03", label: "Markets", title: "Stocks rose as borrowing pressure eased",
     stat: "Broad stocks: +0.4%", impact: [["↓", "Government yields fall"], ["%", "Money costs less to borrow"], ["↗", "Stocks get support"]],
-    text: "Large U.S. companies gained about 0.4%, while technology shares rose about 0.7%. Investors reacted to lower government borrowing rates, which influence loans and how companies are valued.",
-    why: "When borrowing rates fall, companies can finance expansion more cheaply. Future profits also become more valuable in today’s dollars, which can lift stock prices, especially for fast-growing businesses.",
+    text: "The Standard & Poor’s 500 (S&P 500), an index tracking large U.S. companies, rose 0.4%, while the technology-heavy Nasdaq rose 0.7%. Both gained as the 10-year Treasury yield fell relative to its recent high, indicating that investors expected slightly less pressure from borrowing costs. Keep an eye on mortgage rates and business investment, which often respond to the same interest-rate moves.",
+    why: "Lower borrowing rates can make expansion cheaper for companies. They can also make future profits more valuable today, which often supports stock prices.",
     source: "Federal Reserve Economic Data (FRED)", href: "https://fred.stlouisfed.org/categories/32255",
   },
   {
     number: "04", label: "Energy", title: "Higher oil prices could reach household budgets",
     stat: "U.S. crude oil: $86.40", impact: [["▲", "Oil stays expensive"], ["→", "Transport costs rise"], ["$", "Fuel and goods may cost more"]],
-    text: "West Texas Intermediate (WTI), a U.S. crude-oil benchmark, remained elevated amid uncertainty around regional supply.",
+    text: "West Texas Intermediate (WTI), the main U.S. crude-oil price benchmark, rose 1.3% to $86.40 relative to the previous close as supply uncertainty increased. The move indicates that traders saw a greater risk of tighter oil supplies. Keep an eye on gasoline, airline tickets, delivery fees, and grocery prices because fuel costs move through transportation and production networks.",
     why: "Oil is used to move goods and make products such as plastics and packaging. Higher costs can reach gas stations and store shelves, leaving households with less money for other purchases.",
     source: "U.S. Energy Information Administration (EIA)", href: "https://www.eia.gov/petroleum/",
   },
 ];
+
+function ImpactWheel({ stat, impact }: { stat: string; impact: string[][] }) {
+  return <aside className="impact-box"><small>How the pieces interact</small><div className="impact-wheel"><div className="wheel-center">{stat}</div>{impact.map(([icon,text],index) => <div className={`wheel-node node-${index + 1}`} key={text}><i>{icon}</i><b>{text}</b></div>)}<span className="wheel-arrow arrow-1">↔</span><span className="wheel-arrow arrow-2">↔</span><span className="wheel-arrow arrow-3">↔</span></div><p className="feedback-note">These effects can reinforce or weaken one another.</p></aside>;
+}
 
 const notable = [
   ["Jobs", "Job openings fell. Fewer openings can reduce workers’ leverage to change jobs or negotiate pay.", "U.S. Bureau of Labor Statistics", "https://www.bls.gov/jlt/"],
@@ -87,12 +91,12 @@ export default function Home() {
         <p className="section-label">The big story</p>
         <article className="lead-story">
           <div className="story-meta"><span>01</span><b>Inflation</b></div>
-          <div className="story-content"><div className="story-copy"><h2 id="stories-title">Prices rose more slowly than expected</h2><p>A broad measure of what people pay for goods and services rose 0.3%, less than the 0.4% economists expected. Slower price growth reduces pressure on the Federal Reserve to raise interest rates again.</p><p className="why"><strong>Why it matters</strong> If price increases keep slowing, borrowing costs may eventually ease. That can reduce pressure on mortgages, car loans, credit cards, and the loans businesses use to hire or expand.</p><a className="source-link" href="https://www.bea.gov/news/current-releases" target="_blank" rel="noreferrer">U.S. Bureau of Economic Analysis (BEA) ↗</a></div><aside className="impact-box"><small>Broad price measure</small><strong>+0.3%</strong><p>Forecast: +0.4%</p><div className="impact-flow"><div><span>↓</span><b>Prices cool</b></div><i>↓</i><div><span>%</span><b>Rate pressure eases</b></div><i>↓</i><div><span>$</span><b>Loans may get cheaper</b></div></div></aside></div>
+          <div className="story-content"><div className="story-copy"><h2 id="stories-title">Prices rose more slowly than expected</h2><p>The Personal Consumption Expenditures (PCE) price index, the Federal Reserve’s preferred measure of prices paid for goods and services, rose 0.3% from the prior month compared with the 0.4% forecast. The smaller increase indicates that inflation pressure eased. Keep an eye on groceries, rent, and fuel because several months of slower increases would offer stronger evidence that household budgets are getting relief.</p><p className="why"><strong>Why it matters</strong> If price increases keep slowing, the Federal Reserve may feel less need to raise interest rates. That can eventually reduce pressure on mortgages, car loans, credit cards, and business loans.</p><a className="source-link" href="https://www.bea.gov/news/current-releases" target="_blank" rel="noreferrer">U.S. Bureau of Economic Analysis (BEA) ↗</a></div><ImpactWheel stat="PCE +0.3% vs +0.4% forecast" impact={[["↓","Price growth slows"],["%","Rate pressure eases"],["$","Borrowing may get cheaper"]]} /></div>
         </article>
 
         <div className="other-heading"><p className="section-label">Three other things that matter</p></div>
         <div className="secondary-list">
-          {secondary.map((story) => <article key={story.number}><div className="story-meta"><span>{story.number}</span><b>{story.label}</b></div><div className="story-content"><div className="story-copy"><h3>{story.title}</h3><p>{story.text}</p><p className="why"><strong>Why it matters</strong> {story.why}</p><a className="source-link" href={story.href} target="_blank" rel="noreferrer">{story.source} ↗</a></div><aside className="impact-box compact"><small>{story.stat}</small><div className="impact-flow">{story.impact.map(([icon,text],index) => <span className="impact-step" key={text}><span><i>{icon}</i><b>{text}</b></span>{index < story.impact.length - 1 && <em>↓</em>}</span>)}</div></aside></div></article>)}
+          {secondary.map((story) => <article key={story.number}><div className="story-meta"><span>{story.number}</span><b>{story.label}</b></div><div className="story-content"><div className="story-copy"><h3>{story.title}</h3><p>{story.text}</p><p className="why"><strong>Why it matters</strong> {story.why}</p><a className="source-link" href={story.href} target="_blank" rel="noreferrer">{story.source} ↗</a></div><ImpactWheel stat={story.stat} impact={story.impact} /></div></article>)}
         </div>
       </section>
 
