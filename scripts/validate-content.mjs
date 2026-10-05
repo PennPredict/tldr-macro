@@ -12,6 +12,8 @@ const viewSettings=read("config/view-settings.json");
 const edition=read("content/current-edition.json");
 const headlines=read("content/headlines.json");
 const terms=read("content/terms.json").terms;
+const snapshotConfig=read("config/snapshot.json");
+const extraMarkets=read("content/extra-markets.json");
 const allowed=new Set([...sourcePolicy.primary,...sourcePolicy.market_data,...sourcePolicy.company_evidence,...sourcePolicy.reporting,...sourcePolicy.approved_commentary]);
 const failures=[];
 const warnings=[];
@@ -37,7 +39,11 @@ const similarity=(a,b)=>{const one=words(a),two=words(b),shared=[...one].filter(
 const sentenceCount=text=>(text.match(/[.!?]+(?=\s|$)/g)||[]).length;
 const causalPattern=/\b(supported|pressured|lifted|pushed|weighed on|drove|boosted|hurt|helped|fueled)\b/gi;
 const checkCausality=(label,text,explains)=>{const matches=[...(text||"").matchAll(causalPattern)];const covered=(explains||[]).filter(item=>(text||"").includes(item.anchor_text)).length;const uncovered=Math.max(0,matches.length-covered);if(uncovered)warnings.push(`${label}: ${uncovered} causal verb${uncovered===1?"":"s"} may lack a matching explains entry`);if(uncovered>1)failures.push(`${label}: more than one causal verb lacks an explains entry`);};
-const now=Date.now();
+const editionReference=new Date(edition.updated_at).getTime();
+const wordCount=text=>(text||"").trim().split(/\s+/).filter(Boolean).length;
+if(wordCount(edition.summary)>22)failures.push(`Edition summary exceeds 22 words (${wordCount(edition.summary)})`);
+if(edition.summary.length>200)failures.push(`Edition summary exceeds 200 characters (${edition.summary.length})`);else if(edition.summary.length>140)warnings.push(`Edition summary exceeds 140 characters (${edition.summary.length})`);
+if(!Number.isInteger(snapshotConfig.chart_span_days)||snapshotConfig.chart_span_days<1)failures.push("Snapshot chart span must be a positive integer");
 
 for(const headline of headlines){
   for(const field of required)if(headline[field]===null||headline[field]===undefined||headline[field]===""||(Array.isArray(headline[field])&&!headline[field].length))failures.push(`${headline.headline||headline.topic_tag||"Headline"}: missing ${field}`);
@@ -59,7 +65,10 @@ for(const headline of headlines){
   if(headline.visual?.type!=="fact"&&!headline.visual?.data)failures.push(`${headline.headline}: non-fact visual requires data`);
   if(headline.visual?.type==="fact"){if(!headline.visual.fact_text)failures.push(`${headline.headline}: fact visual requires fact_text`);warnings.push(`${headline.headline}: fact card requires manual review before publish`);}
   if(similarity(headline.visual?.caption||"",headline.commentary||"")>.55)failures.push(`${headline.headline}: visual caption duplicates the commentary`);
-  if(headline.visual?.as_of){const visualAge=(now-new Date(headline.visual.as_of).getTime())/60000;if(visualAge<0)failures.push(`${headline.headline}: visual timestamp is in the future`);if(visualAge>integrity.freshness_minutes)failures.push(`${headline.headline}: visual data is ${Math.round(visualAge)} minutes old, beyond ${integrity.freshness_minutes} minutes`);}
+  if(wordCount(headline.visual?.title)>5)failures.push(`${headline.headline}: visual title exceeds 5 words`);
+  if(headline.visual?.type==="context"&&wordCount(headline.visual?.caption)>8)failures.push(`${headline.headline}: chart caption exceeds 8 words`);
+  for(const value of Object.values(headline.visual?.data||{}))if(Array.isArray(value))for(const label of value)if(typeof label==="string"&&wordCount(label)>3)failures.push(`${headline.headline}: visual label “${label}” exceeds 3 words`);
+  if(headline.visual?.as_of){const visualAge=(editionReference-new Date(headline.visual.as_of).getTime())/60000;if(visualAge<0)failures.push(`${headline.headline}: visual timestamp is later than the edition timestamp`);if(visualAge>integrity.freshness_minutes)failures.push(`${headline.headline}: visual data is ${Math.round(visualAge)} minutes older than the edition, beyond ${integrity.freshness_minutes} minutes`);}
   if(!Array.isArray(headline.views)||headline.views.length<2||headline.views.length>3)failures.push(`${headline.headline}: include 2 or 3 views`);
   const actualIds=(headline.views||[]).map(view=>view.view_id);
   const rankSorted=[...actualIds].sort((a,b)=>viewSettings.global_rank.indexOf(a)-viewSettings.global_rank.indexOf(b));
@@ -97,10 +106,11 @@ for(const market of edition.markets){
   const calculated=((market.value-market.prior_close)/market.prior_close)*100,threshold=integrity.max_move_percent[market.kind];
   if(Math.abs(calculated)>threshold)failures.push(`${market.name}: move ${calculated.toFixed(2)}% exceeds ${threshold}% threshold`);
   if(Math.abs(calculated-market.change_percent)>0.25)failures.push(`${market.name}: displayed change does not match value and prior close`);
-  const ageMinutes=(now-new Date(market.fetched_at).getTime())/60000;
-  if(ageMinutes<0)failures.push(`${market.name}: fetch time is in the future`);
-  if(ageMinutes>integrity.freshness_minutes)failures.push(`${market.name}: data is ${Math.round(ageMinutes)} minutes old, beyond ${integrity.freshness_minutes} minutes`);
+  const ageMinutes=(editionReference-new Date(market.fetched_at).getTime())/60000;
+  if(ageMinutes<0)failures.push(`${market.name}: fetch time is later than the edition timestamp`);
+  if(ageMinutes>integrity.freshness_minutes)failures.push(`${market.name}: data is ${Math.round(ageMinutes)} minutes older than the edition, beyond ${integrity.freshness_minutes} minutes`);
   if(!Array.isArray(market.sources)||market.sources.length<1||market.sources.length>3)failures.push(`${market.name}: include 1 to 3 sources`);
+  if(sentenceCount(market.description.replaceAll("U.S.","US"))>2||wordCount(market.description)>32)failures.push(`${market.name}: snapshot description must be at most 2 sentences and about 30 words`);
   const marketHosts=(market.sources||[]).map(source=>new URL(source.href).hostname.replace(/^www\./,""));
   if(!marketHosts.some(host=>[...sourcePolicy.primary,...sourcePolicy.market_data].some(domain=>host===domain||host.endsWith(`.${domain}`))))failures.push(`${market.name}: at least one source must be primary or official`);
   if(marketHosts.filter(host=>sourcePolicy.reporting.some(domain=>host===domain||host.endsWith(`.${domain}`))).length>1)failures.push(`${market.name}: no more than one news outlet is allowed`);
@@ -109,6 +119,11 @@ for(const market of edition.markets){
   checkCausality(market.name,market.description,market.explains);
   observations.push({name:market.name,value:market.value,prior_close:market.prior_close,change_percent:market.change_percent,source:market.data_source,source_url:market.sources?.[0]?.href,fetched_at:market.fetched_at,age_minutes:Math.max(0,Math.round(ageMinutes)),status:"checked"});
 }
+const visibleNames=edition.markets.map(item=>item.name==="Gold futures"?"Gold":item.name==="Expected volatility"?"Expected volatility (VIX)":item.name);
+const renderedNames=[...visibleNames].sort((a,b)=>snapshotConfig.priority_order.indexOf(a)-snapshotConfig.priority_order.indexOf(b));
+if(JSON.stringify(renderedNames)!==JSON.stringify(snapshotConfig.priority_order))failures.push(`Snapshot order must match config: ${snapshotConfig.priority_order.join(", ")}`);
+const extraProviderReport=[];
+for(const market of extraMarkets){if(market.available===false)continue;if(wordCount(market.description)>12)failures.push(`${market.name}: extra-market description exceeds 12 words`);if(!market.data_provider||!market.licensing_note)failures.push(`${market.name}: provider and licensing note are required`);if(!(market.sources||[]).length)failures.push(`${market.name}: primary source is required`);extraProviderReport.push({name:market.name,current_provider:market.data_provider,historical_provider:market.points?.length?market.data_provider:"No historical series published",licensing_note:market.licensing_note});}
 for(const headline of headlines)for(const source of headline.sources||[])allSources.push({card:headline.headline,...source});
 const domainCounts={};for(const source of allSources){const host=new URL(source.href).hostname.replace(/^www\./,"");domainCounts[host]=(domainCounts[host]||0)+1;}
 for(const [domain,count] of Object.entries(domainCounts))if(count/allSources.length>.25)failures.push(`Source diversity: ${domain} accounts for ${count} of ${allSources.length} links, above 25%`);
@@ -120,7 +135,8 @@ for(const event of edition.calendar){
   if(!event.time||!event.prior||!event.consensus||!event.href)failures.push(`${event.title}: incomplete calendar metadata`);
 }
 
-const report={generated_at:new Date().toISOString(),edition_date:edition.edition_date,policy_version:sourcePolicy.policy_version,status:failures.length?"failed":"passed",freshness_limit_minutes:integrity.freshness_minutes,calendar_last_verified:integrity.calendar_last_verified,headline_checks:{count:headlines.length,views:headlines.reduce((sum,item)=>sum+item.views.length,0),definitions:Object.keys(lensDefinitions)},source_diversity:{total_links:allSources.length,counts_by_domain:domainCounts,snapshot_cards_by_domain:snapshotDomainCards},fact_cards:headlines.filter(item=>item.visual.type==="fact").map(item=>({headline:item.headline,source:item.visual.source,date:item.visual.as_of})),observations,warnings,failures};
+const providerLicensing=[...edition.markets.map(item=>({name:item.name,current_provider:item.data_source,historical_provider:"Existing edition series; redistribution terms require provider review",licensing_note:"Official or approved-source links are published; raw historical datasets are not redistributed."})),...extraProviderReport];
+const report={generated_at:new Date().toISOString(),edition_date:edition.edition_date,policy_version:sourcePolicy.policy_version,status:failures.length?"failed":"passed",freshness_limit_minutes:integrity.freshness_minutes,calendar_last_verified:integrity.calendar_last_verified,snapshot_checks:{summary_words:wordCount(edition.summary),summary_characters:edition.summary.length,priority_order:renderedNames,chart_span_days:snapshotConfig.chart_span_days,axis_labels:2},headline_checks:{count:headlines.length,views:headlines.reduce((sum,item)=>sum+item.views.length,0),definitions:Object.keys(lensDefinitions)},source_diversity:{total_links:allSources.length,counts_by_domain:domainCounts,snapshot_cards_by_domain:snapshotDomainCards},data_provider_and_licensing:providerLicensing,fact_cards:headlines.filter(item=>item.visual.type==="fact").map(item=>({headline:item.headline,source:item.visual.source,date:item.visual.as_of})),observations,warnings,failures};
 fs.mkdirSync(path.join(root,"reports"),{recursive:true});
 fs.writeFileSync(path.join(root,"reports/build-report.json"),JSON.stringify(report,null,2)+"\n");
 if(failures.length){console.error("Content policy validation failed:\n"+failures.map(item=>`- ${item}`).join("\n"));process.exit(1);}

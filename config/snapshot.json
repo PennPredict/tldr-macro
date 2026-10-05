@@ -1,0 +1,12 @@
+{
+  "chart_span_days": 30,
+  "priority_order": [
+    "S&P 500",
+    "10-year Treasury yield",
+    "Brent crude oil",
+    "U.S. Dollar Index",
+    "Gold",
+    "Expected volatility (VIX)"
+  ],
+  "extras": {"crypto": false}
+}

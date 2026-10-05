@@ -1,10 +1,24 @@
 {
-  "generated_at": "2026-10-05T18:53:22.069Z",
+  "generated_at": "2026-10-05T22:03:14.093Z",
   "edition_date": "2026-10-05",
   "policy_version": 1,
   "status": "passed",
   "freshness_limit_minutes": 360,
   "calendar_last_verified": "2026-10-05",
+  "snapshot_checks": {
+    "summary_words": 17,
+    "summary_characters": 118,
+    "priority_order": [
+      "S&P 500",
+      "10-year Treasury yield",
+      "Brent crude oil",
+      "U.S. Dollar Index",
+      "Gold",
+      "Expected volatility (VIX)"
+    ],
+    "chart_span_days": 30,
+    "axis_labels": 2
+  },
   "headline_checks": {
     "count": 4,
     "views": 11,
@@ -44,6 +58,62 @@
       "cboe.com": 1
     }
   },
+  "data_provider_and_licensing": [
+    {
+      "name": "S&P 500",
+      "current_provider": "S&P Dow Jones Indices",
+      "historical_provider": "Existing edition series; redistribution terms require provider review",
+      "licensing_note": "Official or approved-source links are published; raw historical datasets are not redistributed."
+    },
+    {
+      "name": "10-year Treasury yield",
+      "current_provider": "U.S. Treasury",
+      "historical_provider": "Existing edition series; redistribution terms require provider review",
+      "licensing_note": "Official or approved-source links are published; raw historical datasets are not redistributed."
+    },
+    {
+      "name": "Brent crude oil",
+      "current_provider": "U.S. Energy Information Administration",
+      "historical_provider": "Existing edition series; redistribution terms require provider review",
+      "licensing_note": "Official or approved-source links are published; raw historical datasets are not redistributed."
+    },
+    {
+      "name": "Gold futures",
+      "current_provider": "CME Group",
+      "historical_provider": "Existing edition series; redistribution terms require provider review",
+      "licensing_note": "Official or approved-source links are published; raw historical datasets are not redistributed."
+    },
+    {
+      "name": "U.S. Dollar Index",
+      "current_provider": "ICE",
+      "historical_provider": "Existing edition series; redistribution terms require provider review",
+      "licensing_note": "Official or approved-source links are published; raw historical datasets are not redistributed."
+    },
+    {
+      "name": "Expected volatility",
+      "current_provider": "Cboe",
+      "historical_provider": "Existing edition series; redistribution terms require provider review",
+      "licensing_note": "Official or approved-source links are published; raw historical datasets are not redistributed."
+    },
+    {
+      "name": "Nasdaq Composite",
+      "current_provider": "Nasdaq",
+      "historical_provider": "No historical series published",
+      "licensing_note": "Linked official display data; verify redistribution rights before storing historical values."
+    },
+    {
+      "name": "Dow Jones Industrial Average",
+      "current_provider": "S&P Dow Jones Indices",
+      "historical_provider": "No historical series published",
+      "licensing_note": "Index values are proprietary; link to the official page and review licensing before redistribution."
+    },
+    {
+      "name": "Russell 2000",
+      "current_provider": "FTSE Russell",
+      "historical_provider": "No historical series published",
+      "licensing_note": "Index values are proprietary; link to the official page and review licensing before redistribution."
+    }
+  ],
   "fact_cards": [],
   "observations": [
     {
@@ -54,7 +124,7 @@
       "source": "S&P Dow Jones Indices",
       "source_url": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/",
       "fetched_at": "2026-10-05T10:10:00-04:00",
-      "age_minutes": 283,
+      "age_minutes": 0,
       "status": "checked"
     },
     {
@@ -65,7 +135,7 @@
       "source": "U.S. Treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
       "fetched_at": "2026-10-05T10:10:00-04:00",
-      "age_minutes": 283,
+      "age_minutes": 0,
       "status": "checked"
     },
     {
@@ -76,7 +146,7 @@
       "source": "U.S. Energy Information Administration",
       "source_url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
       "fetched_at": "2026-10-05T10:10:00-04:00",
-      "age_minutes": 283,
+      "age_minutes": 0,
       "status": "checked"
     },
     {
@@ -87,7 +157,7 @@
       "source": "CME Group",
       "source_url": "https://www.cmegroup.com/markets/metals/precious/gold.html",
       "fetched_at": "2026-10-05T09:11:00-04:00",
-      "age_minutes": 342,
+      "age_minutes": 59,
       "status": "checked"
     },
     {
@@ -98,7 +168,7 @@
       "source": "ICE",
       "source_url": "https://www.theice.com/products/194/US-Dollar-Index-Futures",
       "fetched_at": "2026-10-05T09:11:00-04:00",
-      "age_minutes": 342,
+      "age_minutes": 59,
       "status": "checked"
     },
     {
@@ -109,7 +179,7 @@
       "source": "Cboe",
       "source_url": "https://www.cboe.com/tradable_products/vix/",
       "fetched_at": "2026-10-05T09:11:00-04:00",
-      "age_minutes": 342,
+      "age_minutes": 59,
       "status": "checked"
     }
   ],

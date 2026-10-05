@@ -1,0 +1,13 @@
+[
+  {"group":"Stocks","name":"Nasdaq Composite","display_value":"26,871.60","display_change":"+0.04%","change_percent":0.04,"description":"Tracks thousands of Nasdaq-listed companies, with substantial technology exposure.","points":[],"fetched_at":"2026-10-05T10:10:00-04:00","frequency":"Daily","data_provider":"Nasdaq","licensing_note":"Linked official display data; verify redistribution rights before storing historical values.","sources":[{"name":"Nasdaq Composite","href":"https://www.nasdaq.com/market-activity/index/comp"}]},
+  {"group":"Stocks","name":"Dow Jones Industrial Average","display_value":"50,926.56","display_change":"+0.04%","change_percent":0.04,"description":"Tracks 30 large, established U.S. companies.","points":[],"fetched_at":"2026-10-05T10:10:00-04:00","frequency":"Daily","data_provider":"S&P Dow Jones Indices","licensing_note":"Index values are proprietary; link to the official page and review licensing before redistribution.","sources":[{"name":"S&P Dow Jones Indices","href":"https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/"}]},
+  {"group":"Stocks","name":"Russell 2000","display_value":"2,806.63","display_change":"+0.35%","change_percent":0.35,"description":"Tracks smaller publicly traded U.S. companies.","points":[],"fetched_at":"2026-10-05T10:10:00-04:00","frequency":"Daily","data_provider":"FTSE Russell","licensing_note":"Index values are proprietary; link to the official page and review licensing before redistribution.","sources":[{"name":"FTSE Russell","href":"https://www.lseg.com/en/ftse-russell/indices/russell-us"}]},
+  {"group":"Rates","name":"2-year Treasury yield","available":false,"reason":"No validated current series was available for this edition."},
+  {"group":"Rates","name":"10-year minus 2-year yield spread","available":false,"reason":"No validated current series was available for this edition."},
+  {"group":"Rates","name":"30-year fixed mortgage rate","available":false,"frequency":"Weekly","reason":"Weekly series was not current for this morning edition."},
+  {"group":"Currencies","name":"Euro to dollar","available":false,"reason":"No validated current series was available for this edition."},
+  {"group":"Currencies","name":"Dollar to yen","available":false,"reason":"No validated current series was available for this edition."},
+  {"group":"Commodities","name":"WTI crude oil","available":false,"reason":"No validated current series was available for this edition."},
+  {"group":"Commodities","name":"Natural gas","available":false,"reason":"No validated current series was available for this edition."},
+  {"group":"Commodities","name":"Copper","available":false,"reason":"No validated current series was available for this edition."}
+]
