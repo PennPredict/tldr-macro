@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-05T22:21:49.684Z",
+  "generated_at": "2026-10-05T22:35:05.061Z",
   "edition_date": "2026-10-05",
   "policy_version": 1,
   "status": "passed",
   "freshness_limit_minutes": 360,
   "calendar_last_verified": "2026-10-05",
   "snapshot_checks": {
-    "summary_words": 17,
-    "summary_characters": 118,
+    "summary_words": 14,
+    "summary_characters": 102,
     "priority_order": [
       "S&P 500",
       "10-year Treasury yield",
