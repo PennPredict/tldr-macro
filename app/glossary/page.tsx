@@ -1,6 +1,7 @@
 import { Footer, Header } from "../SiteChrome";
 
 const terms=[
+  ["agent","Agent","A person or institution that makes economic decisions, such as a household, a company, a market maker, or a central bank."],
   ["yield","Yield","The income an investment produces relative to its price. For Treasury securities, yields also reflect the return investors demand to lend the U.S. government money."],
   ["basis-point","Basis point","One-hundredth of a percentage point. A move from 5.28% to 5.29% is one basis point."],
   ["pmi","Purchasing Managers’ Index (PMI)","A survey-based indicator of business activity. A reading above 50 generally indicates expansion, while a reading below 50 generally indicates contraction."],

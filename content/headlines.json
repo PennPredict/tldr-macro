@@ -1,63 +1,55 @@
 [
   {
     "topic_tag":"jobs_and_wages",
-    "display_tag":"Jobs",
-    "headline":"Hiring slowed, giving policymakers more room to observe",
-    "summary":"Employer payroll growth weakened relative to August and the recent average, while unemployment edged higher. The figures point to cooler labor demand without, on their own, establishing a broad contraction.",
-    "everyday":"A slower job market can reduce competition for workers and soften wage pressure. Applicants may see fewer openings, while employers may find hiring less difficult.",
-    "how_it_works":["Hiring demand cools","Competition for workers eases","Wage pressure may soften","Price pressure may ease"],
-    "data_series":["Nonfarm payroll employment","Unemployment rate","Average hourly earnings"],
+    "headline":"Hiring cooled, giving policymakers room",
+    "commentary":"Nonfarm payrolls, the monthly count of jobs on U.S. employer payrolls that workers, businesses, and policymakers use to track hiring, grew more slowly than in August and the recent average. Unemployment also edged higher, pointing to cooler labor demand without establishing a broad contraction.",
+    "defines":[{"term":"Nonfarm payrolls","definition":"The monthly count of jobs on U.S. employer payrolls.","used_by_and_why":"Workers, businesses, and policymakers use it to track hiring demand."}],
+    "visual":{"type":"jobs","data":{"august_jobs":133000,"september_jobs":29000,"average_12m_jobs":45000},"as_of":"2026-10-05T10:10:00-04:00","source":"U.S. Bureau of Labor Statistics","caption":"Monthly hiring slowed below its recent reference.","alt":"Payroll growth was 133,000 jobs in August 2026 and 29,000 jobs in September 2026, compared with a 12-month average of 45,000 jobs."},
+    "views":[
+      {"view_id":"household","body":"Job seekers may encounter fewer openings, while people already employed may experience less rapid wage growth. Retirees and households on fixed incomes can feel labor-market changes mainly through prices rather than paychecks.","keep_wondering":"Is the slowdown concentrated in a few industries or spreading across the labor market?"},
+      {"view_id":"policy","body":"Federal Reserve officials weigh employment conditions alongside inflation under the dual mandate. Softer hiring can reduce one source of price pressure, while a sharper slowdown can create a different risk to the employment goal.","keep_wondering":"How might policymakers weigh cooler hiring against rising prices in services?"}
+    ],
     "sources":[{"name":"U.S. Bureau of Labor Statistics","href":"https://www.bls.gov/news.release/archives/empsit_10022026.htm"}],
-    "data_note":"Monthly payroll estimates are revised as more employer responses arrive, so one release is an incomplete view.",
-    "lenses":[
-      {"lens_id":"household","body":"Job seekers may encounter fewer openings, while people already employed may experience less rapid wage growth. Retirees and households on fixed incomes can feel labor-market changes mainly through prices rather than paychecks.","keep_wondering":"Is the slowdown concentrated in a few industries or spreading across the labor market?"},
-      {"lens_id":"policy","body":"Federal Reserve officials weigh employment conditions alongside inflation under the dual mandate. Softer hiring can reduce one source of price pressure, while a sharper slowdown can create a different risk to the employment goal.","keep_wondering":"How might policymakers weigh cooler hiring against rising prices in services?"}
-    ]
+    "data_note":"Monthly payroll estimates are revised as more employer responses arrive, so one release is an incomplete view."
   },
   {
     "topic_tag":"interest_rates_and_yields",
-    "display_tag":"Rates",
     "headline":"Borrowing costs remain historically high",
-    "summary":"The 10-year Treasury yield remained near a multi-decade high even after weaker hiring data. Investors continued to weigh inflation, government borrowing, and the path of short-term rates.",
-    "everyday":"Higher benchmark yields can raise financing costs for homes, cars, and business expansion. Savers can receive more income on some new deposits and bonds, so borrowers and savers experience the same move differently.",
-    "how_it_works":["Treasury yields stay elevated","Lenders price loans higher","Monthly payments can rise","Spending and expansion may cool"],
-    "data_series":["10-year Treasury yield","Mortgage rates","Federal funds target range"],
-    "sources":[{"name":"The Associated Press","href":"https://apnews.com/article/stock-markets-jobs-fed-rates-inflation-f83cf147deaf5a2361b1ae7eee74a627"}],
-    "lenses":[
-      {"lens_id":"business","body":"Borrowers face higher financing costs, while banks and other lenders receive more interest if credit losses remain contained. Companies with near-term refinancing needs face a different constraint from firms funded with long-term fixed-rate debt.","keep_wondering":"Which businesses are most exposed to loans that reset at current rates?"},
-      {"lens_id":"dealer","body":"Dealers quote prices to buyers and sellers while managing the risk of holding bond inventory. Rapid yield changes can make that inventory harder to price and can widen the gap between bid and ask prices when liquidity thins.","keep_wondering":"Are trading conditions orderly even as yields remain elevated?"},
-      {"lens_id":"policy","body":"Monetary policymakers weigh whether current rates restrain demand enough to address inflation without weakening employment excessively. Fiscal authorities influence the supply of government debt through deficits and issuance, so monetary and fiscal forces can pull market rates in different directions.","keep_wondering":"How much of the yield reflects expected policy rates versus the supply of government debt?"}
-    ]
+    "commentary":"The 10-year Treasury yield, the return investors demand to lend to the U.S. government for a decade and a benchmark lenders use to price mortgages and business loans, remained near a multi-decade high. Investors continued to weigh inflation, government borrowing, and the path of short-term rates.",
+    "defines":[{"term":"10-year Treasury yield","definition":"The return investors demand to lend to the U.S. government for a decade.","used_by_and_why":"Lenders use it as a benchmark when pricing mortgages and business loans."}],
+    "visual":{"type":"rates","data":{"yield_percent":5.29},"as_of":"2026-10-05T10:10:00-04:00","source":"The Associated Press","caption":"One government-bond benchmark can influence several borrowing costs.","alt":"A 5.29 percent 10-year Treasury yield branches to mortgage rates, car-loan rates, and business funding."},
+    "views":[
+      {"view_id":"business","body":"Borrowers face higher financing costs, while banks and other lenders receive more interest if credit losses remain contained. Companies with near-term refinancing needs face a different constraint from firms funded with long-term fixed-rate debt.","keep_wondering":"Which businesses are most exposed to loans that reset at current rates?"},
+      {"view_id":"policy","body":"Monetary policymakers weigh whether current rates restrain demand enough to address inflation without weakening employment excessively. Fiscal authorities influence the supply of government debt through deficits and issuance, so monetary and fiscal forces can pull market rates in different directions.","keep_wondering":"How much of the yield reflects expected policy rates versus the supply of government debt?"},
+      {"view_id":"dealer","body":"Dealers quote prices to buyers and sellers while managing the risk of holding bond inventory. Rapid yield changes can make that inventory harder to price and can widen the gap between bid and ask prices when liquidity thins.","keep_wondering":"Are trading conditions orderly even as yields remain elevated?"}
+    ],
+    "sources":[{"name":"The Associated Press","href":"https://apnews.com/article/stock-markets-jobs-fed-rates-inflation-f83cf147deaf5a2361b1ae7eee74a627"}]
   },
   {
     "topic_tag":"oil_and_energy",
-    "display_tag":"Energy",
-    "headline":"Oil eased, but household-cost risk remains",
-    "summary":"Brent crude pulled back after a volatile morning, while uncertainty around supply routes kept energy risk in focus. A single session does not reveal whether the pressure will persist.",
-    "everyday":"Oil affects gasoline, flights, shipping, fertilizer, plastics, and packaging. Consumers and fuel-intensive firms can face higher costs, while producers and exporting regions can receive more revenue.",
-    "how_it_works":["Supply uncertainty increases","Crude prices can rise","Fuel and shipping cost more","Goods and travel can cost more"],
-    "data_series":["Brent crude spot price","Retail gasoline prices","Petroleum inventories"],
-    "sources":[{"name":"The Associated Press","href":"https://apnews.com/article/stock-markets-jobs-fed-rates-inflation-f83cf147deaf5a2361b1ae7eee74a627"},{"name":"U.S. Energy Information Administration","href":"https://www.eia.gov/petroleum/"}],
-    "lenses":[
-      {"lens_id":"household","body":"Drivers and frequent travelers can feel energy changes quickly, while renters may encounter them later through delivery and utility costs. Households with long commutes face a different exposure from people who rely on public transportation.","keep_wondering":"Which household expenses would reflect an energy shock first?"},
-      {"lens_id":"business","body":"Airlines, shippers, farms, and manufacturers use fuel or petroleum-based inputs, while energy producers sell into the same market. A company can absorb a cost, pass part of it to customers, or adjust production depending on demand and pricing power.","keep_wondering":"Which industries can absorb higher energy costs without changing prices or output?"},
-      {"lens_id":"global","body":"Oil-importing countries send more income abroad when energy costs rise, while exporters receive more revenue. Currency moves and shipping routes can make the local effect differ from the dollar price alone.","keep_wondering":"How differently would the same oil move reach importing and exporting economies?"}
-    ]
+    "headline":"Oil eased, but costs remain elevated",
+    "commentary":"Brent crude, the global benchmark price for oil that producers, refiners, and airlines use to set contracts and plan costs, pulled back after a volatile morning. Uncertainty around supply routes kept energy costs in focus.",
+    "defines":[{"term":"Brent crude","definition":"The global benchmark price for oil.","used_by_and_why":"Producers, refiners, and airlines use it to set contracts and plan costs."}],
+    "visual":{"type":"energy","data":{"brent_dollars_per_barrel":101.94},"as_of":"2026-10-05T10:10:00-04:00","source":"The Associated Press","caption":"Fuel costs can travel through delivery networks and production.","alt":"Brent crude at 101 dollars and 94 cents per barrel flows through transport costs to household goods and travel."},
+    "views":[
+      {"view_id":"household","body":"Drivers and frequent travelers can feel energy changes quickly, while renters may encounter them later through delivery and utility costs. Households with long commutes face a different exposure from people who rely on public transportation.","keep_wondering":"Which household expenses would reflect an energy shock first?"},
+      {"view_id":"business","body":"Airlines, shippers, farms, and manufacturers use fuel or petroleum-based inputs, while energy producers sell into the same market. A company can absorb a cost, pass part of it to customers, or adjust production depending on demand and pricing power.","keep_wondering":"Which industries can absorb higher energy costs without changing prices or output?"},
+      {"view_id":"global","body":"Oil-importing countries send more income abroad when energy costs rise, while exporters receive more revenue. Currency moves and shipping routes can make the local effect differ from the dollar price alone.","keep_wondering":"How differently would the same oil move reach importing and exporting economies?"}
+    ],
+    "sources":[{"name":"The Associated Press","href":"https://apnews.com/article/stock-markets-jobs-fed-rates-inflation-f83cf147deaf5a2361b1ae7eee74a627"},{"name":"U.S. Energy Information Administration","href":"https://www.eia.gov/petroleum/"}]
   },
   {
     "topic_tag":"inflation_reports",
-    "display_tag":"Services",
-    "headline":"Business activity grew, with a price warning",
-    "summary":"The services survey remained in expansion territory but fell short of forecasts. Respondents also reported faster growth in the prices their businesses paid.",
-    "everyday":"Services include restaurants, insurance, health care, travel, and many local businesses. Continued demand can support jobs, while rising business costs can reach customers if firms pass them through.",
-    "how_it_works":["Service demand continues","Businesses use more labor and inputs","Input costs rise","Customer prices may respond"],
-    "data_series":["ISM Services PMI","Services Prices Index","Services Employment Index"],
+    "headline":"Services grew, but prices paid rose",
+    "commentary":"The Institute for Supply Management Services Purchasing Managers’ Index (ISM Services PMI), a survey that service businesses and policymakers use to track whether activity is expanding or contracting, remained in expansion territory but missed forecasts. Respondents also reported faster growth in the prices their businesses paid.",
+    "defines":[{"term":"ISM Services PMI","definition":"A survey showing whether activity across service businesses is expanding or contracting.","used_by_and_why":"Service businesses and policymakers use it to track demand, employment, and price pressure."}],
+    "visual":{"type":"services","data":{"growth_months":27,"input_prices_direction":"Rising"},"as_of":"2026-10-05T10:10:00-04:00","source":"Institute for Supply Management","caption":"Continued activity arrived with renewed input-cost pressure.","alt":"The services report showed 27 months of activity growth alongside rising input-price pressure."},
+    "views":[
+      {"view_id":"household","body":"Customers can encounter service inflation in recurring bills such as insurance, rent-related services, and health care. Workers in expanding service industries may see steadier hours even while households face higher prices.","keep_wondering":"Which service prices are changing most persistently for households?"},
+      {"view_id":"business","body":"Service firms balance customer demand against wages, rent, software, insurance, and financing costs. Strong demand can support revenue, while limited pricing power can compress margins when input costs rise.","keep_wondering":"Are firms raising prices, accepting lower margins, or changing staffing plans?"},
+      {"view_id":"policy","body":"Federal Reserve officials compare service-price pressure with employment and broader inflation data. One survey adds evidence but does not settle whether demand and prices are moving toward the policy goals.","keep_wondering":"Do other inflation measures confirm the price pressure reported in the survey?"}
+    ],
     "sources":[{"name":"Institute for Supply Management","href":"https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/"}],
-    "data_note":"The PMI is a survey of direction and breadth, not a direct count of total economic output.",
-    "lenses":[
-      {"lens_id":"household","body":"Customers can encounter service inflation in recurring bills such as insurance, rent-related services, and health care. Workers in expanding service industries may see steadier hours even while households face higher prices.","keep_wondering":"Which service prices are changing most persistently for households?"},
-      {"lens_id":"policy","body":"Federal Reserve officials compare service-price pressure with employment and broader inflation data. One survey adds evidence but does not settle whether demand and prices are moving toward the policy goals.","keep_wondering":"Do other inflation measures confirm the price pressure reported in the survey?"},
-      {"lens_id":"business","body":"Service firms balance customer demand against wages, rent, software, insurance, and financing costs. Strong demand can support revenue, while limited pricing power can compress margins when input costs rise.","keep_wondering":"Are firms raising prices, accepting lower margins, or changing staffing plans?"}
-    ]
+    "data_note":"The PMI is a survey of direction and breadth, not a direct count of total economic output."
   }
 ]

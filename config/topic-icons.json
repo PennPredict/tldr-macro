@@ -1,0 +1,11 @@
+{
+  "jobs_and_wages":"briefcase",
+  "interest_rates_and_yields":"percent",
+  "oil_and_energy":"fuel",
+  "inflation_reports":"store",
+  "dollar_and_foreign_markets":"globe",
+  "fed_meeting":"landmark",
+  "market_volatility":"trending-up",
+  "budget_tariffs_taxes":"receipt",
+  "fallback":"circle"
+}
