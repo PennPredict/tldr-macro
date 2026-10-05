@@ -1,10 +1,21 @@
 {
-  "generated_at": "2026-10-05T16:08:40.424Z",
+  "generated_at": "2026-10-05T17:07:48.906Z",
   "edition_date": "2026-10-05",
   "policy_version": 1,
   "status": "passed",
   "freshness_limit_minutes": 360,
   "calendar_last_verified": "2026-10-05",
+  "headline_checks": {
+    "count": 4,
+    "lenses": 11,
+    "definitions": [
+      "household",
+      "business",
+      "dealer",
+      "policy",
+      "global"
+    ]
+  },
   "observations": [
     {
       "name": "S&P 500",
@@ -14,7 +25,7 @@
       "source": "The Associated Press",
       "source_url": "https://apnews.com/article/stock-markets-jobs-fed-rates-inflation-f83cf147deaf5a2361b1ae7eee74a627",
       "fetched_at": "2026-10-05T10:10:00-04:00",
-      "age_minutes": 119,
+      "age_minutes": 178,
       "status": "checked"
     },
     {
@@ -25,7 +36,7 @@
       "source": "The Associated Press",
       "source_url": "https://apnews.com/article/stock-markets-jobs-fed-rates-inflation-f83cf147deaf5a2361b1ae7eee74a627",
       "fetched_at": "2026-10-05T10:10:00-04:00",
-      "age_minutes": 119,
+      "age_minutes": 178,
       "status": "checked"
     },
     {
@@ -36,7 +47,7 @@
       "source": "The Associated Press",
       "source_url": "https://apnews.com/article/stock-markets-jobs-fed-rates-inflation-f83cf147deaf5a2361b1ae7eee74a627",
       "fetched_at": "2026-10-05T10:10:00-04:00",
-      "age_minutes": 119,
+      "age_minutes": 178,
       "status": "checked"
     },
     {
@@ -47,7 +58,7 @@
       "source": "Charles Schwab",
       "source_url": "https://www.schwab.com/learn/story/stock-market-update-open",
       "fetched_at": "2026-10-05T09:11:00-04:00",
-      "age_minutes": 178,
+      "age_minutes": 237,
       "status": "checked"
     },
     {
@@ -58,7 +69,7 @@
       "source": "Charles Schwab",
       "source_url": "https://www.schwab.com/learn/story/stock-market-update-open",
       "fetched_at": "2026-10-05T09:11:00-04:00",
-      "age_minutes": 178,
+      "age_minutes": 237,
       "status": "checked"
     },
     {
@@ -69,7 +80,7 @@
       "source": "Charles Schwab",
       "source_url": "https://www.schwab.com/learn/story/stock-market-update-open",
       "fetched_at": "2026-10-05T09:11:00-04:00",
-      "age_minutes": 178,
+      "age_minutes": 237,
       "status": "checked"
     }
   ],

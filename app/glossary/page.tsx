@@ -11,5 +11,8 @@ const terms=[
   ["dxy","U.S. Dollar Index (DXY)","An index comparing the U.S. dollar with a basket of major currencies."],
   ["futures","Futures contract","An agreement to buy or sell an asset at a specified future date. A futures price can differ from the current spot price."],
   ["spot","Spot price","The price for buying or selling an asset for immediate delivery."],
+  ["dealer","Dealer","A firm that stands ready to buy or sell securities from its own inventory. Dealers help connect buyers and sellers while managing the risk of holding those securities."],
+  ["liquidity","Liquidity","How easily an asset can be bought or sold near its current price. A liquid market can usually absorb larger trades with smaller price changes."],
+  ["dual-mandate","Dual mandate","The Federal Reserve’s goals of maximum employment and stable prices. Policymakers weigh both goals when setting monetary policy."],
 ];
 export default function Glossary(){return <main className="shell"><Header/><article className="prose-page"><p className="eyebrow">Glossary</p><h1>Plain-English market terms.</h1><p>Definitions are educational and intentionally concise. Source releases may use more precise technical language.</p><dl className="glossary-list">{terms.map(([id,term,definition])=><div id={id} key={id}><dt>{term}</dt><dd>{definition}</dd></div>)}</dl></article><Footer/></main>}

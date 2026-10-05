@@ -1,0 +1,7 @@
+{
+  "household": {"name":"Household lens","icon":"⌂","whats_different":"The view from the consumer's side of the table: paychecks, prices, and borrowing.","asks":"What does this do to my costs?"},
+  "business": {"name":"Business lens","icon":"▦","whats_different":"The view from the seller's side: costs, demand, hiring, and financing.","asks":"What does this do to our margins?"},
+  "dealer": {"name":"Dealer lens","icon":"⇄","whats_different":"The view from firms that make markets and trade with others: trading risk and liquidity.","asks":"How easy is it to trade, and how risky is it to hold?"},
+  "policy": {"name":"Policy lens","icon":"⚖","whats_different":"The view from policymakers, both the Fed for monetary policy and Treasury and Congress for fiscal policy.","asks":"Are goals being met, and what are the trade-offs?"},
+  "global": {"name":"Global lens","icon":"◎","whats_different":"The view from outside the U.S., including currencies and trade.","asks":"How does this look to other countries?"}
+}

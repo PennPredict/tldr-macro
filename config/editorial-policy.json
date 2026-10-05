@@ -4,7 +4,7 @@
   "audience": "Readers with no assumed finance or economics background",
   "style": {
     "banned_words": ["because"],
-    "banned_phrases": ["you should", "consider buying", "consider selling", "good time to", "safe bet", "investment opportunity", "avoid this", "price target", "guaranteed return", "will cause", "will rise", "will fall", "undervalued", "overvalued"],
+    "banned_phrases": ["you should", "consider buying", "consider selling", "good time to", "safe bet", "opportunity", "avoid", "we expect", "bullish", "bearish", "buy rating", "sell rating", "hold rating", "price target", "guaranteed return", "will cause", "will rise", "will fall", "undervalued", "overvalued"],
     "banned_characters": ["—"],
     "avoid_repeating_numbers_already_in_visuals": true,
     "define_acronyms_on_first_use": true,

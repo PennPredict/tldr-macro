@@ -1,0 +1,10 @@
+{
+  "jobs_and_wages":["household","policy"],
+  "inflation_reports":["household","policy","business"],
+  "interest_rates_and_yields":["business","dealer","policy"],
+  "oil_and_energy":["household","business","global"],
+  "dollar_and_foreign_markets":["global","business"],
+  "fed_meeting":["policy","dealer"],
+  "market_volatility":["dealer","household"],
+  "budget_tariffs_taxes":["policy","business","global"]
+}

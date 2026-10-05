@@ -2,6 +2,9 @@
 
 ## 2026-10-05
 
+- Added a structured five-lens system for households, businesses, market dealers, policymakers, and the global economy.
+- Added collapsed, accessible lens controls, separate viewpoint explanations, per-card expand and collapse controls, and open-ended questions.
+- Added structured headline schema, topic-to-lens mapping, overlap warnings, and manual-review flags for numerical or historical claims.
 - Added a neutral “Today in one line” summary.
 - Anchored market charts to the prior close and applied color by direction only.
 - Added timestamps, separate data and commentary attribution, and plain-English metric explanations.
