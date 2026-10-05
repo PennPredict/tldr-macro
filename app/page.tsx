@@ -1,116 +1,42 @@
 import Sparkline from "./Sparkline";
 
 const markets = [
-  { name:"S&P 500", value:"4,357.2", move:"+0.43%", description:"The Standard & Poor’s 500 (S&P 500), a gauge of large U.S. companies, rose 0.43% as inflation cooled; lower expected interest rates could continue to support stock prices.", tone:"up", href:"https://fred.stlouisfed.org/series/SP500", range:"Day range 4,321–4,365", points:[64,72,59,67,48,54,35,43,28,31,22,26] },
-  { name:"10Y Treasury yield", value:"5.18%", move:"−0.11%", description:"The 10-year Treasury yield, a benchmark for mortgages and business loans, fell to 5.18% after softer inflation; a further decline could gradually reduce borrowing pressure.", tone:"down", href:"https://fred.stlouisfed.org/series/DGS10", range:"Day range 5.16–5.29%", points:[27,23,31,20,28,38,36,45,43,54,58,53] },
-  { name:"WTI crude oil", value:"$86.40", move:"+1.30%", description:"West Texas Intermediate (WTI), the main U.S. crude-oil benchmark, rose 1.30% amid supply uncertainty; sustained gains could raise fuel, shipping, and household costs.", tone:"risk", href:"https://fred.stlouisfed.org/series/DCOILWTICO", range:"Day range $84.92–$86.71", points:[67,61,70,53,48,55,39,46,32,38,29,34] },
-  { name:"Gold", value:"$2,380", move:"+0.60%", description:"Gold, an asset often used to store value during uncertainty, rose 0.60% as geopolitical risks persisted; continued demand could indicate investors remain cautious despite rising stocks.", tone:"up", href:"https://fred.stlouisfed.org/series/GOLDAMGBD228NLBM", range:"Day range $2,351–$2,386", points:[56,47,52,38,44,49,35,41,27,33,24,29] },
-  { name:"U.S. Dollar Index", value:"104.2", move:"−0.18%", description:"The U.S. Dollar Index (DXY), which compares the dollar with major currencies, fell 0.18% as rate expectations eased; a softer dollar can reduce pressure on U.S. exporters and emerging markets.", tone:"down", href:"https://fred.stlouisfed.org/series/DTWEXBGS", range:"Day range 103.9–104.6", points:[104.5,104.4,104.45,104.3,104.35,104.2,104.28,104.12,104.18,104.05,104.1,104.02] },
-  { name:"VIX volatility", value:"17.8", move:"−3.20%", description:"The Cboe Volatility Index (VIX), a measure of expected stock-market swings, fell 3.20% as inflation fears eased; a lower reading suggests investors are demanding less protection against near-term turbulence.", tone:"caution", href:"https://fred.stlouisfed.org/series/VIXCLS", range:"Day range 17.5–18.9", points:[18.8,18.6,18.7,18.3,18.45,18.1,18.2,17.95,18.05,17.8,17.9,17.8] },
+  { name:"S&P 500", value:"7,747.7", move:"+0.3%", description:"The Standard & Poor’s 500 (S&P 500), a gauge of large U.S. companies, rose 0.3% and remained close to a record. Slower hiring helped stocks, though high oil prices and borrowing costs still threaten company profits.", tone:"up", href:"https://apnews.com/article/stock-markets-jobs-fed-rates-inflation-f83cf147deaf5a2361b1ae7eee74a627", source:"Associated Press", range:"Morning range 7,728 to 7,758", points:[42,38,34,37,30,27,25,21,24,17,14,15] },
+  { name:"10Y Treasury yield", value:"5.29%", move:"+0.01 pt", description:"The 10-year Treasury yield, a benchmark that influences mortgages and business loans, edged up from 5.28% Friday. A yield near its highest since 2002 keeps monthly loan payments and company financing expensive.", tone:"risk", href:"https://apnews.com/article/stock-markets-jobs-fed-rates-inflation-f83cf147deaf5a2361b1ae7eee74a627", source:"Associated Press", range:"Friday 5.28% · Now 5.29%", points:[46,44,47,42,40,41,36,34,37,31,29,30] },
+  { name:"Brent crude oil", value:"$101.94", move:"−0.3%", description:"Brent crude, a global oil-price benchmark, slipped 0.3% after trading between $100 and $103. Oil remains expensive enough to raise the cost of gasoline, flights, shipping, packaging, and groceries.", tone:"risk", href:"https://apnews.com/article/stock-markets-jobs-fed-rates-inflation-f83cf147deaf5a2361b1ae7eee74a627", source:"Associated Press", range:"Morning range $100 to $103", points:[32,23,28,18,14,22,31,26,35,42,38,43] },
+  { name:"Gold", value:"$4,189", move:"+0.7%", description:"Gold, an asset investors often use during uncertainty, rose about 0.7%. The gain suggests demand for protection remains firm even as stocks trade near records.", tone:"up", href:"https://www.schwab.com/learn/story/stock-market-update-open", source:"Charles Schwab", range:"Morning quote · Dec. futures", points:[53,50,43,46,38,31,35,27,23,18,20,14] },
+  { name:"U.S. Dollar Index", value:"102.23", move:"+0.3%", description:"The U.S. Dollar Index (DXY), which compares the dollar with major currencies, strengthened about 0.3%. A firmer dollar can make imports cheaper for Americans but reduce the overseas value of U.S. companies’ sales.", tone:"caution", href:"https://www.schwab.com/learn/story/stock-market-update-open", source:"Charles Schwab", range:"Previous close 101.92", points:[48,51,45,41,43,36,34,29,32,24,20,18] },
+  { name:"Expected volatility", value:"16.15", move:"+5.5%", description:"The Cboe Volatility Index (VIX), a measure of expected stock-market swings, rose about 5.5%. The level is not extreme, but the jump shows investors are buying more protection against a sudden decline.", tone:"caution", href:"https://www.schwab.com/learn/story/stock-market-update-open", source:"Charles Schwab", range:"Previous close 15.31", points:[49,43,46,38,31,35,28,23,26,18,14,17] },
 ];
 
 const secondary = [
-  {
-    number: "02", label: "Growth", title: "The economy grew more than first estimated",
-    stat: "Total output: revised higher", impact: [["↗", "People and businesses spend"], ["$", "Companies sell more"], ["+", "Jobs can stay supported"]],
-    text: "Gross domestic product (GDP), the total value of goods and services produced in the country, was revised higher relative to the government’s first estimate. The revision indicates that household and business spending was stronger than first calculated. Keep an eye on hiring and wages, since stronger production can support jobs but may also keep interest rates high if demand pushes prices upward.",
-    why: "GDP shows whether the economy is producing and selling more or less. Growth can protect jobs and income, while growth that runs too hot can keep borrowing costs elevated.",
-    source: "U.S. Bureau of Economic Analysis (BEA)", href: "https://www.bea.gov/data/gdp/gross-domestic-product",
-  },
-  {
-    number: "03", label: "Markets", title: "Stocks rose as borrowing pressure eased",
-    stat: "Broad stocks: +0.4%", impact: [["↓", "Government yields fall"], ["%", "Money costs less to borrow"], ["↗", "Stocks get support"]],
-    text: "The Standard & Poor’s 500 (S&P 500), an index tracking large U.S. companies, rose 0.4%, while the technology-heavy Nasdaq rose 0.7%. Both gained as the 10-year Treasury yield fell relative to its recent high, indicating that investors expected slightly less pressure from borrowing costs. Keep an eye on mortgage rates and business investment, which often respond to the same interest-rate moves.",
-    why: "Lower borrowing rates can make expansion cheaper for companies. They can also make future profits more valuable today, which often supports stock prices.",
-    source: "Federal Reserve Economic Data (FRED)", href: "https://fred.stlouisfed.org/categories/32255",
-  },
-  {
-    number: "04", label: "Energy", title: "Higher oil prices could reach household budgets",
-    stat: "U.S. crude oil: $86.40", impact: [["▲", "Oil stays expensive"], ["→", "Transport costs rise"], ["$", "Fuel and goods may cost more"]],
-    text: "West Texas Intermediate (WTI), the main U.S. crude-oil price benchmark, rose 1.3% to $86.40 relative to the previous close as supply uncertainty increased. The move indicates that traders saw a greater risk of tighter oil supplies. Keep an eye on gasoline, airline tickets, delivery fees, and grocery prices because fuel costs move through transportation and production networks.",
-    why: "Oil is used to move goods and make products such as plastics and packaging. Higher costs can reach gas stations and store shelves, leaving households with less money for other purchases.",
-    source: "U.S. Energy Information Administration (EIA)", href: "https://www.eia.gov/petroleum/",
-  },
+  { number:"02", label:"Rates", title:"Borrowing costs remain historically high", stat:"10-year yield: 5.29%", impact:[["%","Bond yields stay high"],["$","Loans stay expensive"],["↓","Spending may cool"]], text:"The 10-year Treasury yield, the return investors demand to lend the U.S. government money for a decade, rose to 5.29% from 5.28% Friday and remained near its highest level since 2002. The move indicates that investors still see inflation and interest-rate risk despite weaker hiring. Keep an eye on mortgage rates, credit-card costs, and business investment because many borrowing rates take their cue from government-bond yields.", why:"Higher yields make homes, cars, and company expansion more expensive to finance. That can slow spending and hiring, including at young technology companies that rely on borrowed money.", source:"Associated Press", href:"https://apnews.com/article/stock-markets-jobs-fed-rates-inflation-f83cf147deaf5a2361b1ae7eee74a627" },
+  { number:"03", label:"Energy", title:"Oil eased, but household-cost risk remains", stat:"Brent oil: $101.94", impact:[["▲","Oil stays expensive"],["→","Transport costs rise"],["$","Goods may cost more"]], text:"Brent crude oil, a benchmark for oil sold around the world, fell 0.3% to $101.94 after swinging between $100 and $103 Monday morning. The pullback offers slight relief, but uncertainty around the war with Iran keeps supply risk elevated. Keep an eye on gasoline, airline tickets, delivery fees, and grocery prices because fuel costs move through transportation and production networks.", why:"Oil powers transportation and is used to make products such as plastics and packaging. When oil stays expensive, those costs can reach gas stations and store shelves.", source:"Associated Press", href:"https://apnews.com/article/stock-markets-jobs-fed-rates-inflation-f83cf147deaf5a2361b1ae7eee74a627" },
+  { number:"04", label:"Services", title:"Business activity grew, with a price warning", stat:"27 months of expansion", impact:[["↗","Services keep growing"],["▲","Input prices accelerate"],["%","Fed stays cautious"]], text:"The Institute for Supply Management (ISM) Services Purchasing Managers’ Index, a survey of activity at businesses such as banks, retailers, hospitals, and restaurants, showed growth for a 27th straight month, though the expansion was weaker than forecast. The survey also found that prices paid by service businesses rose faster. Keep an eye on restaurant bills, insurance, travel, and other service prices because persistent increases could keep interest rates high.", why:"Services make up most U.S. economic activity. Continued growth supports jobs and sales, but faster input costs can be passed to customers and slow progress on inflation.", source:"Institute for Supply Management", href:"https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/" },
 ];
 
-function ImpactWheel({ stat, impact }: { stat: string; impact: string[][] }) {
-  return <aside className="impact-box"><small>How the pieces interact</small><div className="impact-wheel"><div className="wheel-center">{stat}</div>{impact.map(([icon,text],index) => <div className={`wheel-node node-${index + 1}`} key={text}><i>{icon}</i><b>{text}</b></div>)}<span className="wheel-arrow arrow-1">↔</span><span className="wheel-arrow arrow-2">↔</span><span className="wheel-arrow arrow-3">↔</span></div><p className="feedback-note">These effects can reinforce or weaken one another.</p></aside>;
-}
+function ImpactWheel({ stat, impact }: { stat:string; impact:string[][] }) { return <aside className="impact-box"><small>How the pieces interact</small><div className="impact-wheel"><div className="wheel-center">{stat}</div>{impact.map(([icon,text],index)=><div className={`wheel-node node-${index+1}`} key={text}><i>{icon}</i><b>{text}</b></div>)}<span className="wheel-arrow arrow-1">↔</span><span className="wheel-arrow arrow-2">↔</span><span className="wheel-arrow arrow-3">↔</span></div><p className="feedback-note">These effects can reinforce or weaken one another.</p></aside>; }
 
 const notable = [
-  ["Jobs", "Job openings fell. Fewer openings can reduce workers’ leverage to change jobs or negotiate pay.", "U.S. Bureau of Labor Statistics", "https://www.bls.gov/jlt/"],
-  ["Global rates", "Government-bond yields remained high in Japan and Europe, keeping borrowing costs elevated beyond the United States.", "Bank for International Settlements", "https://www.bis.org/statistics/"],
-  ["Earnings", "Upcoming company reports will test whether sales and profits justify current stock prices.", "U.S. Securities and Exchange Commission", "https://www.sec.gov/edgar/search/"],
-  ["U.S. dollar", "The dollar changed little. A stronger dollar makes imports cheaper for Americans but U.S. products costlier overseas.", "Federal Reserve Economic Data", "https://fred.stlouisfed.org/categories/15"],
+  ["Wage growth slowed", "Average hourly earnings rose 0.1% in September and 3.0% over the year. Slower wage growth can ease inflation pressure, but it also means workers’ paychecks are growing less quickly.", "U.S. Bureau of Labor Statistics", "https://www.bls.gov/news.release/archives/empsit_10022026.htm"],
+  ["Earlier hiring was revised lower", "The government reduced its July and August job estimates by a combined 60,000. Revisions matter because the first report is incomplete and the economy may have been weaker than it initially appeared.", "U.S. Bureau of Labor Statistics", "https://www.bls.gov/news.release/archives/empsit_10022026.htm"],
+  ["Global markets split", "Japanese stocks rose while French shares fell as investors weighed stronger technology hopes against France’s debt and budget concerns. Overseas moves can affect U.S. companies, currencies, and investor confidence.", "Associated Press", "https://apnews.com/article/stock-markets-jobs-fed-rates-inflation-f83cf147deaf5a2361b1ae7eee74a627"],
+  ["Deal activity moved individual stocks", "PTC and RXO jumped after takeover announcements. Acquisitions can sharply reprice one company even when the broader market barely moves, showing why company-specific news still matters.", "Associated Press", "https://apnews.com/article/stock-markets-jobs-fed-rates-inflation-f83cf147deaf5a2361b1ae7eee74a627"],
 ];
 
 const events = [
-  {
-    date: "OCT 3", title: "Jobs report", question: "Is the labor market continuing to cool?",
-    hot: "More jobs than forecast → rate pressure may rise → Treasury yields may rise.",
-    cool: "Fewer jobs than forecast → rate pressure may ease → Treasury yields may fall.",
-    source: "BLS schedule", href: "https://www.bls.gov/schedule/news_release/empsit.htm",
-  },
-  {
-    date: "OCT 10", title: "Consumer Price Index (CPI)", question: "Are household prices still cooling?",
-    hot: "Higher inflation than forecast → rate-cut expectations may fall → stocks may face pressure.",
-    cool: "Lower inflation than forecast → rate pressure may ease → stocks may receive support.",
-    source: "BLS schedule", href: "https://www.bls.gov/schedule/news_release/cpi.htm",
-  },
-  {
-    date: "OCT 15", title: "Energy outlook", question: "Could supply uncertainty keep oil elevated?",
-    hot: "Higher oil → transportation and production costs may rise → inflation risk increases.",
-    cool: "Lower oil → supply-chain pressure may ease → households and businesses get relief.",
-    source: "EIA outlook", href: "https://www.eia.gov/outlooks/steo/",
-  },
+  { date:"OCT 14", title:"Consumer Price Index (CPI)", question:"Did the prices households pay accelerate in September?", hot:"Higher inflation than forecast → rate pressure may rise → loans and stocks may face pressure.", cool:"Lower inflation than forecast → rate pressure may ease → borrowers and stocks may get relief.", source:"BLS release calendar", href:"https://www.bls.gov/schedule/2026/10_sched.htm" },
+  { date:"OCT 15", title:"Producer Price Index (PPI)", question:"Did the prices businesses pay rise before reaching consumers?", hot:"Higher business costs → companies may raise prices → household inflation could follow.", cool:"Lower business costs → profit pressure may ease → fewer price increases may reach shoppers.", source:"BLS release calendar", href:"https://www.bls.gov/schedule/2026/10_sched.htm" },
+  { date:"OCT 27–28", title:"Federal Reserve meeting", question:"Will officials raise rates again or wait for clearer inflation evidence?", hot:"A rate increase → borrowing gets tighter → spending and stock valuations may cool.", cool:"No increase → borrowers get breathing room → officials may still warn that inflation is too high.", source:"Federal Reserve calendar", href:"https://www.federalreserve.gov/newsevents/calendar.htm" },
 ];
 
 export default function Home() {
-  return (
-    <main className="shell">
-      <header className="topbar">
-        <div><a className="wordmark" href="#top"><strong>TL;DR</strong> Macro</a><p>Market intelligence for everyone.</p></div>
-        <div className="edition"><span>Sample edition</span><time>Sep 30, 2026</time></div>
-      </header>
-
-      <section className="market-section" id="top" aria-labelledby="market-title">
-        <div className="section-heading market-heading"><h2 id="market-title">Market Snapshot</h2></div>
-        <div className="market-grid">
-          {markets.map((market) => (
-            <article className="market" key={market.name}>
-              <h3>{market.name}</h3><div className="market-value"><strong>{market.value}</strong><b className={market.tone}>{market.move}</b></div>
-              <Sparkline points={market.points} tone={market.tone as "up" | "down" | "risk" | "caution"} />
-              <div className="chart-meta"><span>Open</span><b>{market.range}</b><span>Now</span></div>
-              <p>{market.description}</p><a href={market.href} target="_blank" rel="noreferrer">FRED ↗</a>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="stories" aria-labelledby="stories-title">
-        <p className="section-label">The big story</p>
-        <article className="lead-story">
-          <div className="story-meta"><span>01</span><b>Inflation</b></div>
-          <div className="story-content"><div className="story-copy"><h2 id="stories-title">Prices rose more slowly than expected</h2><p>The Personal Consumption Expenditures (PCE) price index, the Federal Reserve’s preferred measure of prices paid for goods and services, rose 0.3% from the prior month compared with the 0.4% forecast. The smaller increase indicates that inflation pressure eased. Keep an eye on groceries, rent, and fuel because several months of slower increases would offer stronger evidence that household budgets are getting relief.</p><p className="why"><strong>Why it matters</strong> If price increases keep slowing, the Federal Reserve may feel less need to raise interest rates. That can eventually reduce pressure on mortgages, car loans, credit cards, and business loans.</p><a className="source-link" href="https://www.bea.gov/news/current-releases" target="_blank" rel="noreferrer">U.S. Bureau of Economic Analysis (BEA) ↗</a></div><ImpactWheel stat="PCE +0.3% vs +0.4% forecast" impact={[["↓","Price growth slows"],["%","Rate pressure eases"],["$","Borrowing may get cheaper"]]} /></div>
-        </article>
-
-        <div className="other-heading"><p className="section-label">Three other things that matter</p></div>
-        <div className="secondary-list">
-          {secondary.map((story) => <article key={story.number}><div className="story-meta"><span>{story.number}</span><b>{story.label}</b></div><div className="story-content"><div className="story-copy"><h3>{story.title}</h3><p>{story.text}</p><p className="why"><strong>Why it matters</strong> {story.why}</p><a className="source-link" href={story.href} target="_blank" rel="noreferrer">{story.source} ↗</a></div><ImpactWheel stat={story.stat} impact={story.impact} /></div></article>)}
-        </div>
-      </section>
-
-      <section className="notable" aria-labelledby="notable-title">
-        <div className="section-heading"><h2 id="notable-title">Noteworthy Updates</h2></div>
-        <div className="notable-list">{notable.map(([title, text, source, href]) => <article key={title}><h3>{title}</h3><p>{text}</p><a href={href} target="_blank" rel="noreferrer">{source} ↗</a></article>)}</div>
-      </section>
-
-      <section className="watch" aria-labelledby="watch-title">
-        <div className="section-heading"><h2 id="watch-title">What to Watch For</h2><p>Compare the result with expectations, not only the prior number.</p></div>
-        <div className="event-list">{events.map((event) => <article key={event.date}><time>{event.date}</time><div className="event-main"><h3>{event.title}</h3><p>{event.question}</p></div><div className="scenario hotter"><b>Hotter / stronger</b><p>{event.hot}</p></div><div className="scenario cooler"><b>Cooler / weaker</b><p>{event.cool}</p></div><a href={event.href} target="_blank" rel="noreferrer">{event.source} ↗</a></article>)}</div>
-      </section>
-
-      <footer><span><strong>Concision leaves out nuance.</strong> Use the source links for full releases, methodology, revisions, and context.</span><span>Educational context, not investment advice.</span></footer>
-    </main>
-  );
+  return <main className="shell">
+    <header className="topbar"><div><a className="wordmark" href="#top"><strong>TL;DR</strong> Macro</a><p>Market intelligence for everyone.</p></div><div className="edition"><span>Morning edition</span><time>Oct 5, 2026 · 10:10 AM ET</time></div></header>
+    <section className="market-section" id="top" aria-labelledby="market-title"><div className="section-heading market-heading"><h2 id="market-title">Market Snapshot</h2><p>Monday morning prices. Markets move throughout the day.</p></div><div className="market-grid">{markets.map(m=><article className="market" key={m.name}><h3>{m.name}</h3><div className="market-value"><strong>{m.value}</strong><b className={m.tone}>{m.move}</b></div><Sparkline points={m.points} tone={m.tone as "up"|"down"|"risk"|"caution"}/><div className="chart-meta"><span>Open</span><b>{m.range}</b><span>Now</span></div><p>{m.description}</p><a href={m.href} target="_blank" rel="noreferrer">{m.source} ↗</a></article>)}</div></section>
+    <section className="stories" aria-labelledby="stories-title"><p className="section-label">The big story</p><article className="lead-story"><div className="story-meta"><span>01</span><b>Jobs</b></div><div className="story-content"><div className="story-copy"><h2 id="stories-title">Hiring slowed, giving the Fed room to wait</h2><p>Nonfarm payroll employment, the monthly count of jobs on U.S. employer payrolls, increased by 29,000 in September, down from August’s revised 133,000 and below the 12-month average of 45,000. The unemployment rate edged up from 4.1% to 4.2%. Slower hiring can reduce inflation pressure, but it may also mean job seekers face fewer opportunities. Keep an eye on weekly unemployment claims and October hiring to see whether this is a gentle cooldown or broader weakness.</p><p className="why"><strong>Why it matters</strong> Less competition for workers can reduce pressure on wages and prices, giving the Federal Reserve more reason to hold interest rates steady. The tradeoff is that weaker job growth can slow household income and spending.</p><a className="source-link" href="https://www.bls.gov/news.release/archives/empsit_10022026.htm" target="_blank" rel="noreferrer">U.S. Bureau of Labor Statistics ↗</a></div><ImpactWheel stat="Payrolls +29K · unemployment 4.2%" impact={[["↓","Hiring slows"],["%","Fed pressure eases"],["$","Borrowers may get relief"]]}/></div></article><div className="other-heading"><p className="section-label">Three other things that matter</p></div><div className="secondary-list">{secondary.map(s=><article key={s.number}><div className="story-meta"><span>{s.number}</span><b>{s.label}</b></div><div className="story-content"><div className="story-copy"><h3>{s.title}</h3><p>{s.text}</p><p className="why"><strong>Why it matters</strong> {s.why}</p><a className="source-link" href={s.href} target="_blank" rel="noreferrer">{s.source} ↗</a></div><ImpactWheel stat={s.stat} impact={s.impact}/></div></article>)}</div></section>
+    <section className="notable" aria-labelledby="notable-title"><div className="section-heading"><h2 id="notable-title">Noteworthy Updates</h2></div><div className="notable-list">{notable.map(([title,text,source,href])=><article key={title}><h3>{title}</h3><p>{text}</p><a href={href} target="_blank" rel="noreferrer">{source} ↗</a></article>)}</div></section>
+    <section className="watch" aria-labelledby="watch-title"><div className="section-heading"><h2 id="watch-title">What to Watch For</h2><p>Compare each result with forecasts and the prior reading. Markets often react to the surprise, not merely the number.</p></div><div className="event-list">{events.map(e=><article key={e.date}><time>{e.date}</time><div className="event-main"><h3>{e.title}</h3><p>{e.question}</p></div><div className="scenario hotter"><b>Hotter / tighter</b><p>{e.hot}</p></div><div className="scenario cooler"><b>Cooler / easier</b><p>{e.cool}</p></div><a href={e.href} target="_blank" rel="noreferrer">{e.source} ↗</a></article>)}</div></section>
+    <footer><span><strong>Concision leaves out nuance.</strong> Use the source links for full releases, methodology, revisions, and context.</span><span>Educational context, not investment advice.</span></footer>
+  </main>;
 }
