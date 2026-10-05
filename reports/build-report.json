@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T22:35:05.061Z",
+  "generated_at": "2026-10-05T23:00:03.867Z",
   "edition_date": "2026-10-05",
   "policy_version": 1,
   "status": "passed",
@@ -97,21 +97,63 @@
     },
     {
       "name": "Nasdaq Composite",
-      "current_provider": "Nasdaq",
-      "historical_provider": "No historical series published",
-      "licensing_note": "Linked official display data; verify redistribution rights before storing historical values."
+      "current_provider": "Nasdaq via FRED",
+      "historical_provider": "Nasdaq via FRED",
+      "licensing_note": "FRED republishes the Nasdaq series; citation and linked source retained."
     },
     {
       "name": "Dow Jones Industrial Average",
-      "current_provider": "S&P Dow Jones Indices",
-      "historical_provider": "No historical series published",
-      "licensing_note": "Index values are proprietary; link to the official page and review licensing before redistribution."
+      "current_provider": "S&P Dow Jones Indices via FRED",
+      "historical_provider": "S&P Dow Jones Indices via FRED",
+      "licensing_note": "Index data are proprietary; citation and linked FRED source retained."
     },
     {
       "name": "Russell 2000",
       "current_provider": "FTSE Russell",
       "historical_provider": "No historical series published",
-      "licensing_note": "Index values are proprietary; link to the official page and review licensing before redistribution."
+      "licensing_note": "Index values are proprietary; no historical series republished here."
+    },
+    {
+      "name": "2-year Treasury yield",
+      "current_provider": "Federal Reserve via FRED",
+      "historical_provider": "Federal Reserve via FRED",
+      "licensing_note": "Federal Reserve public data; FRED citation retained."
+    },
+    {
+      "name": "10-year minus 2-year yield spread",
+      "current_provider": "Federal Reserve Bank of St. Louis",
+      "historical_provider": "Federal Reserve Bank of St. Louis",
+      "licensing_note": "Calculated from Treasury public data; FRED citation retained."
+    },
+    {
+      "name": "30-year fixed mortgage rate",
+      "current_provider": "Freddie Mac via FRED",
+      "historical_provider": "Freddie Mac via FRED",
+      "licensing_note": "Copyright Freddie Mac; reprinted by FRED with permission and citation."
+    },
+    {
+      "name": "Euro to dollar",
+      "current_provider": "Federal Reserve via FRED",
+      "historical_provider": "Federal Reserve via FRED",
+      "licensing_note": "Federal Reserve public exchange-rate data; FRED citation retained."
+    },
+    {
+      "name": "Dollar to yen",
+      "current_provider": "Federal Reserve via FRED",
+      "historical_provider": "Federal Reserve via FRED",
+      "licensing_note": "Federal Reserve public exchange-rate data; FRED citation retained."
+    },
+    {
+      "name": "WTI crude oil",
+      "current_provider": "U.S. Energy Information Administration via FRED",
+      "historical_provider": "U.S. Energy Information Administration via FRED",
+      "licensing_note": "U.S. government source series; FRED citation retained."
+    },
+    {
+      "name": "Natural gas",
+      "current_provider": "U.S. Energy Information Administration via FRED",
+      "historical_provider": "U.S. Energy Information Administration via FRED",
+      "licensing_note": "U.S. government source series; FRED citation retained."
     }
   ],
   "fact_cards": [],
