@@ -2,9 +2,9 @@
 
 import { useEffect, useRef } from "react";
 
-const colors = { up: "#48dca0", down: "#ff7474", risk: "#f2a35f", caution: "#7cb9eb" };
+const colors = { up: "#48dca0", down: "#ff7474" };
 
-export default function Sparkline({ points, tone }: { points: number[]; tone: keyof typeof colors }) {
+export default function Sparkline({ points, direction, label }: { points: number[]; direction: keyof typeof colors; label: string }) {
   const canvas = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -39,8 +39,8 @@ export default function Sparkline({ points, tone }: { points: number[]; tone: ke
       context.setLineDash([]);
 
       const gradient = context.createLinearGradient(0, 0, 0, height);
-      gradient.addColorStop(0, `${colors[tone]}2b`);
-      gradient.addColorStop(1, `${colors[tone]}00`);
+      gradient.addColorStop(0, `${colors[direction]}2b`);
+      gradient.addColorStop(1, `${colors[direction]}00`);
       context.beginPath();
       context.moveTo(coords[0].x, height);
       coords.forEach(({ x, y }) => context.lineTo(x, y));
@@ -51,7 +51,7 @@ export default function Sparkline({ points, tone }: { points: number[]; tone: ke
 
       context.beginPath();
       coords.forEach(({ x, y }, index) => index ? context.lineTo(x, y) : context.moveTo(x, y));
-      context.strokeStyle = colors[tone];
+      context.strokeStyle = colors[direction];
       context.lineWidth = 2;
       context.lineJoin = "round";
       context.lineCap = "round";
@@ -61,7 +61,7 @@ export default function Sparkline({ points, tone }: { points: number[]; tone: ke
     const observer = new ResizeObserver(draw);
     observer.observe(element);
     return () => observer.disconnect();
-  }, [points, tone]);
+  }, [points, direction]);
 
-  return <canvas ref={canvas} className="sparkline" aria-hidden="true" />;
+  return <canvas ref={canvas} className="sparkline" role="img" aria-label={label} />;
 }

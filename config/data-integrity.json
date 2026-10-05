@@ -1,0 +1,11 @@
+{
+  "freshness_minutes": 360,
+  "max_move_percent": {
+    "equity_index": 10,
+    "yield": 20,
+    "commodity": 15,
+    "currency": 5,
+    "volatility": 35
+  },
+  "calendar_last_verified": "2026-10-05"
+}

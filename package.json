@@ -7,8 +7,9 @@
   },
   "scripts": {
     "dev": "vinext dev",
-    "build": "vinext build",
-    "build:pages": "next build",
+    "validate:content": "node scripts/validate-content.mjs",
+    "build": "npm run validate:content && vinext build",
+    "build:pages": "npm run validate:content && next build",
     "start": "vinext start",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next"
   },

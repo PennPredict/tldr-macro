@@ -1,0 +1,29 @@
+{
+  "policy_version": 1,
+  "principle": "Primary evidence first. Independent reporting adds context. Every market figure includes an as-of time.",
+  "primary": [
+    "bls.gov", "bea.gov", "federalreserve.gov", "newyorkfed.org", "treasury.gov",
+    "census.gov", "eia.gov", "sec.gov", "cbo.gov", "congress.gov", "whitehouse.gov",
+    "ustr.gov", "dol.gov", "commerce.gov", "fdic.gov", "occ.gov", "ncua.gov",
+    "ismworld.org", "conference-board.org", "nfib.com", "umich.edu",
+    "imf.org", "worldbank.org", "oecd.org", "bis.org", "wto.org", "iea.org", "opec.org",
+    "ecb.europa.eu", "bankofengland.co.uk", "boj.or.jp", "bankofcanada.ca", "rba.gov.au",
+    "pboc.gov.cn", "ec.europa.eu", "ons.gov.uk"
+  ],
+  "market_data": [
+    "cboe.com", "cmegroup.com", "theice.com", "nyse.com", "nasdaq.com",
+    "spglobal.com", "msci.com", "lseg.com", "finra.org", "fred.stlouisfed.org"
+  ],
+  "company_evidence": ["sec.gov"],
+  "reporting": [
+    "reuters.com", "bloomberg.com", "wsj.com", "ft.com", "apnews.com",
+    "nytimes.com", "washingtonpost.com", "economist.com", "barrons.com",
+    "foreignaffairs.com", "politico.com", "semafor.com"
+  ],
+  "approved_commentary": ["schwab.com"],
+  "rules": {
+    "major_story": ["primary_source", "independent_context_when_needed", "direct_market_source_when_price_is_material"],
+    "reject": ["unapproved_domain", "missing_as_of_time", "unsupported_causality", "stale_market_price", "unresolved_source_conflict"],
+    "discovery_only": ["social_media", "news_aggregators", "personal_newsletters", "message_boards", "anonymous_data_sites", "ai_summaries"]
+  }
+}

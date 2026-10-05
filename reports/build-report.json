@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-10-05T16:08:40.424Z",
+  "edition_date": "2026-10-05",
+  "policy_version": 1,
+  "status": "passed",
+  "freshness_limit_minutes": 360,
+  "calendar_last_verified": "2026-10-05",
+  "observations": [
+    {
+      "name": "S&P 500",
+      "value": 7747.7,
+      "prior_close": 7722.72,
+      "change_percent": 0.3,
+      "source": "The Associated Press",
+      "source_url": "https://apnews.com/article/stock-markets-jobs-fed-rates-inflation-f83cf147deaf5a2361b1ae7eee74a627",
+      "fetched_at": "2026-10-05T10:10:00-04:00",
+      "age_minutes": 119,
+      "status": "checked"
+    },
+    {
+      "name": "10-year Treasury yield",
+      "value": 5.29,
+      "prior_close": 5.28,
+      "change_percent": 0.19,
+      "source": "The Associated Press",
+      "source_url": "https://apnews.com/article/stock-markets-jobs-fed-rates-inflation-f83cf147deaf5a2361b1ae7eee74a627",
+      "fetched_at": "2026-10-05T10:10:00-04:00",
+      "age_minutes": 119,
+      "status": "checked"
+    },
+    {
+      "name": "Brent crude oil",
+      "value": 101.94,
+      "prior_close": 102.25,
+      "change_percent": -0.3,
+      "source": "The Associated Press",
+      "source_url": "https://apnews.com/article/stock-markets-jobs-fed-rates-inflation-f83cf147deaf5a2361b1ae7eee74a627",
+      "fetched_at": "2026-10-05T10:10:00-04:00",
+      "age_minutes": 119,
+      "status": "checked"
+    },
+    {
+      "name": "Gold futures",
+      "value": 4189,
+      "prior_close": 4160,
+      "change_percent": 0.7,
+      "source": "Charles Schwab",
+      "source_url": "https://www.schwab.com/learn/story/stock-market-update-open",
+      "fetched_at": "2026-10-05T09:11:00-04:00",
+      "age_minutes": 178,
+      "status": "checked"
+    },
+    {
+      "name": "U.S. Dollar Index",
+      "value": 102.23,
+      "prior_close": 101.92,
+      "change_percent": 0.3,
+      "source": "Charles Schwab",
+      "source_url": "https://www.schwab.com/learn/story/stock-market-update-open",
+      "fetched_at": "2026-10-05T09:11:00-04:00",
+      "age_minutes": 178,
+      "status": "checked"
+    },
+    {
+      "name": "Expected volatility",
+      "value": 16.15,
+      "prior_close": 15.31,
+      "change_percent": 5.5,
+      "source": "Charles Schwab",
+      "source_url": "https://www.schwab.com/learn/story/stock-market-update-open",
+      "fetched_at": "2026-10-05T09:11:00-04:00",
+      "age_minutes": 178,
+      "status": "checked"
+    }
+  ],
+  "warnings": [],
+  "failures": []
+}

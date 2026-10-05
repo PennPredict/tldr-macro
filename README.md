@@ -17,6 +17,10 @@ TL;DR Macro explains what moved, why it matters, and what comes next without ass
 - Market reaction is separated from interpretation.
 - State that concision omits nuance and link readers to the complete release and methodology.
 - Published corrections remain visible.
+- Only domains in `config/approved-sources.json` may appear in a published edition.
+- The build checks source domains, banned prose, and editorial constraints before deployment.
+
+See [SOURCES.md](SOURCES.md) for the source hierarchy and change policy.
 
 ## GitHub Pages launch
 
