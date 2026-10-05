@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T18:21:40.978Z",
+  "generated_at": "2026-10-05T18:53:22.069Z",
   "edition_date": "2026-10-05",
   "policy_version": 1,
   "status": "passed",
@@ -16,16 +16,45 @@
       "global"
     ]
   },
+  "source_diversity": {
+    "total_links": 18,
+    "counts_by_domain": {
+      "spglobal.com": 1,
+      "apnews.com": 3,
+      "home.treasury.gov": 2,
+      "fred.stlouisfed.org": 1,
+      "eia.gov": 2,
+      "cmegroup.com": 2,
+      "schwab.com": 2,
+      "theice.com": 1,
+      "cboe.com": 1,
+      "bls.gov": 1,
+      "federalreserve.gov": 1,
+      "ismworld.org": 1
+    },
+    "snapshot_cards_by_domain": {
+      "spglobal.com": 1,
+      "apnews.com": 1,
+      "home.treasury.gov": 1,
+      "fred.stlouisfed.org": 1,
+      "eia.gov": 1,
+      "cmegroup.com": 2,
+      "schwab.com": 2,
+      "theice.com": 1,
+      "cboe.com": 1
+    }
+  },
+  "fact_cards": [],
   "observations": [
     {
       "name": "S&P 500",
       "value": 7747.7,
       "prior_close": 7722.72,
       "change_percent": 0.3,
-      "source": "The Associated Press",
-      "source_url": "https://apnews.com/article/stock-markets-jobs-fed-rates-inflation-f83cf147deaf5a2361b1ae7eee74a627",
+      "source": "S&P Dow Jones Indices",
+      "source_url": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/",
       "fetched_at": "2026-10-05T10:10:00-04:00",
-      "age_minutes": 252,
+      "age_minutes": 283,
       "status": "checked"
     },
     {
@@ -33,10 +62,10 @@
       "value": 5.29,
       "prior_close": 5.28,
       "change_percent": 0.19,
-      "source": "The Associated Press",
-      "source_url": "https://apnews.com/article/stock-markets-jobs-fed-rates-inflation-f83cf147deaf5a2361b1ae7eee74a627",
+      "source": "U.S. Treasury",
+      "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
       "fetched_at": "2026-10-05T10:10:00-04:00",
-      "age_minutes": 252,
+      "age_minutes": 283,
       "status": "checked"
     },
     {
@@ -44,10 +73,10 @@
       "value": 101.94,
       "prior_close": 102.25,
       "change_percent": -0.3,
-      "source": "The Associated Press",
-      "source_url": "https://apnews.com/article/stock-markets-jobs-fed-rates-inflation-f83cf147deaf5a2361b1ae7eee74a627",
+      "source": "U.S. Energy Information Administration",
+      "source_url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
       "fetched_at": "2026-10-05T10:10:00-04:00",
-      "age_minutes": 252,
+      "age_minutes": 283,
       "status": "checked"
     },
     {
@@ -55,10 +84,10 @@
       "value": 4189,
       "prior_close": 4160,
       "change_percent": 0.7,
-      "source": "Charles Schwab",
-      "source_url": "https://www.schwab.com/learn/story/stock-market-update-open",
+      "source": "CME Group",
+      "source_url": "https://www.cmegroup.com/markets/metals/precious/gold.html",
       "fetched_at": "2026-10-05T09:11:00-04:00",
-      "age_minutes": 311,
+      "age_minutes": 342,
       "status": "checked"
     },
     {
@@ -66,10 +95,10 @@
       "value": 102.23,
       "prior_close": 101.92,
       "change_percent": 0.3,
-      "source": "Charles Schwab",
-      "source_url": "https://www.schwab.com/learn/story/stock-market-update-open",
+      "source": "ICE",
+      "source_url": "https://www.theice.com/products/194/US-Dollar-Index-Futures",
       "fetched_at": "2026-10-05T09:11:00-04:00",
-      "age_minutes": 311,
+      "age_minutes": 342,
       "status": "checked"
     },
     {
@@ -77,10 +106,10 @@
       "value": 16.15,
       "prior_close": 15.31,
       "change_percent": 5.5,
-      "source": "Charles Schwab",
-      "source_url": "https://www.schwab.com/learn/story/stock-market-update-open",
+      "source": "Cboe",
+      "source_url": "https://www.cboe.com/tradable_products/vix/",
       "fetched_at": "2026-10-05T09:11:00-04:00",
-      "age_minutes": 311,
+      "age_minutes": 342,
       "status": "checked"
     }
   ],
