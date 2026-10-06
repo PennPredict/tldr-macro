@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import {badExample,generateSummary,lintSummary,summarySamples} from "../lib/edition-summary.mjs";
 
 const root=process.cwd();
 const read=file=>JSON.parse(fs.readFileSync(path.join(root,file),"utf8"));
@@ -41,8 +42,10 @@ const causalPattern=/\b(supported|pressured|lifted|pushed|weighed on|drove|boost
 const checkCausality=(label,text,explains)=>{const matches=[...(text||"").matchAll(causalPattern)];const covered=(explains||[]).filter(item=>(text||"").includes(item.anchor_text)).length;const uncovered=Math.max(0,matches.length-covered);if(uncovered)warnings.push(`${label}: ${uncovered} causal verb${uncovered===1?"":"s"} may lack a matching explains entry`);if(uncovered>1)failures.push(`${label}: more than one causal verb lacks an explains entry`);};
 const editionReference=new Date(edition.updated_at).getTime();
 const wordCount=text=>(text||"").trim().split(/\s+/).filter(Boolean).length;
-if(wordCount(edition.summary)>22)failures.push(`Edition summary exceeds 22 words (${wordCount(edition.summary)})`);
-if(edition.summary.length>200)failures.push(`Edition summary exceeds 200 characters (${edition.summary.length})`);else if(edition.summary.length>140)warnings.push(`Edition summary exceeds 140 characters (${edition.summary.length})`);
+const generatedSummary=generateSummary(edition);
+const summaryLint=lintSummary(edition.summary,generatedSummary.facts);
+for(const failure of summaryLint.errors)failures.push(`Edition summary: ${failure}`);
+for(const warning of summaryLint.warnings)warnings.push(`Edition summary: ${warning}`);
 if(!Number.isInteger(snapshotConfig.chart_span_days)||snapshotConfig.chart_span_days<1)failures.push("Snapshot chart span must be a positive integer");
 
 for(const headline of headlines){
@@ -136,7 +139,17 @@ for(const event of edition.calendar){
 }
 
 const providerLicensing=[...edition.markets.map(item=>({name:item.name,current_provider:item.data_source,historical_provider:"Existing edition series; redistribution terms require provider review",licensing_note:"Official or approved-source links are published; raw historical datasets are not redistributed."})),...extraProviderReport];
-const report={generated_at:new Date().toISOString(),edition_date:edition.edition_date,policy_version:sourcePolicy.policy_version,status:failures.length?"failed":"passed",freshness_limit_minutes:integrity.freshness_minutes,calendar_last_verified:integrity.calendar_last_verified,snapshot_checks:{summary_words:wordCount(edition.summary),summary_characters:edition.summary.length,priority_order:renderedNames,chart_span_days:snapshotConfig.chart_span_days,axis_labels:2},headline_checks:{count:headlines.length,views:headlines.reduce((sum,item)=>sum+item.views.length,0),definitions:Object.keys(lensDefinitions)},source_diversity:{total_links:allSources.length,counts_by_domain:domainCounts,snapshot_cards_by_domain:snapshotDomainCards},data_provider_and_licensing:providerLicensing,fact_cards:headlines.filter(item=>item.visual.type==="fact").map(item=>({headline:item.headline,source:item.visual.source,date:item.visual.as_of})),observations,warnings,failures};
+const consistencyCorpus=[...edition.markets.map(item=>`${item.name}: ${item.description}`),...headlines.map(item=>`${item.headline}: ${item.commentary}`)];
+const consistencyRules=[
+  {label:"stocks",positive:generatedSummary.facts.stocks.change_percent>0,subject:/stock market|s&p 500/i},
+  {label:"rates",positive:generatedSummary.facts.rates.change_basis_points>0,subject:/10-year|treasury yield|government borrowing rates/i},
+  {label:"oil",positive:generatedSummary.facts.third.change_percent>0,subject:/oil|brent/i}
+];
+const summaryConsistency=[];
+for(const rule of consistencyRules)for(const text of consistencyCorpus)for(const sentence of text.split(/(?<=[.!?])\s+/)){if(!rule.subject.test(sentence))continue;const saysUp=/\b(rose|climbed|gained|jumped|edged up|moved higher)\b/i.test(sentence),saysDown=/\b(fell|dropped|declined|edged down|moved lower|retreated|eased)\b/i.test(sentence);if((rule.positive&&saysDown)||(!rule.positive&&saysUp))summaryConsistency.push(`${rule.label}: possible direction conflict in “${sentence}”`);}
+for(const flag of summaryConsistency)failures.push(`Edition summary consistency: ${flag}`);
+const badExampleLint=lintSummary(badExample,generatedSummary.facts);
+const report={generated_at:new Date().toISOString(),edition_date:edition.edition_date,policy_version:sourcePolicy.policy_version,status:failures.length?"failed":"passed",freshness_limit_minutes:integrity.freshness_minutes,calendar_last_verified:integrity.calendar_last_verified,snapshot_checks:{summary_words:wordCount(edition.summary),summary_characters:edition.summary.length,priority_order:renderedNames,chart_span_days:snapshotConfig.chart_span_days,axis_labels:2},edition_summary:{facts:generatedSummary.facts,generated_sentence:generatedSummary.sentence,lint:summaryLint,consistency_flags:summaryConsistency,bad_example:{sentence:badExample,lint:badExampleLint},samples:summarySamples},headline_checks:{count:headlines.length,views:headlines.reduce((sum,item)=>sum+item.views.length,0),definitions:Object.keys(lensDefinitions)},source_diversity:{total_links:allSources.length,counts_by_domain:domainCounts,snapshot_cards_by_domain:snapshotDomainCards},data_provider_and_licensing:providerLicensing,fact_cards:headlines.filter(item=>item.visual.type==="fact").map(item=>({headline:item.headline,source:item.visual.source,date:item.visual.as_of})),observations,warnings,failures};
 fs.mkdirSync(path.join(root,"reports"),{recursive:true});
 fs.writeFileSync(path.join(root,"reports/build-report.json"),JSON.stringify(report,null,2)+"\n");
 if(failures.length){console.error("Content policy validation failed:\n"+failures.map(item=>`- ${item}`).join("\n"));process.exit(1);}

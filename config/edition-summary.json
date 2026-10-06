@@ -1,0 +1,29 @@
+{
+  "order": ["S&P 500", "10-year Treasury yield", "Brent crude oil"],
+  "record_distance_percent": 1,
+  "thresholds": {
+    "stocks_percent": [0.15, 0.5, 1.5],
+    "oil_percent": [0.15, 0.5, 1.5],
+    "yield_basis_points": [2, 6, 15]
+  },
+  "vocabulary": {
+    "stocks": "the stock market",
+    "rates": "government borrowing rates",
+    "oil": "oil prices",
+    "directions": {
+      "flat": ["barely moved", "was little changed"],
+      "small_up": ["edged up"],
+      "small_down": ["edged down"],
+      "medium_up": ["rose"],
+      "medium_down": ["fell"],
+      "large_up": ["jumped"],
+      "large_down": ["dropped"]
+    }
+  },
+  "override_normal_daily_percent": {
+    "Gold": 1,
+    "Dollar index": 0.6,
+    "Expected volatility": 5
+  },
+  "banned": ["retreated", "eased", "softened", "firmed", "approached", "surged", "plunged", "tumbled", "cost pressure", "price pressure", "profit expectations", "balancing", "risk-on", "risk-off", "headwinds", "tailwinds", "priced in", "earnings", "inflation", "growth", "expectations", "sentiment"]
+}
