@@ -6,6 +6,7 @@ export default function About() {
     <article className="prose-page">
       <p className="eyebrow">About</p>
       <h1>Markets explained without assuming a finance background.</h1>
+      <aside className="mission-tldr"><strong>TL;DR:</strong><p>TL;DR Macro bridges economic headlines and everyday understanding. It helps non-economics students understand the system, retail investors connect market prices to portfolios, students prepare for finance opportunities, and busy people stay informed. Low cortisol. Low effort. Useful context.</p></aside>
       <p>TL;DR Macro makes market intelligence useful to people who were never taught the language of economics. It turns the day’s most consequential developments into concise explanations of what changed, how the pieces connect, and where the effects may appear next.</p>
       <h2>The mission</h2>
       <p>Financial news often assumes readers already understand rates, yields, inflation measures, currencies, commodities, and market structure. TL;DR Macro bridges that gap without turning a briefing into a textbook. A reader should leave with enough context to understand the headline, ask a sharper question, and read the original source with confidence.</p>
@@ -29,7 +30,6 @@ export default function About() {
       <p>Intraday prices change quickly. Economic data can be revised. A short explanation cannot include every cause, disagreement, or distributional effect. Links lead to fuller releases and methods.</p>
       <h2>Corrections</h2>
       <p>Corrections should identify what changed and preserve the original publication time. Until a dedicated address is configured, correction reports can be submitted through the project’s GitHub issue tracker.</p>
-      <aside className="mission-tldr"><strong>TL;DR:</strong><p>TL;DR Macro bridges economic headlines and everyday understanding. It helps non-economics students understand the system, retail investors connect market prices to portfolios, students prepare for finance opportunities, and busy people stay informed. Low cortisol. Low effort. Useful context.</p></aside>
     </article>
     <Footer />
   </main>;

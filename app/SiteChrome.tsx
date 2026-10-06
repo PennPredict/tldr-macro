@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export const fullDisclaimer = "Educational context only; not investment advice. Verify sources as you go.";
+export const fullDisclaimer = "Educational context only; not investment advice. Verify as you go.";
 
 function BrandImage({ placement }: { placement: "header" | "footer" }) {
   const alt=placement === "header" ? "TL;DR Macro. Market intelligence, for everyone." : "TL;DR Macro";
@@ -14,5 +14,5 @@ export function Header({ updated }: { updated?: string }) {
 }
 
 export function Footer() {
-  return <footer><div className="footer-meta"><div><nav aria-label="Footer navigation"><Link href="/about">About</Link></nav><p className="footer-note">{fullDisclaimer}</p></div><BrandImage placement="footer" /></div></footer>;
+  return <footer><div className="footer-meta"><div><nav aria-label="Footer navigation"><a href="/about/">About</a></nav><p className="footer-note">{fullDisclaimer}</p></div><BrandImage placement="footer" /></div></footer>;
 }
