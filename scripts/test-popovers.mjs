@@ -12,7 +12,7 @@ try{
   try{
     for(const width of [375,768,1280]){
       const page=await browser.newPage({viewport:{width,height:1000}});await page.goto(url,{waitUntil:"load"});
-      const triggers=page.locator(".term,.why-trigger,.info-button"),failures=[];let tested=0;
+      const triggers=page.locator(".term,.why-trigger,.info-button,.about-trigger"),failures=[];let tested=0;
       for(let index=0;index<await triggers.count();index++){
         const trigger=triggers.nth(index);if(!await trigger.isVisible())continue;tested++;await trigger.click();
         const metric=await page.locator(".term-popover").evaluate(popover=>{const box=popover.getBoundingClientRect(),children=[...popover.querySelectorAll("*")];return {overflow:popover.scrollWidth<=popover.clientWidth,childrenInside:children.every(child=>{const rect=child.getBoundingClientRect();return rect.left>=box.left-.5&&rect.right<=box.right+.5&&rect.top>=box.top-.5&&rect.bottom<=box.bottom+.5}),viewport:box.left>=8&&box.right<=innerWidth-8&&box.top>=8&&box.bottom<=innerHeight-8,fontStyle:getComputedStyle(popover).fontStyle};});
@@ -20,6 +20,12 @@ try{
       }
       const summaryLines=await page.locator(".edition-summary").evaluate(element=>Math.round(element.getBoundingClientRect().height/Number.parseFloat(getComputedStyle(element).lineHeight)));
       const maxLines=width===375?5:2;if(summaryLines>maxLines)failures.push({summaryLines,maxLines});
+      for(const [index,target] of ["story-stocks","story-rates","story-oil"].entries()){
+        await page.locator(".summary-jump").nth(index).click();await page.waitForTimeout(700);
+        const position=await page.locator(`#${target}`).evaluate(element=>element.getBoundingClientRect().top);
+        if(position<0||position>80)failures.push({summary_jump:target,position});
+      }
+      await page.evaluate(()=>scrollTo(0,0));
       await page.locator('.edition-summary .term').nth(1).click();
       fs.mkdirSync("reports",{recursive:true});await page.screenshot({path:`reports/popover-${width}.png`,fullPage:false});
       results.push({width,visible_triggers:tested,summary_lines:summaryLines,failures});await page.close();

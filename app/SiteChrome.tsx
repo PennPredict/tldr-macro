@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import TermPopover from "./TermPopover";
 
 export const fullDisclaimer = "Educational context only; not investment advice. Verify as you go.";
 
@@ -14,5 +15,6 @@ export function Header({ updated }: { updated?: string }) {
 }
 
 export function Footer() {
-  return <footer><div className="footer-meta"><div><nav aria-label="Footer navigation"><a href="/about/">About</a></nav><p className="footer-note">{fullDisclaimer}</p></div><BrandImage placement="footer" /></div></footer>;
+  const about=<div className="about-popover-body"><span><strong>Mission</strong>Markets in plain English · one connected economy · low cortisol, low effort</span><span><strong>For</strong>Non-econ students · retail investors · finance recruits · busy readers</span><span><strong>Limits</strong>Intraday moves · revised data · omitted nuance · possible errors · no advice</span><span><strong>Rule</strong>Primary sources first · verify as you go</span></div>;
+  return <footer><div className="footer-meta"><div><nav aria-label="Footer navigation"><TermPopover className="about-trigger" label="About TL;DR Macro" ariaLabel="About TL;DR Macro" body={about}>About</TermPopover></nav><p className="footer-note">{fullDisclaimer}</p></div><BrandImage placement="footer" /></div></footer>;
 }
