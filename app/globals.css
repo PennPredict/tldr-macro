@@ -167,3 +167,12 @@ button { font:inherit; }
 .event-list article:last-child { border-bottom:0; }
 @media (max-width:900px) { .edition-summary { white-space:normal; } }
 @media (max-width:720px) { .market-section { padding-top:18px; } }
+
+/* Denser editorial rhythm. */
+.market-section,.stories,.notable,.watch { padding-bottom:48px; }
+.stories,.notable,.watch { padding-top:48px; }
+.stories-heading { margin-bottom:4px; }
+.headline-card { padding-top:34px; }
+.headline-intro h3 { max-width:none; font-size:clamp(20px,2.15vw,28px); line-height:1.12; white-space:nowrap; }
+@media (max-width:1023px) { .headline-intro h3 { white-space:normal; } }
+@media (max-width:720px) { .market-section,.stories,.notable,.watch { padding-top:38px; padding-bottom:38px; }.headline-card { padding-top:30px; }.headline-intro h3 { font-size:28px; } }
