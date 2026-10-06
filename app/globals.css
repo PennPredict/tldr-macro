@@ -8,7 +8,7 @@ a { color:inherit; text-decoration:none; }
 .shell { width:min(1240px,calc(100% - 64px)); margin:auto; padding-bottom:34px; }
 .topbar { min-height:118px; display:flex; align-items:center; justify-content:space-between; gap:32px; border-bottom:1px solid var(--line); }
 .edition { display:flex; flex-direction:column; align-items:end; gap:4px; color:#aeb9c2; font-size:11px; text-transform:uppercase; letter-spacing:.11em; }.edition time { color:#748795; }
-.brand-image { display:block; }.brand-image img { display:block; width:100%; height:auto; object-fit:contain; }.brand-image-header { width:clamp(190px,22.5vw,292px); }.brand-image-footer { margin-left:auto; font-size:31px; }.compact-wordmark { display:inline-flex; align-items:center; color:var(--ink); font-family:var(--font-serif),serif; line-height:1; text-transform:none; letter-spacing:-.035em; }.compact-wordmark span { color:var(--green); }
+.brand-image { display:block; }.brand-image img { display:block; width:100%; height:auto; object-fit:contain; }.brand-image-header { width:clamp(235px,28vw,360px); }.brand-image-footer { margin-left:auto; font-size:31px; }.compact-wordmark { display:inline-flex; align-items:center; color:var(--ink); font-family:var(--font-serif),serif; line-height:1; text-transform:none; letter-spacing:-.035em; }.compact-wordmark span { color:var(--green); }
 .section-label { margin:0 0 15px; color:#aebdc9; font-size:10px; font-weight:750; text-transform:uppercase; letter-spacing:.28em; }
 .market-section,.stories,.notable,.watch { padding:76px 0; border-bottom:1px solid var(--line); }.market-section { padding-top:32px; }.section-heading { display:flex; justify-content:space-between; align-items:end; gap:24px; margin-bottom:30px; }.section-heading h2 { margin:0; font-family:var(--font-serif),serif; font-size:38px; font-weight:550; letter-spacing:-.025em; }.section-heading>p { max-width:390px; margin:0; color:var(--muted); font-size:12px; text-align:right; }.market-heading { margin-bottom:22px; }
 .market-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }.market { min-width:0; padding:22px 22px 20px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); }.market:nth-child(3n) { border-right:0; }.market:nth-child(n+4) { border-bottom:0; }.market h3 { margin:0 0 8px; color:#d6dee4; font-size:12px; font-weight:550; }.market-value { display:flex; align-items:baseline; justify-content:space-between; gap:8px; }.market-value strong { font-size:22px; }.market-value b { font-size:11px; }.market-value .up { color:var(--green); }.market-value .down { color:var(--red); }.market-value .risk { color:var(--orange); }.market-value .caution { color:var(--blue); }.sparkline { display:block; width:100%; height:62px; margin:10px 0 3px; }.chart-meta { display:grid; grid-template-columns:auto 1fr auto; gap:8px; align-items:center; margin-bottom:13px; color:#647887; font-size:7px; text-transform:uppercase; letter-spacing:.07em; }.chart-meta b { color:#8093a1; font-weight:500; text-align:center; }.market>p { min-height:78px; margin:0; color:#aebbc5; font-size:11px; line-height:1.52; }.market>a,.source-link,.notable a,.event-list a { display:inline-block; margin-top:8px; color:#789db8; font-size:9px; text-transform:uppercase; letter-spacing:.08em; border-bottom:1px solid #789db855; }
@@ -45,13 +45,13 @@ footer { color:#aebbc5; font-size:11px; line-height:1.55; text-transform:none; l
 
 @media (max-width:720px) {
   .topbar { min-height:96px; gap:16px; }
-  .brand-image-header { width:min(44vw,225px); }
+  .brand-image-header { width:min(51vw,250px); }
   .footer-meta { align-items:flex-start; flex-direction:column; }
   .brand-image-footer { width:min(75%,292px); align-self:flex-end; }
   .footer-note { text-align:left; }
 }
 @media (max-width:430px) {
-  .brand-image-header { width:min(47vw,188px); }
+  .brand-image-header { width:min(54vw,205px); }
   .edition { max-width:116px; }
 }
 
@@ -169,7 +169,7 @@ button { font:inherit; }
 
 /* Compact opening and a single intentional footer divider. */
 .topbar { min-height:92px; border-bottom:0; }
-.edition-summary { padding:6px 0 12px; font-size:clamp(16px,1.65vw,22px); line-height:1.3; white-space:nowrap; }
+.edition-summary { padding:6px 0 12px; font-size:clamp(15px,1.5vw,20px); line-height:1.3; white-space:nowrap; }
 .edition-summary .term { cursor:pointer; }
 .edition-summary .term:hover { color:#eef5f7; background:#10232f; }
 .headline-card[id],:focus-visible { scroll-margin-top:60px; }
