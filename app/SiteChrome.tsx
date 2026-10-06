@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import TermPopover from "./TermPopover";
+import StickyHeader from "./StickyHeader";
 
 export const fullDisclaimer = "Educational context only; not investment advice. Verify as you go.";
 
@@ -11,7 +12,8 @@ function BrandImage({ placement }: { placement: "header" | "footer" }) {
 
 export function Header({ updated }: { updated?: string }) {
   const label=updated?new Intl.DateTimeFormat("en-US",{month:"short",day:"numeric",year:"numeric",hour:"numeric",minute:"2-digit",timeZone:"America/New_York",timeZoneName:"short"}).format(new Date(updated)):"About this briefing";
-  return <header className="topbar"><BrandImage placement="header" /><div className="edition"><span>Morning edition</span><time dateTime={updated}>{label}</time></div></header>;
+  const compactLabel=updated?new Intl.DateTimeFormat("en-US",{month:"short",day:"numeric",hour:"numeric",minute:"2-digit",timeZone:"America/New_York",timeZoneName:"short"}).format(new Date(updated)):"About this briefing";
+  return <><header className="topbar" id="top"><BrandImage placement="header" /><div className="edition"><span>Morning edition</span><time dateTime={updated}>{label}</time></div></header><StickyHeader updated={updated} label={compactLabel}/></>;
 }
 
 export function Footer() {
