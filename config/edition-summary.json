@@ -1,6 +1,11 @@
 {
   "order": ["S&P 500", "10-year Treasury yield", "Brent crude oil"],
   "record_distance_percent": 1,
+  "qualifiers": {
+    "streak_min": 3,
+    "first_in_min_days": 5,
+    "range_windows": ["three_month", "one_month"]
+  },
   "thresholds": {
     "stocks_percent": [0.15, 0.5, 1.5],
     "oil_percent": [0.15, 0.5, 1.5],

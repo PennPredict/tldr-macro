@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import {badExample,generateSummary,lintSummary,summarySamples} from "../lib/edition-summary.mjs";
+import {badExamples,generateSummary,lintSummary,summarySamples} from "../lib/edition-summary.mjs";
 
 const root=process.cwd();
 const read=file=>JSON.parse(fs.readFileSync(path.join(root,file),"utf8"));
@@ -143,13 +143,15 @@ const consistencyCorpus=[...edition.markets.map(item=>`${item.name}: ${item.desc
 const consistencyRules=[
   {label:"stocks",positive:generatedSummary.facts.stocks.change_percent>0,subject:/stock market|s&p 500/i},
   {label:"rates",positive:generatedSummary.facts.rates.change_basis_points>0,subject:/10-year|treasury yield|government borrowing rates/i},
-  {label:"oil",positive:generatedSummary.facts.third.change_percent>0,subject:/oil|brent/i}
+  {label:"oil",positive:generatedSummary.facts.oil.change_percent>0,subject:/oil|brent/i}
 ];
 const summaryConsistency=[];
 for(const rule of consistencyRules)for(const text of consistencyCorpus)for(const sentence of text.split(/(?<=[.!?])\s+/)){if(!rule.subject.test(sentence))continue;const saysUp=/\b(rose|climbed|gained|jumped|edged up|moved higher)\b/i.test(sentence),saysDown=/\b(fell|dropped|declined|edged down|moved lower|retreated|eased)\b/i.test(sentence);if((rule.positive&&saysDown)||(!rule.positive&&saysUp))summaryConsistency.push(`${rule.label}: possible direction conflict in “${sentence}”`);}
 for(const flag of summaryConsistency)failures.push(`Edition summary consistency: ${flag}`);
-const badExampleLint=lintSummary(badExample,generatedSummary.facts);
-const report={generated_at:new Date().toISOString(),edition_date:edition.edition_date,policy_version:sourcePolicy.policy_version,status:failures.length?"failed":"passed",freshness_limit_minutes:integrity.freshness_minutes,calendar_last_verified:integrity.calendar_last_verified,snapshot_checks:{summary_words:wordCount(edition.summary),summary_characters:edition.summary.length,priority_order:renderedNames,chart_span_days:snapshotConfig.chart_span_days,axis_labels:2},edition_summary:{facts:generatedSummary.facts,generated_sentence:generatedSummary.sentence,lint:summaryLint,consistency_flags:summaryConsistency,bad_example:{sentence:badExample,lint:badExampleLint},samples:summarySamples},headline_checks:{count:headlines.length,views:headlines.reduce((sum,item)=>sum+item.views.length,0),definitions:Object.keys(lensDefinitions)},source_diversity:{total_links:allSources.length,counts_by_domain:domainCounts,snapshot_cards_by_domain:snapshotDomainCards},data_provider_and_licensing:providerLicensing,fact_cards:headlines.filter(item=>item.visual.type==="fact").map(item=>({headline:item.headline,source:item.visual.source,date:item.visual.as_of})),observations,warnings,failures};
+const badExampleChecks=Object.fromEntries(Object.entries(badExamples).map(([name,sentence])=>[name,{sentence,lint:lintSummary(sentence,generatedSummary.facts)}]));
+if(badExampleChecks.unsupported.lint.passed)failures.push("Edition summary checker accepted an unsupported qualifier");
+if(badExampleChecks.causal.lint.passed)failures.push("Edition summary checker accepted causal wording");
+const report={generated_at:new Date().toISOString(),edition_date:edition.edition_date,policy_version:sourcePolicy.policy_version,status:failures.length?"failed":"passed",freshness_limit_minutes:integrity.freshness_minutes,calendar_last_verified:integrity.calendar_last_verified,snapshot_checks:{summary_words:wordCount(edition.summary),summary_characters:edition.summary.length,priority_order:renderedNames,chart_span_days:snapshotConfig.chart_span_days,axis_labels:2},edition_summary:{facts:generatedSummary.facts,chosen_qualifiers:{stocks:generatedSummary.facts.stocks.qualifier,rates:generatedSummary.facts.rates.qualifier,oil:generatedSummary.facts.oil.qualifier},generated_sentence:generatedSummary.sentence,lint:summaryLint,consistency_flags:summaryConsistency,bad_examples:badExampleChecks,samples:summarySamples},headline_checks:{count:headlines.length,views:headlines.reduce((sum,item)=>sum+item.views.length,0),definitions:Object.keys(lensDefinitions)},source_diversity:{total_links:allSources.length,counts_by_domain:domainCounts,snapshot_cards_by_domain:snapshotDomainCards},data_provider_and_licensing:providerLicensing,fact_cards:headlines.filter(item=>item.visual.type==="fact").map(item=>({headline:item.headline,source:item.visual.source,date:item.visual.as_of})),observations,warnings,failures};
 fs.mkdirSync(path.join(root,"reports"),{recursive:true});
 fs.writeFileSync(path.join(root,"reports/build-report.json"),JSON.stringify(report,null,2)+"\n");
 if(failures.length){console.error("Content policy validation failed:\n"+failures.map(item=>`- ${item}`).join("\n"));process.exit(1);}

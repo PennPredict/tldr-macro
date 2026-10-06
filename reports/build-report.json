@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-06T18:44:35.705Z",
+  "generated_at": "2026-10-06T19:07:09.218Z",
   "edition_date": "2026-10-06",
   "policy_version": 1,
   "status": "passed",
   "freshness_limit_minutes": 360,
   "calendar_last_verified": "2026-10-06",
   "snapshot_checks": {
-    "summary_words": 12,
-    "summary_characters": 79,
+    "summary_words": 14,
+    "summary_characters": 93,
     "priority_order": [
       "S&P 500",
       "10-year Treasury yield",
@@ -27,187 +27,350 @@
         "value": 7836.14,
         "change_percent": 0.8,
         "bucket": "medium_up",
-        "record": null
+        "record": null,
+        "streak": null,
+        "first_in": null,
+        "range_position": null,
+        "move": "up",
+        "qualifier": null
       },
       "rates": {
         "name": "10-year Treasury yield",
         "value": 5.25,
         "change_basis_points": -6,
-        "bucket": "medium_down"
+        "bucket": "medium_down",
+        "record": null,
+        "streak": null,
+        "first_in": null,
+        "range_position": null,
+        "move": "down",
+        "qualifier": null
       },
-      "third": {
+      "oil": {
         "name": "Brent crude oil",
         "value": 98.3,
         "change_percent": -2,
         "bucket": "large_down",
-        "override": false
+        "record": null,
+        "streak": null,
+        "first_in": null,
+        "range_position": null,
+        "move": "down",
+        "qualifier": {
+          "type": "size",
+          "bucket": "large_down",
+          "text": "sharply"
+        }
       }
     },
-    "generated_sentence": "The stock market rose, government borrowing rates fell, and oil prices dropped.",
+    "chosen_qualifiers": {
+      "stocks": null,
+      "rates": null,
+      "oil": {
+        "type": "size",
+        "bucket": "large_down",
+        "text": "sharply"
+      }
+    },
+    "generated_sentence": "The stock market rose early, government borrowing rates fell, and oil prices dropped sharply.",
     "lint": {
       "passed": true,
       "errors": [],
       "warnings": [],
-      "characters": 79,
-      "words": 12,
-      "grade": 5.8
+      "characters": 93,
+      "words": 14,
+      "grade": 7.6
     },
     "consistency_flags": [],
-    "bad_example": {
-      "sentence": "Oil retreated and Treasury yields eased. Stocks approached records as lower cost pressure met strong profit expectations.",
-      "lint": {
-        "passed": false,
-        "errors": [
-          "Unsupported or mismatched claim: summary must equal the checked template output",
-          "Banned summary wording: retreated",
-          "Banned summary wording: eased",
-          "Banned summary wording: approached",
-          "Banned summary wording: cost pressure",
-          "Banned summary wording: profit expectations",
-          "Banned summary wording: expectations",
-          "Summary must be one sentence"
-        ],
-        "warnings": [],
-        "characters": 121,
-        "words": 17,
-        "grade": 7.2
+    "bad_examples": {
+      "unsupported": {
+        "sentence": "The stock market rose early to a one-month high, government borrowing rates fell, and oil prices dropped.",
+        "lint": {
+          "passed": false,
+          "errors": [
+            "Unsupported or mismatched claim: summary must equal the checked template output"
+          ],
+          "warnings": [],
+          "characters": 105,
+          "words": 18,
+          "grade": 7.2
+        }
+      },
+      "causal": {
+        "sentence": "The stock market rose early because oil prices fell, while government borrowing rates slipped.",
+        "lint": {
+          "passed": false,
+          "errors": [
+            "Unsupported or mismatched claim: summary must equal the checked template output",
+            "Summary contains causal wording"
+          ],
+          "warnings": [],
+          "characters": 94,
+          "words": 14,
+          "grade": 8.4
+        }
       }
     },
     "samples": [
       {
-        "label": "flat",
+        "label": "strong streak",
         "facts": {
-          "edition_date": "flat",
+          "edition_date": "strong streak",
           "stocks": {
             "name": "S&P 500",
-            "value": 100.1,
-            "change_percent": 0.1,
-            "bucket": "flat",
-            "record": null
+            "value": 103,
+            "change_percent": 0.98,
+            "bucket": "medium_up",
+            "record": null,
+            "streak": {
+              "length": 4,
+              "direction": "up"
+            },
+            "first_in": null,
+            "range_position": null,
+            "move": "up",
+            "qualifier": {
+              "type": "streak",
+              "length": 4,
+              "direction": "up",
+              "text": "after 4 straight gains"
+            }
           },
           "rates": {
             "name": "10-year Treasury yield",
-            "value": 4.01,
-            "change_basis_points": 1,
-            "bucket": "flat"
+            "value": 4.02,
+            "change_basis_points": 2,
+            "bucket": "small_up",
+            "record": null,
+            "streak": null,
+            "first_in": null,
+            "range_position": null,
+            "move": "up",
+            "qualifier": {
+              "type": "size",
+              "bucket": "small_up",
+              "text": "slightly"
+            }
           },
-          "third": {
+          "oil": {
             "name": "Brent crude oil",
-            "value": 80.08,
-            "change_percent": 0.1,
-            "bucket": "flat",
-            "override": false
+            "value": 81,
+            "change_percent": 1.25,
+            "bucket": "medium_up",
+            "record": null,
+            "streak": null,
+            "first_in": null,
+            "range_position": null,
+            "move": "up",
+            "qualifier": null
           }
         },
-        "sentence": "The stock market was little changed, government borrowing rates barely moved, and oil prices were little changed."
+        "sentence": "The stock market rose early, after 4 straight gains, government borrowing rates edged up slightly, and oil prices rose."
       },
       {
-        "label": "strong up",
+        "label": "record proximity",
         "facts": {
-          "edition_date": "strong up",
-          "stocks": {
-            "name": "S&P 500",
-            "value": 102,
-            "change_percent": 2,
-            "bucket": "large_up",
-            "record": null
-          },
-          "rates": {
-            "name": "10-year Treasury yield",
-            "value": 4.2,
-            "change_basis_points": 20,
-            "bucket": "large_up"
-          },
-          "third": {
-            "name": "Brent crude oil",
-            "value": 82,
-            "change_percent": 2.5,
-            "bucket": "large_up",
-            "override": false
-          }
-        },
-        "sentence": "The stock market jumped, government borrowing rates jumped, and oil prices jumped."
-      },
-      {
-        "label": "strong down",
-        "facts": {
-          "edition_date": "strong down",
-          "stocks": {
-            "name": "S&P 500",
-            "value": 98,
-            "change_percent": -2,
-            "bucket": "large_down",
-            "record": null
-          },
-          "rates": {
-            "name": "10-year Treasury yield",
-            "value": 3.8,
-            "change_basis_points": -20,
-            "bucket": "large_down"
-          },
-          "third": {
-            "name": "Brent crude oil",
-            "value": 78,
-            "change_percent": -2.5,
-            "bucket": "large_down",
-            "override": false
-          }
-        },
-        "sentence": "The stock market dropped, government borrowing rates dropped, and oil prices dropped."
-      },
-      {
-        "label": "near record",
-        "facts": {
-          "edition_date": "near record",
+          "edition_date": "record proximity",
           "stocks": {
             "name": "S&P 500",
             "value": 100.5,
             "change_percent": 0.3,
             "bucket": "small_up",
-            "record": "near"
+            "record": "near",
+            "streak": null,
+            "first_in": null,
+            "range_position": null,
+            "move": "up",
+            "qualifier": {
+              "type": "record",
+              "value": "near",
+              "text": "just below a record high"
+            }
           },
           "rates": {
             "name": "10-year Treasury yield",
             "value": 3.96,
             "change_basis_points": -4,
-            "bucket": "small_down"
+            "bucket": "small_down",
+            "record": null,
+            "streak": null,
+            "first_in": null,
+            "range_position": null,
+            "move": "down",
+            "qualifier": {
+              "type": "size",
+              "bucket": "small_down",
+              "text": "slightly"
+            }
           },
-          "third": {
+          "oil": {
             "name": "Brent crude oil",
             "value": 79.2,
             "change_percent": -1,
             "bucket": "medium_down",
-            "override": false
+            "record": null,
+            "streak": null,
+            "first_in": null,
+            "range_position": null,
+            "move": "down",
+            "qualifier": null
           }
         },
-        "sentence": "The stock market edged up and stayed close to a record high, government borrowing rates edged down, and oil prices fell."
+        "sentence": "The stock market edged up early, just below a record high. Government borrowing rates edged down slightly, while oil prices fell."
       },
       {
-        "label": "mixed",
+        "label": "reversal",
         "facts": {
-          "edition_date": "mixed",
+          "edition_date": "reversal",
+          "stocks": {
+            "name": "S&P 500",
+            "value": 99,
+            "change_percent": -1,
+            "bucket": "medium_down",
+            "record": null,
+            "streak": {
+              "length": 5,
+              "direction": "up"
+            },
+            "first_in": null,
+            "range_position": null,
+            "move": "down",
+            "qualifier": {
+              "type": "streak_reversal",
+              "length": 5,
+              "direction": "up",
+              "text": "ending a 5-day winning streak"
+            }
+          },
+          "rates": {
+            "name": "10-year Treasury yield",
+            "value": 4,
+            "change_basis_points": 0,
+            "bucket": "flat",
+            "record": null,
+            "streak": null,
+            "first_in": null,
+            "range_position": null,
+            "move": "flat",
+            "qualifier": null
+          },
+          "oil": {
+            "name": "Brent crude oil",
+            "value": 80.3,
+            "change_percent": 0.375,
+            "bucket": "small_up",
+            "record": null,
+            "streak": null,
+            "first_in": {
+              "days": 6,
+              "direction": "up"
+            },
+            "range_position": null,
+            "move": "up",
+            "qualifier": {
+              "type": "first_in",
+              "days": 6,
+              "direction": "up",
+              "text": "the first rise in a week"
+            }
+          }
+        },
+        "sentence": "The stock market fell early, ending a 5-day winning streak. Government borrowing rates barely moved, while oil prices edged up, the first rise in a week."
+      },
+      {
+        "label": "quiet day",
+        "facts": {
+          "edition_date": "quiet day",
+          "stocks": {
+            "name": "S&P 500",
+            "value": 100.1,
+            "change_percent": 0.1,
+            "bucket": "flat",
+            "record": null,
+            "streak": null,
+            "first_in": null,
+            "range_position": null,
+            "move": "flat",
+            "qualifier": null
+          },
+          "rates": {
+            "name": "10-year Treasury yield",
+            "value": 4.01,
+            "change_basis_points": 1,
+            "bucket": "flat",
+            "record": null,
+            "streak": null,
+            "first_in": null,
+            "range_position": null,
+            "move": "flat",
+            "qualifier": null
+          },
+          "oil": {
+            "name": "Brent crude oil",
+            "value": 80.08,
+            "change_percent": 0.1,
+            "bucket": "flat",
+            "record": null,
+            "streak": null,
+            "first_in": null,
+            "range_position": null,
+            "move": "flat",
+            "qualifier": null
+          }
+        },
+        "sentence": "The stock market barely moved early, government borrowing rates barely moved, and oil prices barely moved."
+      },
+      {
+        "label": "mixed day",
+        "facts": {
+          "edition_date": "mixed day",
           "stocks": {
             "name": "S&P 500",
             "value": 101,
             "change_percent": 1,
             "bucket": "medium_up",
-            "record": null
+            "record": null,
+            "streak": null,
+            "first_in": null,
+            "range_position": null,
+            "move": "up",
+            "qualifier": null
           },
           "rates": {
             "name": "10-year Treasury yield",
             "value": 4.04,
             "change_basis_points": 4,
-            "bucket": "small_up"
+            "bucket": "small_up",
+            "record": null,
+            "streak": null,
+            "first_in": null,
+            "range_position": null,
+            "move": "up",
+            "qualifier": {
+              "type": "size",
+              "bucket": "small_up",
+              "text": "slightly"
+            }
           },
-          "third": {
+          "oil": {
             "name": "Brent crude oil",
             "value": 78,
             "change_percent": -2.5,
             "bucket": "large_down",
-            "override": false
+            "record": null,
+            "streak": null,
+            "first_in": null,
+            "range_position": "three_month_low",
+            "move": "down",
+            "qualifier": {
+              "type": "range",
+              "window": "three_month",
+              "side": "low",
+              "text": "a three-month low"
+            }
           }
         },
-        "sentence": "The stock market rose, government borrowing rates edged up, and oil prices dropped."
+        "sentence": "The stock market rose early, government borrowing rates edged up slightly, and oil prices dropped to a three-month low."
       }
     ]
   },

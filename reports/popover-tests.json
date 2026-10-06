@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-10-06T19:07:19.426Z",
+  "results": [
+    {
+      "width": 375,
+      "visible_triggers": 32,
+      "summary_lines": 4,
+      "failures": []
+    },
+    {
+      "width": 768,
+      "visible_triggers": 32,
+      "summary_lines": 2,
+      "failures": []
+    },
+    {
+      "width": 1280,
+      "visible_triggers": 32,
+      "summary_lines": 2,
+      "failures": []
+    }
+  ]
+}

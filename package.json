@@ -8,10 +8,11 @@
   "scripts": {
     "dev": "vinext dev",
     "validate:content": "node scripts/validate-content.mjs",
-    "build": "npm run validate:content && vinext build",
+    "build": "npm run validate:content && vinext build && npm run test:popovers",
     "build:pages": "npm run validate:content && next build",
     "start": "vinext start",
-    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next"
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
+    "test:popovers": "node scripts/test-popovers.mjs"
   },
   "dependencies": {
     "next": "16.2.6",
@@ -30,6 +31,7 @@
     "@vitejs/plugin-rsc": "0.5.26",
     "eslint": "9.39.4",
     "eslint-config-next": "16.2.6",
+    "playwright": "^1.55.1",
     "react-server-dom-webpack": "19.2.6",
     "tailwindcss": "4.2.1",
     "typescript": "5.9.3",

@@ -1,8 +1,10 @@
-export type SummaryFacts={edition_date:string;stocks:{name?:string;value?:number;change_percent?:number;bucket:string;record:"at"|"near"|null};rates:{name?:string;value?:number;change_basis_points?:number;bucket:string};third:{name:string;value?:number;change_percent?:number;bucket:string;override:boolean}};
+export type SummaryQualifier={type:string;text:string;length?:number;days?:number;direction?:string;window?:string;side?:string;bucket?:string;value?:string}|null;
+export type SummaryItem={name:string;value:number;bucket:string;move:string;record?:"at"|"near"|null;streak?:{length:number;direction:string}|null;first_in?:{days:number;direction:string}|null;range_position?:string|null;qualifier:SummaryQualifier;change_percent?:number;change_basis_points?:number};
+export type SummaryFacts={edition_date:string;stocks:SummaryItem;rates:SummaryItem;oil:SummaryItem};
 export function buildSummaryFacts(edition:{edition_date:string;markets:Array<Record<string,unknown>>}):SummaryFacts;
 export function generateSummaryFromFacts(facts:SummaryFacts):string;
 export function generateSummary(edition:{edition_date:string;markets:Array<Record<string,unknown>>}):{facts:SummaryFacts;sentence:string};
 export function gradeLevel(text:string):number;
 export function lintSummary(sentence:string,facts:SummaryFacts):{passed:boolean;errors:string[];warnings:string[];characters:number;words:number;grade:number};
-export const badExample:string;
+export const badExamples:{unsupported:string;causal:string};
 export const summarySamples:Array<{label:string;facts:SummaryFacts;sentence:string}>;
