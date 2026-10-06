@@ -176,3 +176,15 @@ button { font:inherit; }
 .headline-intro h3 { max-width:none; font-size:clamp(20px,2.15vw,28px); line-height:1.12; white-space:nowrap; }
 @media (max-width:1023px) { .headline-intro h3 { white-space:normal; } }
 @media (max-width:720px) { .market-section,.stories,.notable,.watch { padding-top:38px; padding-bottom:38px; }.headline-card { padding-top:30px; }.headline-intro h3 { font-size:28px; } }
+
+/* Compact section transitions: one useful divider, no stacked rules. */
+.market-section,.stories,.notable { border-bottom:0; }
+.stories,.notable,.watch { padding-top:26px; padding-bottom:38px; }
+.headline-card:last-child { border-bottom:0; }
+.notable-list article:nth-last-child(-n+2) { border-bottom:0; }
+.notable .section-heading,.watch .section-heading { margin-bottom:18px; }
+@media (max-width:720px) {
+  .stories,.notable,.watch { padding-top:22px; padding-bottom:30px; }
+  .notable-list article:last-child { border-bottom:0; }
+  .notable-list article:nth-last-child(2) { border-bottom:1px solid var(--line); }
+}
