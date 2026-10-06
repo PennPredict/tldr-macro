@@ -4,8 +4,8 @@
     "S&P 500",
     "10-year Treasury yield",
     "Brent crude oil",
-    "U.S. Dollar Index",
-    "Gold",
+    "Nasdaq Composite",
+    "Dow Jones Industrial Average",
     "Expected volatility (VIX)"
   ],
   "extras": {"crypto": false}

@@ -6,10 +6,10 @@ import HeadlineCard from "./HeadlineCard";
 import MarketSnapshot from "./MarketSnapshot";
 
 const notable=[
-  ["Wage growth slowed","↘ 3.0% wages","Average hourly earnings increased more slowly. Wages shape household purchasing power and companies’ labor costs.","U.S. Bureau of Labor Statistics","https://www.bls.gov/news.release/archives/empsit_10022026.htm"],
-  ["Earlier hiring was revised lower","↘ −60K jobs","July and August estimates fell. The economy may have been weaker than first reported.","U.S. Bureau of Labor Statistics","https://www.bls.gov/news.release/archives/empsit_10022026.htm"],
-  ["Global markets split","↔ mixed","Japanese stocks rose; French shares fell. Overseas moves reach U.S. readers through currencies, multinational sales, and retirement funds.","The Associated Press","https://apnews.com/article/stock-markets-jobs-fed-rates-inflation-f83cf147deaf5a2361b1ae7eee74a627"],
-  ["Takeovers moved two companies","↗ deal news","PTC and RXO rose after acquisition news. Company events can outweigh the broader market.","The Associated Press","https://apnews.com/article/stock-markets-jobs-fed-rates-inflation-f83cf147deaf5a2361b1ae7eee74a627"]
+  ["A health-care takeover moved Option Care","↗ 32.7%","CD&R and McKesson agreed to buy the infusion-services provider. A company-specific deal can overwhelm the broader market move.","The Associated Press","https://apnews.com/article/stocks-markets-oil-bonds-us-e8285ec7afbe81e9df277e8ee2127982"],
+  ["Frozen-fries demand beat expectations","↗ 10.8%","Lamb Weston reported stronger profit and revenue despite higher freight costs, showing how pricing and demand can offset inflation pressure.","The Associated Press","https://apnews.com/article/stocks-markets-oil-bonds-us-e8285ec7afbe81e9df277e8ee2127982"],
+  ["Asian markets moved in different directions","↔ mixed","Japan and Hong Kong rose while South Korea fell. Overseas markets shape U.S. portfolios through multinational revenue and global funds.","The Associated Press","https://apnews.com/article/stocks-markets-oil-bonds-us-e8285ec7afbe81e9df277e8ee2127982"],
+  ["Airlines and banks report next","→ earnings","Delta reports Friday, followed by major banks next week. Their results can reveal travel demand, credit quality, and financing conditions.","The Associated Press","https://apnews.com/article/stocks-markets-oil-bonds-us-e8285ec7afbe81e9df277e8ee2127982"]
 ];
 
 export default function Home(){return <main className="shell"><Header updated={edition.updated_at}/>

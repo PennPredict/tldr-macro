@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-10-05T23:03:47.688Z",
-  "edition_date": "2026-10-05",
+  "generated_at": "2026-10-06T16:26:14.265Z",
+  "edition_date": "2026-10-06",
   "policy_version": 1,
   "status": "passed",
   "freshness_limit_minutes": 360,
-  "calendar_last_verified": "2026-10-05",
+  "calendar_last_verified": "2026-10-06",
   "snapshot_checks": {
-    "summary_words": 14,
-    "summary_characters": 102,
+    "summary_words": 17,
+    "summary_characters": 121,
     "priority_order": [
       "S&P 500",
       "10-year Treasury yield",
       "Brent crude oil",
-      "U.S. Dollar Index",
-      "Gold",
+      "Nasdaq Composite",
+      "Dow Jones Industrial Average",
       "Expected volatility (VIX)"
     ],
     "chart_span_days": 30,
@@ -21,7 +21,7 @@
   },
   "headline_checks": {
     "count": 4,
-    "views": 11,
+    "views": 10,
     "definitions": [
       "household",
       "business",
@@ -33,28 +33,21 @@
   "source_diversity": {
     "total_links": 18,
     "counts_by_domain": {
-      "spglobal.com": 1,
-      "apnews.com": 3,
-      "home.treasury.gov": 2,
-      "fred.stlouisfed.org": 1,
-      "eia.gov": 2,
-      "cmegroup.com": 2,
-      "schwab.com": 2,
-      "theice.com": 1,
+      "spglobal.com": 2,
+      "fred.stlouisfed.org": 2,
+      "eia.gov": 3,
+      "nasdaq.com": 2,
       "cboe.com": 1,
-      "bls.gov": 1,
-      "federalreserve.gov": 1,
-      "ismworld.org": 1
+      "apnews.com": 4,
+      "cmegroup.com": 1,
+      "home.treasury.gov": 1,
+      "sec.gov": 2
     },
     "snapshot_cards_by_domain": {
-      "spglobal.com": 1,
-      "apnews.com": 1,
-      "home.treasury.gov": 1,
+      "spglobal.com": 2,
       "fred.stlouisfed.org": 1,
       "eia.gov": 1,
-      "cmegroup.com": 2,
-      "schwab.com": 2,
-      "theice.com": 1,
+      "nasdaq.com": 1,
       "cboe.com": 1
     }
   },
@@ -67,7 +60,7 @@
     },
     {
       "name": "10-year Treasury yield",
-      "current_provider": "U.S. Treasury",
+      "current_provider": "Federal Reserve via FRED",
       "historical_provider": "Existing edition series; redistribution terms require provider review",
       "licensing_note": "Official or approved-source links are published; raw historical datasets are not redistributed."
     },
@@ -78,14 +71,14 @@
       "licensing_note": "Official or approved-source links are published; raw historical datasets are not redistributed."
     },
     {
-      "name": "Gold futures",
-      "current_provider": "CME Group",
+      "name": "Nasdaq Composite",
+      "current_provider": "Nasdaq",
       "historical_provider": "Existing edition series; redistribution terms require provider review",
       "licensing_note": "Official or approved-source links are published; raw historical datasets are not redistributed."
     },
     {
-      "name": "U.S. Dollar Index",
-      "current_provider": "ICE",
+      "name": "Dow Jones Industrial Average",
+      "current_provider": "S&P Dow Jones Indices",
       "historical_provider": "Existing edition series; redistribution terms require provider review",
       "licensing_note": "Official or approved-source links are published; raw historical datasets are not redistributed."
     },
@@ -160,71 +153,75 @@
   "observations": [
     {
       "name": "S&P 500",
-      "value": 7747.7,
-      "prior_close": 7722.72,
-      "change_percent": 0.3,
+      "value": 7836.14,
+      "prior_close": 7773.95,
+      "change_percent": 0.8,
       "source": "S&P Dow Jones Indices",
       "source_url": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/",
-      "fetched_at": "2026-10-05T10:10:00-04:00",
+      "fetched_at": "2026-10-06T11:00:00-04:00",
       "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "10-year Treasury yield",
-      "value": 5.29,
-      "prior_close": 5.28,
-      "change_percent": 0.19,
-      "source": "U.S. Treasury",
-      "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
-      "fetched_at": "2026-10-05T10:10:00-04:00",
+      "value": 5.25,
+      "prior_close": 5.31,
+      "change_percent": -1.13,
+      "source": "Federal Reserve via FRED",
+      "source_url": "https://fred.stlouisfed.org/series/DGS10",
+      "fetched_at": "2026-10-06T11:00:00-04:00",
       "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "Brent crude oil",
-      "value": 101.94,
-      "prior_close": 102.25,
-      "change_percent": -0.3,
+      "value": 98.3,
+      "prior_close": 100.31,
+      "change_percent": -2,
       "source": "U.S. Energy Information Administration",
       "source_url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-      "fetched_at": "2026-10-05T10:10:00-04:00",
+      "fetched_at": "2026-10-06T11:00:00-04:00",
       "age_minutes": 0,
       "status": "checked"
     },
     {
-      "name": "Gold futures",
-      "value": 4189,
-      "prior_close": 4160,
-      "change_percent": 0.7,
-      "source": "CME Group",
-      "source_url": "https://www.cmegroup.com/markets/metals/precious/gold.html",
-      "fetched_at": "2026-10-05T09:11:00-04:00",
-      "age_minutes": 59,
+      "name": "Nasdaq Composite",
+      "value": 27697.13,
+      "prior_close": 27477.31,
+      "change_percent": 0.8,
+      "source": "Nasdaq",
+      "source_url": "https://www.nasdaq.com/market-activity/index/comp",
+      "fetched_at": "2026-10-06T11:00:00-04:00",
+      "age_minutes": 0,
       "status": "checked"
     },
     {
-      "name": "U.S. Dollar Index",
-      "value": 102.23,
-      "prior_close": 101.92,
-      "change_percent": 0.3,
-      "source": "ICE",
-      "source_url": "https://www.theice.com/products/194/US-Dollar-Index-Futures",
-      "fetched_at": "2026-10-05T09:11:00-04:00",
-      "age_minutes": 59,
+      "name": "Dow Jones Industrial Average",
+      "value": 51532.9,
+      "prior_close": 51267.9,
+      "change_percent": 0.5,
+      "source": "S&P Dow Jones Indices",
+      "source_url": "https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/",
+      "fetched_at": "2026-10-06T11:00:00-04:00",
+      "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "Expected volatility",
-      "value": 16.15,
+      "value": 15.52,
       "prior_close": 15.31,
-      "change_percent": 5.5,
+      "change_percent": 1.37,
       "source": "Cboe",
-      "source_url": "https://www.cboe.com/tradable_products/vix/",
-      "fetched_at": "2026-10-05T09:11:00-04:00",
-      "age_minutes": 59,
+      "source_url": "https://www.cboe.com/tradable-products/vix/vix-futures",
+      "fetched_at": "2026-10-06T11:00:00-04:00",
+      "age_minutes": 0,
       "status": "checked"
     }
   ],
-  "warnings": [],
+  "warnings": [
+    "Cheaper oil relieved markets and household-cost pressure: headline exceeds the preferred 48 characters",
+    "Treasury yields eased, but borrowing remains expensive: headline exceeds the preferred 48 characters",
+    "Strong profit expectations kept stocks near records: headline exceeds the preferred 48 characters"
+  ],
   "failures": []
 }

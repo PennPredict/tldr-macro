@@ -7,7 +7,8 @@ function ConvergenceMark({wide=false}:{wide?:boolean}) {
 }
 
 export function Header({ updated }: { updated?: string }) {
-  return <header className="topbar"><div className="brand-lockup"><ConvergenceMark/><div><Link className="wordmark" href="/"><strong>TL<span>;</span>DR</strong> Macro</Link><p>Market intelligence, for everyone.</p></div></div><div className="edition"><span>Morning edition</span><time dateTime={updated}>{updated ? "Oct 5, 2026 · 10:10 a.m. ET" : "About this briefing"}</time></div></header>;
+  const label=updated?new Intl.DateTimeFormat("en-US",{month:"short",day:"numeric",year:"numeric",hour:"numeric",minute:"2-digit",timeZone:"America/New_York",timeZoneName:"short"}).format(new Date(updated)):"About this briefing";
+  return <header className="topbar"><div className="brand-lockup"><ConvergenceMark/><div><Link className="wordmark" href="/"><strong>TL<span>;</span>DR</strong> Macro</Link><p>Market intelligence, for everyone.</p></div></div><div className="edition"><span>Morning edition</span><time dateTime={updated}>{label}</time></div></header>;
 }
 
 export function Footer() {
