@@ -1,10 +1,19 @@
 {
-  "generated_at": "2026-10-06T22:02:47.690Z",
+  "generated_at": "2026-10-06T22:21:33.494Z",
   "edition_date": "2026-10-06",
   "policy_version": 1,
   "status": "passed",
   "freshness_limit_minutes": 360,
   "calendar_last_verified": "2026-10-06",
+  "copy_counts": {
+    "pressure": 0,
+    "eased": 0
+  },
+  "claim_ledger": {
+    "headline_claims": 12,
+    "view_claims": 23,
+    "market_claims": 12
+  },
   "snapshot_checks": {
     "summary_words": 14,
     "summary_characters": 93,
@@ -376,7 +385,7 @@
   },
   "headline_checks": {
     "count": 4,
-    "views": 10,
+    "views": 11,
     "definitions": [
       "household",
       "business",
@@ -534,7 +543,13 @@
       "licensing_note": "IMF benchmark data reprinted by FRED with citation and terms retained."
     }
   ],
-  "fact_cards": [],
+  "fact_cards": [
+    {
+      "headline": "Large U.S. companies begin reporting profits",
+      "source": "The Associated Press",
+      "date": "2026-10-06T11:00:00-04:00"
+    }
+  ],
   "observations": [
     {
       "name": "S&P 500",
@@ -604,9 +619,7 @@
     }
   ],
   "warnings": [
-    "Cheaper oil relieved markets and household-cost pressure: headline exceeds the preferred 48 characters",
-    "Treasury yields eased, but borrowing remains expensive: headline exceeds the preferred 48 characters",
-    "Strong profit expectations kept stocks near records: headline exceeds the preferred 48 characters"
+    "Large U.S. companies begin reporting profits: fact card requires manual review before publish"
   ],
   "failures": []
 }

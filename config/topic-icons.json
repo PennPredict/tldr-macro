@@ -7,5 +7,7 @@
   "fed_meeting":"landmark",
   "market_volatility":"trending-up",
   "budget_tariffs_taxes":"receipt",
+  "companies":"briefcase",
+  "infrastructure":"landmark",
   "fallback":"circle"
 }

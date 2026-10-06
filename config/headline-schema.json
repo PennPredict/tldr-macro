@@ -3,7 +3,7 @@
   "type":"array",
   "items":{
     "type":"object",
-    "required":["topic_tag","headline","commentary","defines","explains","visual","views","sources"],
+    "required":["topic_tag","headline","commentary","defines","explains","visual","views","sources","claims"],
     "properties":{
       "topic_tag":{"type":"string"},
       "headline":{"type":"string","maxLength":80},
@@ -11,7 +11,8 @@
       "defines":{"type":"array","minItems":1,"items":{"type":"object","required":["term","definition","used_by_and_why"]}},
       "explains":{"type":"array","items":{"type":"object","required":["anchor_text","why","other_reading"]}},
       "visual":{"type":"object","required":["type","title","as_of","source","caption","alt"],"properties":{"type":{"enum":["transmission","context","fact"]}}},
-      "views":{"type":"array","minItems":2,"maxItems":3,"items":{"type":"object","required":["view_id","body","keep_wondering"]}},
+      "views":{"type":"array","minItems":2,"maxItems":3,"items":{"type":"object","required":["view_id","body","keep_wondering","claims"]}},
+      "claims":{"type":"array","minItems":1,"items":{"type":"object","required":["sentence_id","type","evidence"],"properties":{"type":{"enum":["fact","mechanism","attributed_cause","interpretation"]}}}},
       "sources":{"type":"array","minItems":1,"items":{"type":"object","required":["name","href"]}},
       "expected_vs_actual":{"type":"object","required":["forecast","actual","prior"]},
       "data_note":{"type":"string"}

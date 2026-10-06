@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import {badExamples,generateSummary,lintSummary,summarySamples} from "../lib/edition-summary.mjs";
+import {badExamples,generateSummary,gradeLevel,lintSummary,summarySamples} from "../lib/edition-summary.mjs";
 
 const root=process.cwd();
 const read=file=>JSON.parse(fs.readFileSync(path.join(root,file),"utf8"));
@@ -33,11 +33,19 @@ for(const file of copyFiles){
   for(const character of editorial.style.banned_characters)if(text.includes(character))failures.push(`${relative}: banned character “${character}”`);
 }
 
-const required=["topic_tag","headline","commentary","defines","explains","visual","views","sources"];
+const required=["topic_tag","headline","commentary","defines","explains","visual","views","sources","claims"];
 const stop=new Set(["the","a","an","and","or","to","of","in","for","with","while","can","may","is","are","that","this","when","from","more","less","their","same"]);
 const words=text=>new Set(text.toLowerCase().match(/[a-z]+/g)?.filter(word=>word.length>3&&!stop.has(word))||[]);
 const similarity=(a,b)=>{const one=words(a),two=words(b),shared=[...one].filter(word=>two.has(word)).length,total=new Set([...one,...two]).size;return total?shared/total:0;};
 const sentenceCount=text=>(text.match(/[.!?]+(?=\s|$)/g)||[]).length;
+const claimSentenceCount=text=>sentenceCount((text||"").replaceAll("U.S.","US").replaceAll("a.m.","AM").replaceAll("p.m.","PM"));
+const checkClaims=(label,text,claims)=>{
+  const count=claimSentenceCount(text),ledger=Array.isArray(claims)?claims:[];
+  if(ledger.length!==count)failures.push(`${label}: ${count} sentences but ${ledger.length} claim-ledger entries`);
+  const ids=new Set();let causes=0;
+  for(const claim of ledger){if(!claim.sentence_id||!claim.type||!claim.evidence)failures.push(`${label}: claim entries require sentence_id, type, and evidence`);if(ids.has(claim.sentence_id))failures.push(`${label}: duplicate claim id ${claim.sentence_id}`);ids.add(claim.sentence_id);if(!["fact","mechanism","attributed_cause","interpretation"].includes(claim.type))failures.push(`${label}: invalid claim type ${claim.type}`);if(claim.type==="attributed_cause"&&!claim.attribution)failures.push(`${label}: attributed cause lacks attribution`);if(["attributed_cause","interpretation"].includes(claim.type))causes++;}
+  if(causes>1)failures.push(`${label}: more than one cause or interpretation sentence`);
+};
 const causalPattern=/\b(supported|pressured|lifted|pushed|weighed on|drove|boosted|hurt|helped|fueled)\b/gi;
 const checkCausality=(label,text,explains)=>{const matches=[...(text||"").matchAll(causalPattern)];const covered=(explains||[]).filter(item=>(text||"").includes(item.anchor_text)).length;const uncovered=Math.max(0,matches.length-covered);if(uncovered)warnings.push(`${label}: ${uncovered} causal verb${uncovered===1?"":"s"} may lack a matching explains entry`);if(uncovered>1)failures.push(`${label}: more than one causal verb lacks an explains entry`);};
 const editionReference=new Date(edition.updated_at).getTime();
@@ -58,6 +66,8 @@ for(const headline of headlines){
   if(commentarySentences<2||commentarySentences>4)failures.push(`${headline.headline}: commentary must contain 2 to 4 sentences`);
   const commentaryWords=(headline.commentary||"").trim().split(/\s+/).filter(Boolean).length;
   if(commentaryWords>85)failures.push(`${headline.headline}: commentary exceeds 85 words`);
+  if(gradeLevel(headline.commentary)>9)failures.push(`${headline.headline}: commentary reading grade exceeds 9 (${gradeLevel(headline.commentary)})`);
+  checkClaims(`${headline.headline} commentary`,headline.commentary,headline.claims);
   if(!Array.isArray(headline.defines)||!headline.defines.length)failures.push(`${headline.headline}: at least one definition is required`);
   for(const definition of headline.defines||[]){
     if(!definition.term||!definition.definition||!definition.used_by_and_why)failures.push(`${headline.headline}: definition entries require term, definition, and used_by_and_why`);
@@ -92,6 +102,7 @@ for(const headline of headlines){
     const count=sentenceCount(view.body||"");
     if(count<2||count>4)failures.push(`${headline.headline} / ${view.view_id}: view body must contain 2 to 4 sentences`);
     if(!(view.keep_wondering||"").trim().endsWith("?"))failures.push(`${headline.headline} / ${view.view_id}: Keep wondering must end with a question`);
+    checkClaims(`${headline.headline} / ${view.view_id}`,view.body,view.claims);
     if(/\d/.test(view.body||"")||/\b(historically|often|tends?|associated|typically|generally)\b/i.test(view.body||""))warnings.push(`${headline.headline} / ${view.view_id}: manual review requested for a numerical or historical claim`);
   }
   for(let i=0;i<(headline.views||[]).length;i++)for(let j=i+1;j<headline.views.length;j++){
@@ -114,6 +125,9 @@ for(const market of edition.markets){
   if(ageMinutes>integrity.freshness_minutes)failures.push(`${market.name}: data is ${Math.round(ageMinutes)} minutes older than the edition, beyond ${integrity.freshness_minutes} minutes`);
   if(!Array.isArray(market.sources)||market.sources.length<1||market.sources.length>3)failures.push(`${market.name}: include 1 to 3 sources`);
   if(sentenceCount(market.description.replaceAll("U.S.","US"))>2||wordCount(market.description)>32)failures.push(`${market.name}: snapshot description must be at most 2 sentences and about 30 words`);
+  if(gradeLevel(market.description)>8)failures.push(`${market.name}: snapshot description reading grade exceeds 8 (${gradeLevel(market.description)})`);
+  checkClaims(`${market.name} description`,market.description,market.claims);
+  if(!market.baseline||!['prior_close','yesterday_reading'].includes(market.baseline))failures.push(`${market.name}: baseline must match prior_close or yesterday_reading`);
   const marketHosts=(market.sources||[]).map(source=>new URL(source.href).hostname.replace(/^www\./,""));
   if(!marketHosts.some(host=>[...sourcePolicy.primary,...sourcePolicy.market_data].some(domain=>host===domain||host.endsWith(`.${domain}`))))failures.push(`${market.name}: at least one source must be primary or official`);
   if(marketHosts.filter(host=>sourcePolicy.reporting.some(domain=>host===domain||host.endsWith(`.${domain}`))).length>1)failures.push(`${market.name}: no more than one news outlet is allowed`);
@@ -134,9 +148,16 @@ const snapshotDomainCards={};for(const market of edition.markets)for(const domai
 for(const [domain,count] of Object.entries(snapshotDomainCards))if(count>2)failures.push(`Snapshot diversity: ${domain} appears on ${count} cards, above 2`);
 for(const term of terms){if(!term.id||!term.surface_forms?.length||!term.type||!term.definition||!term.used_by_and_why)failures.push(`Terms file: ${term.id||"unnamed term"} has an empty required field`);if(term.type==="also_called"&&!term.also_called?.length)failures.push(`Terms file: ${term.id} needs also_called entries`);}
 for(const event of edition.calendar){
-  if(event.verified!==integrity.calendar_last_verified)failures.push(`${event.title}: calendar verification date is not current`);
-  if(!event.time||!event.prior||!event.consensus||!event.href)failures.push(`${event.title}: incomplete calendar metadata`);
+  if(!event.time||!event.href||!event.hot_label||!event.cool_label)failures.push(`${event.title}: incomplete calendar metadata`);
+  if(!/\b(?:AM|PM) ET\b/.test(event.time))failures.push(`${event.title}: time must use AM or PM followed by ET`);
 }
+const renderedCopy=[...copyFiles.map(file=>fs.readFileSync(file,"utf8")),JSON.stringify(extraMarkets)].join("\n");
+for(const token of [/\bverify\b/i,/\bTODO\b/i,/\bTBD\b/i,/\bplaceholder\b/i,/not listed/i,/\bN\/A\b/i])if(token.test(renderedCopy))failures.push(`Rendered copy contains prohibited placeholder text matching ${token}`);
+for(const token of [/TLDRM/i,/TL;DRM/i,/TLDR Macro/i])if(token.test(renderedCopy))failures.push(`Brand copy contains prohibited form matching ${token}`);
+if(/\b(?:EDT|EST)\b/.test(renderedCopy))failures.push("Rendered copy contains EDT or EST instead of ET");
+const pressureCount=(renderedCopy.match(/\bpressure\b/gi)||[]).length,easedCount=(renderedCopy.match(/\beased\b/gi)||[]).length;
+if(pressureCount>2)failures.push(`Rendered copy uses pressure ${pressureCount} times; maximum is 2`);
+if(easedCount>2)failures.push(`Rendered copy uses eased ${easedCount} times; maximum is 2`);
 
 const providerLicensing=[...edition.markets.map(item=>({name:item.name,current_provider:item.data_source,historical_provider:"Existing edition series; redistribution terms require provider review",licensing_note:"Official or approved-source links are published; raw historical datasets are not redistributed."})),...extraProviderReport];
 const consistencyCorpus=[...edition.markets.map(item=>`${item.name}: ${item.description}`),...headlines.map(item=>`${item.headline}: ${item.commentary}`)];
@@ -151,7 +172,7 @@ for(const flag of summaryConsistency)failures.push(`Edition summary consistency:
 const badExampleChecks=Object.fromEntries(Object.entries(badExamples).map(([name,sentence])=>[name,{sentence,lint:lintSummary(sentence,generatedSummary.facts)}]));
 if(badExampleChecks.unsupported.lint.passed)failures.push("Edition summary checker accepted an unsupported qualifier");
 if(badExampleChecks.causal.lint.passed)failures.push("Edition summary checker accepted causal wording");
-const report={generated_at:new Date().toISOString(),edition_date:edition.edition_date,policy_version:sourcePolicy.policy_version,status:failures.length?"failed":"passed",freshness_limit_minutes:integrity.freshness_minutes,calendar_last_verified:integrity.calendar_last_verified,snapshot_checks:{summary_words:wordCount(edition.summary),summary_characters:edition.summary.length,priority_order:renderedNames,chart_span_days:snapshotConfig.chart_span_days,axis_labels:2},edition_summary:{facts:generatedSummary.facts,chosen_qualifiers:{stocks:generatedSummary.facts.stocks.qualifier,rates:generatedSummary.facts.rates.qualifier,oil:generatedSummary.facts.oil.qualifier},generated_sentence:generatedSummary.sentence,lint:summaryLint,consistency_flags:summaryConsistency,bad_examples:badExampleChecks,samples:summarySamples},headline_checks:{count:headlines.length,views:headlines.reduce((sum,item)=>sum+item.views.length,0),definitions:Object.keys(lensDefinitions)},source_diversity:{total_links:allSources.length,counts_by_domain:domainCounts,snapshot_cards_by_domain:snapshotDomainCards},data_provider_and_licensing:providerLicensing,fact_cards:headlines.filter(item=>item.visual.type==="fact").map(item=>({headline:item.headline,source:item.visual.source,date:item.visual.as_of})),observations,warnings,failures};
+const report={generated_at:new Date().toISOString(),edition_date:edition.edition_date,policy_version:sourcePolicy.policy_version,status:failures.length?"failed":"passed",freshness_limit_minutes:integrity.freshness_minutes,calendar_last_verified:integrity.calendar_last_verified,copy_counts:{pressure:pressureCount,eased:easedCount},claim_ledger:{headline_claims:headlines.reduce((sum,item)=>sum+item.claims.length,0),view_claims:headlines.reduce((sum,item)=>sum+item.views.reduce((inner,view)=>inner+view.claims.length,0),0),market_claims:edition.markets.reduce((sum,item)=>sum+(item.claims?.length||0),0)},snapshot_checks:{summary_words:wordCount(edition.summary),summary_characters:edition.summary.length,priority_order:renderedNames,chart_span_days:snapshotConfig.chart_span_days,axis_labels:2},edition_summary:{facts:generatedSummary.facts,chosen_qualifiers:{stocks:generatedSummary.facts.stocks.qualifier,rates:generatedSummary.facts.rates.qualifier,oil:generatedSummary.facts.oil.qualifier},generated_sentence:generatedSummary.sentence,lint:summaryLint,consistency_flags:summaryConsistency,bad_examples:badExampleChecks,samples:summarySamples},headline_checks:{count:headlines.length,views:headlines.reduce((sum,item)=>sum+item.views.length,0),definitions:Object.keys(lensDefinitions)},source_diversity:{total_links:allSources.length,counts_by_domain:domainCounts,snapshot_cards_by_domain:snapshotDomainCards},data_provider_and_licensing:providerLicensing,fact_cards:headlines.filter(item=>item.visual.type==="fact").map(item=>({headline:item.headline,source:item.visual.source,date:item.visual.as_of})),observations,warnings,failures};
 fs.mkdirSync(path.join(root,"reports"),{recursive:true});
 fs.writeFileSync(path.join(root,"reports/build-report.json"),JSON.stringify(report,null,2)+"\n");
 if(failures.length){console.error("Content policy validation failed:\n"+failures.map(item=>`- ${item}`).join("\n"));process.exit(1);}

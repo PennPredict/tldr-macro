@@ -7,4 +7,6 @@
   "fed_meeting":["policy","dealer"],
   "market_volatility":["household","dealer"],
   "budget_tariffs_taxes":["business","policy","global"]
+  ,"companies":["household","business","policy"]
+  ,"infrastructure":["household","business","policy"]
 }
