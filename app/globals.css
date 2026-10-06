@@ -8,7 +8,7 @@ a { color:inherit; text-decoration:none; }
 .shell { width:min(1240px,calc(100% - 64px)); margin:auto; padding-bottom:34px; }
 .topbar { min-height:118px; display:flex; align-items:center; justify-content:space-between; gap:32px; border-bottom:1px solid var(--line); }
 .edition { display:flex; flex-direction:column; align-items:end; gap:4px; color:#aeb9c2; font-size:11px; text-transform:uppercase; letter-spacing:.11em; }.edition time { color:#748795; }
-.brand-image { display:block; }.brand-image img { display:block; width:100%; height:auto; object-fit:contain; }.brand-image-header { width:clamp(255px,30vw,390px); }.brand-image-footer { width:clamp(220px,25vw,315px); height:clamp(42px,4.8vw,61px); margin-left:auto; overflow:hidden; }.brand-image-footer img { transform:translateY(-2%); }
+.brand-image { display:block; }.brand-image img { display:block; width:100%; height:auto; object-fit:contain; }.brand-image-header { width:clamp(190px,22.5vw,292px); }.brand-image-footer { width:clamp(165px,18.75vw,236px); height:clamp(32px,3.6vw,46px); margin-left:auto; overflow:hidden; }.brand-image-footer img { transform:translateY(-2%); }
 .section-label { margin:0 0 15px; color:#aebdc9; font-size:10px; font-weight:750; text-transform:uppercase; letter-spacing:.28em; }
 .market-section,.stories,.notable,.watch { padding:76px 0; border-bottom:1px solid var(--line); }.market-section { padding-top:32px; }.section-heading { display:flex; justify-content:space-between; align-items:end; gap:24px; margin-bottom:30px; }.section-heading h2 { margin:0; font-family:var(--font-serif),serif; font-size:38px; font-weight:550; letter-spacing:-.025em; }.section-heading>p { max-width:390px; margin:0; color:var(--muted); font-size:12px; text-align:right; }.market-heading { margin-bottom:22px; }
 .market-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }.market { min-width:0; padding:22px 22px 20px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); }.market:nth-child(3n) { border-right:0; }.market:nth-child(n+4) { border-bottom:0; }.market h3 { margin:0 0 8px; color:#d6dee4; font-size:12px; font-weight:550; }.market-value { display:flex; align-items:baseline; justify-content:space-between; gap:8px; }.market-value strong { font-size:22px; }.market-value b { font-size:11px; }.market-value .up { color:var(--green); }.market-value .down { color:var(--red); }.market-value .risk { color:var(--orange); }.market-value .caution { color:var(--blue); }.sparkline { display:block; width:100%; height:62px; margin:10px 0 3px; }.chart-meta { display:grid; grid-template-columns:auto 1fr auto; gap:8px; align-items:center; margin-bottom:13px; color:#647887; font-size:7px; text-transform:uppercase; letter-spacing:.07em; }.chart-meta b { color:#8093a1; font-weight:500; text-align:center; }.market>p { min-height:78px; margin:0; color:#aebbc5; font-size:11px; line-height:1.52; }.market>a,.source-link,.notable a,.event-list a { display:inline-block; margin-top:8px; color:#789db8; font-size:9px; text-transform:uppercase; letter-spacing:.08em; border-bottom:1px solid #789db855; }
@@ -45,13 +45,13 @@ footer { color:#aebbc5; font-size:11px; line-height:1.55; text-transform:none; l
 
 @media (max-width:720px) {
   .topbar { min-height:96px; gap:16px; }
-  .brand-image-header { width:min(58vw,300px); }
+  .brand-image-header { width:min(44vw,225px); }
   .footer-meta { align-items:flex-start; flex-direction:column; }
-  .brand-image-footer { width:min(100%,390px); align-self:flex-end; }
+  .brand-image-footer { width:min(75%,292px); align-self:flex-end; }
   .footer-note { text-align:left; }
 }
 @media (max-width:430px) {
-  .brand-image-header { width:min(62vw,250px); }
+  .brand-image-header { width:min(47vw,188px); }
   .edition { max-width:116px; }
 }
 
@@ -99,6 +99,7 @@ button { font:inherit; }
 .signal-pair em { color:#b4c1c9; font-size:12px; font-style:normal; }
 .signal-pair>i { color:#788d9b; font-size:20px; font-style:normal; }
 .visual-stats { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:28px; }.visual-stats span { min-height:116px; display:flex; flex-direction:column; justify-content:center; gap:8px; padding:12px 8px; border:1px solid #395466; text-align:center; }.visual-stats b { color:#8bc8ef; font-family:var(--font-serif),serif; font-size:clamp(18px,2vw,25px); line-height:1.12; }.visual-stats em { color:#b4c1c9; font-size:11px; font-style:normal; line-height:1.35; }
+.power-visual .visual-stats { position:relative; margin-top:72px; padding-top:30px; }.power-visual .visual-stats:before { content:"AI growth → electricity demand → reactor upgrades"; position:absolute; left:0; right:0; top:-48px; padding:10px; border:1px solid #3c5a6d; color:#d4dde3; font-size:12px; text-align:center; }.power-visual .visual-stats:after { content:""; position:absolute; left:16%; right:16%; top:13px; border-top:1px solid #4b6c81; }.power-visual .visual-stats span { position:relative; }.power-visual .visual-stats span:before { content:""; position:absolute; left:50%; top:-18px; height:18px; border-left:1px solid #4b6c81; }
 .everyday { margin-top:20px; padding:16px 18px; border-left:3px solid var(--green); background:#0b1b25; }
 .everyday strong,.mechanism>strong,.expected>strong,.data-behind>strong { display:block; margin-bottom:7px; color:var(--green); font-size:9px; text-transform:uppercase; letter-spacing:.14em; }
 .everyday p { margin:0; color:#d1d9df; font-size:13px; line-height:1.62; }

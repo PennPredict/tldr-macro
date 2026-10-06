@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T16:47:44.577Z",
+  "generated_at": "2026-10-06T17:11:06.724Z",
   "edition_date": "2026-10-06",
   "policy_version": 1,
   "status": "passed",
@@ -101,12 +101,6 @@
       "licensing_note": "Index data are proprietary; citation and linked FRED source retained."
     },
     {
-      "name": "Russell 2000",
-      "current_provider": "FTSE Russell",
-      "historical_provider": "No historical series published",
-      "licensing_note": "Index values are proprietary; no historical series republished here."
-    },
-    {
       "name": "2-year Treasury yield",
       "current_provider": "Federal Reserve via FRED",
       "historical_provider": "Federal Reserve via FRED",
@@ -137,6 +131,12 @@
       "licensing_note": "Federal Reserve public exchange-rate data; FRED citation retained."
     },
     {
+      "name": "Pound to dollar",
+      "current_provider": "Federal Reserve via FRED",
+      "historical_provider": "Federal Reserve via FRED",
+      "licensing_note": "Federal Reserve public exchange-rate data; FRED citation retained."
+    },
+    {
       "name": "WTI crude oil",
       "current_provider": "U.S. Energy Information Administration via FRED",
       "historical_provider": "U.S. Energy Information Administration via FRED",
@@ -147,6 +147,12 @@
       "current_provider": "U.S. Energy Information Administration via FRED",
       "historical_provider": "U.S. Energy Information Administration via FRED",
       "licensing_note": "U.S. government source series; FRED citation retained."
+    },
+    {
+      "name": "Copper",
+      "current_provider": "International Monetary Fund via FRED",
+      "historical_provider": "International Monetary Fund via FRED",
+      "licensing_note": "IMF benchmark data reprinted by FRED with citation and terms retained."
     }
   ],
   "fact_cards": [],
