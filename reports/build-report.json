@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T18:26:01.143Z",
+  "generated_at": "2026-10-06T18:31:11.599Z",
   "edition_date": "2026-10-06",
   "policy_version": 1,
   "status": "passed",
@@ -117,6 +117,12 @@
       "current_provider": "S&P Dow Jones Indices via FRED",
       "historical_provider": "S&P Dow Jones Indices via FRED",
       "licensing_note": "Index data are proprietary; citation and linked FRED source retained."
+    },
+    {
+      "name": "Russell 2000",
+      "current_provider": "FTSE Russell level reported by The Associated Press",
+      "historical_provider": "FTSE Russell level reported by The Associated Press",
+      "licensing_note": "FTSE Russell index data are proprietary; the reporting and index methodology links are retained."
     },
     {
       "name": "2-year Treasury yield",
