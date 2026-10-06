@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T18:20:13.614Z",
+  "generated_at": "2026-10-06T18:26:01.143Z",
   "edition_date": "2026-10-06",
   "policy_version": 1,
   "status": "passed",
@@ -87,6 +87,24 @@
       "current_provider": "Cboe",
       "historical_provider": "Existing edition series; redistribution terms require provider review",
       "licensing_note": "Official or approved-source links are published; raw historical datasets are not redistributed."
+    },
+    {
+      "name": "DAX",
+      "current_provider": "Deutsche Börse/Xetra via Börse Stuttgart",
+      "historical_provider": "Deutsche Börse/Xetra via Börse Stuttgart",
+      "licensing_note": "Exchange index data are proprietary; linked exchange and market sources retained."
+    },
+    {
+      "name": "Nikkei 225",
+      "current_provider": "Nikkei Inc.",
+      "historical_provider": "Nikkei Inc.",
+      "licensing_note": "Nikkei index data are copyrighted; citation and linked source retained."
+    },
+    {
+      "name": "KOSPI",
+      "current_provider": "Korea Exchange via KB Financial Group",
+      "historical_provider": "Korea Exchange via KB Financial Group",
+      "licensing_note": "Korea Exchange index data are proprietary; linked exchange and issuer sources retained."
     },
     {
       "name": "Nasdaq Composite",
