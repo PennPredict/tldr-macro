@@ -158,3 +158,12 @@ button { font:inherit; }
 @media (prefers-reduced-motion:reduce) { .term-popover { animation:none; } }
 @media (max-width:1023px) { .headline-card { grid-template-columns:1fr; grid-template-areas:"intro" "visual" "commentary"; gap:0; }.headline-visual-column { margin-top:24px; }.headline-visual { position:relative; top:auto; width:100%; min-height:0; max-height:410px; }.headline-commentary { margin-top:0; }.lenses { max-width:none; } }
 @media (max-width:600px) { .headline-card { padding:38px 0 24px; }.headline-intro h3 { font-size:32px; }.headline-commentary-text { font-size:16px; }.headline-visual { padding:16px; max-height:none; }.lens-heading { align-items:flex-start; padding:12px 0; }.lens-heading strong { max-width:210px; }.lens-info,.lens-body { padding-left:16px; }.lens-row,.lens-toggle { min-height:58px; }.job-chart { gap:20px; }.average-line span { font-size:10px; }.supply-chain { grid-template-columns:1fr; }.supply-chain i { transform:rotate(90deg); text-align:center; }.supply-chain span { min-height:66px; }.headline-visual.oil-chain { max-height:none; }.visual-stats { grid-template-columns:1fr; }.visual-stats span { min-height:74px; } }
+
+/* Compact opening and a single intentional footer divider. */
+.topbar { min-height:92px; border-bottom:0; }
+.edition-summary { padding:6px 0 12px; font-size:clamp(16px,1.65vw,22px); line-height:1.3; white-space:nowrap; }
+.market-section { padding-top:18px; }
+.watch { border-bottom:0; }
+.event-list article:last-child { border-bottom:0; }
+@media (max-width:900px) { .edition-summary { white-space:normal; } }
+@media (max-width:720px) { .market-section { padding-top:18px; } }

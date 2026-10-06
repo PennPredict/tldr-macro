@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export const fullDisclaimer = "Educational context only; not investment advice. Data may be delayed or wrong. Verify primary sources.";
+export const fullDisclaimer = "Educational context only; not investment advice. Verify sources as you go.";
 
 function BrandImage({ placement }: { placement: "header" | "footer" }) {
   const alt=placement === "header" ? "TL;DR Macro. Market intelligence, for everyone." : "TL;DR Macro";
