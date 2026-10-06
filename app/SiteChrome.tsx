@@ -6,6 +6,9 @@ import StickyHeader from "./StickyHeader";
 export const fullDisclaimer = "Educational context only; not investment advice. Verify as you go.";
 
 function BrandImage({ placement }: { placement: "header" | "footer" }) {
+  if (placement === "footer") {
+    return <Link className="brand-image-footer" href="/" aria-label="TL;DRM home"><span className="footer-brand-lines" aria-hidden="true"><Image src="/tldr-macro-logo-wide.png" alt="" width={2172} height={724} /></span><span className="footer-brand-word">TL<span>;</span>DRM</span></Link>;
+  }
   const alt=placement === "header" ? "TL;DR Macro. Market intelligence, for everyone." : "TL;DR Macro";
   return <Link className={`brand-image brand-image-${placement}`} href="/" aria-label="TL;DR Macro home"><Image src="/tldr-macro-logo-wide.png" alt={alt} width={2172} height={724} priority={placement === "header"} /></Link>;
 }
