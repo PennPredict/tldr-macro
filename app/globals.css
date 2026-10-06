@@ -124,18 +124,18 @@ button { font:inherit; }
 .lens-heading>button { padding:7px 9px; border:1px solid #355163; background:transparent; color:#a9c4d5; font-size:9px; cursor:pointer; }
 .lens { border-bottom:1px solid var(--line); }
 .lens:last-child { border-bottom:0; }
-.lens-row { position:relative; min-height:54px; }
-.lens-toggle { width:100%; min-height:54px; display:grid; grid-template-columns:30px auto 1fr 24px; gap:10px; align-items:center; padding:8px 10px; border:0; background:transparent; cursor:pointer; text-align:left; }
+.lens-row { position:relative; min-height:54px; display:flex; align-items:center; gap:12px; padding:8px 10px; }
+.lens-toggle { position:absolute; z-index:1; inset:0; width:100%; min-height:54px; padding:0; border:0; background:transparent; cursor:pointer; text-align:left; }
 .lens-row:has(.lens-toggle:hover) { background:#10222f; }
 .lens-row:has(.lens-toggle:focus-visible) { outline:3px solid var(--blue); outline-offset:-3px; }
-.lens-icon { width:28px; height:28px; display:grid; place-items:center; border-radius:50%; background:#123326; color:var(--green); font-size:14px; }
-.lens-name { color:#cbd5db; }
-.lens-spacer { min-height:30px; }
-.lens-chevron { color:#8da2b0; font-size:15px; text-align:center; }
-.info-button { position:absolute; z-index:2; left:154px; top:50%; width:18px; height:18px; margin-top:-9px; padding:0; border:1px solid #45647a; border-radius:50%; background:#0a1823; color:#9ac5e1; font-family:var(--font-serif),serif; font-size:10px; line-height:16px; cursor:pointer; }
-.info-button:hover { background:#173044; color:var(--ink); }
-.lens-row>.popover-wrap { position:absolute; z-index:3; left:154px; top:18px; }
-.lens-row>.popover-wrap .info-button { position:static; margin:0; }
+.lens-icon { position:relative; z-index:2; flex:0 0 28px; width:28px; height:28px; display:grid; place-items:center; border-radius:50%; background:#123326; color:var(--green); font-size:14px; pointer-events:none; }
+.lens-title { position:relative; z-index:2; display:inline-flex; align-items:center; flex:0 1 auto; min-width:0; gap:6px; pointer-events:none; }
+.lens-name { color:#cbd5db; line-height:1; text-wrap:balance; }
+.lens-title>.popover-wrap { flex:0 0 16px; display:inline-flex; align-items:center; pointer-events:auto; }
+.lens-chevron { position:relative; z-index:2; margin-left:auto; color:#8da2b0; font-size:15px; text-align:center; pointer-events:none; }
+.info-button { position:relative; width:16px; height:16px; display:inline-flex; align-items:center; justify-content:center; padding:0; border:1px solid #45647a; border-radius:50%; background:#0a1823; color:#9ac5e1; font-family:var(--font-serif),serif; font-size:9px; line-height:1; cursor:pointer; transform:translateY(-1px); }
+.info-button:after { content:""; position:absolute; inset:-4px; }
+.info-button:hover { border-color:#79a9c7; background:#173044; color:var(--ink); }
 .info-button:focus-visible,.lens-heading button:focus-visible { outline:3px solid var(--blue); outline-offset:2px; }
 .lens-info,.lens-body { padding:13px 16px 15px 50px; border-top:1px solid var(--line); }
 .lens-info { background:#10212d; }
