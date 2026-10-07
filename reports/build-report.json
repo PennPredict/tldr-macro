@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-10-06T22:32:41.141Z",
-  "edition_date": "2026-10-06",
+  "generated_at": "2026-10-07T14:38:13.733Z",
+  "edition_date": "2026-10-07",
   "policy_version": 1,
   "status": "passed",
   "freshness_limit_minutes": 360,
-  "calendar_last_verified": "2026-10-06",
+  "calendar_last_verified": "2026-10-07",
   "copy_counts": {
     "pressure": 0,
     "eased": 0
   },
   "claim_ledger": {
     "headline_claims": 12,
-    "view_claims": 23,
+    "view_claims": 20,
     "market_claims": 12
   },
   "snapshot_checks": {
     "summary_words": 14,
-    "summary_characters": 93,
+    "summary_characters": 92,
     "priority_order": [
       "S&P 500",
       "10-year Treasury yield",
@@ -30,23 +30,11 @@
   },
   "edition_summary": {
     "facts": {
-      "edition_date": "2026-10-06",
+      "edition_date": "2026-10-07",
       "stocks": {
         "name": "S&P 500",
-        "value": 7836.14,
-        "change_percent": 0.8,
-        "bucket": "medium_up",
-        "record": null,
-        "streak": null,
-        "first_in": null,
-        "range_position": null,
-        "move": "up",
-        "qualifier": null
-      },
-      "rates": {
-        "name": "10-year Treasury yield",
-        "value": 5.25,
-        "change_basis_points": -6,
+        "value": 7779.84,
+        "change_percent": -0.5,
         "bucket": "medium_down",
         "record": null,
         "streak": null,
@@ -55,19 +43,31 @@
         "move": "down",
         "qualifier": null
       },
-      "oil": {
-        "name": "Brent crude oil",
-        "value": 98.3,
-        "change_percent": -2,
-        "bucket": "large_down",
+      "rates": {
+        "name": "10-year Treasury yield",
+        "value": 5.35,
+        "change_basis_points": 8,
+        "bucket": "medium_up",
         "record": null,
         "streak": null,
         "first_in": null,
         "range_position": null,
-        "move": "down",
+        "move": "up",
+        "qualifier": null
+      },
+      "oil": {
+        "name": "Brent crude oil",
+        "value": 102.1,
+        "change_percent": 1.51,
+        "bucket": "large_up",
+        "record": null,
+        "streak": null,
+        "first_in": null,
+        "range_position": null,
+        "move": "up",
         "qualifier": {
           "type": "size",
-          "bucket": "large_down",
+          "bucket": "large_up",
           "text": "sharply"
         }
       }
@@ -77,16 +77,16 @@
       "rates": null,
       "oil": {
         "type": "size",
-        "bucket": "large_down",
+        "bucket": "large_up",
         "text": "sharply"
       }
     },
-    "generated_sentence": "The stock market rose early, government borrowing rates fell, and oil prices dropped sharply.",
+    "generated_sentence": "The stock market fell early, government borrowing rates rose, and oil prices jumped sharply.",
     "lint": {
       "passed": true,
       "errors": [],
       "warnings": [],
-      "characters": 93,
+      "characters": 92,
       "words": 14,
       "grade": 7.6
     },
@@ -385,7 +385,7 @@
   },
   "headline_checks": {
     "count": 4,
-    "views": 11,
+    "views": 10,
     "definitions": [
       "household",
       "business",
@@ -395,22 +395,23 @@
     ]
   },
   "source_diversity": {
-    "total_links": 18,
+    "total_links": 15,
     "counts_by_domain": {
-      "spglobal.com": 2,
-      "fred.stlouisfed.org": 2,
-      "eia.gov": 3,
-      "nasdaq.com": 2,
+      "spglobal.com": 3,
+      "apnews.com": 2,
+      "home.treasury.gov": 2,
+      "cmegroup.com": 2,
+      "nasdaq.com": 1,
       "cboe.com": 1,
-      "apnews.com": 4,
-      "cmegroup.com": 1,
-      "home.treasury.gov": 1,
-      "sec.gov": 2
+      "fred.stlouisfed.org": 1,
+      "eia.gov": 1,
+      "federalreserve.gov": 2
     },
     "snapshot_cards_by_domain": {
       "spglobal.com": 2,
-      "fred.stlouisfed.org": 1,
-      "eia.gov": 1,
+      "apnews.com": 1,
+      "home.treasury.gov": 1,
+      "cmegroup.com": 1,
       "nasdaq.com": 1,
       "cboe.com": 1
     }
@@ -418,37 +419,37 @@
   "data_provider_and_licensing": [
     {
       "name": "S&P 500",
-      "current_provider": "S&P Dow Jones Indices",
+      "current_provider": "S&P Dow Jones Indices via The Associated Press",
       "historical_provider": "Existing edition series; redistribution terms require provider review",
       "licensing_note": "Official or approved-source links are published; raw historical datasets are not redistributed."
     },
     {
       "name": "10-year Treasury yield",
-      "current_provider": "Federal Reserve via FRED",
+      "current_provider": "U.S. Treasury and The Associated Press",
       "historical_provider": "Existing edition series; redistribution terms require provider review",
       "licensing_note": "Official or approved-source links are published; raw historical datasets are not redistributed."
     },
     {
       "name": "Brent crude oil",
-      "current_provider": "U.S. Energy Information Administration",
+      "current_provider": "CME Group and The Associated Press",
       "historical_provider": "Existing edition series; redistribution terms require provider review",
       "licensing_note": "Official or approved-source links are published; raw historical datasets are not redistributed."
     },
     {
       "name": "Nasdaq Composite",
-      "current_provider": "Nasdaq",
+      "current_provider": "Nasdaq via The Associated Press",
       "historical_provider": "Existing edition series; redistribution terms require provider review",
       "licensing_note": "Official or approved-source links are published; raw historical datasets are not redistributed."
     },
     {
       "name": "Dow Jones Industrial Average",
-      "current_provider": "S&P Dow Jones Indices",
+      "current_provider": "S&P Dow Jones Indices via The Associated Press",
       "historical_provider": "Existing edition series; redistribution terms require provider review",
       "licensing_note": "Official or approved-source links are published; raw historical datasets are not redistributed."
     },
     {
       "name": "Expected volatility",
-      "current_provider": "Cboe",
+      "current_provider": "Cboe delayed futures quotes",
       "historical_provider": "Existing edition series; redistribution terms require provider review",
       "licensing_note": "Official or approved-source links are published; raw historical datasets are not redistributed."
     },
@@ -545,81 +546,87 @@
   ],
   "fact_cards": [
     {
-      "headline": "Large U.S. companies begin reporting profits",
+      "headline": "Stocks pulled back from Tuesday's record",
       "source": "The Associated Press",
-      "date": "2026-10-06T11:00:00-04:00"
+      "date": "2026-10-07T09:35:00-04:00"
+    },
+    {
+      "headline": "Fed meeting minutes arrive this afternoon",
+      "source": "Federal Reserve",
+      "date": "2026-10-07T10:00:00-04:00"
     }
   ],
   "observations": [
     {
       "name": "S&P 500",
-      "value": 7836.14,
-      "prior_close": 7773.95,
-      "change_percent": 0.8,
-      "source": "S&P Dow Jones Indices",
+      "value": 7779.84,
+      "prior_close": 7818.93,
+      "change_percent": -0.5,
+      "source": "S&P Dow Jones Indices via The Associated Press",
       "source_url": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/",
-      "fetched_at": "2026-10-06T11:00:00-04:00",
-      "age_minutes": 0,
+      "fetched_at": "2026-10-07T09:35:00-04:00",
+      "age_minutes": 25,
       "status": "checked"
     },
     {
       "name": "10-year Treasury yield",
-      "value": 5.25,
-      "prior_close": 5.31,
-      "change_percent": -1.13,
-      "source": "Federal Reserve via FRED",
-      "source_url": "https://fred.stlouisfed.org/series/DGS10",
-      "fetched_at": "2026-10-06T11:00:00-04:00",
-      "age_minutes": 0,
+      "value": 5.35,
+      "prior_close": 5.27,
+      "change_percent": 1.52,
+      "source": "U.S. Treasury and The Associated Press",
+      "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
+      "fetched_at": "2026-10-07T09:35:00-04:00",
+      "age_minutes": 25,
       "status": "checked"
     },
     {
       "name": "Brent crude oil",
-      "value": 98.3,
-      "prior_close": 100.31,
-      "change_percent": -2,
-      "source": "U.S. Energy Information Administration",
-      "source_url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-      "fetched_at": "2026-10-06T11:00:00-04:00",
-      "age_minutes": 0,
+      "value": 102.1,
+      "prior_close": 100.58,
+      "change_percent": 1.51,
+      "source": "CME Group and The Associated Press",
+      "source_url": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html",
+      "fetched_at": "2026-10-07T09:35:00-04:00",
+      "age_minutes": 25,
       "status": "checked"
     },
     {
       "name": "Nasdaq Composite",
-      "value": 27697.13,
-      "prior_close": 27477.31,
-      "change_percent": 0.8,
-      "source": "Nasdaq",
+      "value": 27406.59,
+      "prior_close": 27599.79,
+      "change_percent": -0.7,
+      "source": "Nasdaq via The Associated Press",
       "source_url": "https://www.nasdaq.com/market-activity/index/comp",
-      "fetched_at": "2026-10-06T11:00:00-04:00",
-      "age_minutes": 0,
+      "fetched_at": "2026-10-07T09:35:00-04:00",
+      "age_minutes": 25,
       "status": "checked"
     },
     {
       "name": "Dow Jones Industrial Average",
-      "value": 51532.9,
-      "prior_close": 51267.9,
-      "change_percent": 0.5,
-      "source": "S&P Dow Jones Indices",
+      "value": 51061.28,
+      "prior_close": 51521.28,
+      "change_percent": -0.89,
+      "source": "S&P Dow Jones Indices via The Associated Press",
       "source_url": "https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/",
-      "fetched_at": "2026-10-06T11:00:00-04:00",
-      "age_minutes": 0,
+      "fetched_at": "2026-10-07T09:35:00-04:00",
+      "age_minutes": 25,
       "status": "checked"
     },
     {
       "name": "Expected volatility",
-      "value": 15.52,
-      "prior_close": 15.31,
-      "change_percent": 1.37,
-      "source": "Cboe",
-      "source_url": "https://www.cboe.com/tradable-products/vix/vix-futures",
-      "fetched_at": "2026-10-06T11:00:00-04:00",
-      "age_minutes": 0,
+      "value": 17.1,
+      "prior_close": 17.0818,
+      "change_percent": 0.11,
+      "source": "Cboe delayed futures quotes",
+      "source_url": "https://www.cboe.com/delayed_quotes/vx_x1/future_quotes/",
+      "fetched_at": "2026-10-07T09:45:00-04:00",
+      "age_minutes": 15,
       "status": "checked"
     }
   ],
   "warnings": [
-    "Large U.S. companies begin reporting profits: fact card requires manual review before publish"
+    "Stocks pulled back from Tuesday's record: fact card requires manual review before publish",
+    "Fed meeting minutes arrive this afternoon: fact card requires manual review before publish"
   ],
   "failures": []
 }
