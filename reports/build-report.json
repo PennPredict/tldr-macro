@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T22:28:24.616Z",
+  "generated_at": "2026-10-07T22:30:46.684Z",
   "edition_date": "2026-10-07",
   "policy_version": 1,
   "status": "passed",
@@ -437,7 +437,7 @@
     "count": 4,
     "items": [
       {
-        "headline": "Stocks Fall From A Record",
+        "headline": "Stocks Fall From a Record",
         "evidence": {
           "bucket": "medium_down",
           "rule": "A 0.5% decline maps to falls; the prior close was a record.",

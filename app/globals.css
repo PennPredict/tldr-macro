@@ -282,7 +282,8 @@ body { font-size:16px; }
 .headline-visual,.headline-visual * { font-size:max(12px,1em); }
 .story-tag,.why-trigger,.info-button,.data-note,.data-note strong,.global-section .notable-title small,.edition,.edition span,.edition time { font-size:12px; }
 .story-sources p,.story-sources p b,.scenario b,.event-main span,footer,.about-trigger { font-size:13px; }
-.why-trigger,.info-button { width:24px; height:24px; }
+.why-trigger,.info-button,.market-title .term { position:relative; width:17px; height:17px; min-height:17px; padding:0; font-size:9px; line-height:1; }
+.why-trigger:after,.market-title .term:after { content:""; position:absolute; inset:-4px; }
 
 @media (max-width:639px) {
   body { font-size:15px; }

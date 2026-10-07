@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T22:28:42.297Z",
+  "generated_at": "2026-10-07T22:31:04.091Z",
   "results": [
     {
       "width": 375,
@@ -15,25 +15,25 @@
     },
     {
       "width": 768,
-      "visible_triggers": 28,
+      "visible_triggers": 27,
       "summary_lines": 0,
       "sticky": {
         "initially_hidden": true,
         "midpage_visible": true,
         "layout_shift_px": 0,
-        "popover_clearance_px": 228.8125
+        "popover_clearance_px": 228.265625
       },
       "failures": []
     },
     {
       "width": 1280,
-      "visible_triggers": 28,
+      "visible_triggers": 27,
       "summary_lines": 1,
       "sticky": {
         "initially_hidden": true,
         "midpage_visible": true,
         "layout_shift_px": 0,
-        "popover_clearance_px": 306.109375
+        "popover_clearance_px": 316.28125
       },
       "failures": []
     }

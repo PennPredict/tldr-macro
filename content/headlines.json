@@ -1,7 +1,7 @@
 [
   {
     "topic_tag":"market_volatility",
-    "headline":"Stocks Fall From A Record",
+    "headline":"Stocks Fall From a Record",
     "headline_evidence":{"bucket":"medium_down","rule":"A 0.5% decline maps to falls; the prior close was a record.","data":"current-edition.markets.S&P 500.change_percent|prior_close"},
     "commentary":"The S&P 500 fell from Tuesday's record in early trading. Higher Treasury yields can make government bonds a more competitive alternative to stocks.",
     "defines":[{"term":"S&P 500","definition":"Index of 500 large U.S. companies.","used_by_and_why":"Broad gauge of U.S. stock prices."}],
