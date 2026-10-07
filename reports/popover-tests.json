@@ -1,39 +1,39 @@
 {
-  "generated_at": "2026-10-07T17:14:49.951Z",
+  "generated_at": "2026-10-07T21:51:18.320Z",
   "results": [
     {
       "width": 375,
-      "visible_triggers": 24,
-      "summary_lines": 2,
+      "visible_triggers": 21,
+      "summary_lines": 0,
       "sticky": {
         "initially_hidden": true,
         "midpage_visible": true,
         "layout_shift_px": 0,
-        "popover_clearance_px": 56.984375
+        "popover_clearance_px": 229.6875
       },
       "failures": []
     },
     {
       "width": 768,
-      "visible_triggers": 24,
-      "summary_lines": 1,
+      "visible_triggers": 28,
+      "summary_lines": 0,
       "sticky": {
         "initially_hidden": true,
         "midpage_visible": true,
         "layout_shift_px": 0,
-        "popover_clearance_px": 219.046875
+        "popover_clearance_px": 228.8125
       },
       "failures": []
     },
     {
       "width": 1280,
-      "visible_triggers": 24,
+      "visible_triggers": 28,
       "summary_lines": 1,
       "sticky": {
         "initially_hidden": true,
         "midpage_visible": true,
         "layout_shift_px": 0,
-        "popover_clearance_px": 321.671875
+        "popover_clearance_px": 316.109375
       },
       "failures": []
     }

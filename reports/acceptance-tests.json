@@ -1,23 +1,53 @@
 {
-  "generated_at": "2026-10-07T15:19:07.476Z",
+  "generated_at": "2026-10-07T21:27:04.413Z",
   "checks": [
     {
       "width": 375,
-      "view_body_question_buttons": 0
+      "top": {
+        "summaryVisible": true,
+        "summaryTop": 103,
+        "horizontalOverflow": false
+      },
+      "minimum_font_failures": [],
+      "diagram_overflow": [],
+      "badge_styles": [],
+      "axe_violations": []
     },
     {
-      "width": 375,
-      "back_to_top_y": 0,
-      "header_focused": true
+      "width": 390,
+      "top": {
+        "summaryVisible": true,
+        "summaryTop": 103,
+        "horizontalOverflow": false
+      },
+      "minimum_font_failures": [],
+      "diagram_overflow": [],
+      "badge_styles": [],
+      "axe_violations": []
+    },
+    {
+      "width": 768,
+      "top": {
+        "summaryVisible": true,
+        "summaryTop": 108.328125,
+        "horizontalOverflow": false
+      },
+      "minimum_font_failures": [],
+      "diagram_overflow": [],
+      "badge_styles": [],
+      "axe_violations": []
     },
     {
       "width": 1280,
-      "view_body_question_buttons": 0
-    },
-    {
-      "width": 1280,
-      "back_to_top_y": 0,
-      "header_focused": true
+      "top": {
+        "summaryVisible": true,
+        "summaryTop": 149.453125,
+        "horizontalOverflow": false
+      },
+      "minimum_font_failures": [],
+      "diagram_overflow": [],
+      "badge_styles": [],
+      "axe_violations": []
     }
   ]
 }

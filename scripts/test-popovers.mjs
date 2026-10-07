@@ -15,7 +15,7 @@ try{
       const initialTop=await page.locator(".market-section").evaluate(element=>element.getBoundingClientRect().top+scrollY);
       const initiallyHidden=await page.locator(".sticky-header").getAttribute("aria-hidden");if(initiallyHidden!=="true")failures?.push?.({sticky_initially_hidden:initiallyHidden});
       if(width===375||width===1280)await page.screenshot({path:`reports/sticky-top-${width}.png`,fullPage:false});
-      const triggers=page.locator(".term,.why-trigger,.info-button,.about-trigger");let tested=0;
+      const triggers=page.locator(".market-section .term,.stories .term,.notable .term,.watch .term,.why-trigger,.info-button,.about-trigger");let tested=0;
       for(let index=0;index<await triggers.count();index++){
         const trigger=triggers.nth(index);if(!await trigger.isVisible())continue;tested++;await trigger.click();
         const metric=await page.locator(".term-popover").evaluate(popover=>{const box=popover.getBoundingClientRect(),children=[...popover.querySelectorAll("*")];return {overflow:popover.scrollWidth<=popover.clientWidth,childrenInside:children.every(child=>{const rect=child.getBoundingClientRect();return rect.left>=box.left-.5&&rect.right<=box.right+.5&&rect.top>=box.top-.5&&rect.bottom<=box.bottom+.5}),viewport:box.left>=8&&box.right<=innerWidth-8&&box.top>=8&&box.bottom<=innerHeight-8,fontStyle:getComputedStyle(popover).fontStyle};});
@@ -23,13 +23,13 @@ try{
       }
       await page.locator("#story-rates").scrollIntoViewIfNeeded();await page.evaluate(()=>scrollBy(0,-120));await page.waitForTimeout(80);if(width<600){await page.evaluate(()=>scrollBy(0,-20));await page.waitForTimeout(80)}
       const stickyVisible=await page.locator(".sticky-header").getAttribute("aria-hidden");if(stickyVisible!=="false")failures.push({sticky_midpage_visible:stickyVisible});
-      const summaryLines=await page.locator(".sticky-summary").evaluate(element=>Math.round(element.getBoundingClientRect().height/Number.parseFloat(getComputedStyle(element).lineHeight)));
-      const maxLines=width===375?2:1;if(summaryLines>maxLines)failures.push({summaryLines,maxLines});
-      for(let index=0;index<await page.locator(".sticky-summary .term").count();index++){
+      const stickySummaryVisible=await page.locator(".sticky-summary").isVisible(),summaryLines=stickySummaryVisible?await page.locator(".sticky-summary").evaluate(element=>Math.round(element.getBoundingClientRect().height/Number.parseFloat(getComputedStyle(element).lineHeight))):0;
+      if(width>=900&&summaryLines>1)failures.push({summaryLines,maxLines:1});if(width<900&&stickySummaryVisible)failures.push({sticky_summary_should_be_hidden:true});
+      if(width>=900)for(let index=0;index<await page.locator(".sticky-summary .term").count();index++){
         const trigger=page.locator(".sticky-summary .term").nth(index);await trigger.hover();await page.locator(".term-popover").waitFor({state:"visible"});await page.mouse.move(4,996);await page.keyboard.press("Escape");await page.waitForTimeout(30);
       }
       for(const [index,target] of ["story-stocks","story-rates","story-oil"].entries()){
-        await page.locator(".sticky-summary .term").nth(index).evaluate(element=>element.click());await page.waitForTimeout(700);if(width<600){await page.evaluate(()=>scrollBy(0,-20));await page.waitForTimeout(80)}
+        const selector=width>=900?".sticky-summary .term":".edition-summary .term";await page.locator(selector).nth(index).evaluate(element=>element.click());await page.waitForTimeout(700);if(width<600){await page.evaluate(()=>scrollBy(0,-20));await page.waitForTimeout(80)}
         const position=await page.locator(`#${target}`).evaluate(element=>element.getBoundingClientRect().top);
         const minimum=width<600?52:60,maximum=136;if(position<minimum||position>maximum)failures.push({summary_jump:target,position});
       }

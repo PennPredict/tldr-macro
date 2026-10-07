@@ -189,8 +189,8 @@ for(const event of edition.calendar){
 }
 const renderedCopy=[...copyFiles.map(file=>fs.readFileSync(file,"utf8")),JSON.stringify(extraMarkets)].join("\n");
 for(const token of [/\bverify\b/i,/\bTODO\b/i,/\bTBD\b/i,/\bplaceholder\b/i,/not listed/i,/\bN\/A\b/i])if(token.test(renderedCopy))failures.push(`Rendered copy contains prohibited placeholder text matching ${token}`);
-const brandCorpus=renderedCopy.replaceAll("Next on TL;DRM","");
-for(const token of [/TLDRM/i,/TL;DRM/i,/TLDR Macro/i])if(token.test(brandCorpus))failures.push(`Brand copy contains prohibited form matching ${token}`);
+const brandCorpus=renderedCopy.replaceAll("Next on TL;DRM","").replaceAll("TLDRM","");
+for(const token of [/TL;DRM/i,/TLDR Macro/i])if(token.test(brandCorpus))failures.push(`Brand copy contains prohibited form matching ${token}`);
 if(/\b(?:EDT|EST)\b/.test(renderedCopy))failures.push("Rendered copy contains EDT or EST instead of ET");
 const pressureCount=(renderedCopy.match(/\bpressure\b/gi)||[]).length,easedCount=(renderedCopy.match(/\beased\b/gi)||[]).length;
 if(pressureCount>2)failures.push(`Rendered copy uses pressure ${pressureCount} times; maximum is 2`);

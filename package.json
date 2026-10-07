@@ -8,11 +8,13 @@
   "scripts": {
     "dev": "vinext dev",
     "validate:content": "node scripts/validate-content.mjs",
+    "validate:review": "node scripts/review-audit.mjs",
     "build": "npm run validate:content && vinext build && npm run test:popovers",
     "build:pages": "npm run validate:content && next build",
     "start": "vinext start",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
-    "test:popovers": "node scripts/test-popovers.mjs"
+    "test:popovers": "node scripts/test-popovers.mjs",
+    "test:acceptance": "node scripts/test-acceptance.mjs"
   },
   "dependencies": {
     "next": "16.2.6",

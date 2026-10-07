@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-10-07T21:26:41.711Z",
+  "status": "passed",
+  "checks": {
+    "instrument_count": 16,
+    "visible_instruments": [
+      "S&P 500",
+      "10-year Treasury yield",
+      "Brent crude oil",
+      "Nasdaq Composite",
+      "Dow Jones Industrial Average",
+      "Expected volatility",
+      "10-year minus 2-year yield spread",
+      "30-year fixed mortgage rate"
+    ],
+    "global_items_visible": 2,
+    "badge_signs": [
+      "Shares −7.4%"
+    ]
+  },
+  "flags": [
+    "Brent crude oil: boundary — needs human check",
+    "DAX: withheld — fewer than 20 daily observations",
+    "Nikkei 225: withheld — fewer than 20 daily observations",
+    "KOSPI: withheld — fewer than 20 daily observations",
+    "2-year Treasury yield: withheld — stale and fewer than 20 daily observations",
+    "Euro to dollar: withheld — stale and fewer than 20 daily observations",
+    "Dollar to yen: withheld — stale and fewer than 20 daily observations",
+    "Pound to dollar: withheld — stale and fewer than 20 daily observations",
+    "Natural gas: withheld — stale and fewer than 20 daily observations"
+  ],
+  "failures": []
+}

@@ -10,10 +10,10 @@ Status: local review only; not published
 | Snapshot subtitle | Morning readings. |
 | Snapshot label | Significance |
 | One-liner | Stocks fell early, government borrowing rates rose, and oil jumped. |
-| Top Story 1 | Stocks fall from a record |
-| Top Story 2 | Borrowing rates rise |
+| Top Story 1 | Stocks Fall From A Record |
+| Top Story 2 | Borrowing Rates Rise |
 | Top Story 3 | Oil jumps |
-| Top Story 4 | Fed minutes arrive |
+| Top Story 4 | Fed Minutes Arrive |
 | Secondary section | TL;DR Global |
 | Calendar section | Next on TL;DRM |
 | Mission popover | Mission: Low-cortisol explanations. Limits: Not investment advice; concision reduces nuance. |
@@ -112,3 +112,27 @@ The report includes ten generated samples: flat, big up, big down, near record, 
 - `reports/acceptance-footer-after-{375,1280}.png`
 
 Validation commands: `npm run validate:content`, `npm run lint`, `npm run build`, and `node scripts/test-acceptance.mjs`.
+# Review-driven integrity patch — Oct. 7, 2026
+
+| Location | Before | After | Statement type | Evidence | Reason |
+|---|---|---|---|---|---|
+| Stocks story | Three-index move recap plus a direct yield explanation | “The S&P 500 fell from Tuesday's record in early trading. Higher Treasury yields can make government bonds a more competitive alternative to stocks.” | Fact + mechanism | AP; FRED DGS10 | Removes repeated card figures and avoids presenting a mechanism as the cause of the session move. |
+| Oil headline | “Oil jumps” | “Oil Rises” | Quantitative direction | Registry: Brent +1.51% | Exact threshold boundary remains a human-review case. |
+| Oil commentary | Unattributed supply uncertainty | AP-attributed market backdrop | Attributed context | Associated Press, Oct. 7 | Keeps reported context distinct from causal inference. |
+| Fed story | Unattributed investor expectation | Minutes record discussion and disagreement | Document description | Federal Reserve calendar and FOMC materials | Removes an unsupported forward-looking audience claim. |
+| Conflict headline | “Iran conflict disrupts oil supply” | “Iran conflict clouds oil outlook” | Attributed context | AP | Source supports uncertainty, not a verified physical disruption. |
+| Global markets | “Global stocks fall” | DAX and Nikkei rose while KOSPI fell | Mixed fact | Deutsche Börse; Nikkei; Korea Exchange | Removes a contradiction with the cited index directions. |
+| Snapshot cards | Static description and “Significance” paragraph | Info popover plus one visible “So what” block | Mechanism + daily context | Channel ledger and card sources | Moves reusable definitions out of the daily reading path. |
+
+## Removed or withheld for insufficient evidence
+
+- Duplicate Nasdaq Composite and Dow cards removed from More Markets.
+- Worthington Steel routine earnings item excluded from rendered TL;DR Global.
+- FOMC minutes excluded from the calendar while present as a Top Story.
+- Yield comparison visual withheld: comparable 12-month mortgage history is not present in the local evidence package.
+- Gasoline cost-component visual withheld: the latest EIA breakdown was not verified in the local evidence package.
+- Stale or short-history extra-market series are withheld as listed in `DATA_REPORT.md`.
+
+## Boundary cases
+
+- Brent crude: +1.51%, at the editorial “jumps” boundary after display rounding; changed to “rises” and marked needs human check.

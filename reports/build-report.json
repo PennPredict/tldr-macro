@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T17:14:28.917Z",
+  "generated_at": "2026-10-07T21:51:00.608Z",
   "edition_date": "2026-10-07",
   "policy_version": 1,
   "status": "passed",
@@ -10,7 +10,7 @@
     "eased": 0
   },
   "claim_ledger": {
-    "headline_claims": 12,
+    "headline_claims": 10,
     "view_claims": 20,
     "market_claims": 12
   },
@@ -437,7 +437,7 @@
     "count": 4,
     "items": [
       {
-        "headline": "Stocks fall from a record",
+        "headline": "Stocks Fall From A Record",
         "evidence": {
           "bucket": "medium_down",
           "rule": "A 0.5% decline maps to falls; the prior close was a record.",
@@ -453,32 +453,37 @@
         }
       },
       {
-        "headline": "Borrowing rates rise",
+        "headline": "Borrowing Rates Rise",
         "evidence": {
           "bucket": "medium_up",
           "rule": "An 8-basis-point increase maps to rises.",
           "data": "current-edition.markets.10-year Treasury yield.value|prior_close"
         },
         "visual_gate": {
-          "node_count": 3,
-          "adds_reference_value": true,
-          "commentary_similarity": 0.18,
-          "numbers_sourced": true,
-          "no_causal_arrows": true,
-          "not_single_stat": true,
+          "passed": false,
+          "failures": [
+            "Twelve-month paired history unavailable"
+          ],
           "needs_human_check": true
         }
       },
       {
-        "headline": "Oil jumps",
+        "headline": "Oil Rises",
         "evidence": {
-          "bucket": "large_up",
-          "rule": "A move above 1.5% maps to jumps.",
-          "data": "current-edition.markets.Brent crude oil.change_percent"
+          "bucket": "medium_up",
+          "rule": "A 1.5% move maps to rises; the jump boundary requires human review.",
+          "data": "instruments.brent.change_percent"
+        },
+        "visual_gate": {
+          "passed": false,
+          "failures": [
+            "Latest EIA gasoline cost-component breakdown not verified"
+          ],
+          "needs_human_check": true
         }
       },
       {
-        "headline": "Fed minutes arrive",
+        "headline": "Fed Minutes Arrive",
         "evidence": {
           "bucket": "event",
           "rule": "Plain event headline for a scheduled policy release.",
@@ -586,7 +591,7 @@
   },
   "global_items": [
     {
-      "headline": "Iran conflict disrupts oil supply",
+      "headline": "Iran conflict clouds oil outlook",
       "sources": [
         {
           "name": "The Associated Press",
@@ -618,7 +623,7 @@
       "needs_human_check": true
     },
     {
-      "headline": "Global stocks fall",
+      "headline": "European and Asian stocks diverge",
       "sources": [
         {
           "name": "Deutsche Börse",
@@ -730,18 +735,6 @@
       "current_provider": "Korea Exchange via KB Financial Group",
       "historical_provider": "Korea Exchange via KB Financial Group",
       "licensing_note": "Korea Exchange index data are proprietary; linked exchange and issuer sources retained."
-    },
-    {
-      "name": "Nasdaq Composite",
-      "current_provider": "Nasdaq via FRED",
-      "historical_provider": "Nasdaq via FRED",
-      "licensing_note": "FRED republishes the Nasdaq series; citation and linked source retained."
-    },
-    {
-      "name": "Dow Jones Industrial Average",
-      "current_provider": "S&P Dow Jones Indices via FRED",
-      "historical_provider": "S&P Dow Jones Indices via FRED",
-      "licensing_note": "Index data are proprietary; citation and linked FRED source retained."
     },
     {
       "name": "Russell 2000",
