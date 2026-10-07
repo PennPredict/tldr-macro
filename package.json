@@ -10,7 +10,7 @@
     "validate:content": "node scripts/validate-content.mjs",
     "validate:review": "node scripts/review-audit.mjs",
     "build": "npm run validate:content && vinext build && npm run test:popovers",
-    "build:pages": "npm run validate:content && next build",
+    "build:pages": "npm run validate:content && npm run validate:review && next build",
     "start": "vinext start",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "test:popovers": "node scripts/test-popovers.mjs",
