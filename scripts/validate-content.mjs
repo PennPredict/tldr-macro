@@ -190,9 +190,13 @@ for(const [domain,count] of Object.entries(domainCounts))if(count/allSources.len
 const snapshotDomainCards={};for(const market of edition.markets)for(const domain of new Set((market.sources||[]).map(source=>new URL(source.href).hostname.replace(/^www\./,""))))snapshotDomainCards[domain]=(snapshotDomainCards[domain]||0)+1;
 for(const [domain,count] of Object.entries(snapshotDomainCards))if(count>2)failures.push(`Snapshot diversity: ${domain} appears on ${count} cards, above 2`);
 for(const term of terms){if(!term.id||!term.surface_forms?.length||!term.type||!term.definition||!term.used_by_and_why)failures.push(`Terms file: ${term.id||"unnamed term"} has an empty required field`);if(term.type==="also_called"&&!term.also_called?.length)failures.push(`Terms file: ${term.id} needs also_called entries`);}
+if(edition.calendar.length<3||edition.calendar.length>5)failures.push(`Upcoming calendar must contain 3 to 5 events; found ${edition.calendar.length}`);
+let previousEventTime=0;
 for(const event of edition.calendar){
   if(!event.time||!event.href||!event.hot_label||!event.cool_label)failures.push(`${event.title}: incomplete calendar metadata`);
   if(!/\b(?:AM|PM) ET\b/.test(event.time))failures.push(`${event.title}: time must use AM or PM followed by ET`);
+  if(!event.start_at)failures.push(`${event.title}: missing exact start_at timestamp`);
+  else {const eventTime=new Date(event.start_at).getTime();if(eventTime<=editionReference)failures.push(`${event.title}: released events cannot appear in Next on TL;DRM`);if(eventTime<previousEventTime)failures.push(`${event.title}: calendar is not chronological`);previousEventTime=eventTime;}
 }
 const renderedCopy=[...copyFiles.map(file=>fs.readFileSync(file,"utf8")),JSON.stringify(extraMarkets)].join("\n");
 for(const token of [/\bverify\b/i,/\bTODO\b/i,/\bTBD\b/i,/\bplaceholder\b/i,/not listed/i,/\bN\/A\b/i])if(token.test(renderedCopy))failures.push(`Rendered copy contains prohibited placeholder text matching ${token}`);
