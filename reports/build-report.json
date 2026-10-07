@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T22:39:56.482Z",
+  "generated_at": "2026-10-07T22:42:30.478Z",
   "edition_date": "2026-10-07",
   "policy_version": 1,
   "status": "passed",
@@ -468,10 +468,10 @@
         }
       },
       {
-        "headline": "Oil Rises",
+        "headline": "Oil Climbs",
         "evidence": {
           "bucket": "medium_up",
-          "rule": "A 1.5% move maps to rises; the jump boundary requires human review.",
+          "rule": "A 1.5% move maps to climbs; the jump boundary requires human review.",
           "data": "instruments.brent.change_percent"
         },
         "visual_gate": {

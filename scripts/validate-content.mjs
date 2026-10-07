@@ -69,6 +69,12 @@ const historyRecent=onelinerHistory.filter(item=>item.date!==edition.edition_dat
 const onelinerScores=historyRecent.map((item,index)=>({date:item.date,edit_similarity:Number(editSimilarity(edition.summary,item.final_sentence).toFixed(3)),token_similarity:Number(tokenSimilarity(edition.summary,item.final_sentence).toFixed(3)),first_four_match:normalized(edition.summary).split(" ").slice(0,4).join(" ")===normalized(item.final_sentence).split(" ").slice(0,4).join(" "),limit:index===0?.6:.75}));
 for(const score of onelinerScores)if(Math.max(score.edit_similarity,score.token_similarity)>score.limit||score.first_four_match)failures.push(`Edition summary duplicates ${score.date}`);
 
+const headlineVerbStem=word=>({rises:"rise",rose:"rise",falls:"fall",fell:"fall",climbs:"climb",climbed:"climb",gains:"gain",gained:"gain",drops:"drop",dropped:"drop",slips:"slip",slipped:"slip",jumps:"jump",jumped:"jump",arrives:"arrive",urges:"urge",clouds:"cloud"}[word]||word);
+const actionWords=new Set(["rise","rises","rose","fall","falls","fell","climb","climbs","climbed","gain","gains","gained","drop","drops","dropped","slip","slips","slipped","jump","jumps","jumped","arrive","arrives","urge","urges","cloud","clouds"]);
+const actionUse=new Map();
+for(const title of [...headlines.map(item=>item.headline),...globalItems.filter(item=>item.tag!=="Company"&&item.qualifies!==false).map(item=>item.headline)])for(const word of title.toLowerCase().match(/[a-z]+/g)||[])if(actionWords.has(word)){const stem=headlineVerbStem(word),uses=actionUse.get(stem)||[];uses.push(title);actionUse.set(stem,uses)}
+for(const [stem,titles] of actionUse)if(titles.length>1)failures.push(`Headline verb “${stem}” repeats across: ${titles.join(" | ")}`);
+
 for(const headline of headlines){
   for(const field of required)if(headline[field]===null||headline[field]===undefined||headline[field]===""||(Array.isArray(headline[field])&&!headline[field].length))failures.push(`${headline.headline||headline.topic_tag||"Headline"}: missing ${field}`);
   const mapped=lensMapping[headline.topic_tag];
@@ -89,6 +95,7 @@ for(const headline of headlines){
   for(const definition of headline.defines||[]){
     if(!definition.term||!definition.definition||!definition.used_by_and_why)failures.push(`${headline.headline}: definition entries require term, definition, and used_by_and_why`);
     else if(!(headline.commentary||"").toLowerCase().includes(definition.term.toLowerCase()))failures.push(`${headline.headline}: defined term “${definition.term}” does not appear in commentary`);
+    else if(normalized(headline.commentary).includes(normalized(definition.definition))||similarity(headline.commentary,`${definition.definition} ${definition.used_by_and_why}`)>=.55)failures.push(`${headline.headline}: popup for “${definition.term}” duplicates nearby commentary`);
   }
   if(headline.visual)for(const field of ["type","title","as_of","source","caption","alt"])if(headline.visual?.[field]===null||headline.visual?.[field]===undefined||headline.visual?.[field]==="")failures.push(`${headline.headline}: visual is missing ${field}`);
   if(headline.visual&&!["transmission","context","fact"].includes(headline.visual?.type))failures.push(`${headline.headline}: visual type must be transmission, context, or fact`);
