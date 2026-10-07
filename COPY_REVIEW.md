@@ -74,8 +74,8 @@ Every visible More Markets card resolves to a reviewed channel line and signal l
 | Story | Result | Notes |
 |---|---|---|
 | Stocks | Omitted | Single-stat tile; no added relationship or reference value |
-| Borrowing rates | Passed; human check | Three sourced nodes; reference values; low copy similarity; no causal arrows |
-| Oil | Passed | Four-node supply chain; sourced relationship |
+| Borrowing rates | Passed; human check | Three sourced nodes; reference values; low copy similarity; one-way arrows labeled “can influence” |
+| Oil | Passed | Four-node supply chain; sourced one-way transmission arrows |
 | Fed minutes | Omitted | Single-stat tile; fewer than three nodes |
 
 Reference series:
