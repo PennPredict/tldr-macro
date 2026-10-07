@@ -5,7 +5,6 @@ import StickyHeader from "./StickyHeader";
 import BackToTopLink from "./BackToTopLink";
 import EditionSummary from "./EditionSummary";
 import EditionStatus from "./EditionStatus";
-import PopoverHint from "./PopoverHint";
 
 export const fullDisclaimer = "Educational context only; not investment advice. Check primary sources.";
 
@@ -21,7 +20,7 @@ export function Header({ updated, summary }: { updated?: string; summary:string 
   const format=(includeYear:boolean)=>updated?`${new Intl.DateTimeFormat("en-US",{month:"short",day:"numeric",...(includeYear?{year:"numeric"}:{}),hour:"numeric",minute:"2-digit",timeZone:"America/New_York"}).format(new Date(updated))} ET`:"About this briefing";
   const label=format(true);
   const compactLabel=format(false);
-  return <><header className="topbar" id="top"><div className="topbar-main"><BrandImage placement="header" /><div className="edition"><span>Morning edition</span><time dateTime={updated}>{label}</time><EditionStatus published={updated||""}/></div></div><EditionSummary text={summary}/><PopoverHint/></header><StickyHeader updated={updated} label={compactLabel} summary={summary}/></>;
+  return <><header className="topbar" id="top"><div className="topbar-main"><BrandImage placement="header" /><div className="edition"><span>Morning edition</span><time dateTime={updated}>{label}</time><EditionStatus published={updated||""}/></div></div><EditionSummary text={summary}/></header><StickyHeader updated={updated} label={compactLabel} summary={summary}/></>;
 }
 
 export function Footer() {
