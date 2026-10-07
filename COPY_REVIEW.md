@@ -8,7 +8,7 @@ Status: local review only; not published
 | Location | Final copy |
 |---|---|
 | Snapshot subtitle | Morning readings. |
-| Snapshot label | So what |
+| Snapshot label | Significance |
 | One-liner | Stocks fell early, government borrowing rates rose, and oil jumped. |
 | Top Story 1 | Stocks fall from a record |
 | Top Story 2 | Borrowing rates rise |
@@ -47,7 +47,7 @@ Headline specifics now begin each price story: the asset, move versus the prior 
 | KOSPI | Investors use the KOSPI to track South Korean companies, so it can reflect chip demand and global manufacturing. | https://global.krx.co.kr/ |
 | Pound/dollar | Travelers and companies convert pounds and dollars, so the rate can affect trips, imports, and translated earnings. | https://fred.stlouisfed.org/series/DEXUSUK |
 
-## Snapshot So-what composition
+## Snapshot significance composition
 
 | Card | Channel | Context | Evidence |
 |---|---|---|---|

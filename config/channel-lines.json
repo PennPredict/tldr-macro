@@ -1,5 +1,5 @@
 {
-  "label": "So what",
+  "label": "Significance",
   "lines": {
     "sp500": {"instrument":"S&P 500","channel_line":"Retirement funds use broad stock indexes to track large U.S. companies, so the move can affect account balances.","signal_line":"Investors watch it as a broad gauge of large U.S. stocks.","source_url":"https://www.spglobal.com/spdji/en/indices/equity/sp-500/"},
     "nasdaq": {"instrument":"Nasdaq Composite","channel_line":"Investors use the Nasdaq to track many technology companies, so the move can affect growth-heavy portfolios.","signal_line":"Investors watch it for changes in technology and growth shares.","source_url":"https://www.nasdaq.com/market-activity/index/comp"},
