@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-10-07T15:19:07.476Z",
+  "checks": [
+    {
+      "width": 375,
+      "view_body_question_buttons": 0
+    },
+    {
+      "width": 375,
+      "back_to_top_y": 0,
+      "header_focused": true
+    },
+    {
+      "width": 1280,
+      "view_body_question_buttons": 0
+    },
+    {
+      "width": 1280,
+      "back_to_top_y": 0,
+      "header_focused": true
+    }
+  ]
+}

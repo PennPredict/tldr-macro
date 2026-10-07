@@ -1,11 +1,13 @@
 [
   {
     "topic_tag":"market_volatility",
-    "headline":"Stocks pulled back from Tuesday's record",
-    "commentary":"The S&P 500 fell 0.5% in early trading after closing at a record Tuesday. The Dow fell about 460 points, while the Nasdaq Composite declined 0.7%. Higher Treasury yields give investors a more competitive return outside stocks.",
+    "headline":"Stocks fall from a record",
+    "headline_evidence":{"bucket":"medium_down","rule":"A 0.5% decline maps to falls; the prior close was a record.","data":"current-edition.markets.S&P 500.change_percent|prior_close"},
+    "commentary":"The S&P 500, a broad index of large U.S. companies, fell 0.5% to about 7,780 in early trading after closing at a record Tuesday. The Dow fell about 460 points, while the Nasdaq Composite declined 0.7%. Higher Treasury yields give investors a more competitive return outside stocks.",
     "defines":[{"term":"S&P 500","definition":"Index of 500 large U.S. companies.","used_by_and_why":"Broad gauge of U.S. stock prices."}],
     "explains":[{"anchor_text":"Higher Treasury yields give investors a more competitive return outside stocks","why":"Investors compare possible company profits with returns available from government bonds.","other_reading":"Company results and news can outweigh changes in yields."}],
-    "visual":{"type":"fact","title":"Early market move","fact_text":"S&P 500 −0.5%","as_of":"2026-10-07T09:35:00-04:00","source":"The Associated Press","caption":"The index closed at a record Tuesday.","alt":"The S&P 500 fell 0.5 percent in early trading after closing at a record Tuesday."},
+    "visual":null,
+    "visual_gate":{"passed":false,"failures":["Single-stat tile","No new relationship or reference value"],"needs_human_check":false},
     "views":[
       {"view_id":"household","body":"Retirement accounts can move with broad stock indexes. One morning's decline does not determine a long-term result.","keep_wondering":"Does the decline spread beyond large companies?","claims":[{"sentence_id":"stocks-household-1","type":"mechanism","evidence":"https://www.sec.gov/investor/pubs/assetallocation.htm"},{"sentence_id":"stocks-household-2","type":"interpretation","evidence":"https://www.spglobal.com/spdji/en/indices/equity/sp-500/"}]},
       {"view_id":"dealer","body":"Market makers quote prices while new information changes demand. Fast moves can widen the gap between buying and selling prices.","keep_wondering":"Did trading remain orderly?","claims":[{"sentence_id":"stocks-dealer-1","type":"mechanism","evidence":"https://www.nasdaq.com/solutions/nasdaq-market-makers"},{"sentence_id":"stocks-dealer-2","type":"mechanism","evidence":"https://www.finra.org/investors/investing/investment-products/stocks/order-types"}]}
@@ -16,11 +18,12 @@
   },
   {
     "topic_tag":"interest_rates_and_yields",
-    "headline":"Government borrowing rates rose to 5.35%",
-    "commentary":"The 10-year Treasury yield is the annual return investors demand to lend to the U.S. government for a decade. It rose from 5.27% to 5.35%, near its highest level since 2002. The benchmark can influence mortgages, company expansion, and stock prices relative to profits.",
+    "headline":"Borrowing rates rise",
+    "headline_evidence":{"bucket":"medium_up","rule":"An 8-basis-point increase maps to rises.","data":"current-edition.markets.10-year Treasury yield.value|prior_close"},
+    "commentary":"The 10-year Treasury yield, the annual return on a ten-year U.S. government loan, rose 0.08 percentage points to 5.35% in morning trading. It rose from 5.27% to 5.35%, near its highest level since 2002. The benchmark can influence mortgages, company expansion, and stock prices relative to profits.",
     "defines":[{"term":"10-year Treasury yield","definition":"Annual return demanded on a ten-year U.S. government loan.","used_by_and_why":"Reference for mortgages, business debt, and long-term borrowing."}],
     "explains":[{"anchor_text":"influence mortgages, company expansion, and stock prices relative to profits","why":"Lenders and investors compare other choices with Treasury returns, then adjust for risk.","other_reading":"Competition, borrower quality, and company results can outweigh the benchmark."}],
-    "visual":{"type":"transmission","title":"The 10-year reaches borrowing","data":{"yield_percent":5.35,"branches":["Mortgages","Business loans","Prices vs. profits"]},"as_of":"2026-10-07T09:35:00-04:00","source":"U.S. Treasury and The Associated Press","caption":"Treasury returns guide other borrowing costs.","alt":"A 5.35 percent 10-year Treasury yield branches to mortgages, business loans, and stock prices relative to profits."},
+    "visual":{"type":"transmission","title":"Yields reach borrowing","nodes":[{"label":"10-year yield","value":"5.35","unit":"%","frequency":"intraday","as_of":"Oct. 7, 9:35 AM ET","prior":"5.27%","source":"https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"},{"label":"30-year mortgage","value":"7.28","unit":"%","frequency":"weekly","as_of":"Oct. 1","prior":"7.03%","source":"https://fred.stlouisfed.org/series/MORTGAGE30US"},{"label":"Corporate bonds","value":"5.81","unit":"%","frequency":"daily close","as_of":"Oct. 1","prior":"5.83%","source":"https://fred.stlouisfed.org/series/BAMLC0A1CAAAEY"}],"as_of":"2026-10-07T09:35:00-04:00","source":"U.S. Treasury, Freddie Mac, and ICE Data Indices via FRED","caption":"Loan rates tend to follow yields, not match them.","alt":"The 10-year Treasury yield at 5.35 percent can influence a 7.28 percent weekly mortgage rate and a 5.81 percent daily corporate bond yield.","gate_results":{"node_count":3,"adds_reference_value":true,"commentary_similarity":0.18,"numbers_sourced":true,"no_causal_arrows":true,"not_single_stat":true,"needs_human_check":true}},
     "views":[
       {"view_id":"business","body":"Borrowing costs affect companies refinancing debt or funding expansion. Firms with cash or fixed-rate debt depend less on new loans.","keep_wondering":"Which companies refinance soonest?","claims":[{"sentence_id":"rates-business-1","type":"mechanism","evidence":"https://fred.stlouisfed.org/series/DGS10"},{"sentence_id":"rates-business-2","type":"mechanism","evidence":"https://fred.stlouisfed.org/series/DGS10"}]},
       {"view_id":"policy","body":"Federal Reserve officials compare inflation and employment with borrowing conditions. Treasury issuance can also affect the supply of government debt.","keep_wondering":"How much reflects policy versus debt supply?","claims":[{"sentence_id":"rates-policy-1","type":"mechanism","evidence":"https://www.federalreserve.gov/monetarypolicy.htm"},{"sentence_id":"rates-policy-2","type":"mechanism","evidence":"https://home.treasury.gov/resource-center/data-chart-center/interest-rates/"}]},
@@ -31,8 +34,9 @@
   },
   {
     "topic_tag":"oil_and_energy",
-    "headline":"Oil climbed back above $102 a barrel",
-    "commentary":"Brent crude, the global oil benchmark, rose 1.5% to $102.10 a barrel. Uncertainty around Middle East supply remains part of the price swing. Oil can reach households through gasoline, freight, airfare, and petroleum-based materials.",
+    "headline":"Oil jumps",
+    "headline_evidence":{"bucket":"large_up","rule":"A move above 1.5% maps to jumps.","data":"current-edition.markets.Brent crude oil.change_percent"},
+    "commentary":"Brent crude, the global oil benchmark, rose 1.5% to $102.10 a barrel in morning trading. Uncertainty around Middle East supply remains part of the price swing. Oil can reach households through gasoline, freight, airfare, and petroleum-based materials.",
     "defines":[{"term":"Brent crude","definition":"Global benchmark price for oil.","used_by_and_why":"Used to price contracts and plan fuel costs."}],
     "explains":[{"anchor_text":"reach households through gasoline, freight, airfare, and petroleum-based materials","why":"Crude becomes fuel and materials used in transportation and production.","other_reading":"Refining, taxes, inventories, contracts, and competition affect retail prices."}],
     "visual":{"type":"transmission","title":"Oil reaches household costs","data":{"brent_dollars_per_barrel":102.1,"steps":["Crude oil","Fuel and materials","Transport and production","Household prices"]},"as_of":"2026-10-07T09:35:00-04:00","source":"CME Group and The Associated Press","caption":"Crude feeds fuel, freight, and materials.","alt":"Brent crude at 102 dollars and 10 cents per barrel passes through fuel, materials, transportation, and production before reaching household prices."},
@@ -47,11 +51,13 @@
   },
   {
     "topic_tag":"fed_meeting",
-    "headline":"Fed meeting minutes arrive this afternoon",
+    "headline":"Fed minutes arrive",
+    "headline_evidence":{"bucket":"event","rule":"Plain event headline for a scheduled policy release.","data":"current-edition.calendar[0]"},
     "commentary":"The Federal Open Market Committee (FOMC) minutes arrive at 2:00 p.m. ET. The record explains what officials discussed before September's rate increase. Investors will look for disagreement over another increase.",
     "defines":[{"term":"Federal Open Market Committee","definition":"Federal Reserve group that sets short-term interest rates.","used_by_and_why":"Its decisions shape borrowing costs across the economy."}],
     "explains":[{"anchor_text":"what officials discussed before September's rate increase","why":"The Federal Reserve compares inflation, employment, and financial conditions.","other_reading":"Minutes describe one meeting and may not reflect later data."}],
-    "visual":{"type":"fact","title":"Minutes release","fact_text":"2:00 PM ET","as_of":"2026-10-07T10:00:00-04:00","source":"Federal Reserve","caption":"Detailed record of the September meeting.","alt":"Federal Reserve meeting minutes are scheduled for 2:00 PM Eastern Time."},
+    "visual":null,
+    "visual_gate":{"passed":false,"failures":["Single-stat tile","Fewer than three nodes"],"needs_human_check":false},
     "views":[
       {"view_id":"policy","body":"Officials use the minutes to explain the trade-offs behind one decision. New data after the meeting can change later choices.","keep_wondering":"How divided were officials over another increase?","claims":[{"sentence_id":"fed-policy-1","type":"mechanism","evidence":"https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"},{"sentence_id":"fed-policy-2","type":"mechanism","evidence":"https://www.federalreserve.gov/monetarypolicy.htm"}]},
       {"view_id":"dealer","body":"Bond traders compare the discussion with current market prices. Unexpected wording can move yields quickly.","keep_wondering":"Which passages change rate expectations?","claims":[{"sentence_id":"fed-dealer-1","type":"mechanism","evidence":"https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"},{"sentence_id":"fed-dealer-2","type":"mechanism","evidence":"https://www.federalreserve.gov/monetarypolicy.htm"}]}

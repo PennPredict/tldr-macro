@@ -1,0 +1,6 @@
+[
+  {"date":"2026-10-07","topic":"stocks","headline":"Stocks fall from a record","signature":"stocks|medium_down"},
+  {"date":"2026-10-07","topic":"rates","headline":"Borrowing rates rise","signature":"rates|medium_up"},
+  {"date":"2026-10-07","topic":"oil","headline":"Oil jumps","signature":"oil|large_up"},
+  {"date":"2026-10-07","topic":"fed","headline":"Fed minutes arrive","signature":"fed|event"}
+]

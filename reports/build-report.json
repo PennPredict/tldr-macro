@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T14:38:13.733Z",
+  "generated_at": "2026-10-07T15:18:43.923Z",
   "edition_date": "2026-10-07",
   "policy_version": 1,
   "status": "passed",
@@ -15,8 +15,8 @@
     "market_claims": 12
   },
   "snapshot_checks": {
-    "summary_words": 14,
-    "summary_characters": 92,
+    "summary_words": 10,
+    "summary_characters": 67,
     "priority_order": [
       "S&P 500",
       "10-year Treasury yield",
@@ -26,7 +26,64 @@
       "Expected volatility (VIX)"
     ],
     "chart_span_days": 30,
-    "axis_labels": 2
+    "axis_labels": 2,
+    "so_what": [
+      {
+        "name": "S&P 500",
+        "channel_id": "sp500",
+        "context": {
+          "type": "signal",
+          "text": "Investors watch it as a broad gauge of large U.S. stocks.",
+          "evidence": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/"
+        }
+      },
+      {
+        "name": "10-year Treasury yield",
+        "channel_id": "yield10",
+        "context": {
+          "type": "signal",
+          "text": "Investors watch it as one gauge of long-term growth and inflation expectations.",
+          "evidence": "https://fred.stlouisfed.org/series/DGS10"
+        }
+      },
+      {
+        "name": "Brent crude oil",
+        "channel_id": "brent",
+        "context": {
+          "type": "attributed",
+          "text": "The Associated Press reported the move came as uncertainty continued around Middle East oil supply.",
+          "source_url": "https://apnews.com/article/44b75c188756038371cf3112ede9cee8",
+          "evidence": "Published Oct. 7, 2026; direction matches the oil increase."
+        }
+      },
+      {
+        "name": "Nasdaq Composite",
+        "channel_id": "nasdaq",
+        "context": {
+          "type": "signal",
+          "text": "Investors watch it for changes in technology and growth shares.",
+          "evidence": "https://www.nasdaq.com/market-activity/index/comp"
+        }
+      },
+      {
+        "name": "Dow Jones Industrial Average",
+        "channel_id": "dow",
+        "context": {
+          "type": "signal",
+          "text": "Investors watch it as a compact gauge of large established companies.",
+          "evidence": "https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/"
+        }
+      },
+      {
+        "name": "Expected volatility",
+        "channel_id": "vix",
+        "context": {
+          "type": "signal",
+          "text": "Investors watch it as one gauge of expected market volatility.",
+          "evidence": "https://www.cboe.com/tradable-products/vix/"
+        }
+      }
+    ]
   },
   "edition_summary": {
     "facts": {
@@ -72,24 +129,17 @@
         }
       }
     },
-    "chosen_qualifiers": {
-      "stocks": null,
-      "rates": null,
-      "oil": {
-        "type": "size",
-        "bucket": "large_up",
-        "text": "sharply"
-      }
-    },
-    "generated_sentence": "The stock market fell early, government borrowing rates rose, and oil prices jumped sharply.",
+    "generated_sentence": "Stocks fell early, government borrowing rates rose, and oil jumped.",
     "lint": {
       "passed": true,
       "errors": [],
       "warnings": [],
-      "characters": 92,
-      "words": 14,
-      "grade": 7.6
+      "characters": 67,
+      "words": 10,
+      "grade": 6
     },
+    "similarity_scores": [],
+    "retries": 0,
     "consistency_flags": [],
     "bad_examples": {
       "unsupported": {
@@ -174,7 +224,7 @@
             "qualifier": null
           }
         },
-        "sentence": "The stock market rose early, after 4 straight gains, government borrowing rates edged up slightly, and oil prices rose."
+        "sentence": "Stocks rose early, government borrowing rates edged up, and oil rose."
       },
       {
         "label": "record proximity",
@@ -225,7 +275,7 @@
             "qualifier": null
           }
         },
-        "sentence": "The stock market edged up early, just below a record high. Government borrowing rates edged down slightly, while oil prices fell."
+        "sentence": "Stocks edged up early, government borrowing rates edged down, and oil fell."
       },
       {
         "label": "reversal",
@@ -284,7 +334,7 @@
             }
           }
         },
-        "sentence": "The stock market fell early, ending a 5-day winning streak. Government borrowing rates barely moved, while oil prices edged up, the first rise in a week."
+        "sentence": "Stocks fell early, government borrowing rates held steady, and oil edged up."
       },
       {
         "label": "quiet day",
@@ -327,7 +377,7 @@
             "qualifier": null
           }
         },
-        "sentence": "The stock market barely moved early, government borrowing rates barely moved, and oil prices barely moved."
+        "sentence": "Stocks held steady early, government borrowing rates held steady, and oil held steady."
       },
       {
         "label": "mixed day",
@@ -379,12 +429,152 @@
             }
           }
         },
-        "sentence": "The stock market rose early, government borrowing rates edged up slightly, and oil prices dropped to a three-month low."
+        "sentence": "Stocks rose early, government borrowing rates edged up, and oil dropped."
       }
     ]
   },
   "headline_checks": {
     "count": 4,
+    "items": [
+      {
+        "headline": "Stocks fall from a record",
+        "evidence": {
+          "bucket": "medium_down",
+          "rule": "A 0.5% decline maps to falls; the prior close was a record.",
+          "data": "current-edition.markets.S&P 500.change_percent|prior_close"
+        },
+        "visual_gate": {
+          "passed": false,
+          "failures": [
+            "Single-stat tile",
+            "No new relationship or reference value"
+          ],
+          "needs_human_check": false
+        }
+      },
+      {
+        "headline": "Borrowing rates rise",
+        "evidence": {
+          "bucket": "medium_up",
+          "rule": "An 8-basis-point increase maps to rises.",
+          "data": "current-edition.markets.10-year Treasury yield.value|prior_close"
+        },
+        "visual_gate": {
+          "node_count": 3,
+          "adds_reference_value": true,
+          "commentary_similarity": 0.18,
+          "numbers_sourced": true,
+          "no_causal_arrows": true,
+          "not_single_stat": true,
+          "needs_human_check": true
+        }
+      },
+      {
+        "headline": "Oil jumps",
+        "evidence": {
+          "bucket": "large_up",
+          "rule": "A move above 1.5% maps to jumps.",
+          "data": "current-edition.markets.Brent crude oil.change_percent"
+        }
+      },
+      {
+        "headline": "Fed minutes arrive",
+        "evidence": {
+          "bucket": "event",
+          "rule": "Plain event headline for a scheduled policy release.",
+          "data": "current-edition.calendar[0]"
+        },
+        "visual_gate": {
+          "passed": false,
+          "failures": [
+            "Single-stat tile",
+            "Fewer than three nodes"
+          ],
+          "needs_human_check": false
+        }
+      }
+    ],
+    "samples": [
+      {
+        "case": "flat",
+        "headline": "Stocks hold steady",
+        "evidence": "+0.10%",
+        "rule": "under 0.15%"
+      },
+      {
+        "case": "big up",
+        "headline": "Stocks jump",
+        "evidence": "+1.8%",
+        "rule": "over 1.5%"
+      },
+      {
+        "case": "big down",
+        "headline": "Oil drops",
+        "evidence": "−2.1%",
+        "rule": "over 1.5%"
+      },
+      {
+        "case": "near record",
+        "headline": "Stocks hold near records",
+        "evidence": "0.4% below closing high",
+        "rule": "within 1% flag"
+      },
+      {
+        "case": "streak",
+        "headline": "Oil keeps rising",
+        "evidence": "four prior gains",
+        "rule": "streak at least 3"
+      },
+      {
+        "case": "mixed",
+        "headline": "Markets look mixed",
+        "evidence": "stocks up; oil down; rates flat",
+        "rule": "mixed directions"
+      },
+      {
+        "case": "rates up",
+        "headline": "Borrowing rates rise",
+        "evidence": "+8 basis points",
+        "rule": "6–15 basis points"
+      },
+      {
+        "case": "jobs cooled",
+        "headline": "Hiring cools",
+        "evidence": "below prior and recent average",
+        "rule": "cooling flags"
+      },
+      {
+        "case": "company deal",
+        "headline": "Google signs power deal",
+        "evidence": "company filing",
+        "rule": "plain event"
+      },
+      {
+        "case": "ongoing conflict",
+        "headline": "Iran conflict continues",
+        "evidence": "two current sources",
+        "rule": "plain event; developing"
+      }
+    ],
+    "rejected_samples": [
+      {
+        "headline": "Stocks stay strong",
+        "reason": "unanchored strong; direction conflict on a down day"
+      },
+      {
+        "headline": "Oil jumps on war fears",
+        "reason": "cause and loaded wording"
+      },
+      {
+        "headline": "S&P 500 falls 0.5%",
+        "reason": "number and technical index name"
+      },
+      {
+        "headline": "Oil keeps rising",
+        "reason": "streak phrase without a three-close streak flag"
+      }
+    ],
+    "history_count": 4,
     "views": 10,
     "definitions": [
       "household",
@@ -394,22 +584,92 @@
       "global"
     ]
   },
+  "global_items": [
+    {
+      "headline": "Iran conflict disrupts oil supply",
+      "sources": [
+        {
+          "name": "The Associated Press",
+          "href": "https://apnews.com/article/44b75c188756038371cf3112ede9cee8",
+          "type": "wire"
+        },
+        {
+          "name": "U.S. Energy Information Administration",
+          "href": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php",
+          "type": "primary"
+        }
+      ],
+      "needs_human_check": true
+    },
+    {
+      "headline": "IMF urges faster debt action",
+      "sources": [
+        {
+          "name": "The Associated Press",
+          "href": "https://apnews.com/article/2da9d879e2eb70e1e16d14fd1a307a99",
+          "type": "wire"
+        },
+        {
+          "name": "International Monetary Fund",
+          "href": "https://www.imf.org/en/News",
+          "type": "primary"
+        }
+      ],
+      "needs_human_check": true
+    },
+    {
+      "headline": "Global stocks fall",
+      "sources": [
+        {
+          "name": "Deutsche Börse",
+          "href": "https://live.deutsche-boerse.com/indices/dax",
+          "type": "primary"
+        },
+        {
+          "name": "Korea Exchange",
+          "href": "https://global.krx.co.kr/",
+          "type": "primary"
+        }
+      ],
+      "needs_human_check": false
+    },
+    {
+      "headline": "Worthington Steel reports results",
+      "sources": [
+        {
+          "name": "SEC company filings",
+          "href": "https://www.sec.gov/edgar/browse/?CIK=1968487&owner=exclude",
+          "type": "primary"
+        },
+        {
+          "name": "The Associated Press",
+          "href": "https://apnews.com/article/44b75c188756038371cf3112ede9cee8",
+          "type": "wire"
+        }
+      ],
+      "needs_human_check": false
+    }
+  ],
   "source_diversity": {
-    "total_links": 15,
+    "total_links": 24,
     "counts_by_domain": {
       "spglobal.com": 3,
-      "apnews.com": 2,
+      "apnews.com": 6,
       "home.treasury.gov": 2,
       "cmegroup.com": 2,
       "nasdaq.com": 1,
       "cboe.com": 1,
+      "eia.gov": 2,
+      "imf.org": 1,
+      "live.deutsche-boerse.com": 1,
+      "global.krx.co.kr": 1,
+      "sec.gov": 1,
       "fred.stlouisfed.org": 1,
-      "eia.gov": 1,
       "federalreserve.gov": 2
     },
     "snapshot_cards_by_domain": {
       "spglobal.com": 2,
-      "apnews.com": 1,
+      "apnews.com": 2,
       "home.treasury.gov": 1,
       "cmegroup.com": 1,
       "nasdaq.com": 1,
@@ -544,18 +804,7 @@
       "licensing_note": "IMF benchmark data reprinted by FRED with citation and terms retained."
     }
   ],
-  "fact_cards": [
-    {
-      "headline": "Stocks pulled back from Tuesday's record",
-      "source": "The Associated Press",
-      "date": "2026-10-07T09:35:00-04:00"
-    },
-    {
-      "headline": "Fed meeting minutes arrive this afternoon",
-      "source": "Federal Reserve",
-      "date": "2026-10-07T10:00:00-04:00"
-    }
-  ],
+  "fact_cards": [],
   "observations": [
     {
       "name": "S&P 500",
@@ -565,7 +814,7 @@
       "source": "S&P Dow Jones Indices via The Associated Press",
       "source_url": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/",
       "fetched_at": "2026-10-07T09:35:00-04:00",
-      "age_minutes": 25,
+      "age_minutes": 83,
       "status": "checked"
     },
     {
@@ -576,7 +825,7 @@
       "source": "U.S. Treasury and The Associated Press",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
       "fetched_at": "2026-10-07T09:35:00-04:00",
-      "age_minutes": 25,
+      "age_minutes": 83,
       "status": "checked"
     },
     {
@@ -587,7 +836,7 @@
       "source": "CME Group and The Associated Press",
       "source_url": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html",
       "fetched_at": "2026-10-07T09:35:00-04:00",
-      "age_minutes": 25,
+      "age_minutes": 83,
       "status": "checked"
     },
     {
@@ -598,7 +847,7 @@
       "source": "Nasdaq via The Associated Press",
       "source_url": "https://www.nasdaq.com/market-activity/index/comp",
       "fetched_at": "2026-10-07T09:35:00-04:00",
-      "age_minutes": 25,
+      "age_minutes": 83,
       "status": "checked"
     },
     {
@@ -609,7 +858,7 @@
       "source": "S&P Dow Jones Indices via The Associated Press",
       "source_url": "https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/",
       "fetched_at": "2026-10-07T09:35:00-04:00",
-      "age_minutes": 25,
+      "age_minutes": 83,
       "status": "checked"
     },
     {
@@ -620,13 +869,10 @@
       "source": "Cboe delayed futures quotes",
       "source_url": "https://www.cboe.com/delayed_quotes/vx_x1/future_quotes/",
       "fetched_at": "2026-10-07T09:45:00-04:00",
-      "age_minutes": 15,
+      "age_minutes": 73,
       "status": "checked"
     }
   ],
-  "warnings": [
-    "Stocks pulled back from Tuesday's record: fact card requires manual review before publish",
-    "Fed meeting minutes arrive this afternoon: fact card requires manual review before publish"
-  ],
+  "warnings": [],
   "failures": []
 }

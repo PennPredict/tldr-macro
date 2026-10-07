@@ -209,3 +209,26 @@ button { font:inherit; }
   .notable-list article:last-child { border-bottom:0; }
   .notable-list article:nth-last-child(2) { border-bottom:1px solid var(--line); }
 }
+
+.so-what { margin-top:12px; color:#aebbc5; font-size:12px; line-height:1.58; }
+.so-what>div { display:flex; align-items:center; gap:6px; margin-bottom:3px; }
+.so-what b { color:#879aa7; font-size:9px; text-transform:uppercase; letter-spacing:.1em; }
+.so-what .term { width:16px; height:16px; min-height:16px; padding:0; border:1px solid #60798a; border-radius:50%; font-size:10px; line-height:1; }
+.so-what p { min-height:0; margin:0; color:#aebbc5; font-size:12px; line-height:1.58; }
+.headline-card.no-visual { grid-template-columns:minmax(0,1fr); grid-template-areas:"intro" "commentary"; }
+.headline-card.no-visual .headline-intro,.headline-card.no-visual .headline-commentary { max-width:900px; }
+.reference-nodes { position:relative; display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:18px; }
+.reference-nodes:before { content:""; position:absolute; left:50%; top:86px; bottom:70px; width:1px; background:#456172; }
+.reference-root { grid-column:1/-1; justify-self:center; min-width:70%; }
+.reference-root,.reference-leaf { position:relative; z-index:1; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:92px; padding:12px; border:1px solid #456172; background:#0b1b25; text-align:center; }
+.reference-nodes span { color:#c5d0d7; font-size:12px; }
+.reference-nodes b { margin:4px 0; color:var(--blue); font-size:24px; }
+.reference-nodes small { color:#8296a3; font-size:9px; line-height:1.35; }
+.reference-nodes em { margin-top:6px; color:#63d8ae; font-size:9px; font-style:normal; text-transform:uppercase; letter-spacing:.08em; }
+.global-section .notable-title { align-items:flex-start; }
+.global-section .notable-title small { display:block; margin-bottom:5px; color:#6edcaf; font-size:9px; text-transform:uppercase; letter-spacing:.1em; }
+.global-sources { display:flex; flex-wrap:wrap; gap:6px 14px; }
+.brand-image-footer { transition:color .15s ease,opacity .15s ease; cursor:pointer; }
+.brand-image-footer:hover { color:#fff; opacity:.9; }
+.brand-image-footer:focus-visible { outline:2px solid var(--blue); outline-offset:5px; }
+@media (max-width:600px) { .reference-nodes { grid-template-columns:1fr; }.reference-root { grid-column:auto; width:100%; }.reference-nodes:before { left:50%; top:72px; bottom:72px; }.headline-card.no-visual .headline-intro h3 { white-space:normal; } }

@@ -1,0 +1,14 @@
+[
+  {
+    "tag":"Conflict","headline":"Iran conflict disrupts oil supply","what":"The Associated Press reported on Oct. 7 that uncertainty over when the war with Iran will allow oil production to normalize remained part of the market backdrop.","context":"Developing as of 10:58 AM ET.","why_it_matters":"Why it matters: supply uncertainty can reach energy prices, shipping costs, and household budgets.","concept_terms":["supply shock"],"sources":[{"name":"The Associated Press","href":"https://apnews.com/article/44b75c188756038371cf3112ede9cee8","type":"wire"},{"name":"U.S. Energy Information Administration","href":"https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php","type":"primary"}],"developing":true,"as_of":"2026-10-07T10:58:00-04:00","importance_score":98,"needs_human_check":true
+  },
+  {
+    "tag":"Policy","headline":"IMF urges faster debt action","what":"The Associated Press reported on Oct. 7 that the IMF chief urged governments to curb rising public debt.","context":"The IMF said high debt can leave governments less room to respond to future shocks.","why_it_matters":"Why it matters: heavier debt loads can raise interest costs and narrow room for public spending.","concept_terms":["government debt"],"sources":[{"name":"The Associated Press","href":"https://apnews.com/article/2da9d879e2eb70e1e16d14fd1a307a99","type":"wire"},{"name":"International Monetary Fund","href":"https://www.imf.org/en/News","type":"primary"}],"developing":false,"as_of":"2026-10-07T10:58:00-04:00","importance_score":88,"needs_human_check":true
+  },
+  {
+    "tag":"Global markets","headline":"Global stocks fall","what":"Official exchange data on Oct. 7 showed major indexes lower across Europe and Asia.","why_it_matters":"Why it matters: broad declines can show that changes in rates, energy costs, and risk appetite extend across borders.","concept_terms":["stock index"],"sources":[{"name":"Deutsche Börse","href":"https://live.deutsche-boerse.com/indices/dax","type":"primary"},{"name":"Korea Exchange","href":"https://global.krx.co.kr/","type":"primary"}],"developing":false,"as_of":"2026-10-07T10:58:00-04:00","importance_score":80,"needs_human_check":false
+  },
+  {
+    "tag":"Company","headline":"Worthington Steel reports results","what":"Worthington Steel released quarterly results on Oct. 6, and the Associated Press reported its shares fell 7.4% the next morning.","why_it_matters":"Why it matters: a metals processor can offer a view into manufacturing demand and industrial costs.","concept_terms":[],"sources":[{"name":"SEC company filings","href":"https://www.sec.gov/edgar/browse/?CIK=1968487&owner=exclude","type":"primary"},{"name":"The Associated Press","href":"https://apnews.com/article/44b75c188756038371cf3112ede9cee8","type":"wire"}],"developing":false,"as_of":"2026-10-07T10:58:00-04:00","importance_score":45,"badge":"Shares −7.4%","needs_human_check":false
+  }
+]

@@ -1,88 +1,114 @@
 # TL;DR Macro copy review
 
-Edition reviewed: October 6, 2026  
-Scope: copy only, plus the requested claim-ledger and copy-validation gates  
+Edition: October 7, 2026, 10:58 AM ET
 Status: local review only; not published
 
 ## Changed strings
 
-| Location | Before | After | Type | Evidence | Reason |
-|---|---|---|---|---|---|
-| Snapshot subtitle | Opening-market observations. | Morning readings. | fact | `updated_at` is 90 minutes after the 9:30 AM ET open | Match timestamp rule |
-| Snapshot baseline labels | vs. prior observation | vs. prior close | fact | Each visible card has `baseline: prior_close` | Name the actual comparison |
-| S&P 500 description | Approached a record; lower oil and yields eased costs and valuations | Tracks large U.S. companies; rose 0.8% to about 7,836 | fact + mechanism | `value`, `change_percent`, S&P DJI link | Remove unsupported history and cause |
-| 10-year yield description | Eased from a multi-decade high; loans may remain expensive | Guides longer borrowing costs; dipped 0.06 points to 5.25% | fact + mechanism | `value`, `prior_close`, FRED | Remove unsupported history flag and jargon |
-| Brent description | Moved lower; sustained declines reduce several pressures | Global benchmark; fell 2.0% to $98.30 | fact + mechanism | `value`, `change_percent`, EIA | State the measured move only |
-| Nasdaq description | Extended Monday's record; lower yields support valued companies | Includes many tech companies; rose 0.8% to about 27,697 | fact + mechanism | `value`, `change_percent`, Nasdaq | Remove unsupported record and cause |
-| Dow description | Rise showed gains extended beyond technology | Tracks 30 large U.S. companies; rose 0.5% to about 51,533 | fact + mechanism | `value`, `change_percent`, S&P DJI | Delete unsupported breadth claim |
-| VIX description | Remained subdued while several assets moved sharply | Tracks expected S&P 500 swings; rose 1.37% to 15.52 | fact + mechanism | `value`, `change_percent`, Cboe | Remove unanchored adjective and cross-asset claim |
-| Oil headline | Cheaper oil relieved markets and household-cost pressure | Oil fell 2% to about $98 a barrel | fact | Oil card data; EIA/AP links | Event, not claimed effect |
-| Oil commentary | Supply fears eased; decline works through several costs | Brent fell 2.0% to $98.30; oil can reach households through named channels; one morning is not a trend | fact + mechanism + interpretation | Oil card data; EIA/AP links | Separate move, mechanism, and limit |
-| Oil visual caption | Lower crude can ease several cost channels. | Crude feeds fuel, freight, and petroleum-based materials. | mechanism | EIA | State the channel directly |
-| Oil views | Longer household, business, and global prose | Two or three short mechanism sentences per view | mechanism | EIA | Plain language and shorter sentences |
-| Oil data note | Intraday prices move quickly; retail response has delays and regional differences | Intraday prices can change quickly; retail prices vary by time and region | mechanism | EIA | Reduce jargon |
-| Rates headline | Treasury yields eased, but borrowing remains expensive | Government borrowing rates dipped to 5.25% | fact | FRED | Plain words and measured event |
-| Rates commentary | Fell from a multi-decade high; offered relief; affected valuations | Defines the yield; states 5.31% to 5.25%; lists borrowing and price channels | fact + mechanism | FRED | Remove unsupported history and personified effect |
-| Rates branch label | Stock valuations | Prices vs. profits | mechanism | FRED/AP | Replace jargon |
-| Rates caption | A lower day does not erase a high starting point. | Treasury returns provide a reference for other borrowing costs. | mechanism | FRED | Remove unanchored “high” |
-| Rates views | Expansion hurdle, policy restraint, and favorable reversal language | Short descriptions of refinancing, policy comparison, issuance, and dealer spreads | mechanism | FRED/Treasury links | Remove interpretation and jargon |
-| Google topic | Markets | Infrastructure | fact | SEC/EIA links | Match the subject |
-| Google headline | Google backed more nuclear power for AI growth | Google signed a 20-year nuclear power deal | fact | SEC filing link | State the event |
-| Google commentary | Deal shows AI investment reaches infrastructure | 20-year agreement; nuclear upgrades in PJM; data-center mechanism | fact + mechanism | SEC/EIA | Remove generalizing verb |
-| Google visual title | AI demand reaches power grid | Planned project figures | fact | Company filings | Neutral label |
-| Google caption | AI demand funds upgrades, capacity, investment, and jobs. | Planned project figures, per company filings. | fact | SEC filing link | Remove causal verb |
-| Google views | Household and Dealer | Household, Business, and Policy | fact + mechanism | SEC/EIA | Use substantive mapped views; remove forced Dealer view |
-| Google data note | Planned figures; delivery depends on several conditions | Capacity and job figures describe plans, not completed work. | fact | SEC filing link | Shorter limitation |
-| Profit headline | Strong profit expectations kept stocks near records | Large U.S. companies begin reporting profits | fact | Nasdaq earnings calendar/AP | Remove causal link and unsupported adjective |
-| Profit commentary | Rapid expected growth; high rates determine prices | Reporting starts; stocks claim future profits; rates can influence prices relative to profits | fact + mechanism | Nasdaq/SEC/FRED data already linked on related page items | Remove unsupported forecast figures and deterministic language |
-| Profit visual | >25%; 3 straight quarters; Delta → banks → outlook | Delta Air Lines, then major banks | fact | AP link, pending human access check | Remove unverifiable figures and causal arrows |
-| Profit caption | Results must support already elevated expectations. | Companies begin reporting over the coming days. | fact | Nasdaq earnings calendar/AP | Replace prediction with calendar fact |
-| Profit views | Record prices, strong results, broadening rally | Retirement-account and market-making mechanisms | mechanism | SEC/Nasdaq | Remove unsupported qualifiers and forecast framing |
-| What Else section | What Else | Also Today | label | Editorial instruction | Requested section name |
-| Option Care item | A takeover moved Option Care; generic company | CD&R and McKesson agreed to buy Option Care; identifies infusion services | fact | AP link | Event headline and company descriptor |
-| Option Care badge | ↗ 32.7% | Shares +32.7% | fact | AP link | Name what moved |
-| Lamb Weston item | Frozen-fries demand beat expectations; broad pricing claim | Lamb Weston beat quarterly estimates; identifies frozen-potato supplier | fact | AP link | Event headline and descriptor |
-| Lamb Weston badge | ↗ 10.8% | Shares +10.8% | fact | AP link | Name what moved |
-| Asia item | Asian markets moved in different directions; portfolio generalization | Japan and Hong Kong rose; South Korea fell | fact | AP link | Name markets; remove generalization |
-| Airlines/banks item | Results reveal credit quality and financing conditions | Reports include travel demand and borrower repayment data | fact | AP link | Replace jargon |
-| Calendar section | Soon on TLDRM | Coming Up | label | Editorial instruction | Full brand rule and requested name |
-| CPI text | Placeholder consensus; interest-rate pressure | Source-named prior only; higher/lower expectation language | fact + historical relationship | BLS link | Remove placeholder and jargon |
-| PPI text | Verify placeholder; unlisted consensus | No unsupported prior/consensus; higher/lower expectation language | historical relationship | BLS link | Remove placeholder |
-| FOMC text | Market-pricing placeholder; tighter/cooler labels | Fed raises/holds labels; direct short-rate mechanisms | mechanism | Federal Reserve link | Match policy mechanics |
-| Time labels | a.m./p.m.; EDT/EST generated by locale | AM/PM ET | fact | Edition timestamp/calendar fields | One time format |
-| Sticky/footer brand | TL;DRM | TL;DR Macro | label | Brand policy | Full brand everywhere |
-| Footer rule | Verify as you go | Check primary sources | label | Editorial instruction | Avoid placeholder keyword in rendered copy |
-| Terms | “price pressure” synonyms | “price changes” / “rising prices” | definition | Existing official-source context | Remove banned phrase |
-| Terms | No PJM or MW entries | Added PJM and megawatt entries | definition | EIA/linked project sources | Explain unfamiliar terms |
+| Location | Final copy |
+|---|---|
+| Snapshot subtitle | Morning readings. |
+| Snapshot label | So what |
+| One-liner | Stocks fell early, government borrowing rates rose, and oil jumped. |
+| Top Story 1 | Stocks fall from a record |
+| Top Story 2 | Borrowing rates rise |
+| Top Story 3 | Oil jumps |
+| Top Story 4 | Fed minutes arrive |
+| Secondary section | TL;DR Global |
+| Calendar section | Next on TL;DRM |
+| Mission popover | Mission: Low-cortisol explanations. Limits: Not investment advice; concision reduces nuance. |
+| Footer logo label | Back to top |
 
-## Removed for lack of evidence
+Headline specifics now begin each price story: the asset, move versus the prior close, level, and timing. Headline metadata records the data field, bucket, and rule.
 
-| Removed claim | Location | Reason |
+## Channel lines for approval
+
+| Instrument | Channel line | Source |
 |---|---|---|
-| “Monday's multi-decade high” | Yield snapshot and rates story | No history flag or validated comparison field |
-| “Extended Monday's record” | Nasdaq snapshot | No record flag in the data |
-| “Approached a record” | S&P 500 snapshot | No record flag in the data |
-| Dow gain extended beyond technology | Dow snapshot | No component-count or breadth field |
-| Stocks, oil, and bonds moved sharply | VIX snapshot | No shared threshold test for all three assets |
-| Lower oil/yields and profit expectations explained index gains | Snapshot cards | Multiple unattributed causes across the same asset move |
-| Above 25% profit growth for three straight quarters | Profit visual | Linked AP page could not be accessed; no source line available |
-| Delta → banks → profit outlook causal chain | Profit visual | Arrows implied an unsupported causal relationship |
-| Separate consensus placeholders | Calendar | No named source supplied values |
+| S&P 500 | Retirement funds use broad stock indexes to track large U.S. companies, so the move can affect account balances. | https://www.spglobal.com/spdji/en/indices/equity/sp-500/ |
+| Nasdaq | Investors use the Nasdaq to track many technology companies, so the move can affect growth-heavy portfolios. | https://www.nasdaq.com/market-activity/index/comp |
+| Dow | Investors use the Dow to track 30 large U.S. companies, so the move can show how established firms are trading. | https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/ |
+| Russell 2000 | Investors use the Russell 2000 to track smaller U.S. companies, so it can reflect domestic credit and demand conditions. | https://www.lseg.com/en/ftse-russell/indices/russell-us |
+| 10-year yield | Lenders use the 10-year yield as a reference for mortgages and business loans, so it can influence borrowing costs. | https://fred.stlouisfed.org/series/DGS10 |
+| 2-year yield | Markets use the 2-year yield to gauge near-term Fed policy, so it can influence short-term financing costs. | https://fred.stlouisfed.org/series/DGS2 |
+| Yield spread | Banks compare long and short rates when pricing credit, so the yield spread can affect lending incentives. | https://fred.stlouisfed.org/series/T10Y2Y |
+| 30-year mortgage rate | Home buyers use mortgage rates to estimate monthly payments, so changes can affect housing affordability. | https://fred.stlouisfed.org/series/MORTGAGE30US |
+| Brent | Oil costs feed into gasoline, shipping, and airfares, so changes can reach household budgets. | https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php |
+| WTI | U.S. fuel markets use WTI as a crude benchmark, so changes can reach gasoline and freight costs. | https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm |
+| Natural gas | Utilities and factories buy natural gas for heat and power, so price changes can reach energy bills and production costs. | https://www.eia.gov/energyexplained/natural-gas/prices.php |
+| Copper | Builders and manufacturers use copper in grids, vehicles, and electronics, so its price can affect project costs. | https://fred.stlouisfed.org/series/PCOPPUSDM |
+| Dollar index | Businesses use the dollar to settle global trade, so its value can affect import costs and overseas earnings. | https://fred.stlouisfed.org/series/DTWEXBGS |
+| Euro/dollar | Travelers and companies convert euros and dollars, so the rate can affect trips, imports, and translated earnings. | https://fred.stlouisfed.org/series/DEXUSEU |
+| Dollar/yen | Companies trade cars, electronics, and capital between the U.S. and Japan, so the rate can affect prices and overseas earnings. | https://fred.stlouisfed.org/series/DEXJPUS |
+| Gold | Investors use gold as a store of value, so its price can affect commodity holdings and jewelry costs. | https://fred.stlouisfed.org/series/GOLDAMGBD228NLBM |
+| VIX | Options markets use the VIX to summarize expected stock swings, so it can affect hedging costs. | https://www.cboe.com/tradable-products/vix/ |
+| DAX | Investors use the DAX to track major German companies, so it can reflect European manufacturing and export demand. | https://live.deutsche-boerse.com/indices/dax |
+| Nikkei 225 | Investors use the Nikkei to track major Japanese companies, so it can reflect Asian technology and export demand. | https://indexes.nikkei.co.jp/en/nkave/index/profile |
+| KOSPI | Investors use the KOSPI to track South Korean companies, so it can reflect chip demand and global manufacturing. | https://global.krx.co.kr/ |
+| Pound/dollar | Travelers and companies convert pounds and dollars, so the rate can affect trips, imports, and translated earnings. | https://fred.stlouisfed.org/series/DEXUSUK |
 
-## Needs human check
+## Snapshot So-what composition
 
-- The Associated Press article at `https://apnews.com/article/stocks-markets-oil-bonds-us-e8285ec7afbe81e9df277e8ee2127982` was not accessible during this review. AP-dependent acquisition, company-result, regional-market, and reporting-order copy remains limited to facts already present in the project.
-- Exact source line for the removed “above 25%” and “three straight quarters” figures: unavailable. The figures remain removed.
-- Planned Google/Constellation project figures remain as existing data values. Confirm the exact filing passage before the next data refresh.
+| Card | Channel | Context | Evidence |
+|---|---|---|---|
+| S&P 500 | sp500 | Signal: broad gauge of large U.S. stocks | S&P DJI |
+| 10-year yield | yield10 | Signal: growth and inflation expectations | FRED DGS10 |
+| Brent | brent | AP attributed same-day supply context | AP, Oct. 7 |
+| Nasdaq | nasdaq | Signal: technology and growth shares | Nasdaq |
+| Dow | dow | Signal: large established companies | S&P DJI |
+| VIX futures | vix | Signal: expected market volatility | Cboe |
 
-## Validation gates
+Every visible More Markets card resolves to a reviewed channel line and signal line in `config/channel-lines.json`. The validator fails on missing channel IDs, more than 40 words, banned connectors, or attributed context without a source URL.
 
-Run:
+## One-liner uniqueness
 
-```bash
-npm run validate:content
-npm run lint
-npm run build
-```
+- Winner: “Stocks fell early, government borrowing rates rose, and oil jumped.”
+- Template: `three-market-plain`
+- Lead: stocks
+- Retries: 0
+- Recent edit-distance and token-set scores: recorded in `reports/build-report.json`; no previous-day entry existed after same-date replacement.
+- History: `data/oneliner_history.json`, capped by policy at 60 days.
 
-The build report records claim-ledger counts, readability failures, consistency checks, and page-level counts for “pressure” and “eased.”
+## Visual quality gate
+
+| Story | Result | Notes |
+|---|---|---|
+| Stocks | Omitted | Single-stat tile; no added relationship or reference value |
+| Borrowing rates | Passed; human check | Three sourced nodes; reference values; low copy similarity; no causal arrows |
+| Oil | Passed | Four-node supply chain; sourced relationship |
+| Fed minutes | Omitted | Single-stat tile; fewer than three nodes |
+
+Reference series:
+
+| Series | Source | Frequency | Latest | Prior |
+|---|---|---|---|---|
+| 10-year Treasury yield | U.S. Treasury | Intraday reading | Oct. 7: 5.35% | 5.27% |
+| 30-year fixed mortgage rate | Freddie Mac via FRED | Weekly | Oct. 1: 7.28% | Sept. 24: 7.03% |
+| ICE BofA AAA U.S. Corporate Index Effective Yield | ICE Data Indices via FRED | Daily close | Oct. 1: 5.81% | Sept. 30: 5.83% |
+
+## TL;DR Global
+
+| Item | Sources | Review |
+|---|---|---|
+| Iran conflict disrupts oil supply | AP; EIA | Developing; human check |
+| IMF urges faster debt action | AP; IMF | Policy; human check |
+| Global stocks fall | Deutsche Börse; Korea Exchange | Official market data |
+| Worthington Steel reports results | SEC; AP | One permitted company item |
+
+## Headline gates
+
+The report includes ten generated samples: flat, big up, big down, near record, streak, mixed, rates up, cooling jobs, a company deal, and an ongoing conflict. It also records rejections for “Stocks stay strong,” “Oil jumps on war fears,” “S&P 500 falls 0.5%,” and a streak headline without a streak flag.
+
+## Acceptance evidence
+
+- `reports/acceptance-snapshot-more-{375,1280}.png`
+- `reports/acceptance-yield-tree-{375,1280}.png`
+- `reports/acceptance-no-visual-{375,1280}.png`
+- `reports/acceptance-view-open-{375,1280}.png`
+- `reports/acceptance-global-{375,1280}.png`
+- `reports/acceptance-next-{375,1280}.png`
+- `reports/acceptance-mission-{375,1280}.png`
+- `reports/acceptance-footer-before-{375,1280}.png`
+- `reports/acceptance-footer-after-{375,1280}.png`
+
+Validation commands: `npm run validate:content`, `npm run lint`, `npm run build`, and `node scripts/test-acceptance.mjs`.

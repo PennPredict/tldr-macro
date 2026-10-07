@@ -12,7 +12,7 @@
   ],
   "market_data": [
     "cboe.com", "cmegroup.com", "theice.com", "nyse.com", "nasdaq.com",
-    "spglobal.com", "msci.com", "lseg.com", "finra.org", "fred.stlouisfed.org"
+    "spglobal.com", "msci.com", "lseg.com", "finra.org", "fred.stlouisfed.org", "krx.co.kr", "deutsche-boerse.com"
   ],
   "company_evidence": ["sec.gov"],
   "reporting": [
