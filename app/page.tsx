@@ -4,7 +4,6 @@ import lensDefinitions from "../config/lens-definitions.json";
 import { Footer, Header } from "./SiteChrome";
 import HeadlineCard from "./HeadlineCard";
 import MarketSnapshot from "./MarketSnapshot";
-import EditionSummary from "./EditionSummary";
 import {generateSummary} from "../lib/edition-summary.mjs";
 
 const notable=[
@@ -14,8 +13,7 @@ const notable=[
   ["Delta and major banks report next","Earnings calendar","Delta Air Lines reports Friday. Major banks follow next week. The reports include travel demand and borrower repayment data.","The Associated Press","https://apnews.com/article/stocks-markets-oil-bonds-us-e8285ec7afbe81e9df277e8ee2127982"]
 ];
 
-export default function Home(){const summary=generateSummary(edition);return <main className="shell"><Header updated={edition.updated_at}/>
-  <EditionSummary text={summary.sentence}/>
+export default function Home(){const summary=generateSummary(edition);return <main className="shell"><Header updated={edition.updated_at} summary={summary.sentence}/>
   <MarketSnapshot markets={edition.markets}/>
   <section className="stories" aria-labelledby="stories-title"><div className="section-heading stories-heading"><h2 id="stories-title">Top Stories</h2></div><div className="headline-list">{headlines.map(headline=>{const targetId=headline.topic_tag==="oil_and_energy"?"story-oil":headline.topic_tag==="interest_rates_and_yields"?"story-rates":headline.headline.includes("reporting profits")?"story-stocks":undefined;return <HeadlineCard headline={headline} definitions={lensDefinitions} id={targetId} key={headline.headline}/>})}</div></section>
   <section className="notable" aria-labelledby="notable-title"><div className="section-heading"><h2 id="notable-title">Also Today</h2></div><div className="notable-list">{notable.map(([title,signal,text,source,href])=><article key={title}><div className="notable-title"><h3>{title}</h3><span>{signal}</span></div><p>{text}</p><a href={href} target="_blank" rel="noreferrer">{source} ↗</a></article>)}</div></section>

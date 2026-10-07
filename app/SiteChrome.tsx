@@ -13,11 +13,11 @@ function BrandImage({ placement }: { placement: "header" | "footer" }) {
   return <Link className={`brand-image brand-image-${placement}`} href="/" aria-label="TL;DR Macro home"><Image src="/tldr-macro-logo-wide.png" alt={alt} width={2172} height={724} priority={placement === "header"} /></Link>;
 }
 
-export function Header({ updated }: { updated?: string }) {
+export function Header({ updated, summary }: { updated?: string; summary:string }) {
   const format=(includeYear:boolean)=>updated?`${new Intl.DateTimeFormat("en-US",{month:"short",day:"numeric",...(includeYear?{year:"numeric"}:{}),hour:"numeric",minute:"2-digit",timeZone:"America/New_York"}).format(new Date(updated))} ET`:"About this briefing";
   const label=format(true);
   const compactLabel=format(false);
-  return <><header className="topbar" id="top"><BrandImage placement="header" /><div className="edition"><span>Morning edition</span><time dateTime={updated}>{label}</time></div></header><StickyHeader updated={updated} label={compactLabel}/></>;
+  return <><header className="topbar" id="top"><BrandImage placement="header" /><div className="edition"><span>Morning edition</span><time dateTime={updated}>{label}</time></div></header><StickyHeader updated={updated} label={compactLabel} summary={summary}/></>;
 }
 
 export function Footer() {
