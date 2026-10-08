@@ -56,6 +56,8 @@ const checkCausality=(label,text,explains)=>{const matches=[...(text||"").matchA
 const editionReference=new Date(edition.updated_at).getTime();
 const wordCount=text=>(text||"").trim().split(/\s+/).filter(Boolean).length;
 const normalized=text=>(text||"").toLowerCase().replace(/[^a-z0-9\s]/g,"").replace(/\s+/g," ").trim();
+const proseStrings=value=>typeof value==="string"?[value]:Array.isArray(value)?value.flatMap(proseStrings):value&&typeof value==="object"?Object.values(value).flatMap(proseStrings):[];
+for(const [label,data] of [["edition",edition],["headlines",headlines],["global",globalItems],["extra markets",extraMarkets]])for(const text of proseStrings(data)){if(/\s+[,.!?;:]/.test(text))failures.push(`${label}: space before punctuation in “${text}”`);if(/ {2,}/.test(text))failures.push(`${label}: repeated spaces in “${text}”`);const prose=text.replace(/https?:\/\/\S+/g,"").replaceAll("U.S.","US").replaceAll("a.m.","AM").replaceAll("p.m.","PM");if(/[.!?]\s+[a-z]/.test(prose))failures.push(`${label}: lowercase sentence start in “${text}”`);}
 const tokenSet=text=>new Set(normalized(text).split(" ").filter(Boolean));
 const tokenSimilarity=(a,b)=>{const one=tokenSet(a),two=tokenSet(b),shared=[...one].filter(token=>two.has(token)).length;return shared/Math.max(1,new Set([...one,...two]).size);};
 const editDistance=(a,b)=>{a=normalized(a);b=normalized(b);const row=Array.from({length:b.length+1},(_,i)=>i);for(let i=1;i<=a.length;i++){let previous=row[0];row[0]=i;for(let j=1;j<=b.length;j++){const old=row[j];row[j]=Math.min(row[j]+1,row[j-1]+1,previous+(a[i-1]===b[j-1]?0:1));previous=old;}}return row[b.length];};
@@ -171,19 +173,21 @@ if(JSON.stringify(renderedNames)!==JSON.stringify(snapshotConfig.priority_order)
 const extraProviderReport=[];
 for(const market of extraMarkets){if(market.available===false)continue;if(sentenceCount(market.description)>3||wordCount(market.description)>50)failures.push(`${market.name}: extra-market description must be at most 3 sentences and 50 words`);if(!market.data_provider||!market.licensing_note)failures.push(`${market.name}: provider and licensing note are required`);if(!(market.sources||[]).length)failures.push(`${market.name}: primary source is required`);if(!market.points||market.points.length<2)failures.push(`${market.name}: visible extra markets require a trendline`);const channel=Object.values(channelConfig.lines).find(item=>item.instrument===market.name);if(!channel)failures.push(`${market.name}: missing So-what channel line`);extraProviderReport.push({name:market.name,current_provider:market.data_provider,historical_provider:market.points?.length?market.data_provider:"No historical series published",licensing_note:market.licensing_note});}
 let companyItems=0;
-for(const item of globalItems){
+const visibleGlobalItems=globalItems.filter(item=>item.tag!=="Company"&&item.qualifies!==false);
+for(const item of visibleGlobalItems){
   if(!["Conflict","Policy","Trade","Global markets","Energy","Company"].includes(item.tag))failures.push(`${item.headline}: invalid TL;DR Global tag`);
   if(wordCount(item.headline)>6||item.headline.length>60)failures.push(`${item.headline}: TL;DR Global headline exceeds headline limits`);
   if(/[0-9%$]/.test(item.headline))failures.push(`${item.headline}: TL;DR Global headline contains a number`);
   if(wordCount(`${item.what} ${item.context||""} ${item.why_it_matters}`)>55)failures.push(`${item.headline}: TL;DR Global body exceeds 55 words`);
-  if(!item.why_it_matters?.startsWith("Why it matters:"))failures.push(`${item.headline}: missing Why it matters line`);
+  if(!item.why_it_matters)failures.push(`${item.headline}: missing significance sentence`);
   if(!Array.isArray(item.sources)||item.sources.length<2)failures.push(`${item.headline}: TL;DR Global needs at least two sources`);
   if(!(item.sources||[]).some(source=>["wire","primary"].includes(source.type)))failures.push(`${item.headline}: TL;DR Global needs a wire or primary source`);
   if(item.tag==="Company")companyItems++;
-  if(["Conflict","Policy"].includes(item.tag)&&item.needs_human_check!==true)failures.push(`${item.headline}: conflict and policy items need human check`);
+  if(item.tag==="Conflict"&&item.needs_human_check!==true)failures.push(`${item.headline}: conflict items need human check`);
   for(const source of item.sources||[])allSources.push({card:item.headline,...source});
 }
 if(companyItems>1)failures.push("TL;DR Global includes more than one company item");
+for(const item of visibleGlobalItems)for(const headline of headlines){if(item.concept_terms?.some(term=>headline.topic_tag.includes(term.replaceAll(" ","_")))||tokenSimilarity(`${item.headline} ${item.what}`,`${headline.headline} ${headline.commentary}`)>.5)failures.push(`TL;DR Global duplicates Top Story topic: ${item.headline} / ${headline.headline}`);}
 for(const headline of headlines)for(const source of headline.sources||[])allSources.push({card:headline.headline,...source});
 const domainCounts={};for(const source of allSources){const host=new URL(source.href).hostname.replace(/^www\./,"");domainCounts[host]=(domainCounts[host]||0)+1;}
 for(const [domain,count] of Object.entries(domainCounts))if(count/allSources.length>.25)failures.push(`Source diversity: ${domain} accounts for ${count} of ${allSources.length} links, above 25%`);

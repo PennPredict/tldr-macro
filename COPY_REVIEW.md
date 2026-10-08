@@ -3,6 +3,30 @@
 Edition: October 7, 2026, 10:58 AM ET
 Status: local review only; not published
 
+## Oct. 8 bug-fix ledger
+
+| Location | Before | After | Evidence / reason |
+|---|---|---|---|
+| Stocks story mechanism | More expensive oil and higher Treasury yields added strain before earnings. | Higher Treasury yields and higher oil prices can raise costs for borrowers and companies. | Mechanism, not a claimed cause of the session move. |
+| Rates headline | Long-Term Rates Rebound | Borrowing rates rise | No reversal evidence; sentence-case rule. |
+| Oil headline and copy | Oil Surges / surged | Oil jumps / jumped | `large_up` vocabulary bucket; consistent with one-liner. |
+| Claims headline | Jobless Claims Edge Down | Jobless claims edge down | Sentence-case rule. |
+| S&P 500 context | Oil and borrowing costs were elevated. | Brent +3.8%; 10-year yield +0.07 percentage points. | Replaces inference with reported observations. |
+| Dow context | Smaller decline showed uneven sector moves. | Dow −0.35% versus Nasdaq −0.49%. | Removes unsupported interpretation. |
+| Global oil item | Oil Supply Fears Grow | Excluded from TL;DR Global | Duplicated the oil Top Story. |
+| Fed item | Fed Signals Another Increase | Fed minutes show higher-rate debate | September minutes: many participants called a higher path prudent; a number called it necessary. |
+| Global-index mechanism | Pullback showed strain extended overseas. | Energy prices and interest rates can affect companies in many countries. | General mechanism; no cause assigned to the observed moves. |
+| Beige Book baseline | Eight weeks of regional reports | Conditions since the previous report | Federal Reserve description of the report period. |
+| Yield-spread card | 0.57 points, Oct. 8 | 0.47 points, Oct. 5; +0.02 versus Oct. 2 | Latest verified T10Y2Y observation. |
+| Mortgage card | Registry ended Oct. 1 at 7.28% | Oct. 8 at 7.40%; Oct. 1 baseline 7.28% | Freddie Mac PMMS. |
+| Sticky brand | TL;DRM | Convergence mark + TL;DR Macro; mark only on narrow screens | Enforces approved brand usage and 12px minimum edition text. |
+| Inline glossary terms | Conflicting circle and fixed-size styles | Plain inherited inline text with dotted underline only | Removes boxes, prevents trigger-title font mismatch, preserves portal popovers. |
+| Long market values | Single unbreakable string | Numeric value and unit suffix rendered separately | Prevents rate and mortgage overflow. |
+
+Removed phrases now enforced by lint: `strain`, `added strain`, `shows that causal`, and `showed uneven`. Global items are checked against Top Stories by topic and by text similarity above 0.5. Copy lint also checks lowercase sentence starts, repeated spaces, and spaces before punctuation.
+
+Acceptance artifacts: `reports/review-{snapshot,more-markets,global,calendar}-{375,768,1280}.png`, `reports/sticky-{top,mid,popover}-{375,1280}.png`, `reports/acceptance-tests.json`, and `reports/popover-tests.json`.
+
 ## Changed strings
 
 | Location | Final copy |

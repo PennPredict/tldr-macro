@@ -1,14 +1,108 @@
 [
   {
-    "tag":"Conflict","headline":"Oil Supply Fears Grow","what":"Brent crude rose above $104 as uncertainty over Middle East production and shipping persisted.","context":"The benchmark has moved between roughly $96 and $110 during the past month.","why_it_matters":"Why it matters: supply disruptions can raise fuel, freight, airfare, and manufacturing costs across countries.","concept_terms":["supply shock"],"sources":[{"name":"U.S. Energy Information Administration","href":"https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php","type":"primary"},{"name":"CME Group Brent futures","href":"https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html","type":"primary"}],"developing":true,"as_of":"2026-10-08T09:40:00-04:00","importance_score":98,"needs_human_check":true
+    "tag": "Conflict",
+    "qualifies": false,
+    "headline": "Oil supply remains uncertain",
+    "what": "Brent crude rose above $104 as uncertainty over Middle East production and shipping persisted.",
+    "context": "The benchmark has moved between roughly $96 and $110 during the past month.",
+    "why_it_matters": "Why it matters: supply disruptions can raise fuel, freight, airfare, and manufacturing costs across countries.",
+    "concept_terms": [
+      "supply shock"
+    ],
+    "sources": [
+      {
+        "name": "U.S. Energy Information Administration",
+        "href": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php",
+        "type": "primary"
+      },
+      {
+        "name": "CME Group Brent futures",
+        "href": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html",
+        "type": "primary"
+      }
+    ],
+    "developing": true,
+    "as_of": "2026-10-08T09:40:00-04:00",
+    "importance_score": 98,
+    "needs_human_check": true
   },
   {
-    "tag":"Policy","headline":"Fed Signals Another Increase","what":"Minutes from the September meeting showed most Federal Reserve officials expected another rate increase could be needed this year.","context":"Officials continued to weigh persistent inflation against labor-market and financial conditions.","why_it_matters":"Why it matters: a higher policy path can lift borrowing costs for households, companies, and governments.","concept_terms":["monetary policy"],"sources":[{"name":"Federal Reserve meeting calendars","href":"https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm","type":"primary"},{"name":"Federal Reserve monetary policy","href":"https://www.federalreserve.gov/monetarypolicy.htm","type":"primary"}],"developing":false,"as_of":"2026-10-08T09:40:00-04:00","importance_score":91,"needs_human_check":true
+    "tag": "Policy",
+    "headline": "Fed minutes show higher-rate debate",
+    "what": "September minutes said many participants viewed a higher rate path as prudent, while a number viewed it as necessary based on their outlooks.",
+    "context": "Officials weighed persistent inflation against labor-market and financial conditions.",
+    "why_it_matters": "A higher policy path can lift borrowing costs for households, companies, and governments.",
+    "concept_terms": [
+      "monetary policy"
+    ],
+    "sources": [
+      {
+        "name": "Federal Reserve meeting minutes",
+        "href": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm",
+        "type": "primary"
+      },
+      {
+        "name": "Federal Reserve monetary policy",
+        "href": "https://www.federalreserve.gov/monetarypolicy.htm",
+        "type": "primary"
+      }
+    ],
+    "developing": false,
+    "as_of": "2026-10-08T09:40:00-04:00",
+    "importance_score": 91,
+    "needs_human_check": false
   },
   {
-    "tag":"Global markets","qualifies":true,"headline":"Global Indexes Retreat","what":"South Korea's KOSPI fell 2.6%, Japan's Nikkei lost 1.4%, and Germany's DAX traded about 1% lower.","why_it_matters":"Why it matters: the broad pullback shows that strain from energy costs and higher yields extends beyond U.S. markets.","concept_terms":["stock index"],"sources":[{"name":"Korea Exchange","href":"https://global.krx.co.kr/","type":"primary"},{"name":"Deutsche Börse","href":"https://live.deutsche-boerse.com/indices/dax","type":"primary"}],"developing":false,"as_of":"2026-10-08T09:40:00-04:00","importance_score":86,"needs_human_check":false
+    "tag": "Global markets",
+    "qualifies": true,
+    "headline": "Global indexes retreat",
+    "what": "South Korea's KOSPI fell 2.6%, Japan's Nikkei lost 1.4%, and Germany's DAX traded about 1% lower.",
+    "why_it_matters": "Energy prices and interest rates can affect companies in many countries.",
+    "concept_terms": [
+      "stock index"
+    ],
+    "sources": [
+      {
+        "name": "Korea Exchange",
+        "href": "https://global.krx.co.kr/",
+        "type": "primary"
+      },
+      {
+        "name": "Deutsche Börse",
+        "href": "https://live.deutsche-boerse.com/indices/dax",
+        "type": "primary"
+      }
+    ],
+    "developing": false,
+    "as_of": "2026-10-08T09:40:00-04:00",
+    "importance_score": 86,
+    "needs_human_check": false
   },
   {
-    "tag":"Company","headline":"PepsiCo Raises Prices","what":"PepsiCo reported 5.6% net revenue growth but said it would raise selected prices and cut costs after weaker North American performance.","why_it_matters":"Why it matters: packaged-food pricing offers a window into household demand, company margins, and input costs.","concept_terms":["revenue","profit margins"],"sources":[{"name":"PepsiCo earnings release","href":"https://www.sec.gov/Archives/edgar/data/77476/000007747626000050/q320268-kxexhibit991.htm","type":"primary"},{"name":"The Associated Press","href":"https://apnews.com/article/56f06d9d9e470785e094323869e6d695","type":"wire"}],"developing":false,"as_of":"2026-10-08T09:40:00-04:00","importance_score":65,"badge":"Revenue +5.6%","needs_human_check":false
+    "tag": "Company",
+    "headline": "PepsiCo Raises Prices",
+    "what": "PepsiCo reported 5.6% net revenue growth but said it would raise selected prices and cut costs after weaker North American performance.",
+    "why_it_matters": "Why it matters: packaged-food pricing offers a window into household demand, company margins, and input costs.",
+    "concept_terms": [
+      "revenue",
+      "profit margins"
+    ],
+    "sources": [
+      {
+        "name": "PepsiCo earnings release",
+        "href": "https://www.sec.gov/Archives/edgar/data/77476/000007747626000050/q320268-kxexhibit991.htm",
+        "type": "primary"
+      },
+      {
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/56f06d9d9e470785e094323869e6d695",
+        "type": "wire"
+      }
+    ],
+    "developing": false,
+    "as_of": "2026-10-08T09:40:00-04:00",
+    "importance_score": 65,
+    "badge": "Revenue +5.6%",
+    "needs_human_check": false
   }
 ]

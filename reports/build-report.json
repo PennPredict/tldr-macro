@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T17:59:12.061Z",
+  "generated_at": "2026-10-08T19:32:18.744Z",
   "edition_date": "2026-10-08",
   "policy_version": 1,
   "status": "passed",
@@ -33,7 +33,7 @@
         "channel_id": "sp500",
         "context": {
           "type": "signal",
-          "text": "Oil and borrowing costs were both elevated as trading began.",
+          "text": "Brent crude rose 3.8%, while the 10-year Treasury yield rose 0.07 percentage points.",
           "evidence": "https://www.reuters.com/markets/us/"
         }
       },
@@ -70,7 +70,7 @@
         "channel_id": "dow",
         "context": {
           "type": "signal",
-          "text": "Its smaller decline than the Nasdaq showed uneven moves across sectors.",
+          "text": "The Dow fell 0.35%, compared with the Nasdaq's 0.49% decline.",
           "evidence": "https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/"
         }
       },
@@ -449,7 +449,7 @@
     "count": 4,
     "items": [
       {
-        "headline": "Stocks Open Lower",
+        "headline": "Stocks open lower",
         "evidence": {
           "bucket": "medium_down",
           "rule": "A 0.37% opening decline maps to opens lower.",
@@ -465,10 +465,10 @@
         }
       },
       {
-        "headline": "Long-Term Rates Rebound",
+        "headline": "Borrowing rates rise",
         "evidence": {
           "bucket": "medium_up",
-          "rule": "A 7-basis-point increase maps to rebounds.",
+          "rule": "A 7-basis-point increase maps to rises.",
           "data": "current-edition.markets.10-year Treasury yield.value|prior_close"
         },
         "visual_gate": {
@@ -480,10 +480,10 @@
         }
       },
       {
-        "headline": "Oil Surges",
+        "headline": "Oil jumps",
         "evidence": {
           "bucket": "large_up",
-          "rule": "A 3.8% move maps to surges.",
+          "rule": "A 3.8% move maps to jumps.",
           "data": "current-edition.markets.Brent crude oil.change_percent|value"
         },
         "visual_gate": {
@@ -495,7 +495,7 @@
         }
       },
       {
-        "headline": "Jobless Claims Edge Down",
+        "headline": "Jobless claims edge down",
         "evidence": {
           "bucket": "small_down",
           "rule": "Initial claims fell by 2,000 to 197,000.",
@@ -602,7 +602,7 @@
   },
   "global_items": [
     {
-      "headline": "Oil Supply Fears Grow",
+      "headline": "Oil supply remains uncertain",
       "sources": [
         {
           "name": "U.S. Energy Information Administration",
@@ -618,11 +618,11 @@
       "needs_human_check": true
     },
     {
-      "headline": "Fed Signals Another Increase",
+      "headline": "Fed minutes show higher-rate debate",
       "sources": [
         {
-          "name": "Federal Reserve meeting calendars",
-          "href": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "name": "Federal Reserve meeting minutes",
+          "href": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm",
           "type": "primary"
         },
         {
@@ -631,10 +631,10 @@
           "type": "primary"
         }
       ],
-      "needs_human_check": true
+      "needs_human_check": false
     },
     {
-      "headline": "Global Indexes Retreat",
+      "headline": "Global indexes retreat",
       "sources": [
         {
           "name": "Korea Exchange",
@@ -667,21 +667,20 @@
     }
   ],
   "source_diversity": {
-    "total_links": 24,
+    "total_links": 20,
     "counts_by_domain": {
       "spglobal.com": 3,
       "reuters.com": 2,
       "home.treasury.gov": 2,
-      "apnews.com": 3,
-      "cmegroup.com": 3,
+      "apnews.com": 2,
+      "cmegroup.com": 2,
       "nasdaq.com": 1,
       "cboe.com": 1,
-      "eia.gov": 2,
       "federalreserve.gov": 2,
       "global.krx.co.kr": 1,
       "live.deutsche-boerse.com": 1,
-      "sec.gov": 1,
       "fred.stlouisfed.org": 1,
+      "eia.gov": 1,
       "dol.gov": 1
     },
     "snapshot_cards_by_domain": {
@@ -769,8 +768,8 @@
     },
     {
       "name": "30-year fixed mortgage rate",
-      "current_provider": "Freddie Mac via FRED",
-      "historical_provider": "Freddie Mac via FRED",
+      "current_provider": "Freddie Mac",
+      "historical_provider": "Freddie Mac",
       "licensing_note": "Copyright Freddie Mac; reprinted by FRED with permission and citation."
     },
     {

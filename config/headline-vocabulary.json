@@ -3,5 +3,5 @@
   "record_distance_percent":1,
   "thresholds":{"market_percent":[0.15,0.5,1.5],"rate_basis_points":[2,6,15]},
   "phrases":{"flat":"holds steady","small_up":"edges up","small_down":"edges down","medium_up":"rises","medium_down":"falls","large_up":"jumps","large_down":"drops"},
-  "banned":["strong","weak","soaring","surging","plunging","tumbling","crushed","hammered","sharply","turbulent","volatile","fears","hopes","relief","rally","selloff","bounces back","shrugs off"]
+  "banned":["strong","weak","soaring","surging","plunging","tumbling","crushed","hammered","sharply","turbulent","volatile","fears","hopes","relief","rally","selloff","bounces back","shrugs off","strain","added strain","shows that causal","showed uneven"]
 }

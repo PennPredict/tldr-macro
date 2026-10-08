@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T17:59:39.135Z",
+  "generated_at": "2026-10-08T18:28:02.260Z",
   "status": "passed",
   "checks": {
     "instrument_count": 16,
@@ -13,7 +13,7 @@
       "10-year minus 2-year yield spread",
       "30-year fixed mortgage rate"
     ],
-    "global_items_visible": 3,
+    "global_items_visible": 2,
     "badge_signs": [
       "Revenue +5.6%"
     ]

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T21:27:04.413Z",
+  "generated_at": "2026-10-08T18:27:07.964Z",
   "checks": [
     {
       "width": 375,
@@ -10,7 +10,8 @@
       },
       "minimum_font_failures": [],
       "diagram_overflow": [],
-      "badge_styles": [],
+      "card_overflow": [],
+      "term_style_failures": [],
       "axe_violations": []
     },
     {
@@ -22,7 +23,8 @@
       },
       "minimum_font_failures": [],
       "diagram_overflow": [],
-      "badge_styles": [],
+      "card_overflow": [],
+      "term_style_failures": [],
       "axe_violations": []
     },
     {
@@ -34,7 +36,8 @@
       },
       "minimum_font_failures": [],
       "diagram_overflow": [],
-      "badge_styles": [],
+      "card_overflow": [],
+      "term_style_failures": [],
       "axe_violations": []
     },
     {
@@ -46,7 +49,8 @@
       },
       "minimum_font_failures": [],
       "diagram_overflow": [],
-      "badge_styles": [],
+      "card_overflow": [],
+      "term_style_failures": [],
       "axe_violations": []
     }
   ]

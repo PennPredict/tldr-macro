@@ -1,9 +1,9 @@
 [
   {
     "topic_tag":"market_volatility",
-    "headline":"Stocks Open Lower",
+    "headline":"Stocks open lower",
     "headline_evidence":{"bucket":"medium_down","rule":"A 0.37% opening decline maps to opens lower.","data":"current-edition.markets.S&P 500.change_percent|prior_close"},
-    "commentary":"The S&P 500 opened 0.37% lower, while the Nasdaq Composite lost 0.49%. More expensive oil and higher Treasury yields added strain before corporate earnings season.",
+    "commentary":"The S&P 500 opened 0.37% lower, while the Nasdaq Composite lost 0.49%. Higher Treasury yields and higher oil prices can raise costs for borrowers and companies.",
     "defines":[{"term":"S&P 500","definition":"Index of 500 large U.S. companies.","used_by_and_why":"Broad gauge of U.S. stock prices."}],
     "explains":[{"anchor_text":"Higher Treasury yields give investors a more competitive return outside stocks","why":"Investors compare possible company profits with returns available from government bonds.","other_reading":"Company results and news can outweigh changes in yields."}],
     "visual":null,
@@ -18,8 +18,8 @@
   },
   {
     "topic_tag":"interest_rates_and_yields",
-    "headline":"Long-Term Rates Rebound",
-    "headline_evidence":{"bucket":"medium_up","rule":"A 7-basis-point increase maps to rebounds.","data":"current-edition.markets.10-year Treasury yield.value|prior_close"},
+    "headline":"Borrowing rates rise",
+    "headline_evidence":{"bucket":"medium_up","rule":"A 7-basis-point increase maps to rises.","data":"current-edition.markets.10-year Treasury yield.value|prior_close"},
     "commentary":"The 10-year Treasury yield rebounded from 5.28% late Wednesday to 5.35% early Thursday. That benchmark can influence mortgages, company expansion, and how investors value future profits.",
     "defines":[{"term":"10-year Treasury yield","definition":"Annual return demanded on a ten-year U.S. government loan.","used_by_and_why":"Reference for mortgages, business debt, and long-term borrowing."}],
     "explains":[{"anchor_text":"influence mortgages, company expansion, and stock prices relative to profits","why":"Lenders and investors compare other choices with Treasury returns, then adjust for risk.","other_reading":"Competition, borrower quality, and company results can outweigh the benchmark."}],
@@ -35,9 +35,9 @@
   },
   {
     "topic_tag":"oil_and_energy",
-    "headline":"Oil Surges",
-    "headline_evidence":{"bucket":"large_up","rule":"A 3.8% move maps to surges.","data":"current-edition.markets.Brent crude oil.change_percent|value"},
-    "commentary":"Brent crude surged 3.8% to $104.08 a barrel. The Associated Press linked the move to continuing uncertainty around Middle East supply. Sustained increases can reach gasoline, freight, airfare, and petroleum-based materials.",
+    "headline":"Oil jumps",
+    "headline_evidence":{"bucket":"large_up","rule":"A 3.8% move maps to jumps.","data":"current-edition.markets.Brent crude oil.change_percent|value"},
+    "commentary":"Brent crude jumped 3.8% to $104.08 a barrel. The Associated Press linked the move to continuing uncertainty around Middle East supply. Sustained increases can reach gasoline, freight, airfare, and petroleum-based materials.",
     "defines":[{"term":"Brent crude","definition":"Global benchmark price for oil.","used_by_and_why":"Used to price contracts and plan fuel costs."}],
     "explains":[{"anchor_text":"reach households through gasoline, freight, airfare, and petroleum-based materials","why":"Crude becomes fuel and materials used in transportation and production.","other_reading":"Refining, taxes, inventories, contracts, and competition affect retail prices."}],
     "visual":null,
@@ -53,7 +53,7 @@
   },
   {
     "topic_tag":"jobs_and_wages",
-    "headline":"Jobless Claims Edge Down",
+    "headline":"Jobless claims edge down",
     "headline_evidence":{"bucket":"small_down","rule":"Initial claims fell by 2,000 to 197,000.","data":"U.S. Department of Labor weekly claims release"},
     "commentary":"Initial jobless claims slipped to 197,000 from a revised 199,000. Low claims point to limited layoffs, though they do not show how quickly unemployed people find new work.",
     "defines":[{"term":"Initial jobless claims","definition":"New weekly applications for unemployment benefits.","used_by_and_why":"A fast read on layoffs and labor-market changes."}],

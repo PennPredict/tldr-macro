@@ -1,18 +1,415 @@
 {
-  "edition_date":"2026-10-08","updated_at":"2026-10-08T09:40:00-04:00","summary":"At the open: shares slipped; Treasury yields rose; crude oil jumped.",
-  "markets":[
-    {"name":"S&P 500","kind":"equity_index","value":7772.87,"display_value":"≈7,773","baseline":"prior_close","prior_close":7801.77,"change_percent":-0.37,"display_change":"−0.37%","description":"The S&P 500 tracks large U.S. companies. It opened 0.37% lower after Wednesday's pullback.","so_what":{"channel_id":"sp500","context":{"type":"signal","text":"Oil and borrowing costs were both elevated as trading began.","evidence":"https://www.reuters.com/markets/us/"}},"explains":[],"claims":[{"sentence_id":"sp500-description-1","type":"mechanism","evidence":"https://www.spglobal.com/spdji/en/indices/equity/sp-500/"},{"sentence_id":"sp500-description-2","type":"fact","evidence":"markets.S&P 500.change_percent|value"}],"data_source":"S&P Dow Jones Indices and Reuters","fetched_at":"2026-10-08T09:34:00-04:00","range":"Wednesday close 7,801.77 · Thursday open 7,772.87","points":[7731,7741,7751,7773.95,7818.93,7801.77,7792,7784,7778,7772.87],"sources":[{"name":"S&P Dow Jones Indices","href":"https://www.spglobal.com/spdji/en/indices/equity/sp-500/"},{"name":"Reuters markets","href":"https://www.reuters.com/markets/us/"}]},
-    {"name":"10-year Treasury yield","kind":"yield","value":5.35,"display_value":"5.35%","baseline":"prior_close","prior_close":5.28,"change_percent":1.33,"display_change":"+0.07 percentage points","description":"The 10-year Treasury yield guides longer-term borrowing costs. It moved from 5.28% late Wednesday to 5.35% early Thursday.","so_what":{"channel_id":"yield10","context":{"type":"signal","text":"Mortgage and business-loan rates often respond to this benchmark.","evidence":"https://fred.stlouisfed.org/series/DGS10"}},"explains":[],"claims":[{"sentence_id":"yield-description-1","type":"mechanism","evidence":"https://fred.stlouisfed.org/series/DGS10"},{"sentence_id":"yield-description-2","type":"fact","evidence":"markets.10-year Treasury yield.value|prior_close"}],"data_source":"U.S. Treasury and The Associated Press","fetched_at":"2026-10-08T09:35:00-04:00","range":"Wednesday late reading 5.28% · Thursday early reading 5.35%","points":[4.98,5.02,5.1,5.18,5.23,5.29,5.27,5.28,5.32,5.35],"sources":[{"name":"U.S. Treasury","href":"https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"},{"name":"The Associated Press","href":"https://apnews.com/article/6a096d714c874db13632794a32cebaa6"}]},
-    {"name":"Brent crude oil","kind":"commodity","value":104.08,"display_value":"$104.08","baseline":"prior_close","prior_close":100.27,"change_percent":3.8,"display_change":"+3.8%","description":"Brent crude is a global oil benchmark. It surged 3.8% to $104.08 a barrel Thursday morning.","so_what":{"channel_id":"brent","context":{"type":"attributed","text":"The Associated Press tied the jump to continuing uncertainty over Middle East supply.","source_url":"https://apnews.com/article/6a096d714c874db13632794a32cebaa6","evidence":"Published Oct. 8, 2026; price and direction match the morning report."}},"explains":[],"claims":[{"sentence_id":"oil-description-1","type":"mechanism","evidence":"https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm"},{"sentence_id":"oil-description-2","type":"fact","evidence":"markets.Brent crude oil.change_percent|value"}],"data_source":"CME Group and The Associated Press","fetched_at":"2026-10-08T09:35:00-04:00","range":"Wednesday late reading $100.27 · Thursday early reading $104.08","points":[103.62,103.21,101.44,99.37,101.94,100.31,100.58,100.27,102.4,104.08],"sources":[{"name":"CME Group Brent futures","href":"https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html"},{"name":"The Associated Press","href":"https://apnews.com/article/6a096d714c874db13632794a32cebaa6"}]},
-    {"name":"Nasdaq Composite","kind":"equity_index","value":27403.64,"display_value":"≈27,404","baseline":"prior_close","prior_close":27538.69,"change_percent":-0.49,"display_change":"−0.49%","description":"The Nasdaq tracks many tech companies. It opened 0.49% lower.","so_what":{"channel_id":"nasdaq","context":{"type":"signal","text":"Technology shares can be sensitive to higher long-term interest rates.","evidence":"https://www.nasdaq.com/market-activity/index/comp"}},"explains":[],"claims":[{"sentence_id":"nasdaq-description-1","type":"mechanism","evidence":"https://www.nasdaq.com/market-activity/index/comp"},{"sentence_id":"nasdaq-description-2","type":"fact","evidence":"markets.Nasdaq Composite.change_percent|value"}],"data_source":"Nasdaq and Reuters","fetched_at":"2026-10-08T09:34:00-04:00","range":"Wednesday close 27,538.69 · Thursday open 27,403.64","points":[26797.54,26871.6,27190.86,27477.31,27599.79,27538.69,27498,27461,27429,27403.64],"sources":[{"name":"Nasdaq Composite","href":"https://www.nasdaq.com/market-activity/index/comp"}]},
-    {"name":"Dow Jones Industrial Average","kind":"equity_index","value":51001.38,"display_value":"≈51,001","baseline":"prior_close","prior_close":51179.87,"change_percent":-0.35,"display_change":"−0.35%","description":"The Dow tracks 30 large U.S. companies. It opened about 179 points lower Thursday.","so_what":{"channel_id":"dow","context":{"type":"signal","text":"Its smaller decline than the Nasdaq showed uneven moves across sectors.","evidence":"https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/"}},"explains":[],"claims":[{"sentence_id":"dow-description-1","type":"mechanism","evidence":"https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/"},{"sentence_id":"dow-description-2","type":"fact","evidence":"markets.Dow Jones Industrial Average.change_percent|value"}],"data_source":"S&P Dow Jones Indices and Reuters","fetched_at":"2026-10-08T09:34:00-04:00","range":"Wednesday close 51,179.87 · Thursday open 51,001.38","points":[51349.92,50906.05,50926.56,51176.96,51521.28,51179.87,51140,51092,51044,51001.38],"sources":[{"name":"S&P Dow Jones Indices","href":"https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/"}]},
-    {"name":"Expected volatility","kind":"volatility","value":15.85,"display_value":"15.85","baseline":"prior_close","prior_close":15.08,"change_percent":5.11,"display_change":"+5.1%","description":"The VIX estimates expected S&P 500 swings. It rose 0.77 point to 15.85 Thursday morning.","so_what":{"channel_id":"vix","context":{"type":"signal","text":"A higher reading means traders are pricing wider near-term moves.","evidence":"https://www.cboe.com/tradable-products/vix/"}},"explains":[],"claims":[{"sentence_id":"vix-description-1","type":"mechanism","evidence":"https://www.cboe.com/tradable-products/vix/vix-futures/"},{"sentence_id":"vix-description-2","type":"fact","evidence":"markets.Expected volatility.value|prior_close"}],"data_source":"Cboe delayed quotes","fetched_at":"2026-10-08T09:40:00-04:00","range":"Wednesday close 15.08 · Thursday morning 15.85","points":[15.9,15.7,15.31,15.44,15.38,15.08,15.22,15.41,15.67,15.85],"sources":[{"name":"Cboe VIX","href":"https://www.cboe.com/tradable-products/vix/vix-futures"}]}
+  "edition_date": "2026-10-08",
+  "updated_at": "2026-10-08T09:40:00-04:00",
+  "summary": "At the open: shares slipped; Treasury yields rose; crude oil jumped.",
+  "markets": [
+    {
+      "name": "S&P 500",
+      "kind": "equity_index",
+      "value": 7772.87,
+      "display_value": "≈7,773",
+      "baseline": "prior_close",
+      "prior_close": 7801.77,
+      "change_percent": -0.37,
+      "display_change": "−0.37%",
+      "description": "The S&P 500 tracks large U.S. companies. It opened 0.37% lower after Wednesday's pullback.",
+      "so_what": {
+        "channel_id": "sp500",
+        "context": {
+          "type": "signal",
+          "text": "Brent crude rose 3.8%, while the 10-year Treasury yield rose 0.07 percentage points.",
+          "evidence": "https://www.reuters.com/markets/us/"
+        }
+      },
+      "explains": [],
+      "claims": [
+        {
+          "sentence_id": "sp500-description-1",
+          "type": "mechanism",
+          "evidence": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/"
+        },
+        {
+          "sentence_id": "sp500-description-2",
+          "type": "fact",
+          "evidence": "markets.S&P 500.change_percent|value"
+        }
+      ],
+      "data_source": "S&P Dow Jones Indices and Reuters",
+      "fetched_at": "2026-10-08T09:34:00-04:00",
+      "range": "Wednesday close 7,801.77 · Thursday open 7,772.87",
+      "points": [
+        7731,
+        7741,
+        7751,
+        7773.95,
+        7818.93,
+        7801.77,
+        7792,
+        7784,
+        7778,
+        7772.87
+      ],
+      "sources": [
+        {
+          "name": "S&P Dow Jones Indices",
+          "href": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/"
+        },
+        {
+          "name": "Reuters markets",
+          "href": "https://www.reuters.com/markets/us/"
+        }
+      ]
+    },
+    {
+      "name": "10-year Treasury yield",
+      "kind": "yield",
+      "value": 5.35,
+      "display_value": "5.35%",
+      "baseline": "prior_close",
+      "prior_close": 5.28,
+      "change_percent": 1.33,
+      "display_change": "+0.07 percentage points",
+      "description": "The 10-year Treasury yield guides longer-term borrowing costs. It moved from 5.28% late Wednesday to 5.35% early Thursday.",
+      "so_what": {
+        "channel_id": "yield10",
+        "context": {
+          "type": "signal",
+          "text": "Mortgage and business-loan rates often respond to this benchmark.",
+          "evidence": "https://fred.stlouisfed.org/series/DGS10"
+        }
+      },
+      "explains": [],
+      "claims": [
+        {
+          "sentence_id": "yield-description-1",
+          "type": "mechanism",
+          "evidence": "https://fred.stlouisfed.org/series/DGS10"
+        },
+        {
+          "sentence_id": "yield-description-2",
+          "type": "fact",
+          "evidence": "markets.10-year Treasury yield.value|prior_close"
+        }
+      ],
+      "data_source": "U.S. Treasury and The Associated Press",
+      "fetched_at": "2026-10-08T09:35:00-04:00",
+      "range": "Wednesday late reading 5.28% · Thursday early reading 5.35%",
+      "points": [
+        4.98,
+        5.02,
+        5.1,
+        5.18,
+        5.23,
+        5.29,
+        5.27,
+        5.28,
+        5.32,
+        5.35
+      ],
+      "sources": [
+        {
+          "name": "U.S. Treasury",
+          "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"
+        },
+        {
+          "name": "The Associated Press",
+          "href": "https://apnews.com/article/6a096d714c874db13632794a32cebaa6"
+        }
+      ]
+    },
+    {
+      "name": "Brent crude oil",
+      "kind": "commodity",
+      "value": 104.08,
+      "display_value": "$104.08",
+      "baseline": "prior_close",
+      "prior_close": 100.27,
+      "change_percent": 3.8,
+      "display_change": "+3.8%",
+      "description": "Brent crude is a global oil benchmark. It jumped 3.8% to $104.08 a barrel Thursday morning.",
+      "so_what": {
+        "channel_id": "brent",
+        "context": {
+          "type": "attributed",
+          "text": "The Associated Press tied the jump to continuing uncertainty over Middle East supply.",
+          "source_url": "https://apnews.com/article/6a096d714c874db13632794a32cebaa6",
+          "evidence": "Published Oct. 8, 2026; price and direction match the morning report."
+        }
+      },
+      "explains": [],
+      "claims": [
+        {
+          "sentence_id": "oil-description-1",
+          "type": "mechanism",
+          "evidence": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm"
+        },
+        {
+          "sentence_id": "oil-description-2",
+          "type": "fact",
+          "evidence": "markets.Brent crude oil.change_percent|value"
+        }
+      ],
+      "data_source": "CME Group and The Associated Press",
+      "fetched_at": "2026-10-08T09:35:00-04:00",
+      "range": "Wednesday late reading $100.27 · Thursday early reading $104.08",
+      "points": [
+        103.62,
+        103.21,
+        101.44,
+        99.37,
+        101.94,
+        100.31,
+        100.58,
+        100.27,
+        102.4,
+        104.08
+      ],
+      "sources": [
+        {
+          "name": "CME Group Brent futures",
+          "href": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html"
+        },
+        {
+          "name": "The Associated Press",
+          "href": "https://apnews.com/article/6a096d714c874db13632794a32cebaa6"
+        }
+      ]
+    },
+    {
+      "name": "Nasdaq Composite",
+      "kind": "equity_index",
+      "value": 27403.64,
+      "display_value": "≈27,404",
+      "baseline": "prior_close",
+      "prior_close": 27538.69,
+      "change_percent": -0.49,
+      "display_change": "−0.49%",
+      "description": "The Nasdaq tracks many tech companies. It opened 0.49% lower.",
+      "so_what": {
+        "channel_id": "nasdaq",
+        "context": {
+          "type": "signal",
+          "text": "Technology shares can be sensitive to higher long-term interest rates.",
+          "evidence": "https://www.nasdaq.com/market-activity/index/comp"
+        }
+      },
+      "explains": [],
+      "claims": [
+        {
+          "sentence_id": "nasdaq-description-1",
+          "type": "mechanism",
+          "evidence": "https://www.nasdaq.com/market-activity/index/comp"
+        },
+        {
+          "sentence_id": "nasdaq-description-2",
+          "type": "fact",
+          "evidence": "markets.Nasdaq Composite.change_percent|value"
+        }
+      ],
+      "data_source": "Nasdaq and Reuters",
+      "fetched_at": "2026-10-08T09:34:00-04:00",
+      "range": "Wednesday close 27,538.69 · Thursday open 27,403.64",
+      "points": [
+        26797.54,
+        26871.6,
+        27190.86,
+        27477.31,
+        27599.79,
+        27538.69,
+        27498,
+        27461,
+        27429,
+        27403.64
+      ],
+      "sources": [
+        {
+          "name": "Nasdaq Composite",
+          "href": "https://www.nasdaq.com/market-activity/index/comp"
+        }
+      ]
+    },
+    {
+      "name": "Dow Jones Industrial Average",
+      "kind": "equity_index",
+      "value": 51001.38,
+      "display_value": "≈51,001",
+      "baseline": "prior_close",
+      "prior_close": 51179.87,
+      "change_percent": -0.35,
+      "display_change": "−0.35%",
+      "description": "The Dow tracks 30 large U.S. companies. It opened about 179 points lower Thursday.",
+      "so_what": {
+        "channel_id": "dow",
+        "context": {
+          "type": "signal",
+          "text": "The Dow fell 0.35%, compared with the Nasdaq's 0.49% decline.",
+          "evidence": "https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/"
+        }
+      },
+      "explains": [],
+      "claims": [
+        {
+          "sentence_id": "dow-description-1",
+          "type": "mechanism",
+          "evidence": "https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/"
+        },
+        {
+          "sentence_id": "dow-description-2",
+          "type": "fact",
+          "evidence": "markets.Dow Jones Industrial Average.change_percent|value"
+        }
+      ],
+      "data_source": "S&P Dow Jones Indices and Reuters",
+      "fetched_at": "2026-10-08T09:34:00-04:00",
+      "range": "Wednesday close 51,179.87 · Thursday open 51,001.38",
+      "points": [
+        51349.92,
+        50906.05,
+        50926.56,
+        51176.96,
+        51521.28,
+        51179.87,
+        51140,
+        51092,
+        51044,
+        51001.38
+      ],
+      "sources": [
+        {
+          "name": "S&P Dow Jones Indices",
+          "href": "https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/"
+        }
+      ]
+    },
+    {
+      "name": "Expected volatility",
+      "kind": "volatility",
+      "value": 15.85,
+      "display_value": "15.85",
+      "baseline": "prior_close",
+      "prior_close": 15.08,
+      "change_percent": 5.11,
+      "display_change": "+5.1%",
+      "description": "The VIX estimates expected S&P 500 swings. It rose 0.77 point to 15.85 Thursday morning.",
+      "so_what": {
+        "channel_id": "vix",
+        "context": {
+          "type": "signal",
+          "text": "A higher reading means traders are pricing wider near-term moves.",
+          "evidence": "https://www.cboe.com/tradable-products/vix/"
+        }
+      },
+      "explains": [],
+      "claims": [
+        {
+          "sentence_id": "vix-description-1",
+          "type": "mechanism",
+          "evidence": "https://www.cboe.com/tradable-products/vix/vix-futures/"
+        },
+        {
+          "sentence_id": "vix-description-2",
+          "type": "fact",
+          "evidence": "markets.Expected volatility.value|prior_close"
+        }
+      ],
+      "data_source": "Cboe delayed quotes",
+      "fetched_at": "2026-10-08T09:40:00-04:00",
+      "range": "Wednesday close 15.08 · Thursday morning 15.85",
+      "points": [
+        15.9,
+        15.7,
+        15.31,
+        15.44,
+        15.38,
+        15.08,
+        15.22,
+        15.41,
+        15.67,
+        15.85
+      ],
+      "sources": [
+        {
+          "name": "Cboe VIX",
+          "href": "https://www.cboe.com/tradable-products/vix/vix-futures"
+        }
+      ]
+    }
   ],
-  "calendar":[
-    {"date":"OCT 9","time":"6:30 AM ET","start_at":"2026-10-09T06:30:00-04:00","title":"Delta Air Lines earnings","definition":"Quarterly report on passenger demand, fares, fuel costs, and profit.","prior":"Third-quarter results · Delta Air Lines","consensus":"","hot_label":"If demand or profit is stronger","cool_label":"If costs or demand disappoint","hot":"A stronger report can support airlines and signal resilient travel spending.","cool":"A weaker report can expose rising costs or softer travel demand.","source":"SEC company filings","href":"https://www.sec.gov/edgar/browse/?CIK=27904&owner=exclude"},
-    {"date":"OCT 14","time":"8:30 AM ET","start_at":"2026-10-14T08:30:00-04:00","title":"Consumer Price Index (CPI)","definition":"Tracks price changes for goods and services bought by households.","prior":"Prior: 3.4% year over year · BLS","consensus":"","hot_label":"If higher than expected","cool_label":"If lower than expected","hot":"Higher readings have often led investors to expect higher interest rates.","cool":"Lower readings have often led investors to expect lower interest rates.","source":"BLS release calendar","href":"https://www.bls.gov/schedule/2026/10_sched.htm"},
-    {"date":"OCT 14","time":"2:00 PM ET","start_at":"2026-10-14T14:00:00-04:00","title":"Federal Reserve Beige Book","definition":"Regional survey of business activity, hiring, prices, and credit across the United States.","prior":"Eight weeks of regional reports · Federal Reserve","consensus":"","hot_label":"If prices stay firm","cool_label":"If demand weakens","hot":"Persistent price gains can reinforce concern about inflation.","cool":"Slower demand can strengthen the case for less restrictive policy.","source":"Federal Reserve calendar","href":"https://www.federalreserve.gov/newsevents/2026-october.htm"},
-    {"date":"OCT 15","time":"8:30 AM ET","start_at":"2026-10-15T08:30:00-04:00","title":"Retail sales","definition":"Measures consumer spending at stores, restaurants, and online sellers.","prior":"September sales · Census Bureau","consensus":"","hot_label":"If spending accelerates","cool_label":"If spending slows","hot":"Stronger sales can signal resilient demand and support company revenue.","cool":"Weaker sales can point to household caution and softer demand.","source":"Census retail schedule","href":"https://www.census.gov/retail/release_schedule.html"},
-    {"date":"OCT 15","time":"8:30 AM ET","start_at":"2026-10-15T08:30:00-04:00","title":"Producer Price Index (PPI)","definition":"Tracks prices received by domestic producers before goods and services reach consumers.","prior":"September producer prices · BLS","consensus":"","hot_label":"If producer prices rise faster","cool_label":"If producer prices ease","hot":"Faster increases can raise concern about costs reaching consumer prices.","cool":"Softer readings can reduce concern about inflation moving through supply chains.","source":"BLS release calendar","href":"https://www.bls.gov/schedule/2026/10_sched.htm"}
+  "calendar": [
+    {
+      "date": "OCT 9",
+      "time": "6:30 AM ET",
+      "start_at": "2026-10-09T06:30:00-04:00",
+      "title": "Delta Air Lines earnings",
+      "definition": "Quarterly report on passenger demand, fares, fuel costs, and profit.",
+      "prior": "Third-quarter results · Delta Air Lines",
+      "consensus": "",
+      "hot_label": "If demand or profit is stronger",
+      "cool_label": "If costs or demand disappoint",
+      "hot": "A stronger report can support airlines and signal resilient travel spending.",
+      "cool": "A weaker report can expose rising costs or softer travel demand.",
+      "source": "SEC company filings",
+      "href": "https://www.sec.gov/edgar/browse/?CIK=27904&owner=exclude"
+    },
+    {
+      "date": "OCT 14",
+      "time": "8:30 AM ET",
+      "start_at": "2026-10-14T08:30:00-04:00",
+      "title": "Consumer Price Index (CPI)",
+      "definition": "Tracks price changes for goods and services bought by households.",
+      "prior": "Prior: 3.4% year over year · BLS",
+      "consensus": "",
+      "hot_label": "If higher than expected",
+      "cool_label": "If lower than expected",
+      "hot": "Higher readings have often led investors to expect higher interest rates.",
+      "cool": "Lower readings have often led investors to expect lower interest rates.",
+      "source": "BLS release calendar",
+      "href": "https://www.bls.gov/schedule/2026/10_sched.htm"
+    },
+    {
+      "date": "OCT 14",
+      "time": "2:00 PM ET",
+      "start_at": "2026-10-14T14:00:00-04:00",
+      "title": "Federal Reserve Beige Book",
+      "definition": "Regional survey of business activity, hiring, prices, and credit across the United States.",
+      "prior": "Conditions since the previous report · Federal Reserve",
+      "consensus": "",
+      "hot_label": "If prices stay firm",
+      "cool_label": "If demand weakens",
+      "hot": "Persistent price gains can reinforce concern about inflation.",
+      "cool": "Slower demand can strengthen the case for less restrictive policy.",
+      "source": "Federal Reserve calendar",
+      "href": "https://www.federalreserve.gov/newsevents/2026-october.htm"
+    },
+    {
+      "date": "OCT 15",
+      "time": "8:30 AM ET",
+      "start_at": "2026-10-15T08:30:00-04:00",
+      "title": "Retail sales",
+      "definition": "Measures consumer spending at stores, restaurants, and online sellers.",
+      "prior": "September sales · Census Bureau",
+      "consensus": "",
+      "hot_label": "If spending accelerates",
+      "cool_label": "If spending slows",
+      "hot": "Stronger sales can signal resilient demand and support company revenue.",
+      "cool": "Weaker sales can point to household caution and softer demand.",
+      "source": "Census retail schedule",
+      "href": "https://www.census.gov/retail/release_schedule.html"
+    },
+    {
+      "date": "OCT 15",
+      "time": "8:30 AM ET",
+      "start_at": "2026-10-15T08:30:00-04:00",
+      "title": "Producer Price Index (PPI)",
+      "definition": "Tracks prices received by domestic producers before goods and services reach consumers.",
+      "prior": "September producer prices · BLS",
+      "consensus": "",
+      "hot_label": "If producer prices rise faster",
+      "cool_label": "If producer prices ease",
+      "hot": "Faster increases can raise concern about costs reaching consumer prices.",
+      "cool": "Softer readings can reduce concern about inflation moving through supply chains.",
+      "source": "BLS release calendar",
+      "href": "https://www.bls.gov/schedule/2026/10_sched.htm"
+    }
   ]
 }
