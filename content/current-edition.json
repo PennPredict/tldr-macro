@@ -12,12 +12,12 @@
       "prior_close": 7801.77,
       "change_percent": -0.37,
       "display_change": "−0.37%",
-      "description": "The S&P 500 tracks large U.S. companies. It opened 0.37% lower after Wednesday's pullback.",
+      "description": "The S&P 500 tracks 500 large U.S. companies. It opened 0.37% below its prior close.",
       "so_what": {
         "channel_id": "sp500",
         "context": {
           "type": "signal",
-          "text": "Brent crude rose 3.8%, while the 10-year Treasury yield rose 0.07 percentage points.",
+          "text": "",
           "evidence": "https://www.reuters.com/markets/us/"
         }
       },
@@ -69,12 +69,12 @@
       "prior_close": 5.28,
       "change_percent": 1.33,
       "display_change": "+0.07 percentage points",
-      "description": "The 10-year Treasury yield guides longer-term borrowing costs. It moved from 5.28% late Wednesday to 5.35% early Thursday.",
+      "description": "The 10-year Treasury yield is the return investors demand to lend to the U.S. government for ten years. It rose from 5.28% to 5.35%.",
       "so_what": {
         "channel_id": "yield10",
         "context": {
           "type": "signal",
-          "text": "Mortgage and business-loan rates often respond to this benchmark.",
+          "text": "",
           "evidence": "https://fred.stlouisfed.org/series/DGS10"
         }
       },
@@ -184,12 +184,12 @@
       "prior_close": 27538.69,
       "change_percent": -0.49,
       "display_change": "−0.49%",
-      "description": "The Nasdaq tracks many tech companies. It opened 0.49% lower.",
+      "description": "The Nasdaq Composite tracks many listed companies and has a large technology weighting. It opened 0.49% lower.",
       "so_what": {
         "channel_id": "nasdaq",
         "context": {
           "type": "signal",
-          "text": "Technology shares can be sensitive to higher long-term interest rates.",
+          "text": "",
           "evidence": "https://www.nasdaq.com/market-activity/index/comp"
         }
       },
@@ -237,12 +237,12 @@
       "prior_close": 51179.87,
       "change_percent": -0.35,
       "display_change": "−0.35%",
-      "description": "The Dow tracks 30 large U.S. companies. It opened about 179 points lower Thursday.",
+      "description": "The Dow tracks 30 large, established U.S. companies. It opened about 179 points lower.",
       "so_what": {
         "channel_id": "dow",
         "context": {
           "type": "signal",
-          "text": "The Dow fell 0.35%, compared with the Nasdaq's 0.49% decline.",
+          "text": "",
           "evidence": "https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/"
         }
       },
@@ -290,12 +290,12 @@
       "prior_close": 15.08,
       "change_percent": 5.11,
       "display_change": "+5.1%",
-      "description": "The VIX estimates expected S&P 500 swings. It rose 0.77 point to 15.85 Thursday morning.",
+      "description": "The VIX estimates expected S&P 500 swings over the next month. It rose 0.77 point to 15.85.",
       "so_what": {
         "channel_id": "vix",
         "context": {
           "type": "signal",
-          "text": "A higher reading means traders are pricing wider near-term moves.",
+          "text": "",
           "evidence": "https://www.cboe.com/tradable-products/vix/"
         }
       },

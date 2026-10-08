@@ -1,6 +1,6 @@
 # Data Report
 
-Generated: 2026-10-08T19:44:15.772Z
+Generated: 2026-10-08T19:51:33.122Z
 
 | Instrument | Provider | Series | Frequency | Latest timestamp | Baseline | Chart points | Status |
 |---|---|---|---|---|---|---:|---|
@@ -58,7 +58,18 @@ Generated: 2026-10-08T19:44:15.772Z
 | Dow Jones Industrial Average | 2026-10-08T09:34:00-04:00 | Wednesday close 51,179.87 · Thursday open 51,001.38 | ≈51,001 (−0.35%) | S&P Dow Jones Indices and Reuters |
 | Expected volatility | 2026-10-08T09:40:00-04:00 | Wednesday close 15.08 · Thursday morning 15.85 | 15.85 (+5.1%) | Cboe delayed quotes |
 
+- DAX: 2026-10-08T10:58:00-04:00; 24,913.10; −0.76%; Deutsche Börse/Xetra via Börse Stuttgart
+- Nikkei 225: 2026-10-08T02:00:00-04:00; 69,042.10; −1.42%; Nikkei Inc.
+- KOSPI: 2026-10-08T02:00:00-04:00; 6,625.93; −2.62%; Korea Exchange via KB Financial Group
 - Nasdaq Composite: 2026-10-02T16:00:00-04:00; 27,190.86; +1.19%; Nasdaq via FRED
 - Dow Jones Industrial Average: 2026-10-05T10:10:00-04:00; 51,267.90; +0.18%; S&P Dow Jones Indices via FRED
+- Russell 2000: 2026-10-05T16:00:00-04:00; 2,847.14; +0.50%; FTSE Russell level reported by The Associated Press
+- 2-year Treasury yield: 2026-10-08T09:35:00-04:00; 4.78%; +0.02 percentage points; Federal Reserve via FRED
 - 10-year minus 2-year yield spread: 2026-10-05T16:00:00-04:00; 0.47 percentage points; +0.02 percentage points; Federal Reserve Bank of St. Louis
 - 30-year fixed mortgage rate: 2026-10-08T12:00:00-04:00; 7.40%; +0.12 percentage points; Freddie Mac
+- Euro to dollar: 2026-10-08T10:58:00-04:00; $1.1208 per euro; +0.12%; Federal Reserve via FRED
+- Dollar to yen: 2026-10-08T10:58:00-04:00; ¥158.17 per dollar; +0.07%; Federal Reserve via FRED
+- Pound to dollar: 2026-10-08T10:58:00-04:00; $1.3239 per pound; +0.32%; Federal Reserve via FRED
+- WTI crude oil: 2026-10-08T10:34:00-04:00; $91.46 per barrel; +4.00%; U.S. Energy Information Administration via FRED
+- Natural gas: 2026-10-08T11:04:00-04:00; $3.17 per MMBtu; −1.03%; U.S. Energy Information Administration via FRED
+- Copper: 2026-10-08T10:34:00-04:00; $6.68 per pound; near flat; Market quote with IMF benchmark context

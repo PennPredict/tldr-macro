@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T19:44:15.773Z",
+  "generated_at": "2026-10-08T19:51:33.123Z",
   "status": "passed",
   "checks": {
     "instrument_count": 16,
@@ -10,8 +10,19 @@
       "Nasdaq Composite",
       "Dow Jones Industrial Average",
       "Expected volatility",
+      "DAX",
+      "Nikkei 225",
+      "KOSPI",
+      "Russell 2000",
+      "2-year Treasury yield",
       "10-year minus 2-year yield spread",
-      "30-year fixed mortgage rate"
+      "30-year fixed mortgage rate",
+      "Euro to dollar",
+      "Dollar to yen",
+      "Pound to dollar",
+      "WTI crude oil",
+      "Natural gas",
+      "Copper"
     ],
     "global_items_visible": 1,
     "badge_signs": [

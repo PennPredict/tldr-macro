@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T19:44:49.685Z",
+  "generated_at": "2026-10-08T19:52:33.823Z",
   "results": [
     {
       "width": 375,
@@ -15,25 +15,25 @@
     },
     {
       "width": 768,
-      "visible_triggers": 58,
+      "visible_triggers": 53,
       "summary_lines": 0,
       "sticky": {
         "initially_hidden": true,
         "midpage_visible": true,
         "layout_shift_px": 0,
-        "popover_clearance_px": 227.40625
+        "popover_clearance_px": 245.1875
       },
       "failures": []
     },
     {
       "width": 1280,
-      "visible_triggers": 58,
+      "visible_triggers": 53,
       "summary_lines": 1,
       "sticky": {
         "initially_hidden": true,
         "midpage_visible": true,
         "layout_shift_px": 0,
-        "popover_clearance_px": 315.25
+        "popover_clearance_px": 314.75
       },
       "failures": []
     }
