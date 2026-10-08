@@ -1,9 +1,9 @@
 [
   {
     "topic_tag":"market_volatility",
-    "headline":"Stocks Fall From a Record",
-    "headline_evidence":{"bucket":"medium_down","rule":"A 0.5% decline maps to falls; the prior close was a record.","data":"current-edition.markets.S&P 500.change_percent|prior_close"},
-    "commentary":"The S&P 500 fell from Tuesday's record in early trading. Higher Treasury yields can make government bonds a more competitive alternative to stocks.",
+    "headline":"Stocks Open Lower",
+    "headline_evidence":{"bucket":"medium_down","rule":"A 0.37% opening decline maps to opens lower.","data":"current-edition.markets.S&P 500.change_percent|prior_close"},
+    "commentary":"The S&P 500 opened 0.37% lower, while the Nasdaq Composite lost 0.49%. More expensive oil and higher Treasury yields added strain before corporate earnings season.",
     "defines":[{"term":"S&P 500","definition":"Index of 500 large U.S. companies.","used_by_and_why":"Broad gauge of U.S. stock prices."}],
     "explains":[{"anchor_text":"Higher Treasury yields give investors a more competitive return outside stocks","why":"Investors compare possible company profits with returns available from government bonds.","other_reading":"Company results and news can outweigh changes in yields."}],
     "visual":null,
@@ -12,15 +12,15 @@
       {"view_id":"household","body":"Retirement accounts can move with broad stock indexes. One morning's decline does not determine a long-term result.","keep_wondering":"Does the decline spread beyond large companies?","claims":[{"sentence_id":"stocks-household-1","type":"mechanism","evidence":"https://www.sec.gov/investor/pubs/assetallocation.htm"},{"sentence_id":"stocks-household-2","type":"interpretation","evidence":"https://www.spglobal.com/spdji/en/indices/equity/sp-500/"}]},
       {"view_id":"dealer","body":"Market makers quote prices while new information changes demand. Fast moves can widen the gap between buying and selling prices.","keep_wondering":"Did trading remain orderly?","claims":[{"sentence_id":"stocks-dealer-1","type":"mechanism","evidence":"https://www.nasdaq.com/solutions/nasdaq-market-makers"},{"sentence_id":"stocks-dealer-2","type":"mechanism","evidence":"https://www.finra.org/investors/investing/investment-products/stocks/order-types"}]}
     ],
-    "sources":[{"name":"S&P Dow Jones Indices","href":"https://www.spglobal.com/spdji/en/indices/equity/sp-500/"},{"name":"The Associated Press","href":"https://apnews.com/article/stocks-markets-rates-oil-earnings-44b75c188756038371cf3112ede9cee8"}],
+    "sources":[{"name":"S&P Dow Jones Indices","href":"https://www.spglobal.com/spdji/en/indices/equity/sp-500/"},{"name":"Reuters markets","href":"https://www.reuters.com/markets/us/"}],
     "data_note":"Early prices can change throughout the trading day.",
     "claims":[{"sentence_id":"stocks-commentary-1","type":"fact","evidence":"https://apnews.com/article/stocks-markets-rates-oil-earnings-44b75c188756038371cf3112ede9cee8"},{"sentence_id":"stocks-commentary-2","type":"mechanism","evidence":"https://fred.stlouisfed.org/series/DGS10"}]
   },
   {
     "topic_tag":"interest_rates_and_yields",
-    "headline":"Borrowing Rates Rise",
-    "headline_evidence":{"bucket":"medium_up","rule":"An 8-basis-point increase maps to rises.","data":"current-edition.markets.10-year Treasury yield.value|prior_close"},
-    "commentary":"The 10-year Treasury yield climbed 0.08 percentage points, from 5.27% to 5.35%, in morning trading. That put the benchmark near its highest level since 2002. It can influence mortgages, company expansion, and stock prices relative to profits.",
+    "headline":"Long-Term Rates Rebound",
+    "headline_evidence":{"bucket":"medium_up","rule":"A 7-basis-point increase maps to rebounds.","data":"current-edition.markets.10-year Treasury yield.value|prior_close"},
+    "commentary":"The 10-year Treasury yield rebounded from 5.28% late Wednesday to 5.35% early Thursday. That benchmark can influence mortgages, company expansion, and how investors value future profits.",
     "defines":[{"term":"10-year Treasury yield","definition":"Annual return demanded on a ten-year U.S. government loan.","used_by_and_why":"Reference for mortgages, business debt, and long-term borrowing."}],
     "explains":[{"anchor_text":"influence mortgages, company expansion, and stock prices relative to profits","why":"Lenders and investors compare other choices with Treasury returns, then adjust for risk.","other_reading":"Competition, borrower quality, and company results can outweigh the benchmark."}],
     "visual":null,
@@ -31,13 +31,13 @@
       {"view_id":"dealer","body":"Bond dealers connect buyers and sellers while managing inventory. Fast yield changes can widen the gap between buying and selling prices.","keep_wondering":"Did trading remain orderly?","claims":[{"sentence_id":"rates-dealer-1","type":"mechanism","evidence":"https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"},{"sentence_id":"rates-dealer-2","type":"mechanism","evidence":"https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"}]}
     ],
     "sources":[{"name":"U.S. Treasury","href":"https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"},{"name":"Federal Reserve Economic Data","href":"https://fred.stlouisfed.org/series/DGS10"}],
-    "claims":[{"sentence_id":"rates-commentary-1","type":"mechanism","evidence":"https://fred.stlouisfed.org/series/DGS10"},{"sentence_id":"rates-commentary-2","type":"fact","evidence":"visual.data.yield_percent|https://apnews.com/article/stocks-markets-rates-oil-earnings-44b75c188756038371cf3112ede9cee8"},{"sentence_id":"rates-commentary-3","type":"mechanism","evidence":"https://fred.stlouisfed.org/series/DGS10"}]
+    "claims":[{"sentence_id":"rates-commentary-1","type":"fact","evidence":"https://fred.stlouisfed.org/series/DGS10"},{"sentence_id":"rates-commentary-2","type":"mechanism","evidence":"https://fred.stlouisfed.org/series/DGS10"}]
   },
   {
     "topic_tag":"oil_and_energy",
-    "headline":"Oil Climbs",
-    "headline_evidence":{"bucket":"medium_up","rule":"A 1.5% move maps to climbs; the jump boundary requires human review.","data":"instruments.brent.change_percent"},
-    "commentary":"Brent crude rose in morning trading. According to the Associated Press, uncertainty around Middle East supply remained part of the market backdrop. Oil can reach households through gasoline, freight, airfare, and petroleum-based materials.",
+    "headline":"Oil Surges",
+    "headline_evidence":{"bucket":"large_up","rule":"A 3.8% move maps to surges.","data":"current-edition.markets.Brent crude oil.change_percent|value"},
+    "commentary":"Brent crude surged 3.8% to $104.08 a barrel. The Associated Press linked the move to continuing uncertainty around Middle East supply. Sustained increases can reach gasoline, freight, airfare, and petroleum-based materials.",
     "defines":[{"term":"Brent crude","definition":"Global benchmark price for oil.","used_by_and_why":"Used to price contracts and plan fuel costs."}],
     "explains":[{"anchor_text":"reach households through gasoline, freight, airfare, and petroleum-based materials","why":"Crude becomes fuel and materials used in transportation and production.","other_reading":"Refining, taxes, inventories, contracts, and competition affect retail prices."}],
     "visual":null,
@@ -52,20 +52,20 @@
     "claims":[{"sentence_id":"oil-commentary-1","type":"fact","evidence":"visual.data.brent_dollars_per_barrel|current-edition.markets.Brent crude oil.change_percent"},{"sentence_id":"oil-commentary-2","type":"interpretation","evidence":"https://apnews.com/article/stocks-markets-rates-oil-earnings-44b75c188756038371cf3112ede9cee8"},{"sentence_id":"oil-commentary-3","type":"mechanism","evidence":"https://www.eia.gov/petroleum/"}]
   },
   {
-    "topic_tag":"fed_meeting",
-    "headline":"Fed Minutes Arrive",
-    "headline_evidence":{"bucket":"event","rule":"Plain event headline for a scheduled policy release.","data":"current-edition.calendar[0]"},
-    "commentary":"The Federal Open Market Committee (FOMC) minutes arrive at 2:00 p.m. ET. The record explains what officials discussed before September's rate increase, including any disagreement about future rate changes.",
-    "defines":[{"term":"Federal Open Market Committee","definition":"Federal Reserve group that sets short-term interest rates.","used_by_and_why":"Its decisions shape borrowing costs across the economy."}],
-    "explains":[{"anchor_text":"what officials discussed before September's rate increase","why":"The Federal Reserve compares inflation, employment, and financial conditions.","other_reading":"Minutes describe one meeting and may not reflect later data."}],
+    "topic_tag":"jobs_and_wages",
+    "headline":"Jobless Claims Edge Down",
+    "headline_evidence":{"bucket":"small_down","rule":"Initial claims fell by 2,000 to 197,000.","data":"U.S. Department of Labor weekly claims release"},
+    "commentary":"Initial jobless claims slipped to 197,000 from a revised 199,000. Low claims point to limited layoffs, though they do not show how quickly unemployed people find new work.",
+    "defines":[{"term":"Initial jobless claims","definition":"New weekly applications for unemployment benefits.","used_by_and_why":"A fast read on layoffs and labor-market changes."}],
+    "explains":[{"anchor_text":"point to limited layoffs","why":"Most people file soon after losing eligible work, making claims a timely layoff measure.","other_reading":"Claims miss some workers and do not measure hiring or job-search duration."}],
     "visual":null,
-    "visual_gate":{"passed":false,"failures":["Single-stat tile","Fewer than three nodes"],"needs_human_check":false},
+    "visual_gate":{"passed":false,"failures":["Only one new weekly observation"],"needs_human_check":false},
     "views":[
-      {"view_id":"policy","body":"Officials use the minutes to explain the trade-offs behind one decision. New data after the meeting can change later choices.","keep_wondering":"How divided were officials over another increase?","claims":[{"sentence_id":"fed-policy-1","type":"mechanism","evidence":"https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"},{"sentence_id":"fed-policy-2","type":"mechanism","evidence":"https://www.federalreserve.gov/monetarypolicy.htm"}]},
-      {"view_id":"dealer","body":"Bond traders compare the discussion with current market prices. Unexpected wording can move yields quickly.","keep_wondering":"Which passages change rate expectations?","claims":[{"sentence_id":"fed-dealer-1","type":"mechanism","evidence":"https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"},{"sentence_id":"fed-dealer-2","type":"mechanism","evidence":"https://www.federalreserve.gov/monetarypolicy.htm"}]}
+      {"view_id":"household","body":"Fewer new claims suggest most workers are keeping their jobs. People already unemployed can still face a difficult search.","keep_wondering":"Are continuing claims also improving?","claims":[{"sentence_id":"claims-household-1","type":"mechanism","evidence":"https://www.dol.gov/ui/data.pdf"},{"sentence_id":"claims-household-2","type":"interpretation","evidence":"https://www.dol.gov/ui/data.pdf"}]},
+      {"view_id":"policy","body":"Officials compare claims with payrolls, unemployment, wages, and inflation. One weekly decline rarely changes policy by itself.","keep_wondering":"Do broader labor reports tell the same story?","claims":[{"sentence_id":"claims-policy-1","type":"mechanism","evidence":"https://www.federalreserve.gov/monetarypolicy.htm"},{"sentence_id":"claims-policy-2","type":"interpretation","evidence":"https://www.dol.gov/ui/data.pdf"}]}
     ],
-    "sources":[{"name":"Federal Reserve calendar","href":"https://www.federalreserve.gov/newsevents/calendar.htm"},{"name":"Federal Reserve monetary policy","href":"https://www.federalreserve.gov/monetarypolicy.htm"}],
-    "data_note":"Minutes describe the September meeting, not today's discussion.",
-    "claims":[{"sentence_id":"fed-commentary-1","type":"fact","evidence":"https://www.federalreserve.gov/newsevents/calendar.htm"},{"sentence_id":"fed-commentary-2","type":"fact","evidence":"https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"}]
+    "sources":[{"name":"U.S. Department of Labor","href":"https://www.dol.gov/ui/data.pdf"}],
+    "data_note":"Weekly claims are revised and do not include every unemployed worker.",
+    "claims":[{"sentence_id":"claims-commentary-1","type":"fact","evidence":"https://www.dol.gov/ui/data.pdf"},{"sentence_id":"claims-commentary-2","type":"mechanism","evidence":"https://www.dol.gov/ui/data.pdf"}]
   }
 ]
