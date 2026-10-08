@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T19:32:18.744Z",
+  "generated_at": "2026-10-08T19:44:26.667Z",
   "edition_date": "2026-10-08",
   "policy_version": 1,
   "status": "passed",
@@ -10,13 +10,13 @@
     "eased": 1
   },
   "claim_ledger": {
-    "headline_claims": 9,
+    "headline_claims": 10,
     "view_claims": 20,
     "market_claims": 12
   },
   "snapshot_checks": {
-    "summary_words": 11,
-    "summary_characters": 68,
+    "summary_words": 8,
+    "summary_characters": 55,
     "priority_order": [
       "S&P 500",
       "10-year Treasury yield",
@@ -133,20 +133,20 @@
         }
       }
     },
-    "generated_sentence": "At the open: shares slipped; Treasury yields rose; crude oil jumped.",
+    "generated_sentence": "Shares slipped; Treasury yields rose; crude oil jumped.",
     "lint": {
       "passed": true,
       "errors": [],
       "warnings": [],
-      "characters": 68,
-      "words": 11,
-      "grade": 3.7
+      "characters": 55,
+      "words": 8,
+      "grade": 2.3
     },
     "similarity_scores": [
       {
         "date": "2026-10-07",
-        "edit_similarity": 0.391,
-        "token_similarity": 0.167,
+        "edit_similarity": 0.406,
+        "token_similarity": 0.2,
         "first_four_match": false,
         "limit": 0.6
       }
@@ -236,7 +236,7 @@
             "qualifier": null
           }
         },
-        "sentence": "At the open: shares rose; Treasury yields edged up; crude oil rose."
+        "sentence": "Shares rose; Treasury yields edged up; crude oil rose."
       },
       {
         "label": "record proximity",
@@ -287,7 +287,7 @@
             "qualifier": null
           }
         },
-        "sentence": "At the open: shares edged up; Treasury yields slipped; crude oil fell."
+        "sentence": "Shares edged up; Treasury yields slipped; crude oil fell."
       },
       {
         "label": "reversal",
@@ -346,7 +346,7 @@
             }
           }
         },
-        "sentence": "At the open: shares fell; Treasury yields held steady; crude oil edged up."
+        "sentence": "Shares fell; Treasury yields held steady; crude oil edged up."
       },
       {
         "label": "quiet day",
@@ -389,7 +389,7 @@
             "qualifier": null
           }
         },
-        "sentence": "At the open: shares held steady; Treasury yields held steady; crude oil held steady."
+        "sentence": "Shares held steady; Treasury yields held steady; crude oil held steady."
       },
       {
         "label": "mixed day",
@@ -441,7 +441,7 @@
             }
           }
         },
-        "sentence": "At the open: shares rose; Treasury yields edged up; crude oil dropped."
+        "sentence": "Shares rose; Treasury yields edged up; crude oil dropped."
       }
     ]
   },
@@ -449,11 +449,11 @@
     "count": 4,
     "items": [
       {
-        "headline": "Stocks open lower",
+        "headline": "Major indexes decline together",
         "evidence": {
-          "bucket": "medium_down",
-          "rule": "A 0.37% opening decline maps to opens lower.",
-          "data": "current-edition.markets.S&P 500.change_percent|prior_close"
+          "bucket": "cross_index",
+          "rule": "The S&P 500, Nasdaq, and Dow all opened lower; their average decline was about 0.4%.",
+          "data": "current-edition.markets.S&P 500|Nasdaq Composite|Dow Jones Industrial Average"
         },
         "visual_gate": {
           "passed": false,
@@ -667,7 +667,7 @@
     }
   ],
   "source_diversity": {
-    "total_links": 20,
+    "total_links": 18,
     "counts_by_domain": {
       "spglobal.com": 3,
       "reuters.com": 2,
@@ -676,7 +676,6 @@
       "cmegroup.com": 2,
       "nasdaq.com": 1,
       "cboe.com": 1,
-      "federalreserve.gov": 2,
       "global.krx.co.kr": 1,
       "live.deutsche-boerse.com": 1,
       "fred.stlouisfed.org": 1,

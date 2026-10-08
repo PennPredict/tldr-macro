@@ -28,6 +28,7 @@
   },
   {
     "tag": "Policy",
+    "qualifies": false,
     "headline": "Fed minutes show higher-rate debate",
     "what": "September minutes said many participants viewed a higher rate path as prudent, while a number viewed it as necessary based on their outlooks.",
     "context": "Officials weighed persistent inflation against labor-market and financial conditions.",

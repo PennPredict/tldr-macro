@@ -1,7 +1,7 @@
 {
   "edition_date": "2026-10-08",
   "updated_at": "2026-10-08T09:40:00-04:00",
-  "summary": "At the open: shares slipped; Treasury yields rose; crude oil jumped.",
+  "summary": "Shares slipped; Treasury yields rose; crude oil jumped.",
   "markets": [
     {
       "name": "S&P 500",
@@ -340,14 +340,14 @@
       "date": "OCT 9",
       "time": "6:30 AM ET",
       "start_at": "2026-10-09T06:30:00-04:00",
-      "title": "Delta Air Lines earnings",
-      "definition": "Quarterly report on passenger demand, fares, fuel costs, and profit.",
-      "prior": "Third-quarter results · Delta Air Lines",
+      "title": "Third-quarter earnings season begins",
+      "definition": "A broad test of company profits, spending plans, demand, and executive forecasts across major industries.",
+      "prior": "Large-company reporting cycle · SEC filings",
       "consensus": "",
-      "hot_label": "If demand or profit is stronger",
-      "cool_label": "If costs or demand disappoint",
-      "hot": "A stronger report can support airlines and signal resilient travel spending.",
-      "cool": "A weaker report can expose rising costs or softer travel demand.",
+      "hot_label": "If AI earnings are strong",
+      "cool_label": "If AI earnings are weak",
+      "hot": "Strong later reports from Nvidia and other AI leaders can support expectations for data-center and semiconductor spending.",
+      "cool": "Weak results or cautious forecasts can challenge those expectations and weigh on growth-focused shares.",
       "source": "SEC company filings",
       "href": "https://www.sec.gov/edgar/browse/?CIK=27904&owner=exclude"
     },

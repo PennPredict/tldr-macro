@@ -1,9 +1,9 @@
 [
   {
     "topic_tag":"market_volatility",
-    "headline":"Stocks open lower",
-    "headline_evidence":{"bucket":"medium_down","rule":"A 0.37% opening decline maps to opens lower.","data":"current-edition.markets.S&P 500.change_percent|prior_close"},
-    "commentary":"The S&P 500 opened 0.37% lower, while the Nasdaq Composite lost 0.49%. Higher Treasury yields and higher oil prices can raise costs for borrowers and companies.",
+    "headline":"Major indexes decline together",
+    "headline_evidence":{"bucket":"cross_index","rule":"The S&P 500, Nasdaq, and Dow all opened lower; their average decline was about 0.4%.","data":"current-edition.markets.S&P 500|Nasdaq Composite|Dow Jones Industrial Average"},
+    "commentary":"All three major U.S. indexes opened lower: the S&P 500 fell 0.37%, the Nasdaq Composite lost 0.49%, and the Dow declined 0.35%. Their average decrease was about 0.4%, meaning the move was broader than one technology-heavy index. When several broad indexes fall together, diversified stock portfolios can feel more of the move than they would from a single-industry decline.",
     "defines":[{"term":"S&P 500","definition":"Index of 500 large U.S. companies.","used_by_and_why":"Broad gauge of U.S. stock prices."}],
     "explains":[{"anchor_text":"Higher Treasury yields give investors a more competitive return outside stocks","why":"Investors compare possible company profits with returns available from government bonds.","other_reading":"Company results and news can outweigh changes in yields."}],
     "visual":null,
@@ -14,7 +14,7 @@
     ],
     "sources":[{"name":"S&P Dow Jones Indices","href":"https://www.spglobal.com/spdji/en/indices/equity/sp-500/"},{"name":"Reuters markets","href":"https://www.reuters.com/markets/us/"}],
     "data_note":"Early prices can change throughout the trading day.",
-    "claims":[{"sentence_id":"stocks-commentary-1","type":"fact","evidence":"https://apnews.com/article/stocks-markets-rates-oil-earnings-44b75c188756038371cf3112ede9cee8"},{"sentence_id":"stocks-commentary-2","type":"mechanism","evidence":"https://fred.stlouisfed.org/series/DGS10"}]
+    "claims":[{"sentence_id":"stocks-commentary-1","type":"fact","evidence":"content/current-edition.json|S&P 500|Nasdaq Composite|Dow Jones Industrial Average"},{"sentence_id":"stocks-commentary-2","type":"interpretation","evidence":"content/current-edition.json|three-index average"},{"sentence_id":"stocks-commentary-3","type":"mechanism","evidence":"https://www.sec.gov/investor/pubs/assetallocation.htm"}]
   },
   {
     "topic_tag":"interest_rates_and_yields",
