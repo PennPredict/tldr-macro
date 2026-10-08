@@ -23,6 +23,6 @@ export function Header({ updated, summary }: { updated?: string; summary:string 
 }
 
 export function Footer() {
-  const about=<div className="about-popover-body"><span>Low-cortisol explanations.</span><span><strong>Limits</strong>Not investment advice; concision reduces nuance.</span></div>;
+  const about=<div className="about-popover-body"><span>Low-cortisol explanations.</span><span><strong>Limits</strong>concision reduces nuance; keep reading.</span></div>;
   return <footer><div className="footer-meta"><div><nav aria-label="Footer navigation"><TermPopover className="about-trigger" label="Mission" ariaLabel="About TL;DR Macro" body={about}>About</TermPopover></nav><p className="footer-note">{fullDisclaimer}</p></div><BrandImage placement="footer" /></div></footer>;
 }
