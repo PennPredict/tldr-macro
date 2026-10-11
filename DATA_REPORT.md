@@ -1,6 +1,6 @@
 # Data Report
 
-Generated: 2026-10-11T02:29:25.588Z
+Generated: 2026-10-11T02:36:05.537Z
 
 | Instrument | Provider | Series | Frequency | Latest timestamp | Baseline | Chart points | Status |
 |---|---|---|---|---|---|---:|---|
@@ -58,14 +58,14 @@ Generated: 2026-10-11T02:29:25.588Z
 | Dow Jones Industrial Average | 2026-10-09T16:00:00-04:00 | Thursday close 51,231.64 · Friday close 51,654.95 | 51,654.95 (+0.8%) | S&P Dow Jones Indices and The Associated Press |
 | Expected volatility | 2026-10-09T16:00:00-04:00 | Thursday close 15.41 · Friday close 14.84 | 14.84 (−3.7%) | Cboe closing data |
 
-- DAX: 2026-10-08T10:58:00-04:00; 24,913.10; −0.76%; Deutsche Börse/Xetra via Börse Stuttgart
-- Nikkei 225: 2026-10-08T02:00:00-04:00; 69,042.10; −1.42%; Nikkei Inc.
+- DAX: 2026-10-08T10:58:00-04:00; 24,913.10; Friday: at least +1%; Deutsche Börse/Xetra via Börse Stuttgart
+- Nikkei 225: 2026-10-08T02:00:00-04:00; 69,042.10; Friday: near flat; Nikkei Inc.
 - KOSPI: 2026-10-08T02:00:00-04:00; 6,625.93; −2.62%; Korea Exchange via KB Financial Group
 - Nasdaq Composite: 2026-10-02T16:00:00-04:00; 27,190.86; +1.19%; Nasdaq via FRED
 - Dow Jones Industrial Average: 2026-10-05T10:10:00-04:00; 51,267.90; +0.18%; S&P Dow Jones Indices via FRED
-- Russell 2000: 2026-10-05T16:00:00-04:00; 2,847.14; +0.50%; FTSE Russell level reported by The Associated Press
-- 2-year Treasury yield: 2026-10-08T09:35:00-04:00; 4.78%; +0.02 percentage points; Federal Reserve via FRED
-- 10-year minus 2-year yield spread: 2026-10-05T16:00:00-04:00; 0.47 percentage points; +0.02 percentage points; Federal Reserve Bank of St. Louis
+- Russell 2000: 2026-10-09T16:00:00-04:00; 2,806.98; +0.50%; FTSE Russell level reported by The Associated Press
+- 2-year Treasury yield: 2026-10-09T16:00:00-04:00; 4.78%; +0.05 percentage points; Federal Reserve via FRED
+- 10-year minus 2-year yield spread: 2026-10-09T16:00:00-04:00; 0.44 percentage points; −0.04 percentage points; Federal Reserve Bank of St. Louis
 - 30-year fixed mortgage rate: 2026-10-08T12:00:00-04:00; 7.40%; +0.12 percentage points; Freddie Mac
 - Euro to dollar: 2026-10-08T10:58:00-04:00; $1.1208 per euro; +0.12%; Federal Reserve via FRED
 - Dollar to yen: 2026-10-08T10:58:00-04:00; ¥158.17 per dollar; +0.07%; Federal Reserve via FRED

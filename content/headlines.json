@@ -52,20 +52,21 @@
     "claims":[{"sentence_id":"oil-commentary-1","type":"fact","evidence":"visual.data.brent_dollars_per_barrel|current-edition.markets.Brent crude oil.change_percent"},{"sentence_id":"oil-commentary-2","type":"interpretation","evidence":"https://apnews.com/article/stocks-markets-rates-oil-earnings-44b75c188756038371cf3112ede9cee8"},{"sentence_id":"oil-commentary-3","type":"mechanism","evidence":"https://www.eia.gov/petroleum/"}]
   },
   {
-    "topic_tag":"jobs_and_wages",
-    "headline":"Jobless claims edge down",
-    "headline_evidence":{"bucket":"small_down","rule":"Initial claims fell by 2,000 to 197,000.","data":"U.S. Department of Labor weekly claims release"},
-    "commentary":"Initial jobless claims slipped to 197,000 from a revised 199,000. Low claims point to limited layoffs, though they do not show how quickly unemployed people find new work.",
-    "defines":[{"term":"Initial jobless claims","definition":"New weekly applications for unemployment benefits.","used_by_and_why":"A fast read on layoffs and labor-market changes."}],
-    "explains":[{"anchor_text":"point to limited layoffs","why":"Most people file soon after losing eligible work, making claims a timely layoff measure.","other_reading":"Claims miss some workers and do not measure hiring or job-search duration."}],
+    "topic_tag":"inflation_reports",
+    "headline":"Consumers expect faster inflation",
+    "headline_evidence":{"bucket":"medium_up","rule":"One-year inflation expectations rose to 4.7% from 4.6% in September.","data":"University of Michigan preliminary October consumer survey"},
+    "commentary":"One-year inflation expectations rose to 4.7% from 4.6% a month earlier. The increase was small, but expectations were only 3.4% in February. Persistent concern can influence wage demands, spending decisions, and the Federal Reserve's assessment of whether inflation may last.",
+    "defines":[{"term":"Inflation expectations","definition":"What people think prices will do in the future.","used_by_and_why":"Used to assess whether households and businesses expect price increases to persist."}],
+    "explains":[{"anchor_text":"influence wage demands, spending decisions, and Federal Reserve assessments","why":"People may change purchases, prices, or pay requests when they expect costs to rise.","other_reading":"Survey expectations can shift with gasoline prices and do not guarantee actual inflation."}],
     "visual":null,
-    "visual_gate":{"passed":false,"failures":["Only one new weekly observation"],"needs_human_check":false},
+    "visual_gate":{"passed":false,"failures":["Preliminary survey release supplies one monthly comparison"],"needs_human_check":false},
     "views":[
-      {"view_id":"household","body":"Fewer new claims suggest most workers are keeping their jobs. People already unemployed can still face a difficult search.","keep_wondering":"Are continuing claims also improving?","claims":[{"sentence_id":"claims-household-1","type":"mechanism","evidence":"https://www.dol.gov/ui/data.pdf"},{"sentence_id":"claims-household-2","type":"interpretation","evidence":"https://www.dol.gov/ui/data.pdf"}]},
-      {"view_id":"policy","body":"Officials compare claims with payrolls, unemployment, wages, and inflation. One weekly decline rarely changes policy by itself.","keep_wondering":"Do broader labor reports tell the same story?","claims":[{"sentence_id":"claims-policy-1","type":"mechanism","evidence":"https://www.federalreserve.gov/monetarypolicy.htm"},{"sentence_id":"claims-policy-2","type":"interpretation","evidence":"https://www.dol.gov/ui/data.pdf"}]}
+      {"view_id":"household","body":"Expecting higher prices can change when families buy large items or how much they try to save. Lower-income households often feel food, fuel, and housing increases most directly.","keep_wondering":"Do expectations change after next week's inflation reports?","claims":[{"sentence_id":"inflation-household-1","type":"mechanism","evidence":"https://www.sca.isr.umich.edu/"},{"sentence_id":"inflation-household-2","type":"interpretation","evidence":"https://apnews.com/article/stocks-markets-oil-ai-bonds-5d0f953dbf96febb0690c1aef23fa8a9"}]},
+      {"view_id":"business","body":"Companies may adjust prices, wages, or inventory when customers expect faster inflation. Competition and demand still limit how much a business can pass through.","keep_wondering":"Are businesses reporting the same change in price expectations?","claims":[{"sentence_id":"inflation-business-1","type":"mechanism","evidence":"https://www.federalreserve.gov/monetarypolicy.htm"},{"sentence_id":"inflation-business-2","type":"mechanism","evidence":"https://www.federalreserve.gov/monetarypolicy.htm"}]},
+      {"view_id":"policy","body":"Federal Reserve officials watch whether inflation expectations remain anchored. A single survey rarely determines policy, but repeated increases can make price stability harder to restore.","keep_wondering":"Do market and business measures confirm the household survey?","claims":[{"sentence_id":"inflation-policy-1","type":"mechanism","evidence":"https://www.federalreserve.gov/monetarypolicy.htm"},{"sentence_id":"inflation-policy-2","type":"interpretation","evidence":"https://www.sca.isr.umich.edu/"}]}
     ],
-    "sources":[{"name":"U.S. Department of Labor","href":"https://www.dol.gov/ui/data.pdf"}],
-    "data_note":"Weekly claims are revised and do not include every unemployed worker.",
-    "claims":[{"sentence_id":"claims-commentary-1","type":"fact","evidence":"https://www.dol.gov/ui/data.pdf"},{"sentence_id":"claims-commentary-2","type":"mechanism","evidence":"https://www.dol.gov/ui/data.pdf"}]
+    "sources":[{"name":"University of Michigan Surveys of Consumers","href":"https://www.sca.isr.umich.edu/"},{"name":"Federal Reserve monetary policy","href":"https://www.federalreserve.gov/monetarypolicy.htm"}],
+    "data_note":"October figures are preliminary and can be revised in the final monthly survey.",
+    "claims":[{"sentence_id":"inflation-commentary-1","type":"fact","evidence":"https://apnews.com/article/stocks-markets-oil-ai-bonds-5d0f953dbf96febb0690c1aef23fa8a9"},{"sentence_id":"inflation-commentary-2","type":"fact","evidence":"https://apnews.com/article/stocks-markets-oil-ai-bonds-5d0f953dbf96febb0690c1aef23fa8a9"},{"sentence_id":"inflation-commentary-3","type":"mechanism","evidence":"https://www.federalreserve.gov/monetarypolicy.htm"}]
   }
 ]

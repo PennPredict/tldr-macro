@@ -1,50 +1,50 @@
 [
   {
-    "tag": "Conflict",
-    "qualifies": false,
-    "headline": "Oil supply remains uncertain",
-    "what": "Brent crude rose above $104 as uncertainty over Middle East production and shipping persisted.",
-    "context": "The benchmark has moved between roughly $96 and $110 during the past month.",
-    "why_it_matters": "Why it matters: supply disruptions can raise fuel, freight, airfare, and manufacturing costs across countries.",
+    "tag": "Trade",
+    "qualifies": true,
+    "headline": "Russian diesel deal reopens supply channel",
+    "what": "Russia agreed to supply more than 300,000 tons of diesel immediately, followed by larger shipments in November and afterward.",
+    "context": "The U.S. Treasury issued a temporary license allowing Russian diesel into global markets.",
+    "why_it_matters": "Extra supply could ease diesel shortages, but experts said the planned volumes may be too small to change U.S. prices quickly.",
     "concept_terms": [
-      "supply shock"
+      "trade flows"
     ],
     "sources": [
       {
-        "name": "U.S. Energy Information Administration",
-        "href": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php",
+        "name": "U.S. Treasury sanctions programs",
+        "href": "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions",
         "type": "primary"
       },
       {
-        "name": "CME Group Brent futures",
-        "href": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html",
-        "type": "primary"
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/12baccc7aade559bf329079b0548c9da",
+        "type": "wire"
       }
     ],
     "developing": true,
     "as_of": "2026-10-09T16:00:00-04:00",
     "importance_score": 98,
-    "needs_human_check": true
+    "needs_human_check": false
   },
   {
-    "tag": "Policy",
-    "qualifies": false,
-    "headline": "Fed minutes show higher-rate debate",
-    "what": "September minutes said many participants viewed a higher rate path as prudent, while a number viewed it as necessary based on their outlooks.",
-    "context": "Officials weighed persistent inflation against labor-market and financial conditions.",
-    "why_it_matters": "A higher policy path can lift borrowing costs for households, companies, and governments.",
+    "tag": "Global markets",
+    "qualifies": true,
+    "headline": "Global bond yields stay elevated",
+    "what": "Government bond yields remained high across several major markets after sharp moves earlier in the week.",
+    "context": "Investors are weighing inflation, heavy public borrowing, and signs of continued economic activity.",
+    "why_it_matters": "Overseas yields compete with U.S. bonds and stocks for capital, affecting financing costs and the dollar.",
     "concept_terms": [
-      "monetary policy"
+      "bond market"
     ],
     "sources": [
       {
-        "name": "Federal Reserve meeting minutes",
-        "href": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm",
-        "type": "primary"
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/stocks-markets-oil-ai-bonds-5d0f953dbf96febb0690c1aef23fa8a9",
+        "type": "wire"
       },
       {
-        "name": "Federal Reserve monetary policy",
-        "href": "https://www.federalreserve.gov/monetarypolicy.htm",
+        "name": "Bank for International Settlements",
+        "href": "https://www.bis.org/statistics/full_bis_selected_pp_csv.zip",
         "type": "primary"
       }
     ],

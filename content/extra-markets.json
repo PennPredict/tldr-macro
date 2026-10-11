@@ -3,9 +3,9 @@
     "group": "International Indices",
     "name": "DAX",
     "display_value": "24,913.10",
-    "display_change": "−0.76%",
+    "display_change": "Friday: at least +1%",
     "change_percent": -0.76,
-    "description": "Germany's DAX fell 0.76%. The index offers a read on European exporters, manufacturers, banks, and demand across a major U.S. trading partner.",
+    "description": "Germany's market joined a Friday rally of at least 1% across major European indexes. The plotted exchange close is Thursday's; the DAX tracks exporters, manufacturers, and banks tied to U.S. demand.",
     "points": [
       25231.2,
       25254.21,
@@ -32,9 +32,9 @@
     "group": "International Indices",
     "name": "Nikkei 225",
     "display_value": "69,042.10",
-    "display_change": "−1.42%",
+    "display_change": "Friday: near flat",
     "change_percent": -1.42,
-    "description": "Japan's Nikkei 225 lost 1.42%. Its technology and export exposure connects the index with chip demand, the yen, and Asian manufacturing.",
+    "description": "Japan's Nikkei finished Friday nearly unchanged. Its technology and export exposure connects U.S. investors with chip demand, the yen, and Asian manufacturing.",
     "points": [
       65018.95,
       64136.25,
@@ -66,7 +66,7 @@
     "display_value": "6,625.93",
     "display_change": "−2.62%",
     "change_percent": -2.62,
-    "description": "South Korea's KOSPI sank 2.62%. Its semiconductor and export concentration offers an early read on chip demand and global manufacturing.",
+    "description": "The latest exchange close shows South Korea's KOSPI down 2.62%. Its semiconductor and export concentration offers an early read on chip demand and global manufacturing.",
     "points": [
       6820.02,
       6835.8,
@@ -182,16 +182,17 @@
   {
     "group": "Stocks",
     "name": "Russell 2000",
-    "display_value": "2,847.14",
+    "display_value": "2,806.98",
     "display_change": "+0.50%",
     "change_percent": 0.5,
-    "description": "The Russell 2000 rose 0.50%, continuing a three-session advance. Its smaller US companies are more exposed to domestic borrowing costs, wages, and consumer demand than multinational giants.",
+    "description": "The Russell 2000 gained 0.50% Friday. Its smaller U.S. companies are more exposed to domestic borrowing costs, wages, and consumer demand than multinational giants.",
     "points": [
       2806.63,
       2832.9,
-      2847.14
+      2847.14,
+      2806.98
     ],
-    "fetched_at": "2026-10-05T16:00:00-04:00",
+    "fetched_at": "2026-10-09T16:00:00-04:00",
     "frequency": "Daily",
     "data_provider": "FTSE Russell level reported by The Associated Press",
     "licensing_note": "FTSE Russell index data are proprietary; the reporting and index methodology links are retained.",
@@ -210,9 +211,9 @@
     "group": "Rates",
     "name": "2-year Treasury yield",
     "display_value": "4.78%",
-    "display_change": "+0.02 percentage points",
-    "change_percent": 0.42,
-    "description": "The two-year Treasury yield rose 0.02 percentage points to 4.78%. Markets use it to compare near-term borrowing costs with Federal Reserve policy settings.",
+    "display_change": "+0.05 percentage points",
+    "change_percent": 1.05,
+    "description": "The two-year Treasury yield rose 0.05 percentage points to 4.80% Friday. Markets compare it with Federal Reserve policy and near-term borrowing costs.",
     "points": [
       4.39,
       4.43,
@@ -234,9 +235,10 @@
       4.78,
       4.83,
       4.76,
-      4.78
+      4.78,
+      4.8
     ],
-    "fetched_at": "2026-10-08T09:35:00-04:00",
+    "fetched_at": "2026-10-09T16:00:00-04:00",
     "frequency": "Daily",
     "data_provider": "Federal Reserve via FRED",
     "licensing_note": "Federal Reserve public data; FRED citation retained.",
@@ -250,10 +252,10 @@
   {
     "group": "Rates",
     "name": "10-year minus 2-year yield spread",
-    "display_value": "0.47 percentage points",
-    "display_change": "+0.02 percentage points",
-    "change_percent": 4.44,
-    "description": "As of Oct. 5, the yield-curve spread was 0.47 percentage points. Banks, borrowers, and economists watch its shape for clues about credit conditions and growth expectations.",
+    "display_value": "0.44 percentage points",
+    "display_change": "−0.04 percentage points",
+    "change_percent": -8.33,
+    "description": "The 10-year yield ended 0.44 percentage points above the two-year yield Friday. Banks, borrowers, and economists watch that gap for clues about credit and growth expectations.",
     "points": [
       0.41,
       0.4,
@@ -274,9 +276,10 @@
       0.41,
       0.46,
       0.45,
-      0.47
+      0.47,
+      0.44
     ],
-    "fetched_at": "2026-10-05T16:00:00-04:00",
+    "fetched_at": "2026-10-09T16:00:00-04:00",
     "frequency": "Daily",
     "data_provider": "Federal Reserve Bank of St. Louis",
     "licensing_note": "Calculated from Treasury public data; FRED citation retained.",
@@ -293,7 +296,7 @@
     "display_value": "7.40%",
     "display_change": "+0.12 percentage points",
     "change_percent": 1.65,
-    "description": "The average mortgage rate rose 0.12 percentage points to 7.40%. Higher financing costs reduce home affordability, monthly purchasing power, and demand across housing-related businesses.",
+    "description": "The latest weekly survey put the average mortgage rate at 7.40%. Higher financing costs reduce home affordability, monthly purchasing power, and demand across housing-related businesses.",
     "points": [
       6.76,
       6.95,
@@ -318,7 +321,7 @@
     "display_value": "$1.1208 per euro",
     "display_change": "+0.12%",
     "change_percent": 0.12,
-    "description": "The euro gained 0.12% against the dollar. The pair connects two major trading blocs, affecting travel, imports, and the translated revenue of multinational companies.",
+    "description": "The latest Federal Reserve reading shows the euro up 0.12% against the dollar. The pair affects travel, imports, and the translated revenue of multinational companies.",
     "points": [
       1.1627,
       1.1627,
@@ -359,7 +362,7 @@
     "display_value": "¥158.17 per dollar",
     "display_change": "+0.07%",
     "change_percent": 0.07,
-    "description": "The dollar gained 0.07% against the yen. The pair can connect U.S.-Japan rate differences with cars, electronics, overseas earnings, and global funding trades.",
+    "description": "The latest Federal Reserve reading shows the dollar up 0.07% against the yen. The pair links U.S.-Japan rate differences with cars, electronics, overseas earnings, and global funding trades.",
     "points": [
       154.24,
       153.5,
@@ -400,7 +403,7 @@
     "display_value": "$1.3239 per pound",
     "display_change": "+0.32%",
     "change_percent": 0.32,
-    "description": "The pound rose 0.32% against the dollar. Sterling links major financial centers and can affect UK travel, British holdings, and U.S. companies earning pounds.",
+    "description": "The latest Federal Reserve reading shows the pound up 0.32% against the dollar. Sterling affects British travel, holdings, and U.S. companies earning pounds.",
     "points": [
       1.3257,
       1.3212,

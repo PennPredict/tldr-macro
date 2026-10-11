@@ -333,6 +333,36 @@
   ],
   "calendar": [
     {
+      "date": "OCT 13",
+      "time": "6:30 AM ET",
+      "start_at": "2026-10-13T06:30:00-04:00",
+      "title": "Big-bank earnings begin",
+      "definition": "Quarterly results from several large banks provide a broad read on lending, consumer spending, trading, and credit quality.",
+      "prior": "JPMorgan Chase, Citigroup, and Wells Fargo report Tuesday",
+      "consensus": "",
+      "hot_label": "If profits and loan demand are strong",
+      "cool_label": "If defaults or caution increase",
+      "hot": "Stronger results can suggest households and businesses are still borrowing and spending despite high rates.",
+      "cool": "Higher losses or cautious forecasts can signal that expensive credit is weighing on customers.",
+      "source": "SEC company filings",
+      "href": "https://www.sec.gov/edgar/search/"
+    },
+    {
+      "date": "OCT 13",
+      "time": "10:00 AM ET",
+      "start_at": "2026-10-13T10:00:00-04:00",
+      "title": "Existing home sales",
+      "definition": "Counts completed sales of previously owned homes, a large part of the U.S. housing market.",
+      "prior": "August sales reached their slowest annual pace in more than a year",
+      "consensus": "",
+      "hot_label": "If sales improve",
+      "cool_label": "If sales weaken",
+      "hot": "More sales can support brokers, lenders, renovators, and household purchases tied to moving.",
+      "cool": "Fewer sales can show that mortgage costs and limited affordability are restraining demand.",
+      "source": "National Association of Realtors",
+      "href": "https://www.nar.realtor/research-and-statistics/housing-statistics/existing-home-sales"
+    },
+    {
       "date": "OCT 14",
       "time": "8:30 AM ET",
       "start_at": "2026-10-14T08:30:00-04:00",
@@ -346,21 +376,6 @@
       "cool": "Lower readings have often led investors to expect lower interest rates.",
       "source": "BLS release calendar",
       "href": "https://www.bls.gov/schedule/2026/10_sched.htm"
-    },
-    {
-      "date": "OCT 14",
-      "time": "2:00 PM ET",
-      "start_at": "2026-10-14T14:00:00-04:00",
-      "title": "Federal Reserve Beige Book",
-      "definition": "Regional survey of business activity, hiring, prices, and credit across the United States.",
-      "prior": "Conditions since the previous report · Federal Reserve",
-      "consensus": "",
-      "hot_label": "If prices stay firm",
-      "cool_label": "If demand weakens",
-      "hot": "Persistent price gains can reinforce concern about inflation.",
-      "cool": "Slower demand can strengthen the case for less restrictive policy.",
-      "source": "Federal Reserve calendar",
-      "href": "https://www.federalreserve.gov/newsevents/2026-october.htm"
     },
     {
       "date": "OCT 15",

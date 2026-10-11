@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T02:29:25.589Z",
+  "generated_at": "2026-10-11T02:36:05.539Z",
   "status": "passed",
   "checks": {
     "instrument_count": 16,
@@ -24,7 +24,7 @@
       "Natural gas",
       "Copper"
     ],
-    "global_items_visible": 1,
+    "global_items_visible": 3,
     "badge_signs": [
       "Revenue +5.6%"
     ]

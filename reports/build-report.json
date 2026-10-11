@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T02:29:25.493Z",
+  "generated_at": "2026-10-11T02:36:05.446Z",
   "edition_date": "2026-10-09",
   "policy_version": 1,
   "status": "passed",
@@ -10,8 +10,8 @@
     "eased": 1
   },
   "claim_ledger": {
-    "headline_claims": 10,
-    "view_claims": 20,
+    "headline_claims": 11,
+    "view_claims": 22,
     "market_claims": 12
   },
   "snapshot_checks": {
@@ -495,16 +495,16 @@
         }
       },
       {
-        "headline": "Jobless claims edge down",
+        "headline": "Consumers expect faster inflation",
         "evidence": {
-          "bucket": "small_down",
-          "rule": "Initial claims fell by 2,000 to 197,000.",
-          "data": "U.S. Department of Labor weekly claims release"
+          "bucket": "medium_up",
+          "rule": "One-year inflation expectations rose to 4.7% from 4.6% in September.",
+          "data": "University of Michigan preliminary October consumer survey"
         },
         "visual_gate": {
           "passed": false,
           "failures": [
-            "Only one new weekly observation"
+            "Preliminary survey release supplies one monthly comparison"
           ],
           "needs_human_check": false
         }
@@ -591,7 +591,7 @@
       }
     ],
     "history_count": 4,
-    "views": 10,
+    "views": 11,
     "definitions": [
       "household",
       "business",
@@ -602,32 +602,32 @@
   },
   "global_items": [
     {
-      "headline": "Oil supply remains uncertain",
+      "headline": "Russian diesel deal reopens supply channel",
       "sources": [
         {
-          "name": "U.S. Energy Information Administration",
-          "href": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php",
+          "name": "U.S. Treasury sanctions programs",
+          "href": "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions",
           "type": "primary"
         },
         {
-          "name": "CME Group Brent futures",
-          "href": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html",
-          "type": "primary"
+          "name": "The Associated Press",
+          "href": "https://apnews.com/article/12baccc7aade559bf329079b0548c9da",
+          "type": "wire"
         }
       ],
-      "needs_human_check": true
+      "needs_human_check": false
     },
     {
-      "headline": "Fed minutes show higher-rate debate",
+      "headline": "Global bond yields stay elevated",
       "sources": [
         {
-          "name": "Federal Reserve meeting minutes",
-          "href": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm",
-          "type": "primary"
+          "name": "The Associated Press",
+          "href": "https://apnews.com/article/stocks-markets-oil-ai-bonds-5d0f953dbf96febb0690c1aef23fa8a9",
+          "type": "wire"
         },
         {
-          "name": "Federal Reserve monetary policy",
-          "href": "https://www.federalreserve.gov/monetarypolicy.htm",
+          "name": "Bank for International Settlements",
+          "href": "https://www.bis.org/statistics/full_bis_selected_pp_csv.zip",
           "type": "primary"
         }
       ],
@@ -667,19 +667,22 @@
     }
   ],
   "source_diversity": {
-    "total_links": 17,
+    "total_links": 22,
     "counts_by_domain": {
       "spglobal.com": 3,
       "home.treasury.gov": 2,
-      "apnews.com": 3,
+      "apnews.com": 5,
       "cmegroup.com": 2,
       "nasdaq.com": 1,
       "cboe.com": 1,
+      "ofac.treasury.gov": 1,
+      "bis.org": 1,
       "live.deutsche-boerse.com": 1,
       "reuters.com": 1,
       "fred.stlouisfed.org": 1,
       "eia.gov": 1,
-      "dol.gov": 1
+      "sca.isr.umich.edu": 1,
+      "federalreserve.gov": 1
     },
     "snapshot_cards_by_domain": {
       "spglobal.com": 2,
@@ -875,6 +878,8 @@
       "status": "checked"
     }
   ],
-  "warnings": [],
+  "warnings": [
+    "Consumers expect faster inflation / household: manual review requested for a numerical or historical claim"
+  ],
   "failures": []
 }

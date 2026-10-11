@@ -176,6 +176,7 @@ for(const group of ["International Indices","Rates","Currencies","Commodities"])
 const marketNames=edition.markets.map(item=>item.name.toLowerCase());for(const market of edition.markets){const context=(market.so_what?.context?.text||"").toLowerCase();for(const other of marketNames)if(other!==market.name.toLowerCase()&&context.includes(other))failures.push(`${market.name}: Snapshot explanation references unrelated instrument ${other}`);}
 let companyItems=0;
 const visibleGlobalItems=globalItems.filter(item=>item.tag!=="Company"&&item.qualifies!==false);
+if(visibleGlobalItems.length<3)failures.push(`TL;DR Global needs at least 3 current, market-relevant items; found ${visibleGlobalItems.length}`);
 for(const item of visibleGlobalItems){
   if(!["Conflict","Policy","Trade","Global markets","Energy","Company"].includes(item.tag))failures.push(`${item.headline}: invalid TL;DR Global tag`);
   if(wordCount(item.headline)>6||item.headline.length>60)failures.push(`${item.headline}: TL;DR Global headline exceeds headline limits`);
@@ -186,6 +187,7 @@ for(const item of visibleGlobalItems){
   if(!(item.sources||[]).some(source=>["wire","primary"].includes(source.type)))failures.push(`${item.headline}: TL;DR Global needs a wire or primary source`);
   if(item.tag==="Company")companyItems++;
   if(item.tag==="Conflict"&&item.needs_human_check!==true)failures.push(`${item.headline}: conflict items need human check`);
+  if(!item.as_of||item.as_of.slice(0,10)!==edition.edition_date)failures.push(`${item.headline}: TL;DR Global as_of must match the edition date`);
   for(const source of item.sources||[])allSources.push({card:item.headline,...source});
 }
 if(companyItems>1)failures.push("TL;DR Global includes more than one company item");
