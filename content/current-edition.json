@@ -1,18 +1,18 @@
 {
-  "edition_date": "2026-10-08",
-  "updated_at": "2026-10-08T09:40:00-04:00",
-  "summary": "Shares slipped; Treasury yields rose; crude oil jumped.",
+  "edition_date": "2026-10-09",
+  "updated_at": "2026-10-09T16:00:00-04:00",
+  "summary": "Shares rose; Treasury yields edged up; crude oil edged up.",
   "markets": [
     {
       "name": "S&P 500",
       "kind": "equity_index",
-      "value": 7772.87,
-      "display_value": "≈7,773",
+      "value": 7811.54,
+      "display_value": "7,811.54",
       "baseline": "prior_close",
-      "prior_close": 7801.77,
-      "change_percent": -0.37,
-      "display_change": "−0.37%",
-      "description": "The S&P 500 tracks 500 large U.S. companies. It opened 0.37% below its prior close.",
+      "prior_close": 7765.36,
+      "change_percent": 0.59,
+      "display_change": "+0.6%",
+      "description": "The S&P 500 tracks 500 large U.S. companies. It closed 0.6% higher and finished near Tuesday's record.",
       "so_what": {
         "channel_id": "sp500",
         "context": {
@@ -34,9 +34,9 @@
           "evidence": "markets.S&P 500.change_percent|value"
         }
       ],
-      "data_source": "S&P Dow Jones Indices and Reuters",
-      "fetched_at": "2026-10-08T09:34:00-04:00",
-      "range": "Wednesday close 7,801.77 · Thursday open 7,772.87",
+      "data_source": "S&P Dow Jones Indices and The Associated Press",
+      "fetched_at": "2026-10-09T16:00:00-04:00",
+      "range": "Thursday close 7,765.36 · Friday close 7,811.54",
       "points": [
         7731,
         7741,
@@ -44,32 +44,28 @@
         7773.95,
         7818.93,
         7801.77,
-        7792,
-        7784,
-        7778,
-        7772.87
+        7765.36,
+        7779,
+        7794,
+        7811.54
       ],
       "sources": [
         {
           "name": "S&P Dow Jones Indices",
           "href": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/"
-        },
-        {
-          "name": "Reuters markets",
-          "href": "https://www.reuters.com/markets/us/"
         }
       ]
     },
     {
       "name": "10-year Treasury yield",
       "kind": "yield",
-      "value": 5.35,
-      "display_value": "5.35%",
+      "value": 5.24,
+      "display_value": "5.24%",
       "baseline": "prior_close",
-      "prior_close": 5.28,
-      "change_percent": 1.33,
-      "display_change": "+0.07 percentage points",
-      "description": "The 10-year Treasury yield is the return investors demand to lend to the U.S. government for ten years. It rose from 5.28% to 5.35%.",
+      "prior_close": 5.22,
+      "change_percent": 0.38,
+      "display_change": "+0.02 percentage points",
+      "description": "The 10-year Treasury yield is the return investors demand to lend to the U.S. government for ten years. It ended at 5.24%, up from 5.22% late Thursday.",
       "so_what": {
         "channel_id": "yield10",
         "context": {
@@ -92,8 +88,8 @@
         }
       ],
       "data_source": "U.S. Treasury and The Associated Press",
-      "fetched_at": "2026-10-08T09:35:00-04:00",
-      "range": "Wednesday late reading 5.28% · Thursday early reading 5.35%",
+      "fetched_at": "2026-10-09T16:00:00-04:00",
+      "range": "Thursday late reading 5.22% · Friday close 5.24%",
       "points": [
         4.98,
         5.02,
@@ -102,9 +98,9 @@
         5.23,
         5.29,
         5.27,
-        5.28,
-        5.32,
-        5.35
+        5.22,
+        5.23,
+        5.24
       ],
       "sources": [
         {
@@ -113,27 +109,27 @@
         },
         {
           "name": "The Associated Press",
-          "href": "https://apnews.com/article/6a096d714c874db13632794a32cebaa6"
+          "href": "https://apnews.com/article/stocks-markets-oil-ai-bonds-5d0f953dbf96febb0690c1aef23fa8a9"
         }
       ]
     },
     {
       "name": "Brent crude oil",
       "kind": "commodity",
-      "value": 104.08,
-      "display_value": "$104.08",
+      "value": 104.72,
+      "display_value": "$104.72",
       "baseline": "prior_close",
-      "prior_close": 100.27,
-      "change_percent": 3.8,
-      "display_change": "+3.8%",
-      "description": "Brent crude is a global oil benchmark. It jumped 3.8% to $104.08 a barrel Thursday morning.",
+      "prior_close": 104.30,
+      "change_percent": 0.4,
+      "display_change": "+0.4%",
+      "description": "Brent crude is a global oil benchmark. It swung between $102.50 and $105 before settling 0.4% higher at $104.72 a barrel.",
       "so_what": {
         "channel_id": "brent",
         "context": {
           "type": "attributed",
           "text": "The Associated Press tied the jump to continuing uncertainty over Middle East supply.",
-          "source_url": "https://apnews.com/article/6a096d714c874db13632794a32cebaa6",
-          "evidence": "Published Oct. 8, 2026; price and direction match the morning report."
+          "source_url": "https://apnews.com/article/stocks-markets-oil-ai-bonds-5d0f953dbf96febb0690c1aef23fa8a9",
+          "evidence": "Published Oct. 9, 2026; closing price and direction match the report."
         }
       },
       "explains": [],
@@ -150,8 +146,8 @@
         }
       ],
       "data_source": "CME Group and The Associated Press",
-      "fetched_at": "2026-10-08T09:35:00-04:00",
-      "range": "Wednesday late reading $100.27 · Thursday early reading $104.08",
+      "fetched_at": "2026-10-09T16:00:00-04:00",
+      "range": "Thursday close $104.30 · Friday close $104.72",
       "points": [
         103.62,
         103.21,
@@ -160,9 +156,9 @@
         101.94,
         100.31,
         100.58,
-        100.27,
-        102.4,
-        104.08
+        104.3,
+        102.5,
+        104.72
       ],
       "sources": [
         {
@@ -171,20 +167,20 @@
         },
         {
           "name": "The Associated Press",
-          "href": "https://apnews.com/article/6a096d714c874db13632794a32cebaa6"
+          "href": "https://apnews.com/article/stocks-markets-oil-ai-bonds-5d0f953dbf96febb0690c1aef23fa8a9"
         }
       ]
     },
     {
       "name": "Nasdaq Composite",
       "kind": "equity_index",
-      "value": 27403.64,
-      "display_value": "≈27,404",
+      "value": 27366.17,
+      "display_value": "27,366.17",
       "baseline": "prior_close",
-      "prior_close": 27538.69,
-      "change_percent": -0.49,
-      "display_change": "−0.49%",
-      "description": "The Nasdaq Composite tracks many listed companies and has a large technology weighting. It opened 0.49% lower.",
+      "prior_close": 27193.34,
+      "change_percent": 0.64,
+      "display_change": "+0.6%",
+      "description": "The Nasdaq Composite tracks many listed companies and has a large technology weighting. It gained 0.6% Friday.",
       "so_what": {
         "channel_id": "nasdaq",
         "context": {
@@ -206,9 +202,9 @@
           "evidence": "markets.Nasdaq Composite.change_percent|value"
         }
       ],
-      "data_source": "Nasdaq and Reuters",
-      "fetched_at": "2026-10-08T09:34:00-04:00",
-      "range": "Wednesday close 27,538.69 · Thursday open 27,403.64",
+      "data_source": "Nasdaq and The Associated Press",
+      "fetched_at": "2026-10-09T16:00:00-04:00",
+      "range": "Thursday close 27,193.34 · Friday close 27,366.17",
       "points": [
         26797.54,
         26871.6,
@@ -216,10 +212,10 @@
         27477.31,
         27599.79,
         27538.69,
-        27498,
-        27461,
-        27429,
-        27403.64
+        27193.34,
+        27240,
+        27310,
+        27366.17
       ],
       "sources": [
         {
@@ -231,13 +227,13 @@
     {
       "name": "Dow Jones Industrial Average",
       "kind": "equity_index",
-      "value": 51001.38,
-      "display_value": "≈51,001",
+      "value": 51654.95,
+      "display_value": "51,654.95",
       "baseline": "prior_close",
-      "prior_close": 51179.87,
-      "change_percent": -0.35,
-      "display_change": "−0.35%",
-      "description": "The Dow tracks 30 large, established U.S. companies. It opened about 179 points lower.",
+      "prior_close": 51231.64,
+      "change_percent": 0.83,
+      "display_change": "+0.8%",
+      "description": "The Dow tracks 30 large, established U.S. companies. It added 423 points, or 0.8%, Friday.",
       "so_what": {
         "channel_id": "dow",
         "context": {
@@ -259,9 +255,9 @@
           "evidence": "markets.Dow Jones Industrial Average.change_percent|value"
         }
       ],
-      "data_source": "S&P Dow Jones Indices and Reuters",
-      "fetched_at": "2026-10-08T09:34:00-04:00",
-      "range": "Wednesday close 51,179.87 · Thursday open 51,001.38",
+      "data_source": "S&P Dow Jones Indices and The Associated Press",
+      "fetched_at": "2026-10-09T16:00:00-04:00",
+      "range": "Thursday close 51,231.64 · Friday close 51,654.95",
       "points": [
         51349.92,
         50906.05,
@@ -269,10 +265,10 @@
         51176.96,
         51521.28,
         51179.87,
-        51140,
-        51092,
-        51044,
-        51001.38
+        51231.64,
+        51360,
+        51510,
+        51654.95
       ],
       "sources": [
         {
@@ -284,13 +280,13 @@
     {
       "name": "Expected volatility",
       "kind": "volatility",
-      "value": 15.85,
-      "display_value": "15.85",
+      "value": 14.84,
+      "display_value": "14.84",
       "baseline": "prior_close",
-      "prior_close": 15.08,
-      "change_percent": 5.11,
-      "display_change": "+5.1%",
-      "description": "The VIX estimates expected S&P 500 swings over the next month. It rose 0.77 point to 15.85.",
+      "prior_close": 15.41,
+      "change_percent": -3.7,
+      "display_change": "−3.7%",
+      "description": "The VIX estimates expected S&P 500 swings over the next month. It fell 3.7% to 14.84 as stocks rose.",
       "so_what": {
         "channel_id": "vix",
         "context": {
@@ -312,9 +308,9 @@
           "evidence": "markets.Expected volatility.value|prior_close"
         }
       ],
-      "data_source": "Cboe delayed quotes",
-      "fetched_at": "2026-10-08T09:40:00-04:00",
-      "range": "Wednesday close 15.08 · Thursday morning 15.85",
+      "data_source": "Cboe closing data",
+      "fetched_at": "2026-10-09T16:00:00-04:00",
+      "range": "Thursday close 15.41 · Friday close 14.84",
       "points": [
         15.9,
         15.7,
@@ -322,10 +318,10 @@
         15.44,
         15.38,
         15.08,
-        15.22,
         15.41,
-        15.67,
-        15.85
+        15.2,
+        15.01,
+        14.84
       ],
       "sources": [
         {
@@ -336,21 +332,6 @@
     }
   ],
   "calendar": [
-    {
-      "date": "OCT 9",
-      "time": "6:30 AM ET",
-      "start_at": "2026-10-09T06:30:00-04:00",
-      "title": "Third-quarter earnings season begins",
-      "definition": "A broad test of company profits, spending plans, demand, and executive forecasts across major industries.",
-      "prior": "Large-company reporting cycle · SEC filings",
-      "consensus": "",
-      "hot_label": "If AI earnings are strong",
-      "cool_label": "If AI earnings are weak",
-      "hot": "Strong later reports from Nvidia and other AI leaders can support expectations for data-center and semiconductor spending.",
-      "cool": "Weak results or cautious forecasts can challenge those expectations and weigh on growth-focused shares.",
-      "source": "SEC company filings",
-      "href": "https://www.sec.gov/edgar/browse/?CIK=27904&owner=exclude"
-    },
     {
       "date": "OCT 14",
       "time": "8:30 AM ET",

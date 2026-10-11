@@ -22,7 +22,7 @@
       }
     ],
     "developing": true,
-    "as_of": "2026-10-08T09:40:00-04:00",
+    "as_of": "2026-10-09T16:00:00-04:00",
     "importance_score": 98,
     "needs_human_check": true
   },
@@ -49,24 +49,24 @@
       }
     ],
     "developing": false,
-    "as_of": "2026-10-08T09:40:00-04:00",
+    "as_of": "2026-10-09T16:00:00-04:00",
     "importance_score": 91,
     "needs_human_check": false
   },
   {
     "tag": "Global markets",
     "qualifies": true,
-    "headline": "Global indexes retreat",
-    "what": "South Korea's KOSPI fell 2.6%, Japan's Nikkei lost 1.4%, and Germany's DAX traded about 1% lower.",
-    "why_it_matters": "Energy prices and interest rates can affect companies in many countries.",
+    "headline": "Europe rallies; Asia finishes mixed",
+    "what": "Major indexes in France, Germany, and the United Kingdom gained at least 1%, while Japan's Nikkei finished nearly unchanged and Hong Kong's Hang Seng rose 1.8%.",
+    "why_it_matters": "Different regional moves show how energy prices, interest rates, and local company exposure can affect markets unevenly.",
     "concept_terms": [
       "stock index"
     ],
     "sources": [
       {
-        "name": "Korea Exchange",
-        "href": "https://global.krx.co.kr/",
-        "type": "primary"
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/stocks-markets-oil-ai-bonds-5d0f953dbf96febb0690c1aef23fa8a9",
+        "type": "wire"
       },
       {
         "name": "Deutsche Börse",
@@ -75,7 +75,7 @@
       }
     ],
     "developing": false,
-    "as_of": "2026-10-08T09:40:00-04:00",
+    "as_of": "2026-10-09T16:00:00-04:00",
     "importance_score": 86,
     "needs_human_check": false
   },
@@ -101,7 +101,7 @@
       }
     ],
     "developing": false,
-    "as_of": "2026-10-08T09:40:00-04:00",
+    "as_of": "2026-10-09T16:00:00-04:00",
     "importance_score": 65,
     "badge": "Revenue +5.6%",
     "needs_human_check": false

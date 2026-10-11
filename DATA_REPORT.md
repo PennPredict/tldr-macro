@@ -1,6 +1,6 @@
 # Data Report
 
-Generated: 2026-10-11T02:20:35.942Z
+Generated: 2026-10-11T02:29:25.588Z
 
 | Instrument | Provider | Series | Frequency | Latest timestamp | Baseline | Chart points | Status |
 |---|---|---|---|---|---|---:|---|
@@ -51,12 +51,12 @@ Generated: 2026-10-11T02:20:35.942Z
 
 | Instrument | Fetched timestamp | Baseline | Display | Provider |
 |---|---|---|---|---|
-| S&P 500 | 2026-10-08T09:34:00-04:00 | Wednesday close 7,801.77 · Thursday open 7,772.87 | ≈7,773 (−0.37%) | S&P Dow Jones Indices and Reuters |
-| 10-year Treasury yield | 2026-10-08T09:35:00-04:00 | Wednesday late reading 5.28% · Thursday early reading 5.35% | 5.35% (+0.07 percentage points) | U.S. Treasury and The Associated Press |
-| Brent crude oil | 2026-10-08T09:35:00-04:00 | Wednesday late reading $100.27 · Thursday early reading $104.08 | $104.08 (+3.8%) | CME Group and The Associated Press |
-| Nasdaq Composite | 2026-10-08T09:34:00-04:00 | Wednesday close 27,538.69 · Thursday open 27,403.64 | ≈27,404 (−0.49%) | Nasdaq and Reuters |
-| Dow Jones Industrial Average | 2026-10-08T09:34:00-04:00 | Wednesday close 51,179.87 · Thursday open 51,001.38 | ≈51,001 (−0.35%) | S&P Dow Jones Indices and Reuters |
-| Expected volatility | 2026-10-08T09:40:00-04:00 | Wednesday close 15.08 · Thursday morning 15.85 | 15.85 (+5.1%) | Cboe delayed quotes |
+| S&P 500 | 2026-10-09T16:00:00-04:00 | Thursday close 7,765.36 · Friday close 7,811.54 | 7,811.54 (+0.6%) | S&P Dow Jones Indices and The Associated Press |
+| 10-year Treasury yield | 2026-10-09T16:00:00-04:00 | Thursday late reading 5.22% · Friday close 5.24% | 5.24% (+0.02 percentage points) | U.S. Treasury and The Associated Press |
+| Brent crude oil | 2026-10-09T16:00:00-04:00 | Thursday close $104.30 · Friday close $104.72 | $104.72 (+0.4%) | CME Group and The Associated Press |
+| Nasdaq Composite | 2026-10-09T16:00:00-04:00 | Thursday close 27,193.34 · Friday close 27,366.17 | 27,366.17 (+0.6%) | Nasdaq and The Associated Press |
+| Dow Jones Industrial Average | 2026-10-09T16:00:00-04:00 | Thursday close 51,231.64 · Friday close 51,654.95 | 51,654.95 (+0.8%) | S&P Dow Jones Indices and The Associated Press |
+| Expected volatility | 2026-10-09T16:00:00-04:00 | Thursday close 15.41 · Friday close 14.84 | 14.84 (−3.7%) | Cboe closing data |
 
 - DAX: 2026-10-08T10:58:00-04:00; 24,913.10; −0.76%; Deutsche Börse/Xetra via Börse Stuttgart
 - Nikkei 225: 2026-10-08T02:00:00-04:00; 69,042.10; −1.42%; Nikkei Inc.
