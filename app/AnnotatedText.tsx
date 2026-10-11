@@ -8,7 +8,7 @@ type Term=typeof termData.terms[number];
 
 function termBody(term:Term){return <><span>{term.definition}</span><span><strong>Relevance:</strong> {term.used_by_and_why}</span>{term.also_called.length?<span><strong>Synonyms:</strong> {term.also_called.join(" · ")}</span>:null}</>}
 
-export default function AnnotatedText({text,explains=[],seen=new Set<string>(),termActions={}}:{text:string;explains?:Explain[];seen?:Set<string>;termActions?:Record<string,()=>void>}){
+export default function AnnotatedText({text,explains=[],seen=new Set<string>(),termActions={}}:{text:string;explains?:Explain[];seen?:Set<string>;termActions?:Partial<Record<string,()=>void>>}){
   const markers:{start:number;end:number;term:Term;key:string}[]=[];
   for(const term of termData.terms){
     if(seen.has(term.id))continue;

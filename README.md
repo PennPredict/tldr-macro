@@ -27,6 +27,25 @@ See [SOURCES.md](SOURCES.md) for the source hierarchy and change policy.
 1. Create a GitHub repository and push this project to its `main` branch.
 2. In **Settings → Pages**, choose **GitHub Actions** as the source.
 3. The included workflow builds and deploys the site after every push to `main`.
-4. Add a custom domain in the repository's Pages settings when ready.
+4. It also republishes the latest validated edition at 9:30 a.m. America/New_York on weekdays.
+5. Add a custom domain in the repository's Pages settings when ready.
 
-The current figures are sample content. Connect verified data and editorial automation before making the site public.
+The checked-in edition contains sourced editorial content and validated market data. The scheduled workflow republishes that committed edition; it does not yet collect new data or generate a new briefing automatically. See [AUTOMATION.md](AUTOMATION.md) before enabling unattended daily updates.
+
+## Local review
+
+```bash
+npm ci
+npm run dev
+```
+
+Before sharing a change, run:
+
+```bash
+npm run validate:content
+npm run validate:review
+npm run lint
+npm run build:pages
+```
+
+The project requires Node.js 22.13 or newer.

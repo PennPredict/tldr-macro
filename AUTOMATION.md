@@ -4,7 +4,7 @@ TL;DR Macro can update without a daily manual prompt. The production workflow sh
 
 ## Proposed schedule
 
-- Weekdays at 9:40 a.m. America/New_York.
+- Weekdays at 9:30 a.m. America/New_York.
 - Skip weekends and U.S. market holidays.
 - Allow a manual run for corrections or major events.
 
@@ -37,4 +37,4 @@ Store secrets in GitHub Actions secrets. Never expose them to browser code or co
 
 ## Human involvement
 
-Routine editions can publish automatically. A human should review low-confidence causal claims, conflicting sources, major geopolitical events, and corrections. The system should fail closed rather than publish an unsupported explanation.
+Routine editions can publish automatically once the data-collection and generation steps are connected. Until then, the scheduled GitHub Pages workflow republishes the latest validated edition already committed to `main`. A human should review low-confidence causal claims, conflicting sources, major geopolitical events, and corrections. The system should fail closed rather than publish an unsupported explanation.
