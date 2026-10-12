@@ -1,109 +1,32 @@
 [
   {
-    "tag": "Trade",
-    "qualifies": true,
-    "headline": "Russian diesel deal reopens supply channel",
-    "what": "Russia agreed to supply more than 300,000 tons of diesel immediately, followed by larger shipments in November and afterward.",
-    "context": "The U.S. Treasury issued a temporary license allowing Russian diesel into global markets.",
-    "why_it_matters": "Extra supply could ease diesel shortages, but experts said the planned volumes may be too small to change U.S. prices quickly.",
-    "concept_terms": [
-      "trade flows"
-    ],
-    "sources": [
-      {
-        "name": "U.S. Treasury sanctions programs",
-        "href": "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions",
-        "type": "primary"
-      },
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/12baccc7aade559bf329079b0548c9da",
-        "type": "wire"
-      }
-    ],
-    "developing": true,
-    "as_of": "2026-10-09T16:00:00-04:00",
-    "importance_score": 98,
-    "needs_human_check": false
+    "tag":"Global markets","qualifies":true,
+    "headline":"European Stocks Outpace Wall Street",
+    "what":"European markets gained Monday while the main U.S. indexes finished mixed; Germany's DAX rose about 0.8%.",
+    "context":"Different sector mixes helped Europe advance while large U.S. technology shares weakened.",
+    "why_it_matters":"European strength can affect U.S. multinationals, foreign fund flows, and the dollar value of overseas revenue.",
+    "concept_terms":["international indices"],
+    "sources":[{"name":"Deutsche Börse DAX","href":"https://live.deutsche-boerse.com/indices/dax","type":"primary"},{"name":"The Associated Press","href":"https://apnews.com/article/stock-markets-oil-trump-inflation-a9a26b9706963afe9bdeda1b2eb1f51d","type":"wire"}],
+    "developing":false,"as_of":"2026-10-12T16:00:00-04:00","importance_score":92,"needs_human_check":false
   },
   {
-    "tag": "Global markets",
-    "qualifies": true,
-    "headline": "Global bond yields stay elevated",
-    "what": "Government bond yields remained high across several major markets after sharp moves earlier in the week.",
-    "context": "Investors are weighing inflation, heavy public borrowing, and signs of continued economic activity.",
-    "why_it_matters": "Overseas yields compete with U.S. bonds and stocks for capital, affecting financing costs and the dollar.",
-    "concept_terms": [
-      "bond market"
-    ],
-    "sources": [
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-oil-ai-bonds-5d0f953dbf96febb0690c1aef23fa8a9",
-        "type": "wire"
-      },
-      {
-        "name": "Bank for International Settlements",
-        "href": "https://www.bis.org/statistics/full_bis_selected_pp_csv.zip",
-        "type": "primary"
-      }
-    ],
-    "developing": false,
-    "as_of": "2026-10-09T16:00:00-04:00",
-    "importance_score": 91,
-    "needs_human_check": false
+    "tag":"Global markets","qualifies":true,
+    "headline":"Asian Markets Mostly Retreat",
+    "what":"Most Asian markets ended lower Monday, while Tokyo was closed for a holiday.",
+    "context":"The regional picture arrived before U.S. chip shares weakened later in the day.",
+    "why_it_matters":"Asian technology and export markets offer an early read on chip demand, manufacturing, and supply chains used by U.S. companies.",
+    "concept_terms":["Asian equities"],
+    "sources":[{"name":"Bank of Japan market information","href":"https://www.boj.or.jp/en/statistics/market/index.htm","type":"primary"},{"name":"The Associated Press","href":"https://apnews.com/article/stock-markets-oil-trump-inflation-a9a26b9706963afe9bdeda1b2eb1f51d","type":"wire"}],
+    "developing":false,"as_of":"2026-10-12T16:00:00-04:00","importance_score":88,"needs_human_check":false
   },
   {
-    "tag": "Global markets",
-    "qualifies": true,
-    "headline": "Europe rallies; Asia finishes mixed",
-    "what": "Major indexes in France, Germany, and the United Kingdom gained at least 1%, while Japan's Nikkei finished nearly unchanged and Hong Kong's Hang Seng rose 1.8%.",
-    "why_it_matters": "Different regional moves show how energy prices, interest rates, and local company exposure can affect markets unevenly.",
-    "concept_terms": [
-      "stock index"
-    ],
-    "sources": [
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-oil-ai-bonds-5d0f953dbf96febb0690c1aef23fa8a9",
-        "type": "wire"
-      },
-      {
-        "name": "Deutsche Börse",
-        "href": "https://live.deutsche-boerse.com/indices/dax",
-        "type": "primary"
-      }
-    ],
-    "developing": false,
-    "as_of": "2026-10-09T16:00:00-04:00",
-    "importance_score": 86,
-    "needs_human_check": false
-  },
-  {
-    "tag": "Company",
-    "headline": "PepsiCo Raises Prices",
-    "what": "PepsiCo reported 5.6% net revenue growth but said it would raise selected prices and cut costs after weaker North American performance.",
-    "why_it_matters": "Why it matters: packaged-food pricing offers a window into household demand, company margins, and input costs.",
-    "concept_terms": [
-      "revenue",
-      "profit margins"
-    ],
-    "sources": [
-      {
-        "name": "PepsiCo earnings release",
-        "href": "https://www.sec.gov/Archives/edgar/data/77476/000007747626000050/q320268-kxexhibit991.htm",
-        "type": "primary"
-      },
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/56f06d9d9e470785e094323869e6d695",
-        "type": "wire"
-      }
-    ],
-    "developing": false,
-    "as_of": "2026-10-09T16:00:00-04:00",
-    "importance_score": 65,
-    "badge": "Revenue +5.6%",
-    "needs_human_check": false
+    "tag":"Trade","qualifies":true,
+    "headline":"Russian Diesel Plan Tests Sanctions",
+    "what":"The United States plans to allow Russian diesel shipments under a temporary Treasury license.",
+    "context":"The plan conflicts with efforts to limit Russian energy revenue and may add little supply.",
+    "why_it_matters":"The outcome could affect diesel, freight costs, sanctions policy, and goods inflation.",
+    "concept_terms":["trade flows"],
+    "sources":[{"name":"U.S. Treasury sanctions programs","href":"https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions","type":"primary"},{"name":"The Associated Press","href":"https://apnews.com/article/12baccc7aade559bf329079b0548c9da","type":"wire"}],
+    "developing":true,"as_of":"2026-10-12T16:00:00-04:00","importance_score":86,"needs_human_check":false
   }
 ]

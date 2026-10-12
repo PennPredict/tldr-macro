@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T02:36:05.539Z",
+  "generated_at": "2026-10-12T23:09:17.927Z",
   "status": "passed",
   "checks": {
     "instrument_count": 16,
@@ -25,9 +25,7 @@
       "Copper"
     ],
     "global_items_visible": 3,
-    "badge_signs": [
-      "Revenue +5.6%"
-    ]
+    "badge_signs": []
   },
   "flags": [
     "Brent crude oil: boundary — needs human check",

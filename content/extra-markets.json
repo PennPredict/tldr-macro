@@ -2,18 +2,19 @@
   {
     "group": "International Indices",
     "name": "DAX",
-    "display_value": "24,913.10",
-    "display_change": "Friday: at least +1%",
-    "change_percent": -0.76,
-    "description": "Germany's market joined a Friday rally of at least 1% across major European indexes. The plotted exchange close is Thursday's; the DAX tracks exporters, manufacturers, and banks tied to U.S. demand.",
+    "display_value": "25,277.68",
+    "display_change": "+0.76%",
+    "change_percent": 0.76,
+    "description": "Germany's DAX gained 0.76% Monday. The index tracks major exporters, manufacturers, and banks tied to European growth and U.S. demand.",
     "points": [
       25231.2,
       25254.21,
       25402.5,
       25104.38,
-      24913.1
+      24913.1,
+      25277.68
     ],
-    "fetched_at": "2026-10-08T10:58:00-04:00",
+    "fetched_at": "2026-10-12T16:00:00-04:00",
     "frequency": "Daily",
     "data_provider": "Deutsche Börse/Xetra via Börse Stuttgart",
     "licensing_note": "Exchange index data are proprietary; linked exchange and market sources retained.",
@@ -32,9 +33,9 @@
     "group": "International Indices",
     "name": "Nikkei 225",
     "display_value": "69,042.10",
-    "display_change": "Friday: near flat",
+    "display_change": "market closed",
     "change_percent": -1.42,
-    "description": "Japan's Nikkei finished Friday nearly unchanged. Its technology and export exposure connects U.S. investors with chip demand, the yen, and Asian manufacturing.",
+    "description": "Tokyo was closed for a holiday Monday, leaving Friday's Nikkei close as the latest reading. Its technology and export exposure connects U.S. investors with chip demand and Asian manufacturing.",
     "points": [
       65018.95,
       64136.25,
@@ -49,7 +50,7 @@
       70035.7,
       69042.1
     ],
-    "fetched_at": "2026-10-08T02:00:00-04:00",
+    "fetched_at": "2026-10-12T16:00:00-04:00",
     "frequency": "Daily",
     "data_provider": "Nikkei Inc.",
     "licensing_note": "Nikkei index data are copyrighted; citation and linked source retained.",
@@ -66,7 +67,9 @@
     "display_value": "6,625.93",
     "display_change": "−2.62%",
     "change_percent": -2.62,
-    "description": "The latest exchange close shows South Korea's KOSPI down 2.62%. Its semiconductor and export concentration offers an early read on chip demand and global manufacturing.",
+    "display_change": "market closed",
+    "change_percent": 0,
+    "description": "Seoul was closed Monday, leaving the latest KOSPI close unchanged. Its semiconductor and export concentration offers an early read on chip demand and global manufacturing.",
     "points": [
       6820.02,
       6835.8,
@@ -83,7 +86,7 @@
       6803.9,
       6625.93
     ],
-    "fetched_at": "2026-10-08T02:00:00-04:00",
+    "fetched_at": "2026-10-12T16:00:00-04:00",
     "frequency": "Daily",
     "data_provider": "Korea Exchange via KB Financial Group",
     "licensing_note": "Korea Exchange index data are proprietary; linked exchange and issuer sources retained.",
@@ -182,17 +185,18 @@
   {
     "group": "Stocks",
     "name": "Russell 2000",
-    "display_value": "2,806.98",
-    "display_change": "+0.50%",
-    "change_percent": 0.5,
-    "description": "The Russell 2000 gained 0.50% Friday. Its smaller U.S. companies are more exposed to domestic borrowing costs, wages, and consumer demand than multinational giants.",
+    "display_value": "2,794.48",
+    "display_change": "−0.4%",
+    "change_percent": -0.45,
+    "description": "The Russell 2000 lost 0.4% Monday. Its smaller U.S. companies are more exposed to domestic borrowing costs, wages, and consumer demand than multinational giants.",
     "points": [
       2806.63,
       2832.9,
       2847.14,
-      2806.98
+      2806.98,
+      2794.48
     ],
-    "fetched_at": "2026-10-09T16:00:00-04:00",
+    "fetched_at": "2026-10-12T16:00:00-04:00",
     "frequency": "Daily",
     "data_provider": "FTSE Russell level reported by The Associated Press",
     "licensing_note": "FTSE Russell index data are proprietary; the reporting and index methodology links are retained.",
@@ -211,9 +215,9 @@
     "group": "Rates",
     "name": "2-year Treasury yield",
     "display_value": "4.78%",
-    "display_change": "+0.05 percentage points",
-    "change_percent": 1.05,
-    "description": "The two-year Treasury yield rose 0.05 percentage points to 4.80% Friday. Markets compare it with Federal Reserve policy and near-term borrowing costs.",
+    "display_change": "cash market closed",
+    "change_percent": 0,
+    "description": "The cash Treasury market was closed Monday, leaving Friday's 4.80% two-year yield as the latest official close. Markets compare it with Federal Reserve policy and near-term borrowing costs.",
     "points": [
       4.39,
       4.43,
@@ -238,7 +242,7 @@
       4.78,
       4.8
     ],
-    "fetched_at": "2026-10-09T16:00:00-04:00",
+    "fetched_at": "2026-10-12T16:00:00-04:00",
     "frequency": "Daily",
     "data_provider": "Federal Reserve via FRED",
     "licensing_note": "Federal Reserve public data; FRED citation retained.",
@@ -253,9 +257,9 @@
     "group": "Rates",
     "name": "10-year minus 2-year yield spread",
     "display_value": "0.44 percentage points",
-    "display_change": "−0.04 percentage points",
-    "change_percent": -8.33,
-    "description": "The 10-year yield ended 0.44 percentage points above the two-year yield Friday. Banks, borrowers, and economists watch that gap for clues about credit and growth expectations.",
+    "display_change": "cash market closed",
+    "change_percent": 0,
+    "description": "The cash Treasury market was closed Monday, leaving Friday's 0.44-point spread intact. Banks and economists watch that gap for clues about credit and growth expectations.",
     "points": [
       0.41,
       0.4,
@@ -279,7 +283,7 @@
       0.47,
       0.44
     ],
-    "fetched_at": "2026-10-09T16:00:00-04:00",
+    "fetched_at": "2026-10-12T16:00:00-04:00",
     "frequency": "Daily",
     "data_provider": "Federal Reserve Bank of St. Louis",
     "licensing_note": "Calculated from Treasury public data; FRED citation retained.",
@@ -318,10 +322,10 @@
   {
     "group": "Currencies",
     "name": "Euro to dollar",
-    "display_value": "$1.1208 per euro",
-    "display_change": "+0.12%",
-    "change_percent": 0.12,
-    "description": "The latest Federal Reserve reading shows the euro up 0.12% against the dollar. The pair affects travel, imports, and the translated revenue of multinational companies.",
+    "display_value": "$1.1204 per euro",
+    "display_change": "near flat",
+    "change_percent": -0.04,
+    "description": "The euro traded near $1.1204 Monday. The pair affects travel, imports, and the translated revenue of U.S. companies doing business in Europe.",
     "points": [
       1.1627,
       1.1627,
@@ -343,9 +347,10 @@
       1.1232,
       1.1259,
       1.1195,
-      1.1208
+      1.1208,
+      1.1204
     ],
-    "fetched_at": "2026-10-08T10:58:00-04:00",
+    "fetched_at": "2026-10-12T16:00:00-04:00",
     "frequency": "Daily",
     "data_provider": "Federal Reserve via FRED",
     "licensing_note": "Federal Reserve public exchange-rate data; FRED citation retained.",
@@ -359,10 +364,10 @@
   {
     "group": "Currencies",
     "name": "Dollar to yen",
-    "display_value": "¥158.17 per dollar",
-    "display_change": "+0.07%",
-    "change_percent": 0.07,
-    "description": "The latest Federal Reserve reading shows the dollar up 0.07% against the yen. The pair links U.S.-Japan rate differences with cars, electronics, overseas earnings, and global funding trades.",
+    "display_value": "¥158.35 per dollar",
+    "display_change": "+0.1%",
+    "change_percent": 0.11,
+    "description": "The dollar traded near ¥158.35 Monday. The pair links U.S.-Japan rate differences with cars, electronics, overseas earnings, and global funding trades.",
     "points": [
       154.24,
       153.5,
@@ -384,9 +389,10 @@
       157.63,
       157.81,
       158.06,
-      158.17
+      158.17,
+      158.35
     ],
-    "fetched_at": "2026-10-08T10:58:00-04:00",
+    "fetched_at": "2026-10-12T16:00:00-04:00",
     "frequency": "Daily",
     "data_provider": "Federal Reserve via FRED",
     "licensing_note": "Federal Reserve public exchange-rate data; FRED citation retained.",
@@ -400,10 +406,10 @@
   {
     "group": "Currencies",
     "name": "Pound to dollar",
-    "display_value": "$1.3239 per pound",
-    "display_change": "+0.32%",
-    "change_percent": 0.32,
-    "description": "The latest Federal Reserve reading shows the pound up 0.32% against the dollar. Sterling affects British travel, holdings, and U.S. companies earning pounds.",
+    "display_value": "$1.3240 per pound",
+    "display_change": "near flat",
+    "change_percent": 0.01,
+    "description": "The pound traded near $1.3240 Monday. Sterling affects British travel, holdings, and the translated revenue of U.S. companies earning pounds.",
     "points": [
       1.3257,
       1.3212,
@@ -411,9 +417,10 @@
       1.3196,
       1.3234,
       1.3197,
-      1.3239
+      1.3239,
+      1.324
     ],
-    "fetched_at": "2026-10-08T10:58:00-04:00",
+    "fetched_at": "2026-10-12T16:00:00-04:00",
     "frequency": "Daily",
     "data_provider": "Federal Reserve via FRED",
     "licensing_note": "Federal Reserve public exchange-rate data; FRED citation retained.",
@@ -427,10 +434,10 @@
   {
     "group": "Commodities",
     "name": "WTI crude oil",
-    "display_value": "$91.46 per barrel",
-    "display_change": "+4.00%",
-    "change_percent": 4,
-    "description": "West Texas Intermediate crude jumped about 4%. As the U.S. oil benchmark, sustained moves can reach gasoline, freight, airline costs, inflation expectations, and energy-company profits.",
+    "display_value": "$91.00 per barrel",
+    "display_change": "about −0.5%",
+    "change_percent": -0.5,
+    "description": "WTI traded near $91 Monday while Brent rose. As the U.S. oil benchmark, sustained moves can reach gasoline, freight, airline costs, inflation expectations, and energy-company profits.",
     "points": [
       94.21,
       97.26,
@@ -449,9 +456,10 @@
       99.37,
       96.16,
       87.94,
-      91.46
+      91.46,
+      91
     ],
-    "fetched_at": "2026-10-08T10:34:00-04:00",
+    "fetched_at": "2026-10-12T16:00:00-04:00",
     "frequency": "Daily",
     "data_provider": "U.S. Energy Information Administration via FRED",
     "licensing_note": "U.S. government source series; FRED citation retained.",
@@ -465,10 +473,10 @@
   {
     "group": "Commodities",
     "name": "Natural gas",
-    "display_value": "$3.17 per MMBtu",
-    "display_change": "−1.03%",
-    "change_percent": -1.03,
-    "description": "Natural gas eased 1.03% to $3.17. It matters for household heating, electricity prices, fertilizer production, factories, and liquefied-natural-gas exporters.",
+    "display_value": "$3.16 per MMBtu",
+    "display_change": "−1.8%",
+    "change_percent": -1.83,
+    "description": "Natural gas fell about 1.8% to $3.16. It matters for household heating, electricity prices, fertilizer production, factories, and liquefied-natural-gas exporters.",
     "points": [
       2.9,
       2.81,
@@ -487,9 +495,10 @@
       3.13,
       3.18,
       3.203,
-      3.17
+      3.17,
+      3.161
     ],
-    "fetched_at": "2026-10-08T11:04:00-04:00",
+    "fetched_at": "2026-10-12T16:00:00-04:00",
     "frequency": "Daily",
     "data_provider": "U.S. Energy Information Administration via FRED",
     "licensing_note": "U.S. government source series; FRED citation retained.",
@@ -503,18 +512,19 @@
   {
     "group": "Commodities",
     "name": "Copper",
-    "display_value": "$6.68 per pound",
-    "display_change": "near flat",
-    "change_percent": 0,
-    "description": "Copper traded near $6.68 per pound. Construction, power grids, vehicles, and electronics make it useful for reading global demand and future project costs.",
+    "display_value": "$6.75 per pound",
+    "display_change": "+0.9%",
+    "change_percent": 0.93,
+    "description": "Copper gained about 0.9% to $6.75 per pound. Construction, power grids, vehicles, and electronics make it useful for reading global demand and future project costs.",
     "points": [
       5.84,
       6.01,
       6.29,
       6.55,
-      6.679
+      6.679,
+      6.7545
     ],
-    "fetched_at": "2026-10-08T10:34:00-04:00",
+    "fetched_at": "2026-10-12T16:00:00-04:00",
     "frequency": "Daily",
     "data_provider": "Market quote with IMF benchmark context",
     "licensing_note": "Market data are indicative; FRED benchmark citation retained.",
