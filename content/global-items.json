@@ -1,32 +1,32 @@
 [
   {
-    "tag":"Global markets","qualifies":true,
-    "headline":"European Stocks Outpace Wall Street",
-    "what":"European markets gained Monday while the main U.S. indexes finished mixed; Germany's DAX rose about 0.8%.",
-    "context":"Different sector mixes helped Europe advance while large U.S. technology shares weakened.",
-    "why_it_matters":"European strength can affect U.S. multinationals, foreign fund flows, and the dollar value of overseas revenue.",
-    "concept_terms":["international indices"],
-    "sources":[{"name":"Deutsche Börse DAX","href":"https://live.deutsche-boerse.com/indices/dax","type":"primary"},{"name":"The Associated Press","href":"https://apnews.com/article/stock-markets-oil-trump-inflation-a9a26b9706963afe9bdeda1b2eb1f51d","type":"wire"}],
-    "developing":false,"as_of":"2026-10-12T16:00:00-04:00","importance_score":92,"needs_human_check":false
+    "tag":"Policy","qualifies":true,
+    "headline":"IMF Lifts World Growth Outlook",
+    "what":"The IMF raised its 2026 world-growth outlook slightly and warned about debt and heavy AI investment.",
+    "context":"It expects global inflation at 4.7% and China to grow 4.5% this year.",
+    "why_it_matters":"Faster activity can help U.S. exporters, while debt and concentrated spending add market risk.",
+    "concept_terms":["world-growth forecast","financial risk"],
+    "sources":[{"name":"International Monetary Fund","href":"https://www.imf.org/en/Publications/WEO","type":"primary"},{"name":"Reuters","href":"https://www.reuters.com/world/","type":"wire"}],
+    "developing":false,"as_of":"2026-10-13T10:30:00-04:00","importance_score":96,"needs_human_check":false
   },
   {
     "tag":"Global markets","qualifies":true,
-    "headline":"Asian Markets Mostly Retreat",
-    "what":"Most Asian markets ended lower Monday, while Tokyo was closed for a holiday.",
-    "context":"The regional picture arrived before U.S. chip shares weakened later in the day.",
-    "why_it_matters":"Asian technology and export markets offer an early read on chip demand, manufacturing, and supply chains used by U.S. companies.",
-    "concept_terms":["Asian equities"],
-    "sources":[{"name":"Bank of Japan market information","href":"https://www.boj.or.jp/en/statistics/market/index.htm","type":"primary"},{"name":"The Associated Press","href":"https://apnews.com/article/stock-markets-oil-trump-inflation-a9a26b9706963afe9bdeda1b2eb1f51d","type":"wire"}],
-    "developing":false,"as_of":"2026-10-12T16:00:00-04:00","importance_score":88,"needs_human_check":false
+    "headline":"Korean and Japanese Stocks Slide",
+    "what":"South Korea's KOSPI fell 5.5% and Japan's Nikkei 225 lost 1.8% as chip shares declined.",
+    "context":"Reports of progress by Chinese memory-chip makers challenged established producers.",
+    "why_it_matters":"Asian markets offer an early read on supply and demand for parts used by U.S. technology companies.",
+    "concept_terms":["semiconductor shares","pricing power"],
+    "sources":[{"name":"Korea Exchange","href":"https://global.krx.co.kr/","type":"primary"},{"name":"Bank of Japan market information","href":"https://www.boj.or.jp/en/statistics/market/index.htm","type":"primary"}],
+    "developing":false,"as_of":"2026-10-13T10:30:00-04:00","importance_score":93,"needs_human_check":false
   },
   {
     "tag":"Trade","qualifies":true,
-    "headline":"Russian Diesel Plan Tests Sanctions",
-    "what":"The United States plans to allow Russian diesel shipments under a temporary Treasury license.",
-    "context":"The plan conflicts with efforts to limit Russian energy revenue and may add little supply.",
-    "why_it_matters":"The outcome could affect diesel, freight costs, sanctions policy, and goods inflation.",
-    "concept_terms":["trade flows"],
-    "sources":[{"name":"U.S. Treasury sanctions programs","href":"https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions","type":"primary"},{"name":"The Associated Press","href":"https://apnews.com/article/12baccc7aade559bf329079b0548c9da","type":"wire"}],
-    "developing":true,"as_of":"2026-10-12T16:00:00-04:00","importance_score":86,"needs_human_check":false
+    "headline":"Visa Gets China Market Opening",
+    "what":"China approved Visa to prepare a domestic card-clearing business in a vast payments market.",
+    "context":"Visa has one year to finish the setup before clearing local transactions.",
+    "why_it_matters":"The opening could add U.S. revenue and test commercial ties during wider tensions.",
+    "concept_terms":["card clearing","payments market"],
+    "sources":[{"name":"People's Bank of China","href":"https://www.pboc.gov.cn/en/3688006/index.html","type":"primary"},{"name":"The Associated Press","href":"https://apnews.com/article/535e88e9af58db60ab88eda0d06c769f","type":"wire"}],
+    "developing":true,"as_of":"2026-10-13T10:30:00-04:00","importance_score":87,"needs_human_check":false
   }
 ]

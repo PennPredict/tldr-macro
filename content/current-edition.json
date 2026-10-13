@@ -1,18 +1,18 @@
 {
-  "edition_date": "2026-10-12",
-  "updated_at": "2026-10-12T16:00:00-04:00",
-  "summary": "Shares held steady; Treasury yields held steady; crude oil jumped.",
+  "edition_date": "2026-10-13",
+  "updated_at": "2026-10-13T10:30:00-04:00",
+  "summary": "Shares held steady; Treasury yields slipped; crude oil fell.",
   "markets": [
     {
       "name": "S&P 500",
       "kind": "equity_index",
-      "value": 7807.24,
-      "display_value": "7,807.24",
+      "value": 7801.58,
+      "display_value": "7,801.58",
       "baseline": "prior_close",
-      "prior_close": 7811.54,
-      "change_percent": -0.06,
+      "prior_close": 7807.24,
+      "change_percent": -0.07,
       "display_change": "−0.1%",
-      "description": "The S&P 500 tracks 500 large U.S. companies. It slipped 0.1%, while about 64% of its members still rose.",
+      "description": "The S&P 500 tracks 500 large U.S. companies and is a broad gauge for retirement accounts. It hovered 0.1% below Monday's close as bank gains offset weakness in chipmakers.",
       "so_what": {
         "channel_id": "sp500",
         "context": {
@@ -35,8 +35,8 @@
         }
       ],
       "data_source": "S&P Dow Jones Indices and The Associated Press",
-      "fetched_at": "2026-10-12T16:00:00-04:00",
-      "range": "Friday close 7,811.54 · Monday close 7,807.24",
+      "fetched_at": "2026-10-13T10:30:00-04:00",
+      "range": "Monday close 7,807.24 · Tuesday 10:30 AM 7,801.58",
       "points": [
         7731,
         7741,
@@ -48,7 +48,8 @@
         7779,
         7794,
         7811.54,
-        7807.24
+        7807.24,
+        7801.58
       ],
       "sources": [
         {
@@ -60,13 +61,13 @@
     {
       "name": "10-year Treasury yield",
       "kind": "yield",
-      "value": 5.24,
-      "display_value": "5.24%",
+      "value": 5.22,
+      "display_value": "5.22%",
       "baseline": "prior_close",
       "prior_close": 5.24,
-      "change_percent": 0,
-      "display_change": "unchanged; bond market closed",
-      "description": "The 10-year Treasury yield helps set long-term borrowing costs. The cash bond market was closed Monday, leaving Friday's 5.24% reading as the latest official close.",
+      "change_percent": -0.38,
+      "display_change": "−0.02 points",
+      "description": "The 10-year Treasury yield helps set long-term borrowing costs. It eased to 5.22%, a small reprieve for rate-sensitive loans, while remaining near a multi-decade high.",
       "so_what": {
         "channel_id": "yield10",
         "context": {
@@ -89,8 +90,8 @@
         }
       ],
       "data_source": "U.S. Treasury and The Associated Press",
-      "fetched_at": "2026-10-12T16:00:00-04:00",
-      "range": "Friday close 5.24% · Monday cash market closed",
+      "fetched_at": "2026-10-13T10:30:00-04:00",
+      "range": "Friday close 5.24% · Tuesday 10:30 AM 5.22%",
       "points": [
         4.98,
         5.02,
@@ -101,7 +102,8 @@
         5.27,
         5.22,
         5.23,
-        5.24
+        5.24,
+        5.22
       ],
       "sources": [
         {
@@ -110,27 +112,27 @@
         },
         {
           "name": "The Associated Press",
-          "href": "https://apnews.com/article/stock-markets-oil-trump-inflation-a9a26b9706963afe9bdeda1b2eb1f51d"
+          "href": "https://apnews.com/article/stocks-markets-us-tech-oil-mideast-a2edaf9ec297fb75ff2a4e245063ec08"
         }
       ]
     },
     {
       "name": "Brent crude oil",
       "kind": "commodity",
-      "value": 106.65,
-      "display_value": "$106.65",
+      "value": 105.91,
+      "display_value": "$105.91",
       "baseline": "prior_close",
-      "prior_close": 104.72,
-      "change_percent": 1.84,
-      "display_change": "+1.8%",
-      "description": "Brent crude is a global oil benchmark. It climbed 1.8% to $106.65, raising the risk of higher fuel and shipping costs.",
+      "prior_close": 106.65,
+      "change_percent": -0.69,
+      "display_change": "−0.7%",
+      "description": "Brent crude is a global oil benchmark used to price fuel and shipping inputs. It retreated 0.7% to $105.91, trimming Monday's jump but leaving energy costs elevated.",
       "so_what": {
         "channel_id": "brent",
         "context": {
           "type": "attributed",
-          "text": "The Associated Press linked the rise with continuing uncertainty over Middle East supply.",
-          "source_url": "https://apnews.com/article/stock-markets-oil-trump-inflation-a9a26b9706963afe9bdeda1b2eb1f51d",
-          "evidence": "Published Oct. 12, 2026; closing price and direction match the report."
+          "text": "The Associated Press linked the pullback with a quieter session after Monday's supply-driven jump.",
+          "source_url": "https://apnews.com/article/stocks-markets-us-tech-oil-mideast-a2edaf9ec297fb75ff2a4e245063ec08",
+          "evidence": "Published Oct. 13, 2026; intraday price and direction match the report."
         }
       },
       "explains": [],
@@ -147,8 +149,8 @@
         }
       ],
       "data_source": "CME Group and The Associated Press",
-      "fetched_at": "2026-10-12T16:00:00-04:00",
-      "range": "Friday close $104.72 · Monday close $106.65",
+      "fetched_at": "2026-10-13T10:30:00-04:00",
+      "range": "Monday close $106.65 · Tuesday 10:30 AM $105.91",
       "points": [
         103.62,
         103.21,
@@ -160,7 +162,8 @@
         104.3,
         102.5,
         104.72,
-        106.65
+        106.65,
+        105.91
       ],
       "sources": [
         {
@@ -169,20 +172,20 @@
         },
         {
           "name": "The Associated Press",
-          "href": "https://apnews.com/article/stock-markets-oil-trump-inflation-a9a26b9706963afe9bdeda1b2eb1f51d"
+          "href": "https://apnews.com/article/stocks-markets-us-tech-oil-mideast-a2edaf9ec297fb75ff2a4e245063ec08"
         }
       ]
     },
     {
       "name": "Nasdaq Composite",
       "kind": "equity_index",
-      "value": 27245.9,
-      "display_value": "27,245.90",
+      "value": 27211.98,
+      "display_value": "27,211.98",
       "baseline": "prior_close",
-      "prior_close": 27366.17,
-      "change_percent": -0.44,
-      "display_change": "−0.4%",
-      "description": "The Nasdaq Composite has a large technology weighting. It lost 0.4% as several large chipmakers declined.",
+      "prior_close": 27245.9,
+      "change_percent": -0.12,
+      "display_change": "−0.1%",
+      "description": "The Nasdaq Composite tracks thousands of listed companies and leans toward technology. It edged 0.1% lower as chip shares outweighed gains elsewhere.",
       "so_what": {
         "channel_id": "nasdaq",
         "context": {
@@ -205,8 +208,8 @@
         }
       ],
       "data_source": "Nasdaq and The Associated Press",
-      "fetched_at": "2026-10-12T16:00:00-04:00",
-      "range": "Friday close 27,366.17 · Monday close 27,245.90",
+      "fetched_at": "2026-10-13T10:30:00-04:00",
+      "range": "Monday close 27,245.90 · Tuesday 10:30 AM 27,211.98",
       "points": [
         26797.54,
         26871.6,
@@ -218,7 +221,8 @@
         27240,
         27310,
         27366.17,
-        27245.9
+        27245.9,
+        27211.98
       ],
       "sources": [
         {
@@ -230,13 +234,13 @@
     {
       "name": "Dow Jones Industrial Average",
       "kind": "equity_index",
-      "value": 51850.55,
-      "display_value": "51,850.55",
+      "value": 51879.24,
+      "display_value": "51,879.24",
       "baseline": "prior_close",
-      "prior_close": 51654.95,
-      "change_percent": 0.38,
-      "display_change": "+0.4%",
-      "description": "The Dow tracks 30 large, established U.S. companies. It gained 0.4% as energy and communication shares advanced.",
+      "prior_close": 51850.55,
+      "change_percent": 0.06,
+      "display_change": "+0.1%",
+      "description": "The Dow tracks 30 large, established U.S. companies. It was nearly flat as stronger bank shares balanced declines in other blue-chip companies.",
       "so_what": {
         "channel_id": "dow",
         "context": {
@@ -259,8 +263,8 @@
         }
       ],
       "data_source": "S&P Dow Jones Indices and The Associated Press",
-      "fetched_at": "2026-10-12T16:00:00-04:00",
-      "range": "Friday close 51,654.95 · Monday close 51,850.55",
+      "fetched_at": "2026-10-13T10:30:00-04:00",
+      "range": "Monday close 51,850.55 · Tuesday 10:30 AM 51,879.24",
       "points": [
         51349.92,
         50906.05,
@@ -272,7 +276,8 @@
         51360,
         51510,
         51654.95,
-        51850.55
+        51850.55,
+        51879.24
       ],
       "sources": [
         {
@@ -284,13 +289,13 @@
     {
       "name": "Expected volatility",
       "kind": "volatility",
-      "value": 15.21,
-      "display_value": "15.21",
+      "value": 15.37,
+      "display_value": "15.37",
       "baseline": "prior_close",
-      "prior_close": 14.84,
-      "change_percent": 2.49,
-      "display_change": "+2.5%",
-      "description": "The VIX estimates expected S&P 500 swings over the next month. It rose 2.5% to 15.21 as technology shares weakened.",
+      "prior_close": 15.21,
+      "change_percent": 1.05,
+      "display_change": "+1.1%",
+      "description": "The VIX estimates expected S&P 500 swings over the next month. It rose 1.1% to 15.37, a modest increase from Monday's low level.",
       "so_what": {
         "channel_id": "vix",
         "context": {
@@ -313,8 +318,8 @@
         }
       ],
       "data_source": "Cboe closing data",
-      "fetched_at": "2026-10-12T16:00:00-04:00",
-      "range": "Friday close 14.84 · Monday close 15.21",
+      "fetched_at": "2026-10-13T10:30:00-04:00",
+      "range": "Monday close 15.21 · Tuesday 10:30 AM 15.37",
       "points": [
         15.9,
         15.7,
@@ -326,7 +331,8 @@
         15.2,
         15.01,
         14.84,
-        15.21
+        15.21,
+        15.37
       ],
       "sources": [
         {
@@ -337,36 +343,6 @@
     }
   ],
   "calendar": [
-    {
-      "date": "OCT 13",
-      "time": "6:30 AM ET",
-      "start_at": "2026-10-13T06:30:00-04:00",
-      "title": "Big-bank earnings begin",
-      "definition": "Quarterly results from several large banks provide a broad read on lending, consumer spending, trading, and credit quality.",
-      "prior": "JPMorgan Chase, Citigroup, and Wells Fargo report Tuesday",
-      "consensus": "",
-      "hot_label": "If profits and loan demand are strong",
-      "cool_label": "If defaults or caution increase",
-      "hot": "Stronger results can suggest households and businesses are still borrowing and spending despite high rates.",
-      "cool": "Higher losses or cautious forecasts can signal that expensive credit is weighing on customers.",
-      "source": "SEC company filings",
-      "href": "https://www.sec.gov/edgar/search/"
-    },
-    {
-      "date": "OCT 13",
-      "time": "10:00 AM ET",
-      "start_at": "2026-10-13T10:00:00-04:00",
-      "title": "Existing home sales",
-      "definition": "Counts completed sales of previously owned homes, a large part of the U.S. housing market.",
-      "prior": "August sales reached their slowest annual pace in more than a year",
-      "consensus": "",
-      "hot_label": "If sales improve",
-      "cool_label": "If sales weaken",
-      "hot": "More sales can support brokers, lenders, renovators, and household purchases tied to moving.",
-      "cool": "Fewer sales can show that mortgage costs and limited affordability are restraining demand.",
-      "source": "National Association of Realtors",
-      "href": "https://www.nar.realtor/research-and-statistics/housing-statistics/existing-home-sales"
-    },
     {
       "date": "OCT 14",
       "time": "8:30 AM ET",
@@ -411,6 +387,36 @@
       "cool": "Softer readings can reduce concern about inflation moving through supply chains.",
       "source": "BLS release calendar",
       "href": "https://www.bls.gov/schedule/2026/10_sched.htm"
+    },
+    {
+      "date": "OCT 15",
+      "time": "8:30 AM ET",
+      "start_at": "2026-10-15T08:30:00-04:00",
+      "title": "Initial jobless claims",
+      "definition": "Counts new applications for unemployment benefits and offers a weekly check on layoffs.",
+      "prior": "Weekly labor-market reading · Labor Department",
+      "consensus": "",
+      "hot_label": "If claims rise sharply",
+      "cool_label": "If claims stay low",
+      "hot": "A jump can suggest layoffs are spreading and household income may weaken.",
+      "cool": "A low reading can show employers are still holding on to workers.",
+      "source": "Labor Department release calendar",
+      "href": "https://www.dol.gov/ui/data.pdf"
+    },
+    {
+      "date": "OCT 28",
+      "time": "2:00 PM ET",
+      "start_at": "2026-10-28T14:00:00-04:00",
+      "title": "Federal Reserve rate decision",
+      "definition": "The Federal Reserve sets its target for overnight interest rates and explains its economic outlook.",
+      "prior": "Next scheduled policy decision · Federal Reserve",
+      "consensus": "",
+      "hot_label": "If officials sound more concerned about inflation",
+      "cool_label": "If officials emphasize slower growth",
+      "hot": "Investors may expect interest rates to stay high for longer.",
+      "cool": "Markets may bring forward expectations for lower borrowing costs.",
+      "source": "Federal Reserve meeting calendar",
+      "href": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
     }
   ]
 }

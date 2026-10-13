@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-12T23:09:17.826Z",
-  "edition_date": "2026-10-12",
+  "generated_at": "2026-10-13T17:22:11.781Z",
+  "edition_date": "2026-10-13",
   "policy_version": 1,
   "status": "passed",
   "freshness_limit_minutes": 360,
   "calendar_last_verified": "2026-10-07",
   "copy_counts": {
     "pressure": 0,
-    "eased": 0
+    "eased": 2
   },
   "claim_ledger": {
     "headline_claims": 12,
@@ -15,8 +15,8 @@
     "market_claims": 12
   },
   "snapshot_checks": {
-    "summary_words": 10,
-    "summary_characters": 66,
+    "summary_words": 9,
+    "summary_characters": 60,
     "priority_order": [
       "S&P 500",
       "10-year Treasury yield",
@@ -51,9 +51,9 @@
         "channel_id": "brent",
         "context": {
           "type": "attributed",
-          "text": "The Associated Press linked the rise with continuing uncertainty over Middle East supply.",
-          "source_url": "https://apnews.com/article/stock-markets-oil-trump-inflation-a9a26b9706963afe9bdeda1b2eb1f51d",
-          "evidence": "Published Oct. 12, 2026; closing price and direction match the report."
+          "text": "The Associated Press linked the pullback with a quieter session after Monday's supply-driven jump.",
+          "source_url": "https://apnews.com/article/stocks-markets-us-tech-oil-mideast-a2edaf9ec297fb75ff2a4e245063ec08",
+          "evidence": "Published Oct. 13, 2026; intraday price and direction match the report."
         }
       },
       {
@@ -87,11 +87,11 @@
   },
   "edition_summary": {
     "facts": {
-      "edition_date": "2026-10-12",
+      "edition_date": "2026-10-13",
       "stocks": {
         "name": "S&P 500",
-        "value": 7807.24,
-        "change_percent": -0.06,
+        "value": 7801.58,
+        "change_percent": -0.07,
         "bucket": "flat",
         "record": null,
         "streak": null,
@@ -102,47 +102,47 @@
       },
       "rates": {
         "name": "10-year Treasury yield",
-        "value": 5.24,
-        "change_basis_points": 0,
-        "bucket": "flat",
+        "value": 5.22,
+        "change_basis_points": -2,
+        "bucket": "small_down",
         "record": null,
         "streak": null,
         "first_in": null,
         "range_position": null,
-        "move": "flat",
-        "qualifier": null
+        "move": "down",
+        "qualifier": {
+          "type": "size",
+          "bucket": "small_down",
+          "text": "slightly"
+        }
       },
       "oil": {
         "name": "Brent crude oil",
-        "value": 106.65,
-        "change_percent": 1.84,
-        "bucket": "large_up",
+        "value": 105.91,
+        "change_percent": -0.69,
+        "bucket": "medium_down",
         "record": null,
         "streak": null,
         "first_in": null,
         "range_position": null,
-        "move": "up",
-        "qualifier": {
-          "type": "size",
-          "bucket": "large_up",
-          "text": "sharply"
-        }
+        "move": "down",
+        "qualifier": null
       }
     },
-    "generated_sentence": "Shares held steady; Treasury yields held steady; crude oil jumped.",
+    "generated_sentence": "Shares held steady; Treasury yields slipped; crude oil fell.",
     "lint": {
       "passed": true,
       "errors": [],
       "warnings": [],
-      "characters": 66,
-      "words": 10,
-      "grade": 4.8
+      "characters": 60,
+      "words": 9,
+      "grade": 3.7
     },
     "similarity_scores": [
       {
         "date": "2026-10-07",
-        "edit_similarity": 0.344,
-        "token_similarity": 0.125,
+        "edit_similarity": 0.281,
+        "token_similarity": 0.118,
         "first_four_match": false,
         "limit": 0.6
       }
@@ -445,61 +445,61 @@
     "count": 4,
     "items": [
       {
-        "headline": "Tech Giants Pull Indexes Apart",
+        "headline": "Bank Profits Rise, Risks Linger",
         "evidence": {
-          "bucket": "cross_index",
-          "rule": "The Dow rose while the S&P 500 and Nasdaq fell.",
-          "data": "current-edition markets"
+          "bucket": "earnings",
+          "rule": "Major banks reported higher profit while warning that high rates and inflation remain risks.",
+          "data": "AP earnings report"
         },
         "visual_gate": {
           "passed": false,
           "failures": [
-            "No additional verified intraday breadth series"
+            "No comparable bank-by-bank credit series in the release"
           ],
           "needs_human_check": false
         }
       },
       {
-        "headline": "Oil Climb Boosts Energy Shares",
+        "headline": "Chipmakers Slide, Banks Advance",
         "evidence": {
-          "bucket": "medium_up",
-          "rule": "Brent rose 1.8% and energy stocks were among the strongest groups.",
-          "data": "current-edition and AP market close"
+          "bucket": "sector_divergence",
+          "rule": "Micron fell while bank shares gained and major indexes stayed near flat.",
+          "data": "AP intraday market report"
         },
         "visual_gate": {
           "passed": false,
           "failures": [
-            "Latest cost pass-through breakdown not available"
-          ],
-          "needs_human_check": true
-        }
-      },
-      {
-        "headline": "Bond Market Takes Holiday Pause",
-        "evidence": {
-          "bucket": "unchanged",
-          "rule": "The U.S. cash bond market was closed Monday.",
-          "data": "AP market close"
-        },
-        "visual_gate": {
-          "passed": false,
-          "failures": [
-            "Cash Treasury market closed"
+            "No verified sector breadth series available at publication"
           ],
           "needs_human_check": false
         }
       },
       {
-        "headline": "Bank Earnings Test Credit Health",
+        "headline": "High Rates Keep Home Sales Subdued",
         "evidence": {
-          "bucket": "event",
-          "rule": "Several large banks report quarterly results Tuesday.",
-          "data": "SEC filings calendar"
+          "bucket": "housing",
+          "rule": "September existing-home sales remained near four million at an annual rate.",
+          "data": "NAR October 13 release"
         },
         "visual_gate": {
           "passed": false,
           "failures": [
-            "Results not released yet"
+            "National release does not show one representative local payment"
+          ],
+          "needs_human_check": false
+        }
+      },
+      {
+        "headline": "Oil Retreats but Supply Risk Remains",
+        "evidence": {
+          "bucket": "medium_down",
+          "rule": "Brent fell 0.7% after Monday's jump while Middle East supply uncertainty persisted.",
+          "data": "AP intraday market report"
+        },
+        "visual_gate": {
+          "passed": false,
+          "failures": [
+            "No verified same-day cost pass-through series"
           ],
           "needs_human_check": false
         }
@@ -597,48 +597,48 @@
   },
   "global_items": [
     {
-      "headline": "European Stocks Outpace Wall Street",
+      "headline": "IMF Lifts World Growth Outlook",
       "sources": [
         {
-          "name": "Deutsche Börse DAX",
-          "href": "https://live.deutsche-boerse.com/indices/dax",
+          "name": "International Monetary Fund",
+          "href": "https://www.imf.org/en/Publications/WEO",
           "type": "primary"
         },
         {
-          "name": "The Associated Press",
-          "href": "https://apnews.com/article/stock-markets-oil-trump-inflation-a9a26b9706963afe9bdeda1b2eb1f51d",
+          "name": "Reuters",
+          "href": "https://www.reuters.com/world/",
           "type": "wire"
         }
       ],
       "needs_human_check": false
     },
     {
-      "headline": "Asian Markets Mostly Retreat",
+      "headline": "Korean and Japanese Stocks Slide",
       "sources": [
+        {
+          "name": "Korea Exchange",
+          "href": "https://global.krx.co.kr/",
+          "type": "primary"
+        },
         {
           "name": "Bank of Japan market information",
           "href": "https://www.boj.or.jp/en/statistics/market/index.htm",
           "type": "primary"
-        },
-        {
-          "name": "The Associated Press",
-          "href": "https://apnews.com/article/stock-markets-oil-trump-inflation-a9a26b9706963afe9bdeda1b2eb1f51d",
-          "type": "wire"
         }
       ],
       "needs_human_check": false
     },
     {
-      "headline": "Russian Diesel Plan Tests Sanctions",
+      "headline": "Visa Gets China Market Opening",
       "sources": [
         {
-          "name": "U.S. Treasury sanctions programs",
-          "href": "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions",
+          "name": "People's Bank of China",
+          "href": "https://www.pboc.gov.cn/en/3688006/index.html",
           "type": "primary"
         },
         {
           "name": "The Associated Press",
-          "href": "https://apnews.com/article/12baccc7aade559bf329079b0548c9da",
+          "href": "https://apnews.com/article/535e88e9af58db60ab88eda0d06c769f",
           "type": "wire"
         }
       ],
@@ -646,21 +646,23 @@
     }
   ],
   "source_diversity": {
-    "total_links": 21,
+    "total_links": 22,
     "counts_by_domain": {
-      "spglobal.com": 3,
-      "home.treasury.gov": 2,
+      "spglobal.com": 2,
+      "home.treasury.gov": 1,
       "apnews.com": 5,
       "cmegroup.com": 2,
-      "nasdaq.com": 1,
+      "nasdaq.com": 2,
       "cboe.com": 1,
-      "live.deutsche-boerse.com": 1,
+      "imf.org": 1,
+      "reuters.com": 1,
+      "global.krx.co.kr": 1,
       "boj.or.jp": 1,
-      "ofac.treasury.gov": 1,
-      "eia.gov": 1,
+      "pboc.gov.cn": 1,
+      "fdic.gov": 1,
+      "nar.realtor": 1,
       "fred.stlouisfed.org": 1,
-      "sec.gov": 1,
-      "fdic.gov": 1
+      "eia.gov": 1
     },
     "snapshot_cards_by_domain": {
       "spglobal.com": 2,
@@ -791,71 +793,73 @@
   "observations": [
     {
       "name": "S&P 500",
-      "value": 7807.24,
-      "prior_close": 7811.54,
-      "change_percent": -0.06,
+      "value": 7801.58,
+      "prior_close": 7807.24,
+      "change_percent": -0.07,
       "source": "S&P Dow Jones Indices and The Associated Press",
       "source_url": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/",
-      "fetched_at": "2026-10-12T16:00:00-04:00",
+      "fetched_at": "2026-10-13T10:30:00-04:00",
       "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "10-year Treasury yield",
-      "value": 5.24,
+      "value": 5.22,
       "prior_close": 5.24,
-      "change_percent": 0,
+      "change_percent": -0.38,
       "source": "U.S. Treasury and The Associated Press",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
-      "fetched_at": "2026-10-12T16:00:00-04:00",
+      "fetched_at": "2026-10-13T10:30:00-04:00",
       "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "Brent crude oil",
-      "value": 106.65,
-      "prior_close": 104.72,
-      "change_percent": 1.84,
+      "value": 105.91,
+      "prior_close": 106.65,
+      "change_percent": -0.69,
       "source": "CME Group and The Associated Press",
       "source_url": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html",
-      "fetched_at": "2026-10-12T16:00:00-04:00",
+      "fetched_at": "2026-10-13T10:30:00-04:00",
       "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "Nasdaq Composite",
-      "value": 27245.9,
-      "prior_close": 27366.17,
-      "change_percent": -0.44,
+      "value": 27211.98,
+      "prior_close": 27245.9,
+      "change_percent": -0.12,
       "source": "Nasdaq and The Associated Press",
       "source_url": "https://www.nasdaq.com/market-activity/index/comp",
-      "fetched_at": "2026-10-12T16:00:00-04:00",
+      "fetched_at": "2026-10-13T10:30:00-04:00",
       "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "Dow Jones Industrial Average",
-      "value": 51850.55,
-      "prior_close": 51654.95,
-      "change_percent": 0.38,
+      "value": 51879.24,
+      "prior_close": 51850.55,
+      "change_percent": 0.06,
       "source": "S&P Dow Jones Indices and The Associated Press",
       "source_url": "https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/",
-      "fetched_at": "2026-10-12T16:00:00-04:00",
+      "fetched_at": "2026-10-13T10:30:00-04:00",
       "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "Expected volatility",
-      "value": 15.21,
-      "prior_close": 14.84,
-      "change_percent": 2.49,
+      "value": 15.37,
+      "prior_close": 15.21,
+      "change_percent": 1.05,
       "source": "Cboe closing data",
       "source_url": "https://www.cboe.com/tradable-products/vix/vix-futures",
-      "fetched_at": "2026-10-12T16:00:00-04:00",
+      "fetched_at": "2026-10-13T10:30:00-04:00",
       "age_minutes": 0,
       "status": "checked"
     }
   ],
-  "warnings": [],
+  "warnings": [
+    "Chipmakers Slide, Banks Advance: 1 causal verb may lack a matching explains entry"
+  ],
   "failures": []
 }

@@ -1,6 +1,6 @@
 # Data Report
 
-Generated: 2026-10-12T23:09:17.925Z
+Generated: 2026-10-13T17:21:05.326Z
 
 | Instrument | Provider | Series | Frequency | Latest timestamp | Baseline | Chart points | Status |
 |---|---|---|---|---|---|---:|---|
@@ -51,25 +51,25 @@ Generated: 2026-10-12T23:09:17.925Z
 
 | Instrument | Fetched timestamp | Baseline | Display | Provider |
 |---|---|---|---|---|
-| S&P 500 | 2026-10-12T16:00:00-04:00 | Friday close 7,811.54 · Monday close 7,807.24 | 7,807.24 (−0.1%) | S&P Dow Jones Indices and The Associated Press |
-| 10-year Treasury yield | 2026-10-12T16:00:00-04:00 | Friday close 5.24% · Monday cash market closed | 5.24% (unchanged; bond market closed) | U.S. Treasury and The Associated Press |
-| Brent crude oil | 2026-10-12T16:00:00-04:00 | Friday close $104.72 · Monday close $106.65 | $106.65 (+1.8%) | CME Group and The Associated Press |
-| Nasdaq Composite | 2026-10-12T16:00:00-04:00 | Friday close 27,366.17 · Monday close 27,245.90 | 27,245.90 (−0.4%) | Nasdaq and The Associated Press |
-| Dow Jones Industrial Average | 2026-10-12T16:00:00-04:00 | Friday close 51,654.95 · Monday close 51,850.55 | 51,850.55 (+0.4%) | S&P Dow Jones Indices and The Associated Press |
-| Expected volatility | 2026-10-12T16:00:00-04:00 | Friday close 14.84 · Monday close 15.21 | 15.21 (+2.5%) | Cboe closing data |
+| S&P 500 | 2026-10-13T10:30:00-04:00 | Monday close 7,807.24 · Tuesday 10:30 AM 7,801.58 | 7,801.58 (−0.1%) | S&P Dow Jones Indices and The Associated Press |
+| 10-year Treasury yield | 2026-10-13T10:30:00-04:00 | Friday close 5.24% · Tuesday 10:30 AM 5.22% | 5.22% (−0.02 points) | U.S. Treasury and The Associated Press |
+| Brent crude oil | 2026-10-13T10:30:00-04:00 | Monday close $106.65 · Tuesday 10:30 AM $105.91 | $105.91 (−0.7%) | CME Group and The Associated Press |
+| Nasdaq Composite | 2026-10-13T10:30:00-04:00 | Monday close 27,245.90 · Tuesday 10:30 AM 27,211.98 | 27,211.98 (−0.1%) | Nasdaq and The Associated Press |
+| Dow Jones Industrial Average | 2026-10-13T10:30:00-04:00 | Monday close 51,850.55 · Tuesday 10:30 AM 51,879.24 | 51,879.24 (+0.1%) | S&P Dow Jones Indices and The Associated Press |
+| Expected volatility | 2026-10-13T10:30:00-04:00 | Monday close 15.21 · Tuesday 10:30 AM 15.37 | 15.37 (+1.1%) | Cboe closing data |
 
-- DAX: 2026-10-12T16:00:00-04:00; 25,277.68; +0.76%; Deutsche Börse/Xetra via Börse Stuttgart
-- Nikkei 225: 2026-10-12T16:00:00-04:00; 69,042.10; market closed; Nikkei Inc.
-- KOSPI: 2026-10-12T16:00:00-04:00; 6,625.93; market closed; Korea Exchange via KB Financial Group
+- DAX: 2026-10-13T10:30:00-04:00; 25,259.90; −0.07%; Deutsche Börse/Xetra via Börse Stuttgart
+- Nikkei 225: 2026-10-13T10:30:00-04:00; 67,777.52; −1.82%; Nikkei Inc.
+- KOSPI: 2026-10-13T10:30:00-04:00; 6,035.35; −5.46%; Korea Exchange via KB Financial Group
 - Nasdaq Composite: 2026-10-02T16:00:00-04:00; 27,190.86; +1.19%; Nasdaq via FRED
 - Dow Jones Industrial Average: 2026-10-05T10:10:00-04:00; 51,267.90; +0.18%; S&P Dow Jones Indices via FRED
-- Russell 2000: 2026-10-12T16:00:00-04:00; 2,794.48; −0.4%; FTSE Russell level reported by The Associated Press
-- 2-year Treasury yield: 2026-10-12T16:00:00-04:00; 4.78%; cash market closed; Federal Reserve via FRED
-- 10-year minus 2-year yield spread: 2026-10-12T16:00:00-04:00; 0.44 percentage points; cash market closed; Federal Reserve Bank of St. Louis
+- Russell 2000: 2026-10-13T10:30:00-04:00; 2,780.46; −0.5%; FTSE Russell level reported by The Associated Press
+- 2-year Treasury yield: 2026-10-13T10:30:00-04:00; 4.79%; near flat; Federal Reserve via FRED
+- 10-year minus 2-year yield spread: 2026-10-13T10:30:00-04:00; 0.44 percentage points; little changed; Federal Reserve Bank of St. Louis
 - 30-year fixed mortgage rate: 2026-10-08T12:00:00-04:00; 7.40%; +0.12 percentage points; Freddie Mac
-- Euro to dollar: 2026-10-12T16:00:00-04:00; $1.1204 per euro; near flat; Federal Reserve via FRED
-- Dollar to yen: 2026-10-12T16:00:00-04:00; ¥158.35 per dollar; +0.1%; Federal Reserve via FRED
-- Pound to dollar: 2026-10-12T16:00:00-04:00; $1.3240 per pound; near flat; Federal Reserve via FRED
-- WTI crude oil: 2026-10-12T16:00:00-04:00; $91.00 per barrel; about −0.5%; U.S. Energy Information Administration via FRED
-- Natural gas: 2026-10-12T16:00:00-04:00; $3.16 per MMBtu; −1.8%; U.S. Energy Information Administration via FRED
-- Copper: 2026-10-12T16:00:00-04:00; $6.75 per pound; +0.9%; Market quote with IMF benchmark context
+- Euro to dollar: 2026-10-13T10:30:00-04:00; $1.1188 per euro; near flat; Federal Reserve via FRED
+- Dollar to yen: 2026-10-13T10:30:00-04:00; ¥158.03 per dollar; −0.2%; Federal Reserve via FRED
+- Pound to dollar: 2026-10-13T10:30:00-04:00; $1.3241 per pound; near flat; Federal Reserve via FRED
+- WTI crude oil: 2026-10-13T10:30:00-04:00; $92.44 per barrel; −1.4%; U.S. Energy Information Administration via FRED
+- Natural gas: 2026-10-13T10:30:00-04:00; $3.18 per MMBtu; +0.3%; U.S. Energy Information Administration via FRED
+- Copper: 2026-10-13T10:30:00-04:00; $6.74 per pound; −0.2%; Market quote with IMF benchmark context
