@@ -54,13 +54,7 @@ jobs:
 
       - name: Set project path
         if: steps.market_open.outputs.run == 'true'
-        run: |
-          REPO_NAME="${GITHUB_REPOSITORY#*/}"
-          if [[ "$REPO_NAME" == *.github.io ]]; then
-            echo "PAGES_BASE_PATH=" >> "$GITHUB_ENV"
-          else
-            echo "PAGES_BASE_PATH=/$REPO_NAME" >> "$GITHUB_ENV"
-          fi
+        run: echo "PAGES_BASE_PATH=" >> "$GITHUB_ENV"
 
       - name: Build static site
         if: steps.market_open.outputs.run == 'true'

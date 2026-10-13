@@ -28,7 +28,7 @@ See [SOURCES.md](SOURCES.md) for the source hierarchy and change policy.
 2. In **Settings → Pages**, choose **GitHub Actions** as the source.
 3. The included workflow builds and deploys the site after every push to `main`.
 4. It also republishes the latest validated edition at 9:30 a.m. America/New_York on weekdays.
-5. Add a custom domain in the repository's Pages settings when ready.
+5. The production custom domain is `tldrmacro.com`; its DNS must point to GitHub Pages and the Pages custom-domain setting must match.
 
 The checked-in edition contains sourced editorial content and validated market data. The scheduled workflow republishes that committed edition; it does not yet collect new data or generate a new briefing automatically. See [AUTOMATION.md](AUTOMATION.md) before enabling unattended daily updates.
 
