@@ -4,7 +4,7 @@ TL;DR Macro can update without a daily manual prompt. The production workflow sh
 
 ## Proposed schedule
 
-- Weekdays at 9:30 a.m. America/New_York.
+- Weekdays at 9:35 a.m. America/New_York.
 - Skip weekends and U.S. market holidays.
 - Allow a manual run for corrections or major events.
 

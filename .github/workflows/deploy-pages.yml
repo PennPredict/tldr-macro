@@ -7,8 +7,8 @@ on:
   schedule:
     # GitHub cron is UTC-only. Run in both possible New York hours and let the
     # first step keep only the invocation that is actually 9:30 a.m. ET.
-    - cron: "30 13 * * 1-5"
-    - cron: "30 14 * * 1-5"
+    - cron: "35 13 * * 1-5"
+    - cron: "35 14 * * 1-5"
 
 permissions:
   contents: read
@@ -31,7 +31,7 @@ jobs:
         run: |
           if [[ "${{ github.event_name }}" != "schedule" ]]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
-          elif [[ "$(TZ=America/New_York date +%H:%M)" == "09:30" ]]; then
+          elif [[ "$(TZ=America/New_York date +%H:%M)" == "09:35" ]]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
           else
             echo "run=false" >> "$GITHUB_OUTPUT"
