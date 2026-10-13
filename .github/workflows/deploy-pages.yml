@@ -5,8 +5,10 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    - cron: "30 9 * * 1-5"
-      timezone: "America/New_York"
+    # GitHub cron is UTC-only. Run in both possible New York hours and let the
+    # first step keep only the invocation that is actually 9:30 a.m. ET.
+    - cron: "30 13 * * 1-5"
+    - cron: "30 14 * * 1-5"
 
 permissions:
   contents: read
@@ -20,20 +22,38 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      should_deploy: ${{ steps.market_open.outputs.run }}
     steps:
+      - name: Check weekday market-open window
+        id: market_open
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" != "schedule" ]]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          elif [[ "$(TZ=America/New_York date +%H:%M)" == "09:30" ]]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Check out source
+        if: steps.market_open.outputs.run == 'true'
         uses: actions/checkout@v6
 
       - name: Set up Node
+        if: steps.market_open.outputs.run == 'true'
         uses: actions/setup-node@v6
         with:
           node-version: 22
           cache: npm
 
       - name: Install dependencies
+        if: steps.market_open.outputs.run == 'true'
         run: npm ci
 
       - name: Set project path
+        if: steps.market_open.outputs.run == 'true'
         run: |
           REPO_NAME="${GITHUB_REPOSITORY#*/}"
           if [[ "$REPO_NAME" == *.github.io ]]; then
@@ -43,18 +63,22 @@ jobs:
           fi
 
       - name: Build static site
+        if: steps.market_open.outputs.run == 'true'
         run: npm run build:pages
 
       - name: Configure Pages
+        if: steps.market_open.outputs.run == 'true'
         uses: actions/configure-pages@v5
 
       - name: Upload Pages artifact
+        if: steps.market_open.outputs.run == 'true'
         uses: actions/upload-pages-artifact@v4
         with:
           path: out
 
   deploy:
     needs: build
+    if: needs.build.outputs.should_deploy == 'true'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
