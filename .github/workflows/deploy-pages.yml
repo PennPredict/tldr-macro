@@ -52,6 +52,10 @@ jobs:
         if: steps.market_open.outputs.run == 'true'
         run: npm ci
 
+      - name: Install browser test runtime
+        if: steps.market_open.outputs.run == 'true'
+        run: npx playwright install --with-deps chromium
+
       - name: Set project path
         if: steps.market_open.outputs.run == 'true'
         run: echo "PAGES_BASE_PATH=" >> "$GITHUB_ENV"
