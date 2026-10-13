@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import TermPopover from "./TermPopover";
 import StickyHeader from "./StickyHeader";
 import BackToTopLink from "./BackToTopLink";
@@ -12,7 +11,7 @@ function BrandImage({ placement }: { placement: "header" | "footer" }) {
     return <BackToTopLink>TL<span>;</span>DR Macro</BackToTopLink>;
   }
   const alt=placement === "header" ? "TL;DR Macro. Market intelligence, for everyone." : "TL;DR Macro";
-  return <Link className={`brand-image brand-image-${placement}`} href="/" aria-label="TL;DR Macro home"><Image src="/tldr-macro-logo-wide.png" alt={alt} width={2172} height={724} priority={placement === "header"} /></Link>;
+  return <Link className={`brand-image brand-image-${placement}`} href="./" aria-label="TL;DR Macro home"><img src="./tldr-macro-logo-wide.png" alt={alt} width="2172" height="724" fetchPriority="high" /></Link>;
 }
 
 export function Header({ updated, summary }: { updated?: string; summary:string }) {
