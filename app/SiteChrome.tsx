@@ -18,10 +18,10 @@ export function Header({ updated, summary }: { updated?: string; summary:string 
   const format=(includeYear:boolean)=>updated?`${new Intl.DateTimeFormat("en-US",{month:"short",day:"numeric",...(includeYear?{year:"numeric"}:{}),hour:"numeric",minute:"2-digit",timeZone:"America/New_York"}).format(new Date(updated))} ET`:"About this briefing";
   const label=format(true);
   const compactLabel=format(false);
-  return <><header className="topbar" id="top"><div className="topbar-main"><BrandImage placement="header" /><div className="edition"><span>Morning edition</span><time dateTime={updated}>{label}</time></div></div><EditionSummary text={summary}/></header><StickyHeader updated={updated} label={compactLabel} summary={summary}/></>;
+  return <><header className="topbar" id="top"><div className="topbar-main"><BrandImage placement="header" /><div className="edition"><time dateTime={updated}>{label}</time></div></div><EditionSummary text={summary}/></header><StickyHeader updated={updated} label={compactLabel} summary={summary}/></>;
 }
 
 export function Footer() {
-  const about=<div className="about-popover-body"><span>Low-cortisol explanations.</span><span><strong>Limits</strong>concision reduces nuance; keep reading.</span></div>;
+  const about=<div className="about-popover-body"><span>Low-cortisol explanations.</span><span><strong>Limits</strong>Concision reduces nuance; keep reading.</span></div>;
   return <footer><div className="footer-meta"><div><nav aria-label="Footer navigation"><TermPopover className="about-trigger" label="Mission" ariaLabel="About TL;DR Macro" body={about}>About</TermPopover></nav><p className="footer-note">{fullDisclaimer}</p></div><BrandImage placement="footer" /></div></footer>;
 }

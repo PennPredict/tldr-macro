@@ -1,0 +1,11 @@
+{
+  "month": "2026-10",
+  "verified_on": "2026-10-13",
+  "events": [
+    {"start_at":"2026-10-14T08:30:00-04:00","title":"Consumer Price Index (CPI)","source":"https://www.bls.gov/schedule/2026/10_sched.htm"},
+    {"start_at":"2026-10-15T08:30:00-04:00","title":"Retail sales","source":"https://www.census.gov/retail/release_schedule.html"},
+    {"start_at":"2026-10-15T08:30:00-04:00","title":"Producer Price Index (PPI)","source":"https://www.bls.gov/schedule/2026/10_sched.htm"},
+    {"start_at":"2026-10-15T08:30:00-04:00","title":"Initial jobless claims","source":"https://www.dol.gov/ui/data.pdf"},
+    {"start_at":"2026-10-28T14:00:00-04:00","title":"Federal Reserve rate decision","source":"https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"}
+  ]
+}

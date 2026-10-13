@@ -1,0 +1,14 @@
+{
+  "edition_timezone": "America/New_York",
+  "freshness_minutes": { "intraday": 10, "daily": 1440, "weekly": 10080 },
+  "numeric_tolerances": { "absolute": 0.01, "relative_percent": 0.05 },
+  "outlier_percent": { "equity_index": 10, "yield": 20, "commodity": 15, "currency": 5, "volatility": 35 },
+  "paired_instrument_max_gap_percent": { "Brent crude oil|WTI crude oil": 8 },
+  "story_max_age_hours": 36,
+  "time_sensitive_words": ["today", "this morning", "at the open", "now", "currently"],
+  "causal_headline_terms": ["because", "after", "amid", "as", "fears", "hopes", "bets"],
+  "generic_landing_paths": ["/", "/markets/us/", "/world/", "/petroleum/", "/en/Publications/WEO", "/en/statistics/market/index.htm"],
+  "required_section_order": ["market-title", "stories-title", "global-title", "watch-title"],
+  "required_extra_groups": ["International Indices", "Stocks", "Rates", "Currencies", "Commodities"],
+  "guarded_files": ["app/globals.css", "public/tldr-macro-logo-wide.png", "public/favicon.svg", "public/og.png"]
+}

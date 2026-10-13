@@ -1,0 +1,7 @@
+{
+  "edition_date": "2026-10-13",
+  "published_at": "2026-10-13T10:30:00-04:00",
+  "status": "staging-rebuild",
+  "source_file": "content/current-edition.json",
+  "note": "Immutable audit marker for the Oct. 13 staging rebuild; the Git commit preserves the full edition payload."
+}

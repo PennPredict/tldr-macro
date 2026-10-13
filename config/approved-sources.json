@@ -2,6 +2,7 @@
   "policy_version": 1,
   "principle": "Primary evidence first. Independent reporting adds context. Every market figure includes an as-of time.",
   "primary": [
+    "tldrmacro.com",
     "bls.gov",
     "bea.gov",
     "federalreserve.gov",

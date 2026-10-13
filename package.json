@@ -15,6 +15,11 @@
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "test:popovers": "node scripts/test-popovers.mjs",
     "test:acceptance": "node scripts/test-acceptance.mjs"
+    ,"test:terms": "node scripts/test-term-matcher.mjs"
+    ,"test:status": "node scripts/test-edition-status.mjs"
+    ,"test:browser-integrity": "node scripts/test-browser-integrity.mjs"
+    ,"verify:guardrails": "node scripts/verify-guardrails.mjs"
+    ,"verify": "npm run validate:content && npm run validate:review && npm run verify:guardrails && npm run test:terms && npm run test:status && npm run lint && npm run build:pages && npm run test:browser-integrity"
   },
   "dependencies": {
     "next": "16.2.6",

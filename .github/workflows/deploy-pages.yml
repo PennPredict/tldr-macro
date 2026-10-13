@@ -56,9 +56,9 @@ jobs:
         if: steps.market_open.outputs.run == 'true'
         run: echo "PAGES_BASE_PATH=" >> "$GITHUB_ENV"
 
-      - name: Build static site
+      - name: Verify and build static site
         if: steps.market_open.outputs.run == 'true'
-        run: npm run build:pages
+        run: npm run verify
 
       - name: Configure Pages
         if: steps.market_open.outputs.run == 'true'

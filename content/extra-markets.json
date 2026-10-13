@@ -2,6 +2,8 @@
   {
     "group": "International Indices",
     "name": "DAX",
+    "available": false,
+    "withheld_reason": "current observation cannot be reconciled to the cited exchange page",
     "display_value": "25,259.90",
     "display_change": "−0.07%",
     "change_percent": -0.07,
@@ -33,6 +35,8 @@
   {
     "group": "International Indices",
     "name": "Nikkei 225",
+    "available": false,
+    "withheld_reason": "current observation cannot be reconciled to the cited index page",
     "display_value": "67,777.52",
     "display_change": "−1.82%",
     "change_percent": -1.82,
@@ -66,6 +70,8 @@
   {
     "group": "International Indices",
     "name": "KOSPI",
+    "available": false,
+    "withheld_reason": "current observation fails source reconciliation",
     "display_value": "6,035.35",
     "display_change": "−5.46%",
     "change_percent": -5.46,
@@ -106,6 +112,7 @@
     "group": "Stocks",
     "available": false,
     "name": "Nasdaq Composite",
+    "withheld_reason": "stale source observation",
     "display_value": "27,190.86",
     "display_change": "+1.19%",
     "change_percent": 1.19,
@@ -146,6 +153,7 @@
     "group": "Stocks",
     "available": false,
     "name": "Dow Jones Industrial Average",
+    "withheld_reason": "stale source observation",
     "display_value": "51,267.90",
     "display_change": "+0.18%",
     "change_percent": 0.18,
@@ -216,6 +224,8 @@
   {
     "group": "Rates",
     "name": "2-year Treasury yield",
+    "available": false,
+    "withheld_reason": "daily source observation was relabeled with a current timestamp",
     "display_value": "4.79%",
     "display_change": "near flat",
     "change_percent": 0.19,
@@ -259,6 +269,8 @@
   {
     "group": "Rates",
     "name": "10-year minus 2-year yield spread",
+    "available": false,
+    "withheld_reason": "daily source observation was relabeled with a current timestamp",
     "display_value": "0.44 percentage points",
     "display_change": "little changed",
     "change_percent": 0,
@@ -325,6 +337,8 @@
   {
     "group": "Currencies",
     "name": "Euro to dollar",
+    "available": false,
+    "withheld_reason": "daily source observation was relabeled with a current timestamp",
     "display_value": "$1.1188 per euro",
     "display_change": "near flat",
     "change_percent": -0.14,
@@ -368,6 +382,8 @@
   {
     "group": "Currencies",
     "name": "Dollar to yen",
+    "available": false,
+    "withheld_reason": "daily source observation was relabeled with a current timestamp",
     "display_value": "¥158.03 per dollar",
     "display_change": "−0.2%",
     "change_percent": -0.2,
@@ -411,6 +427,8 @@
   {
     "group": "Currencies",
     "name": "Pound to dollar",
+    "available": false,
+    "withheld_reason": "daily source observation was relabeled with a current timestamp",
     "display_value": "$1.3241 per pound",
     "display_change": "near flat",
     "change_percent": 0.01,
@@ -440,6 +458,8 @@
   {
     "group": "Commodities",
     "name": "WTI crude oil",
+    "available": false,
+    "withheld_reason": "history contains an unresolved discontinuity and fails the Brent/WTI pair check",
     "display_value": "$92.44 per barrel",
     "display_change": "−1.4%",
     "change_percent": -1.39,
@@ -480,6 +500,8 @@
   {
     "group": "Commodities",
     "name": "Natural gas",
+    "available": false,
+    "withheld_reason": "daily source observation was relabeled with a current timestamp",
     "display_value": "$3.18 per MMBtu",
     "display_change": "+0.3%",
     "change_percent": 0.32,
@@ -520,6 +542,8 @@
   {
     "group": "Commodities",
     "name": "Copper",
+    "available": false,
+    "withheld_reason": "monthly benchmark source does not support the displayed daily quote",
     "display_value": "$6.74 per pound",
     "display_change": "−0.2%",
     "change_percent": -0.15,

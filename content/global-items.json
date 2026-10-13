@@ -1,6 +1,6 @@
 [
   {
-    "tag":"Policy","qualifies":true,
+    "tag":"Policy","qualifies":false,"withheld_reason":"sources resolve to generic landing pages rather than the cited Oct. 13 release",
     "headline":"IMF Lifts World Growth Outlook",
     "what":"The IMF raised its 2026 world-growth outlook slightly and warned about debt and heavy AI investment.",
     "context":"It expects global inflation at 4.7% and China to grow 4.5% this year.",
@@ -10,7 +10,7 @@
     "developing":false,"as_of":"2026-10-13T10:30:00-04:00","importance_score":96,"needs_human_check":false
   },
   {
-    "tag":"Global markets","qualifies":true,
+    "tag":"Global markets","qualifies":false,"withheld_reason":"cited exchange and central-bank landing pages do not support the displayed moves",
     "headline":"Korean and Japanese Stocks Slide",
     "what":"South Korea's KOSPI fell 5.5% and Japan's Nikkei 225 lost 1.8% as chip shares declined.",
     "context":"Reports of progress by Chinese memory-chip makers challenged established producers.",
@@ -22,8 +22,8 @@
   {
     "tag":"Trade","qualifies":true,
     "headline":"Visa Gets China Market Opening",
-    "what":"China approved Visa to prepare a domestic card-clearing business in a vast payments market.",
-    "context":"Visa has one year to finish the setup before clearing local transactions.",
+    "what":"China approved Visa to prepare a business that processes card payments inside the country.",
+    "context":"Visa has one year to finish the setup before processing local transactions.",
     "why_it_matters":"The opening could add U.S. revenue and test commercial ties during wider tensions.",
     "concept_terms":["card clearing","payments market"],
     "sources":[{"name":"People's Bank of China","href":"https://www.pboc.gov.cn/en/3688006/index.html","type":"primary"},{"name":"The Associated Press","href":"https://apnews.com/article/535e88e9af58db60ab88eda0d06c769f","type":"wire"}],

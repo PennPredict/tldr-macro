@@ -2,6 +2,7 @@
 
 import TermPopover from "./TermPopover";
 import termData from "../content/terms.json";
+import {findTermMarkers} from "../lib/term-matcher.mjs";
 
 export type Explain={anchor_text:string;why:string;other_reading:string};
 type Term=typeof termData.terms[number];
@@ -9,14 +10,7 @@ type Term=typeof termData.terms[number];
 function termBody(term:Term){return <><span>{term.definition}</span><span><strong>Relevance:</strong> {term.used_by_and_why}</span>{term.also_called.length?<span><strong>Synonyms:</strong> {term.also_called.join(" · ")}</span>:null}</>}
 
 export default function AnnotatedText({text,explains=[],seen=new Set<string>(),termActions={}}:{text:string;explains?:Explain[];seen?:Set<string>;termActions?:Partial<Record<string,()=>void>>}){
-  const markers:{start:number;end:number;term:Term;key:string}[]=[];
-  for(const term of termData.terms){
-    if(seen.has(term.id))continue;
-    let best:{start:number;surface:string}|null=null;
-    for(const surface of term.surface_forms){const start=text.toLowerCase().indexOf(surface.toLowerCase());if(start>=0&&(!best||start<best.start||(start===best.start&&surface.length>best.surface.length)))best={start,surface}}
-    if(best){seen.add(term.id);markers.push({start:best.start,end:best.start+best.surface.length,term,key:`term-${term.id}`})}
-  }
-  markers.sort((a,b)=>a.start-b.start||a.end-b.end);
+  const markers=findTermMarkers(text,termData.terms,seen).map(marker=>({...marker,key:`term-${marker.term.id}`}));
   const output:React.ReactNode[]=[];let cursor=0;
   for(const marker of markers){
     if(marker.start<cursor)continue;
