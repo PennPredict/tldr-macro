@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T17:20:44.054Z",
+  "generated_at": "2026-10-13T18:11:04.308Z",
   "results": [
     {
       "width": 375,
@@ -9,7 +9,7 @@
         "initially_hidden": true,
         "midpage_visible": true,
         "layout_shift_px": 0,
-        "popover_clearance_px": 311.65625
+        "popover_clearance_px": 325.65625
       },
       "failures": []
     },
@@ -21,7 +21,7 @@
         "initially_hidden": true,
         "midpage_visible": true,
         "layout_shift_px": 0,
-        "popover_clearance_px": 272.90625
+        "popover_clearance_px": 254.90625
       },
       "failures": []
     },
