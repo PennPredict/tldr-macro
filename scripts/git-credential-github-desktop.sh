@@ -5,8 +5,8 @@
 # unattended local publishing can use the signed-in Desktop session without
 # copying a token into this repository or an environment file.
 desktop_port="$(
-  lsof -nP -iTCP -sTCP:LISTEN 2>/dev/null |
-    awk '$1 == "GitHub" && $9 ~ /^127\.0\.0\.1:/ { sub(/^.*:/, "", $9); print $9; exit }'
+  /usr/sbin/lsof -nP -iTCP -sTCP:LISTEN 2>/dev/null |
+    /usr/bin/awk '$1 == "GitHub" && $9 ~ /^127\.0\.0\.1:/ { sub(/^.*:/, "", $9); print $9; exit }'
 )"
 
 if [ -z "$desktop_port" ]; then
