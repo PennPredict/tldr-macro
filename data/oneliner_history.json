@@ -1,3 +1,4 @@
 [
-  {"date":"2026-10-07","final_sentence":"Stocks fell early, government borrowing rates rose, and oil jumped.","facts":{"stocks":-0.5,"rates_basis_points":8,"oil":1.5},"template_id":"three-market-plain","lead_item":"stocks","qualifiers":[]}
+  {"date":"2026-10-07","final_sentence":"Stocks fell early, government borrowing rates rose, and oil jumped.","facts":{"stocks":-0.5,"rates_basis_points":8,"oil":1.5},"template_id":"three-market-plain","lead_item":"stocks","qualifiers":[]},
+  {"date":"2026-10-14","final_sentence":"Shares slipped; Treasury yields rose; crude oil held steady.","facts":{"stocks":-0.46,"rates_basis_points":7,"oil":0.08},"template_id":"three-market-plain","lead_item":"stocks","qualifiers":[]}
 ]

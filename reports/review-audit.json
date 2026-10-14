@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T22:16:05.010Z",
+  "generated_at": "2026-10-14T14:48:00.283Z",
   "status": "passed",
   "checks": {
     "instrument_count": 16,
@@ -10,10 +10,9 @@
       "Nasdaq Composite",
       "Dow Jones Industrial Average",
       "Expected volatility",
-      "Russell 2000",
       "30-year fixed mortgage rate"
     ],
-    "global_items_visible": 1,
+    "global_items_visible": 3,
     "badge_signs": []
   },
   "flags": [

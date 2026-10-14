@@ -1,6 +1,6 @@
 # Data Report
 
-Generated: 2026-10-13T22:16:05.010Z
+Generated: 2026-10-14T14:48:00.282Z
 
 | Instrument | Provider | Series | Frequency | Latest timestamp | Baseline | Chart points | Status |
 |---|---|---|---|---|---|---:|---|
@@ -51,14 +51,13 @@ Generated: 2026-10-13T22:16:05.010Z
 
 | Instrument | Fetched timestamp | Baseline | Display | Provider |
 |---|---|---|---|---|
-| S&P 500 | 2026-10-13T10:30:00-04:00 | Monday close 7,807.24 · Tuesday 10:30 AM 7,801.58 | 7,801.58 (−0.1%) | S&P Dow Jones Indices and The Associated Press |
-| 10-year Treasury yield | 2026-10-13T10:30:00-04:00 | Friday close 5.24% · Tuesday 10:30 AM 5.22% | 5.22% (−0.02 points) | U.S. Treasury and The Associated Press |
-| Brent crude oil | 2026-10-13T10:30:00-04:00 | Monday close $106.65 · Tuesday 10:30 AM $105.91 | $105.91 (−0.7%) | CME Group and The Associated Press |
-| Nasdaq Composite | 2026-10-13T10:30:00-04:00 | Monday close 27,245.90 · Tuesday 10:30 AM 27,211.98 | 27,211.98 (−0.1%) | Nasdaq and The Associated Press |
-| Dow Jones Industrial Average | 2026-10-13T10:30:00-04:00 | Monday close 51,850.55 · Tuesday 10:30 AM 51,879.24 | 51,879.24 (+0.1%) | S&P Dow Jones Indices and The Associated Press |
-| Expected volatility | 2026-10-13T10:30:00-04:00 | Monday close 15.21 · Tuesday 10:30 AM 15.37 | 15.37 (+1.1%) | Cboe closing data |
+| S&P 500 | 2026-10-14T09:35:00-04:00 | Tuesday close 7,805.45 · Wednesday 9:35 AM 7,769.18 | 7,769.18 (−0.5%) | S&P Dow Jones Indices and The Associated Press |
+| 10-year Treasury yield | 2026-10-14T09:35:00-04:00 | Tuesday close 5.21% · Wednesday 9:35 AM 5.28% | 5.28% (+0.07 points) | U.S. Treasury and The Associated Press |
+| Brent crude oil | 2026-10-14T09:35:00-04:00 | Tuesday close $105.69 · Wednesday 9:35 AM $105.77 | $105.77 (+0.1%) | CME Group and The Associated Press |
+| Nasdaq Composite | 2026-10-14T09:35:00-04:00 | Tuesday close 27,204.38 · Wednesday 9:35 AM 27,033.16 | 27,033.16 (−0.6%) | Nasdaq and The Associated Press |
+| Dow Jones Industrial Average | 2026-10-14T09:35:00-04:00 | Tuesday close 51,670.10 · Wednesday 9:35 AM 51,584.99 | 51,584.99 (−0.2%) | S&P Dow Jones Indices and The Associated Press |
+| Expected volatility | 2026-10-14T09:35:00-04:00 | Tuesday close 15.27 · Wednesday 9:35 AM 15.28 | 15.28 (+0.1%) | Cboe closing data |
 
 - Nasdaq Composite: 2026-10-02T16:00:00-04:00; 27,190.86; +1.19%; Nasdaq via FRED
 - Dow Jones Industrial Average: 2026-10-05T10:10:00-04:00; 51,267.90; +0.18%; S&P Dow Jones Indices via FRED
-- Russell 2000: 2026-10-13T10:30:00-04:00; 2,780.46; −0.5%; FTSE Russell level reported by The Associated Press
 - 30-year fixed mortgage rate: 2026-10-08T12:00:00-04:00; 7.40%; +0.12 percentage points; Freddie Mac

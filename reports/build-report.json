@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-13T22:16:04.916Z",
-  "edition_date": "2026-10-13",
+  "generated_at": "2026-10-14T14:48:00.191Z",
+  "edition_date": "2026-10-14",
   "policy_version": 1,
   "status": "passed",
   "freshness_limit_minutes": 360,
-  "calendar_last_verified": "2026-10-07",
+  "calendar_last_verified": "2026-10-14",
   "copy_counts": {
-    "pressure": 1,
+    "pressure": 0,
     "eased": 1
   },
   "claim_ledger": {
     "headline_claims": 9,
-    "view_claims": 16,
+    "view_claims": 18,
     "market_claims": 12
   },
   "snapshot_checks": {
@@ -51,9 +51,9 @@
         "channel_id": "brent",
         "context": {
           "type": "attributed",
-          "text": "The Associated Press linked the pullback with a quieter session after Monday's supply-driven jump.",
-          "source_url": "https://apnews.com/article/stocks-markets-us-tech-oil-mideast-a2edaf9ec297fb75ff2a4e245063ec08",
-          "evidence": "Published Oct. 13, 2026; intraday price and direction match the report."
+          "text": "The Associated Press reported that war-related fuel costs continued to feed into inflation.",
+          "source_url": "https://apnews.com/article/stock-markets-earnings-bonds-artificial-intelligence-704d3190f0fba2908df07c85f26346ec",
+          "evidence": "Published Oct. 14, 2026; the 9:35 AM oil price and direction match the report."
         }
       },
       {
@@ -87,23 +87,11 @@
   },
   "edition_summary": {
     "facts": {
-      "edition_date": "2026-10-13",
+      "edition_date": "2026-10-14",
       "stocks": {
         "name": "S&P 500",
-        "value": 7801.58,
-        "change_percent": -0.07,
-        "bucket": "flat",
-        "record": null,
-        "streak": null,
-        "first_in": null,
-        "range_position": null,
-        "move": "flat",
-        "qualifier": null
-      },
-      "rates": {
-        "name": "10-year Treasury yield",
-        "value": 5.22,
-        "change_basis_points": -2,
+        "value": 7769.18,
+        "change_percent": -0.46,
         "bucket": "small_down",
         "record": null,
         "streak": null,
@@ -116,20 +104,32 @@
           "text": "slightly"
         }
       },
-      "oil": {
-        "name": "Brent crude oil",
-        "value": 105.91,
-        "change_percent": -0.69,
-        "bucket": "medium_down",
+      "rates": {
+        "name": "10-year Treasury yield",
+        "value": 5.28,
+        "change_basis_points": 7,
+        "bucket": "medium_up",
         "record": null,
         "streak": null,
         "first_in": null,
         "range_position": null,
-        "move": "down",
+        "move": "up",
+        "qualifier": null
+      },
+      "oil": {
+        "name": "Brent crude oil",
+        "value": 105.77,
+        "change_percent": 0.08,
+        "bucket": "flat",
+        "record": null,
+        "streak": null,
+        "first_in": null,
+        "range_position": null,
+        "move": "flat",
         "qualifier": null
       }
     },
-    "generated_sentence": "Shares held steady; Treasury yields slipped; crude oil fell.",
+    "generated_sentence": "Shares slipped; Treasury yields rose; crude oil held steady.",
     "lint": {
       "passed": true,
       "errors": [],
@@ -141,7 +141,7 @@
     "similarity_scores": [
       {
         "date": "2026-10-07",
-        "edit_similarity": 0.281,
+        "edit_similarity": 0.266,
         "token_similarity": 0.118,
         "first_four_match": false,
         "limit": 0.6
@@ -445,46 +445,46 @@
     "count": 3,
     "items": [
       {
-        "headline": "Bank Profits Rise, Risks Linger",
+        "headline": "Inflation Climbs Above Forecast",
         "evidence": {
-          "bucket": "earnings",
-          "rule": "Major banks reported higher profit while warning that high rates and inflation remain risks.",
-          "data": "AP earnings report"
+          "bucket": "inflation_release",
+          "rule": "September consumer prices rose faster than economists expected.",
+          "data": "BLS September 2026 CPI release"
         },
         "visual_gate": {
           "passed": false,
           "failures": [
-            "No comparable bank-by-bank credit series in the release"
+            "No additional visual is needed beyond the verified release figures"
           ],
           "needs_human_check": false
         }
       },
       {
-        "headline": "Chipmakers Slide, Banks Advance",
+        "headline": "Rate Outlook Turns Hawkish",
         "evidence": {
-          "bucket": "sector_divergence",
-          "rule": "Micron fell while bank shares gained and major indexes stayed near flat.",
-          "data": "AP intraday market report"
+          "bucket": "policy_repricing",
+          "rule": "The chance of a near-term Federal Reserve increase rose sharply after CPI.",
+          "data": "AP market report citing CME Group"
         },
         "visual_gate": {
           "passed": false,
           "failures": [
-            "No verified sector breadth series available at publication"
+            "Probability source is cited but no reusable intraday series was verified"
           ],
           "needs_human_check": false
         }
       },
       {
-        "headline": "Oil Retreats but Supply Risk Remains",
+        "headline": "Financial Results Diverge",
         "evidence": {
-          "bucket": "medium_down",
-          "rule": "Brent fell 0.7% after Monday's jump while Middle East supply uncertainty persisted.",
+          "bucket": "earnings_divergence",
+          "rule": "BlackRock advanced while Bank of America and State Street fell after results.",
           "data": "AP intraday market report"
         },
         "visual_gate": {
           "passed": false,
           "failures": [
-            "No verified same-day cost pass-through series"
+            "Company results are not comparable enough for a single quantitative card"
           ],
           "needs_human_check": false
         }
@@ -570,8 +570,8 @@
         "reason": "streak phrase without a three-close streak flag"
       }
     ],
-    "history_count": 4,
-    "views": 8,
+    "history_count": 7,
+    "views": 9,
     "definitions": [
       "household",
       "business",
@@ -582,66 +582,69 @@
   },
   "global_items": [
     {
-      "headline": "IMF Lifts World Growth Outlook",
+      "headline": "China Reports Export Surge",
       "sources": [
         {
-          "name": "International Monetary Fund",
-          "href": "https://www.imf.org/en/Publications/WEO",
-          "type": "primary"
-        },
-        {
-          "name": "Reuters",
-          "href": "https://www.reuters.com/world/",
-          "type": "wire"
-        }
-      ],
-      "needs_human_check": false
-    },
-    {
-      "headline": "Korean and Japanese Stocks Slide",
-      "sources": [
-        {
-          "name": "Korea Exchange",
-          "href": "https://global.krx.co.kr/",
-          "type": "primary"
-        },
-        {
-          "name": "Bank of Japan market information",
-          "href": "https://www.boj.or.jp/en/statistics/market/index.htm",
-          "type": "primary"
-        }
-      ],
-      "needs_human_check": false
-    },
-    {
-      "headline": "Visa Gets China Market Opening",
-      "sources": [
-        {
-          "name": "People's Bank of China",
-          "href": "https://www.pboc.gov.cn/en/3688006/index.html",
+          "name": "World Trade Organization trade statistics",
+          "href": "https://www.wto.org/english/res_e/statis_e/statis_e.htm",
           "type": "primary"
         },
         {
           "name": "The Associated Press",
-          "href": "https://apnews.com/article/535e88e9af58db60ab88eda0d06c769f",
+          "href": "https://apnews.com/article/china-trade-exports-db43e08437b65f65c2ead64c82f9b990",
           "type": "wire"
         }
       ],
       "needs_human_check": false
+    },
+    {
+      "headline": "IEA Cuts Oil Demand Outlook",
+      "sources": [
+        {
+          "name": "International Energy Agency",
+          "href": "https://www.iea.org/reports/oil-market-report-october-2026",
+          "type": "primary"
+        },
+        {
+          "name": "The Associated Press",
+          "href": "https://apnews.com/article/oil-iea-diesel-trump-iran-opec-putin-811b5e2f17b74f81de9e5f9f6128497c",
+          "type": "wire"
+        }
+      ],
+      "needs_human_check": false
+    },
+    {
+      "headline": "Strike Damages Aramco Offices",
+      "sources": [
+        {
+          "name": "U.S. Energy Information Administration",
+          "href": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints",
+          "type": "primary"
+        },
+        {
+          "name": "The Associated Press",
+          "href": "https://apnews.com/article/saudi-arabia-yemen-strikes-mideast-conflict-riyadh-c81a91347c00b17097c8fafde7e4eeec",
+          "type": "wire"
+        }
+      ],
+      "needs_human_check": true
     }
   ],
   "source_diversity": {
-    "total_links": 16,
+    "total_links": 20,
     "counts_by_domain": {
       "spglobal.com": 2,
       "home.treasury.gov": 1,
-      "apnews.com": 5,
-      "cmegroup.com": 2,
-      "nasdaq.com": 2,
+      "apnews.com": 8,
+      "cmegroup.com": 1,
+      "nasdaq.com": 1,
       "cboe.com": 1,
-      "pboc.gov.cn": 1,
-      "fdic.gov": 1,
-      "eia.gov": 1
+      "wto.org": 1,
+      "iea.org": 1,
+      "eia.gov": 1,
+      "bls.gov": 1,
+      "federalreserve.gov": 1,
+      "sec.gov": 1
     },
     "snapshot_cards_by_domain": {
       "spglobal.com": 2,
@@ -690,12 +693,6 @@
       "licensing_note": "Official or approved-source links are published; raw historical datasets are not redistributed."
     },
     {
-      "name": "Russell 2000",
-      "current_provider": "FTSE Russell level reported by The Associated Press",
-      "historical_provider": "FTSE Russell level reported by The Associated Press",
-      "licensing_note": "FTSE Russell index data are proprietary; the reporting and index methodology links are retained."
-    },
-    {
       "name": "30-year fixed mortgage rate",
       "current_provider": "Freddie Mac",
       "historical_provider": "Freddie Mac",
@@ -706,67 +703,67 @@
   "observations": [
     {
       "name": "S&P 500",
-      "value": 7801.58,
-      "prior_close": 7807.24,
-      "change_percent": -0.07,
+      "value": 7769.18,
+      "prior_close": 7805.45,
+      "change_percent": -0.46,
       "source": "S&P Dow Jones Indices and The Associated Press",
       "source_url": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/",
-      "fetched_at": "2026-10-13T10:30:00-04:00",
+      "fetched_at": "2026-10-14T09:35:00-04:00",
       "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "10-year Treasury yield",
-      "value": 5.22,
-      "prior_close": 5.24,
-      "change_percent": -0.38,
+      "value": 5.28,
+      "prior_close": 5.21,
+      "change_percent": 1.34,
       "source": "U.S. Treasury and The Associated Press",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
-      "fetched_at": "2026-10-13T10:30:00-04:00",
+      "fetched_at": "2026-10-14T09:35:00-04:00",
       "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "Brent crude oil",
-      "value": 105.91,
-      "prior_close": 106.65,
-      "change_percent": -0.69,
+      "value": 105.77,
+      "prior_close": 105.69,
+      "change_percent": 0.08,
       "source": "CME Group and The Associated Press",
       "source_url": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html",
-      "fetched_at": "2026-10-13T10:30:00-04:00",
+      "fetched_at": "2026-10-14T09:35:00-04:00",
       "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "Nasdaq Composite",
-      "value": 27211.98,
-      "prior_close": 27245.9,
-      "change_percent": -0.12,
+      "value": 27033.16,
+      "prior_close": 27204.38,
+      "change_percent": -0.63,
       "source": "Nasdaq and The Associated Press",
       "source_url": "https://www.nasdaq.com/market-activity/index/comp",
-      "fetched_at": "2026-10-13T10:30:00-04:00",
+      "fetched_at": "2026-10-14T09:35:00-04:00",
       "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "Dow Jones Industrial Average",
-      "value": 51879.24,
-      "prior_close": 51850.55,
-      "change_percent": 0.06,
+      "value": 51584.99,
+      "prior_close": 51670.1,
+      "change_percent": -0.16,
       "source": "S&P Dow Jones Indices and The Associated Press",
       "source_url": "https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/",
-      "fetched_at": "2026-10-13T10:30:00-04:00",
+      "fetched_at": "2026-10-14T09:35:00-04:00",
       "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "Expected volatility",
-      "value": 15.37,
-      "prior_close": 15.21,
-      "change_percent": 1.05,
+      "value": 15.28,
+      "prior_close": 15.27,
+      "change_percent": 0.07,
       "source": "Cboe closing data",
       "source_url": "https://www.cboe.com/tradable-products/vix/vix-futures",
-      "fetched_at": "2026-10-13T10:30:00-04:00",
+      "fetched_at": "2026-10-14T09:35:00-04:00",
       "age_minutes": 0,
       "status": "checked"
     }
@@ -776,8 +773,7 @@
     "More Markets has 1 verified Rates cards; unsupported cards are withheld rather than padded",
     "More Markets has 0 verified Currencies cards; unsupported cards are withheld rather than padded",
     "More Markets has 0 verified Commodities cards; unsupported cards are withheld rather than padded",
-    "TL;DR Global has 1 verified item; unsupported stories are withheld rather than padded",
-    "Source diversity: apnews.com accounts for 5 of 16 links, above 25% after unsupported items were withheld"
+    "Source diversity: apnews.com accounts for 8 of 20 links, above 25% after unsupported items were withheld"
   ],
   "failures": []
 }

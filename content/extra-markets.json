@@ -194,6 +194,8 @@
   {
     "group": "Stocks",
     "name": "Russell 2000",
+    "available": false,
+    "withheld_reason": "9:35 AM observation was not verified from an approved source",
     "display_value": "2,780.46",
     "display_change": "−0.5%",
     "change_percent": -0.5,

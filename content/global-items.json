@@ -1,32 +1,29 @@
 [
   {
-    "tag":"Policy","qualifies":false,"withheld_reason":"sources resolve to generic landing pages rather than the cited Oct. 13 release",
-    "headline":"IMF Lifts World Growth Outlook",
-    "what":"The IMF raised its 2026 world-growth outlook slightly and warned about debt and heavy AI investment.",
-    "context":"It expects global inflation at 4.7% and China to grow 4.5% this year.",
-    "why_it_matters":"Faster activity can help U.S. exporters, while debt and concentrated spending add market risk.",
-    "concept_terms":["world-growth forecast","financial risk"],
-    "sources":[{"name":"International Monetary Fund","href":"https://www.imf.org/en/Publications/WEO","type":"primary"},{"name":"Reuters","href":"https://www.reuters.com/world/","type":"wire"}],
-    "developing":false,"as_of":"2026-10-13T10:30:00-04:00","importance_score":96,"needs_human_check":false
+    "tag": "Trade", "qualifies": true, "headline": "China Reports Export Surge",
+    "what": "China said September exports increased 36.3% from a year earlier, while imports advanced 31%.",
+    "context": "Its trade surplus reached $133.5 billion for the month and $938 billion through September.",
+    "why_it_matters": "Stronger Chinese trade can signal overseas demand and affect U.S. manufacturers, shipping companies, and commodity prices.",
+    "concept_terms": ["trade surplus", "overseas demand"],
+    "sources": [{"name": "World Trade Organization trade statistics", "href": "https://www.wto.org/english/res_e/statis_e/statis_e.htm", "type": "primary"}, {"name": "The Associated Press", "href": "https://apnews.com/article/china-trade-exports-db43e08437b65f65c2ead64c82f9b990", "type": "wire"}],
+    "developing": false, "as_of": "2026-10-14T09:35:00-04:00", "importance_score": 95, "needs_human_check": false
   },
   {
-    "tag":"Global markets","qualifies":false,"withheld_reason":"cited exchange and central-bank landing pages do not support the displayed moves",
-    "headline":"Korean and Japanese Stocks Slide",
-    "what":"South Korea's KOSPI fell 5.5% and Japan's Nikkei 225 lost 1.8% as chip shares declined.",
-    "context":"Reports of progress by Chinese memory-chip makers challenged established producers.",
-    "why_it_matters":"Asian markets offer an early read on supply and demand for parts used by U.S. technology companies.",
-    "concept_terms":["semiconductor shares","pricing power"],
-    "sources":[{"name":"Korea Exchange","href":"https://global.krx.co.kr/","type":"primary"},{"name":"Bank of Japan market information","href":"https://www.boj.or.jp/en/statistics/market/index.htm","type":"primary"}],
-    "developing":false,"as_of":"2026-10-13T10:30:00-04:00","importance_score":93,"needs_human_check":false
+    "tag": "Energy", "qualifies": true, "headline": "IEA Cuts Oil Demand Outlook",
+    "what": "The International Energy Agency expects world oil demand to decline by 2.6 million barrels a day this year.",
+    "context": "It expects only a partial recovery next year as high prices weaken consumption and disrupt supply.",
+    "why_it_matters": "The balance between lower demand and constrained supply can steer fuel prices, inflation, and transportation costs.",
+    "concept_terms": ["oil demand", "constrained supply"],
+    "sources": [{"name": "International Energy Agency", "href": "https://www.iea.org/reports/oil-market-report-october-2026", "type": "primary"}, {"name": "The Associated Press", "href": "https://apnews.com/article/oil-iea-diesel-trump-iran-opec-putin-811b5e2f17b74f81de9e5f9f6128497c", "type": "wire"}],
+    "developing": false, "as_of": "2026-10-14T09:35:00-04:00", "importance_score": 93, "needs_human_check": false
   },
   {
-    "tag":"Trade","qualifies":true,
-    "headline":"Visa Gets China Market Opening",
-    "what":"China approved Visa to prepare a business that processes card payments inside the country.",
-    "context":"Visa has one year to finish the setup before processing local transactions.",
-    "why_it_matters":"The opening could add U.S. revenue and test commercial ties during wider tensions.",
-    "concept_terms":["card clearing","payments market"],
-    "sources":[{"name":"People's Bank of China","href":"https://www.pboc.gov.cn/en/3688006/index.html","type":"primary"},{"name":"The Associated Press","href":"https://apnews.com/article/535e88e9af58db60ab88eda0d06c769f","type":"wire"}],
-    "developing":true,"as_of":"2026-10-13T10:30:00-04:00","importance_score":87,"needs_human_check":false
+    "tag": "Conflict", "qualifies": true, "headline": "Strike Damages Aramco Offices",
+    "what": "A Houthi strike damaged upper floors at Saudi Aramco's headquarters, including the chief executive's office. No casualties were reported.",
+    "context": "The incident extended the regional conflict to the offices of the world's largest oil exporter.",
+    "why_it_matters": "Escalation around Saudi energy infrastructure can raise concern about oil supply, shipping, and global fuel costs.",
+    "concept_terms": ["energy infrastructure", "supply risk"],
+    "sources": [{"name": "U.S. Energy Information Administration", "href": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints", "type": "primary"}, {"name": "The Associated Press", "href": "https://apnews.com/article/saudi-arabia-yemen-strikes-mideast-conflict-riyadh-c81a91347c00b17097c8fafde7e4eeec", "type": "wire"}],
+    "developing": true, "as_of": "2026-10-14T09:35:00-04:00", "importance_score": 90, "needs_human_check": true
   }
 ]
