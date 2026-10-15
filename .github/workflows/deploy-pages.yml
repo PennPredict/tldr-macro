@@ -4,11 +4,6 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
-  schedule:
-    # GitHub may queue scheduled runs. Use the market timezone and do not
-    # reject a valid scheduled event because its runner starts late.
-    - cron: "35 9 * * 1-5"
-      timezone: "America/New_York"
 
 permissions:
   contents: read
