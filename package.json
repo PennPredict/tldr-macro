@@ -12,14 +12,25 @@
     "build": "npm run validate:content && vinext build && npm run test:popovers",
     "build:pages": "npm run validate:content && npm run validate:review && next build",
     "start": "vinext start",
-    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern .security --ignore-pattern out --ignore-pattern publish",
     "test:popovers": "node scripts/test-popovers.mjs",
     "test:acceptance": "node scripts/test-acceptance.mjs"
     ,"test:terms": "node scripts/test-term-matcher.mjs"
     ,"test:status": "node scripts/test-edition-status.mjs"
     ,"test:browser-integrity": "node scripts/test-browser-integrity.mjs"
+    ,"test:url-sanitizer": "node scripts/test-url-sanitizer.mjs"
+    ,"test:outsider": "node scripts/test-outsider-local.mjs"
+    ,"security:prepare": "node scripts/prepare-publish.mjs out publish"
+    ,"security:scan": "node scripts/security-check.mjs"
+    ,"security:gitleaks": "node scripts/run-gitleaks.mjs"
     ,"verify:guardrails": "node scripts/verify-guardrails.mjs"
-    ,"verify": "npm run validate:content && npm run validate:review && npm run verify:guardrails && npm run test:terms && npm run test:status && npm run lint && npm run build:pages && npm run test:browser-integrity"
+    ,"thread:prepare": "node scripts/build-thread.mjs"
+    ,"thread:review": "node scripts/thread-review.mjs"
+    ,"thread:approve": "node scripts/thread-approve.mjs"
+    ,"thread:recheck": "node scripts/thread-recheck.mjs"
+    ,"test:mortgage": "node scripts/test-mortgage-math.mjs"
+    ,"validate:thread": "node scripts/validate-thread.mjs"
+    ,"verify": "npm run validate:content && npm run validate:thread && npm run test:mortgage && npm run thread:prepare && npm run validate:review && npm run verify:guardrails && npm run test:terms && npm run test:status && npm run lint && npm run build:pages && npm run security:prepare && npm run test:url-sanitizer && npm run security:scan && npm run security:gitleaks && npm run test:browser-integrity && npm run test:outsider"
   },
   "dependencies": {
     "next": "16.2.6",

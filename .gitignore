@@ -15,10 +15,24 @@
 /.next/
 /.vinext/
 /out/
+/publish/
+/.security/
 
 # misc
 .DS_Store
 *.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+service-account*.json
+*.security.log
+.npmrc
+.pypirc
+.netrc
+id_rsa*
+*.jks
+*.keystore
 
 # debug
 npm-debug.log*
@@ -36,3 +50,4 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
+/data/thread-approvals.json

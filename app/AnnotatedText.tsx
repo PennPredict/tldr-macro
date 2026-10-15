@@ -9,13 +9,15 @@ type Term=typeof termData.terms[number];
 
 function termBody(term:Term){return <><span>{term.definition}</span><span><strong>Relevance:</strong> {term.used_by_and_why}</span>{term.also_called.length?<span><strong>Synonyms:</strong> {term.also_called.join(" · ")}</span>:null}</>}
 
-export default function AnnotatedText({text,explains=[],seen=new Set<string>(),termActions={}}:{text:string;explains?:Explain[];seen?:Set<string>;termActions?:Partial<Record<string,()=>void>>}){
+type Override={label:string;ariaLabel:string;body:React.ReactNode};
+export default function AnnotatedText({text,explains=[],seen=new Set<string>(),termActions={},popoverOverride}:{text:string;explains?:Explain[];seen?:Set<string>;termActions?:Partial<Record<string,()=>void>>;popoverOverride?:Override}){
   const markers=findTermMarkers(text,termData.terms,seen).map(marker=>({...marker,key:`term-${marker.term.id}`}));
   const output:React.ReactNode[]=[];let cursor=0;
   for(const marker of markers){
     if(marker.start<cursor)continue;
     const label=text.slice(marker.start,marker.end),action=termActions[marker.term.id];
-    output.push(text.slice(cursor,marker.start),<TermPopover key={marker.key} label="Definition" ariaLabel={action?`${label}: read related story; hover for definition`:undefined} onActivate={action} body={termBody(marker.term)}>{label}</TermPopover>);
+    const override=popoverOverride&&output.filter(item=>typeof item!=="string").length===0?popoverOverride:null;
+    output.push(text.slice(cursor,marker.start),<TermPopover key={marker.key} label={override?.label||"Definition"} ariaLabel={override?.ariaLabel||(action?`${label}: read related story; hover for definition`:undefined)} onActivate={action} body={override?.body||termBody(marker.term)}>{label}</TermPopover>);
     cursor=marker.end;
     if(/^[,.;:!?)]/.test(text.slice(cursor)))output.push(<span aria-hidden="true" key={`${marker.key}-joiner`}>{"\u2060"}</span>);
   }

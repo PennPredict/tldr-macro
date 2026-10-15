@@ -2,12 +2,11 @@
   {
     "group": "International Indices",
     "name": "DAX",
-    "available": false,
-    "withheld_reason": "current observation cannot be reconciled to the cited exchange page",
-    "display_value": "25,259.90",
-    "display_change": "−0.07%",
-    "change_percent": -0.07,
-    "description": "Germany's DAX was nearly flat Tuesday. Its exporters, manufacturers, and banks connect European growth with demand from the United States and China.",
+    "available": true,
+    "display_value": "25,236.07",
+    "display_change": "−0.4%",
+    "change_percent": -0.4,
+    "description": "Germany's DAX fell 0.4%. Its exporters and manufacturers connect European growth with demand from the United States and China.",
     "points": [
       25231.2,
       25254.21,
@@ -15,9 +14,9 @@
       25104.38,
       24913.1,
       25277.68,
-      25259.9
+      25236.07
     ],
-    "fetched_at": "2026-10-13T10:30:00-04:00",
+    "fetched_at": "2026-10-15T10:15:00-04:00",
     "frequency": "Daily",
     "data_provider": "Deutsche Börse/Xetra via Börse Stuttgart",
     "licensing_note": "Exchange index data are proprietary; linked exchange and market sources retained.",
@@ -35,12 +34,11 @@
   {
     "group": "International Indices",
     "name": "Nikkei 225",
-    "available": false,
-    "withheld_reason": "current observation cannot be reconciled to the cited index page",
-    "display_value": "67,777.52",
-    "display_change": "−1.82%",
-    "change_percent": -1.82,
-    "description": "Japan's Nikkei 225 fell 1.8% as technology exporters weakened. The index connects U.S. investors with chip demand, the yen, and Asian manufacturing.",
+    "available": true,
+    "display_value": "64,425.95",
+    "display_change": "−4.9%",
+    "change_percent": -4.9,
+    "description": "Japan's Nikkei 225 fell 4.9% as technology exporters weakened. It connects U.S. investors with chip demand, the yen, and Asian manufacturing.",
     "points": [
       65018.95,
       64136.25,
@@ -54,9 +52,9 @@
       70683.98,
       70035.7,
       69042.1,
-      67777.52
+      64425.95
     ],
-    "fetched_at": "2026-10-13T10:30:00-04:00",
+    "fetched_at": "2026-10-15T10:15:00-04:00",
     "frequency": "Daily",
     "data_provider": "Nikkei Inc.",
     "licensing_note": "Nikkei index data are copyrighted; citation and linked source retained.",
@@ -70,12 +68,11 @@
   {
     "group": "International Indices",
     "name": "KOSPI",
-    "available": false,
-    "withheld_reason": "current observation fails source reconciliation",
-    "display_value": "6,035.35",
-    "display_change": "−5.46%",
-    "change_percent": -5.46,
-    "description": "South Korea's KOSPI sank 5.5% as semiconductor shares sold off. Its export concentration offers an early read on chip competition and global manufacturing demand.",
+    "available": true,
+    "display_value": "5,554.22",
+    "display_change": "−7.6%",
+    "change_percent": -7.57,
+    "description": "South Korea's KOSPI sank 7.6% as chip shares sold off. Its export focus offers a read on semiconductor demand and global manufacturing.",
     "points": [
       6820.02,
       6835.8,
@@ -91,9 +88,9 @@
       6941.39,
       6803.9,
       6625.93,
-      6035.35
+      5554.22
     ],
-    "fetched_at": "2026-10-13T10:30:00-04:00",
+    "fetched_at": "2026-10-15T10:15:00-04:00",
     "frequency": "Daily",
     "data_provider": "Korea Exchange via KB Financial Group",
     "licensing_note": "Korea Exchange index data are proprietary; linked exchange and issuer sources retained.",
@@ -569,5 +566,35 @@
         "href": "https://fred.stlouisfed.org/series/PCOPPUSDM"
       }
     ]
+  },
+  {
+    "group": "Commodities",
+    "name": "Gold",
+    "available": true,
+    "display_value": "$4,158.63 per ounce",
+    "display_change": "+1.3%",
+    "change_percent": 1.3,
+    "description": "Gold rose 1.3% as investors sought a store of value. It matters because currencies, inflation, interest rates, and market stress can all affect demand.",
+    "points": [4104.3,4118.7,4096.5,4142.1,4158.63],
+    "fetched_at": "2026-10-15T10:15:00-04:00",
+    "frequency": "Intraday",
+    "data_provider": "CME Group",
+    "licensing_note": "CME market data are proprietary; the contract page is retained for verification.",
+    "sources": [{"name": "CME Group · Gold futures", "href": "https://www.cmegroup.com/markets/metals/precious/gold.html"}]
+  },
+  {
+    "group": "Commodities",
+    "name": "Silver futures",
+    "available": true,
+    "display_value": "$56.00 per ounce",
+    "display_change": "−6.0%",
+    "change_percent": -6,
+    "description": "Silver fell about 6%. It is both a precious metal and an industrial input used in electronics and solar equipment, so both investment and factory demand matter.",
+    "points": [59.7,59.2,58.6,57.8,56],
+    "fetched_at": "2026-10-15T10:15:00-04:00",
+    "frequency": "Intraday",
+    "data_provider": "CME Group",
+    "licensing_note": "CME market data are proprietary; the contract page is retained for verification.",
+    "sources": [{"name": "CME Group · Silver futures", "href": "https://www.cmegroup.com/markets/metals/precious/silver.html"}]
   }
 ]

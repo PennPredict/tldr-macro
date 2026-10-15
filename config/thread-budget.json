@@ -1,0 +1,11 @@
+{
+  "node_primary": 8,
+  "node_subline": 12,
+  "layer_label": 2,
+  "legend": 12,
+  "footer_note": 12,
+  "takeaway_body": 20,
+  "sticky_oneliner": 12,
+  "total_visible": 110,
+  "mandated_exceptions": ["Loans can cost more; some savings can earn more"]
+}

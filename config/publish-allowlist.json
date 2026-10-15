@@ -1,0 +1,47 @@
+{
+  "allowedExactPaths": [
+    "404.html",
+    "404/index.html",
+    "CNAME",
+    "favicon.svg",
+    "index.html",
+    "og.png",
+    "tldr-macro-logo-wide.png",
+    "_not-found/index.html"
+  ],
+  "allowedPrefixes": {
+    "_next/static/": [".css", ".js", ".woff2"],
+    "_not-found/": [".html", ".txt"],
+    "404/": [".html", ".txt"]
+  },
+  "allowedRootPatterns": [
+    "^__next\\..+\\.txt$",
+    "^index\\.txt$"
+  ],
+  "forbiddenSegments": [
+    ".git",
+    ".github",
+    ".next",
+    "config",
+    "data",
+    "docs",
+    "node_modules",
+    "reports",
+    "scripts",
+    "tests"
+  ],
+  "forbiddenBasenames": [
+    ".env",
+    "thread-approvals.json",
+    "THREAD_REPORT.md",
+    "THREAD_RECHECK.md",
+    "package-lock.json",
+    "package.json"
+  ],
+  "forbiddenExtensions": [
+    ".key",
+    ".map",
+    ".md",
+    ".pem"
+  ]
+}

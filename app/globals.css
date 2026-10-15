@@ -336,3 +336,61 @@ body { font-size:16px; }
 /* Inline glossary triggers must remain typographically indistinguishable from prose. */
 button.term { all:unset; display:inline; box-sizing:content-box; margin:0; padding:0; border:0; border-radius:0; background:none; color:inherit; font:inherit; font-size:inherit; font-weight:inherit; font-style:inherit; line-height:inherit; letter-spacing:inherit; vertical-align:baseline; white-space:normal; cursor:help; text-decoration-line:underline; text-decoration-style:dotted; text-decoration-color:var(--green); text-underline-offset:3px; }
 button.term:focus-visible { outline:3px solid var(--blue); outline-offset:3px; }
+
+/* Approved Oct. 14 Economic Thread evidence model. */
+.economic-thread { padding:28px 0 38px; }
+.economic-thread .section-heading { margin-bottom:14px; }
+.economic-thread .section-heading h2 { font-size:28px; }
+.thread-kicker { margin:0 0 5px; color:var(--green); font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.15em; }
+.thread-diagram { position:relative; min-height:430px; padding:18px; border:1px solid var(--line); background:linear-gradient(145deg,#0d1d29,#091720); }
+.thread-layers { position:relative; z-index:2; display:grid; grid-template-rows:88px 88px 96px 88px; row-gap:32px; }
+.thread-layer { display:grid; grid-template-columns:120px minmax(0,1fr); gap:24px; align-items:center; }
+.thread-layer>small { display:block; color:#92a5b1; font-size:11px; font-weight:700; text-align:right; text-transform:uppercase; letter-spacing:.12em; }
+.thread-layer>div { display:grid; grid-template-columns:repeat(2,minmax(0,260px)); justify-content:space-around; gap:32px; }
+.thread-layer[data-count="1"]>div { grid-template-columns:repeat(2,minmax(0,260px)); }
+.thread-layer[data-count="1"]>div>:first-child { grid-column:1; }
+.thread-node-wrap { min-width:0; }
+.thread-node { position:relative; width:100%; min-width:0; min-height:64px; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:9px 28px 9px 12px; border:1px solid #456172; background:#0b1b25; color:#d5dee4; font-size:14px; line-height:1.35; text-align:center; }
+.thread-node-copy { min-width:0; overflow-wrap:anywhere; }
+.thread-node-subline { display:block; margin-top:4px; color:#9eafb9; font-size:11px; line-height:1.3; }
+.thread-node:not(:has(.thread-node-info)) { padding-right:12px; }
+.thread-node-link { display:block; color:inherit; text-decoration:none; }
+.thread-node:has(.thread-node-link:hover),.thread-node:has(.thread-node-link:focus-visible) { color:var(--blue); border-color:var(--blue); }
+.thread-node-link:focus-visible { outline:3px solid var(--blue); outline-offset:4px; }
+.thread-node .popover-wrap:has(.thread-node-info) { position:absolute; top:9px; right:9px; line-height:0; }
+.thread-node-info { position:relative; box-sizing:border-box; width:16px; height:16px; display:inline-flex; align-items:center; justify-content:center; padding:0; border:1px solid #78909f; border-radius:50%; background:transparent; color:#aebdc6; font-size:10px; line-height:1; }
+.thread-node-info:after { content:""; position:absolute; inset:-4px; }
+.thread-node-info:hover,.thread-node-info:focus-visible { border-color:var(--blue); color:var(--blue); outline:2px solid var(--blue); outline-offset:2px; }
+.thread-node-caption { margin:5px 0 0; color:#92a5b1; font-size:10px; line-height:1.3; }
+.thread-connectors { position:absolute; z-index:1; inset:0; width:100%; height:100%; overflow:visible; pointer-events:none; }
+.thread-connectors path { fill:none; stroke:#748997; stroke-width:2; vector-effect:non-scaling-stroke; }
+.thread-connectors path.mechanism { stroke-dasharray:7 6; }
+.thread-connectors marker path { fill:#748997; stroke:none; }
+.thread-mobile-list { display:none; }
+.thread-mobile-list li { list-style:none; }
+.thread-sr-sequence { position:fixed!important; width:1px!important; height:1px!important; overflow:hidden!important; clip-path:inset(50%)!important; white-space:nowrap!important; }
+.thread-takeaway { margin:14px 0 0; padding-left:13px; border-left:2px solid var(--green); color:#bbc7ce; font-size:14px; line-height:1.5; }
+.thread-takeaway strong { color:#e0e7eb; }
+.thread-other-factors,.thread-calendar { margin:8px 0 0; color:#92a5b1; font-size:11px; line-height:1.45; }
+.thread-calendar strong { color:#b9c6ce; text-transform:uppercase; letter-spacing:.08em; }
+.thread-calendar a { color:#8fb9d6; text-decoration-thickness:1px; text-underline-offset:3px; }
+.thread-calendar a:focus-visible { outline:2px solid var(--blue); outline-offset:2px; }
+.thread-fallback { margin:22px 0 30px; color:var(--muted); font-size:14px; }
+.shell:has(.thread-node-link[href="#story-inflation"]:is(:hover,:focus-visible)) #story-inflation h3,.shell:has(.thread-node-link[href="#story-rates"]:is(:hover,:focus-visible)) #story-rates h3 { color:var(--blue); }
+.market-pending { opacity:.88; }
+.market-pending .market-title { align-items:flex-start; justify-content:space-between; }
+.market-pending .market-title span { max-width:120px; color:#e1ae77; font-size:11px; line-height:1.25; text-align:right; }
+.pending-line { height:62px; display:flex; align-items:center; gap:7px; margin:10px 0 3px; }
+.pending-line i { flex:1; height:1px; background:#385061; }
+.pending-line i:nth-child(2) { background:transparent; border-top:1px dashed #566d7b; }
+.verification-note { min-height:0!important; margin-top:10px!important; color:#899ca9!important; font-size:11px!important; }
+@media (max-width:639px) {
+  .economic-thread { padding:24px 0 30px; }
+  .thread-diagram { display:none; }
+  .thread-mobile-list { display:block; margin:0; padding:0; }
+  .thread-mobile-list li { position:relative; min-width:0; display:grid; grid-template-columns:82px minmax(0,1fr); gap:8px; align-items:center; padding:9px 0 24px; }
+  .thread-mobile-list li:not(:last-child):after { content:attr(data-edge) " ↓"; position:absolute; left:90px; bottom:2px; color:#879aa6; font-size:10px; text-transform:uppercase; letter-spacing:.08em; }
+  .thread-mobile-list small { color:#92a5b1; font-size:10px; text-transform:uppercase; letter-spacing:.08em; }
+  .thread-mobile-list .thread-node { width:100%; min-height:52px; }
+  .thread-calendar { overflow-wrap:anywhere; }
+}

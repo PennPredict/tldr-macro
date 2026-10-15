@@ -1,15 +1,15 @@
 # Data Report
 
-Generated: 2026-10-14T14:48:00.282Z
+Generated: 2026-10-15T14:52:08.601Z
 
 | Instrument | Provider | Series | Frequency | Latest timestamp | Baseline | Chart points | Status |
 |---|---|---|---|---|---|---:|---|
-| S&P 500 | S&P Dow Jones Indices via The Associated Press | SP500 | intraday | 2026-10-07T09:35:00-04:00 | prior close | 10 | Passed |
-| 10-year Treasury yield | U.S. Treasury | DGS10 | intraday | 2026-10-07T09:35:00-04:00 | prior close | 10 | Passed |
-| Brent crude oil | CME Group via The Associated Press | BZ | intraday | 2026-10-07T09:35:00-04:00 | prior close | 10 | Boundary — needs human check |
-| Nasdaq Composite | Nasdaq | NASDAQCOM | intraday | 2026-10-07T09:35:00-04:00 | prior close | 10 | Passed |
-| Dow Jones Industrial Average | S&P Dow Jones Indices | DJIA | intraday | 2026-10-07T09:35:00-04:00 | prior close | 10 | Passed |
-| Expected volatility | Cboe | VX/X1 | intraday | 2026-10-07T09:45:00-04:00 | prior close | 10 | Passed |
+| S&P 500 | S&P Dow Jones Indices via The Associated Press | SP500 | intraday | 2026-10-15T10:15:00-04:00 | prior close | 10 | Passed |
+| 10-year Treasury yield | U.S. Treasury | DGS10 | intraday | 2026-10-15T10:15:00-04:00 | prior close | 10 | Passed |
+| Brent crude oil | CME Group via The Associated Press | BZ | intraday | 2026-10-15T10:15:00-04:00 | prior close | 10 | Boundary — needs human check |
+| Nasdaq Composite | Nasdaq | NASDAQCOM | intraday | 2026-10-15T10:15:00-04:00 | prior close | 10 | Passed |
+| Dow Jones Industrial Average | S&P Dow Jones Indices | DJIA | intraday | 2026-10-15T10:15:00-04:00 | prior close | 10 | Passed |
+| Expected volatility | Cboe | VX/X1 | intraday | 2026-10-15T10:15:00-04:00 | prior close | 10 | Passed |
 | DAX | Deutsche Börse/Xetra | DAX | daily close | 2026-10-06T16:00:00+02:00 | Oct 5 close | 3 | Withheld: fewer than 20 daily observations |
 | Nikkei 225 | Nikkei Inc. | N225 | daily close | 2026-10-06T15:00:00+09:00 | Oct 5 close | 10 | Withheld: fewer than 20 daily observations |
 | KOSPI | Korea Exchange | KOSPI | daily close | 2026-10-06T15:30:00+09:00 | Oct 5 close | 12 | Withheld: fewer than 20 daily observations |
@@ -51,13 +51,18 @@ Generated: 2026-10-14T14:48:00.282Z
 
 | Instrument | Fetched timestamp | Baseline | Display | Provider |
 |---|---|---|---|---|
-| S&P 500 | 2026-10-14T09:35:00-04:00 | Tuesday close 7,805.45 · Wednesday 9:35 AM 7,769.18 | 7,769.18 (−0.5%) | S&P Dow Jones Indices and The Associated Press |
-| 10-year Treasury yield | 2026-10-14T09:35:00-04:00 | Tuesday close 5.21% · Wednesday 9:35 AM 5.28% | 5.28% (+0.07 points) | U.S. Treasury and The Associated Press |
-| Brent crude oil | 2026-10-14T09:35:00-04:00 | Tuesday close $105.69 · Wednesday 9:35 AM $105.77 | $105.77 (+0.1%) | CME Group and The Associated Press |
-| Nasdaq Composite | 2026-10-14T09:35:00-04:00 | Tuesday close 27,204.38 · Wednesday 9:35 AM 27,033.16 | 27,033.16 (−0.6%) | Nasdaq and The Associated Press |
-| Dow Jones Industrial Average | 2026-10-14T09:35:00-04:00 | Tuesday close 51,670.10 · Wednesday 9:35 AM 51,584.99 | 51,584.99 (−0.2%) | S&P Dow Jones Indices and The Associated Press |
-| Expected volatility | 2026-10-14T09:35:00-04:00 | Tuesday close 15.27 · Wednesday 9:35 AM 15.28 | 15.28 (+0.1%) | Cboe closing data |
+| S&P 500 | 2026-10-15T10:15:00-04:00 | Wednesday close 7,718.94 · Thursday 10:15 AM 7,695.78 | 7,695.78 (−0.3%) | S&P Dow Jones Indices and The Associated Press |
+| 10-year Treasury yield | 2026-10-15T10:15:00-04:00 | Wednesday close 5.19% · Thursday 10:15 AM 5.06% | 5.06% (−0.13 points) | U.S. Treasury and The Associated Press |
+| Brent crude oil | 2026-10-15T10:15:00-04:00 | Wednesday close $106.06 · Thursday 10:15 AM $104.62 | $104.62 (−1.4%) | CME Group and The Associated Press |
+| Nasdaq Composite | 2026-10-15T10:15:00-04:00 | Wednesday close 26,692.87 · Thursday 10:15 AM 26,452.63 | 26,452.63 (−0.9%) | Nasdaq and The Associated Press |
+| Dow Jones Industrial Average | 2026-10-15T10:15:00-04:00 | Wednesday close 51,621.48 · Thursday 10:15 AM 51,912.48 | 51,912.48 (+0.6%) | S&P Dow Jones Indices and The Associated Press |
+| Expected volatility | 2026-10-15T10:15:00-04:00 | Wednesday close 16.87 · Thursday 10:15 AM 17.50 | 17.50 (+3.7%) | Cboe closing data |
 
+- DAX: 2026-10-15T10:15:00-04:00; 25,236.07; −0.4%; Deutsche Börse/Xetra via Börse Stuttgart
+- Nikkei 225: 2026-10-15T10:15:00-04:00; 64,425.95; −4.9%; Nikkei Inc.
+- KOSPI: 2026-10-15T10:15:00-04:00; 5,554.22; −7.6%; Korea Exchange via KB Financial Group
 - Nasdaq Composite: 2026-10-02T16:00:00-04:00; 27,190.86; +1.19%; Nasdaq via FRED
 - Dow Jones Industrial Average: 2026-10-05T10:10:00-04:00; 51,267.90; +0.18%; S&P Dow Jones Indices via FRED
 - 30-year fixed mortgage rate: 2026-10-08T12:00:00-04:00; 7.40%; +0.12 percentage points; Freddie Mac
+- Gold: 2026-10-15T10:15:00-04:00; $4,158.63 per ounce; +1.3%; CME Group
+- Silver futures: 2026-10-15T10:15:00-04:00; $56.00 per ounce; −6.0%; CME Group

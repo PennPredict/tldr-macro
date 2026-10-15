@@ -1,29 +1,29 @@
 [
   {
-    "tag": "Trade", "qualifies": true, "headline": "China Reports Export Surge",
-    "what": "China said September exports increased 36.3% from a year earlier, while imports advanced 31%.",
-    "context": "Its trade surplus reached $133.5 billion for the month and $938 billion through September.",
-    "why_it_matters": "Stronger Chinese trade can signal overseas demand and affect U.S. manufacturers, shipping companies, and commodity prices.",
-    "concept_terms": ["trade surplus", "overseas demand"],
-    "sources": [{"name": "World Trade Organization trade statistics", "href": "https://www.wto.org/english/res_e/statis_e/statis_e.htm", "type": "primary"}, {"name": "The Associated Press", "href": "https://apnews.com/article/china-trade-exports-db43e08437b65f65c2ead64c82f9b990", "type": "wire"}],
-    "developing": false, "as_of": "2026-10-14T09:35:00-04:00", "importance_score": 95, "needs_human_check": false
+    "tag":"Global markets","qualifies":true,"headline":"Asian Chip Markets Tumble",
+    "what":"South Korea's Kospi lost 7.6%, while Japan's Nikkei 225 fell 4.9% as major chip and AI-related shares declined.",
+    "context":"The Kospi's heavy exposure to Samsung Electronics and SK Hynix made the regional decline especially sharp.",
+    "why_it_matters":"Doubts about AI spending can move chip suppliers and U.S. technology shares across borders.",
+    "concept_terms":["Kospi","chip suppliers"],
+    "sources":[{"name":"Korea Exchange","href":"https://global.krx.co.kr/","type":"primary"},{"name":"The Associated Press","href":"https://apnews.com/article/stock-markets-kospi-tech-shares-e889ad7dee2b7dd959f1b8bc87366914","type":"wire"}],
+    "developing":false,"as_of":"2026-10-15T10:15:00-04:00","importance_score":98,"needs_human_check":false
   },
   {
-    "tag": "Energy", "qualifies": true, "headline": "IEA Cuts Oil Demand Outlook",
-    "what": "The International Energy Agency expects world oil demand to decline by 2.6 million barrels a day this year.",
-    "context": "It expects only a partial recovery next year as high prices weaken consumption and disrupt supply.",
-    "why_it_matters": "The balance between lower demand and constrained supply can steer fuel prices, inflation, and transportation costs.",
-    "concept_terms": ["oil demand", "constrained supply"],
-    "sources": [{"name": "International Energy Agency", "href": "https://www.iea.org/reports/oil-market-report-october-2026", "type": "primary"}, {"name": "The Associated Press", "href": "https://apnews.com/article/oil-iea-diesel-trump-iran-opec-putin-811b5e2f17b74f81de9e5f9f6128497c", "type": "wire"}],
-    "developing": false, "as_of": "2026-10-14T09:35:00-04:00", "importance_score": 93, "needs_human_check": false
+    "tag":"Energy","qualifies":true,"headline":"Oil Shock Tests African Growth",
+    "what":"The IMF said African economies have weathered the Iran-war energy shock better than expected, though reduced foreign aid leaves them vulnerable.",
+    "context":"Many countries buy fuel in dollars, making expensive energy and a strong dollar harder to absorb.",
+    "why_it_matters":"Slower growth or debt stress can affect global lenders, commodity demand, and trade partners.",
+    "concept_terms":["energy shock","foreign aid"],
+    "sources":[{"name":"International Monetary Fund","href":"https://www.imf.org/en/Topics/imf-and-africa","type":"primary"},{"name":"The Associated Press","href":"https://apnews.com/article/imf-africa-economy-iran-war-a9d46861d0fc12826d1719f9433a1e71","type":"wire"}],
+    "developing":false,"as_of":"2026-10-15T10:15:00-04:00","importance_score":88,"needs_human_check":false
   },
   {
-    "tag": "Conflict", "qualifies": true, "headline": "Strike Damages Aramco Offices",
-    "what": "A Houthi strike damaged upper floors at Saudi Aramco's headquarters, including the chief executive's office. No casualties were reported.",
-    "context": "The incident extended the regional conflict to the offices of the world's largest oil exporter.",
-    "why_it_matters": "Escalation around Saudi energy infrastructure can raise concern about oil supply, shipping, and global fuel costs.",
-    "concept_terms": ["energy infrastructure", "supply risk"],
-    "sources": [{"name": "U.S. Energy Information Administration", "href": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints", "type": "primary"}, {"name": "The Associated Press", "href": "https://apnews.com/article/saudi-arabia-yemen-strikes-mideast-conflict-riyadh-c81a91347c00b17097c8fafde7e4eeec", "type": "wire"}],
-    "developing": true, "as_of": "2026-10-14T09:35:00-04:00", "importance_score": 90, "needs_human_check": true
+    "tag":"Trade","qualifies":true,"headline":"China Trade Surplus Nears Record",
+    "what":"China reported a 36.3% yearly rise in September exports and a monthly trade surplus of $133.5 billion.",
+    "context":"Exports remain a major source of growth while China's domestic demand stays weak.",
+    "why_it_matters":"The imbalance can shape U.S. trade policy, shipping demand, and competition for manufacturers.",
+    "concept_terms":["trade surplus","domestic demand"],
+    "sources":[{"name":"World Trade Organization","href":"https://www.wto.org/english/res_e/statis_e/statis_e.htm","type":"primary"},{"name":"The Associated Press","href":"https://apnews.com/article/china-trade-exports-db43e08437b65f65c2ead64c82f9b990","type":"wire"}],
+    "developing":false,"as_of":"2026-10-15T10:15:00-04:00","importance_score":84,"needs_human_check":false
   }
 ]

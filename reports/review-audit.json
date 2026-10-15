@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T14:48:00.283Z",
+  "generated_at": "2026-10-15T14:52:08.602Z",
   "status": "passed",
   "checks": {
     "instrument_count": 16,
@@ -10,7 +10,12 @@
       "Nasdaq Composite",
       "Dow Jones Industrial Average",
       "Expected volatility",
-      "30-year fixed mortgage rate"
+      "DAX",
+      "Nikkei 225",
+      "KOSPI",
+      "30-year fixed mortgage rate",
+      "Gold",
+      "Silver futures"
     ],
     "global_items_visible": 3,
     "badge_signs": []

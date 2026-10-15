@@ -1,0 +1,11 @@
+{
+  "banned": ["expectations","valuation","discount","discounted","yield","core","basis points","equities","benchmark","hawkish","dovish","tightening","priced in","risk appetite","rate-sensitive"],
+  "exceptions": {
+    "yield": ["government borrowing rate (10-year yield)", "also called the 10-year treasury yield"],
+    "core": ["excluding food and energy (core)"],
+    "discount": ["popover precise version"],
+    "discounted": ["popover precise version"],
+    "valuation": ["popover precise version"],
+    "expectations": ["popover precise version"]
+  }
+}

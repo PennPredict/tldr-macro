@@ -1,13 +1,13 @@
 {
   "guarded_hashes": {
-    "app/globals.css": "a04edc19211fc9f0a771e54c55f3c20d9e88ec177fad57cd82d4852ea9d67c3d",
+    "app/globals.css": "b96e5dc430055807d2bcc2a3ea1aa740eefc1ec456408853a7567fd4ddbd646a",
     "public/tldr-macro-logo-wide.png": "a4a01b92c7e033a8469120c672064a9a7f82541814bf09e537ea3cd696de2234",
     "public/favicon.svg": "e6d2e59b7b5bbb0342e0fb496dfc262decbfe4426bbb7b047aec8d467d1dc6f7",
     "public/og.png": "410f61499cc4828d8744d7313ba10f614ac81794f2df571fe493c68926cef23e"
   },
   "computed_styles": {
-    "375": {"body":{"fontSize":"15px","backgroundColor":"rgb(8, 19, 30)"},".shell":{"margin":"0px 12px"},".section-heading h2":{"fontSize":"38px","fontFamily":"Newsreader, \"Newsreader Fallback\", serif"},".headline-card":{"display":"grid","padding":"30px 0px 24px"}},
-    "768": {"body":{"fontSize":"16px","backgroundColor":"rgb(8, 19, 30)"},".shell":{"margin":"0px 32px"},".section-heading h2":{"fontSize":"38px","fontFamily":"Newsreader, \"Newsreader Fallback\", serif"},".headline-card":{"display":"grid","padding":"34px 0px 28px"}},
-    "1280": {"body":{"fontSize":"16px","backgroundColor":"rgb(8, 19, 30)"},".shell":{"margin":"0px 32px"},".section-heading h2":{"fontSize":"38px","fontFamily":"Newsreader, \"Newsreader Fallback\", serif"},".headline-card":{"display":"grid","padding":"34px 0px 28px"}}
+    "375": {"body":{"fontSize":"15px","backgroundColor":"rgb(8, 19, 30)"},".shell":{"margin":"0px 12px"},"#stories-title":{"fontSize":"38px","fontFamily":"Newsreader, \"Newsreader Fallback\", serif"},".headline-card":{"display":"grid","padding":"30px 0px 24px"}},
+    "768": {"body":{"fontSize":"16px","backgroundColor":"rgb(8, 19, 30)"},".shell":{"margin":"0px 32px"},"#stories-title":{"fontSize":"38px","fontFamily":"Newsreader, \"Newsreader Fallback\", serif"},".headline-card":{"display":"grid","padding":"34px 0px 28px"}},
+    "1280": {"body":{"fontSize":"16px","backgroundColor":"rgb(8, 19, 30)"},".shell":{"margin":"0px 32px"},"#stories-title":{"fontSize":"38px","fontFamily":"Newsreader, \"Newsreader Fallback\", serif"},".headline-card":{"display":"grid","padding":"34px 0px 28px"}}
   }
 }

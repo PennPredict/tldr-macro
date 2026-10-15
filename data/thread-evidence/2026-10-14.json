@@ -1,0 +1,185 @@
+[
+  {
+    "element_id": "cpi-release",
+    "type": "FACT",
+    "text": "Consumer-price growth accelerated — Gas drove most of the monthly rise",
+    "source_url": "https://www.bls.gov/news.release/archives/cpi_10142026.htm",
+    "retrieved_at": "2026-10-14T09:35:00-04:00",
+    "matched_excerpt": "The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.6 percent on a seasonally adjusted basis in September after rising 0.4 percent in August.",
+    "checks_passed": [
+      "plain wording",
+      "word cap",
+      "provenance",
+      "reading level"
+    ],
+    "checks_failed": []
+  },
+  {
+    "element_id": "inflation-rate-expectations",
+    "type": "MECHANISM",
+    "text": "Investors may expect higher interest rates",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm",
+    "retrieved_at": "2026-10-14T09:35:00-04:00",
+    "matched_excerpt": "Faster price growth can make investors expect higher interest rates. The Federal Open Market Committee sets a target range for the federal funds rate; expected",
+    "checks_passed": [
+      "plain wording",
+      "word cap",
+      "provenance",
+      "reading level"
+    ],
+    "checks_failed": []
+  },
+  {
+    "element_id": "rates-to-valuations",
+    "type": "MECHANISM",
+    "text": "Higher rates can make future profits worth less",
+    "source_url": "https://www.federalreserve.gov/frrs/guidance/interest-rate-risk-joint-agency-policy-statement.htm",
+    "retrieved_at": "2026-10-14T09:35:00-04:00",
+    "matched_excerpt": "Present value discounts expected future cash flows at a market rate; a higher discount rate lowers what future profits are worth today, all else equal.",
+    "checks_passed": [
+      "plain wording",
+      "word cap",
+      "provenance",
+      "reading level"
+    ],
+    "checks_failed": []
+  },
+  {
+    "element_id": "yield10-market",
+    "type": "FACT",
+    "text": "Government borrowing rates rose moderately",
+    "registry_id": "yield10",
+    "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates",
+    "retrieved_at": "2026-10-14T09:35:00-04:00",
+    "matched_excerpt": "The 10-year Treasury yield is the market yield on U.S. Treasury debt with a 10-year maturity; it influences many longer-term borrowing rates. As of 9:35",
+    "checks_passed": [
+      "plain wording",
+      "word cap",
+      "provenance",
+      "reading level"
+    ],
+    "checks_failed": []
+  },
+  {
+    "element_id": "nasdaq-market",
+    "type": "FACT",
+    "text": "Tech-heavy Nasdaq fell moderately",
+    "registry_id": "nasdaq",
+    "source_url": "https://www.nasdaq.com/products/global-indexes/nasdaq-composite",
+    "retrieved_at": "2026-10-14T09:35:00-04:00",
+    "matched_excerpt": "The Nasdaq Composite is a market-cap-weighted index of thousands of Nasdaq-listed stocks, with a large technology weight. As of 9:35 AM ET.",
+    "checks_passed": [
+      "plain wording",
+      "word cap",
+      "provenance",
+      "reading level"
+    ],
+    "checks_failed": []
+  },
+  {
+    "element_id": "borrowing-costs",
+    "type": "MECHANISM",
+    "text": "Loans can cost more; some savings can earn more",
+    "source_url": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm",
+    "retrieved_at": "2026-10-14T09:35:00-04:00",
+    "matched_excerpt": "Standard fixed-payment amortization with monthly compounding. Principal $300,000; 360 payments; Freddie Mac 30-year fixed rate 7.40% for the week of Oct. 8, 2026. Not a",
+    "checks_passed": [
+      "plain wording",
+      "word cap",
+      "provenance",
+      "reading level"
+    ],
+    "checks_failed": []
+  },
+  {
+    "element_id": "prices-to-expectations",
+    "type": "MECHANISM",
+    "text": "cpi-release → inflation-rate-expectations",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm",
+    "retrieved_at": "2026-10-14T09:35:00-04:00",
+    "matched_excerpt": "",
+    "checks_passed": [
+      "vetted mechanism"
+    ],
+    "checks_failed": []
+  },
+  {
+    "element_id": "expectations-to-yield",
+    "type": "MECHANISM",
+    "text": "inflation-rate-expectations → yield10-market",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm",
+    "retrieved_at": "2026-10-14T09:35:00-04:00",
+    "matched_excerpt": "",
+    "checks_passed": [
+      "vetted mechanism"
+    ],
+    "checks_failed": []
+  },
+  {
+    "element_id": "expectations-to-valuations",
+    "type": "MECHANISM",
+    "text": "inflation-rate-expectations → rates-to-valuations",
+    "source_url": "https://www.federalreserve.gov/frrs/guidance/interest-rate-risk-joint-agency-policy-statement.htm",
+    "retrieved_at": "2026-10-14T09:35:00-04:00",
+    "matched_excerpt": "",
+    "checks_passed": [
+      "vetted mechanism"
+    ],
+    "checks_failed": []
+  },
+  {
+    "element_id": "valuations-to-nasdaq",
+    "type": "MECHANISM",
+    "text": "rates-to-valuations → nasdaq-market",
+    "source_url": "https://www.federalreserve.gov/frrs/guidance/interest-rate-risk-joint-agency-policy-statement.htm",
+    "retrieved_at": "2026-10-14T09:35:00-04:00",
+    "matched_excerpt": "",
+    "checks_passed": [
+      "vetted mechanism"
+    ],
+    "checks_failed": []
+  },
+  {
+    "element_id": "yield-to-borrowing",
+    "type": "MECHANISM",
+    "text": "yield10-market → borrowing-costs",
+    "source_url": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm",
+    "retrieved_at": "2026-10-14T09:35:00-04:00",
+    "matched_excerpt": "",
+    "checks_passed": [
+      "vetted mechanism"
+    ],
+    "checks_failed": []
+  },
+  {
+    "element_id": "yield-growth-debt-caption",
+    "type": "CAPTION",
+    "text": "Also cited by The Associated Press: growth and government debt",
+    "source_url": "https://apnews.com/article/stock-markets-earnings-bonds-artificial-intelligence-704d3190f0fba2908df07c85f26346ec",
+    "retrieved_at": "2026-10-14T09:35:00-04:00",
+    "matched_excerpt": "The U.S. economy is still growing, alongside longstanding worries about fast-rising government debt loads, sending yields higher.",
+    "checks_passed": [
+      "same_day",
+      "asset_move_factor_match",
+      "not_duplicate_mechanism"
+    ],
+    "checks_failed": [],
+    "approved": false
+  },
+  {
+    "element_id": "nasdaq-bank-earnings-caption",
+    "type": "CAPTION",
+    "text": "Also cited by The Associated Press: mixed financial-company earnings",
+    "source_url": "https://apnews.com/article/stock-markets-earnings-bonds-artificial-intelligence-704d3190f0fba2908df07c85f26346ec",
+    "retrieved_at": "2026-10-14T09:35:00-04:00",
+    "matched_excerpt": "BlackRock rose after stronger results, while Bank of America and State Street fell after weaker results.",
+    "checks_passed": [
+      "same_day",
+      "not_duplicate_mechanism"
+    ],
+    "checks_failed": [
+      "asset_move_factor_match"
+    ],
+    "approved": false
+  }
+]

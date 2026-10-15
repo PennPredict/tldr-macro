@@ -1,18 +1,18 @@
 {
-  "edition_date": "2026-10-14",
-  "updated_at": "2026-10-14T09:35:00-04:00",
-  "summary": "Shares slipped; Treasury yields rose; crude oil held steady.",
+  "edition_date": "2026-10-15",
+  "updated_at": "2026-10-15T10:15:00-04:00",
+  "summary": "Wholesale prices rose 1.3% in September; government borrowing rates fell; Nasdaq fell.",
   "markets": [
     {
       "name": "S&P 500",
       "kind": "equity_index",
-      "value": 7769.18,
-      "display_value": "7,769.18",
+      "value": 7695.78,
+      "display_value": "7,695.78",
       "baseline": "prior_close",
-      "prior_close": 7805.45,
-      "change_percent": -0.46,
-      "display_change": "−0.5%",
-      "description": "The S&P 500 tracks 500 large U.S. companies and many retirement funds. It was 0.5% lower at 9:35 AM after a hotter inflation report.",
+      "prior_close": 7718.94,
+      "change_percent": -0.3,
+      "display_change": "−0.3%",
+      "description": "The S&P 500 tracks 500 large U.S. companies and many retirement funds. It slipped 0.3%, though most of its stocks rose.",
       "so_what": {
         "channel_id": "sp500",
         "context": {
@@ -35,8 +35,8 @@
         }
       ],
       "data_source": "S&P Dow Jones Indices and The Associated Press",
-      "fetched_at": "2026-10-14T09:35:00-04:00",
-      "range": "Tuesday close 7,805.45 · Wednesday 9:35 AM 7,769.18",
+      "fetched_at": "2026-10-15T10:15:00-04:00",
+      "range": "Wednesday close 7,718.94 · Thursday 10:15 AM 7,695.78",
       "points": [
         7731,
         7741,
@@ -49,8 +49,8 @@
         7794,
         7811.54,
         7807.24,
-        7805.45,
-        7769.18
+        7718.94,
+        7695.78
       ],
       "sources": [
         {
@@ -62,13 +62,13 @@
     {
       "name": "10-year Treasury yield",
       "kind": "yield",
-      "value": 5.28,
-      "display_value": "5.28%",
+      "value": 5.06,
+      "display_value": "5.06%",
       "baseline": "prior_close",
-      "prior_close": 5.21,
-      "change_percent": 1.34,
-      "display_change": "+0.07 points",
-      "description": "The 10-year Treasury yield helps set long-term borrowing costs. It rose to 5.28%, which can lift rates on mortgages and business loans.",
+      "prior_close": 5.19,
+      "change_percent": -2.5,
+      "display_change": "−0.13 points",
+      "description": "The 10-year Treasury yield helps set long-term borrowing costs. It fell to 5.06% as investors bought government bonds.",
       "so_what": {
         "channel_id": "yield10",
         "context": {
@@ -91,8 +91,8 @@
         }
       ],
       "data_source": "U.S. Treasury and The Associated Press",
-      "fetched_at": "2026-10-14T09:35:00-04:00",
-      "range": "Tuesday close 5.21% · Wednesday 9:35 AM 5.28%",
+      "fetched_at": "2026-10-15T10:15:00-04:00",
+      "range": "Wednesday close 5.19% · Thursday 10:15 AM 5.06%",
       "points": [
         4.98,
         5.02,
@@ -104,37 +104,33 @@
         5.22,
         5.23,
         5.24,
-        5.21,
-        5.28
+        5.19,
+        5.06
       ],
       "sources": [
         {
           "name": "U.S. Treasury",
           "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"
-        },
-        {
-          "name": "The Associated Press",
-          "href": "https://apnews.com/article/stocks-markets-us-tech-oil-mideast-a2edaf9ec297fb75ff2a4e245063ec08"
         }
       ]
     },
     {
       "name": "Brent crude oil",
       "kind": "commodity",
-      "value": 105.77,
-      "display_value": "$105.77",
+      "value": 104.62,
+      "display_value": "$104.62",
       "baseline": "prior_close",
-      "prior_close": 105.69,
-      "change_percent": 0.08,
-      "display_change": "+0.1%",
-      "description": "Brent crude is a reference price for oil sold around the world. It held near $106, keeping fuel and shipping costs elevated.",
+      "prior_close": 106.06,
+      "change_percent": -1.36,
+      "display_change": "−1.4%",
+      "description": "Brent crude is a reference price for oil sold around the world. It fell 1.4%, but remained above $100 a barrel.",
       "so_what": {
         "channel_id": "brent",
         "context": {
           "type": "attributed",
-          "text": "The Associated Press reported that war-related fuel costs continued to feed into inflation.",
-          "source_url": "https://apnews.com/article/stock-markets-earnings-bonds-artificial-intelligence-704d3190f0fba2908df07c85f26346ec",
-          "evidence": "Published Oct. 14, 2026; the 9:35 AM oil price and direction match the report."
+          "text": "War-related supply risk still keeps energy costs unusually high.",
+          "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints",
+          "evidence": "Oil remained above $100 despite Thursday's decline."
         }
       },
       "explains": [],
@@ -151,8 +147,8 @@
         }
       ],
       "data_source": "CME Group and The Associated Press",
-      "fetched_at": "2026-10-14T09:35:00-04:00",
-      "range": "Tuesday close $105.69 · Wednesday 9:35 AM $105.77",
+      "fetched_at": "2026-10-15T10:15:00-04:00",
+      "range": "Wednesday close $106.06 · Thursday 10:15 AM $104.62",
       "points": [
         103.62,
         103.21,
@@ -165,30 +161,26 @@
         102.5,
         104.72,
         106.65,
-        105.69,
-        105.77
+        106.06,
+        104.62
       ],
       "sources": [
         {
           "name": "CME Group Brent futures",
           "href": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html"
-        },
-        {
-          "name": "The Associated Press",
-          "href": "https://apnews.com/article/stock-markets-earnings-bonds-artificial-intelligence-704d3190f0fba2908df07c85f26346ec"
         }
       ]
     },
     {
       "name": "Nasdaq Composite",
       "kind": "equity_index",
-      "value": 27033.16,
-      "display_value": "27,033.16",
+      "value": 26452.63,
+      "display_value": "26,452.63",
       "baseline": "prior_close",
-      "prior_close": 27204.38,
-      "change_percent": -0.63,
-      "display_change": "−0.6%",
-      "description": "The Nasdaq Composite tracks thousands of listed companies and leans toward technology. It fell 0.6%, showing that higher rates weighed more on growth stocks.",
+      "prior_close": 26692.87,
+      "change_percent": -0.9,
+      "display_change": "−0.9%",
+      "description": "The Nasdaq Composite tracks thousands of listed companies and leans toward technology. It fell 0.9% as large AI stocks weakened.",
       "so_what": {
         "channel_id": "nasdaq",
         "context": {
@@ -211,8 +203,8 @@
         }
       ],
       "data_source": "Nasdaq and The Associated Press",
-      "fetched_at": "2026-10-14T09:35:00-04:00",
-      "range": "Tuesday close 27,204.38 · Wednesday 9:35 AM 27,033.16",
+      "fetched_at": "2026-10-15T10:15:00-04:00",
+      "range": "Wednesday close 26,692.87 · Thursday 10:15 AM 26,452.63",
       "points": [
         26797.54,
         26871.6,
@@ -225,26 +217,30 @@
         27310,
         27366.17,
         27245.9,
-        27204.38,
-        27033.16
+        26692.87,
+        26452.63
       ],
       "sources": [
         {
           "name": "Nasdaq Composite",
           "href": "https://www.nasdaq.com/market-activity/index/comp"
+        },
+        {
+          "name": "The Associated Press",
+          "href": "https://apnews.com/article/stock-markets-kospi-tech-shares-e889ad7dee2b7dd959f1b8bc87366914"
         }
       ]
     },
     {
       "name": "Dow Jones Industrial Average",
       "kind": "equity_index",
-      "value": 51584.99,
-      "display_value": "51,584.99",
+      "value": 51912.48,
+      "display_value": "51,912.48",
       "baseline": "prior_close",
-      "prior_close": 51670.1,
-      "change_percent": -0.16,
-      "display_change": "−0.2%",
-      "description": "The Dow tracks 30 large, well-established U.S. companies. It dipped 0.2%, a smaller decline than the broader and technology-heavy indexes.",
+      "prior_close": 51621.48,
+      "change_percent": 0.56,
+      "display_change": "+0.6%",
+      "description": "The Dow tracks 30 large, established U.S. companies. It rose 0.6% as nontechnology shares held up better.",
       "so_what": {
         "channel_id": "dow",
         "context": {
@@ -267,8 +263,8 @@
         }
       ],
       "data_source": "S&P Dow Jones Indices and The Associated Press",
-      "fetched_at": "2026-10-14T09:35:00-04:00",
-      "range": "Tuesday close 51,670.10 · Wednesday 9:35 AM 51,584.99",
+      "fetched_at": "2026-10-15T10:15:00-04:00",
+      "range": "Wednesday close 51,621.48 · Thursday 10:15 AM 51,912.48",
       "points": [
         51349.92,
         50906.05,
@@ -281,26 +277,30 @@
         51510,
         51654.95,
         51850.55,
-        51670.1,
-        51584.99
+        51621.48,
+        51912.48
       ],
       "sources": [
         {
           "name": "S&P Dow Jones Indices",
           "href": "https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/"
+        },
+        {
+          "name": "The Associated Press",
+          "href": "https://apnews.com/article/stock-markets-kospi-tech-shares-e889ad7dee2b7dd959f1b8bc87366914"
         }
       ]
     },
     {
       "name": "Expected volatility",
       "kind": "volatility",
-      "value": 15.28,
-      "display_value": "15.28",
+      "value": 17.5,
+      "display_value": "17.50",
       "baseline": "prior_close",
-      "prior_close": 15.27,
-      "change_percent": 0.07,
-      "display_change": "+0.1%",
-      "description": "The VIX estimates how much investors expect the S&P 500 to move over the next month. It was nearly unchanged at 15.28, still a low reading.",
+      "prior_close": 16.87,
+      "change_percent": 3.73,
+      "display_change": "+3.7%",
+      "description": "The VIX estimates expected S&P 500 swings over the next month. It rose to 17.50 as investors paid more for protection.",
       "so_what": {
         "channel_id": "vix",
         "context": {
@@ -323,8 +323,8 @@
         }
       ],
       "data_source": "Cboe closing data",
-      "fetched_at": "2026-10-14T09:35:00-04:00",
-      "range": "Tuesday close 15.27 · Wednesday 9:35 AM 15.28",
+      "fetched_at": "2026-10-15T10:15:00-04:00",
+      "range": "Wednesday close 16.87 · Thursday 10:15 AM 17.50",
       "points": [
         15.9,
         15.7,
@@ -337,8 +337,8 @@
         15.01,
         14.84,
         15.21,
-        15.27,
-        15.28
+        16.87,
+        17.5
       ],
       "sources": [
         {
@@ -350,49 +350,34 @@
   ],
   "calendar": [
     {
-      "date": "OCT 15",
+      "date": "OCT 16",
       "time": "8:30 AM ET",
-      "start_at": "2026-10-15T08:30:00-04:00",
-      "title": "Retail sales",
-      "definition": "Measures consumer spending at stores, restaurants, and online sellers.",
-      "prior": "September sales · Census Bureau",
+      "start_at": "2026-10-16T08:30:00-04:00",
+      "title": "Import and Export Prices",
+      "definition": "Tracks price changes for goods bought from and sold to other countries.",
+      "prior": "September trade prices · BLS",
       "consensus": "",
-      "hot_label": "If spending accelerates",
-      "cool_label": "If spending slows",
-      "hot": "Stronger sales can show that customers are still spending and can support company revenue.",
-      "cool": "Weaker sales can point to household caution and softer demand.",
-      "source": "Census retail schedule",
-      "href": "https://www.census.gov/retail/release_schedule.html"
-    },
-    {
-      "date": "OCT 15",
-      "time": "8:30 AM ET",
-      "start_at": "2026-10-15T08:30:00-04:00",
-      "title": "Producer Price Index (PPI)",
-      "definition": "Tracks prices received by domestic producers before goods and services reach consumers.",
-      "prior": "September producer prices · BLS",
-      "consensus": "",
-      "hot_label": "If producer prices rise faster",
-      "cool_label": "If producer prices ease",
-      "hot": "Faster increases can raise concern about costs reaching consumer prices.",
-      "cool": "Softer readings can reduce concern about inflation moving through supply chains.",
+      "hot_label": "If import prices rise faster",
+      "cool_label": "If import prices ease",
+      "hot": "Higher import costs can reach business costs and consumer prices.",
+      "cool": "Lower readings can reduce one source of inflation.",
       "source": "BLS release calendar",
-      "href": "https://www.bls.gov/schedule/2026/10_sched.htm"
+      "href": "https://www.bls.gov/schedule/2026/10_sched_list.htm"
     },
     {
-      "date": "OCT 15",
-      "time": "8:30 AM ET",
-      "start_at": "2026-10-15T08:30:00-04:00",
-      "title": "Initial jobless claims",
-      "definition": "Counts new applications for unemployment benefits and offers a weekly check on layoffs.",
-      "prior": "Weekly labor-market reading · Labor Department",
+      "date": "OCT 20",
+      "time": "10:00 AM ET",
+      "start_at": "2026-10-20T10:00:00-04:00",
+      "title": "State Employment and Unemployment",
+      "definition": "Compares job growth and unemployment across states.",
+      "prior": "September state labor data · BLS",
       "consensus": "",
-      "hot_label": "If claims rise sharply",
-      "cool_label": "If claims stay low",
-      "hot": "A jump can suggest layoffs are spreading and household income may weaken.",
-      "cool": "A low reading can show employers are still holding on to workers.",
-      "source": "Labor Department release calendar",
-      "href": "https://www.dol.gov/ui/data.pdf"
+      "hot_label": "If weakness spreads across states",
+      "cool_label": "If job growth stays broad",
+      "hot": "Broader weakness can point to a slower national labor market.",
+      "cool": "Widespread gains can show that hiring is not limited to a few regions.",
+      "source": "BLS release calendar",
+      "href": "https://www.bls.gov/schedule/2026/10_sched_list.htm"
     },
     {
       "date": "OCT 28",
@@ -408,6 +393,21 @@
       "cool": "Investors may expect lower borrowing costs sooner.",
       "source": "Federal Reserve meeting calendar",
       "href": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "date": "OCT 30",
+      "time": "8:30 AM ET",
+      "start_at": "2026-10-30T08:30:00-04:00",
+      "title": "Employment Cost Index",
+      "definition": "Measures how much employers pay in wages and benefits.",
+      "prior": "Third-quarter labor costs · BLS",
+      "consensus": "",
+      "hot_label": "If labor costs rise faster",
+      "cool_label": "If labor costs slow",
+      "hot": "Stronger gains can support paychecks but keep service prices firm.",
+      "cool": "Slower growth can ease employer costs while limiting wage gains.",
+      "source": "BLS release calendar",
+      "href": "https://www.bls.gov/schedule/2026/10_sched_list.htm"
     }
   ]
 }
