@@ -1,14 +1,14 @@
 # Economic Thread report
 
-Generated: 2026-10-16T13:01:45.892Z
-Edition: 2026-10-16
+Generated: 2026-10-15T14:52:05.327Z
+Edition: 2026-10-15
 Status: PASSED
 
 - Tier-1 render: 6 nodes, 5 edges, no captions.
 - Visible-word count: 157 before; 79 after; maximum 110.
-- Takeaway: 11 words; FK grade 4.8.
+- Takeaway: 11 words; FK grade 3.7.
 - Mortgage example: $2077 at 7.40%; $2286 at 8.40%; difference $209.
-- One-liner source of truth: current edition → shared generator → header and sticky header; release anchor oil-release.
+- One-liner source of truth: current edition → shared generator → header and sticky header; release anchor cpi-release.
 - Current preview: http://127.0.0.1:4184/; verification uses a fresh isolated server on port 4173.
 
 ## Changed strings
@@ -31,8 +31,8 @@ Status: PASSED
 | Nasdaq | Tech-heavy Nasdaq index fell 0.6% | Tech-heavy Nasdaq fell 0.6% | Index → popover |
 | Layer | What it could mean | Could mean | No detail removed |
 | Legend | Long sequence/mechanism explanation | Dashed arrows: common links, not proof of cause. | Dynamic by drawn edge types |
-| Footer | Two-sentence caveat | Earnings, AI demand, and global news can also move markets. | Sourced-links claim intentionally dropped |
-| Takeaway | 35-word numbered summary | High energy costs can keep loans expensive and weigh on tech. | Numbers remain in nodes and one-liner |
+| Footer | Two-sentence caveat | AI spending doubts, earnings, and global news also moved markets. | Sourced-links claim intentionally dropped |
+| Takeaway | 35-word numbered summary | Higher business costs can keep rates high and hurt tech shares. | Numbers remain in nodes and one-liner |
 
 ## Human checks
 

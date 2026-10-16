@@ -1,10 +1,13 @@
 {
-  "War risk": {"node_id":"oil-release","field":"popover.plain"},
-  "$106.27": {"node_id":"oil-release","field":"popover.precise"},
+  "from August to September": {"node_id":"cpi-release","field":"popover.plain"},
+  "monthly and seasonally adjusted": {"node_id":"cpi-release","field":"popover.precise"},
+  "annual rate 6.3%": {"node_id":"cpi-release","field":"popover.precise","match":"annual rate 6.3%"},
+  "exact release wording": {"node_id":"cpi-release","field":"popover.precise"},
+  "Table A": {"node_id":"cpi-release","field":"popover.precise"},
   "10-year Treasury yield": {"node_id":"yield10-market","field":"popover.plain"},
-  "Nasdaq index": {"node_id":"nasdaq-market","field":"popover.plain"},
+  "index": {"node_id":"nasdaq-market","field":"popover.plain"},
   "worth less today": {"node_id":"rates-to-valuations","field":"popover.plain"},
-  "8:55 AM ET yield": {"node_id":"yield10-market","field":"popover.plain","match":"8:55 AM ET"},
-  "8:55 AM ET Nasdaq": {"node_id":"nasdaq-market","field":"popover.plain","match":"8:55 AM ET"},
-  "sourced-links footer claim": {"dropped":true,"reason":"The legend and evidence rules already communicate claim limits."}
+  "10:15 AM ET yield": {"node_id":"yield10-market","field":"popover.plain","match":"10:15 AM ET"},
+  "10:15 AM ET Nasdaq": {"node_id":"nasdaq-market","field":"popover.plain","match":"10:15 AM ET"},
+  "sourced-links footer claim": {"dropped":true,"reason":"Intentionally dropped because the legend and evidence rules already communicate claim limits."}
 }

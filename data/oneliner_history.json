@@ -1,5 +1,4 @@
 [
   {"date":"2026-10-07","final_sentence":"Stocks fell early, government borrowing rates rose, and oil jumped.","facts":{"stocks":-0.5,"rates_basis_points":8,"oil":1.5},"template_id":"three-market-plain","lead_item":"stocks","qualifiers":[]},
-  {"date":"2026-10-14","final_sentence":"Prices rose 0.6% in September; the 10-year yield rose; the Nasdaq fell.","facts":{"cpi_monthly":0.6,"rates_basis_points":7,"nasdaq":-0.63},"template_id":"release-market-sequence","lead_item":"cpi_release","qualifiers":[]},
-  {"date":"2026-10-16","final_sentence":"Shares edged up; Treasury yields held steady; crude oil edged up.","facts":{"stocks":0.2,"rates_basis_points":0.7,"oil":0.3},"template_id":"three-market-plain","lead_item":"stocks","qualifiers":[]}
+  {"date":"2026-10-14","final_sentence":"Prices rose 0.6% in September; the 10-year yield rose; the Nasdaq fell.","facts":{"cpi_monthly":0.6,"rates_basis_points":7,"nasdaq":-0.63},"template_id":"release-market-sequence","lead_item":"cpi_release","qualifiers":[]}
 ]

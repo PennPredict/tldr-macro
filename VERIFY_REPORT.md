@@ -1,7 +1,7 @@
 # Verification report
 
-Generated: 2026-10-16T13:01:46.286Z
-Edition: 2026-10-16
+Generated: 2026-10-15T14:52:05.695Z
+Edition: 2026-10-15
 Status: PASSED
 
 ## Fixed
@@ -17,10 +17,18 @@ Status: PASSED
 - Russell 2000: 9:35 AM observation was not verified from an approved source
 - 2-year Treasury yield: daily source observation was relabeled with a current timestamp
 - 10-year minus 2-year yield spread: daily source observation was relabeled with a current timestamp
+- Euro to dollar: daily source observation was relabeled with a current timestamp
+- Dollar to yen: daily source observation was relabeled with a current timestamp
+- Pound to dollar: daily source observation was relabeled with a current timestamp
+- WTI crude oil: history contains an unresolved discontinuity and fails the Brent/WTI pair check
+- Natural gas: daily source observation was relabeled with a current timestamp
+- Copper: monthly benchmark source does not support the displayed daily quote
 
 ## Warnings
 - Stocks: 0 verified cards remain; withheld cards need new primary-source observations before restoration
 - Rates: 1 verified cards remain; withheld cards need new primary-source observations before restoration
+- Currencies: 0 verified cards remain; withheld cards need new primary-source observations before restoration
+- Commodities: 2 verified cards remain; withheld cards need new primary-source observations before restoration
 
 ## Failures
 - None
