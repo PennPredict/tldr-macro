@@ -1,53 +1,341 @@
 [
   {
-    "topic_tag":"interest_rates_and_yields",
-    "headline":"Fed Keeps Rate Path Open",
-    "headline_evidence":{"bucket":"central_bank","rule":"Chair Kevin Warsh stressed stable prices without signaling the October decision.","data":"Federal Reserve remarks reported from Bangkok"},
-    "commentary":"Federal Reserve Chair Kevin Warsh stressed price stability but gave no signal for the October meeting. Inflation has risen while spending remains firm. Markets still see a chance of another rate increase, which can keep loans expensive.",
-    "defines":[{"term":"Price stability","definition":"Prices rising slowly and predictably rather than surging or falling sharply.","used_by_and_why":"The Federal Reserve treats price stability as a main goal."}],
-    "explains":[{"anchor_text":"another rate increase","why":"Most Fed officials earlier expected another increase this year.","other_reading":"Warsh kept both remaining meetings open."}],
-    "visual":null,"visual_gate":{"passed":false,"failures":["The Economic Thread already maps this path."],"needs_human_check":false},
-    "views":[
-      {"view_id":"business","body":"High rates raise the cost of funding equipment and growth. Projects with distant profits may look less attractive.","keep_wondering":"Which firms can expand without costly debt?","claims":[{"sentence_id":"fed-business-1","type":"mechanism","evidence":"https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"},{"sentence_id":"fed-business-2","type":"mechanism","evidence":"https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"}]},
-      {"view_id":"policy","body":"Officials are weighing faster inflation against slower growth. Warsh kept the October and December choices open.","keep_wondering":"Will labor costs support another increase?","claims":[{"sentence_id":"fed-policy-1","type":"mechanism","evidence":"https://www.federalreserve.gov/monetarypolicy.htm"},{"sentence_id":"fed-policy-2","type":"fact","evidence":"https://apnews.com/article/us-economy-warsh-fed-ai-imf-4c80750c113a82a464a46f58a4fdab43"}]},
-      {"view_id":"dealer","body":"Bond prices react to expected Fed moves. Unclear guidance can keep yields sensitive to each new report.","keep_wondering":"Which data will shift the October rate outlook?","claims":[{"sentence_id":"fed-dealer-1","type":"mechanism","evidence":"https://www.newyorkfed.org/markets/domestic-market-operations/monetary-policy-implementation"},{"sentence_id":"fed-dealer-2","type":"mechanism","evidence":"https://www.federalreserve.gov/monetarypolicy.htm"}]}
+    "topic_tag": "interest_rates_and_yields",
+    "headline": "Fed Keeps Rate Path Open",
+    "headline_evidence": {
+      "bucket": "central_bank",
+      "rule": "Chair Kevin Warsh stressed stable prices without signaling the October decision.",
+      "data": "Federal Reserve remarks reported from Bangkok"
+    },
+    "commentary": "Federal Reserve Chair Kevin Warsh stressed price stability but gave no signal for the October meeting. Inflation has risen while spending remains firm. Markets still see a chance of another rate increase, which can keep loans expensive.",
+    "defines": [
+      {
+        "term": "Price stability",
+        "definition": "Prices rising slowly and predictably rather than surging or falling sharply.",
+        "used_by_and_why": "The Federal Reserve treats price stability as a main goal."
+      }
     ],
-    "sources":[{"name":"Federal Reserve","href":"https://www.federalreserve.gov/monetarypolicy.htm"},{"name":"The Associated Press","href":"https://apnews.com/article/us-economy-warsh-fed-ai-imf-4c80750c113a82a464a46f58a4fdab43"}],
-    "data_note":"Fed guidance can change as new inflation, jobs, and spending data arrive.",
-    "claims":[{"sentence_id":"fed-commentary-1","type":"fact","evidence":"https://apnews.com/article/us-economy-warsh-fed-ai-imf-4c80750c113a82a464a46f58a4fdab43"},{"sentence_id":"fed-commentary-2","type":"fact","evidence":"https://apnews.com/article/us-economy-warsh-fed-ai-imf-4c80750c113a82a464a46f58a4fdab43"},{"sentence_id":"fed-commentary-3","type":"mechanism","evidence":"https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"}]
+    "explains": [
+      {
+        "anchor_text": "another rate increase",
+        "why": "Most Fed officials earlier expected another increase this year.",
+        "other_reading": "Warsh kept both remaining meetings open."
+      }
+    ],
+    "visual": null,
+    "visual_gate": {
+      "passed": false,
+      "failures": [
+        "The Economic Thread already maps this path."
+      ],
+      "needs_human_check": false
+    },
+    "views": [
+      {
+        "view_id": "business",
+        "body": "High rates raise the cost of funding equipment and growth. Projects with distant profits may look less attractive.",
+        "keep_wondering": "Which firms can expand without costly debt?",
+        "claims": [
+          {
+            "sentence_id": "fed-business-1",
+            "type": "mechanism",
+            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+          },
+          {
+            "sentence_id": "fed-business-2",
+            "type": "mechanism",
+            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+          }
+        ]
+      },
+      {
+        "view_id": "policy",
+        "body": "Officials are weighing faster inflation against slower growth. Warsh kept the October and December choices open.",
+        "keep_wondering": "Will labor costs support another increase?",
+        "claims": [
+          {
+            "sentence_id": "fed-policy-1",
+            "type": "mechanism",
+            "evidence": "https://www.federalreserve.gov/monetarypolicy.htm"
+          },
+          {
+            "sentence_id": "fed-policy-2",
+            "type": "fact",
+            "evidence": "https://apnews.com/article/us-economy-warsh-fed-ai-imf-4c80750c113a82a464a46f58a4fdab43"
+          }
+        ]
+      },
+      {
+        "view_id": "dealer",
+        "body": "Bond prices react to expected Fed moves. Unclear guidance can keep yields sensitive to each new report.",
+        "keep_wondering": "Which data will shift the October rate outlook?",
+        "claims": [
+          {
+            "sentence_id": "fed-dealer-1",
+            "type": "mechanism",
+            "evidence": "https://www.newyorkfed.org/markets/domestic-market-operations/monetary-policy-implementation"
+          },
+          {
+            "sentence_id": "fed-dealer-2",
+            "type": "mechanism",
+            "evidence": "https://www.federalreserve.gov/monetarypolicy.htm"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "name": "Federal Reserve",
+        "href": "https://www.federalreserve.gov/monetarypolicy.htm"
+      },
+      {
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/us-economy-warsh-fed-ai-imf-4c80750c113a82a464a46f58a4fdab43"
+      }
+    ],
+    "data_note": "Fed guidance can change as new inflation, jobs, and spending data arrive.",
+    "claims": [
+      {
+        "sentence_id": "fed-commentary-1",
+        "type": "fact",
+        "evidence": "https://apnews.com/article/us-economy-warsh-fed-ai-imf-4c80750c113a82a464a46f58a4fdab43"
+      },
+      {
+        "sentence_id": "fed-commentary-2",
+        "type": "fact",
+        "evidence": "https://apnews.com/article/us-economy-warsh-fed-ai-imf-4c80750c113a82a464a46f58a4fdab43"
+      },
+      {
+        "sentence_id": "fed-commentary-3",
+        "type": "mechanism",
+        "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+      }
+    ]
   },
   {
-    "topic_tag":"companies",
-    "headline":"AI Shares Enter Friday Unevenly",
-    "headline_evidence":{"bucket":"technology","rule":"Nvidia was flat, Broadcom lost 0.7%, and AMD lost 1.8% before the open.","data":"Associated Press premarket report"},
-    "commentary":"AI shares were mixed before the opening bell. Nvidia was flat, while Broadcom and AMD traded lower. Investors are testing whether future AI revenue can support large data center bills and debt.",
-    "defines":[{"term":"Data center","definition":"A site filled with computers that store information and run digital services, including AI.","used_by_and_why":"AI systems need costly chips, power, and cooling."}],
-    "explains":[{"anchor_text":"support large data-center bills and debt","why":"High rates raise funding costs while investors wait for new projects to earn money.","other_reading":"Strong demand could still make the spending worthwhile."}],
-    "visual":null,"visual_gate":{"passed":false,"failures":["The Economic Thread already links rates with technology shares."],"needs_human_check":false},
-    "views":[
-      {"view_id":"household","body":"AI investment can improve services and output. Moves in large tech shares can also reach retirement accounts.","keep_wondering":"When will AI spending produce lasting profits?","claims":[{"sentence_id":"ai-household-1","type":"mechanism","evidence":"https://www.federalreserve.gov/newsevents/speech/warsh20261016a.htm"},{"sentence_id":"ai-household-2","type":"mechanism","evidence":"https://www.spglobal.com/spdji/en/indices/equity/sp-500/"}]},
-      {"view_id":"business","body":"Chipmakers gain when cloud firms build data centers. Their customers still need enough sales to cover equipment and debt.","keep_wondering":"Will demand grow as quickly as capacity?","claims":[{"sentence_id":"ai-business-1","type":"mechanism","evidence":"https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628"},{"sentence_id":"ai-business-2","type":"interpretation","evidence":"https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628"}]},
-      {"view_id":"policy","body":"AI may lift output over time. Heavy near-term investment can also add demand for credit, chips, and power.","keep_wondering":"How quickly will AI improve broad productivity?","claims":[{"sentence_id":"ai-policy-1","type":"interpretation","evidence":"https://apnews.com/article/us-economy-warsh-fed-ai-imf-4c80750c113a82a464a46f58a4fdab43"},{"sentence_id":"ai-policy-2","type":"mechanism","evidence":"https://www.iea.org/reports/energy-and-ai"}]}
+    "topic_tag": "companies",
+    "headline": "Technology Shares Fall Broadly",
+    "headline_evidence": {
+      "bucket": "technology",
+      "rule": "The Nasdaq fell 2.1%, and all but seven S&P 500 technology stocks finished lower.",
+      "data": "Associated Press closing report"
+    },
+    "commentary": "Technology shares led Friday's retreat. The Nasdaq fell 2.1%, and all but seven technology companies in the S&P 500 closed lower. Investors remain concerned that future AI revenue may not justify today's large data center bills and debt.",
+    "defines": [
+      {
+        "term": "Data center",
+        "definition": "A site filled with computers that store information and run digital services, including AI.",
+        "used_by_and_why": "AI systems need costly chips, power, and cooling."
+      }
     ],
-    "sources":[{"name":"The Associated Press","href":"https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628"},{"name":"Federal Reserve","href":"https://www.federalreserve.gov/monetarypolicy.htm"}],
-    "data_note":"Premarket prices can change quickly after regular trading begins.",
-    "claims":[{"sentence_id":"ai-commentary-1","type":"fact","evidence":"https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628"},{"sentence_id":"ai-commentary-2","type":"fact","evidence":"https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628"},{"sentence_id":"ai-commentary-3","type":"interpretation","evidence":"https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628"}]
+    "explains": [
+      {
+        "anchor_text": "support large data-center bills and debt",
+        "why": "High rates raise funding costs while investors wait for new projects to earn money.",
+        "other_reading": "Strong demand could still make the spending worthwhile."
+      }
+    ],
+    "visual": null,
+    "visual_gate": {
+      "passed": false,
+      "failures": [
+        "The Economic Thread already links rates with technology shares."
+      ],
+      "needs_human_check": false
+    },
+    "views": [
+      {
+        "view_id": "household",
+        "body": "AI investment can improve services and output. Moves in large tech shares can also reach retirement accounts.",
+        "keep_wondering": "When will AI spending produce lasting profits?",
+        "claims": [
+          {
+            "sentence_id": "ai-household-1",
+            "type": "mechanism",
+            "evidence": "https://www.federalreserve.gov/newsevents/speech/warsh20261016a.htm"
+          },
+          {
+            "sentence_id": "ai-household-2",
+            "type": "mechanism",
+            "evidence": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/"
+          }
+        ]
+      },
+      {
+        "view_id": "business",
+        "body": "Chipmakers gain when cloud firms build data centers. Their customers still need enough sales to cover equipment and debt.",
+        "keep_wondering": "Will demand grow as quickly as capacity?",
+        "claims": [
+          {
+            "sentence_id": "ai-business-1",
+            "type": "mechanism",
+            "evidence": "https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628"
+          },
+          {
+            "sentence_id": "ai-business-2",
+            "type": "interpretation",
+            "evidence": "https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628"
+          }
+        ]
+      },
+      {
+        "view_id": "policy",
+        "body": "AI may lift output over time. Heavy near-term investment can also add demand for credit, chips, and power.",
+        "keep_wondering": "How quickly will AI improve broad productivity?",
+        "claims": [
+          {
+            "sentence_id": "ai-policy-1",
+            "type": "interpretation",
+            "evidence": "https://apnews.com/article/us-economy-warsh-fed-ai-imf-4c80750c113a82a464a46f58a4fdab43"
+          },
+          {
+            "sentence_id": "ai-policy-2",
+            "type": "mechanism",
+            "evidence": "https://www.iea.org/reports/energy-and-ai"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628"
+      },
+      {
+        "name": "Federal Reserve",
+        "href": "https://www.federalreserve.gov/monetarypolicy.htm"
+      }
+    ],
+    "data_note": "Friday's closing prices capture one session; company results and new AI spending plans can quickly change sentiment.",
+    "claims": [
+      {
+        "sentence_id": "ai-commentary-1",
+        "type": "fact",
+        "evidence": "https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628"
+      },
+      {
+        "sentence_id": "ai-commentary-2",
+        "type": "fact",
+        "evidence": "https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628"
+      },
+      {
+        "sentence_id": "ai-commentary-3",
+        "type": "interpretation",
+        "evidence": "https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628"
+      }
+    ]
   },
   {
-    "topic_tag":"inflation_reports",
-    "headline":"Mortgage Costs Stay Near Three-Year High",
-    "headline_evidence":{"bucket":"household_credit","rule":"Freddie Mac's weekly average 30-year mortgage rate held at 7.4%.","data":"Freddie Mac survey"},
-    "commentary":"The average 30-year mortgage rate stayed at 7.4%, near a three-year high. A mortgage is a long-term home loan. High rates lift the monthly bill for the same house and reduce what buyers can afford.",
-    "defines":[{"term":"Mortgage","definition":"A long-term loan used to buy a home, repaid through monthly principal and interest payments.","used_by_and_why":"Its rate strongly affects the total cost of a home."}],
-    "explains":[{"anchor_text":"lift the monthly bill","why":"More of each payment goes toward interest when the loan rate is higher.","other_reading":"Home prices, down payments, taxes, and credit also shape affordability."}],
-    "visual":null,"visual_gate":{"passed":false,"failures":["The card already states the household effect directly."],"needs_human_check":false},
-    "views":[
-      {"view_id":"household","body":"A higher rate reduces buying power even when a home's price is unchanged. Owners with fixed loans are mostly protected.","keep_wondering":"Will rates or home prices ease first?","claims":[{"sentence_id":"mortgage-household-1","type":"mechanism","evidence":"https://www.freddiemac.com/pmms"},{"sentence_id":"mortgage-household-2","type":"mechanism","evidence":"https://www.freddiemac.com/pmms"}]},
-      {"view_id":"business","body":"Slower home sales can reach builders and brokers. Furniture and repair firms can feel the change too.","keep_wondering":"Will limited supply offset weak affordability?","claims":[{"sentence_id":"mortgage-business-1","type":"mechanism","evidence":"https://www.freddiemac.com/research/insight"},{"sentence_id":"mortgage-business-2","type":"mechanism","evidence":"https://www.freddiemac.com/research/insight"}]},
-      {"view_id":"policy","body":"Housing carries high rates into the real economy. Weak affordability can slow activity without quickly lowering home prices.","keep_wondering":"How much demand needs to slow?","claims":[{"sentence_id":"mortgage-policy-1","type":"mechanism","evidence":"https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"},{"sentence_id":"mortgage-policy-2","type":"interpretation","evidence":"https://www.freddiemac.com/research/insight"}]}
+    "topic_tag": "inflation_reports",
+    "headline": "Mortgage Costs Stay Near Three-Year High",
+    "headline_evidence": {
+      "bucket": "household_credit",
+      "rule": "Freddie Mac's weekly average 30-year mortgage rate held at 7.4%.",
+      "data": "Freddie Mac survey"
+    },
+    "commentary": "The average 30-year mortgage rate stayed at 7.4%, near a three-year high. A mortgage is a long-term home loan. High rates lift the monthly bill for the same house and reduce what buyers can afford.",
+    "defines": [
+      {
+        "term": "Mortgage",
+        "definition": "A long-term loan used to buy a home, repaid through monthly principal and interest payments.",
+        "used_by_and_why": "Its rate strongly affects the total cost of a home."
+      }
     ],
-    "sources":[{"name":"Freddie Mac","href":"https://www.freddiemac.com/pmms"},{"name":"The Associated Press","href":"https://apnews.com/article/mortgage-rates-housing-freddie-mac-ae938216d9d45a4e2c829845b40d83f5"}],
-    "data_note":"The national average does not represent every borrower; offers vary by credit, down payment, lender, and location.",
-    "claims":[{"sentence_id":"mortgage-commentary-1","type":"fact","evidence":"https://www.freddiemac.com/pmms"},{"sentence_id":"mortgage-commentary-2","type":"mechanism","evidence":"https://www.freddiemac.com/pmms"},{"sentence_id":"mortgage-commentary-3","type":"mechanism","evidence":"https://www.freddiemac.com/research/insight"}]
+    "explains": [
+      {
+        "anchor_text": "lift the monthly bill",
+        "why": "More of each payment goes toward interest when the loan rate is higher.",
+        "other_reading": "Home prices, down payments, taxes, and credit also shape affordability."
+      }
+    ],
+    "visual": null,
+    "visual_gate": {
+      "passed": false,
+      "failures": [
+        "The card already states the household effect directly."
+      ],
+      "needs_human_check": false
+    },
+    "views": [
+      {
+        "view_id": "household",
+        "body": "A higher rate reduces buying power even when a home's price is unchanged. Owners with fixed loans are mostly protected.",
+        "keep_wondering": "Will rates or home prices ease first?",
+        "claims": [
+          {
+            "sentence_id": "mortgage-household-1",
+            "type": "mechanism",
+            "evidence": "https://www.freddiemac.com/pmms"
+          },
+          {
+            "sentence_id": "mortgage-household-2",
+            "type": "mechanism",
+            "evidence": "https://www.freddiemac.com/pmms"
+          }
+        ]
+      },
+      {
+        "view_id": "business",
+        "body": "Slower home sales can reach builders and brokers. Furniture and repair firms can feel the change too.",
+        "keep_wondering": "Will limited supply offset weak affordability?",
+        "claims": [
+          {
+            "sentence_id": "mortgage-business-1",
+            "type": "mechanism",
+            "evidence": "https://www.freddiemac.com/research/insight"
+          },
+          {
+            "sentence_id": "mortgage-business-2",
+            "type": "mechanism",
+            "evidence": "https://www.freddiemac.com/research/insight"
+          }
+        ]
+      },
+      {
+        "view_id": "policy",
+        "body": "Housing carries high rates into the real economy. Weak affordability can slow activity without quickly lowering home prices.",
+        "keep_wondering": "How much demand needs to slow?",
+        "claims": [
+          {
+            "sentence_id": "mortgage-policy-1",
+            "type": "mechanism",
+            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+          },
+          {
+            "sentence_id": "mortgage-policy-2",
+            "type": "interpretation",
+            "evidence": "https://www.freddiemac.com/research/insight"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "name": "Freddie Mac",
+        "href": "https://www.freddiemac.com/pmms"
+      },
+      {
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/mortgage-rates-housing-freddie-mac-ae938216d9d45a4e2c829845b40d83f5"
+      }
+    ],
+    "data_note": "The national average does not represent every borrower; offers vary by credit, down payment, lender, and location.",
+    "claims": [
+      {
+        "sentence_id": "mortgage-commentary-1",
+        "type": "fact",
+        "evidence": "https://www.freddiemac.com/pmms"
+      },
+      {
+        "sentence_id": "mortgage-commentary-2",
+        "type": "mechanism",
+        "evidence": "https://www.freddiemac.com/pmms"
+      },
+      {
+        "sentence_id": "mortgage-commentary-3",
+        "type": "mechanism",
+        "evidence": "https://www.freddiemac.com/research/insight"
+      }
+    ]
   }
 ]

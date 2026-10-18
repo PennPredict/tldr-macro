@@ -1,6 +1,6 @@
 # Economic Thread report
 
-Generated: 2026-10-16T13:01:45.892Z
+Generated: 2026-10-18T01:22:43.333Z
 Edition: 2026-10-16
 Status: PASSED
 
@@ -32,7 +32,7 @@ Status: PASSED
 | Layer | What it could mean | Could mean | No detail removed |
 | Legend | Long sequence/mechanism explanation | Dashed arrows: common links, not proof of cause. | Dynamic by drawn edge types |
 | Footer | Two-sentence caveat | Earnings, AI demand, and global news can also move markets. | Sourced-links claim intentionally dropped |
-| Takeaway | 35-word numbered summary | High energy costs can keep loans expensive and weigh on tech. | Numbers remain in nodes and one-liner |
+| Takeaway | 35-word numbered summary | Higher oil costs can keep loans expensive and pressure tech shares. | Numbers remain in nodes and one-liner |
 
 ## Human checks
 

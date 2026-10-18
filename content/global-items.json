@@ -1,12 +1,12 @@
 [
   {
     "tag":"Global markets","qualifies":true,"headline":"Asian Chip Markets Rebound",
-    "what":"South Korea's KOSPI rose about 3.1%, and Japan's Nikkei 225 gained about 1.9% after Thursday's technology selloff.",
+    "what":"South Korea's KOSPI rose about 2.1%, and Japan's Nikkei 225 gained about 1.4% after Thursday's technology selloff.",
     "context":"Both markets include major chip exporters.",
     "why_it_matters":"A steadier Asian session can reduce stress around U.S. semiconductor shares.",
     "concept_terms":["chip exporter"],
     "sources":[{"name":"Korea Exchange","href":"https://global.krx.co.kr/","type":"primary"},{"name":"The Associated Press","href":"https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628","type":"wire"}],
-    "developing":false,"as_of":"2026-10-16T08:55:00-04:00","importance_score":96,"needs_human_check":false
+    "developing":false,"as_of":"2026-10-16T16:10:00-04:00","importance_score":96,"needs_human_check":false
   },
   {
     "tag":"Global markets","qualifies":true,"headline":"Indonesia Stocks Suffer Historic Drop",
@@ -15,7 +15,7 @@
     "why_it_matters":"Index rules and foreign money can quickly change a country's financing conditions.",
     "concept_terms":["MSCI index","index fund"],
     "sources":[{"name":"MSCI","href":"https://www.msci.com/indexes","type":"primary"},{"name":"Reuters","href":"https://www.reuters.com/world/asia-pacific/indonesia-gets-wake-up-call-msci-prepares-expel-it-global-indexes-2026-10-16/","type":"wire"}],
-    "developing":false,"as_of":"2026-10-16T08:55:00-04:00","importance_score":93,"needs_human_check":false
+    "developing":false,"as_of":"2026-10-16T16:10:00-04:00","importance_score":93,"needs_human_check":false
   },
   {
     "tag":"Policy","qualifies":true,"headline":"Global Leaders Weigh AI and Inflation",
@@ -24,6 +24,6 @@
     "why_it_matters":"Their choices can shape rates, currencies, debt costs, and global growth.",
     "concept_terms":["central bank","productivity"],
     "sources":[{"name":"International Monetary Fund","href":"https://www.imf.org/en/meetings/2026/annual","type":"primary"},{"name":"World Bank Group","href":"https://www.worldbank.org/en/meetings/splash/annual","type":"primary"}],
-    "developing":false,"as_of":"2026-10-16T08:55:00-04:00","importance_score":87,"needs_human_check":false
+    "developing":false,"as_of":"2026-10-16T16:10:00-04:00","importance_score":87,"needs_human_check":false
   }
 ]

@@ -1,17 +1,397 @@
 {
-  "edition_date":"2026-10-16","updated_at":"2026-10-16T08:55:00-04:00","summary":"Shares edged up; Treasury yields held steady; crude oil edged up.",
-  "markets":[
-    {"name":"S&P 500","kind":"equity_index","value":7759.55,"display_value":"7,759.55","baseline":"prior_close","prior_close":7744.06,"change_percent":0.2,"display_change":"+0.2% futures","description":"The S&P 500 tracks 500 large U.S. companies and anchors many retirement funds. Futures rose 0.2%, pointing to a slightly firmer open.","so_what":{"channel_id":"sp500","context":{"type":"signal","text":"","evidence":"https://www.spglobal.com/spdji/en/indices/equity/sp-500/"}},"explains":[],"claims":[{"sentence_id":"sp500-description-1","type":"mechanism","evidence":"https://www.spglobal.com/spdji/en/indices/equity/sp-500/"},{"sentence_id":"sp500-description-2","type":"fact","evidence":"https://www.spglobal.com/spdji/en/indices/equity/sp-500/"}],"data_source":"S&P Dow Jones Indices","fetched_at":"2026-10-16T08:55:00-04:00","range":"Thursday close 7,744.06 · Friday 8:55 AM futures +0.2%","points":[7773.95,7818.93,7801.77,7765.36,7779,7794,7811.54,7807.24,7718.94,7744.06,7759.55],"sources":[{"name":"S&P Dow Jones Indices","href":"https://www.spglobal.com/spdji/en/indices/equity/sp-500/"}]},
-    {"name":"10-year Treasury yield","kind":"yield","value":5.094,"display_value":"5.09%","baseline":"prior_close","prior_close":5.087,"change_percent":0.14,"display_change":"+0.01 points","description":"The 10-year Treasury yield helps set long-term borrowing costs, including many mortgage rates. It edged up to 5.09%, keeping financing expensive.","so_what":{"channel_id":"yield10","context":{"type":"signal","text":"","evidence":"https://home.treasury.gov/resource-center/data-chart-center/interest-rates"}},"explains":[],"claims":[{"sentence_id":"yield-description-1","type":"mechanism","evidence":"https://fred.stlouisfed.org/series/DGS10"},{"sentence_id":"yield-description-2","type":"fact","evidence":"https://home.treasury.gov/resource-center/data-chart-center/interest-rates"}],"data_source":"U.S. Treasury","fetched_at":"2026-10-16T08:55:00-04:00","range":"Thursday close 5.087% · Friday 8:55 AM 5.094%","points":[5.10,5.18,5.23,5.29,5.27,5.22,5.24,5.19,5.087,5.094],"sources":[{"name":"U.S. Treasury","href":"https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"}]},
-    {"name":"Brent crude oil","kind":"commodity","value":106.27,"display_value":"$106.27","baseline":"prior_close","prior_close":105.95,"change_percent":0.3,"display_change":"+0.3%","description":"Brent crude is a reference price for oil sold around the world. It rose to $106.27 as the Iran war kept a supply-risk premium in fuel prices.","so_what":{"channel_id":"brent","context":{"type":"attributed","text":"Expensive oil can raise transportation, production, and household fuel costs.","source_url":"https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints","evidence":"Brent remained above $106 before the U.S. open."}},"explains":[],"claims":[{"sentence_id":"oil-description-1","type":"mechanism","evidence":"https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm"},{"sentence_id":"oil-description-2","type":"fact","evidence":"https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628"}],"data_source":"CME Group and The Associated Press","fetched_at":"2026-10-16T08:55:00-04:00","range":"Thursday close about $105.95 · Friday 8:55 AM $106.27","points":[99.37,101.94,100.31,100.58,104.3,102.5,104.72,106.65,105.95,106.27],"sources":[{"name":"CME Group Brent futures","href":"https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html"},{"name":"The Associated Press","href":"https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628"}]},
-    {"name":"Nasdaq Composite","kind":"equity_index","value":26686.32,"display_value":"26,686.32","baseline":"prior_close","prior_close":26713.03,"change_percent":-0.1,"display_change":"−0.1% futures","description":"The Nasdaq tracks many listed firms and leans toward technology. Futures slipped 0.1% while investors weighed costly AI plans.","so_what":{"channel_id":"nasdaq","context":{"type":"signal","text":"","evidence":"https://www.nasdaq.com/market-activity/index/comp"}},"explains":[],"claims":[{"sentence_id":"nasdaq-description-1","type":"mechanism","evidence":"https://www.nasdaq.com/market-activity/index/comp"},{"sentence_id":"nasdaq-description-2","type":"fact","evidence":"https://www.nasdaq.com/market-activity/index/comp"}],"data_source":"Nasdaq","fetched_at":"2026-10-16T08:55:00-04:00","range":"Thursday close 26,713.03 · Friday 8:55 AM futures −0.1%","points":[27477.31,27599.79,27538.69,27193.34,27240,27366.17,27245.9,26692.87,26713.03,26686.32],"sources":[{"name":"Nasdaq Composite","href":"https://www.nasdaq.com/market-activity/index/comp"}]},
-    {"name":"Dow Jones Industrial Average","kind":"equity_index","value":52386.4,"display_value":"52,386.40","baseline":"prior_close","prior_close":52177.69,"change_percent":0.4,"display_change":"+0.4% futures","description":"The Dow tracks 30 large, established U.S. companies. Futures gained 0.4%, ahead of technology shares.","so_what":{"channel_id":"dow","context":{"type":"signal","text":"","evidence":"https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/"}},"explains":[],"claims":[{"sentence_id":"dow-description-1","type":"mechanism","evidence":"https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/"},{"sentence_id":"dow-description-2","type":"fact","evidence":"https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/"}],"data_source":"S&P Dow Jones Indices","fetched_at":"2026-10-16T08:55:00-04:00","range":"Thursday close 52,177.69 · Friday 8:55 AM futures +0.4%","points":[51176.96,51521.28,51179.87,51231.64,51360,51654.95,51850.55,51621.48,52177.69,52386.4],"sources":[{"name":"S&P Dow Jones Indices","href":"https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/"}]},
-    {"name":"Expected volatility","kind":"volatility","value":16.46,"display_value":"16.46","baseline":"prior_close","prior_close":16.87,"change_percent":-2.43,"display_change":"−2.4% Thursday","description":"The VIX estimates expected S&P 500 swings over the next month. Thursday's close showed less near-term fear after an unsettled week.","so_what":{"channel_id":"vix","context":{"type":"signal","text":"","evidence":"https://www.cboe.com/tradable-products/vix/"}},"explains":[],"claims":[{"sentence_id":"vix-description-1","type":"mechanism","evidence":"https://www.cboe.com/tradable-products/vix/vix-futures/"},{"sentence_id":"vix-description-2","type":"fact","evidence":"https://www.cboe.com/tradable-products/vix/"}],"data_source":"Cboe closing data observed Friday","fetched_at":"2026-10-16T08:55:00-04:00","range":"Wednesday close 16.87 · Thursday close 16.46","points":[15.44,15.38,15.08,15.41,15.2,15.01,14.84,15.21,16.87,16.46],"sources":[{"name":"Cboe VIX","href":"https://www.cboe.com/tradable-products/vix/"}]}
+  "edition_date": "2026-10-16",
+  "updated_at": "2026-10-16T16:10:00-04:00",
+  "summary": "Shares fell; Treasury yields held steady; crude oil jumped.",
+  "markets": [
+    {
+      "name": "S&P 500",
+      "kind": "equity_index",
+      "value": 7659.44,
+      "display_value": "7,659.44",
+      "baseline": "prior_close",
+      "prior_close": 7744.06,
+      "change_percent": -1.09,
+      "display_change": "−1.1%",
+      "description": "The S&P 500 tracks 500 large U.S. companies and anchors many retirement funds. It lost 1.1% as technology shares weakened, pulling broad portfolios lower.",
+      "so_what": {
+        "channel_id": "sp500",
+        "context": {
+          "type": "signal",
+          "text": "",
+          "evidence": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/"
+        }
+      },
+      "explains": [],
+      "claims": [
+        {
+          "sentence_id": "sp500-description-1",
+          "type": "mechanism",
+          "evidence": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/"
+        },
+        {
+          "sentence_id": "sp500-description-2",
+          "type": "fact",
+          "evidence": "https://apnews.com/article/d2655f64db7ec8ae450525d58f97b628"
+        }
+      ],
+      "data_source": "S&P Dow Jones Indices",
+      "fetched_at": "2026-10-16T16:10:00-04:00",
+      "range": "Thursday close 7,744.06 · Friday close 7,659.44",
+      "points": [
+        7773.95,
+        7818.93,
+        7801.77,
+        7765.36,
+        7779,
+        7794,
+        7811.54,
+        7807.24,
+        7718.94,
+        7744.06,
+        7659.44
+      ],
+      "sources": [
+        {
+          "name": "S&P Dow Jones Indices",
+          "href": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/"
+        }
+      ]
+    },
+    {
+      "name": "10-year Treasury yield",
+      "kind": "yield",
+      "value": 5.09,
+      "display_value": "5.09%",
+      "baseline": "prior_close",
+      "prior_close": 5.10,
+      "change_percent": -0.2,
+      "display_change": "−0.01 points",
+      "description": "The 10-year Treasury yield helps set long-term borrowing costs, including many mortgage rates. It slipped to 5.09%, although financing remained expensive.",
+      "so_what": {
+        "channel_id": "yield10",
+        "context": {
+          "type": "signal",
+          "text": "",
+          "evidence": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates"
+        }
+      },
+      "explains": [],
+      "claims": [
+        {
+          "sentence_id": "yield-description-1",
+          "type": "mechanism",
+          "evidence": "https://fred.stlouisfed.org/series/DGS10"
+        },
+        {
+          "sentence_id": "yield-description-2",
+          "type": "fact",
+          "evidence": "https://apnews.com/article/d2655f64db7ec8ae450525d58f97b628"
+        }
+      ],
+      "data_source": "U.S. Treasury and The Associated Press",
+      "fetched_at": "2026-10-16T16:10:00-04:00",
+      "range": "Thursday close 5.10% · Friday close 5.09%",
+      "points": [
+        5.10,
+        5.18,
+        5.23,
+        5.29,
+        5.27,
+        5.22,
+        5.24,
+        5.19,
+        5.10,
+        5.09
+      ],
+      "sources": [
+        {
+          "name": "U.S. Treasury",
+          "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"
+        },
+        {
+          "name": "The Associated Press",
+          "href": "https://apnews.com/article/d2655f64db7ec8ae450525d58f97b628"
+        }
+      ]
+    },
+    {
+      "name": "Brent crude oil",
+      "kind": "commodity",
+      "value": 109.86,
+      "display_value": "$109.86",
+      "baseline": "prior_close",
+      "prior_close": 105.92,
+      "change_percent": 3.72,
+      "display_change": "+3.7%",
+      "description": "Brent crude is a reference price for oil sold around the world. It surged 3.7% as conflict-related supply fears added a larger premium to fuel prices.",
+      "so_what": {
+        "channel_id": "brent",
+        "context": {
+          "type": "attributed",
+          "text": "Expensive oil can raise transportation, production, and household fuel costs.",
+          "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints",
+          "evidence": "Brent settled at $109.86 on Friday."
+        }
+      },
+      "explains": [],
+      "claims": [
+        {
+          "sentence_id": "oil-description-1",
+          "type": "mechanism",
+          "evidence": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm"
+        },
+        {
+          "sentence_id": "oil-description-2",
+          "type": "fact",
+          "evidence": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html"
+        }
+      ],
+      "data_source": "CME Group",
+      "fetched_at": "2026-10-16T16:10:00-04:00",
+      "range": "Thursday close $105.92 · Friday settlement $109.86",
+      "points": [
+        99.37,
+        101.94,
+        100.31,
+        100.58,
+        104.3,
+        102.5,
+        104.72,
+        106.65,
+        105.92,
+        109.86
+      ],
+      "sources": [
+        {
+          "name": "CME Group · Brent crude futures",
+          "href": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html"
+        }
+      ]
+    },
+    {
+      "name": "Nasdaq Composite",
+      "kind": "equity_index",
+      "value": 26140.03,
+      "display_value": "26,140.03",
+      "baseline": "prior_close",
+      "prior_close": 26713.03,
+      "change_percent": -2.15,
+      "display_change": "−2.1%",
+      "description": "The Nasdaq tracks many listed firms and leans toward technology. It sank 2.1% as nearly the entire S&P 500 technology sector finished lower.",
+      "so_what": {
+        "channel_id": "nasdaq",
+        "context": {
+          "type": "signal",
+          "text": "",
+          "evidence": "https://www.nasdaq.com/market-activity/index/comp"
+        }
+      },
+      "explains": [],
+      "claims": [
+        {
+          "sentence_id": "nasdaq-description-1",
+          "type": "mechanism",
+          "evidence": "https://www.nasdaq.com/market-activity/index/comp"
+        },
+        {
+          "sentence_id": "nasdaq-description-2",
+          "type": "fact",
+          "evidence": "https://apnews.com/article/d2655f64db7ec8ae450525d58f97b628"
+        }
+      ],
+      "data_source": "Nasdaq and The Associated Press",
+      "fetched_at": "2026-10-16T16:10:00-04:00",
+      "range": "Thursday close 26,713.03 · Friday close 26,140.03",
+      "points": [
+        27477.31,
+        27599.79,
+        27538.69,
+        27193.34,
+        27240,
+        27366.17,
+        27245.9,
+        26692.87,
+        26713.03,
+        26140.03
+      ],
+      "sources": [
+        {
+          "name": "Nasdaq Composite",
+          "href": "https://www.nasdaq.com/market-activity/index/comp"
+        },
+        {
+          "name": "The Associated Press",
+          "href": "https://apnews.com/article/d2655f64db7ec8ae450525d58f97b628"
+        }
+      ]
+    },
+    {
+      "name": "Dow Jones Industrial Average",
+      "kind": "equity_index",
+      "value": 52002.41,
+      "display_value": "52,002.41",
+      "baseline": "prior_close",
+      "prior_close": 52177.69,
+      "change_percent": -0.34,
+      "display_change": "−0.3%",
+      "description": "The Dow tracks 30 large, established U.S. companies. It slipped 0.3%, holding up better than technology-heavy indexes.",
+      "so_what": {
+        "channel_id": "dow",
+        "context": {
+          "type": "signal",
+          "text": "",
+          "evidence": "https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/"
+        }
+      },
+      "explains": [],
+      "claims": [
+        {
+          "sentence_id": "dow-description-1",
+          "type": "mechanism",
+          "evidence": "https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/"
+        },
+        {
+          "sentence_id": "dow-description-2",
+          "type": "fact",
+          "evidence": "https://apnews.com/article/d2655f64db7ec8ae450525d58f97b628"
+        }
+      ],
+      "data_source": "S&P Dow Jones Indices",
+      "fetched_at": "2026-10-16T16:10:00-04:00",
+      "range": "Thursday close 52,177.69 · Friday close 52,002.41",
+      "points": [
+        51176.96,
+        51521.28,
+        51179.87,
+        51231.64,
+        51360,
+        51654.95,
+        51850.55,
+        51621.48,
+        52177.69,
+        52002.41
+      ],
+      "sources": [
+        {
+          "name": "S&P Dow Jones Indices",
+          "href": "https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/"
+        }
+      ]
+    },
+    {
+      "name": "Expected volatility",
+      "kind": "volatility",
+      "value": 19.99,
+      "display_value": "19.99",
+      "baseline": "prior_close",
+      "prior_close": 16.46,
+      "change_percent": 21.45,
+      "display_change": "+21.5%",
+      "description": "The VIX estimates expected S&P 500 swings over the next month. It jumped 21.5%, showing that investors expected larger near-term moves.",
+      "so_what": {
+        "channel_id": "vix",
+        "context": {
+          "type": "signal",
+          "text": "",
+          "evidence": "https://www.cboe.com/tradable-products/vix/"
+        }
+      },
+      "explains": [],
+      "claims": [
+        {
+          "sentence_id": "vix-description-1",
+          "type": "mechanism",
+          "evidence": "https://www.cboe.com/tradable-products/vix/vix-futures/"
+        },
+        {
+          "sentence_id": "vix-description-2",
+          "type": "fact",
+          "evidence": "https://www.cboe.com/tradable-products/vix/"
+        }
+      ],
+      "data_source": "Cboe closing data",
+      "fetched_at": "2026-10-16T16:10:00-04:00",
+      "range": "Thursday close 16.46 · Friday close 19.99",
+      "points": [
+        15.44,
+        15.38,
+        15.08,
+        15.41,
+        15.2,
+        15.01,
+        14.84,
+        15.21,
+        16.46,
+        19.99
+      ],
+      "sources": [
+        {
+          "name": "Cboe VIX",
+          "href": "https://www.cboe.com/tradable-products/vix/"
+        }
+      ]
+    }
   ],
-  "calendar":[
-    {"date":"OCT 20","time":"10:00 AM ET","start_at":"2026-10-20T10:00:00-04:00","title":"State Employment and Unemployment","definition":"Compares job growth and unemployment across states.","prior":"September state labor data · BLS","consensus":"","hot_label":"If weakness spreads across states","cool_label":"If job growth stays broad","hot":"Broader weakness can point to a slower national labor market.","cool":"Widespread gains can show that hiring is not limited to a few regions.","source":"BLS release calendar","href":"https://www.bls.gov/schedule/2026/10_sched_list.htm"},
-    {"date":"OCT 28","time":"2:00 PM ET","start_at":"2026-10-28T14:00:00-04:00","title":"Federal Reserve Rate Decision","definition":"The Federal Reserve sets its target for overnight interest rates and explains its economic outlook.","prior":"Next scheduled policy decision · Federal Reserve","consensus":"","hot_label":"If officials emphasize inflation","cool_label":"If officials emphasize slower growth","hot":"Investors may expect borrowing costs to stay high for longer.","cool":"Investors may expect lower borrowing costs sooner.","source":"Federal Reserve meeting calendar","href":"https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"},
-    {"date":"OCT 30","time":"8:30 AM ET","start_at":"2026-10-30T08:30:00-04:00","title":"Employment Cost Index","definition":"Measures how much employers pay in wages and benefits.","prior":"Third-quarter labor costs · BLS","consensus":"","hot_label":"If labor costs rise faster","cool_label":"If labor costs slow","hot":"Stronger gains can support paychecks but keep service prices firm.","cool":"Slower growth can ease employer costs while limiting wage gains.","source":"BLS release calendar","href":"https://www.bls.gov/schedule/2026/10_sched_list.htm"},
-    {"date":"NOV 6","time":"8:30 AM ET","start_at":"2026-11-06T08:30:00-05:00","title":"Employment Situation","definition":"Reports national job growth, unemployment, and wage changes.","prior":"October labor-market report · BLS","consensus":"","hot_label":"If hiring and wages accelerate","cool_label":"If job growth weakens","hot":"Stronger demand for workers can keep inflation pressure firm.","cool":"A softer report can raise concern about growth and jobs.","source":"BLS release calendar","href":"https://www.bls.gov/schedule/2026/11_sched.htm"}
+  "calendar": [
+    {
+      "date": "OCT 20",
+      "time": "10:00 AM ET",
+      "start_at": "2026-10-20T10:00:00-04:00",
+      "title": "State Employment and Unemployment",
+      "definition": "Compares job growth and unemployment across states.",
+      "prior": "September state labor data · BLS",
+      "consensus": "",
+      "hot_label": "If weakness spreads across states",
+      "cool_label": "If job growth stays broad",
+      "hot": "Broader weakness can point to a slower national labor market.",
+      "cool": "Widespread gains can show that hiring is not limited to a few regions.",
+      "source": "BLS release calendar",
+      "href": "https://www.bls.gov/schedule/2026/10_sched_list.htm"
+    },
+    {
+      "date": "OCT 28",
+      "time": "2:00 PM ET",
+      "start_at": "2026-10-28T14:00:00-04:00",
+      "title": "Federal Reserve Rate Decision",
+      "definition": "The Federal Reserve sets its target for overnight interest rates and explains its economic outlook.",
+      "prior": "Next scheduled policy decision · Federal Reserve",
+      "consensus": "",
+      "hot_label": "If officials emphasize inflation",
+      "cool_label": "If officials emphasize slower growth",
+      "hot": "Investors may expect borrowing costs to stay high for longer.",
+      "cool": "Investors may expect lower borrowing costs sooner.",
+      "source": "Federal Reserve meeting calendar",
+      "href": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "date": "OCT 30",
+      "time": "8:30 AM ET",
+      "start_at": "2026-10-30T08:30:00-04:00",
+      "title": "Employment Cost Index",
+      "definition": "Measures how much employers pay in wages and benefits.",
+      "prior": "Third-quarter labor costs · BLS",
+      "consensus": "",
+      "hot_label": "If labor costs rise faster",
+      "cool_label": "If labor costs slow",
+      "hot": "Stronger gains can support paychecks but keep service prices firm.",
+      "cool": "Slower growth can ease employer costs while limiting wage gains.",
+      "source": "BLS release calendar",
+      "href": "https://www.bls.gov/schedule/2026/10_sched_list.htm"
+    },
+    {
+      "date": "NOV 6",
+      "time": "8:30 AM ET",
+      "start_at": "2026-11-06T08:30:00-05:00",
+      "title": "Employment Situation",
+      "definition": "Reports national job growth, unemployment, and wage changes.",
+      "prior": "October labor-market report · BLS",
+      "consensus": "",
+      "hot_label": "If hiring and wages accelerate",
+      "cool_label": "If job growth weakens",
+      "hot": "Stronger demand for workers can keep inflation pressure firm.",
+      "cool": "A softer report can raise concern about growth and jobs.",
+      "source": "BLS release calendar",
+      "href": "https://www.bls.gov/schedule/2026/11_sched.htm"
+    }
   ]
 }

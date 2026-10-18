@@ -15,20 +15,20 @@
       "layer": "Happened",
       "type": "FACT",
       "tier": 1,
-      "label": "Oil remained unusually expensive",
-      "subline": "War risk kept energy costs elevated",
-      "value": "$106.27 before the U.S. open",
-      "event_time": "2026-10-16T08:55:00-04:00",
-      "reference_period": "Oct. 16 premarket",
-      "source": "The Associated Press",
-      "source_url": "https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628",
-      "source_sentence": "Brent crude, the international standard, rose 0.3% to $106.27 per barrel.",
+      "label": "Oil became more expensive",
+      "subline": "Supply fears increased the risk premium",
+      "value": "Brent surged 3.7%",
+      "event_time": "2026-10-16T16:10:00-04:00",
+      "reference_period": "Oct. 16 close",
+      "source": "CME Group",
+      "source_url": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html",
+      "source_sentence": "Brent crude settled at $109.86, up 3.7% from Thursday.",
       "story_anchor": "story-housing",
       "popover": {
-        "title": "Why oil is still elevated",
-        "plain": "War risk is keeping oil prices high.",
-        "precise": "AP reported Brent at $106.27 before the U.S. open, compared with roughly $72 before the Iran war. Oil affects gasoline, diesel, shipping, and production costs.",
-        "source_url": "https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628"
+        "title": "Why oil rose",
+        "plain": "War risk made each barrel more expensive.",
+        "precise": "Brent settled at $109.86, up from $105.92 Thursday. Oil affects gasoline, diesel, shipping, and production costs.",
+        "source_url": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html"
       }
     },
     {
@@ -71,19 +71,19 @@
       "layer": "Markets",
       "type": "FACT",
       "tier": 1,
-      "label": "Government borrowing rates stayed high",
-      "value": "5.09%",
-      "event_time": "2026-10-16T08:55:00-04:00",
-      "reference_period": "Oct. 16 premarket",
+      "label": "Government borrowing rates slipped slightly",
+      "value": "10-year rate 5.09%",
+      "event_time": "2026-10-16T16:10:00-04:00",
+      "reference_period": "Oct. 16 close",
       "registry_id": "yield10",
-      "source": "U.S. Treasury",
-      "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates",
+      "source": "The Associated Press",
+      "source_url": "https://apnews.com/article/d2655f64db7ec8ae450525d58f97b628",
       "story_anchor": "story-rates",
       "popover": {
         "title": "Government borrowing rate",
-        "plain": "The government rate, also called the 10-year Treasury yield, was 5.09% at 8:55 AM ET.",
-        "precise": "The 10-year Treasury yield influences many longer-term borrowing rates. It was 5.094% at 8:55 AM ET.",
-        "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates"
+        "plain": "The government's 10-year borrowing rate was 5.09% at 4:10 PM ET.",
+        "precise": "The 10-year Treasury yield influences many longer-term borrowing rates. It slipped from 5.10% Thursday to 5.09% Friday.",
+        "source_url": "https://apnews.com/article/d2655f64db7ec8ae450525d58f97b628"
       }
     },
     {
@@ -91,18 +91,18 @@
       "layer": "Markets",
       "type": "FACT",
       "tier": 1,
-      "label": "Tech futures remained cautious",
-      "value": "Nasdaq futures -0.1%",
-      "event_time": "2026-10-16T08:55:00-04:00",
-      "reference_period": "Oct. 16 premarket",
+      "label": "Technology shares fell sharply",
+      "value": "Nasdaq down 2.1%",
+      "event_time": "2026-10-16T16:10:00-04:00",
+      "reference_period": "Oct. 16 close",
       "registry_id": "nasdaq",
-      "source": "Nasdaq",
-      "source_url": "https://www.nasdaq.com/market-activity/index/comp",
+      "source": "The Associated Press",
+      "source_url": "https://apnews.com/article/d2655f64db7ec8ae450525d58f97b628",
       "popover": {
-        "title": "Nasdaq futures",
-        "plain": "The Nasdaq index pointed lower at 8:55 AM ET.",
-        "precise": "Nasdaq futures were down 0.1% at 8:55 AM ET while several chip shares were mixed or lower.",
-        "source_url": "https://www.nasdaq.com/market-activity/index/comp"
+        "title": "Technology-led decline",
+        "plain": "The Nasdaq index was down 2.1% at 4:10 PM ET.",
+        "precise": "The Nasdaq closed at 26,140.03, down 572.99 points. All but seven S&P 500 technology stocks ended lower.",
+        "source_url": "https://apnews.com/article/d2655f64db7ec8ae450525d58f97b628"
       }
     },
     {
@@ -166,7 +166,7 @@
       "mechanism_id": "rates-to-borrowing"
     }
   ],
-  "takeaway": "High energy costs can keep loans expensive and weigh on tech.",
+  "takeaway": "Higher oil costs can keep loans expensive and pressure tech shares.",
   "other_factors_note": "Earnings, AI demand, and global news can also move markets.",
   "enabled": true
 }

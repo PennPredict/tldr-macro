@@ -2,10 +2,10 @@
   {
     "element_id": "oil-release",
     "type": "FACT",
-    "text": "Oil remained unusually expensive — War risk kept energy costs elevated",
-    "source_url": "https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628",
-    "retrieved_at": "2026-10-16T08:55:00-04:00",
-    "matched_excerpt": "Brent crude, the international standard, rose 0.3% to $106.27 per barrel.",
+    "text": "Oil became more expensive — Supply fears increased the risk premium",
+    "source_url": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html",
+    "retrieved_at": "2026-10-16T16:10:00-04:00",
+    "matched_excerpt": "Brent crude settled at $109.86, up 3.7% from Thursday.",
     "checks_passed": [
       "plain wording",
       "word cap",
@@ -19,7 +19,7 @@
     "type": "MECHANISM",
     "text": "Investors may expect higher interest rates",
     "source_url": "https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm",
-    "retrieved_at": "2026-10-16T08:55:00-04:00",
+    "retrieved_at": "2026-10-16T16:10:00-04:00",
     "matched_excerpt": "Faster price growth can make investors expect higher interest rates. The Federal Open Market Committee sets a target range for the federal funds rate; expected",
     "checks_passed": [
       "plain wording",
@@ -34,7 +34,7 @@
     "type": "MECHANISM",
     "text": "Higher rates can make future profits worth less",
     "source_url": "https://www.federalreserve.gov/frrs/guidance/interest-rate-risk-joint-agency-policy-statement.htm",
-    "retrieved_at": "2026-10-16T08:55:00-04:00",
+    "retrieved_at": "2026-10-16T16:10:00-04:00",
     "matched_excerpt": "Present value discounts expected future cash flows at a market rate; a higher discount rate lowers what future profits are worth today, all else equal.",
     "checks_passed": [
       "plain wording",
@@ -47,11 +47,11 @@
   {
     "element_id": "yield10-market",
     "type": "FACT",
-    "text": "Government borrowing rates stayed high",
+    "text": "Government borrowing rates slipped slightly",
     "registry_id": "yield10",
-    "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates",
-    "retrieved_at": "2026-10-16T08:55:00-04:00",
-    "matched_excerpt": "The 10-year Treasury yield influences many longer-term borrowing rates. It was 5.094% at 8:55 AM ET.",
+    "source_url": "https://apnews.com/article/d2655f64db7ec8ae450525d58f97b628",
+    "retrieved_at": "2026-10-16T16:10:00-04:00",
+    "matched_excerpt": "The 10-year Treasury yield influences many longer-term borrowing rates. It slipped from 5.10% Thursday to 5.09% Friday.",
     "checks_passed": [
       "plain wording",
       "word cap",
@@ -63,11 +63,11 @@
   {
     "element_id": "nasdaq-market",
     "type": "FACT",
-    "text": "Tech futures remained cautious",
+    "text": "Technology shares fell sharply",
     "registry_id": "nasdaq",
-    "source_url": "https://www.nasdaq.com/market-activity/index/comp",
-    "retrieved_at": "2026-10-16T08:55:00-04:00",
-    "matched_excerpt": "Nasdaq futures were down 0.1% at 8:55 AM ET while several chip shares were mixed or lower.",
+    "source_url": "https://apnews.com/article/d2655f64db7ec8ae450525d58f97b628",
+    "retrieved_at": "2026-10-16T16:10:00-04:00",
+    "matched_excerpt": "The Nasdaq closed at 26,140.03, down 572.99 points. All but seven S&P 500 technology stocks ended lower.",
     "checks_passed": [
       "plain wording",
       "word cap",
@@ -81,7 +81,7 @@
     "type": "MECHANISM",
     "text": "Loans can cost more; some savings can earn more",
     "source_url": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm",
-    "retrieved_at": "2026-10-16T08:55:00-04:00",
+    "retrieved_at": "2026-10-16T16:10:00-04:00",
     "matched_excerpt": "Standard fixed-payment amortization with monthly compounding. Principal $300,000; 360 payments; Freddie Mac 30-year fixed rate 7.40% for the week of Oct. 8, 2026. Not a",
     "checks_passed": [
       "plain wording",
@@ -96,7 +96,7 @@
     "type": "MECHANISM",
     "text": "oil-release → inflation-rate-expectations",
     "source_url": "https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm",
-    "retrieved_at": "2026-10-16T08:55:00-04:00",
+    "retrieved_at": "2026-10-16T16:10:00-04:00",
     "matched_excerpt": "",
     "checks_passed": [
       "vetted mechanism"
@@ -108,7 +108,7 @@
     "type": "MECHANISM",
     "text": "inflation-rate-expectations → yield10-market",
     "source_url": "https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm",
-    "retrieved_at": "2026-10-16T08:55:00-04:00",
+    "retrieved_at": "2026-10-16T16:10:00-04:00",
     "matched_excerpt": "",
     "checks_passed": [
       "vetted mechanism"
@@ -120,7 +120,7 @@
     "type": "MECHANISM",
     "text": "inflation-rate-expectations → rates-to-valuations",
     "source_url": "https://www.federalreserve.gov/frrs/guidance/interest-rate-risk-joint-agency-policy-statement.htm",
-    "retrieved_at": "2026-10-16T08:55:00-04:00",
+    "retrieved_at": "2026-10-16T16:10:00-04:00",
     "matched_excerpt": "",
     "checks_passed": [
       "vetted mechanism"
@@ -132,7 +132,7 @@
     "type": "MECHANISM",
     "text": "rates-to-valuations → nasdaq-market",
     "source_url": "https://www.federalreserve.gov/frrs/guidance/interest-rate-risk-joint-agency-policy-statement.htm",
-    "retrieved_at": "2026-10-16T08:55:00-04:00",
+    "retrieved_at": "2026-10-16T16:10:00-04:00",
     "matched_excerpt": "",
     "checks_passed": [
       "vetted mechanism"
@@ -144,7 +144,7 @@
     "type": "MECHANISM",
     "text": "yield10-market → borrowing-costs",
     "source_url": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm",
-    "retrieved_at": "2026-10-16T08:55:00-04:00",
+    "retrieved_at": "2026-10-16T16:10:00-04:00",
     "matched_excerpt": "",
     "checks_passed": [
       "vetted mechanism"
@@ -156,7 +156,7 @@
     "type": "CAPTION",
     "text": "Also cited by The Associated Press: growth and government debt",
     "source_url": "https://apnews.com/article/stock-markets-earnings-bonds-artificial-intelligence-704d3190f0fba2908df07c85f26346ec",
-    "retrieved_at": "2026-10-16T08:55:00-04:00",
+    "retrieved_at": "2026-10-16T16:10:00-04:00",
     "matched_excerpt": "The U.S. economy is still growing, alongside longstanding worries about fast-rising government debt loads, sending yields higher.",
     "checks_passed": [
       "same_day",
@@ -171,7 +171,7 @@
     "type": "CAPTION",
     "text": "Also cited by The Associated Press: mixed financial-company earnings",
     "source_url": "https://apnews.com/article/stock-markets-earnings-bonds-artificial-intelligence-704d3190f0fba2908df07c85f26346ec",
-    "retrieved_at": "2026-10-16T08:55:00-04:00",
+    "retrieved_at": "2026-10-16T16:10:00-04:00",
     "matched_excerpt": "BlackRock rose after stronger results, while Bank of America and State Street fell after weaker results.",
     "checks_passed": [
       "same_day",
