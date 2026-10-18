@@ -7,6 +7,6 @@
   "fallback": "line",
   "bridges": false,
   "story_order": ["Report", "Reaction", "Background"],
-  "stories": {"inflation_reports":"Report","interest_rates_and_yields":"Reaction","companies":"Reaction","jobs_and_wages":"Background"},
+  "stories": {"interest_rates_and_yields":"Report","companies":"Reaction","inflation_reports":"Background","jobs_and_wages":"Background"},
   "features": {"big_picture_strip":false,"thread_composition_bar":false}
 }

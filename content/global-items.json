@@ -1,29 +1,29 @@
 [
   {
-    "tag":"Global markets","qualifies":true,"headline":"Asian Chip Markets Tumble",
-    "what":"South Korea's Kospi lost 7.6%, while Japan's Nikkei 225 fell 4.9% as major chip and AI-related shares declined.",
-    "context":"The Kospi's heavy exposure to Samsung Electronics and SK Hynix made the regional decline especially sharp.",
-    "why_it_matters":"Doubts about AI spending can move chip suppliers and U.S. technology shares across borders.",
-    "concept_terms":["Kospi","chip suppliers"],
-    "sources":[{"name":"Korea Exchange","href":"https://global.krx.co.kr/","type":"primary"},{"name":"The Associated Press","href":"https://apnews.com/article/stock-markets-kospi-tech-shares-e889ad7dee2b7dd959f1b8bc87366914","type":"wire"}],
-    "developing":false,"as_of":"2026-10-15T10:15:00-04:00","importance_score":98,"needs_human_check":false
+    "tag":"Global markets","qualifies":true,"headline":"Asian Chip Markets Rebound",
+    "what":"South Korea's KOSPI rose about 3.1%, and Japan's Nikkei 225 gained about 1.9% after Thursday's technology selloff.",
+    "context":"Both markets include major chip exporters.",
+    "why_it_matters":"A steadier Asian session can reduce stress around U.S. semiconductor shares.",
+    "concept_terms":["chip exporter"],
+    "sources":[{"name":"Korea Exchange","href":"https://global.krx.co.kr/","type":"primary"},{"name":"The Associated Press","href":"https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628","type":"wire"}],
+    "developing":false,"as_of":"2026-10-16T08:55:00-04:00","importance_score":96,"needs_human_check":false
   },
   {
-    "tag":"Energy","qualifies":true,"headline":"Oil Shock Tests African Growth",
-    "what":"The IMF said African economies have weathered the Iran-war energy shock better than expected, though reduced foreign aid leaves them vulnerable.",
-    "context":"Many countries buy fuel in dollars, making expensive energy and a strong dollar harder to absorb.",
-    "why_it_matters":"Slower growth or debt stress can affect global lenders, commodity demand, and trade partners.",
-    "concept_terms":["energy shock","foreign aid"],
-    "sources":[{"name":"International Monetary Fund","href":"https://www.imf.org/en/Topics/imf-and-africa","type":"primary"},{"name":"The Associated Press","href":"https://apnews.com/article/imf-africa-economy-iran-war-a9d46861d0fc12826d1719f9433a1e71","type":"wire"}],
-    "developing":false,"as_of":"2026-10-15T10:15:00-04:00","importance_score":88,"needs_human_check":false
+    "tag":"Global markets","qualifies":true,"headline":"Indonesia Stocks Suffer Historic Drop",
+    "what":"Indonesia's main index lost more than 10%, its deepest one-day decline since 1998, after an MSCI downgrade warning.",
+    "context":"Funds that copy MSCI indexes may need to sell excluded shares.",
+    "why_it_matters":"Index rules and foreign money can quickly change a country's financing conditions.",
+    "concept_terms":["MSCI index","index fund"],
+    "sources":[{"name":"MSCI","href":"https://www.msci.com/indexes","type":"primary"},{"name":"Reuters","href":"https://www.reuters.com/world/asia-pacific/indonesia-gets-wake-up-call-msci-prepares-expel-it-global-indexes-2026-10-16/","type":"wire"}],
+    "developing":false,"as_of":"2026-10-16T08:55:00-04:00","importance_score":93,"needs_human_check":false
   },
   {
-    "tag":"Trade","qualifies":true,"headline":"China Trade Surplus Nears Record",
-    "what":"China reported a 36.3% yearly rise in September exports and a monthly trade surplus of $133.5 billion.",
-    "context":"Exports remain a major source of growth while China's domestic demand stays weak.",
-    "why_it_matters":"The imbalance can shape U.S. trade policy, shipping demand, and competition for manufacturers.",
-    "concept_terms":["trade surplus","domestic demand"],
-    "sources":[{"name":"World Trade Organization","href":"https://www.wto.org/english/res_e/statis_e/statis_e.htm","type":"primary"},{"name":"The Associated Press","href":"https://apnews.com/article/china-trade-exports-db43e08437b65f65c2ead64c82f9b990","type":"wire"}],
-    "developing":false,"as_of":"2026-10-15T10:15:00-04:00","importance_score":84,"needs_human_check":false
+    "tag":"Policy","qualifies":true,"headline":"Global Leaders Weigh AI and Inflation",
+    "what":"Finance leaders in Bangkok are discussing high inflation, energy risk, and possible gains from artificial intelligence.",
+    "context":"The IMF and World Bank meetings bring together central banks and finance ministries.",
+    "why_it_matters":"Their choices can shape rates, currencies, debt costs, and global growth.",
+    "concept_terms":["central bank","productivity"],
+    "sources":[{"name":"International Monetary Fund","href":"https://www.imf.org/en/meetings/2026/annual","type":"primary"},{"name":"World Bank Group","href":"https://www.worldbank.org/en/meetings/splash/annual","type":"primary"}],
+    "developing":false,"as_of":"2026-10-16T08:55:00-04:00","importance_score":87,"needs_human_check":false
   }
 ]
