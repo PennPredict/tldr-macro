@@ -1,0 +1,2 @@
+import Link from "next/link";import terms from "../../content/terms.json";
+export default function Glossary(){return <main className="shell prose-page"><Link href="/">← Today&apos;s briefing</Link><h1>Plain-English Glossary</h1><p>Short definitions for market terms used across TL;DR Macro.</p><dl className="glossary-list">{terms.terms.map(term=><div id={term.id} key={term.id}><dt>{term.surface_forms[0]}</dt><dd>{term.definition} <span>Also called: {term.also_called.join(", ")}.</span></dd></div>)}</dl></main>}

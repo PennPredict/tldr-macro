@@ -1,6 +1,6 @@
 # Data Report
 
-Generated: 2026-10-19T15:16:23.348Z
+Generated: 2026-10-19T18:15:27.543Z
 
 | Instrument | Provider | Series | Frequency | Latest timestamp | Baseline | Chart points | Status |
 |---|---|---|---|---|---|---:|---|
@@ -51,22 +51,22 @@ Generated: 2026-10-19T15:16:23.348Z
 
 | Instrument | Fetched timestamp | Baseline | Display | Provider |
 |---|---|---|---|---|
-| S&P 500 | 2026-10-19T10:00:00-04:00 | Friday close 7,659.44 · Monday 10:00 AM +0.4% | ≈7,690 (+0.4%) | S&P Dow Jones Indices |
+| S&P 500 | 2026-10-19T10:00:00-04:00 | Friday close 7,659.44 · Monday 10:00 AM +0.4% | 7,690.08 (+0.4%) | S&P Dow Jones Indices |
 | 10-year Treasury yield | 2026-10-19T10:00:00-04:00 | Friday close 5.09% · Monday 10:00 AM 5.10% | 5.10% (+0.01 points) | U.S. Treasury and The Associated Press |
 | Brent crude oil | 2026-10-19T10:00:00-04:00 | Friday settlement $109.86 · Monday 10:00 AM $108.13 | $108.13 (−1.6%) | CME Group |
-| Nasdaq Composite | 2026-10-19T10:00:00-04:00 | Friday close 26,140.03 · Monday 10:00 AM +0.9% | ≈26,375 (+0.9%) | Nasdaq and The Associated Press |
-| Dow Jones Industrial Average | 2026-10-19T10:00:00-04:00 | Friday close 52,002.41 · Monday 10:00 AM down 44 points | ≈51,958 (−0.1%) | S&P Dow Jones Indices |
-| Expected volatility | 2026-10-19T10:00:00-04:00 | Friday close 19.99 · Monday morning near 18 | ≈18 (lower near 18) | Cboe closing data |
+| Nasdaq Composite | 2026-10-19T10:00:00-04:00 | Friday close 26,140.03 · Monday 10:00 AM +0.9% | 26,375.29 (+0.9%) | Nasdaq and The Associated Press |
+| Dow Jones Industrial Average | 2026-10-19T10:00:00-04:00 | Friday close 52,002.41 · Monday 10:00 AM down 44 points | 51,958.41 (−0.1%) | S&P Dow Jones Indices |
+| Expected volatility | 2026-10-19T10:00:00-04:00 | Friday close 19.99 · Monday morning near 18 | 18.00 (−10.0%) | Cboe closing data |
 
-- DAX: 2026-10-19T10:00:00-04:00; ≈25,337; −1.1%; Deutsche Börse/Xetra via Börse Stuttgart
+- DAX: 2026-10-19T10:00:00-04:00; 25,337.00; −1.1%; Deutsche Börse/Xetra via Börse Stuttgart
 - Nikkei 225: 2026-10-19T10:00:00-04:00; 64,904.20; −0.6%; Nikkei Inc.
-- KOSPI: 2026-10-19T10:00:00-04:00; ≈5,770; +1.8%; Korea Exchange via KB Financial Group
+- KOSPI: 2026-10-19T10:00:00-04:00; 5,770.08; +1.8%; Korea Exchange via KB Financial Group
 - Nasdaq Composite: 2026-10-02T16:00:00-04:00; 27,190.86; +1.19%; Nasdaq via FRED
 - Dow Jones Industrial Average: 2026-10-05T10:10:00-04:00; 51,267.90; +0.18%; S&P Dow Jones Indices via FRED
 - 30-year fixed mortgage rate: 2026-10-15T12:00:00-04:00; 7.40%; +0.12 percentage points; Freddie Mac
-- Euro to dollar: 2026-10-19T10:00:00-04:00; $1.1231 per euro; little changed; Federal Reserve via FRED
-- Dollar to yen: 2026-10-19T10:00:00-04:00; ¥158.09 per dollar; little changed; Federal Reserve via FRED
-- Pound to dollar: 2026-10-19T10:00:00-04:00; $1.3330 per pound; little changed; Federal Reserve via FRED
+- Euro to dollar: 2026-10-19T10:00:00-04:00; $1.1231 per euro; −0.1%; Federal Reserve via FRED
+- Dollar to yen: 2026-10-19T10:00:00-04:00; ¥158.09 per dollar; +0.0%; Federal Reserve via FRED
+- Pound to dollar: 2026-10-19T10:00:00-04:00; $1.3330 per pound; +0.0%; Federal Reserve via FRED
 - WTI crude oil: 2026-10-19T10:00:00-04:00; $100.36 per barrel; −1.0%; U.S. Energy Information Administration via FRED
 - Natural gas: 2026-10-19T10:00:00-04:00; $3.08 per MMBtu; −1.1%; U.S. Energy Information Administration via FRED
 - Copper: 2026-10-19T10:00:00-04:00; $6.51 per pound; −0.4%; Market quote with IMF benchmark context

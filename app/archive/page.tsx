@@ -1,0 +1,2 @@
+import Link from "next/link";import edition from "../../content/current-edition.json";
+export default function Archive(){return <main className="shell prose-page"><Link href="/">← Today&apos;s briefing</Link><h1>Daily Archive</h1><p>Past editions preserve the information and timestamps available when each briefing was published.</p><ul className="archive-list"><li><Link href={`/archive/${edition.edition_date}/`}>{edition.edition_date} · {edition.summary}</Link></li></ul></main>}

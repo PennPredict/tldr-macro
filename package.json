@@ -24,13 +24,15 @@
     ,"security:scan": "node scripts/security-check.mjs"
     ,"security:gitleaks": "node scripts/run-gitleaks.mjs"
     ,"verify:guardrails": "node scripts/verify-guardrails.mjs"
-    ,"thread:prepare": "node scripts/build-thread.mjs"
+    ,"thread:prepare": "node scripts/validate-thread.mjs"
+    ,"normalize:markets": "node scripts/normalize-market-series.mjs"
+    ,"validate:markets": "node scripts/validate-market-series.mjs"
     ,"thread:review": "node scripts/thread-review.mjs"
     ,"thread:approve": "node scripts/thread-approve.mjs"
     ,"thread:recheck": "node scripts/thread-recheck.mjs"
     ,"test:mortgage": "node scripts/test-mortgage-math.mjs"
     ,"validate:thread": "node scripts/validate-thread.mjs"
-    ,"verify": "npm run validate:content && npm run validate:thread && npm run test:mortgage && npm run thread:prepare && npm run validate:review && npm run verify:guardrails && npm run test:terms && npm run test:status && npm run lint && npm run build:pages && npm run security:prepare && npm run test:url-sanitizer && npm run security:scan && npm run security:gitleaks && npm run test:browser-integrity && npm run test:outsider"
+    ,"verify": "npm run validate:content && npm run validate:markets && npm run validate:thread && npm run test:mortgage && npm run thread:prepare && npm run validate:review && npm run verify:guardrails && npm run test:terms && npm run test:status && npm run lint && npm run build:pages && npm run security:prepare && npm run test:url-sanitizer && npm run security:scan && npm run security:gitleaks && npm run test:browser-integrity && npm run test:outsider"
   },
   "dependencies": {
     "next": "16.2.6",

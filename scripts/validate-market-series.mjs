@@ -1,0 +1,4 @@
+import fs from "node:fs";
+const edition=JSON.parse(fs.readFileSync("content/current-edition.json","utf8")),extras=JSON.parse(fs.readFileSync("content/extra-markets.json","utf8")),failures=[];
+for(const item of [...edition.markets,...extras]){if(!item.points?.length)continue;const dates=item.series_dates||[];if(dates.length!==item.points.length)failures.push(`${item.name}: series values and dates differ in length`);if(new Date(dates.at(-1)).getTime()!==new Date(item.fetched_at).getTime())failures.push(`${item.name}: as-of timestamp does not match final series date`);const visible=Number(String(item.display_value).replace(/[^0-9.-]/g,""));if(Number.isFinite(visible)&&Math.abs(visible-item.points.at(-1))>0.011)failures.push(`${item.name}: headline value does not match final series value`)}
+if(failures.length){console.error(failures.join("\n"));process.exit(1)}console.log(`Market series passed: ${edition.markets.length+extras.length} timestamps and values checked.`)

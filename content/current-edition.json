@@ -7,7 +7,7 @@
       "name": "S&P 500",
       "kind": "equity_index",
       "value": 7690.08,
-      "display_value": "≈7,690",
+      "display_value": "7,690.08",
       "baseline": "prior_close",
       "prior_close": 7659.44,
       "change_percent": 0.4,
@@ -56,6 +56,20 @@
           "name": "S&P Dow Jones Indices",
           "href": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/"
         }
+      ],
+      "series_dates": [
+        "2026-10-02T14:00:00.000Z",
+        "2026-10-05T14:00:00.000Z",
+        "2026-10-06T14:00:00.000Z",
+        "2026-10-07T14:00:00.000Z",
+        "2026-10-08T14:00:00.000Z",
+        "2026-10-09T14:00:00.000Z",
+        "2026-10-12T14:00:00.000Z",
+        "2026-10-13T14:00:00.000Z",
+        "2026-10-14T14:00:00.000Z",
+        "2026-10-15T14:00:00.000Z",
+        "2026-10-16T14:00:00.000Z",
+        "2026-10-19T14:00:00.000Z"
       ]
     },
     {
@@ -93,7 +107,7 @@
       "fetched_at": "2026-10-19T10:00:00-04:00",
       "range": "Friday close 5.09% · Monday 10:00 AM 5.10%",
       "points": [
-        5.10,
+        5.1,
         5.18,
         5.23,
         5.29,
@@ -101,7 +115,7 @@
         5.22,
         5.24,
         5.19,
-        5.10,
+        5.1,
         5.09,
         5.1
       ],
@@ -114,6 +128,19 @@
           "name": "The Associated Press",
           "href": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058"
         }
+      ],
+      "series_dates": [
+        "2026-10-05T14:00:00.000Z",
+        "2026-10-06T14:00:00.000Z",
+        "2026-10-07T14:00:00.000Z",
+        "2026-10-08T14:00:00.000Z",
+        "2026-10-09T14:00:00.000Z",
+        "2026-10-12T14:00:00.000Z",
+        "2026-10-13T14:00:00.000Z",
+        "2026-10-14T14:00:00.000Z",
+        "2026-10-15T14:00:00.000Z",
+        "2026-10-16T14:00:00.000Z",
+        "2026-10-19T14:00:00.000Z"
       ]
     },
     {
@@ -169,13 +196,26 @@
           "name": "CME Group · Brent crude futures",
           "href": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html"
         }
+      ],
+      "series_dates": [
+        "2026-10-05T14:00:00.000Z",
+        "2026-10-06T14:00:00.000Z",
+        "2026-10-07T14:00:00.000Z",
+        "2026-10-08T14:00:00.000Z",
+        "2026-10-09T14:00:00.000Z",
+        "2026-10-12T14:00:00.000Z",
+        "2026-10-13T14:00:00.000Z",
+        "2026-10-14T14:00:00.000Z",
+        "2026-10-15T14:00:00.000Z",
+        "2026-10-16T14:00:00.000Z",
+        "2026-10-19T14:00:00.000Z"
       ]
     },
     {
       "name": "Nasdaq Composite",
       "kind": "equity_index",
       "value": 26375.29,
-      "display_value": "≈26,375",
+      "display_value": "26,375.29",
       "baseline": "prior_close",
       "prior_close": 26140.03,
       "change_percent": 0.9,
@@ -227,13 +267,26 @@
           "name": "The Associated Press",
           "href": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058"
         }
+      ],
+      "series_dates": [
+        "2026-10-05T14:00:00.000Z",
+        "2026-10-06T14:00:00.000Z",
+        "2026-10-07T14:00:00.000Z",
+        "2026-10-08T14:00:00.000Z",
+        "2026-10-09T14:00:00.000Z",
+        "2026-10-12T14:00:00.000Z",
+        "2026-10-13T14:00:00.000Z",
+        "2026-10-14T14:00:00.000Z",
+        "2026-10-15T14:00:00.000Z",
+        "2026-10-16T14:00:00.000Z",
+        "2026-10-19T14:00:00.000Z"
       ]
     },
     {
       "name": "Dow Jones Industrial Average",
       "kind": "equity_index",
       "value": 51958.41,
-      "display_value": "≈51,958",
+      "display_value": "51,958.41",
       "baseline": "prior_close",
       "prior_close": 52002.41,
       "change_percent": -0.08,
@@ -281,17 +334,30 @@
           "name": "S&P Dow Jones Indices",
           "href": "https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/"
         }
+      ],
+      "series_dates": [
+        "2026-10-05T14:00:00.000Z",
+        "2026-10-06T14:00:00.000Z",
+        "2026-10-07T14:00:00.000Z",
+        "2026-10-08T14:00:00.000Z",
+        "2026-10-09T14:00:00.000Z",
+        "2026-10-12T14:00:00.000Z",
+        "2026-10-13T14:00:00.000Z",
+        "2026-10-14T14:00:00.000Z",
+        "2026-10-15T14:00:00.000Z",
+        "2026-10-16T14:00:00.000Z",
+        "2026-10-19T14:00:00.000Z"
       ]
     },
     {
       "name": "Expected volatility",
       "kind": "volatility",
       "value": 18,
-      "display_value": "≈18",
+      "display_value": "18.00",
       "baseline": "prior_close",
       "prior_close": 19.99,
       "change_percent": -10,
-      "display_change": "lower near 18",
+      "display_change": "−10.0%",
       "description": "The VIX estimates expected S&P 500 swings over the next month. It retreated near 18 as stocks recovered, but still signaled more uncertainty than before last week's selloff.",
       "so_what": {
         "channel_id": "vix",
@@ -335,6 +401,19 @@
           "name": "Cboe VIX",
           "href": "https://www.cboe.com/tradable-products/vix/"
         }
+      ],
+      "series_dates": [
+        "2026-10-05T14:00:00.000Z",
+        "2026-10-06T14:00:00.000Z",
+        "2026-10-07T14:00:00.000Z",
+        "2026-10-08T14:00:00.000Z",
+        "2026-10-09T14:00:00.000Z",
+        "2026-10-12T14:00:00.000Z",
+        "2026-10-13T14:00:00.000Z",
+        "2026-10-14T14:00:00.000Z",
+        "2026-10-15T14:00:00.000Z",
+        "2026-10-16T14:00:00.000Z",
+        "2026-10-19T14:00:00.000Z"
       ]
     }
   ],

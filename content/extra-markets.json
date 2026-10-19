@@ -3,7 +3,7 @@
     "group": "International Indices",
     "name": "DAX",
     "available": true,
-    "display_value": "≈25,337",
+    "display_value": "25,337.00",
     "display_change": "−1.1%",
     "change_percent": -1.1,
     "description": "Germany's DAX fell 1.1% as political unrest pressured European markets. Its exporters and manufacturers connect European growth with demand from the United States and China.",
@@ -31,6 +31,17 @@
         "name": "Börse Stuttgart · DAX/XDAX",
         "href": "https://www.boerse-stuttgart.de/de-de/produkte/indizes/a1ht0z-dax-xdax"
       }
+    ],
+    "series_dates": [
+      "2026-10-07T14:00:00.000Z",
+      "2026-10-08T14:00:00.000Z",
+      "2026-10-09T14:00:00.000Z",
+      "2026-10-12T14:00:00.000Z",
+      "2026-10-13T14:00:00.000Z",
+      "2026-10-14T14:00:00.000Z",
+      "2026-10-15T14:00:00.000Z",
+      "2026-10-16T14:00:00.000Z",
+      "2026-10-19T14:00:00.000Z"
     ]
   },
   {
@@ -67,13 +78,30 @@
         "name": "Nikkei Indexes · Nikkei 225",
         "href": "https://indexes.nikkei.co.jp/en/nkave/index/profile"
       }
+    ],
+    "series_dates": [
+      "2026-09-29T14:00:00.000Z",
+      "2026-09-30T14:00:00.000Z",
+      "2026-10-01T14:00:00.000Z",
+      "2026-10-02T14:00:00.000Z",
+      "2026-10-05T14:00:00.000Z",
+      "2026-10-06T14:00:00.000Z",
+      "2026-10-07T14:00:00.000Z",
+      "2026-10-08T14:00:00.000Z",
+      "2026-10-09T14:00:00.000Z",
+      "2026-10-12T14:00:00.000Z",
+      "2026-10-13T14:00:00.000Z",
+      "2026-10-14T14:00:00.000Z",
+      "2026-10-15T14:00:00.000Z",
+      "2026-10-16T14:00:00.000Z",
+      "2026-10-19T14:00:00.000Z"
     ]
   },
   {
     "group": "International Indices",
     "name": "KOSPI",
     "available": true,
-    "display_value": "≈5,770",
+    "display_value": "5,770.08",
     "display_change": "+1.8%",
     "change_percent": 1.8,
     "description": "South Korea's KOSPI rose 1.8% as AI-linked shares recovered. Its export focus offers a read on semiconductor demand and global manufacturing.",
@@ -109,6 +137,25 @@
         "name": "KB Financial Group · index trend",
         "href": "https://ir.gsifn.io/kbfng/v5/ir_comp_index.html?koreng=2&mode=korea"
       }
+    ],
+    "series_dates": [
+      "2026-09-25T14:00:00.000Z",
+      "2026-09-28T14:00:00.000Z",
+      "2026-09-29T14:00:00.000Z",
+      "2026-09-30T14:00:00.000Z",
+      "2026-10-01T14:00:00.000Z",
+      "2026-10-02T14:00:00.000Z",
+      "2026-10-05T14:00:00.000Z",
+      "2026-10-06T14:00:00.000Z",
+      "2026-10-07T14:00:00.000Z",
+      "2026-10-08T14:00:00.000Z",
+      "2026-10-09T14:00:00.000Z",
+      "2026-10-12T14:00:00.000Z",
+      "2026-10-13T14:00:00.000Z",
+      "2026-10-14T14:00:00.000Z",
+      "2026-10-15T14:00:00.000Z",
+      "2026-10-16T14:00:00.000Z",
+      "2026-10-19T14:00:00.000Z"
     ]
   },
   {
@@ -150,6 +197,27 @@
         "name": "FRED · NASDAQCOM",
         "href": "https://fred.stlouisfed.org/series/NASDAQCOM"
       }
+    ],
+    "series_dates": [
+      "2026-09-08T20:00:00.000Z",
+      "2026-09-09T20:00:00.000Z",
+      "2026-09-10T20:00:00.000Z",
+      "2026-09-11T20:00:00.000Z",
+      "2026-09-14T20:00:00.000Z",
+      "2026-09-15T20:00:00.000Z",
+      "2026-09-16T20:00:00.000Z",
+      "2026-09-17T20:00:00.000Z",
+      "2026-09-18T20:00:00.000Z",
+      "2026-09-21T20:00:00.000Z",
+      "2026-09-22T20:00:00.000Z",
+      "2026-09-23T20:00:00.000Z",
+      "2026-09-24T20:00:00.000Z",
+      "2026-09-25T20:00:00.000Z",
+      "2026-09-28T20:00:00.000Z",
+      "2026-09-29T20:00:00.000Z",
+      "2026-09-30T20:00:00.000Z",
+      "2026-10-01T20:00:00.000Z",
+      "2026-10-02T20:00:00.000Z"
     ]
   },
   {
@@ -192,6 +260,28 @@
         "name": "FRED · DJIA",
         "href": "https://fred.stlouisfed.org/series/DJIA"
       }
+    ],
+    "series_dates": [
+      "2026-09-08T14:10:00.000Z",
+      "2026-09-09T14:10:00.000Z",
+      "2026-09-10T14:10:00.000Z",
+      "2026-09-11T14:10:00.000Z",
+      "2026-09-14T14:10:00.000Z",
+      "2026-09-15T14:10:00.000Z",
+      "2026-09-16T14:10:00.000Z",
+      "2026-09-17T14:10:00.000Z",
+      "2026-09-18T14:10:00.000Z",
+      "2026-09-21T14:10:00.000Z",
+      "2026-09-22T14:10:00.000Z",
+      "2026-09-23T14:10:00.000Z",
+      "2026-09-24T14:10:00.000Z",
+      "2026-09-25T14:10:00.000Z",
+      "2026-09-28T14:10:00.000Z",
+      "2026-09-29T14:10:00.000Z",
+      "2026-09-30T14:10:00.000Z",
+      "2026-10-01T14:10:00.000Z",
+      "2026-10-02T14:10:00.000Z",
+      "2026-10-05T14:10:00.000Z"
     ]
   },
   {
@@ -224,6 +314,14 @@
         "name": "FTSE Russell · US index methodology",
         "href": "https://www.lseg.com/content/dam/ftse-russell/en_us/documents/ground-rules/russell-us-indexes-construction-and-methodology.pdf"
       }
+    ],
+    "series_dates": [
+      "2026-10-06T14:30:00.000Z",
+      "2026-10-07T14:30:00.000Z",
+      "2026-10-08T14:30:00.000Z",
+      "2026-10-09T14:30:00.000Z",
+      "2026-10-12T14:30:00.000Z",
+      "2026-10-13T14:30:00.000Z"
     ]
   },
   {
@@ -232,7 +330,7 @@
     "available": false,
     "withheld_reason": "daily source observation was relabeled with a current timestamp",
     "display_value": "4.79%",
-    "display_change": "near flat",
+    "display_change": "−0.3%",
     "change_percent": 0.19,
     "description": "The two-year Treasury yield traded near 4.79% Tuesday. Markets compare it with Federal Reserve policy and near-term borrowing costs.",
     "points": [
@@ -269,6 +367,31 @@
         "name": "FRED · DGS2",
         "href": "https://fred.stlouisfed.org/series/DGS2"
       }
+    ],
+    "series_dates": [
+      "2026-09-11T14:30:00.000Z",
+      "2026-09-14T14:30:00.000Z",
+      "2026-09-15T14:30:00.000Z",
+      "2026-09-16T14:30:00.000Z",
+      "2026-09-17T14:30:00.000Z",
+      "2026-09-18T14:30:00.000Z",
+      "2026-09-21T14:30:00.000Z",
+      "2026-09-22T14:30:00.000Z",
+      "2026-09-23T14:30:00.000Z",
+      "2026-09-24T14:30:00.000Z",
+      "2026-09-25T14:30:00.000Z",
+      "2026-09-28T14:30:00.000Z",
+      "2026-09-29T14:30:00.000Z",
+      "2026-09-30T14:30:00.000Z",
+      "2026-10-01T14:30:00.000Z",
+      "2026-10-02T14:30:00.000Z",
+      "2026-10-05T14:30:00.000Z",
+      "2026-10-06T14:30:00.000Z",
+      "2026-10-07T14:30:00.000Z",
+      "2026-10-08T14:30:00.000Z",
+      "2026-10-09T14:30:00.000Z",
+      "2026-10-12T14:30:00.000Z",
+      "2026-10-13T14:30:00.000Z"
     ]
   },
   {
@@ -277,7 +400,7 @@
     "available": false,
     "withheld_reason": "daily source observation was relabeled with a current timestamp",
     "display_value": "0.44 percentage points",
-    "display_change": "little changed",
+    "display_change": "−6.4%",
     "change_percent": 0,
     "description": "The gap between ten-year and two-year yields held near 0.44 percentage points Tuesday. Banks and economists watch it for clues about credit and growth expectations.",
     "points": [
@@ -312,6 +435,29 @@
         "name": "FRED · T10Y2Y",
         "href": "https://fred.stlouisfed.org/series/T10Y2Y"
       }
+    ],
+    "series_dates": [
+      "2026-09-15T14:30:00.000Z",
+      "2026-09-16T14:30:00.000Z",
+      "2026-09-17T14:30:00.000Z",
+      "2026-09-18T14:30:00.000Z",
+      "2026-09-21T14:30:00.000Z",
+      "2026-09-22T14:30:00.000Z",
+      "2026-09-23T14:30:00.000Z",
+      "2026-09-24T14:30:00.000Z",
+      "2026-09-25T14:30:00.000Z",
+      "2026-09-28T14:30:00.000Z",
+      "2026-09-29T14:30:00.000Z",
+      "2026-09-30T14:30:00.000Z",
+      "2026-10-01T14:30:00.000Z",
+      "2026-10-02T14:30:00.000Z",
+      "2026-10-05T14:30:00.000Z",
+      "2026-10-06T14:30:00.000Z",
+      "2026-10-07T14:30:00.000Z",
+      "2026-10-08T14:30:00.000Z",
+      "2026-10-09T14:30:00.000Z",
+      "2026-10-12T14:30:00.000Z",
+      "2026-10-13T14:30:00.000Z"
     ]
   },
   {
@@ -337,6 +483,13 @@
         "name": "Freddie Mac mortgage survey",
         "href": "https://www.freddiemac.com/pmms"
       }
+    ],
+    "series_dates": [
+      "2026-10-09T16:00:00.000Z",
+      "2026-10-12T16:00:00.000Z",
+      "2026-10-13T16:00:00.000Z",
+      "2026-10-14T16:00:00.000Z",
+      "2026-10-15T16:00:00.000Z"
     ]
   },
   {
@@ -344,7 +497,7 @@
     "name": "Euro to dollar",
     "available": true,
     "display_value": "$1.1231 per euro",
-    "display_change": "little changed",
+    "display_change": "−0.1%",
     "change_percent": -0.03,
     "description": "The euro held near $1.1231. The pair affects travel, import prices, and the translated revenue of U.S. companies doing business in Europe.",
     "points": [
@@ -383,6 +536,33 @@
         "name": "FRED · DEXUSEU",
         "href": "https://fred.stlouisfed.org/series/DEXUSEU"
       }
+    ],
+    "series_dates": [
+      "2026-09-15T14:00:00.000Z",
+      "2026-09-16T14:00:00.000Z",
+      "2026-09-17T14:00:00.000Z",
+      "2026-09-18T14:00:00.000Z",
+      "2026-09-21T14:00:00.000Z",
+      "2026-09-22T14:00:00.000Z",
+      "2026-09-23T14:00:00.000Z",
+      "2026-09-24T14:00:00.000Z",
+      "2026-09-25T14:00:00.000Z",
+      "2026-09-28T14:00:00.000Z",
+      "2026-09-29T14:00:00.000Z",
+      "2026-09-30T14:00:00.000Z",
+      "2026-10-01T14:00:00.000Z",
+      "2026-10-02T14:00:00.000Z",
+      "2026-10-05T14:00:00.000Z",
+      "2026-10-06T14:00:00.000Z",
+      "2026-10-07T14:00:00.000Z",
+      "2026-10-08T14:00:00.000Z",
+      "2026-10-09T14:00:00.000Z",
+      "2026-10-12T14:00:00.000Z",
+      "2026-10-13T14:00:00.000Z",
+      "2026-10-14T14:00:00.000Z",
+      "2026-10-15T14:00:00.000Z",
+      "2026-10-16T14:00:00.000Z",
+      "2026-10-19T14:00:00.000Z"
     ]
   },
   {
@@ -390,7 +570,7 @@
     "name": "Dollar to yen",
     "available": true,
     "display_value": "¥158.09 per dollar",
-    "display_change": "little changed",
+    "display_change": "+0.0%",
     "change_percent": -0.18,
     "description": "The dollar held near ¥158.09. The pair links U.S.-Japan rate differences with cars, electronics, overseas earnings, and global funding trades.",
     "points": [
@@ -429,6 +609,33 @@
         "name": "FRED · DEXJPUS",
         "href": "https://fred.stlouisfed.org/series/DEXJPUS"
       }
+    ],
+    "series_dates": [
+      "2026-09-15T14:00:00.000Z",
+      "2026-09-16T14:00:00.000Z",
+      "2026-09-17T14:00:00.000Z",
+      "2026-09-18T14:00:00.000Z",
+      "2026-09-21T14:00:00.000Z",
+      "2026-09-22T14:00:00.000Z",
+      "2026-09-23T14:00:00.000Z",
+      "2026-09-24T14:00:00.000Z",
+      "2026-09-25T14:00:00.000Z",
+      "2026-09-28T14:00:00.000Z",
+      "2026-09-29T14:00:00.000Z",
+      "2026-09-30T14:00:00.000Z",
+      "2026-10-01T14:00:00.000Z",
+      "2026-10-02T14:00:00.000Z",
+      "2026-10-05T14:00:00.000Z",
+      "2026-10-06T14:00:00.000Z",
+      "2026-10-07T14:00:00.000Z",
+      "2026-10-08T14:00:00.000Z",
+      "2026-10-09T14:00:00.000Z",
+      "2026-10-12T14:00:00.000Z",
+      "2026-10-13T14:00:00.000Z",
+      "2026-10-14T14:00:00.000Z",
+      "2026-10-15T14:00:00.000Z",
+      "2026-10-16T14:00:00.000Z",
+      "2026-10-19T14:00:00.000Z"
     ]
   },
   {
@@ -436,7 +643,7 @@
     "name": "Pound to dollar",
     "available": true,
     "display_value": "$1.3330 per pound",
-    "display_change": "little changed",
+    "display_change": "+0.0%",
     "change_percent": 0.03,
     "description": "The pound held near $1.3330. Sterling affects British travel, holdings, and the translated revenue of U.S. companies earning pounds.",
     "points": [
@@ -461,6 +668,19 @@
         "name": "FRED · DEXUSUK",
         "href": "https://fred.stlouisfed.org/series/DEXUSUK"
       }
+    ],
+    "series_dates": [
+      "2026-10-05T14:00:00.000Z",
+      "2026-10-06T14:00:00.000Z",
+      "2026-10-07T14:00:00.000Z",
+      "2026-10-08T14:00:00.000Z",
+      "2026-10-09T14:00:00.000Z",
+      "2026-10-12T14:00:00.000Z",
+      "2026-10-13T14:00:00.000Z",
+      "2026-10-14T14:00:00.000Z",
+      "2026-10-15T14:00:00.000Z",
+      "2026-10-16T14:00:00.000Z",
+      "2026-10-19T14:00:00.000Z"
     ]
   },
   {
@@ -504,6 +724,30 @@
         "name": "FRED · DCOILWTICO",
         "href": "https://fred.stlouisfed.org/series/DCOILWTICO"
       }
+    ],
+    "series_dates": [
+      "2026-09-18T14:00:00.000Z",
+      "2026-09-21T14:00:00.000Z",
+      "2026-09-22T14:00:00.000Z",
+      "2026-09-23T14:00:00.000Z",
+      "2026-09-24T14:00:00.000Z",
+      "2026-09-25T14:00:00.000Z",
+      "2026-09-28T14:00:00.000Z",
+      "2026-09-29T14:00:00.000Z",
+      "2026-09-30T14:00:00.000Z",
+      "2026-10-01T14:00:00.000Z",
+      "2026-10-02T14:00:00.000Z",
+      "2026-10-05T14:00:00.000Z",
+      "2026-10-06T14:00:00.000Z",
+      "2026-10-07T14:00:00.000Z",
+      "2026-10-08T14:00:00.000Z",
+      "2026-10-09T14:00:00.000Z",
+      "2026-10-12T14:00:00.000Z",
+      "2026-10-13T14:00:00.000Z",
+      "2026-10-14T14:00:00.000Z",
+      "2026-10-15T14:00:00.000Z",
+      "2026-10-16T14:00:00.000Z",
+      "2026-10-19T14:00:00.000Z"
     ]
   },
   {
@@ -547,6 +791,30 @@
         "name": "FRED · DHHNGSP",
         "href": "https://fred.stlouisfed.org/series/DHHNGSP"
       }
+    ],
+    "series_dates": [
+      "2026-09-18T14:00:00.000Z",
+      "2026-09-21T14:00:00.000Z",
+      "2026-09-22T14:00:00.000Z",
+      "2026-09-23T14:00:00.000Z",
+      "2026-09-24T14:00:00.000Z",
+      "2026-09-25T14:00:00.000Z",
+      "2026-09-28T14:00:00.000Z",
+      "2026-09-29T14:00:00.000Z",
+      "2026-09-30T14:00:00.000Z",
+      "2026-10-01T14:00:00.000Z",
+      "2026-10-02T14:00:00.000Z",
+      "2026-10-05T14:00:00.000Z",
+      "2026-10-06T14:00:00.000Z",
+      "2026-10-07T14:00:00.000Z",
+      "2026-10-08T14:00:00.000Z",
+      "2026-10-09T14:00:00.000Z",
+      "2026-10-12T14:00:00.000Z",
+      "2026-10-13T14:00:00.000Z",
+      "2026-10-14T14:00:00.000Z",
+      "2026-10-15T14:00:00.000Z",
+      "2026-10-16T14:00:00.000Z",
+      "2026-10-19T14:00:00.000Z"
     ]
   },
   {
@@ -577,6 +845,17 @@
         "name": "FRED · PCOPPUSDM",
         "href": "https://fred.stlouisfed.org/series/PCOPPUSDM"
       }
+    ],
+    "series_dates": [
+      "2026-10-07T14:00:00.000Z",
+      "2026-10-08T14:00:00.000Z",
+      "2026-10-09T14:00:00.000Z",
+      "2026-10-12T14:00:00.000Z",
+      "2026-10-13T14:00:00.000Z",
+      "2026-10-14T14:00:00.000Z",
+      "2026-10-15T14:00:00.000Z",
+      "2026-10-16T14:00:00.000Z",
+      "2026-10-19T14:00:00.000Z"
     ]
   },
   {
@@ -587,12 +866,34 @@
     "display_change": "−0.4%",
     "change_percent": -0.42,
     "description": "Gold edged down 0.4% even as stocks remained unsettled. Currencies, inflation, interest rates, and market stress can all affect demand.",
-    "points": [4104.3,4118.7,4096.5,4142.1,4158.63,4188.1,4148.8],
+    "points": [
+      4104.3,
+      4118.7,
+      4096.5,
+      4142.1,
+      4158.63,
+      4188.1,
+      4148.8
+    ],
     "fetched_at": "2026-10-19T10:00:00-04:00",
     "frequency": "Intraday",
     "data_provider": "CME Group",
     "licensing_note": "CME market data are proprietary; the contract page is retained for verification.",
-    "sources": [{"name": "CME Group · Gold futures", "href": "https://www.cmegroup.com/markets/metals/precious/gold.html"}]
+    "sources": [
+      {
+        "name": "CME Group · Gold futures",
+        "href": "https://www.cmegroup.com/markets/metals/precious/gold.html"
+      }
+    ],
+    "series_dates": [
+      "2026-10-09T14:00:00.000Z",
+      "2026-10-12T14:00:00.000Z",
+      "2026-10-13T14:00:00.000Z",
+      "2026-10-14T14:00:00.000Z",
+      "2026-10-15T14:00:00.000Z",
+      "2026-10-16T14:00:00.000Z",
+      "2026-10-19T14:00:00.000Z"
+    ]
   },
   {
     "group": "Commodities",
@@ -602,11 +903,33 @@
     "display_change": "+0.5%",
     "change_percent": 0.49,
     "description": "Silver rose 0.5%. It is both a precious metal and an industrial input used in electronics and solar equipment, so both investment and factory demand matter.",
-    "points": [59.7,59.2,58.6,57.8,57.79,57.116,57.27],
+    "points": [
+      59.7,
+      59.2,
+      58.6,
+      57.8,
+      57.79,
+      57.116,
+      57.27
+    ],
     "fetched_at": "2026-10-19T10:00:00-04:00",
     "frequency": "Intraday",
     "data_provider": "CME Group",
     "licensing_note": "CME market data are proprietary; the contract page is retained for verification.",
-    "sources": [{"name": "CME Group · Silver futures", "href": "https://www.cmegroup.com/markets/metals/precious/silver.html"}]
+    "sources": [
+      {
+        "name": "CME Group · Silver futures",
+        "href": "https://www.cmegroup.com/markets/metals/precious/silver.html"
+      }
+    ],
+    "series_dates": [
+      "2026-10-09T14:00:00.000Z",
+      "2026-10-12T14:00:00.000Z",
+      "2026-10-13T14:00:00.000Z",
+      "2026-10-14T14:00:00.000Z",
+      "2026-10-15T14:00:00.000Z",
+      "2026-10-16T14:00:00.000Z",
+      "2026-10-19T14:00:00.000Z"
+    ]
   }
 ]
