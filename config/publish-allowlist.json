@@ -6,6 +6,8 @@
     "favicon.svg",
     "index.html",
     "og.png",
+    "og-2026-10-19.svg",
+    "rss.xml",
     "tldr-macro-logo-wide.png",
     "_not-found/index.html"
   ],
@@ -13,6 +15,9 @@
     "_next/static/": [".css", ".js", ".woff2"],
     "_not-found/": [".html", ".txt"],
     "404/": [".html", ".txt"]
+    ,"about/": [".html", ".txt"]
+    ,"glossary/": [".html", ".txt"]
+    ,"archive/": [".html", ".txt"]
   },
   "allowedRootPatterns": [
     "^__next\\..+\\.txt$",

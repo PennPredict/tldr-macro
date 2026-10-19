@@ -21,5 +21,5 @@ export function Header({ updated, summary }: { updated?: string; summary:string 
 }
 
 export function Footer() {
-  return <footer><div className="footer-meta"><div><nav aria-label="Footer navigation"><Link href="/about/">About &amp; methodology</Link><Link href="/glossary/">Glossary</Link><Link href="/archive/">Archive</Link><a href="/rss.xml">RSS</a></nav><p className="footer-note">{fullDisclaimer}</p><form className="email-signup"><label htmlFor="email">Daily email</label><input id="email" type="email" aria-label="Email address" disabled/><button type="button" disabled>Coming soon</button></form></div><BrandImage placement="footer" /></div></footer>;
+  return <footer><div className="footer-meta"><div><nav aria-label="Footer navigation"><Link href="/about/">About &amp; methodology</Link><Link href="/glossary/">Glossary</Link><Link href="/archive/">Archive</Link><a href="/rss.xml">RSS</a></nav><p className="footer-note">{fullDisclaimer}</p></div><BrandImage placement="footer" /></div></footer>;
 }
