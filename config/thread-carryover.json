@@ -1,10 +1,10 @@
 {
   "War risk": {"node_id":"oil-release","field":"popover.plain"},
-  "$109.86": {"node_id":"oil-release","field":"popover.precise"},
+  "$108.13": {"node_id":"oil-release","field":"popover.precise"},
   "10-year Treasury yield": {"node_id":"yield10-market","field":"popover.precise"},
   "Nasdaq index": {"node_id":"nasdaq-market","field":"popover.plain"},
   "worth less today": {"node_id":"rates-to-valuations","field":"popover.plain"},
-  "4:10 PM ET yield": {"node_id":"yield10-market","field":"popover.plain","match":"4:10 PM ET"},
-  "4:10 PM ET Nasdaq": {"node_id":"nasdaq-market","field":"popover.plain","match":"4:10 PM ET"},
+  "10:00 AM ET yield": {"node_id":"yield10-market","field":"popover.plain","match":"10:00 AM ET"},
+  "10:00 AM ET Nasdaq": {"node_id":"nasdaq-market","field":"popover.plain","match":"10:00 AM ET"},
   "sourced-links footer claim": {"dropped":true,"reason":"The legend and evidence rules already communicate claim limits."}
 }

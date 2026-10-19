@@ -1,5 +1,5 @@
 {
-  "edition_date": "2026-10-16",
+  "edition_date": "2026-10-19",
   "reported_node_id": "oil-release",
   "mobile_order": [
     "oil-release",
@@ -15,20 +15,20 @@
       "layer": "Happened",
       "type": "FACT",
       "tier": 1,
-      "label": "Oil became more expensive",
-      "subline": "Supply fears increased the risk premium",
-      "value": "Brent surged 3.7%",
-      "event_time": "2026-10-16T16:10:00-04:00",
-      "reference_period": "Oct. 16 close",
-      "source": "CME Group",
-      "source_url": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html",
-      "source_sentence": "Brent crude settled at $109.86, up 3.7% from Thursday.",
+      "label": "Oil became less expensive",
+      "subline": "A sanctions pause suggested more supply",
+      "value": "Brent fell 1.6%",
+      "event_time": "2026-10-19T10:00:00-04:00",
+      "reference_period": "Oct. 19 at 10:00 AM",
+      "source": "The Associated Press",
+      "source_url": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058",
+      "source_sentence": "Brent crude fell 1.6% to $108.13 per barrel.",
       "story_anchor": "story-housing",
       "popover": {
-        "title": "Why oil rose",
-        "plain": "War risk made each barrel more expensive.",
-        "precise": "Brent settled at $109.86, up from $105.92 Thursday. Oil affects gasoline, diesel, shipping, and production costs.",
-        "source_url": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html"
+        "title": "Why oil fell",
+        "plain": "A pause in new Russia sanctions suggested more oil could reach the market. War risk still kept prices high.",
+        "precise": "Brent traded at $108.13 at 10:00 AM ET, down 1.6%. War risk still kept oil well above pre-conflict levels.",
+        "source_url": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058"
       }
     },
     {
@@ -71,19 +71,19 @@
       "layer": "Markets",
       "type": "FACT",
       "tier": 1,
-      "label": "Government borrowing rates slipped slightly",
-      "value": "10-year rate 5.09%",
-      "event_time": "2026-10-16T16:10:00-04:00",
-      "reference_period": "Oct. 16 close",
+      "label": "Government borrowing rates stayed high",
+      "value": "10-year rate 5.10%",
+      "event_time": "2026-10-19T10:00:00-04:00",
+      "reference_period": "Oct. 19 at 10:00 AM",
       "registry_id": "yield10",
       "source": "The Associated Press",
-      "source_url": "https://apnews.com/article/d2655f64db7ec8ae450525d58f97b628",
+      "source_url": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058",
       "story_anchor": "story-rates",
       "popover": {
         "title": "Government borrowing rate",
-        "plain": "The government's 10-year borrowing rate was 5.09% at 4:10 PM ET.",
-        "precise": "The 10-year Treasury yield influences many longer-term borrowing rates. It slipped from 5.10% Thursday to 5.09% Friday.",
-        "source_url": "https://apnews.com/article/d2655f64db7ec8ae450525d58f97b628"
+        "plain": "The government's 10-year borrowing rate was 5.10% at 10:00 AM ET.",
+        "precise": "The 10-year Treasury yield influences many longer-term borrowing rates. It rose from 5.09% Friday to 5.10% Monday morning.",
+        "source_url": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058"
       }
     },
     {
@@ -91,18 +91,18 @@
       "layer": "Markets",
       "type": "FACT",
       "tier": 1,
-      "label": "Technology shares fell sharply",
-      "value": "Nasdaq down 2.1%",
-      "event_time": "2026-10-16T16:10:00-04:00",
-      "reference_period": "Oct. 16 close",
+      "label": "Technology shares recovered partly",
+      "value": "Nasdaq up 0.9%",
+      "event_time": "2026-10-19T10:00:00-04:00",
+      "reference_period": "Oct. 19 at 10:00 AM",
       "registry_id": "nasdaq",
       "source": "The Associated Press",
-      "source_url": "https://apnews.com/article/d2655f64db7ec8ae450525d58f97b628",
+      "source_url": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058",
       "popover": {
-        "title": "Technology-led decline",
-        "plain": "The Nasdaq index was down 2.1% at 4:10 PM ET.",
-        "precise": "The Nasdaq closed at 26,140.03, down 572.99 points. All but seven S&P 500 technology stocks ended lower.",
-        "source_url": "https://apnews.com/article/d2655f64db7ec8ae450525d58f97b628"
+        "title": "Technology-led rebound",
+        "plain": "The Nasdaq index was up 0.9% at 10:00 AM ET.",
+        "precise": "AI shares lifted the Nasdaq, but the rebound recovered only part of last week's decline.",
+        "source_url": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058"
       }
     },
     {
@@ -166,7 +166,7 @@
       "mechanism_id": "rates-to-borrowing"
     }
   ],
-  "takeaway": "Higher oil costs can keep loans expensive and pressure tech shares.",
+  "takeaway": "Cheaper oil can ease cost pressure, but high rates still test tech shares.",
   "other_factors_note": "Earnings, AI demand, and global news can also move markets.",
   "enabled": true
 }

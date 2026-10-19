@@ -1,18 +1,18 @@
 {
-  "edition_date": "2026-10-16",
-  "updated_at": "2026-10-16T16:10:00-04:00",
-  "summary": "Shares fell; Treasury yields held steady; crude oil jumped.",
+  "edition_date": "2026-10-19",
+  "updated_at": "2026-10-19T10:00:00-04:00",
+  "summary": "Shares edged up; Treasury yields held steady; crude oil dropped.",
   "markets": [
     {
       "name": "S&P 500",
       "kind": "equity_index",
-      "value": 7659.44,
-      "display_value": "7,659.44",
+      "value": 7690.08,
+      "display_value": "≈7,690",
       "baseline": "prior_close",
-      "prior_close": 7744.06,
-      "change_percent": -1.09,
-      "display_change": "−1.1%",
-      "description": "The S&P 500 tracks 500 large U.S. companies and anchors many retirement funds. It lost 1.1% as technology shares weakened, pulling broad portfolios lower.",
+      "prior_close": 7659.44,
+      "change_percent": 0.4,
+      "display_change": "+0.4%",
+      "description": "The S&P 500 tracks 500 large U.S. companies and anchors many retirement funds. It rose 0.4% as AI shares recovered part of last week's decline.",
       "so_what": {
         "channel_id": "sp500",
         "context": {
@@ -31,12 +31,12 @@
         {
           "sentence_id": "sp500-description-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/d2655f64db7ec8ae450525d58f97b628"
+          "evidence": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058"
         }
       ],
       "data_source": "S&P Dow Jones Indices",
-      "fetched_at": "2026-10-16T16:10:00-04:00",
-      "range": "Thursday close 7,744.06 · Friday close 7,659.44",
+      "fetched_at": "2026-10-19T10:00:00-04:00",
+      "range": "Friday close 7,659.44 · Monday 10:00 AM +0.4%",
       "points": [
         7773.95,
         7818.93,
@@ -48,7 +48,8 @@
         7807.24,
         7718.94,
         7744.06,
-        7659.44
+        7659.44,
+        7690.08
       ],
       "sources": [
         {
@@ -60,13 +61,13 @@
     {
       "name": "10-year Treasury yield",
       "kind": "yield",
-      "value": 5.09,
-      "display_value": "5.09%",
+      "value": 5.1,
+      "display_value": "5.10%",
       "baseline": "prior_close",
-      "prior_close": 5.10,
-      "change_percent": -0.2,
-      "display_change": "−0.01 points",
-      "description": "The 10-year Treasury yield helps set long-term borrowing costs, including many mortgage rates. It slipped to 5.09%, although financing remained expensive.",
+      "prior_close": 5.09,
+      "change_percent": 0.2,
+      "display_change": "+0.01 points",
+      "description": "The 10-year Treasury yield helps set long-term borrowing costs, including many mortgage rates. It edged up to 5.10%, keeping financing expensive.",
       "so_what": {
         "channel_id": "yield10",
         "context": {
@@ -85,12 +86,12 @@
         {
           "sentence_id": "yield-description-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/d2655f64db7ec8ae450525d58f97b628"
+          "evidence": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058"
         }
       ],
       "data_source": "U.S. Treasury and The Associated Press",
-      "fetched_at": "2026-10-16T16:10:00-04:00",
-      "range": "Thursday close 5.10% · Friday close 5.09%",
+      "fetched_at": "2026-10-19T10:00:00-04:00",
+      "range": "Friday close 5.09% · Monday 10:00 AM 5.10%",
       "points": [
         5.10,
         5.18,
@@ -101,7 +102,8 @@
         5.24,
         5.19,
         5.10,
-        5.09
+        5.09,
+        5.1
       ],
       "sources": [
         {
@@ -110,27 +112,27 @@
         },
         {
           "name": "The Associated Press",
-          "href": "https://apnews.com/article/d2655f64db7ec8ae450525d58f97b628"
+          "href": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058"
         }
       ]
     },
     {
       "name": "Brent crude oil",
       "kind": "commodity",
-      "value": 109.86,
-      "display_value": "$109.86",
+      "value": 108.13,
+      "display_value": "$108.13",
       "baseline": "prior_close",
-      "prior_close": 105.92,
-      "change_percent": 3.72,
-      "display_change": "+3.7%",
-      "description": "Brent crude is a reference price for oil sold around the world. It surged 3.7% as conflict-related supply fears added a larger premium to fuel prices.",
+      "prior_close": 109.86,
+      "change_percent": -1.6,
+      "display_change": "−1.6%",
+      "description": "Brent crude is a reference price for oil sold around the world. It fell 1.6% after new Russia sanctions were paused, though war-related supply risk kept prices high.",
       "so_what": {
         "channel_id": "brent",
         "context": {
           "type": "attributed",
           "text": "Expensive oil can raise transportation, production, and household fuel costs.",
           "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints",
-          "evidence": "Brent settled at $109.86 on Friday."
+          "evidence": "Brent traded at $108.13 at 10:00 AM Monday."
         }
       },
       "explains": [],
@@ -147,8 +149,8 @@
         }
       ],
       "data_source": "CME Group",
-      "fetched_at": "2026-10-16T16:10:00-04:00",
-      "range": "Thursday close $105.92 · Friday settlement $109.86",
+      "fetched_at": "2026-10-19T10:00:00-04:00",
+      "range": "Friday settlement $109.86 · Monday 10:00 AM $108.13",
       "points": [
         99.37,
         101.94,
@@ -159,7 +161,8 @@
         104.72,
         106.65,
         105.92,
-        109.86
+        109.86,
+        108.13
       ],
       "sources": [
         {
@@ -171,13 +174,13 @@
     {
       "name": "Nasdaq Composite",
       "kind": "equity_index",
-      "value": 26140.03,
-      "display_value": "26,140.03",
+      "value": 26375.29,
+      "display_value": "≈26,375",
       "baseline": "prior_close",
-      "prior_close": 26713.03,
-      "change_percent": -2.15,
-      "display_change": "−2.1%",
-      "description": "The Nasdaq tracks many listed firms and leans toward technology. It sank 2.1% as nearly the entire S&P 500 technology sector finished lower.",
+      "prior_close": 26140.03,
+      "change_percent": 0.9,
+      "display_change": "+0.9%",
+      "description": "The Nasdaq tracks many listed firms and leans toward technology. It climbed 0.9% as AI shares recovered, but remained below levels from before last week's selloff.",
       "so_what": {
         "channel_id": "nasdaq",
         "context": {
@@ -196,12 +199,12 @@
         {
           "sentence_id": "nasdaq-description-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/d2655f64db7ec8ae450525d58f97b628"
+          "evidence": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058"
         }
       ],
       "data_source": "Nasdaq and The Associated Press",
-      "fetched_at": "2026-10-16T16:10:00-04:00",
-      "range": "Thursday close 26,713.03 · Friday close 26,140.03",
+      "fetched_at": "2026-10-19T10:00:00-04:00",
+      "range": "Friday close 26,140.03 · Monday 10:00 AM +0.9%",
       "points": [
         27477.31,
         27599.79,
@@ -212,7 +215,8 @@
         27245.9,
         26692.87,
         26713.03,
-        26140.03
+        26140.03,
+        26375.29
       ],
       "sources": [
         {
@@ -221,20 +225,20 @@
         },
         {
           "name": "The Associated Press",
-          "href": "https://apnews.com/article/d2655f64db7ec8ae450525d58f97b628"
+          "href": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058"
         }
       ]
     },
     {
       "name": "Dow Jones Industrial Average",
       "kind": "equity_index",
-      "value": 52002.41,
-      "display_value": "52,002.41",
+      "value": 51958.41,
+      "display_value": "≈51,958",
       "baseline": "prior_close",
-      "prior_close": 52177.69,
-      "change_percent": -0.34,
-      "display_change": "−0.3%",
-      "description": "The Dow tracks 30 large, established U.S. companies. It slipped 0.3%, holding up better than technology-heavy indexes.",
+      "prior_close": 52002.41,
+      "change_percent": -0.08,
+      "display_change": "−0.1%",
+      "description": "The Dow tracks 30 large, established U.S. companies. It dipped 0.1%, showing that Monday's rebound was concentrated in technology rather than spread evenly.",
       "so_what": {
         "channel_id": "dow",
         "context": {
@@ -253,12 +257,12 @@
         {
           "sentence_id": "dow-description-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/d2655f64db7ec8ae450525d58f97b628"
+          "evidence": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058"
         }
       ],
       "data_source": "S&P Dow Jones Indices",
-      "fetched_at": "2026-10-16T16:10:00-04:00",
-      "range": "Thursday close 52,177.69 · Friday close 52,002.41",
+      "fetched_at": "2026-10-19T10:00:00-04:00",
+      "range": "Friday close 52,002.41 · Monday 10:00 AM down 44 points",
       "points": [
         51176.96,
         51521.28,
@@ -269,7 +273,8 @@
         51850.55,
         51621.48,
         52177.69,
-        52002.41
+        52002.41,
+        51958.41
       ],
       "sources": [
         {
@@ -281,13 +286,13 @@
     {
       "name": "Expected volatility",
       "kind": "volatility",
-      "value": 19.99,
-      "display_value": "19.99",
+      "value": 18,
+      "display_value": "≈18",
       "baseline": "prior_close",
-      "prior_close": 16.46,
-      "change_percent": 21.45,
-      "display_change": "+21.5%",
-      "description": "The VIX estimates expected S&P 500 swings over the next month. It jumped 21.5%, showing that investors expected larger near-term moves.",
+      "prior_close": 19.99,
+      "change_percent": -10,
+      "display_change": "lower near 18",
+      "description": "The VIX estimates expected S&P 500 swings over the next month. It retreated near 18 as stocks recovered, but still signaled more uncertainty than before last week's selloff.",
       "so_what": {
         "channel_id": "vix",
         "context": {
@@ -310,8 +315,8 @@
         }
       ],
       "data_source": "Cboe closing data",
-      "fetched_at": "2026-10-16T16:10:00-04:00",
-      "range": "Thursday close 16.46 · Friday close 19.99",
+      "fetched_at": "2026-10-19T10:00:00-04:00",
+      "range": "Friday close 19.99 · Monday morning near 18",
       "points": [
         15.44,
         15.38,
@@ -322,7 +327,8 @@
         14.84,
         15.21,
         16.46,
-        19.99
+        19.99,
+        18
       ],
       "sources": [
         {

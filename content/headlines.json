@@ -114,13 +114,13 @@
   },
   {
     "topic_tag": "companies",
-    "headline": "Technology Shares Fall Broadly",
+    "headline": "AI Shares Lead an Uneven Rebound",
     "headline_evidence": {
       "bucket": "technology",
-      "rule": "The Nasdaq fell 2.1%, and all but seven S&P 500 technology stocks finished lower.",
-      "data": "Associated Press closing report"
+      "rule": "The Nasdaq rose 0.9%, while the Dow slipped 0.1% by 10:00 AM.",
+      "data": "Associated Press 10:00 AM report"
     },
-    "commentary": "Technology shares led Friday's retreat. The Nasdaq fell 2.1%, and all but seven technology companies in the S&P 500 closed lower. Investors remain concerned that future AI revenue may not justify today's large data center bills and debt.",
+    "commentary": "AI shares recovered part of last week's decline, lifting the Nasdaq 0.9%. The Dow still slipped 0.1%, so the rebound was narrow rather than market-wide. High borrowing costs remain a test for companies funding large data center projects with debt.",
     "defines": [
       {
         "term": "Data center",
@@ -169,12 +169,12 @@
           {
             "sentence_id": "ai-business-1",
             "type": "mechanism",
-            "evidence": "https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628"
+            "evidence": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058"
           },
           {
             "sentence_id": "ai-business-2",
             "type": "interpretation",
-            "evidence": "https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628"
+            "evidence": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058"
           }
         ]
       },
@@ -199,29 +199,29 @@
     "sources": [
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628"
+        "href": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058"
       },
       {
         "name": "Federal Reserve",
         "href": "https://www.federalreserve.gov/monetarypolicy.htm"
       }
     ],
-    "data_note": "Friday's closing prices capture one session; company results and new AI spending plans can quickly change sentiment.",
+    "data_note": "Prices are from 10:00 AM ET; company results and new AI spending plans can quickly change sentiment.",
     "claims": [
       {
         "sentence_id": "ai-commentary-1",
         "type": "fact",
-        "evidence": "https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628"
+            "evidence": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058"
       },
       {
         "sentence_id": "ai-commentary-2",
         "type": "fact",
-        "evidence": "https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628"
+            "evidence": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058"
       },
       {
         "sentence_id": "ai-commentary-3",
         "type": "interpretation",
-        "evidence": "https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628"
+            "evidence": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058"
       }
     ]
   },

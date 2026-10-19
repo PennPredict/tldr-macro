@@ -1,12 +1,12 @@
 # Economic Thread report
 
-Generated: 2026-10-18T01:22:43.333Z
-Edition: 2026-10-16
+Generated: 2026-10-19T15:16:19.940Z
+Edition: 2026-10-19
 Status: PASSED
 
 - Tier-1 render: 6 nodes, 5 edges, no captions.
-- Visible-word count: 157 before; 79 after; maximum 110.
-- Takeaway: 11 words; FK grade 4.8.
+- Visible-word count: 157 before; 81 after; maximum 110.
+- Takeaway: 13 words; FK grade 3.1.
 - Mortgage example: $2077 at 7.40%; $2286 at 8.40%; difference $209.
 - One-liner source of truth: current edition → shared generator → header and sticky header; release anchor oil-release.
 - Current preview: http://127.0.0.1:4184/; verification uses a fresh isolated server on port 4173.
@@ -32,7 +32,7 @@ Status: PASSED
 | Layer | What it could mean | Could mean | No detail removed |
 | Legend | Long sequence/mechanism explanation | Dashed arrows: common links, not proof of cause. | Dynamic by drawn edge types |
 | Footer | Two-sentence caveat | Earnings, AI demand, and global news can also move markets. | Sourced-links claim intentionally dropped |
-| Takeaway | 35-word numbered summary | Higher oil costs can keep loans expensive and pressure tech shares. | Numbers remain in nodes and one-liner |
+| Takeaway | 35-word numbered summary | Cheaper oil can ease cost pressure, but high rates still test tech shares. | Numbers remain in nodes and one-liner |
 
 ## Human checks
 

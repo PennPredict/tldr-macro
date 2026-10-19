@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-18T01:22:46.681Z",
-  "edition_date": "2026-10-16",
+  "generated_at": "2026-10-19T15:16:23.258Z",
+  "edition_date": "2026-10-19",
   "policy_version": 1,
   "status": "passed",
   "freshness_limit_minutes": 360,
   "calendar_last_verified": "2026-10-14",
   "copy_counts": {
-    "pressure": 1,
-    "eased": 1
+    "pressure": 2,
+    "eased": 0
   },
   "claim_ledger": {
     "headline_claims": 9,
@@ -15,8 +15,8 @@
     "market_claims": 12
   },
   "snapshot_checks": {
-    "summary_words": 9,
-    "summary_characters": 59,
+    "summary_words": 10,
+    "summary_characters": 64,
     "priority_order": [
       "S&P 500",
       "10-year Treasury yield",
@@ -53,7 +53,7 @@
           "type": "attributed",
           "text": "Expensive oil can raise transportation, production, and household fuel costs.",
           "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints",
-          "evidence": "Brent settled at $109.86 on Friday."
+          "evidence": "Brent traded at $108.13 at 10:00 AM Monday."
         }
       },
       {
@@ -87,23 +87,27 @@
   },
   "edition_summary": {
     "facts": {
-      "edition_date": "2026-10-16",
+      "edition_date": "2026-10-19",
       "stocks": {
         "name": "S&P 500",
-        "value": 7659.44,
-        "change_percent": -1.09,
-        "bucket": "medium_down",
+        "value": 7690.08,
+        "change_percent": 0.4,
+        "bucket": "small_up",
         "record": null,
         "streak": null,
         "first_in": null,
         "range_position": null,
-        "move": "down",
-        "qualifier": null
+        "move": "up",
+        "qualifier": {
+          "type": "size",
+          "bucket": "small_up",
+          "text": "slightly"
+        }
       },
       "rates": {
         "name": "10-year Treasury yield",
-        "value": 5.09,
-        "change_basis_points": -1,
+        "value": 5.1,
+        "change_basis_points": 1,
         "bucket": "flat",
         "record": null,
         "streak": null,
@@ -114,49 +118,49 @@
       },
       "oil": {
         "name": "Brent crude oil",
-        "value": 109.86,
-        "change_percent": 3.72,
-        "bucket": "large_up",
+        "value": 108.13,
+        "change_percent": -1.6,
+        "bucket": "large_down",
         "record": null,
         "streak": null,
         "first_in": null,
         "range_position": null,
-        "move": "up",
+        "move": "down",
         "qualifier": {
           "type": "size",
-          "bucket": "large_up",
+          "bucket": "large_down",
           "text": "sharply"
         }
       },
       "release": null,
       "nasdaq": {
         "name": "Nasdaq Composite",
-        "value": 26140.03,
-        "change_percent": -2.15,
-        "bucket": "large_down"
+        "value": 26375.29,
+        "change_percent": 0.9,
+        "bucket": "medium_up"
       }
     },
-    "generated_sentence": "Shares fell; Treasury yields held steady; crude oil jumped.",
+    "generated_sentence": "Shares edged up; Treasury yields held steady; crude oil dropped.",
     "lint": {
       "passed": true,
       "errors": [],
       "warnings": [],
-      "characters": 59,
-      "words": 9,
+      "characters": 64,
+      "words": 10,
       "grade": 3.7
     },
     "similarity_scores": [
       {
         "date": "2026-10-14",
-        "edit_similarity": 0.231,
-        "token_similarity": 0.056,
+        "edit_similarity": 0.262,
+        "token_similarity": 0,
         "first_four_match": false,
         "limit": 0.6
       },
       {
         "date": "2026-10-07",
-        "edit_similarity": 0.391,
-        "token_similarity": 0.188,
+        "edit_similarity": 0.25,
+        "token_similarity": 0.053,
         "first_four_match": false,
         "limit": 0.75
       }
@@ -484,11 +488,11 @@
         }
       },
       {
-        "headline": "Technology Shares Fall Broadly",
+        "headline": "AI Shares Lead an Uneven Rebound",
         "evidence": {
           "bucket": "technology",
-          "rule": "The Nasdaq fell 2.1%, and all but seven S&P 500 technology stocks finished lower.",
-          "data": "Associated Press closing report"
+          "rule": "The Nasdaq rose 0.9%, while the Dow slipped 0.1% by 10:00 AM.",
+          "data": "Associated Press 10:00 AM report"
         },
         "visual_gate": {
           "passed": false,
@@ -606,7 +610,7 @@
   },
   "global_items": [
     {
-      "headline": "Asian Chip Markets Rebound",
+      "headline": "Asian Technology Markets Split",
       "sources": [
         {
           "name": "Korea Exchange",
@@ -615,14 +619,14 @@
         },
         {
           "name": "The Associated Press",
-          "href": "https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628",
+          "href": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058",
           "type": "wire"
         }
       ],
       "needs_human_check": false
     },
     {
-      "headline": "Indonesia Stocks Suffer Historic Drop",
+      "headline": "Indonesia's Selloff Deepens",
       "sources": [
         {
           "name": "MSCI",
@@ -630,24 +634,24 @@
           "type": "primary"
         },
         {
-          "name": "Reuters",
-          "href": "https://www.reuters.com/world/asia-pacific/indonesia-gets-wake-up-call-msci-prepares-expel-it-global-indexes-2026-10-16/",
+          "name": "The Associated Press",
+          "href": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058",
           "type": "wire"
         }
       ],
       "needs_human_check": false
     },
     {
-      "headline": "Global Leaders Weigh AI and Inflation",
+      "headline": "European Protests Pressure Markets",
       "sources": [
         {
-          "name": "International Monetary Fund",
-          "href": "https://www.imf.org/en/meetings/2026/annual",
-          "type": "primary"
+          "name": "The Associated Press",
+          "href": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058",
+          "type": "wire"
         },
         {
-          "name": "World Bank Group",
-          "href": "https://www.worldbank.org/en/meetings/splash/annual",
+          "name": "Deutsche Börse · DAX",
+          "href": "https://live.deutsche-boerse.com/indices/dax",
           "type": "primary"
         }
       ],
@@ -659,15 +663,13 @@
     "counts_by_domain": {
       "spglobal.com": 2,
       "home.treasury.gov": 1,
-      "apnews.com": 6,
+      "apnews.com": 8,
       "cmegroup.com": 1,
       "nasdaq.com": 1,
       "cboe.com": 1,
       "global.krx.co.kr": 1,
       "msci.com": 1,
-      "reuters.com": 1,
-      "imf.org": 1,
-      "worldbank.org": 1,
+      "live.deutsche-boerse.com": 1,
       "federalreserve.gov": 2,
       "freddiemac.com": 1
     },
@@ -794,74 +796,74 @@
   "observations": [
     {
       "name": "S&P 500",
-      "value": 7659.44,
-      "prior_close": 7744.06,
-      "change_percent": -1.09,
+      "value": 7690.08,
+      "prior_close": 7659.44,
+      "change_percent": 0.4,
       "source": "S&P Dow Jones Indices",
       "source_url": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/",
-      "fetched_at": "2026-10-16T16:10:00-04:00",
+      "fetched_at": "2026-10-19T10:00:00-04:00",
       "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "10-year Treasury yield",
-      "value": 5.09,
-      "prior_close": 5.1,
-      "change_percent": -0.2,
+      "value": 5.1,
+      "prior_close": 5.09,
+      "change_percent": 0.2,
       "source": "U.S. Treasury and The Associated Press",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
-      "fetched_at": "2026-10-16T16:10:00-04:00",
+      "fetched_at": "2026-10-19T10:00:00-04:00",
       "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "Brent crude oil",
-      "value": 109.86,
-      "prior_close": 105.92,
-      "change_percent": 3.72,
+      "value": 108.13,
+      "prior_close": 109.86,
+      "change_percent": -1.6,
       "source": "CME Group",
       "source_url": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html",
-      "fetched_at": "2026-10-16T16:10:00-04:00",
+      "fetched_at": "2026-10-19T10:00:00-04:00",
       "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "Nasdaq Composite",
-      "value": 26140.03,
-      "prior_close": 26713.03,
-      "change_percent": -2.15,
+      "value": 26375.29,
+      "prior_close": 26140.03,
+      "change_percent": 0.9,
       "source": "Nasdaq and The Associated Press",
       "source_url": "https://www.nasdaq.com/market-activity/index/comp",
-      "fetched_at": "2026-10-16T16:10:00-04:00",
+      "fetched_at": "2026-10-19T10:00:00-04:00",
       "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "Dow Jones Industrial Average",
-      "value": 52002.41,
-      "prior_close": 52177.69,
-      "change_percent": -0.34,
+      "value": 51958.41,
+      "prior_close": 52002.41,
+      "change_percent": -0.08,
       "source": "S&P Dow Jones Indices",
       "source_url": "https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/",
-      "fetched_at": "2026-10-16T16:10:00-04:00",
+      "fetched_at": "2026-10-19T10:00:00-04:00",
       "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "Expected volatility",
-      "value": 19.99,
-      "prior_close": 16.46,
-      "change_percent": 21.45,
+      "value": 18,
+      "prior_close": 19.99,
+      "change_percent": -10,
       "source": "Cboe closing data",
       "source_url": "https://www.cboe.com/tradable-products/vix/",
-      "fetched_at": "2026-10-16T16:10:00-04:00",
+      "fetched_at": "2026-10-19T10:00:00-04:00",
       "age_minutes": 0,
       "status": "checked"
     }
   ],
   "warnings": [
     "More Markets has 1 verified Rates cards; unsupported cards are withheld rather than padded",
-    "Source diversity: apnews.com accounts for 6 of 20 links, above 25% after unsupported items were withheld"
+    "Source diversity: apnews.com accounts for 8 of 20 links, above 25% after unsupported items were withheld"
   ],
   "failures": []
 }

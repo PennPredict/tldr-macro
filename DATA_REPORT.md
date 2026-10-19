@@ -1,13 +1,13 @@
 # Data Report
 
-Generated: 2026-10-18T01:22:46.776Z
+Generated: 2026-10-19T15:16:23.348Z
 
 | Instrument | Provider | Series | Frequency | Latest timestamp | Baseline | Chart points | Status |
 |---|---|---|---|---|---|---:|---|
 | S&P 500 | S&P Dow Jones Indices via The Associated Press | SP500 | intraday | 2026-10-16T16:10:00-04:00 | prior close | 10 | Passed |
-| 10-year Treasury yield | U.S. Treasury | DGS10 | intraday | 2026-10-16T16:10:00-04:00 | prior close | 11 | Passed |
+| 10-year Treasury yield | U.S. Treasury | DGS10 | intraday | 2026-10-19T10:00:00-04:00 | prior close | 12 | Passed |
 | Brent crude oil | CME Group via The Associated Press | BZ | intraday | 2026-10-16T16:10:00-04:00 | prior close | 10 | Boundary — needs human check |
-| Nasdaq Composite | Nasdaq | NASDAQCOM | intraday | 2026-10-16T16:10:00-04:00 | prior close | 11 | Passed |
+| Nasdaq Composite | Nasdaq | NASDAQCOM | intraday | 2026-10-19T10:00:00-04:00 | prior close | 12 | Passed |
 | Dow Jones Industrial Average | S&P Dow Jones Indices | DJIA | intraday | 2026-10-15T10:15:00-04:00 | prior close | 10 | Passed |
 | Expected volatility | Cboe | VX/X1 | intraday | 2026-10-15T10:15:00-04:00 | prior close | 10 | Passed |
 | DAX | Deutsche Börse/Xetra | DAX | daily close | 2026-10-06T16:00:00+02:00 | Oct 5 close | 3 | Withheld: fewer than 20 daily observations |
@@ -51,24 +51,24 @@ Generated: 2026-10-18T01:22:46.776Z
 
 | Instrument | Fetched timestamp | Baseline | Display | Provider |
 |---|---|---|---|---|
-| S&P 500 | 2026-10-16T16:10:00-04:00 | Thursday close 7,744.06 · Friday close 7,659.44 | 7,659.44 (−1.1%) | S&P Dow Jones Indices |
-| 10-year Treasury yield | 2026-10-16T16:10:00-04:00 | Thursday close 5.10% · Friday close 5.09% | 5.09% (−0.01 points) | U.S. Treasury and The Associated Press |
-| Brent crude oil | 2026-10-16T16:10:00-04:00 | Thursday close $105.92 · Friday settlement $109.86 | $109.86 (+3.7%) | CME Group |
-| Nasdaq Composite | 2026-10-16T16:10:00-04:00 | Thursday close 26,713.03 · Friday close 26,140.03 | 26,140.03 (−2.1%) | Nasdaq and The Associated Press |
-| Dow Jones Industrial Average | 2026-10-16T16:10:00-04:00 | Thursday close 52,177.69 · Friday close 52,002.41 | 52,002.41 (−0.3%) | S&P Dow Jones Indices |
-| Expected volatility | 2026-10-16T16:10:00-04:00 | Thursday close 16.46 · Friday close 19.99 | 19.99 (+21.5%) | Cboe closing data |
+| S&P 500 | 2026-10-19T10:00:00-04:00 | Friday close 7,659.44 · Monday 10:00 AM +0.4% | ≈7,690 (+0.4%) | S&P Dow Jones Indices |
+| 10-year Treasury yield | 2026-10-19T10:00:00-04:00 | Friday close 5.09% · Monday 10:00 AM 5.10% | 5.10% (+0.01 points) | U.S. Treasury and The Associated Press |
+| Brent crude oil | 2026-10-19T10:00:00-04:00 | Friday settlement $109.86 · Monday 10:00 AM $108.13 | $108.13 (−1.6%) | CME Group |
+| Nasdaq Composite | 2026-10-19T10:00:00-04:00 | Friday close 26,140.03 · Monday 10:00 AM +0.9% | ≈26,375 (+0.9%) | Nasdaq and The Associated Press |
+| Dow Jones Industrial Average | 2026-10-19T10:00:00-04:00 | Friday close 52,002.41 · Monday 10:00 AM down 44 points | ≈51,958 (−0.1%) | S&P Dow Jones Indices |
+| Expected volatility | 2026-10-19T10:00:00-04:00 | Friday close 19.99 · Monday morning near 18 | ≈18 (lower near 18) | Cboe closing data |
 
-- DAX: 2026-10-16T16:10:00-04:00; 25,382.62; +0.3%; Deutsche Börse/Xetra via Börse Stuttgart
-- Nikkei 225: 2026-10-16T16:10:00-04:00; 65,314.83; +1.4%; Nikkei Inc.
-- KOSPI: 2026-10-16T16:10:00-04:00; 5,668.05; +2.1%; Korea Exchange via KB Financial Group
+- DAX: 2026-10-19T10:00:00-04:00; ≈25,337; −1.1%; Deutsche Börse/Xetra via Börse Stuttgart
+- Nikkei 225: 2026-10-19T10:00:00-04:00; 64,904.20; −0.6%; Nikkei Inc.
+- KOSPI: 2026-10-19T10:00:00-04:00; ≈5,770; +1.8%; Korea Exchange via KB Financial Group
 - Nasdaq Composite: 2026-10-02T16:00:00-04:00; 27,190.86; +1.19%; Nasdaq via FRED
 - Dow Jones Industrial Average: 2026-10-05T10:10:00-04:00; 51,267.90; +0.18%; S&P Dow Jones Indices via FRED
 - 30-year fixed mortgage rate: 2026-10-15T12:00:00-04:00; 7.40%; +0.12 percentage points; Freddie Mac
-- Euro to dollar: 2026-10-16T16:10:00-04:00; $1.1239 per euro; +0.4%; Federal Reserve via FRED
-- Dollar to yen: 2026-10-16T16:10:00-04:00; ¥158.02 per dollar; little changed; Federal Reserve via FRED
-- Pound to dollar: 2026-10-16T16:10:00-04:00; $1.3327 per pound; +0.4%; Federal Reserve via FRED
-- WTI crude oil: 2026-10-16T16:10:00-04:00; $101.41 per barrel; +3.7%; U.S. Energy Information Administration via FRED
-- Natural gas: 2026-10-16T16:10:00-04:00; $3.22 per MMBtu; −0.6%; U.S. Energy Information Administration via FRED
-- Copper: 2026-10-16T16:10:00-04:00; $6.63 per pound; +1.1%; Market quote with IMF benchmark context
-- Gold: 2026-10-16T16:10:00-04:00; $4,188.10 per ounce; +0.4%; CME Group
-- Silver futures: 2026-10-16T16:10:00-04:00; $57.12 per ounce; −1.2%; CME Group
+- Euro to dollar: 2026-10-19T10:00:00-04:00; $1.1231 per euro; little changed; Federal Reserve via FRED
+- Dollar to yen: 2026-10-19T10:00:00-04:00; ¥158.09 per dollar; little changed; Federal Reserve via FRED
+- Pound to dollar: 2026-10-19T10:00:00-04:00; $1.3330 per pound; little changed; Federal Reserve via FRED
+- WTI crude oil: 2026-10-19T10:00:00-04:00; $100.36 per barrel; −1.0%; U.S. Energy Information Administration via FRED
+- Natural gas: 2026-10-19T10:00:00-04:00; $3.08 per MMBtu; −1.1%; U.S. Energy Information Administration via FRED
+- Copper: 2026-10-19T10:00:00-04:00; $6.51 per pound; −0.4%; Market quote with IMF benchmark context
+- Gold: 2026-10-19T10:00:00-04:00; $4,148.80 per ounce; −0.4%; CME Group
+- Silver futures: 2026-10-19T10:00:00-04:00; $57.27 per ounce; +0.5%; CME Group

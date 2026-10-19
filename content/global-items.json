@@ -1,29 +1,85 @@
 [
   {
-    "tag":"Global markets","qualifies":true,"headline":"Asian Chip Markets Rebound",
-    "what":"South Korea's KOSPI rose about 2.1%, and Japan's Nikkei 225 gained about 1.4% after Thursday's technology selloff.",
-    "context":"Both markets include major chip exporters.",
-    "why_it_matters":"A steadier Asian session can reduce stress around U.S. semiconductor shares.",
-    "concept_terms":["chip exporter"],
-    "sources":[{"name":"Korea Exchange","href":"https://global.krx.co.kr/","type":"primary"},{"name":"The Associated Press","href":"https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628","type":"wire"}],
-    "developing":false,"as_of":"2026-10-16T16:10:00-04:00","importance_score":96,"needs_human_check":false
+    "tag": "Global markets",
+    "qualifies": true,
+    "headline": "Asian Technology Markets Split",
+    "what": "South Korea's KOSPI rose about 1.8% with AI shares, while Japan's Nikkei 225 fell about 0.6%.",
+    "context": "Both markets include major chip exporters.",
+    "why_it_matters": "A steadier Asian session can reduce stress around U.S. semiconductor shares.",
+    "concept_terms": [
+      "chip exporter"
+    ],
+    "sources": [
+      {
+        "name": "Korea Exchange",
+        "href": "https://global.krx.co.kr/",
+        "type": "primary"
+      },
+      {
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058",
+        "type": "wire"
+      }
+    ],
+    "developing": false,
+    "as_of": "2026-10-19T10:00:00-04:00",
+    "importance_score": 96,
+    "needs_human_check": false
   },
   {
-    "tag":"Global markets","qualifies":true,"headline":"Indonesia Stocks Suffer Historic Drop",
-    "what":"Indonesia's main index lost more than 10%, its deepest one-day decline since 1998, after an MSCI downgrade warning.",
-    "context":"Funds that copy MSCI indexes may need to sell excluded shares.",
-    "why_it_matters":"Index rules and foreign money can quickly change a country's financing conditions.",
-    "concept_terms":["MSCI index","index fund"],
-    "sources":[{"name":"MSCI","href":"https://www.msci.com/indexes","type":"primary"},{"name":"Reuters","href":"https://www.reuters.com/world/asia-pacific/indonesia-gets-wake-up-call-msci-prepares-expel-it-global-indexes-2026-10-16/","type":"wire"}],
-    "developing":false,"as_of":"2026-10-16T16:10:00-04:00","importance_score":93,"needs_human_check":false
+    "tag": "Global markets",
+    "qualifies": true,
+    "headline": "Indonesia's Selloff Deepens",
+    "what": "Indonesia's main index fell another 5% after Friday's 11% plunge and reached its lowest level since 2020.",
+    "context": "MSCI warned that the country could lose emerging-market status, forcing funds that copy its indexes to reconsider holdings.",
+    "why_it_matters": "Index rules and foreign money can quickly change a country's financing conditions.",
+    "concept_terms": [
+      "MSCI index",
+      "index fund"
+    ],
+    "sources": [
+      {
+        "name": "MSCI",
+        "href": "https://www.msci.com/indexes",
+        "type": "primary"
+      },
+      {
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058",
+        "type": "wire"
+      }
+    ],
+    "developing": false,
+    "as_of": "2026-10-19T10:00:00-04:00",
+    "importance_score": 93,
+    "needs_human_check": false
   },
   {
-    "tag":"Policy","qualifies":true,"headline":"Global Leaders Weigh AI and Inflation",
-    "what":"Finance leaders in Bangkok are discussing high inflation, energy risk, and possible gains from artificial intelligence.",
-    "context":"The IMF and World Bank meetings bring together central banks and finance ministries.",
-    "why_it_matters":"Their choices can shape rates, currencies, debt costs, and global growth.",
-    "concept_terms":["central bank","productivity"],
-    "sources":[{"name":"International Monetary Fund","href":"https://www.imf.org/en/meetings/2026/annual","type":"primary"},{"name":"World Bank Group","href":"https://www.worldbank.org/en/meetings/splash/annual","type":"primary"}],
-    "developing":false,"as_of":"2026-10-16T16:10:00-04:00","importance_score":87,"needs_human_check":false
+    "tag": "Policy",
+    "qualifies": true,
+    "headline": "European Protests Pressure Markets",
+    "what": "Major European indexes fell more than 1% after weekend protests raised concern about additional government spending.",
+    "context": "More spending without matching revenue can require heavier government borrowing.",
+    "why_it_matters": "Rising European bond yields can tighten financial conditions and spill into global markets.",
+    "concept_terms": [
+      "central bank",
+      "productivity"
+    ],
+    "sources": [
+      {
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058",
+        "type": "wire"
+      },
+      {
+        "name": "Deutsche Börse · DAX",
+        "href": "https://live.deutsche-boerse.com/indices/dax",
+        "type": "primary"
+      }
+    ],
+    "developing": false,
+    "as_of": "2026-10-19T10:00:00-04:00",
+    "importance_score": 87,
+    "needs_human_check": false
   }
 ]
