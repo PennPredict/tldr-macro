@@ -3,10 +3,10 @@
     "group": "International Indices",
     "name": "DAX",
     "available": true,
-    "display_value": "25,337.00",
-    "display_change": "−1.1%",
-    "change_percent": -1.1,
-    "description": "Germany's DAX fell 1.1% as political unrest pressured European markets. Its exporters and manufacturers connect European growth with demand from the United States and China.",
+    "display_value": "25,114.10",
+    "display_change": "−0.8%",
+    "change_percent": -0.81,
+    "description": "Germany's DAX fell 0.8% as European protests increased concern about government borrowing. Its exporters connect European growth with demand from the United States and China.",
     "points": [
       25231.2,
       25254.21,
@@ -16,9 +16,10 @@
       25277.68,
       25236.07,
       25382.62,
-      25337
+      25337,
+      25114.1
     ],
-    "fetched_at": "2026-10-19T10:00:00-04:00",
+    "fetched_at": "2026-10-20T09:35:00-04:00",
     "frequency": "Daily",
     "data_provider": "Deutsche Börse/Xetra via Börse Stuttgart",
     "licensing_note": "Exchange index data are proprietary; linked exchange and market sources retained.",
@@ -41,17 +42,18 @@
       "2026-10-14T14:00:00.000Z",
       "2026-10-15T14:00:00.000Z",
       "2026-10-16T14:00:00.000Z",
-      "2026-10-19T14:00:00.000Z"
+      "2026-10-19T14:00:00.000Z",
+      "2026-10-20T09:35:00-04:00"
     ]
   },
   {
     "group": "International Indices",
     "name": "Nikkei 225",
     "available": true,
-    "display_value": "64,904.20",
-    "display_change": "−0.6%",
-    "change_percent": -0.64,
-    "description": "Japan's Nikkei 225 fell 0.6% as technology shares remained volatile. It connects U.S. investors with chip demand, the yen, and Asian manufacturing.",
+    "display_value": "64,075.40",
+    "display_change": "−1.3%",
+    "change_percent": -1.3,
+    "description": "Japan's Nikkei 225 lost 1.3% as technology shares weakened. The index links U.S. investors with chip demand, the yen, and Asian manufacturing.",
     "points": [
       65018.95,
       64136.25,
@@ -67,9 +69,10 @@
       69042.1,
       64425.95,
       65314.83,
-      64904.2
+      64904.2,
+      64075.4
     ],
-    "fetched_at": "2026-10-19T10:00:00-04:00",
+    "fetched_at": "2026-10-20T09:35:00-04:00",
     "frequency": "Daily",
     "data_provider": "Nikkei Inc.",
     "licensing_note": "Nikkei index data are copyrighted; citation and linked source retained.",
@@ -94,17 +97,18 @@
       "2026-10-14T14:00:00.000Z",
       "2026-10-15T14:00:00.000Z",
       "2026-10-16T14:00:00.000Z",
-      "2026-10-19T14:00:00.000Z"
+      "2026-10-19T14:00:00.000Z",
+      "2026-10-20T09:35:00-04:00"
     ]
   },
   {
     "group": "International Indices",
     "name": "KOSPI",
     "available": true,
-    "display_value": "5,770.08",
-    "display_change": "+1.8%",
-    "change_percent": 1.8,
-    "description": "South Korea's KOSPI rose 1.8% as AI-linked shares recovered. Its export focus offers a read on semiconductor demand and global manufacturing.",
+    "display_value": "5,552.74",
+    "display_change": "−3.7%",
+    "change_percent": -3.73,
+    "description": "South Korea's KOSPI dropped 3.7% as AI shares sold off. Its large chipmakers make the index a useful read on semiconductor demand and global technology spending.",
     "points": [
       6820.02,
       6835.8,
@@ -122,9 +126,10 @@
       6625.93,
       5554.22,
       5668.05,
-      5770.08
+      5770.08,
+      5552.74
     ],
-    "fetched_at": "2026-10-19T10:00:00-04:00",
+    "fetched_at": "2026-10-20T09:35:00-04:00",
     "frequency": "Daily",
     "data_provider": "Korea Exchange via KB Financial Group",
     "licensing_note": "Korea Exchange index data are proprietary; linked exchange and issuer sources retained.",
@@ -155,7 +160,8 @@
       "2026-10-14T14:00:00.000Z",
       "2026-10-15T14:00:00.000Z",
       "2026-10-16T14:00:00.000Z",
-      "2026-10-19T14:00:00.000Z"
+      "2026-10-19T14:00:00.000Z",
+      "2026-10-20T09:35:00-04:00"
     ]
   },
   {
@@ -464,17 +470,18 @@
     "group": "Rates",
     "name": "30-year fixed mortgage rate",
     "display_value": "7.40%",
-    "display_change": "+0.12 percentage points",
-    "change_percent": 1.65,
-    "description": "The latest weekly survey put the average mortgage rate at 7.40%. Higher financing costs reduce home affordability, monthly purchasing power, and demand across housing-related businesses.",
+    "display_change": "unchanged",
+    "change_percent": 0,
+    "description": "The average 30-year mortgage rate remained 7.40%. It converts bond-market moves into monthly housing costs and shapes what buyers can afford.",
     "points": [
       6.76,
       6.95,
       7.03,
       7.28,
+      7.4,
       7.4
     ],
-    "fetched_at": "2026-10-15T12:00:00-04:00",
+    "fetched_at": "2026-10-20T09:35:00-04:00",
     "frequency": "Weekly",
     "data_provider": "Freddie Mac",
     "licensing_note": "Copyright Freddie Mac; reprinted by FRED with permission and citation.",
@@ -489,20 +496,20 @@
       "2026-10-12T16:00:00.000Z",
       "2026-10-13T16:00:00.000Z",
       "2026-10-14T16:00:00.000Z",
-      "2026-10-15T16:00:00.000Z"
-    ]
+      "2026-10-15T16:00:00.000Z",
+      "2026-10-20T09:35:00-04:00"
+    ],
+    "available": true
   },
   {
     "group": "Currencies",
     "name": "Euro to dollar",
     "available": true,
     "display_value": "$1.1231 per euro",
-    "display_change": "−0.1%",
-    "change_percent": -0.03,
-    "description": "The euro held near $1.1231. The pair affects travel, import prices, and the translated revenue of U.S. companies doing business in Europe.",
+    "display_change": "+0.2%",
+    "change_percent": 0.19,
+    "description": "The euro traded near $1.1231 as European political strain met a steady dollar. This rate affects U.S. export prices, travel costs, and the dollar value of European sales.",
     "points": [
-      1.1627,
-      1.1627,
       1.1629,
       1.1604,
       1.1549,
@@ -525,9 +532,10 @@
       1.1204,
       1.1188,
       1.1239,
+      1.1231,
       1.1231
     ],
-    "fetched_at": "2026-10-19T10:00:00-04:00",
+    "fetched_at": "2026-10-20T09:35:00-04:00",
     "frequency": "Daily",
     "data_provider": "Federal Reserve via FRED",
     "licensing_note": "Federal Reserve public exchange-rate data; FRED citation retained.",
@@ -538,8 +546,6 @@
       }
     ],
     "series_dates": [
-      "2026-09-15T14:00:00.000Z",
-      "2026-09-16T14:00:00.000Z",
       "2026-09-17T14:00:00.000Z",
       "2026-09-18T14:00:00.000Z",
       "2026-09-21T14:00:00.000Z",
@@ -562,20 +568,19 @@
       "2026-10-14T14:00:00.000Z",
       "2026-10-15T14:00:00.000Z",
       "2026-10-16T14:00:00.000Z",
-      "2026-10-19T14:00:00.000Z"
+      "2026-10-19T14:00:00.000Z",
+      "2026-10-20T09:35:00-04:00"
     ]
   },
   {
     "group": "Currencies",
     "name": "Dollar to yen",
     "available": true,
-    "display_value": "¥158.09 per dollar",
-    "display_change": "+0.0%",
-    "change_percent": -0.18,
-    "description": "The dollar held near ¥158.09. The pair links U.S.-Japan rate differences with cars, electronics, overseas earnings, and global funding trades.",
+    "display_value": "¥158.20 per dollar",
+    "display_change": "+0.1%",
+    "change_percent": 0.07,
+    "description": "The dollar bought about 158.20 yen, leaving Japan's currency historically weak. The pair matters for Japanese import costs, exporters, and money moving between U.S. and Japanese markets.",
     "points": [
-      154.24,
-      153.5,
       154.06,
       153.71,
       154.42,
@@ -598,9 +603,10 @@
       158.35,
       158.03,
       158.02,
-      158.09
+      158.09,
+      158.2
     ],
-    "fetched_at": "2026-10-19T10:00:00-04:00",
+    "fetched_at": "2026-10-20T09:35:00-04:00",
     "frequency": "Daily",
     "data_provider": "Federal Reserve via FRED",
     "licensing_note": "Federal Reserve public exchange-rate data; FRED citation retained.",
@@ -611,8 +617,6 @@
       }
     ],
     "series_dates": [
-      "2026-09-15T14:00:00.000Z",
-      "2026-09-16T14:00:00.000Z",
       "2026-09-17T14:00:00.000Z",
       "2026-09-18T14:00:00.000Z",
       "2026-09-21T14:00:00.000Z",
@@ -635,17 +639,18 @@
       "2026-10-14T14:00:00.000Z",
       "2026-10-15T14:00:00.000Z",
       "2026-10-16T14:00:00.000Z",
-      "2026-10-19T14:00:00.000Z"
+      "2026-10-19T14:00:00.000Z",
+      "2026-10-20T09:35:00-04:00"
     ]
   },
   {
     "group": "Currencies",
     "name": "Pound to dollar",
     "available": true,
-    "display_value": "$1.3330 per pound",
-    "display_change": "+0.0%",
-    "change_percent": 0.03,
-    "description": "The pound held near $1.3330. Sterling affects British travel, holdings, and the translated revenue of U.S. companies earning pounds.",
+    "display_value": "$1.3312 per pound",
+    "display_change": "−0.1%",
+    "change_percent": -0.14,
+    "description": "The pound traded near $1.3312. This rate changes the dollar value of British sales and the cost of travel and trade between the United States and United Kingdom.",
     "points": [
       1.3257,
       1.3212,
@@ -657,9 +662,10 @@
       1.324,
       1.3241,
       1.3327,
-      1.333
+      1.333,
+      1.3312
     ],
-    "fetched_at": "2026-10-19T10:00:00-04:00",
+    "fetched_at": "2026-10-20T09:35:00-04:00",
     "frequency": "Daily",
     "data_provider": "Federal Reserve via FRED",
     "licensing_note": "Federal Reserve public exchange-rate data; FRED citation retained.",
@@ -680,17 +686,18 @@
       "2026-10-14T14:00:00.000Z",
       "2026-10-15T14:00:00.000Z",
       "2026-10-16T14:00:00.000Z",
-      "2026-10-19T14:00:00.000Z"
+      "2026-10-19T14:00:00.000Z",
+      "2026-10-20T09:35:00-04:00"
     ]
   },
   {
     "group": "Commodities",
     "name": "WTI crude oil",
     "available": true,
-    "display_value": "$100.36 per barrel",
-    "display_change": "−1.0%",
-    "change_percent": -1.03,
-    "description": "WTI fell to about $100.36 after new Russia sanctions were paused. As the U.S. oil benchmark, sustained moves can reach gasoline, freight, airline costs, and energy-company profits.",
+    "display_value": "$107.96 per barrel",
+    "display_change": "+4.1%",
+    "change_percent": 4.1,
+    "description": "WTI, the main U.S. oil benchmark, rose sharply as Middle East supply risks returned. It influences fuel costs, domestic energy profits, and inflation expectations.",
     "points": [
       94.21,
       97.26,
@@ -713,9 +720,10 @@
       91,
       92.44,
       101.41,
-      100.36
+      100.36,
+      107.96
     ],
-    "fetched_at": "2026-10-19T10:00:00-04:00",
+    "fetched_at": "2026-10-20T09:35:00-04:00",
     "frequency": "Daily",
     "data_provider": "U.S. Energy Information Administration via FRED",
     "licensing_note": "U.S. government source series; FRED citation retained.",
@@ -747,17 +755,18 @@
       "2026-10-14T14:00:00.000Z",
       "2026-10-15T14:00:00.000Z",
       "2026-10-16T14:00:00.000Z",
-      "2026-10-19T14:00:00.000Z"
+      "2026-10-19T14:00:00.000Z",
+      "2026-10-20T09:35:00-04:00"
     ]
   },
   {
     "group": "Commodities",
     "name": "Natural gas",
     "available": true,
-    "display_value": "$3.08 per MMBtu",
-    "display_change": "−1.1%",
-    "change_percent": -1.06,
-    "description": "Natural gas fell to about $3.08. It matters for household heating, electricity prices, fertilizer production, factories, and liquefied-natural-gas exporters.",
+    "display_value": "$3.00 per MMBtu",
+    "display_change": "−2.0%",
+    "change_percent": -2,
+    "description": "U.S. natural gas fell as milder weather forecasts reduced expected heating demand. It matters for home energy bills, electricity, fertilizer, and factories that use gas.",
     "points": [
       2.9,
       2.81,
@@ -780,9 +789,10 @@
       3.161,
       3.18,
       3.216,
-      3.083
+      3.083,
+      2.996
     ],
-    "fetched_at": "2026-10-19T10:00:00-04:00",
+    "fetched_at": "2026-10-20T09:35:00-04:00",
     "frequency": "Daily",
     "data_provider": "U.S. Energy Information Administration via FRED",
     "licensing_note": "U.S. government source series; FRED citation retained.",
@@ -814,17 +824,18 @@
       "2026-10-14T14:00:00.000Z",
       "2026-10-15T14:00:00.000Z",
       "2026-10-16T14:00:00.000Z",
-      "2026-10-19T14:00:00.000Z"
+      "2026-10-19T14:00:00.000Z",
+      "2026-10-20T09:35:00-04:00"
     ]
   },
   {
     "group": "Commodities",
     "name": "Copper",
     "available": true,
-    "display_value": "$6.51 per pound",
-    "display_change": "−0.4%",
-    "change_percent": -0.39,
-    "description": "Copper slipped 0.4% to about $6.51 per pound. Construction, power grids, vehicles, and electronics make it useful for reading global demand and future project costs.",
+    "display_value": "$6.60 per pound",
+    "display_change": "+0.3%",
+    "change_percent": 0.34,
+    "description": "Copper edged higher. Because construction, power grids, cars, and electronics use it, demand can offer a broad signal about industrial activity.",
     "points": [
       5.84,
       6.01,
@@ -834,9 +845,10 @@
       6.7545,
       6.74,
       6.631,
-      6.5055
+      6.5055,
+      6.598
     ],
-    "fetched_at": "2026-10-19T10:00:00-04:00",
+    "fetched_at": "2026-10-20T09:35:00-04:00",
     "frequency": "Daily",
     "data_provider": "Market quote with IMF benchmark context",
     "licensing_note": "Market data are indicative; FRED benchmark citation retained.",
@@ -855,17 +867,18 @@
       "2026-10-14T14:00:00.000Z",
       "2026-10-15T14:00:00.000Z",
       "2026-10-16T14:00:00.000Z",
-      "2026-10-19T14:00:00.000Z"
+      "2026-10-19T14:00:00.000Z",
+      "2026-10-20T09:35:00-04:00"
     ]
   },
   {
     "group": "Commodities",
     "name": "Gold",
     "available": true,
-    "display_value": "$4,148.80 per ounce",
-    "display_change": "−0.4%",
-    "change_percent": -0.42,
-    "description": "Gold edged down 0.4% even as stocks remained unsettled. Currencies, inflation, interest rates, and market stress can all affect demand.",
+    "display_value": "$4,139.30 per ounce",
+    "display_change": "−0.5%",
+    "change_percent": -0.5,
+    "description": "Gold eased as high bond yields made interest-paying assets more competitive. Investors watch it as a store of value during inflation, currency, and geopolitical stress.",
     "points": [
       4104.3,
       4118.7,
@@ -873,9 +886,10 @@
       4142.1,
       4158.63,
       4188.1,
-      4148.8
+      4148.8,
+      4139.3
     ],
-    "fetched_at": "2026-10-19T10:00:00-04:00",
+    "fetched_at": "2026-10-20T09:35:00-04:00",
     "frequency": "Intraday",
     "data_provider": "CME Group",
     "licensing_note": "CME market data are proprietary; the contract page is retained for verification.",
@@ -892,7 +906,8 @@
       "2026-10-14T14:00:00.000Z",
       "2026-10-15T14:00:00.000Z",
       "2026-10-16T14:00:00.000Z",
-      "2026-10-19T14:00:00.000Z"
+      "2026-10-19T14:00:00.000Z",
+      "2026-10-20T09:35:00-04:00"
     ]
   },
   {
@@ -900,9 +915,9 @@
     "name": "Silver futures",
     "available": true,
     "display_value": "$57.27 per ounce",
-    "display_change": "+0.5%",
-    "change_percent": 0.49,
-    "description": "Silver rose 0.5%. It is both a precious metal and an industrial input used in electronics and solar equipment, so both investment and factory demand matter.",
+    "display_change": "−0.0%",
+    "change_percent": -0.01,
+    "description": "Silver was nearly unchanged. It acts as both a precious metal and an industrial input for electronics and solar panels, linking investor demand with manufacturing.",
     "points": [
       59.7,
       59.2,
@@ -910,9 +925,10 @@
       57.8,
       57.79,
       57.116,
+      57.27,
       57.27
     ],
-    "fetched_at": "2026-10-19T10:00:00-04:00",
+    "fetched_at": "2026-10-20T09:35:00-04:00",
     "frequency": "Intraday",
     "data_provider": "CME Group",
     "licensing_note": "CME market data are proprietary; the contract page is retained for verification.",
@@ -929,7 +945,8 @@
       "2026-10-14T14:00:00.000Z",
       "2026-10-15T14:00:00.000Z",
       "2026-10-16T14:00:00.000Z",
-      "2026-10-19T14:00:00.000Z"
+      "2026-10-19T14:00:00.000Z",
+      "2026-10-20T09:35:00-04:00"
     ]
   }
 ]

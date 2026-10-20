@@ -1,48 +1,65 @@
 [
   {
-    "topic_tag": "interest_rates_and_yields",
-    "headline": "Fed Keeps Rate Path Open",
+    "topic_tag": "companies",
+    "headline": "AI Shares Lose Ground",
     "headline_evidence": {
-      "bucket": "central_bank",
-      "rule": "Chair Kevin Warsh stressed stable prices without signaling the October decision.",
-      "data": "Federal Reserve remarks reported from Bangkok"
+      "bucket": "technology",
+      "rule": "The Nasdaq fell 0.6% at the open while the broader S&P 500 was nearly flat.",
+      "data": "Associated Press 9:35 AM market report"
     },
-    "commentary": "Federal Reserve Chair Kevin Warsh stressed price stability but gave no signal for the October meeting. Inflation has risen while spending remains firm. Markets still see a chance of another rate increase, which can keep loans expensive.",
+    "commentary": "AI shares weakened again after Monday's rebound. High bond yields make the debt used for chips and data centers more costly, so investors are asking when that spending will produce profits.",
     "defines": [
       {
-        "term": "Price stability",
-        "definition": "Prices rising slowly and predictably rather than surging or falling sharply.",
-        "used_by_and_why": "The Federal Reserve treats price stability as a main goal."
+        "term": "Bond yield",
+        "definition": "The return investors receive for holding a bond.",
+        "used_by_and_why": "It is also a reference point for borrowing costs across the economy."
       }
     ],
     "explains": [
       {
-        "anchor_text": "another rate increase",
-        "why": "Most Fed officials earlier expected another increase this year.",
-        "other_reading": "Warsh kept both remaining meetings open."
+        "anchor_text": "debt used for chips and data centers",
+        "why": "Higher yields can increase loan and bond costs.",
+        "other_reading": "Companies with large cash reserves may rely less on borrowing."
       }
     ],
     "visual": null,
     "visual_gate": {
       "passed": false,
       "failures": [
-        "The Economic Thread already maps this path."
+        "The Economic Thread already maps the main relationship."
       ],
       "needs_human_check": false
     },
     "views": [
       {
-        "view_id": "business",
-        "body": "High rates raise the cost of funding equipment and growth. Projects with distant profits may look less attractive.",
-        "keep_wondering": "Which firms can expand without costly debt?",
+        "view_id": "household",
+        "body": "Large technology stocks sit in many retirement funds. Their swings can change account balances even when most companies move less.",
+        "keep_wondering": "How concentrated is your fund in large technology companies?",
         "claims": [
           {
-            "sentence_id": "fed-business-1",
+            "sentence_id": "technology-household-1",
             "type": "mechanism",
             "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
           },
           {
-            "sentence_id": "fed-business-2",
+            "sentence_id": "technology-household-2",
+            "type": "mechanism",
+            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+          }
+        ]
+      },
+      {
+        "view_id": "business",
+        "body": "High financing costs make new data centers harder to justify. Companies with strong cash flow depend less on borrowed money.",
+        "keep_wondering": "Which AI projects can pay for themselves soonest?",
+        "claims": [
+          {
+            "sentence_id": "technology-business-1",
+            "type": "mechanism",
+            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+          },
+          {
+            "sentence_id": "technology-business-2",
             "type": "mechanism",
             "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
           }
@@ -50,291 +67,264 @@
       },
       {
         "view_id": "policy",
-        "body": "Officials are weighing faster inflation against slower growth. Warsh kept the October and December choices open.",
-        "keep_wondering": "Will labor costs support another increase?",
+        "body": "AI investment can lift output over time. Heavy near-term demand for credit and power can strain other parts of the economy.",
+        "keep_wondering": "Will AI raise broad productivity fast enough?",
         "claims": [
           {
-            "sentence_id": "fed-policy-1",
+            "sentence_id": "technology-policy-1",
             "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/monetarypolicy.htm"
+            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
           },
           {
-            "sentence_id": "fed-policy-2",
-            "type": "fact",
-            "evidence": "https://apnews.com/article/us-economy-warsh-fed-ai-imf-4c80750c113a82a464a46f58a4fdab43"
-          }
-        ]
-      },
-      {
-        "view_id": "dealer",
-        "body": "Bond prices react to expected Fed moves. Unclear guidance can keep yields sensitive to each new report.",
-        "keep_wondering": "Which data will shift the October rate outlook?",
-        "claims": [
-          {
-            "sentence_id": "fed-dealer-1",
+            "sentence_id": "technology-policy-2",
             "type": "mechanism",
-            "evidence": "https://www.newyorkfed.org/markets/domestic-market-operations/monetary-policy-implementation"
-          },
-          {
-            "sentence_id": "fed-dealer-2",
-            "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/monetarypolicy.htm"
+            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
           }
         ]
       }
     ],
     "sources": [
       {
-        "name": "Federal Reserve",
-        "href": "https://www.federalreserve.gov/monetarypolicy.htm"
+        "name": "U.S. Securities and Exchange Commission",
+        "href": "https://www.sec.gov/edgar/search/"
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/us-economy-warsh-fed-ai-imf-4c80750c113a82a464a46f58a4fdab43"
+        "href": "https://apnews.com/article/b972b64127db5412a2b02c35ecf95c88"
       }
     ],
-    "data_note": "Fed guidance can change as new inflation, jobs, and spending data arrive.",
+    "data_note": "Market prices are from the 9:35 AM ET report and can change during the session.",
     "claims": [
       {
-        "sentence_id": "fed-commentary-1",
+        "sentence_id": "technology-commentary-1",
         "type": "fact",
-        "evidence": "https://apnews.com/article/us-economy-warsh-fed-ai-imf-4c80750c113a82a464a46f58a4fdab43"
+        "evidence": "https://apnews.com/article/b972b64127db5412a2b02c35ecf95c88"
       },
       {
-        "sentence_id": "fed-commentary-2",
-        "type": "fact",
-        "evidence": "https://apnews.com/article/us-economy-warsh-fed-ai-imf-4c80750c113a82a464a46f58a4fdab43"
-      },
-      {
-        "sentence_id": "fed-commentary-3",
+        "sentence_id": "technology-commentary-2",
         "type": "mechanism",
-        "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+        "evidence": "https://www.sec.gov/edgar/search/"
       }
     ]
   },
   {
     "topic_tag": "companies",
-    "headline": "AI Shares Lead an Uneven Rebound",
+    "headline": "Profit Beats Meet Higher Hurdles",
     "headline_evidence": {
-      "bucket": "technology",
-      "rule": "The Nasdaq rose 0.9%, while the Dow slipped 0.1% by 10:00 AM.",
-      "data": "Associated Press 10:00 AM report"
+      "bucket": "earnings",
+      "rule": "GE Aerospace and General Motors fell despite reporting stronger quarterly profits than analysts expected.",
+      "data": "Associated Press 9:35 AM market report"
     },
-    "commentary": "AI shares recovered part of last week's decline, lifting the Nasdaq 0.9%. The Dow still slipped 0.1%, so the rebound was narrow rather than market-wide. High borrowing costs remain a test for companies funding large data center projects with debt.",
+    "commentary": "GE Aerospace and General Motors beat profit estimates, yet their shares fell. Investors looked ahead instead. High company values and the cost of capital mean a strong past quarter may not be enough.",
     "defines": [
       {
-        "term": "Data center",
-        "definition": "A site filled with computers that store information and run digital services, including AI.",
-        "used_by_and_why": "AI systems need costly chips, power, and cooling."
+        "term": "Cost of capital",
+        "definition": "The return a company needs to offer lenders and investors.",
+        "used_by_and_why": "A higher cost makes expansion and acquisitions harder to justify."
       }
     ],
     "explains": [
       {
-        "anchor_text": "support large data-center bills and debt",
-        "why": "High rates raise funding costs while investors wait for new projects to earn money.",
-        "other_reading": "Strong demand could still make the spending worthwhile."
+        "anchor_text": "future earnings and the cost of capital",
+        "why": "Share prices reflect expected future cash, not only the latest report.",
+        "other_reading": "Unexpected news can also change a stock's price."
       }
     ],
     "visual": null,
     "visual_gate": {
       "passed": false,
       "failures": [
-        "The Economic Thread already links rates with technology shares."
+        "The Economic Thread already maps the main relationship."
       ],
       "needs_human_check": false
     },
     "views": [
       {
         "view_id": "household",
-        "body": "AI investment can improve services and output. Moves in large tech shares can also reach retirement accounts.",
-        "keep_wondering": "When will AI spending produce lasting profits?",
+        "body": "Better company profits can support jobs and retirement savings. A falling share price still shows that investors expected more.",
+        "keep_wondering": "Are expectations rising faster than profits?",
         "claims": [
           {
-            "sentence_id": "ai-household-1",
+            "sentence_id": "earnings-household-1",
             "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/newsevents/speech/warsh20261016a.htm"
+            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
           },
           {
-            "sentence_id": "ai-household-2",
+            "sentence_id": "earnings-household-2",
             "type": "mechanism",
-            "evidence": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/"
+            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
           }
         ]
       },
       {
         "view_id": "business",
-        "body": "Chipmakers gain when cloud firms build data centers. Their customers still need enough sales to cover equipment and debt.",
-        "keep_wondering": "Will demand grow as quickly as capacity?",
+        "body": "Managers are judged on future cash, not only the last quarter. Expensive funding raises the bar for new projects and buybacks.",
+        "keep_wondering": "Which uses of cash offer the clearest return?",
         "claims": [
           {
-            "sentence_id": "ai-business-1",
+            "sentence_id": "earnings-business-1",
             "type": "mechanism",
-            "evidence": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058"
+            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
           },
           {
-            "sentence_id": "ai-business-2",
-            "type": "interpretation",
-            "evidence": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058"
+            "sentence_id": "earnings-business-2",
+            "type": "mechanism",
+            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
           }
         ]
       },
       {
         "view_id": "policy",
-        "body": "AI may lift output over time. Heavy near-term investment can also add demand for credit, chips, and power.",
-        "keep_wondering": "How quickly will AI improve broad productivity?",
+        "body": "Strong company results can coexist with uneven markets. Officials watch whether high rates are slowing investment without breaking employment.",
+        "keep_wondering": "Is tighter credit cooling demand gradually?",
         "claims": [
           {
-            "sentence_id": "ai-policy-1",
-            "type": "interpretation",
-            "evidence": "https://apnews.com/article/us-economy-warsh-fed-ai-imf-4c80750c113a82a464a46f58a4fdab43"
+            "sentence_id": "earnings-policy-1",
+            "type": "mechanism",
+            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
           },
           {
-            "sentence_id": "ai-policy-2",
+            "sentence_id": "earnings-policy-2",
             "type": "mechanism",
-            "evidence": "https://www.iea.org/reports/energy-and-ai"
+            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
           }
         ]
       }
     ],
     "sources": [
       {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058"
+        "name": "U.S. Securities and Exchange Commission",
+        "href": "https://www.sec.gov/edgar/search/"
       },
       {
-        "name": "Federal Reserve",
-        "href": "https://www.federalreserve.gov/monetarypolicy.htm"
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/b972b64127db5412a2b02c35ecf95c88"
       }
     ],
-    "data_note": "Prices are from 10:00 AM ET; company results and new AI spending plans can quickly change sentiment.",
+    "data_note": "Market prices are from the 9:35 AM ET report and can change during the session.",
     "claims": [
       {
-        "sentence_id": "ai-commentary-1",
+        "sentence_id": "earnings-commentary-1",
         "type": "fact",
-            "evidence": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058"
+        "evidence": "https://apnews.com/article/b972b64127db5412a2b02c35ecf95c88"
       },
       {
-        "sentence_id": "ai-commentary-2",
-        "type": "fact",
-            "evidence": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058"
-      },
-      {
-        "sentence_id": "ai-commentary-3",
+        "sentence_id": "earnings-commentary-2",
         "type": "interpretation",
-            "evidence": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058"
+        "evidence": "https://www.sec.gov/edgar/search/"
+      },
+      {
+        "sentence_id": "earnings-commentary-3",
+        "type": "mechanism",
+        "evidence": "https://www.sec.gov/edgar/search/"
       }
     ]
   },
   {
     "topic_tag": "inflation_reports",
-    "headline": "Mortgage Costs Stay Near Three-Year High",
+    "headline": "Oil Returns Near War Highs",
     "headline_evidence": {
-      "bucket": "household_credit",
-      "rule": "Freddie Mac's weekly average 30-year mortgage rate held at 7.4%.",
-      "data": "Freddie Mac survey"
+      "bucket": "energy",
+      "rule": "Brent crude rose 0.9% to $110.59, near its highest level since the war with Iran began.",
+      "data": "Associated Press 9:35 AM market report"
     },
-    "commentary": "The average 30-year mortgage rate stayed at 7.4%, near a three-year high. A mortgage is a long-term home loan. High rates lift the monthly bill for the same house and reduce what buyers can afford.",
+    "commentary": "Brent crude moved back near its highest level since the war with Iran began. Oil is a global benchmark, and a lasting rise can reach gasoline, deliveries, air travel, and the prices of goods that move by truck or ship.",
     "defines": [
       {
-        "term": "Mortgage",
-        "definition": "A long-term loan used to buy a home, repaid through monthly principal and interest payments.",
-        "used_by_and_why": "Its rate strongly affects the total cost of a home."
+        "term": "Benchmark",
+        "definition": "A common reference price used to compare contracts and markets.",
+        "used_by_and_why": "Brent helps price much of the oil traded around the world."
       }
     ],
     "explains": [
       {
-        "anchor_text": "lift the monthly bill",
-        "why": "More of each payment goes toward interest when the loan rate is higher.",
-        "other_reading": "Home prices, down payments, taxes, and credit also shape affordability."
+        "anchor_text": "a lasting rise can reach gasoline",
+        "why": "Crude oil is a major input for fuels and transportation.",
+        "other_reading": "Refining, taxes, inventories, and local demand also affect pump prices."
       }
     ],
     "visual": null,
     "visual_gate": {
       "passed": false,
       "failures": [
-        "The card already states the household effect directly."
+        "The Economic Thread already maps the main relationship."
       ],
       "needs_human_check": false
     },
     "views": [
       {
         "view_id": "household",
-        "body": "A higher rate reduces buying power even when a home's price is unchanged. Owners with fixed loans are mostly protected.",
-        "keep_wondering": "Will rates or home prices ease first?",
+        "body": "Higher oil can raise fuel and travel bills. Those costs leave less room for other household spending.",
+        "keep_wondering": "How quickly will higher crude reach gasoline prices?",
         "claims": [
           {
-            "sentence_id": "mortgage-household-1",
+            "sentence_id": "energy-household-1",
             "type": "mechanism",
-            "evidence": "https://www.freddiemac.com/pmms"
+            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
           },
           {
-            "sentence_id": "mortgage-household-2",
+            "sentence_id": "energy-household-2",
             "type": "mechanism",
-            "evidence": "https://www.freddiemac.com/pmms"
+            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
           }
         ]
       },
       {
         "view_id": "business",
-        "body": "Slower home sales can reach builders and brokers. Furniture and repair firms can feel the change too.",
-        "keep_wondering": "Will limited supply offset weak affordability?",
+        "body": "Airlines, shippers, and manufacturers use fuel throughout their operations. Firms may absorb the increase or pass part of it to customers.",
+        "keep_wondering": "Which industries have the least room to absorb fuel costs?",
         "claims": [
           {
-            "sentence_id": "mortgage-business-1",
+            "sentence_id": "energy-business-1",
             "type": "mechanism",
-            "evidence": "https://www.freddiemac.com/research/insight"
+            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
           },
           {
-            "sentence_id": "mortgage-business-2",
+            "sentence_id": "energy-business-2",
             "type": "mechanism",
-            "evidence": "https://www.freddiemac.com/research/insight"
+            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
           }
         ]
       },
       {
         "view_id": "policy",
-        "body": "Housing carries high rates into the real economy. Weak affordability can slow activity without quickly lowering home prices.",
-        "keep_wondering": "How much demand needs to slow?",
+        "body": "Costlier energy can slow progress on inflation. The Federal Reserve weighs that risk against signs of softer growth.",
+        "keep_wondering": "Will the oil increase last long enough to affect policy?",
         "claims": [
           {
-            "sentence_id": "mortgage-policy-1",
+            "sentence_id": "energy-policy-1",
             "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
           },
           {
-            "sentence_id": "mortgage-policy-2",
-            "type": "interpretation",
-            "evidence": "https://www.freddiemac.com/research/insight"
+            "sentence_id": "energy-policy-2",
+            "type": "mechanism",
+            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
           }
         ]
       }
     ],
     "sources": [
       {
-        "name": "Freddie Mac",
-        "href": "https://www.freddiemac.com/pmms"
+        "name": "CME Group",
+        "href": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html"
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/mortgage-rates-housing-freddie-mac-ae938216d9d45a4e2c829845b40d83f5"
+        "href": "https://apnews.com/article/b972b64127db5412a2b02c35ecf95c88"
       }
     ],
-    "data_note": "The national average does not represent every borrower; offers vary by credit, down payment, lender, and location.",
+    "data_note": "Market prices are from the 9:35 AM ET report and can change during the session.",
     "claims": [
       {
-        "sentence_id": "mortgage-commentary-1",
+        "sentence_id": "energy-commentary-1",
         "type": "fact",
-        "evidence": "https://www.freddiemac.com/pmms"
+        "evidence": "https://apnews.com/article/b972b64127db5412a2b02c35ecf95c88"
       },
       {
-        "sentence_id": "mortgage-commentary-2",
+        "sentence_id": "energy-commentary-2",
         "type": "mechanism",
-        "evidence": "https://www.freddiemac.com/pmms"
-      },
-      {
-        "sentence_id": "mortgage-commentary-3",
-        "type": "mechanism",
-        "evidence": "https://www.freddiemac.com/research/insight"
+        "evidence": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html"
       }
     ]
   }
