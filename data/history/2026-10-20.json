@@ -1,0 +1,7 @@
+{
+  "edition_date": "2026-10-20",
+  "published_at": "2026-10-20T09:35:00-04:00",
+  "status": "verified-market-open",
+  "source_file": "content/current-edition.json",
+  "note": "Immutable audit marker for the Oct. 20 market-open edition; the Git commit preserves the full edition payload."
+}

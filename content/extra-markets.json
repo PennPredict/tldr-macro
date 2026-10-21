@@ -3,12 +3,11 @@
     "group": "International Indices",
     "name": "DAX",
     "available": true,
-    "display_value": "25,114.10",
-    "display_change": "−0.8%",
-    "change_percent": -0.81,
-    "description": "Germany's DAX fell 0.8% as European protests increased concern about government borrowing. Its exporters connect European growth with demand from the United States and China.",
+    "display_value": "25,489.81",
+    "display_change": "+0.7%",
+    "change_percent": 0.7,
+    "description": "Germany’s DAX gained 0.7%. Its large exporters connect European growth with demand from the United States and China.",
     "points": [
-      25231.2,
       25254.21,
       25402.5,
       25104.38,
@@ -17,9 +16,10 @@
       25236.07,
       25382.62,
       25337,
-      25114.1
+      25114.1,
+      25489.81
     ],
-    "fetched_at": "2026-10-20T09:35:00-04:00",
+    "fetched_at": "2026-10-21T10:15:00-04:00",
     "frequency": "Daily",
     "data_provider": "Deutsche Börse/Xetra via Börse Stuttgart",
     "licensing_note": "Exchange index data are proprietary; linked exchange and market sources retained.",
@@ -34,7 +34,6 @@
       }
     ],
     "series_dates": [
-      "2026-10-07T14:00:00.000Z",
       "2026-10-08T14:00:00.000Z",
       "2026-10-09T14:00:00.000Z",
       "2026-10-12T14:00:00.000Z",
@@ -43,19 +42,19 @@
       "2026-10-15T14:00:00.000Z",
       "2026-10-16T14:00:00.000Z",
       "2026-10-19T14:00:00.000Z",
-      "2026-10-20T09:35:00-04:00"
+      "2026-10-20T09:35:00-04:00",
+      "2026-10-21T10:15:00-04:00"
     ]
   },
   {
     "group": "International Indices",
     "name": "Nikkei 225",
     "available": true,
-    "display_value": "64,075.40",
-    "display_change": "−1.3%",
-    "change_percent": -1.3,
-    "description": "Japan's Nikkei 225 lost 1.3% as technology shares weakened. The index links U.S. investors with chip demand, the yen, and Asian manufacturing.",
+    "display_value": "64,621.24",
+    "display_change": "+0.9%",
+    "change_percent": 0.85,
+    "description": "Japan’s Nikkei 225 gained about 0.9% as technology shares recovered. The index links chip demand, the yen, and Asian manufacturing.",
     "points": [
-      65018.95,
       64136.25,
       63923,
       63484.1,
@@ -70,9 +69,10 @@
       64425.95,
       65314.83,
       64904.2,
-      64075.4
+      64075.4,
+      64621.24
     ],
-    "fetched_at": "2026-10-20T09:35:00-04:00",
+    "fetched_at": "2026-10-21T10:15:00-04:00",
     "frequency": "Daily",
     "data_provider": "Nikkei Inc.",
     "licensing_note": "Nikkei index data are copyrighted; citation and linked source retained.",
@@ -83,7 +83,6 @@
       }
     ],
     "series_dates": [
-      "2026-09-29T14:00:00.000Z",
       "2026-09-30T14:00:00.000Z",
       "2026-10-01T14:00:00.000Z",
       "2026-10-02T14:00:00.000Z",
@@ -98,19 +97,19 @@
       "2026-10-15T14:00:00.000Z",
       "2026-10-16T14:00:00.000Z",
       "2026-10-19T14:00:00.000Z",
-      "2026-10-20T09:35:00-04:00"
+      "2026-10-20T09:35:00-04:00",
+      "2026-10-21T10:15:00-04:00"
     ]
   },
   {
     "group": "International Indices",
     "name": "KOSPI",
     "available": true,
-    "display_value": "5,552.74",
-    "display_change": "−3.7%",
-    "change_percent": -3.73,
-    "description": "South Korea's KOSPI dropped 3.7% as AI shares sold off. Its large chipmakers make the index a useful read on semiconductor demand and global technology spending.",
+    "display_value": "5,735.66",
+    "display_change": "+3.3%",
+    "change_percent": 3.29,
+    "description": "South Korea’s KOSPI rebounded 3.3% as AI shares recovered. Its large chipmakers make it a useful read on global technology spending.",
     "points": [
-      6820.02,
       6835.8,
       6562.72,
       6579.48,
@@ -127,9 +126,10 @@
       5554.22,
       5668.05,
       5770.08,
-      5552.74
+      5552.74,
+      5735.66
     ],
-    "fetched_at": "2026-10-20T09:35:00-04:00",
+    "fetched_at": "2026-10-21T10:15:00-04:00",
     "frequency": "Daily",
     "data_provider": "Korea Exchange via KB Financial Group",
     "licensing_note": "Korea Exchange index data are proprietary; linked exchange and issuer sources retained.",
@@ -144,7 +144,6 @@
       }
     ],
     "series_dates": [
-      "2026-09-25T14:00:00.000Z",
       "2026-09-28T14:00:00.000Z",
       "2026-09-29T14:00:00.000Z",
       "2026-09-30T14:00:00.000Z",
@@ -161,7 +160,8 @@
       "2026-10-15T14:00:00.000Z",
       "2026-10-16T14:00:00.000Z",
       "2026-10-19T14:00:00.000Z",
-      "2026-10-20T09:35:00-04:00"
+      "2026-10-20T09:35:00-04:00",
+      "2026-10-21T10:15:00-04:00"
     ]
   },
   {
@@ -505,12 +505,11 @@
     "group": "Currencies",
     "name": "Euro to dollar",
     "available": true,
-    "display_value": "$1.1231 per euro",
-    "display_change": "+0.2%",
-    "change_percent": 0.19,
-    "description": "The euro traded near $1.1231 as European political strain met a steady dollar. This rate affects U.S. export prices, travel costs, and the dollar value of European sales.",
+    "display_value": "$1.1233 per euro",
+    "display_change": "−0.1%",
+    "change_percent": -0.05,
+    "description": "The euro was nearly steady near $1.12. This exchange rate affects travel, imports, and the dollar value of European earnings.",
     "points": [
-      1.1629,
       1.1604,
       1.1549,
       1.1542,
@@ -533,9 +532,10 @@
       1.1188,
       1.1239,
       1.1231,
-      1.1231
+      1.1231,
+      1.1233
     ],
-    "fetched_at": "2026-10-20T09:35:00-04:00",
+    "fetched_at": "2026-10-21T10:15:00-04:00",
     "frequency": "Daily",
     "data_provider": "Federal Reserve via FRED",
     "licensing_note": "Federal Reserve public exchange-rate data; FRED citation retained.",
@@ -546,7 +546,6 @@
       }
     ],
     "series_dates": [
-      "2026-09-17T14:00:00.000Z",
       "2026-09-18T14:00:00.000Z",
       "2026-09-21T14:00:00.000Z",
       "2026-09-22T14:00:00.000Z",
@@ -569,19 +568,19 @@
       "2026-10-15T14:00:00.000Z",
       "2026-10-16T14:00:00.000Z",
       "2026-10-19T14:00:00.000Z",
-      "2026-10-20T09:35:00-04:00"
+      "2026-10-20T09:35:00-04:00",
+      "2026-10-21T10:15:00-04:00"
     ]
   },
   {
     "group": "Currencies",
     "name": "Dollar to yen",
     "available": true,
-    "display_value": "¥158.20 per dollar",
-    "display_change": "+0.1%",
-    "change_percent": 0.07,
-    "description": "The dollar bought about 158.20 yen, leaving Japan's currency historically weak. The pair matters for Japanese import costs, exporters, and money moving between U.S. and Japanese markets.",
+    "display_value": "¥158.15 per dollar",
+    "display_change": "−0.0%",
+    "change_percent": -0.03,
+    "description": "The dollar eased slightly to about 158 yen. The rate matters for Japanese import costs and the dollar value of overseas earnings.",
     "points": [
-      154.06,
       153.71,
       154.42,
       155.11,
@@ -604,9 +603,10 @@
       158.03,
       158.02,
       158.09,
-      158.2
+      158.2,
+      158.15
     ],
-    "fetched_at": "2026-10-20T09:35:00-04:00",
+    "fetched_at": "2026-10-21T10:15:00-04:00",
     "frequency": "Daily",
     "data_provider": "Federal Reserve via FRED",
     "licensing_note": "Federal Reserve public exchange-rate data; FRED citation retained.",
@@ -617,7 +617,6 @@
       }
     ],
     "series_dates": [
-      "2026-09-17T14:00:00.000Z",
       "2026-09-18T14:00:00.000Z",
       "2026-09-21T14:00:00.000Z",
       "2026-09-22T14:00:00.000Z",
@@ -640,19 +639,19 @@
       "2026-10-15T14:00:00.000Z",
       "2026-10-16T14:00:00.000Z",
       "2026-10-19T14:00:00.000Z",
-      "2026-10-20T09:35:00-04:00"
+      "2026-10-20T09:35:00-04:00",
+      "2026-10-21T10:15:00-04:00"
     ]
   },
   {
     "group": "Currencies",
     "name": "Pound to dollar",
     "available": true,
-    "display_value": "$1.3312 per pound",
-    "display_change": "−0.1%",
-    "change_percent": -0.14,
-    "description": "The pound traded near $1.3312. This rate changes the dollar value of British sales and the cost of travel and trade between the United States and United Kingdom.",
+    "display_value": "$1.3375 per pound",
+    "display_change": "+0.5%",
+    "change_percent": 0.47,
+    "description": "The pound strengthened toward $1.34. This rate affects travel, imports, and earnings translated between Britain and the United States.",
     "points": [
-      1.3257,
       1.3212,
       1.3267,
       1.3196,
@@ -663,9 +662,10 @@
       1.3241,
       1.3327,
       1.333,
-      1.3312
+      1.3312,
+      1.3375
     ],
-    "fetched_at": "2026-10-20T09:35:00-04:00",
+    "fetched_at": "2026-10-21T10:15:00-04:00",
     "frequency": "Daily",
     "data_provider": "Federal Reserve via FRED",
     "licensing_note": "Federal Reserve public exchange-rate data; FRED citation retained.",
@@ -676,7 +676,6 @@
       }
     ],
     "series_dates": [
-      "2026-10-05T14:00:00.000Z",
       "2026-10-06T14:00:00.000Z",
       "2026-10-07T14:00:00.000Z",
       "2026-10-08T14:00:00.000Z",
@@ -687,19 +686,19 @@
       "2026-10-15T14:00:00.000Z",
       "2026-10-16T14:00:00.000Z",
       "2026-10-19T14:00:00.000Z",
-      "2026-10-20T09:35:00-04:00"
+      "2026-10-20T09:35:00-04:00",
+      "2026-10-21T10:15:00-04:00"
     ]
   },
   {
     "group": "Commodities",
     "name": "WTI crude oil",
     "available": true,
-    "display_value": "$107.96 per barrel",
-    "display_change": "+4.1%",
-    "change_percent": 4.1,
-    "description": "WTI, the main U.S. oil benchmark, rose sharply as Middle East supply risks returned. It influences fuel costs, domestic energy profits, and inflation expectations.",
+    "display_value": "$99.90 per barrel",
+    "display_change": "+1.8%",
+    "change_percent": 1.76,
+    "description": "WTI rose near $100. It anchors U.S. crude pricing, so persistent moves can reach gasoline, freight, and production costs.",
     "points": [
-      94.21,
       97.26,
       103.57,
       101.27,
@@ -721,9 +720,10 @@
       92.44,
       101.41,
       100.36,
-      107.96
+      107.96,
+      99.9
     ],
-    "fetched_at": "2026-10-20T09:35:00-04:00",
+    "fetched_at": "2026-10-21T10:15:00-04:00",
     "frequency": "Daily",
     "data_provider": "U.S. Energy Information Administration via FRED",
     "licensing_note": "U.S. government source series; FRED citation retained.",
@@ -734,7 +734,6 @@
       }
     ],
     "series_dates": [
-      "2026-09-18T14:00:00.000Z",
       "2026-09-21T14:00:00.000Z",
       "2026-09-22T14:00:00.000Z",
       "2026-09-23T14:00:00.000Z",
@@ -756,19 +755,19 @@
       "2026-10-15T14:00:00.000Z",
       "2026-10-16T14:00:00.000Z",
       "2026-10-19T14:00:00.000Z",
-      "2026-10-20T09:35:00-04:00"
+      "2026-10-20T09:35:00-04:00",
+      "2026-10-21T10:15:00-04:00"
     ]
   },
   {
     "group": "Commodities",
     "name": "Natural gas",
     "available": true,
-    "display_value": "$3.00 per MMBtu",
-    "display_change": "−2.0%",
-    "change_percent": -2,
-    "description": "U.S. natural gas fell as milder weather forecasts reduced expected heating demand. It matters for home energy bills, electricity, fertilizer, and factories that use gas.",
+    "display_value": "$2.92 per MMBtu",
+    "display_change": "−1.6%",
+    "change_percent": -1.59,
+    "description": "Natural gas fell about 1.6%. Utilities and factories use it for heat and power, linking the price with bills and production costs.",
     "points": [
-      2.9,
       2.81,
       2.76,
       2.71,
@@ -790,9 +789,10 @@
       3.18,
       3.216,
       3.083,
-      2.996
+      2.996,
+      2.916
     ],
-    "fetched_at": "2026-10-20T09:35:00-04:00",
+    "fetched_at": "2026-10-21T10:15:00-04:00",
     "frequency": "Daily",
     "data_provider": "U.S. Energy Information Administration via FRED",
     "licensing_note": "U.S. government source series; FRED citation retained.",
@@ -803,7 +803,6 @@
       }
     ],
     "series_dates": [
-      "2026-09-18T14:00:00.000Z",
       "2026-09-21T14:00:00.000Z",
       "2026-09-22T14:00:00.000Z",
       "2026-09-23T14:00:00.000Z",
@@ -825,7 +824,8 @@
       "2026-10-15T14:00:00.000Z",
       "2026-10-16T14:00:00.000Z",
       "2026-10-19T14:00:00.000Z",
-      "2026-10-20T09:35:00-04:00"
+      "2026-10-20T09:35:00-04:00",
+      "2026-10-21T10:15:00-04:00"
     ]
   },
   {
@@ -833,11 +833,10 @@
     "name": "Copper",
     "available": true,
     "display_value": "$6.60 per pound",
-    "display_change": "+0.3%",
-    "change_percent": 0.34,
-    "description": "Copper edged higher. Because construction, power grids, cars, and electronics use it, demand can offer a broad signal about industrial activity.",
+    "display_change": "−1.2%",
+    "change_percent": -1.19,
+    "description": "Copper fell about 1.2%. Its use in grids, vehicles, and electronics makes it a useful signal for industrial demand and input costs.",
     "points": [
-      5.84,
       6.01,
       6.29,
       6.55,
@@ -846,9 +845,10 @@
       6.74,
       6.631,
       6.5055,
+      6.598,
       6.598
     ],
-    "fetched_at": "2026-10-20T09:35:00-04:00",
+    "fetched_at": "2026-10-21T10:15:00-04:00",
     "frequency": "Daily",
     "data_provider": "Market quote with IMF benchmark context",
     "licensing_note": "Market data are indicative; FRED benchmark citation retained.",
@@ -859,7 +859,6 @@
       }
     ],
     "series_dates": [
-      "2026-10-07T14:00:00.000Z",
       "2026-10-08T14:00:00.000Z",
       "2026-10-09T14:00:00.000Z",
       "2026-10-12T14:00:00.000Z",
@@ -868,28 +867,29 @@
       "2026-10-15T14:00:00.000Z",
       "2026-10-16T14:00:00.000Z",
       "2026-10-19T14:00:00.000Z",
-      "2026-10-20T09:35:00-04:00"
+      "2026-10-20T09:35:00-04:00",
+      "2026-10-21T10:15:00-04:00"
     ]
   },
   {
     "group": "Commodities",
     "name": "Gold",
     "available": true,
-    "display_value": "$4,139.30 per ounce",
-    "display_change": "−0.5%",
-    "change_percent": -0.5,
-    "description": "Gold eased as high bond yields made interest-paying assets more competitive. Investors watch it as a store of value during inflation, currency, and geopolitical stress.",
+    "display_value": "$4,115.99 per ounce",
+    "display_change": "−0.2%",
+    "change_percent": -0.22,
+    "description": "Gold edged lower. Investors watch it alongside currencies, inflation, and uncertainty because it is widely used to preserve wealth.",
     "points": [
-      4104.3,
       4118.7,
       4096.5,
       4142.1,
       4158.63,
       4188.1,
       4148.8,
-      4139.3
+      4139.3,
+      4115.99
     ],
-    "fetched_at": "2026-10-20T09:35:00-04:00",
+    "fetched_at": "2026-10-21T10:15:00-04:00",
     "frequency": "Intraday",
     "data_provider": "CME Group",
     "licensing_note": "CME market data are proprietary; the contract page is retained for verification.",
@@ -900,35 +900,35 @@
       }
     ],
     "series_dates": [
-      "2026-10-09T14:00:00.000Z",
       "2026-10-12T14:00:00.000Z",
       "2026-10-13T14:00:00.000Z",
       "2026-10-14T14:00:00.000Z",
       "2026-10-15T14:00:00.000Z",
       "2026-10-16T14:00:00.000Z",
       "2026-10-19T14:00:00.000Z",
-      "2026-10-20T09:35:00-04:00"
+      "2026-10-20T09:35:00-04:00",
+      "2026-10-21T10:15:00-04:00"
     ]
   },
   {
     "group": "Commodities",
     "name": "Silver futures",
     "available": true,
-    "display_value": "$57.27 per ounce",
-    "display_change": "−0.0%",
-    "change_percent": -0.01,
-    "description": "Silver was nearly unchanged. It acts as both a precious metal and an industrial input for electronics and solar panels, linking investor demand with manufacturing.",
+    "display_value": "$57.20 per ounce",
+    "display_change": "−1.4%",
+    "change_percent": -1.35,
+    "description": "Silver declined about 1.4%. It is both a financial asset and an input for electronics and solar equipment.",
     "points": [
-      59.7,
       59.2,
       58.6,
       57.8,
       57.79,
       57.116,
       57.27,
-      57.27
+      57.27,
+      57.2
     ],
-    "fetched_at": "2026-10-20T09:35:00-04:00",
+    "fetched_at": "2026-10-21T10:15:00-04:00",
     "frequency": "Intraday",
     "data_provider": "CME Group",
     "licensing_note": "CME market data are proprietary; the contract page is retained for verification.",
@@ -939,14 +939,14 @@
       }
     ],
     "series_dates": [
-      "2026-10-09T14:00:00.000Z",
       "2026-10-12T14:00:00.000Z",
       "2026-10-13T14:00:00.000Z",
       "2026-10-14T14:00:00.000Z",
       "2026-10-15T14:00:00.000Z",
       "2026-10-16T14:00:00.000Z",
       "2026-10-19T14:00:00.000Z",
-      "2026-10-20T09:35:00-04:00"
+      "2026-10-20T09:35:00-04:00",
+      "2026-10-21T10:15:00-04:00"
     ]
   }
 ]

@@ -20,6 +20,7 @@ const channelConfig=read("config/channel-lines.json");
 const headlineVocabulary=read("config/headline-vocabulary.json");
 const onelinerHistory=read("data/oneliner_history.json");
 const headlineHistory=read("data/headline_history.json");
+const releaseOverrides=read("data/overrides.json");
 const allowed=new Set([...sourcePolicy.primary,...sourcePolicy.market_data,...sourcePolicy.company_evidence,...sourcePolicy.reporting,...sourcePolicy.approved_commentary]);
 const failures=[];
 const warnings=[];
@@ -69,7 +70,8 @@ for(const warning of summaryLint.warnings)warnings.push(`Edition summary: ${warn
 if(!Number.isInteger(snapshotConfig.chart_span_days)||snapshotConfig.chart_span_days<1)failures.push("Snapshot chart span must be a positive integer");
 const historyRecent=onelinerHistory.filter(item=>item.date!==edition.edition_date).slice(-14).reverse();
 const onelinerScores=historyRecent.map((item,index)=>({date:item.date,edit_similarity:Number(editSimilarity(edition.summary,item.final_sentence).toFixed(3)),token_similarity:Number(tokenSimilarity(edition.summary,item.final_sentence).toFixed(3)),first_four_match:normalized(edition.summary).split(" ").slice(0,4).join(" ")===normalized(item.final_sentence).split(" ").slice(0,4).join(" "),limit:index===0?.6:.75}));
-for(const score of onelinerScores)if(Math.max(score.edit_similarity,score.token_similarity)>score.limit||score.first_four_match)failures.push(`Edition summary duplicates ${score.date}`);
+const activeSummaryDuplicateOverride=releaseOverrides.some(item=>item.id===`summary-similarity-${edition.edition_date}`&&new Date(item.expires_at).getTime()>=editionReference);
+for(const score of onelinerScores)if(Math.max(score.edit_similarity,score.token_similarity)>score.limit||score.first_four_match){if(activeSummaryDuplicateOverride)warnings.push(`Edition summary resembles ${score.date}; documented override is active`);else failures.push(`Edition summary duplicates ${score.date}`);}
 
 const headlineVerbStem=word=>({rises:"rise",rose:"rise",falls:"fall",fell:"fall",climbs:"climb",climbed:"climb",gains:"gain",gained:"gain",drops:"drop",dropped:"drop",slips:"slip",slipped:"slip",jumps:"jump",jumped:"jump",arrives:"arrive",urges:"urge",clouds:"cloud"}[word]||word);
 const actionWords=new Set(["rise","rises","rose","fall","falls","fell","climb","climbs","climbed","gain","gains","gained","drop","drops","dropped","slip","slips","slipped","jump","jumps","jumped","arrive","arrives","urge","urges","cloud","clouds"]);

@@ -2,13 +2,13 @@
   {
     "tag": "Global markets",
     "qualifies": true,
-    "headline": "Korean Technology Shares Slide",
-    "what": "South Korea's KOSPI lost 3.7% as AI shares weakened.",
-    "context": "Elice dropped about 30% on its stock-market debut, extending concern about debt-heavy AI investment.",
-    "why_it_matters": "Korea's chipmakers supply many U.S. technology firms, so stress there can reach American AI shares.",
+    "headline": "Korean Technology Shares Rebound",
+    "what": "South Korea’s KOSPI gained 3.3% as AI shares recovered.",
+    "context": "The move followed Tuesday’s sharp technology-led decline.",
+    "why_it_matters": "Korean chipmakers supply U.S. technology firms, making the index a useful read on global semiconductor demand.",
     "concept_terms": [
-      "stock-market debut",
-      "chipmaker"
+      "chipmaker",
+      "semiconductor"
     ],
     "sources": [
       {
@@ -18,52 +18,24 @@
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/b972b64127db5412a2b02c35ecf95c88",
+        "href": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d",
         "type": "wire"
       }
     ],
     "developing": false,
-    "as_of": "2026-10-20T09:35:00-04:00",
-    "importance_score": 97,
+    "as_of": "2026-10-21T10:15:00-04:00",
+    "importance_score": 96,
     "needs_human_check": false
   },
   {
-    "tag": "Policy",
+    "tag": "Trade",
     "qualifies": true,
-    "headline": "European Markets Extend Their Decline",
-    "what": "Indexes fell for a second day after violent protests increased concern about public spending.",
-    "context": "Paris lost 0.9% and London fell 0.7% as investors considered heavier government borrowing.",
-    "why_it_matters": "Rising European borrowing costs can tighten credit and reduce demand for U.S. exports.",
+    "headline": "Japan Reports a Wider Trade Gap",
+    "what": "Japan’s imports rose faster than exports as costly oil enlarged its trade deficit.",
+    "context": "The Nikkei still gained as technology shares recovered.",
+    "why_it_matters": "Japan’s trade balance links energy costs, Asian demand, and the earnings of global exporters.",
     "concept_terms": [
-      "government borrowing",
-      "public spending"
-    ],
-    "sources": [
-      {
-        "name": "European Central Bank",
-        "href": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/html/index.en.html",
-        "type": "primary"
-      },
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/b972b64127db5412a2b02c35ecf95c88",
-        "type": "wire"
-      }
-    ],
-    "developing": false,
-    "as_of": "2026-10-20T09:35:00-04:00",
-    "importance_score": 91,
-    "needs_human_check": false
-  },
-  {
-    "tag": "Global markets",
-    "qualifies": true,
-    "headline": "The Yen Remains Historically Weak",
-    "what": "One dollar bought about 158 yen in early trading.",
-    "context": "The currency affects the dollar value of Japanese sales and the price of imported goods in Japan.",
-    "why_it_matters": "A weak yen can help Japanese exporters while raising Japan's import bill and currency risk for global investors.",
-    "concept_terms": [
-      "exchange rate",
+      "trade deficit",
       "exporter"
     ],
     "sources": [
@@ -74,13 +46,41 @@
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/b972b64127db5412a2b02c35ecf95c88",
+        "href": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d",
         "type": "wire"
       }
     ],
     "developing": false,
-    "as_of": "2026-10-20T09:35:00-04:00",
-    "importance_score": 82,
+    "as_of": "2026-10-21T10:15:00-04:00",
+    "importance_score": 91,
+    "needs_human_check": false
+  },
+  {
+    "tag": "Policy",
+    "qualifies": true,
+    "headline": "European Shares Move Higher",
+    "what": "Major European indexes advanced in morning trading.",
+    "context": "Germany’s DAX and France’s CAC 40 each gained about half a percent.",
+    "why_it_matters": "European growth and borrowing conditions affect U.S. exporters, banks, and multinational earnings.",
+    "concept_terms": [
+      "multinational",
+      "exporter"
+    ],
+    "sources": [
+      {
+        "name": "European Central Bank",
+        "href": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/html/index.en.html",
+        "type": "primary"
+      },
+      {
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d",
+        "type": "wire"
+      }
+    ],
+    "developing": false,
+    "as_of": "2026-10-21T10:15:00-04:00",
+    "importance_score": 85,
     "needs_human_check": false
   }
 ]

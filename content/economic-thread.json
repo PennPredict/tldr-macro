@@ -1,116 +1,115 @@
 {
   "schema_version": 1,
-  "edition_date": "2026-10-20",
-  "reported_node_id": "ai-shares",
+  "edition_date": "2026-10-21",
+  "reported_node_id": "earnings-split",
   "mobile_order": [
-    "ai-shares",
-    "high-rates",
-    "profit-test",
-    "broader-market"
+    "earnings-split",
+    "lower-yields",
+    "mixed-shares",
+    "watch-next"
   ],
   "nodes": [
     {
-      "id": "ai-shares",
+      "id": "earnings-split",
       "layer": "Happened",
       "type": "FACT",
       "tier": 1,
-      "label": "AI shares weakened again",
-      "subline": "Monday's rebound did not hold",
-      "event_time": "2026-10-20T09:35:00-04:00",
-      "reference_period": "Oct. 20 market open",
+      "label": "Company outlooks split technology shares",
+      "subline": "Strong AI demand met weaker forecasts",
+      "event_time": "2026-10-21T10:15:00-04:00",
+      "reference_period": "Oct. 21 morning market",
       "source": "The Associated Press",
-      "source_url": "https://apnews.com/article/b972b64127db5412a2b02c35ecf95c88",
-      "source_sentence": "The Nasdaq fell while AI shares came under renewed pressure.",
+      "source_url": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d",
       "popover": {
         "title": "What moved",
-        "plain": "Technology shares led the Nasdaq lower at the open.",
-        "precise": "The Nasdaq fell 0.6% while the broad S&P 500 was nearly flat.",
-        "source_url": "https://apnews.com/article/b972b64127db5412a2b02c35ecf95c88"
+        "plain": "Some technology shares rose while others fell.",
+        "precise": "SpaceX and Super Micro gained while Netflix, AT&T, and CoreWeave declined.",
+        "source_url": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d"
       }
     },
     {
-      "id": "high-rates",
+      "id": "lower-yields",
       "layer": "Link",
       "type": "MECHANISM",
       "tier": 1,
-      "label": "High rates make expansion costlier",
-      "reference_period": "Standard mechanism",
+      "label": "Treasury yields moved lower",
+      "reference_period": "Current market relationship",
       "mechanism_id": "rates-to-financing",
       "source": "Federal Reserve",
       "source_url": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm",
       "popover": {
         "title": "Rates and financing",
-        "plain": "Higher rates raise the cost of borrowing for new projects.",
-        "precise": "Companies can borrow less or need stronger future profits to justify the same investment.",
+        "plain": "Lower Treasury yields can reduce borrowing costs.",
+        "precise": "The 10-year yield fell to 5.09%, but remained high by recent standards.",
         "source_url": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
       }
     },
     {
-      "id": "profit-test",
+      "id": "mixed-shares",
       "layer": "Markets",
       "type": "MECHANISM",
       "tier": 1,
-      "label": "Investors demand clearer profits",
+      "label": "Broad indexes stayed balanced",
       "reference_period": "Current market relationship",
-      "mechanism_id": "financing-to-profits",
+      "mechanism_id": "earnings-to-breadth",
       "source": "The Associated Press",
-      "source_url": "https://apnews.com/article/b972b64127db5412a2b02c35ecf95c88",
+      "source_url": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d",
       "story_anchor": "story-background",
       "popover": {
-        "title": "Why profits matter",
-        "plain": "Investors want evidence that large AI projects will earn more than they cost.",
-        "precise": "High financing costs raise the return that a project needs to create value.",
-        "source_url": "https://apnews.com/article/b972b64127db5412a2b02c35ecf95c88"
+        "title": "Why the market looked calm",
+        "plain": "Different company moves balanced the broader index.",
+        "precise": "The S&P 500 was nearly unchanged while the Nasdaq gained and the Dow slipped.",
+        "source_url": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d"
       }
     },
     {
-      "id": "broader-market",
+      "id": "watch-next",
       "layer": "Could mean",
       "type": "MECHANISM",
       "tier": 1,
-      "label": "Market leadership can broaden",
+      "label": "Upcoming results can reset expectations",
       "reference_period": "Current market relationship",
-      "mechanism_id": "tech-to-breadth",
-      "source": "S&P Dow Jones Indices",
-      "source_url": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/",
+      "mechanism_id": "earnings-to-expectations",
+      "source": "U.S. Securities and Exchange Commission",
+      "source_url": "https://www.sec.gov/edgar/search/",
       "popover": {
-        "title": "A broader market",
-        "plain": "Other industries can steady the market when the largest technology shares fall.",
-        "precise": "The Dow rose while the AI-heavy Nasdaq fell at the open.",
-        "source_url": "https://apnews.com/article/b972b64127db5412a2b02c35ecf95c88"
+        "title": "What comes next",
+        "plain": "More large-company results may change the market picture.",
+        "precise": "Investors will compare spending plans with expected future profit.",
+        "source_url": "https://www.sec.gov/edgar/search/"
       }
     }
   ],
   "edges": [
     {
-      "id": "shares-to-rates",
-      "from": "ai-shares",
-      "to": "high-rates",
+      "id": "earnings-to-yields",
+      "from": "earnings-split",
+      "to": "lower-yields",
       "type": "MECHANISM",
       "tier": 1,
       "mechanism_id": "rates-to-financing",
-      "direction": "up"
+      "direction": "down"
     },
     {
-      "id": "rates-to-profits",
-      "from": "high-rates",
-      "to": "profit-test",
+      "id": "yields-to-market",
+      "from": "lower-yields",
+      "to": "mixed-shares",
       "type": "MECHANISM",
       "tier": 1,
-      "mechanism_id": "financing-to-profits",
-      "direction": "up"
+      "mechanism_id": "earnings-to-breadth",
+      "direction": "out"
     },
     {
-      "id": "profits-to-breadth",
-      "from": "profit-test",
-      "to": "broader-market",
+      "id": "market-to-next",
+      "from": "mixed-shares",
+      "to": "watch-next",
       "type": "MECHANISM",
       "tier": 1,
-      "mechanism_id": "tech-to-breadth",
+      "mechanism_id": "earnings-to-expectations",
       "direction": "out"
     }
   ],
   "caption_candidates": [],
-  "takeaway": "High rates made expansion costlier, so investors demanded clearer profits while the broader market held steady.",
-  "other_factors_note": "Earnings, energy prices, policy, and global news can also move markets."
+  "takeaway": "Mixed company outlooks kept the broad market balanced while lower yields offered modest relief from expensive credit.",
+  "other_factors_note": "Oil, policy, and global news can also move markets."
 }
