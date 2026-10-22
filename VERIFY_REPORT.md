@@ -1,7 +1,7 @@
 # Verification report
 
-Generated: 2026-10-21T17:51:15.057Z
-Edition: 2026-10-21
+Generated: 2026-10-22T15:41:24.625Z
+Edition: 2026-10-22
 Status: PASSED
 
 ## Fixed
@@ -17,10 +17,15 @@ Status: PASSED
 - Russell 2000: 9:35 AM observation was not verified from an approved source
 - 2-year Treasury yield: daily source observation was relabeled with a current timestamp
 - 10-year minus 2-year yield spread: daily source observation was relabeled with a current timestamp
+- Euro to dollar: The latest approved-source observation was outside the edition freshness window
+- Dollar to yen: The latest approved-source observation was outside the edition freshness window
+- Pound to dollar: The latest approved-source observation was outside the edition freshness window
+- WTI crude oil: The latest approved-source observation was outside the edition freshness window
 
 ## Warnings
 - Stocks: 0 verified cards remain; withheld cards need new primary-source observations before restoration
 - Rates: 1 verified cards remain; withheld cards need new primary-source observations before restoration
+- Currencies: 0 verified cards remain; withheld cards need new primary-source observations before restoration
 
 ## Failures
 - None

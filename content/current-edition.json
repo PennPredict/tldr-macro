@@ -1,18 +1,18 @@
 {
-  "edition_date": "2026-10-21",
-  "updated_at": "2026-10-21T10:15:00-04:00",
-  "summary": "Shares held steady; Treasury yields slipped; crude oil edged up.",
+  "edition_date": "2026-10-22",
+  "updated_at": "2026-10-22T10:45:00-04:00",
+  "summary": "Stocks fell; government borrowing rates fell; oil jumped.",
   "markets": [
     {
       "name": "S&P 500",
       "kind": "equity_index",
-      "value": 7712.57,
-      "display_value": "7,712.57",
+      "value": 7648.57,
+      "display_value": "7,648.57",
       "baseline": "prior_close",
-      "prior_close": 7712.57,
-      "change_percent": 0,
-      "display_change": "unchanged",
-      "description": "The S&P 500 tracks 500 large U.S. companies and anchors many retirement funds. It was nearly unchanged as mixed earnings kept the broad market balanced.",
+      "prior_close": 7757.17,
+      "change_percent": -1.4,
+      "display_change": "−1.4%",
+      "description": "The S&P 500 tracks 500 large U.S. companies and anchors many retirement funds. It fell 1.4% as large technology shares weakened.",
       "so_what": {
         "channel_id": "sp500",
         "context": {
@@ -31,12 +31,12 @@
         {
           "sentence_id": "sp500-description-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d"
+          "evidence": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
         }
       ],
       "data_source": "S&P Dow Jones Indices and The Associated Press",
-      "fetched_at": "2026-10-21T10:15:00-04:00",
-      "range": "Tuesday close 7,712.57 · Wednesday 10:15 AM unchanged",
+      "fetched_at": "2026-10-22T10:45:00-04:00",
+      "range": "Wednesday close 7,757.17 · Thursday 10:45 AM −1.4%",
       "points": [
         7818.93,
         7801.77,
@@ -50,7 +50,9 @@
         7659.44,
         7690.08,
         7679.19,
-        7712.57
+        7712.57,
+        7648.57,
+        7648.57
       ],
       "sources": [
         {
@@ -59,7 +61,7 @@
         },
         {
           "name": "The Associated Press",
-          "href": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d"
+          "href": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
         }
       ],
       "series_dates": [
@@ -75,19 +77,21 @@
         "2026-10-16T14:00:00.000Z",
         "2026-10-19T14:00:00.000Z",
         "2026-10-20T09:35:00-04:00",
-        "2026-10-21T10:15:00-04:00"
+        "2026-10-21T10:15:00-04:00",
+        "2026-10-22T10:45:00-04:00",
+        "2026-10-22T10:45:00-04:00"
       ]
     },
     {
       "name": "10-year Treasury yield",
       "kind": "yield",
-      "value": 5.09,
-      "display_value": "5.09%",
+      "value": 5.01,
+      "display_value": "5.01%",
       "baseline": "prior_close",
-      "prior_close": 5.12,
-      "change_percent": -0.59,
-      "display_change": "−0.03 points",
-      "description": "The 10-year Treasury yield helps set many long-term borrowing costs. It declined to 5.09%, slightly reducing a key reference rate for mortgages and business loans.",
+      "prior_close": 5.13,
+      "change_percent": -2.34,
+      "display_change": "−0.12 points",
+      "description": "The 10-year Treasury yield helps set many long-term borrowing costs. It fell to 5.01% as investors bought government bonds for safety.",
       "so_what": {
         "channel_id": "yield10",
         "context": {
@@ -106,12 +110,12 @@
         {
           "sentence_id": "yield10-description-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d"
+          "evidence": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
         }
       ],
       "data_source": "U.S. Treasury and The Associated Press",
-      "fetched_at": "2026-10-21T10:15:00-04:00",
-      "range": "Tuesday close 5.12% · Wednesday 10:15 AM −0.03 points",
+      "fetched_at": "2026-10-22T10:45:00-04:00",
+      "range": "Wednesday close 5.13% · Thursday 10:45 AM −0.12 points",
       "points": [
         5.18,
         5.23,
@@ -124,7 +128,9 @@
         5.09,
         5.1,
         5.136,
-        5.09
+        5.09,
+        5.01,
+        5.01
       ],
       "sources": [
         {
@@ -144,19 +150,21 @@
         "2026-10-16T14:00:00.000Z",
         "2026-10-19T14:00:00.000Z",
         "2026-10-20T09:35:00-04:00",
-        "2026-10-21T10:15:00-04:00"
+        "2026-10-21T10:15:00-04:00",
+        "2026-10-22T10:45:00-04:00",
+        "2026-10-22T10:45:00-04:00"
       ]
     },
     {
       "name": "Brent crude oil",
       "kind": "commodity",
-      "value": 108.96,
-      "display_value": "$108.96",
+      "value": 111.6,
+      "display_value": "$111.60",
       "baseline": "prior_close",
-      "prior_close": 108.74,
-      "change_percent": 0.2,
-      "display_change": "+0.2%",
-      "description": "Brent is a reference price for oil sold worldwide. It edged up to $108.96 while uncertainty kept energy costs volatile.",
+      "prior_close": 108.77,
+      "change_percent": 2.6,
+      "display_change": "+2.6%",
+      "description": "Brent is a reference price for oil sold worldwide. It climbed 2.6% as supply uncertainty kept energy costs elevated.",
       "so_what": {
         "channel_id": "brent",
         "context": {
@@ -176,12 +184,12 @@
         {
           "sentence_id": "brent-description-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d"
+          "evidence": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
         }
       ],
       "data_source": "CME Group · Brent crude futures and The Associated Press",
-      "fetched_at": "2026-10-21T10:15:00-04:00",
-      "range": "Tuesday close $108.74 · Wednesday 10:15 AM +0.2%",
+      "fetched_at": "2026-10-22T10:45:00-04:00",
+      "range": "Wednesday close $108.77 · Thursday 10:45 AM +2.6%",
       "points": [
         101.94,
         100.31,
@@ -194,12 +202,18 @@
         109.86,
         108.13,
         110.59,
-        108.96
+        108.96,
+        111.6,
+        111.6
       ],
       "sources": [
         {
           "name": "CME Group · Brent crude futures",
           "href": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html"
+        },
+        {
+          "name": "The Associated Press",
+          "href": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
         }
       ],
       "series_dates": [
@@ -214,19 +228,21 @@
         "2026-10-16T14:00:00.000Z",
         "2026-10-19T14:00:00.000Z",
         "2026-10-20T09:35:00-04:00",
-        "2026-10-21T10:15:00-04:00"
+        "2026-10-21T10:15:00-04:00",
+        "2026-10-22T10:45:00-04:00",
+        "2026-10-22T10:45:00-04:00"
       ]
     },
     {
       "name": "Nasdaq Composite",
       "kind": "equity_index",
-      "value": 26530.52,
-      "display_value": "26,530.52",
+      "value": 26115.4,
+      "display_value": "26,115.40",
       "baseline": "prior_close",
-      "prior_close": 26424.82,
-      "change_percent": 0.4,
-      "display_change": "+0.4%",
-      "description": "The Nasdaq includes many technology companies and reacts strongly to AI spending. It gained 0.4% as several AI-linked shares recovered.",
+      "prior_close": 26702.86,
+      "change_percent": -2.2,
+      "display_change": "−2.2%",
+      "description": "The Nasdaq includes many technology companies and reacts strongly to AI spending. It dropped 2.2% as major AI-linked shares declined.",
       "so_what": {
         "channel_id": "nasdaq",
         "context": {
@@ -245,12 +261,12 @@
         {
           "sentence_id": "nasdaq-description-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d"
+          "evidence": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
         }
       ],
       "data_source": "Nasdaq Composite and The Associated Press",
-      "fetched_at": "2026-10-21T10:15:00-04:00",
-      "range": "Tuesday close 26,424.82 · Wednesday 10:15 AM +0.4%",
+      "fetched_at": "2026-10-22T10:45:00-04:00",
+      "range": "Wednesday close 26,702.86 · Thursday 10:45 AM −2.2%",
       "points": [
         27599.79,
         27538.69,
@@ -263,7 +279,9 @@
         26140.03,
         26375.29,
         26272.3,
-        26530.52
+        26530.52,
+        26115.4,
+        26115.4
       ],
       "sources": [
         {
@@ -283,19 +301,21 @@
         "2026-10-16T14:00:00.000Z",
         "2026-10-19T14:00:00.000Z",
         "2026-10-20T09:35:00-04:00",
-        "2026-10-21T10:15:00-04:00"
+        "2026-10-21T10:15:00-04:00",
+        "2026-10-22T10:45:00-04:00",
+        "2026-10-22T10:45:00-04:00"
       ]
     },
     {
       "name": "Dow Jones Industrial Average",
       "kind": "equity_index",
-      "value": 52465.88,
-      "display_value": "52,465.88",
+      "value": 52561.09,
+      "display_value": "52,561.09",
       "baseline": "prior_close",
-      "prior_close": 52495.88,
-      "change_percent": -0.06,
-      "display_change": "−0.1%",
-      "description": "The Dow follows 30 large established U.S. companies. It slipped about 0.1% as weaker communications shares offset gains elsewhere.",
+      "prior_close": 52856.09,
+      "change_percent": -0.56,
+      "display_change": "−0.6%",
+      "description": "The Dow follows 30 large established U.S. companies. It lost 0.6%, a smaller decline than technology-heavy indexes.",
       "so_what": {
         "channel_id": "dow",
         "context": {
@@ -314,12 +334,12 @@
         {
           "sentence_id": "dow-description-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d"
+          "evidence": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
         }
       ],
       "data_source": "S&P Dow Jones Indices and The Associated Press",
-      "fetched_at": "2026-10-21T10:15:00-04:00",
-      "range": "Tuesday close 52,495.88 · Wednesday 10:15 AM −0.1%",
+      "fetched_at": "2026-10-22T10:45:00-04:00",
+      "range": "Wednesday close 52,856.09 · Thursday 10:45 AM −0.6%",
       "points": [
         51521.28,
         51179.87,
@@ -332,16 +352,14 @@
         52002.41,
         51958.41,
         52086.03,
-        52465.88
+        52465.88,
+        52561.09,
+        52561.09
       ],
       "sources": [
         {
           "name": "S&P Dow Jones Indices",
           "href": "https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/"
-        },
-        {
-          "name": "The Associated Press",
-          "href": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d"
         }
       ],
       "series_dates": [
@@ -356,19 +374,21 @@
         "2026-10-16T14:00:00.000Z",
         "2026-10-19T14:00:00.000Z",
         "2026-10-20T09:35:00-04:00",
-        "2026-10-21T10:15:00-04:00"
+        "2026-10-21T10:15:00-04:00",
+        "2026-10-22T10:45:00-04:00",
+        "2026-10-22T10:45:00-04:00"
       ]
     },
     {
       "name": "Expected volatility",
       "kind": "volatility",
-      "value": 17.14,
-      "display_value": "17.14",
+      "value": 18.15,
+      "display_value": "18.15",
       "baseline": "prior_close",
-      "prior_close": 18.74,
-      "change_percent": -8.54,
-      "display_change": "−8.5%",
-      "description": "Expected volatility estimates the size of near-term S&P 500 swings. It fell toward 17, showing less demand for protection against sharp moves.",
+      "prior_close": 16.68,
+      "change_percent": 8.81,
+      "display_change": "+8.8%",
+      "description": "Expected volatility estimates the size of near-term S&P 500 swings. It rose to 18.15 as demand for market protection increased.",
       "so_what": {
         "channel_id": "vix",
         "context": {
@@ -387,12 +407,12 @@
         {
           "sentence_id": "vix-description-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d"
+          "evidence": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
         }
       ],
       "data_source": "Cboe VIX",
-      "fetched_at": "2026-10-21T10:15:00-04:00",
-      "range": "Tuesday close 18.74 · Wednesday 10:15 AM −8.5%",
+      "fetched_at": "2026-10-22T10:45:00-04:00",
+      "range": "Wednesday close 16.68 · Thursday 10:45 AM +8.8%",
       "points": [
         15.38,
         15.08,
@@ -405,7 +425,9 @@
         19.99,
         18,
         18.42,
-        17.14
+        17.14,
+        18.15,
+        18.15
       ],
       "sources": [
         {
@@ -425,25 +447,27 @@
         "2026-10-16T14:00:00.000Z",
         "2026-10-19T14:00:00.000Z",
         "2026-10-20T09:35:00-04:00",
-        "2026-10-21T10:15:00-04:00"
+        "2026-10-21T10:15:00-04:00",
+        "2026-10-22T10:45:00-04:00",
+        "2026-10-22T10:45:00-04:00"
       ]
     }
   ],
   "calendar": [
     {
-      "date": "OCT 22",
-      "time": "8:30 AM ET",
-      "start_at": "2026-10-22T08:30:00-04:00",
-      "title": "Initial Jobless Claims",
-      "definition": "Counts new applications for unemployment benefits each week.",
-      "prior": "199,000 applications in the prior week · Labor Department",
+      "date": "OCT 23",
+      "time": "9:45 AM ET",
+      "start_at": "2026-10-23T09:45:00-04:00",
+      "title": "S&P Global Flash PMI",
+      "definition": "Surveys businesses about sales, hiring, prices, and production.",
+      "prior": "First October reading · S&P Global",
       "consensus": "",
-      "hot_label": "If claims rise clearly",
-      "cool_label": "If claims remain low",
-      "hot": "A larger increase can suggest that layoffs are spreading.",
-      "cool": "A low reading can show that most employers are still holding workers.",
-      "source": "U.S. Department of Labor",
-      "href": "https://www.dol.gov/ui/data.pdf"
+      "hot_label": "If activity and prices accelerate",
+      "cool_label": "If demand slows",
+      "hot": "Stronger growth with rising costs can keep inflation concerns active.",
+      "cool": "A weaker reading can point to slower demand and easier cost growth.",
+      "source": "S&P Global release calendar",
+      "href": "https://www.spglobal.com/marketintelligence/en/mi/research-analysis/economic-calendar.html"
     },
     {
       "date": "OCT 28",

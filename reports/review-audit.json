@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T17:51:17.920Z",
+  "generated_at": "2026-10-22T15:41:27.747Z",
   "status": "passed",
   "checks": {
     "instrument_count": 16,
@@ -14,10 +14,6 @@
       "Nikkei 225",
       "KOSPI",
       "30-year fixed mortgage rate",
-      "Euro to dollar",
-      "Dollar to yen",
-      "Pound to dollar",
-      "WTI crude oil",
       "Natural gas",
       "Copper",
       "Gold",

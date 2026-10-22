@@ -2,13 +2,13 @@
   {
     "tag": "Global markets",
     "qualifies": true,
-    "headline": "Korean Technology Shares Rebound",
-    "what": "South Korea’s KOSPI gained 3.3% as AI shares recovered.",
-    "context": "The move followed Tuesday’s sharp technology-led decline.",
-    "why_it_matters": "Korean chipmakers supply U.S. technology firms, making the index a useful read on global semiconductor demand.",
+    "headline": "Asian Technology Markets Retreat",
+    "what": "South Korea’s KOSPI lost 3.5% and Japan’s Nikkei 225 fell 2.7%.",
+    "context": "Technology weakness that began in Asia later reached U.S. indexes.",
+    "why_it_matters": "Asian chipmakers sit inside global AI supply chains, making their shares useful signals for technology demand.",
     "concept_terms": [
       "chipmaker",
-      "semiconductor"
+      "supply chain"
     ],
     "sources": [
       {
@@ -18,53 +18,53 @@
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d",
+        "href": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2",
         "type": "wire"
       }
     ],
     "developing": false,
-    "as_of": "2026-10-21T10:15:00-04:00",
-    "importance_score": 96,
+    "as_of": "2026-10-22T10:45:00-04:00",
+    "importance_score": 97,
     "needs_human_check": false
   },
   {
-    "tag": "Trade",
+    "tag": "Global markets",
     "qualifies": true,
-    "headline": "Japan Reports a Wider Trade Gap",
-    "what": "Japan’s imports rose faster than exports as costly oil enlarged its trade deficit.",
-    "context": "The Nikkei still gained as technology shares recovered.",
-    "why_it_matters": "Japan’s trade balance links energy costs, Asian demand, and the earnings of global exporters.",
+    "headline": "Hong Kong Shares Decline",
+    "what": "Hong Kong’s Hang Seng dropped 3% during the Asian session.",
+    "context": "The decline formed part of a wider retreat in technology-heavy markets.",
+    "why_it_matters": "Hong Kong links Chinese companies with global investors, so large moves can signal changing views of regional growth and risk.",
     "concept_terms": [
-      "trade deficit",
-      "exporter"
+      "global investor",
+      "regional growth"
     ],
     "sources": [
       {
-        "name": "Bank of Japan",
-        "href": "https://www.boj.or.jp/en/statistics/market/forex/fxdaily/index.htm",
+        "name": "MSCI Hong Kong Index",
+        "href": "https://www.msci.com/indexes/index/105764",
         "type": "primary"
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d",
+        "href": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2",
         "type": "wire"
       }
     ],
     "developing": false,
-    "as_of": "2026-10-21T10:15:00-04:00",
+    "as_of": "2026-10-22T10:45:00-04:00",
     "importance_score": 91,
     "needs_human_check": false
   },
   {
     "tag": "Policy",
     "qualifies": true,
-    "headline": "European Shares Move Higher",
-    "what": "Major European indexes advanced in morning trading.",
-    "context": "Germany’s DAX and France’s CAC 40 each gained about half a percent.",
-    "why_it_matters": "European growth and borrowing conditions affect U.S. exporters, banks, and multinational earnings.",
+    "headline": "French Borrowing Costs Increase",
+    "what": "French government bond yields rose as the CAC 40 fell 1%.",
+    "context": "Investors remained focused on France’s debt load, budget, and recent protests.",
+    "why_it_matters": "Higher European borrowing costs can tighten credit and affect U.S. banks, exporters, and multinational earnings.",
     "concept_terms": [
-      "multinational",
-      "exporter"
+      "government bond",
+      "multinational"
     ],
     "sources": [
       {
@@ -74,13 +74,13 @@
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d",
+        "href": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2",
         "type": "wire"
       }
     ],
     "developing": false,
-    "as_of": "2026-10-21T10:15:00-04:00",
-    "importance_score": 85,
+    "as_of": "2026-10-22T10:45:00-04:00",
+    "importance_score": 86,
     "needs_human_check": false
   }
 ]

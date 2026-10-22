@@ -1,115 +1,115 @@
 {
   "schema_version": 1,
-  "edition_date": "2026-10-21",
-  "reported_node_id": "earnings-split",
+  "edition_date": "2026-10-22",
+  "reported_node_id": "ai-weakness",
   "mobile_order": [
-    "earnings-split",
-    "lower-yields",
-    "mixed-shares",
-    "watch-next"
+    "ai-weakness",
+    "global-selloff",
+    "safer-bonds",
+    "split-market"
   ],
   "nodes": [
     {
-      "id": "earnings-split",
+      "id": "ai-weakness",
       "layer": "Happened",
       "type": "FACT",
       "tier": 1,
-      "label": "Company outlooks split technology shares",
-      "subline": "Strong AI demand met weaker forecasts",
-      "event_time": "2026-10-21T10:15:00-04:00",
-      "reference_period": "Oct. 21 morning market",
+      "label": "AI shares weakened",
+      "subline": "Large technology stocks fell",
+      "event_time": "2026-10-22T10:45:00-04:00",
+      "reference_period": "Oct. 22 morning market",
       "source": "The Associated Press",
-      "source_url": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d",
+      "source_url": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2",
       "popover": {
         "title": "What moved",
-        "plain": "Some technology shares rose while others fell.",
-        "precise": "SpaceX and Super Micro gained while Netflix, AT&T, and CoreWeave declined.",
-        "source_url": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d"
+        "plain": "Large AI-linked shares fell.",
+        "precise": "Nvidia, Meta, Lam Research, and CoreWeave declined.",
+        "source_url": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
       }
     },
     {
-      "id": "lower-yields",
-      "layer": "Link",
+      "id": "global-selloff",
+      "layer": "Spread",
       "type": "MECHANISM",
       "tier": 1,
-      "label": "Treasury yields moved lower",
+      "label": "Technology indexes moved lower",
       "reference_period": "Current market relationship",
-      "mechanism_id": "rates-to-financing",
+      "mechanism_id": "weights-to-indexes",
+      "source": "The Associated Press",
+      "source_url": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2",
+      "popover": {
+        "title": "How it spread",
+        "plain": "Large technology companies carry heavy index weights.",
+        "precise": "The Nasdaq lost more than the Dow while Asian technology markets also fell.",
+        "source_url": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
+      }
+    },
+    {
+      "id": "safer-bonds",
+      "layer": "Response",
+      "type": "MECHANISM",
+      "tier": 1,
+      "label": "Demand shifted toward government bonds",
+      "reference_period": "Current market relationship",
+      "mechanism_id": "risk-to-bonds",
       "source": "Federal Reserve",
       "source_url": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm",
       "popover": {
-        "title": "Rates and financing",
-        "plain": "Lower Treasury yields can reduce borrowing costs.",
-        "precise": "The 10-year yield fell to 5.09%, but remained high by recent standards.",
-        "source_url": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+        "title": "Why yields fell",
+        "plain": "More bond buying raises prices and lowers yields.",
+        "precise": "The 10-year Treasury yield moved to 5.01%.",
+        "source_url": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
       }
     },
     {
-      "id": "mixed-shares",
-      "layer": "Markets",
-      "type": "MECHANISM",
-      "tier": 1,
-      "label": "Broad indexes stayed balanced",
-      "reference_period": "Current market relationship",
-      "mechanism_id": "earnings-to-breadth",
-      "source": "The Associated Press",
-      "source_url": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d",
-      "story_anchor": "story-background",
-      "popover": {
-        "title": "Why the market looked calm",
-        "plain": "Different company moves balanced the broader index.",
-        "precise": "The S&P 500 was nearly unchanged while the Nasdaq gained and the Dow slipped.",
-        "source_url": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d"
-      }
-    },
-    {
-      "id": "watch-next",
+      "id": "split-market",
       "layer": "Could mean",
       "type": "MECHANISM",
       "tier": 1,
-      "label": "Upcoming results can reset expectations",
+      "label": "Market weakness stayed concentrated",
       "reference_period": "Current market relationship",
-      "mechanism_id": "earnings-to-expectations",
-      "source": "U.S. Securities and Exchange Commission",
-      "source_url": "https://www.sec.gov/edgar/search/",
+      "mechanism_id": "breadth-to-risk",
+      "source": "The Associated Press",
+      "source_url": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2",
+      "story_anchor": "story-background",
       "popover": {
-        "title": "What comes next",
-        "plain": "More large-company results may change the market picture.",
-        "precise": "Investors will compare spending plans with expected future profit.",
-        "source_url": "https://www.sec.gov/edgar/search/"
+        "title": "Why breadth matters",
+        "plain": "Most S&P 500 stocks rose despite the index decline.",
+        "precise": "Large technology losses outweighed gains in many smaller index members.",
+        "source_url": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
       }
     }
   ],
   "edges": [
     {
-      "id": "earnings-to-yields",
-      "from": "earnings-split",
-      "to": "lower-yields",
+      "id": "ai-to-indexes",
+      "from": "ai-weakness",
+      "to": "global-selloff",
       "type": "MECHANISM",
       "tier": 1,
-      "mechanism_id": "rates-to-financing",
+      "mechanism_id": "weights-to-indexes",
       "direction": "down"
     },
     {
-      "id": "yields-to-market",
-      "from": "lower-yields",
-      "to": "mixed-shares",
+      "id": "indexes-to-bonds",
+      "from": "global-selloff",
+      "to": "safer-bonds",
       "type": "MECHANISM",
       "tier": 1,
-      "mechanism_id": "earnings-to-breadth",
+      "mechanism_id": "risk-to-bonds",
       "direction": "out"
     },
     {
-      "id": "market-to-next",
-      "from": "mixed-shares",
-      "to": "watch-next",
+      "id": "bonds-to-breadth",
+      "from": "safer-bonds",
+      "to": "split-market",
       "type": "MECHANISM",
       "tier": 1,
-      "mechanism_id": "earnings-to-expectations",
+      "mechanism_id": "breadth-to-risk",
       "direction": "out"
     }
   ],
-  "takeaway": "Mixed company outlooks kept the broad market balanced while lower yields offered modest relief from expensive credit.",
-  "other_factors_note": "Oil, policy, and global news can also move markets.",
+  "takeaway": "AI-linked losses pulled major indexes lower, while demand for safer government bonds reduced yields and broad stock performance stayed less weak.",
+  "other_factors_note": "Oil, company results, and global news can also move markets.",
   "enabled": true
 }

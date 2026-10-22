@@ -1,25 +1,25 @@
 [
   {
     "topic_tag": "companies",
-    "headline": "AI Results Split Technology Shares",
+    "headline": "AI Shares Pull Indexes Lower",
     "headline_evidence": {
       "bucket": "companies",
-      "rule": "SpaceX, Nvidia, and Super Micro rose while Netflix, AT&T, and CoreWeave fell in the morning session.",
-      "data": "Associated Press 10:15 AM ET market report"
+      "rule": "AI shares fell while most S&P 500 members rose.",
+      "data": "Associated Press 10:45 AM ET market report"
     },
-    "commentary": "Company outlooks divided technology shares. SpaceX and Super Micro reported strong AI demand. Netflix and AT&T gave weaker forecasts.",
+    "commentary": "Large AI-linked companies dragged major market indexes lower. Many other companies gained, but Nvidia lost 3.8% and Meta fell 6.4% after mixed results and new spending plans.",
     "defines": [
       {
-        "term": "Company outlook",
-        "definition": "A company’s estimate of its future sales or profit.",
-        "used_by_and_why": "Investors compare the outlook with the results they expected."
+        "term": "Market index",
+        "definition": "A group of investments used to track part of a market.",
+        "used_by_and_why": "Readers use an index to compare broad performance with single-company moves."
       }
     ],
     "explains": [
       {
-        "anchor_text": "strong AI demand",
-        "why": "More orders can support revenue for companies that build AI systems.",
-        "other_reading": "Demand and profit can still vary across companies."
+        "anchor_text": "dragged major indexes lower",
+        "why": "Large technology companies carry heavy weights in major indexes.",
+        "other_reading": "Most S&P 500 companies still gained."
       }
     ],
     "visual": null,
@@ -90,37 +90,32 @@
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d"
+        "href": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
       }
     ],
-    "data_note": "Market readings are from the 10:15 AM ET report and can change during the session.",
+    "data_note": "Market readings are from the 10:45 AM ET report and can change during the session.",
     "claims": [
       {
         "sentence_id": "companies-commentary-1",
-        "type": "interpretation",
-        "evidence": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d"
+        "type": "fact",
+        "evidence": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
       },
       {
         "sentence_id": "companies-commentary-2",
-        "type": "fact",
-        "evidence": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d"
-      },
-      {
-        "sentence_id": "companies-commentary-3",
-        "type": "fact",
-        "evidence": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d"
+        "type": "mechanism",
+        "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
       }
     ]
   },
   {
     "topic_tag": "interest_rates_and_yields",
-    "headline": "Lower Yields Trim Financing Costs",
+    "headline": "Bond Buying Lowers Treasury Yields",
     "headline_evidence": {
       "bucket": "interest_rates_and_yields",
-      "rule": "The 10-year Treasury yield moved to 5.09% from 5.12% late Tuesday.",
-      "data": "Associated Press 10:15 AM ET market report"
+      "rule": "The 10-year Treasury yield fell from 5.13% to 5.01%.",
+      "data": "Associated Press 10:45 AM ET market report"
     },
-    "commentary": "The 10-year Treasury yield declined to 5.09%. A lower Treasury yield can trim the reference rate used for mortgages and long-term business loans, although borrowing remains expensive.",
+    "commentary": "The 10-year Treasury yield fell to 5.01% as investors moved toward government bonds. Lower yields can trim reference rates for mortgages and business loans, but borrowing remains expensive.",
     "defines": [
       {
         "term": "Treasury yield",
@@ -130,9 +125,9 @@
     ],
     "explains": [
       {
-        "anchor_text": "can trim the reference rate",
-        "why": "Lenders often compare loan rates with Treasury yields.",
-        "other_reading": "Credit risk and lender costs also shape borrowing rates."
+        "anchor_text": "moved toward government bonds",
+        "why": "Buying bonds raises their price and lowers their yield.",
+        "other_reading": "Inflation and Federal Reserve policy also shape yields."
       }
     ],
     "visual": null,
@@ -203,37 +198,37 @@
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d"
+        "href": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
       }
     ],
-    "data_note": "Market readings are from the 10:15 AM ET report and can change during the session.",
+    "data_note": "Market readings are from the 10:45 AM ET report and can change during the session.",
     "claims": [
       {
         "sentence_id": "interest_rates_and_yields-commentary-1",
         "type": "fact",
-        "evidence": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d"
+        "evidence": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
       },
       {
         "sentence_id": "interest_rates_and_yields-commentary-2",
         "type": "mechanism",
-        "evidence": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"
+        "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
       }
     ]
   },
   {
     "topic_tag": "oil_and_energy",
-    "headline": "Oil Swings Remain Wide",
+    "headline": "Oil Reaches a Five-Month High",
     "headline_evidence": {
       "bucket": "oil_and_energy",
-      "rule": "Brent crude traded at $108.96 after moving between $97 and $112 during October.",
-      "data": "Associated Press 10:15 AM ET market report"
+      "rule": "Brent rose 2.6% and touched a five-month high.",
+      "data": "Associated Press 10:45 AM ET market report"
     },
-    "commentary": "Brent crude remained near $109 after wide October swings. Persistent changes in this oil benchmark can reach gasoline, shipping, and airfares.",
+    "commentary": "Brent crude touched its highest price since May and traded at $111.60. Supply uncertainty can reach gasoline, shipping, and airfares when oil stays expensive.",
     "defines": [
       {
-        "term": "Benchmark",
-        "definition": "A common reference price used to compare contracts and markets.",
-        "used_by_and_why": "Brent helps price much of the oil traded around the world."
+        "term": "Brent crude",
+        "definition": "A widely used reference price for oil sold around the world.",
+        "used_by_and_why": "Businesses and investors compare energy contracts with the Brent price."
       }
     ],
     "explains": [
@@ -311,15 +306,15 @@
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d"
+        "href": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
       }
     ],
-    "data_note": "Market readings are from the 10:15 AM ET report and can change during the session.",
+    "data_note": "Market readings are from the 10:45 AM ET report and can change during the session.",
     "claims": [
       {
         "sentence_id": "oil_and_energy-commentary-1",
         "type": "fact",
-        "evidence": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d"
+        "evidence": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
       },
       {
         "sentence_id": "oil_and_energy-commentary-2",
