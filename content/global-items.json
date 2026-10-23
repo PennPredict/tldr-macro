@@ -2,85 +2,85 @@
   {
     "tag": "Global markets",
     "qualifies": true,
-    "headline": "Asian Technology Markets Retreat",
-    "what": "South Korea’s KOSPI lost 3.5% and Japan’s Nikkei 225 fell 2.7%.",
-    "context": "Technology weakness that began in Asia later reached U.S. indexes.",
-    "why_it_matters": "Asian chipmakers sit inside global AI supply chains, making their shares useful signals for technology demand.",
+    "headline": "Eurozone Business Growth Slows",
+    "what": "The eurozone flash business index declined to 51.9 in October.",
+    "context": "A reading above 50 still indicates growth, but activity cooled from September.",
+    "why_it_matters": "Europe is a major customer for U.S. exporters, so slower demand can reach multinational sales.",
     "concept_terms": [
-      "chipmaker",
-      "supply chain"
+      "flash business index",
+      "multinational"
     ],
     "sources": [
       {
-        "name": "Korea Exchange",
-        "href": "https://global.krx.co.kr/",
+        "name": "S&P Global",
+        "href": "https://www.spglobal.com/marketintelligence/en/mi/research-analysis/economic-calendar.html",
         "type": "primary"
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2",
+        "href": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963",
         "type": "wire"
       }
     ],
     "developing": false,
-    "as_of": "2026-10-22T10:45:00-04:00",
-    "importance_score": 97,
+    "as_of": "2026-10-23T12:42:00-04:00",
+    "importance_score": 94,
     "needs_human_check": false
   },
   {
     "tag": "Global markets",
     "qualifies": true,
-    "headline": "Hong Kong Shares Decline",
-    "what": "Hong Kong’s Hang Seng dropped 3% during the Asian session.",
-    "context": "The decline formed part of a wider retreat in technology-heavy markets.",
-    "why_it_matters": "Hong Kong links Chinese companies with global investors, so large moves can signal changing views of regional growth and risk.",
+    "headline": "British Business Activity Accelerates",
+    "what": "The United Kingdom’s flash business index rose to 53.1 in October.",
+    "context": "Services and manufacturing output both strengthened from September.",
+    "why_it_matters": "Stronger British demand can support U.S. exporters while influencing the pound and global rate expectations.",
     "concept_terms": [
-      "global investor",
-      "regional growth"
+      "business index",
+      "exporter"
     ],
     "sources": [
       {
-        "name": "MSCI Hong Kong Index",
-        "href": "https://www.msci.com/indexes/index/105764",
+        "name": "S&P Global",
+        "href": "https://www.spglobal.com/marketintelligence/en/mi/research-analysis/economic-calendar.html",
         "type": "primary"
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2",
+        "href": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963",
         "type": "wire"
       }
     ],
     "developing": false,
-    "as_of": "2026-10-22T10:45:00-04:00",
-    "importance_score": 91,
+    "as_of": "2026-10-23T12:42:00-04:00",
+    "importance_score": 89,
     "needs_human_check": false
   },
   {
-    "tag": "Policy",
+    "tag": "Global markets",
     "qualifies": true,
-    "headline": "French Borrowing Costs Increase",
-    "what": "French government bond yields rose as the CAC 40 fell 1%.",
-    "context": "Investors remained focused on France’s debt load, budget, and recent protests.",
-    "why_it_matters": "Higher European borrowing costs can tighten credit and affect U.S. banks, exporters, and multinational earnings.",
+    "headline": "Asian Markets Move in Different Directions",
+    "what": "Japan’s Nikkei slipped while China’s Shanghai index advanced.",
+    "context": "The mixed moves followed Thursday’s technology-led global selloff.",
+    "why_it_matters": "Asian indexes offer an early read on chip demand, trade, and investor risk before U.S. markets open.",
     "concept_terms": [
-      "government bond",
-      "multinational"
+      "global selloff",
+      "investor risk"
     ],
     "sources": [
       {
-        "name": "European Central Bank",
-        "href": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/html/index.en.html",
+        "name": "Bank of Japan",
+        "href": "https://www.boj.or.jp/en/statistics/market/index.htm",
         "type": "primary"
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2",
+        "href": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963",
         "type": "wire"
       }
     ],
     "developing": false,
-    "as_of": "2026-10-22T10:45:00-04:00",
-    "importance_score": 86,
+    "as_of": "2026-10-23T12:42:00-04:00",
+    "importance_score": 84,
     "needs_human_check": false
   }
 ]

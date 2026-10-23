@@ -1,6 +1,6 @@
 # Data Report
 
-Generated: 2026-10-22T15:41:27.747Z
+Generated: 2026-10-23T17:04:55.579Z
 
 | Instrument | Provider | Series | Frequency | Latest timestamp | Baseline | Chart points | Status |
 |---|---|---|---|---|---|---:|---|
@@ -51,20 +51,18 @@ Generated: 2026-10-22T15:41:27.747Z
 
 | Instrument | Fetched timestamp | Baseline | Display | Provider |
 |---|---|---|---|---|
-| S&P 500 | 2026-10-22T10:45:00-04:00 | Wednesday close 7,757.17 · Thursday 10:45 AM −1.4% | 7,648.57 (−1.4%) | S&P Dow Jones Indices and The Associated Press |
-| 10-year Treasury yield | 2026-10-22T10:45:00-04:00 | Wednesday close 5.13% · Thursday 10:45 AM −0.12 points | 5.01% (−0.12 points) | U.S. Treasury and The Associated Press |
-| Brent crude oil | 2026-10-22T10:45:00-04:00 | Wednesday close $108.77 · Thursday 10:45 AM +2.6% | $111.60 (+2.6%) | CME Group · Brent crude futures and The Associated Press |
-| Nasdaq Composite | 2026-10-22T10:45:00-04:00 | Wednesday close 26,702.86 · Thursday 10:45 AM −2.2% | 26,115.40 (−2.2%) | Nasdaq Composite and The Associated Press |
-| Dow Jones Industrial Average | 2026-10-22T10:45:00-04:00 | Wednesday close 52,856.09 · Thursday 10:45 AM −0.6% | 52,561.09 (−0.6%) | S&P Dow Jones Indices and The Associated Press |
-| Expected volatility | 2026-10-22T10:45:00-04:00 | Wednesday close 16.68 · Thursday 10:45 AM +8.8% | 18.15 (+8.8%) | Cboe VIX |
+| S&P 500 | 2026-10-23T12:42:00-04:00 | Thursday close 7,663.43 · Friday 12:42 PM −0.2% | 7,649.16 (−0.2%) | S&P Dow Jones Indices and The Associated Press |
+| 10-year Treasury yield | 2026-10-23T12:33:00-04:00 | Thursday close 4.96% · Friday 12:42 PM +0.03 points | 4.99% (+0.03 points) | U.S. Treasury and The Associated Press |
+| Brent crude oil | 2026-10-23T12:33:00-04:00 | Thursday close $113.13 · Friday 12:42 PM +3.6% | $117.20 (+3.6%) | CME Group · Brent crude futures and The Associated Press |
+| Nasdaq Composite | 2026-10-23T12:42:00-04:00 | Thursday close 26,008.86 · Friday 12:42 PM +0.2% | 26,052.38 (+0.2%) | Nasdaq Composite and The Associated Press |
+| Dow Jones Industrial Average | 2026-10-23T12:42:00-04:00 | Thursday close 52,867.98 · Friday 12:42 PM −0.9% | 52,380.13 (−0.9%) | S&P Dow Jones Indices and The Associated Press |
+| Expected volatility | 2026-10-23T12:42:00-04:00 | Thursday close 19.03 · Friday 12:42 PM +4.0% | 19.79 (+4.0%) | Cboe VIX |
 
-- DAX: 2026-10-22T10:45:00-04:00; 25,525.26; −0.5%; Deutsche Börse/Xetra via Börse Stuttgart
-- Nikkei 225: 2026-10-22T10:45:00-04:00; 62,907.84; −2.7%; Nikkei Inc.
-- KOSPI: 2026-10-22T10:45:00-04:00; 5,534.91; −3.5%; Korea Exchange via KB Financial Group
+- DAX: 2026-10-23T12:42:00-04:00; 25,181.65; −0.8%; Deutsche Börse/Xetra via Börse Stuttgart
+- Nikkei 225: 2026-10-23T12:42:00-04:00; 62,693.16; −0.3%; Nikkei Inc.
 - Nasdaq Composite: 2026-10-02T16:00:00-04:00; 27,190.86; +1.19%; Nasdaq via FRED
 - Dow Jones Industrial Average: 2026-10-05T10:10:00-04:00; 51,267.90; +0.18%; S&P Dow Jones Indices via FRED
 - 30-year fixed mortgage rate: 2026-10-20T09:35:00-04:00; 7.40%; unchanged; Freddie Mac
-- Natural gas: 2026-10-22T10:45:00-04:00; $2.78 per MMBtu; −0.4%; U.S. Energy Information Administration via FRED
-- Copper: 2026-10-22T10:45:00-04:00; $6.40 per pound; −2.7%; Market quote with IMF benchmark context
-- Gold: 2026-10-22T10:45:00-04:00; $4,080.30 per ounce; −1.7%; CME Group
-- Silver futures: 2026-10-22T10:45:00-04:00; $55.95 per ounce; −3.1%; CME Group
+- WTI crude oil: 2026-10-23T12:42:00-04:00; $103.19 per barrel; +3.7%; CME Group
+- Copper: 2026-10-23T12:42:00-04:00; $6.52 per pound; +1.9%; Market quote with IMF benchmark context
+- Gold: 2026-10-23T12:42:00-04:00; $4,013.90 per ounce; −1.2%; CME Group

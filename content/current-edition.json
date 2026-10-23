@@ -1,18 +1,18 @@
 {
-  "edition_date": "2026-10-22",
-  "updated_at": "2026-10-22T10:45:00-04:00",
-  "summary": "Stocks fell; government borrowing rates fell; oil jumped.",
+  "edition_date": "2026-10-23",
+  "updated_at": "2026-10-23T12:42:00-04:00",
+  "summary": "Shares slipped; Treasury yields edged up; crude oil jumped.",
   "markets": [
     {
       "name": "S&P 500",
       "kind": "equity_index",
-      "value": 7648.57,
-      "display_value": "7,648.57",
+      "value": 7649.16,
+      "display_value": "7,649.16",
       "baseline": "prior_close",
-      "prior_close": 7757.17,
-      "change_percent": -1.4,
-      "display_change": "−1.4%",
-      "description": "The S&P 500 tracks 500 large U.S. companies and anchors many retirement funds. It fell 1.4% as large technology shares weakened.",
+      "prior_close": 7663.43,
+      "change_percent": -0.19,
+      "display_change": "−0.2%",
+      "description": "The S&P 500 tracks 500 large U.S. companies and anchors many retirement funds. It slipped 0.2% as most member stocks declined.",
       "so_what": {
         "channel_id": "sp500",
         "context": {
@@ -31,12 +31,12 @@
         {
           "sentence_id": "sp500-description-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
+          "evidence": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
         }
       ],
       "data_source": "S&P Dow Jones Indices and The Associated Press",
-      "fetched_at": "2026-10-22T10:45:00-04:00",
-      "range": "Wednesday close 7,757.17 · Thursday 10:45 AM −1.4%",
+      "fetched_at": "2026-10-23T12:42:00-04:00",
+      "range": "Thursday close 7,663.43 · Friday 12:42 PM −0.2%",
       "points": [
         7818.93,
         7801.77,
@@ -52,7 +52,10 @@
         7679.19,
         7712.57,
         7648.57,
-        7648.57
+        7648.57,
+        7649.16,
+        7649.16,
+        7649.16
       ],
       "sources": [
         {
@@ -61,7 +64,7 @@
         },
         {
           "name": "The Associated Press",
-          "href": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
+          "href": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
         }
       ],
       "series_dates": [
@@ -79,19 +82,22 @@
         "2026-10-20T09:35:00-04:00",
         "2026-10-21T10:15:00-04:00",
         "2026-10-22T10:45:00-04:00",
-        "2026-10-22T10:45:00-04:00"
+        "2026-10-22T10:45:00-04:00",
+        "2026-10-23T12:42:00-04:00",
+        "2026-10-23T12:42:00-04:00",
+        "2026-10-23T12:42:00-04:00"
       ]
     },
     {
       "name": "10-year Treasury yield",
       "kind": "yield",
-      "value": 5.01,
-      "display_value": "5.01%",
+      "value": 4.99,
+      "display_value": "4.99%",
       "baseline": "prior_close",
-      "prior_close": 5.13,
-      "change_percent": -2.34,
-      "display_change": "−0.12 points",
-      "description": "The 10-year Treasury yield helps set many long-term borrowing costs. It fell to 5.01% as investors bought government bonds for safety.",
+      "prior_close": 4.96,
+      "change_percent": 0.6,
+      "display_change": "+0.03 points",
+      "description": "The 10-year Treasury yield helps set many long-term borrowing costs. It rose to 4.99%, keeping a key reference rate near 5%.",
       "so_what": {
         "channel_id": "yield10",
         "context": {
@@ -110,12 +116,12 @@
         {
           "sentence_id": "yield10-description-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
+          "evidence": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
         }
       ],
       "data_source": "U.S. Treasury and The Associated Press",
-      "fetched_at": "2026-10-22T10:45:00-04:00",
-      "range": "Wednesday close 5.13% · Thursday 10:45 AM −0.12 points",
+      "fetched_at": "2026-10-23T12:33:00-04:00",
+      "range": "Thursday close 4.96% · Friday 12:42 PM +0.03 points",
       "points": [
         5.18,
         5.23,
@@ -130,7 +136,10 @@
         5.136,
         5.09,
         5.01,
-        5.01
+        5.01,
+        4.99,
+        4.99,
+        4.99
       ],
       "sources": [
         {
@@ -152,19 +161,22 @@
         "2026-10-20T09:35:00-04:00",
         "2026-10-21T10:15:00-04:00",
         "2026-10-22T10:45:00-04:00",
-        "2026-10-22T10:45:00-04:00"
+        "2026-10-22T10:45:00-04:00",
+        "2026-10-23T12:33:00-04:00",
+        "2026-10-23T12:33:00-04:00",
+        "2026-10-23T12:33:00-04:00"
       ]
     },
     {
       "name": "Brent crude oil",
       "kind": "commodity",
-      "value": 111.6,
-      "display_value": "$111.60",
+      "value": 117.2,
+      "display_value": "$117.20",
       "baseline": "prior_close",
-      "prior_close": 108.77,
-      "change_percent": 2.6,
-      "display_change": "+2.6%",
-      "description": "Brent is a reference price for oil sold worldwide. It climbed 2.6% as supply uncertainty kept energy costs elevated.",
+      "prior_close": 113.13,
+      "change_percent": 3.6,
+      "display_change": "+3.6%",
+      "description": "Brent is a reference price for oil sold worldwide. It jumped 3.6% to its highest level since March.",
       "so_what": {
         "channel_id": "brent",
         "context": {
@@ -184,12 +196,12 @@
         {
           "sentence_id": "brent-description-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
+          "evidence": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
         }
       ],
       "data_source": "CME Group · Brent crude futures and The Associated Press",
-      "fetched_at": "2026-10-22T10:45:00-04:00",
-      "range": "Wednesday close $108.77 · Thursday 10:45 AM +2.6%",
+      "fetched_at": "2026-10-23T12:33:00-04:00",
+      "range": "Thursday close $113.13 · Friday 12:42 PM +3.6%",
       "points": [
         101.94,
         100.31,
@@ -204,7 +216,10 @@
         110.59,
         108.96,
         111.6,
-        111.6
+        111.6,
+        117.2,
+        117.2,
+        117.2
       ],
       "sources": [
         {
@@ -213,7 +228,7 @@
         },
         {
           "name": "The Associated Press",
-          "href": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
+          "href": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
         }
       ],
       "series_dates": [
@@ -230,19 +245,22 @@
         "2026-10-20T09:35:00-04:00",
         "2026-10-21T10:15:00-04:00",
         "2026-10-22T10:45:00-04:00",
-        "2026-10-22T10:45:00-04:00"
+        "2026-10-22T10:45:00-04:00",
+        "2026-10-23T12:33:00-04:00",
+        "2026-10-23T12:33:00-04:00",
+        "2026-10-23T12:33:00-04:00"
       ]
     },
     {
       "name": "Nasdaq Composite",
       "kind": "equity_index",
-      "value": 26115.4,
-      "display_value": "26,115.40",
+      "value": 26052.38,
+      "display_value": "26,052.38",
       "baseline": "prior_close",
-      "prior_close": 26702.86,
-      "change_percent": -2.2,
-      "display_change": "−2.2%",
-      "description": "The Nasdaq includes many technology companies and reacts strongly to AI spending. It dropped 2.2% as major AI-linked shares declined.",
+      "prior_close": 26008.86,
+      "change_percent": 0.17,
+      "display_change": "+0.2%",
+      "description": "The Nasdaq includes many technology companies and reacts strongly to AI spending. It gained 0.2% as several large chip and software shares advanced.",
       "so_what": {
         "channel_id": "nasdaq",
         "context": {
@@ -261,12 +279,12 @@
         {
           "sentence_id": "nasdaq-description-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
+          "evidence": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
         }
       ],
       "data_source": "Nasdaq Composite and The Associated Press",
-      "fetched_at": "2026-10-22T10:45:00-04:00",
-      "range": "Wednesday close 26,702.86 · Thursday 10:45 AM −2.2%",
+      "fetched_at": "2026-10-23T12:42:00-04:00",
+      "range": "Thursday close 26,008.86 · Friday 12:42 PM +0.2%",
       "points": [
         27599.79,
         27538.69,
@@ -281,7 +299,10 @@
         26272.3,
         26530.52,
         26115.4,
-        26115.4
+        26115.4,
+        26052.38,
+        26052.38,
+        26052.38
       ],
       "sources": [
         {
@@ -303,19 +324,22 @@
         "2026-10-20T09:35:00-04:00",
         "2026-10-21T10:15:00-04:00",
         "2026-10-22T10:45:00-04:00",
-        "2026-10-22T10:45:00-04:00"
+        "2026-10-22T10:45:00-04:00",
+        "2026-10-23T12:42:00-04:00",
+        "2026-10-23T12:42:00-04:00",
+        "2026-10-23T12:42:00-04:00"
       ]
     },
     {
       "name": "Dow Jones Industrial Average",
       "kind": "equity_index",
-      "value": 52561.09,
-      "display_value": "52,561.09",
+      "value": 52380.13,
+      "display_value": "52,380.13",
       "baseline": "prior_close",
-      "prior_close": 52856.09,
-      "change_percent": -0.56,
-      "display_change": "−0.6%",
-      "description": "The Dow follows 30 large established U.S. companies. It lost 0.6%, a smaller decline than technology-heavy indexes.",
+      "prior_close": 52867.98,
+      "change_percent": -0.92,
+      "display_change": "−0.9%",
+      "description": "The Dow follows 30 large established U.S. companies. It lost 0.9% as financial and industrial shares weakened.",
       "so_what": {
         "channel_id": "dow",
         "context": {
@@ -334,12 +358,12 @@
         {
           "sentence_id": "dow-description-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
+          "evidence": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
         }
       ],
       "data_source": "S&P Dow Jones Indices and The Associated Press",
-      "fetched_at": "2026-10-22T10:45:00-04:00",
-      "range": "Wednesday close 52,856.09 · Thursday 10:45 AM −0.6%",
+      "fetched_at": "2026-10-23T12:42:00-04:00",
+      "range": "Thursday close 52,867.98 · Friday 12:42 PM −0.9%",
       "points": [
         51521.28,
         51179.87,
@@ -354,7 +378,10 @@
         52086.03,
         52465.88,
         52561.09,
-        52561.09
+        52561.09,
+        52380.13,
+        52380.13,
+        52380.13
       ],
       "sources": [
         {
@@ -376,19 +403,22 @@
         "2026-10-20T09:35:00-04:00",
         "2026-10-21T10:15:00-04:00",
         "2026-10-22T10:45:00-04:00",
-        "2026-10-22T10:45:00-04:00"
+        "2026-10-22T10:45:00-04:00",
+        "2026-10-23T12:42:00-04:00",
+        "2026-10-23T12:42:00-04:00",
+        "2026-10-23T12:42:00-04:00"
       ]
     },
     {
       "name": "Expected volatility",
       "kind": "volatility",
-      "value": 18.15,
-      "display_value": "18.15",
+      "value": 19.79,
+      "display_value": "19.79",
       "baseline": "prior_close",
-      "prior_close": 16.68,
-      "change_percent": 8.81,
-      "display_change": "+8.8%",
-      "description": "Expected volatility estimates the size of near-term S&P 500 swings. It rose to 18.15 as demand for market protection increased.",
+      "prior_close": 19.03,
+      "change_percent": 3.99,
+      "display_change": "+4.0%",
+      "description": "Expected volatility estimates the size of near-term S&P 500 swings. It rose to 19.79 as demand for market protection increased.",
       "so_what": {
         "channel_id": "vix",
         "context": {
@@ -407,12 +437,12 @@
         {
           "sentence_id": "vix-description-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
+          "evidence": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
         }
       ],
       "data_source": "Cboe VIX",
-      "fetched_at": "2026-10-22T10:45:00-04:00",
-      "range": "Wednesday close 16.68 · Thursday 10:45 AM +8.8%",
+      "fetched_at": "2026-10-23T12:42:00-04:00",
+      "range": "Thursday close 19.03 · Friday 12:42 PM +4.0%",
       "points": [
         15.38,
         15.08,
@@ -427,7 +457,10 @@
         18.42,
         17.14,
         18.15,
-        18.15
+        18.15,
+        19.79,
+        19.79,
+        19.79
       ],
       "sources": [
         {
@@ -449,26 +482,14 @@
         "2026-10-20T09:35:00-04:00",
         "2026-10-21T10:15:00-04:00",
         "2026-10-22T10:45:00-04:00",
-        "2026-10-22T10:45:00-04:00"
+        "2026-10-22T10:45:00-04:00",
+        "2026-10-23T12:42:00-04:00",
+        "2026-10-23T12:42:00-04:00",
+        "2026-10-23T12:42:00-04:00"
       ]
     }
   ],
   "calendar": [
-    {
-      "date": "OCT 23",
-      "time": "9:45 AM ET",
-      "start_at": "2026-10-23T09:45:00-04:00",
-      "title": "S&P Global Flash PMI",
-      "definition": "Surveys businesses about sales, hiring, prices, and production.",
-      "prior": "First October reading · S&P Global",
-      "consensus": "",
-      "hot_label": "If activity and prices accelerate",
-      "cool_label": "If demand slows",
-      "hot": "Stronger growth with rising costs can keep inflation concerns active.",
-      "cool": "A weaker reading can point to slower demand and easier cost growth.",
-      "source": "S&P Global release calendar",
-      "href": "https://www.spglobal.com/marketintelligence/en/mi/research-analysis/economic-calendar.html"
-    },
     {
       "date": "OCT 28",
       "time": "2:00 PM ET",
@@ -485,6 +506,21 @@
       "href": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
     },
     {
+      "date": "OCT 29",
+      "time": "8:30 AM ET",
+      "start_at": "2026-10-29T08:30:00-04:00",
+      "title": "Personal Income and Outlays",
+      "definition": "Reports household income, spending, and the Federal Reserve’s preferred inflation measure.",
+      "prior": "September income, spending, and PCE prices · BEA",
+      "consensus": "",
+      "hot_label": "If inflation stays high",
+      "cool_label": "If price growth slows",
+      "hot": "A firm reading can support higher interest rates for longer.",
+      "cool": "Slower inflation can reduce pressure on household budgets and policy.",
+      "source": "Bureau of Economic Analysis",
+      "href": "https://www.bea.gov/data/personal-consumption-expenditures-price-index"
+    },
+    {
       "date": "OCT 30",
       "time": "8:30 AM ET",
       "start_at": "2026-10-30T08:30:00-04:00",
@@ -497,7 +533,7 @@
       "hot": "Faster gains can support paychecks while keeping service prices firm.",
       "cool": "Slower growth can ease company costs while limiting wage gains.",
       "source": "BLS release calendar",
-      "href": "https://www.bls.gov/schedule/2026/10_sched_list.htm"
+      "href": "https://www.bls.gov/schedule/news_release/eci.htm"
     },
     {
       "date": "NOV 6",

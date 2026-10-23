@@ -3,10 +3,10 @@
     "group": "International Indices",
     "name": "DAX",
     "available": true,
-    "display_value": "25,525.26",
-    "display_change": "−0.5%",
-    "change_percent": -0.47,
-    "description": "Germany’s DAX slipped 0.5%. Its large exporters connect European growth with demand from the United States and China.",
+    "display_value": "25,181.65",
+    "display_change": "−0.8%",
+    "change_percent": -0.75,
+    "description": "Germany’s DAX fell 0.8%. Its large exporters connect European growth with demand from the United States and China.",
     "points": [
       25254.21,
       25402.5,
@@ -19,9 +19,12 @@
       25114.1,
       25489.81,
       25525.26,
-      25525.26
+      25525.26,
+      25181.65,
+      25181.65,
+      25181.65
     ],
-    "fetched_at": "2026-10-22T10:45:00-04:00",
+    "fetched_at": "2026-10-23T12:42:00-04:00",
     "frequency": "Daily",
     "data_provider": "Deutsche Börse/Xetra via Börse Stuttgart",
     "licensing_note": "Exchange index data are proprietary; linked exchange and market sources retained.",
@@ -47,17 +50,20 @@
       "2026-10-20T09:35:00-04:00",
       "2026-10-21T10:15:00-04:00",
       "2026-10-22T10:45:00-04:00",
-      "2026-10-22T10:45:00-04:00"
+      "2026-10-22T10:45:00-04:00",
+      "2026-10-23T12:42:00-04:00",
+      "2026-10-23T12:42:00-04:00",
+      "2026-10-23T12:42:00-04:00"
     ]
   },
   {
     "group": "International Indices",
     "name": "Nikkei 225",
     "available": true,
-    "display_value": "62,907.84",
-    "display_change": "−2.7%",
-    "change_percent": -2.65,
-    "description": "Japan’s Nikkei 225 sank 2.7% with technology shares. The index links chip demand, the yen, and Asian manufacturing.",
+    "display_value": "62,693.16",
+    "display_change": "−0.3%",
+    "change_percent": -0.34,
+    "description": "Japan’s Nikkei 225 slipped 0.3%. The index links chip demand, the yen, and Asian manufacturing.",
     "points": [
       64136.25,
       63923,
@@ -76,9 +82,12 @@
       64075.4,
       64621.24,
       62907.84,
-      62907.84
+      62907.84,
+      62693.16,
+      62693.16,
+      62693.16
     ],
-    "fetched_at": "2026-10-22T10:45:00-04:00",
+    "fetched_at": "2026-10-23T12:42:00-04:00",
     "frequency": "Daily",
     "data_provider": "Nikkei Inc.",
     "licensing_note": "Nikkei index data are copyrighted; citation and linked source retained.",
@@ -106,13 +115,16 @@
       "2026-10-20T09:35:00-04:00",
       "2026-10-21T10:15:00-04:00",
       "2026-10-22T10:45:00-04:00",
-      "2026-10-22T10:45:00-04:00"
+      "2026-10-22T10:45:00-04:00",
+      "2026-10-23T12:42:00-04:00",
+      "2026-10-23T12:42:00-04:00",
+      "2026-10-23T12:42:00-04:00"
     ]
   },
   {
     "group": "International Indices",
     "name": "KOSPI",
-    "available": true,
+    "available": false,
     "display_value": "5,534.91",
     "display_change": "−3.5%",
     "change_percent": -3.5,
@@ -174,7 +186,8 @@
       "2026-10-21T10:15:00-04:00",
       "2026-10-22T10:45:00-04:00",
       "2026-10-22T10:45:00-04:00"
-    ]
+    ],
+    "withheld_reason": "A current observation was not verified from an approved source"
   },
   {
     "group": "Stocks",
@@ -708,12 +721,12 @@
   {
     "group": "Commodities",
     "name": "WTI crude oil",
-    "available": false,
+    "available": true,
     "withheld_reason": "The latest approved-source observation was outside the edition freshness window",
-    "display_value": "$99.90 per barrel",
-    "display_change": "+1.8%",
-    "change_percent": 1.76,
-    "description": "WTI rose near $100. It anchors U.S. crude pricing, so persistent moves can reach gasoline, freight, and production costs.",
+    "display_value": "$103.19 per barrel",
+    "display_change": "+3.7%",
+    "change_percent": 3.74,
+    "description": "WTI climbed 3.7%. It anchors U.S. crude pricing, so persistent moves can reach gasoline, freight, and production costs.",
     "points": [
       97.26,
       103.57,
@@ -737,16 +750,19 @@
       101.41,
       100.36,
       107.96,
-      99.9
+      99.9,
+      103.19,
+      103.19,
+      103.19
     ],
-    "fetched_at": "2026-10-21T10:15:00-04:00",
+    "fetched_at": "2026-10-23T12:42:00-04:00",
     "frequency": "Daily",
-    "data_provider": "U.S. Energy Information Administration via FRED",
-    "licensing_note": "U.S. government source series; FRED citation retained.",
+    "data_provider": "CME Group",
+    "licensing_note": "CME market data are proprietary; the contract page is retained for verification.",
     "sources": [
       {
-        "name": "FRED · DCOILWTICO",
-        "href": "https://fred.stlouisfed.org/series/DCOILWTICO"
+        "name": "CME Group · WTI crude oil futures",
+        "href": "https://www.cmegroup.com/markets/energy/crude-oil/light-sweet-crude.html"
       }
     ],
     "series_dates": [
@@ -772,13 +788,16 @@
       "2026-10-16T14:00:00.000Z",
       "2026-10-19T14:00:00.000Z",
       "2026-10-20T09:35:00-04:00",
-      "2026-10-21T10:15:00-04:00"
+      "2026-10-21T10:15:00-04:00",
+      "2026-10-23T12:42:00-04:00",
+      "2026-10-23T12:42:00-04:00",
+      "2026-10-23T12:42:00-04:00"
     ]
   },
   {
     "group": "Commodities",
     "name": "Natural gas",
-    "available": true,
+    "available": false,
     "display_value": "$2.78 per MMBtu",
     "display_change": "−0.4%",
     "change_percent": -0.39,
@@ -846,16 +865,17 @@
       "2026-10-21T10:15:00-04:00",
       "2026-10-22T10:45:00-04:00",
       "2026-10-22T10:45:00-04:00"
-    ]
+    ],
+    "withheld_reason": "The latest approved-source observation was outside the edition freshness window"
   },
   {
     "group": "Commodities",
     "name": "Copper",
     "available": true,
-    "display_value": "$6.40 per pound",
-    "display_change": "−2.7%",
-    "change_percent": -2.7,
-    "description": "Copper lost 2.7%. Its use in grids, vehicles, and electronics makes it a useful signal for industrial demand and input costs.",
+    "display_value": "$6.52 per pound",
+    "display_change": "+1.9%",
+    "change_percent": 1.85,
+    "description": "Copper gained 1.9%. Its use in grids, vehicles, and electronics makes it a useful signal for industrial demand and input costs.",
     "points": [
       6.01,
       6.29,
@@ -868,9 +888,12 @@
       6.598,
       6.598,
       6.4,
-      6.4
+      6.4,
+      6.52,
+      6.52,
+      6.52
     ],
-    "fetched_at": "2026-10-22T10:45:00-04:00",
+    "fetched_at": "2026-10-23T12:42:00-04:00",
     "frequency": "Daily",
     "data_provider": "Market quote with IMF benchmark context",
     "licensing_note": "Market data are indicative; FRED benchmark citation retained.",
@@ -892,17 +915,20 @@
       "2026-10-20T09:35:00-04:00",
       "2026-10-21T10:15:00-04:00",
       "2026-10-22T10:45:00-04:00",
-      "2026-10-22T10:45:00-04:00"
+      "2026-10-22T10:45:00-04:00",
+      "2026-10-23T12:42:00-04:00",
+      "2026-10-23T12:42:00-04:00",
+      "2026-10-23T12:42:00-04:00"
     ]
   },
   {
     "group": "Commodities",
     "name": "Gold",
     "available": true,
-    "display_value": "$4,080.30 per ounce",
-    "display_change": "−1.7%",
-    "change_percent": -1.68,
-    "description": "Gold fell 1.7%. Investors watch it alongside currencies, inflation, and uncertainty because it is widely used to preserve wealth.",
+    "display_value": "$4,013.90 per ounce",
+    "display_change": "−1.2%",
+    "change_percent": -1.15,
+    "description": "Gold fell 1.2%. Investors watch it alongside currencies, inflation, and uncertainty because it is widely used to preserve wealth.",
     "points": [
       4118.7,
       4096.5,
@@ -913,9 +939,12 @@
       4139.3,
       4115.99,
       4080.3,
-      4080.3
+      4080.3,
+      4013.9,
+      4013.9,
+      4013.9
     ],
-    "fetched_at": "2026-10-22T10:45:00-04:00",
+    "fetched_at": "2026-10-23T12:42:00-04:00",
     "frequency": "Intraday",
     "data_provider": "CME Group",
     "licensing_note": "CME market data are proprietary; the contract page is retained for verification.",
@@ -935,13 +964,16 @@
       "2026-10-20T09:35:00-04:00",
       "2026-10-21T10:15:00-04:00",
       "2026-10-22T10:45:00-04:00",
-      "2026-10-22T10:45:00-04:00"
+      "2026-10-22T10:45:00-04:00",
+      "2026-10-23T12:42:00-04:00",
+      "2026-10-23T12:42:00-04:00",
+      "2026-10-23T12:42:00-04:00"
     ]
   },
   {
     "group": "Commodities",
     "name": "Silver futures",
-    "available": true,
+    "available": false,
     "display_value": "$55.95 per ounce",
     "display_change": "−3.1%",
     "change_percent": -3.05,
@@ -979,6 +1011,7 @@
       "2026-10-21T10:15:00-04:00",
       "2026-10-22T10:45:00-04:00",
       "2026-10-22T10:45:00-04:00"
-    ]
+    ],
+    "withheld_reason": "The latest approved-source observation was outside the edition freshness window"
   }
 ]

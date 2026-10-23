@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T15:41:27.747Z",
+  "generated_at": "2026-10-23T17:04:55.579Z",
   "status": "passed",
   "checks": {
     "instrument_count": 16,
@@ -12,12 +12,10 @@
       "Expected volatility",
       "DAX",
       "Nikkei 225",
-      "KOSPI",
       "30-year fixed mortgage rate",
-      "Natural gas",
+      "WTI crude oil",
       "Copper",
-      "Gold",
-      "Silver futures"
+      "Gold"
     ],
     "global_items_visible": 3,
     "badge_signs": []

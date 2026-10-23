@@ -1,115 +1,115 @@
 {
   "schema_version": 1,
-  "edition_date": "2026-10-22",
-  "reported_node_id": "ai-weakness",
+  "edition_date": "2026-10-23",
+  "reported_node_id": "oil-rise",
   "mobile_order": [
-    "ai-weakness",
-    "global-selloff",
-    "safer-bonds",
-    "split-market"
+    "oil-rise",
+    "cost-channel",
+    "broad-decline",
+    "tech-offset"
   ],
   "nodes": [
     {
-      "id": "ai-weakness",
+      "id": "oil-rise",
       "layer": "Happened",
       "type": "FACT",
       "tier": 1,
-      "label": "AI shares weakened",
-      "subline": "Large technology stocks fell",
-      "event_time": "2026-10-22T10:45:00-04:00",
-      "reference_period": "Oct. 22 morning market",
+      "label": "Oil moved higher",
+      "subline": "Brent reached a seven-month high",
+      "event_time": "2026-10-23T12:33:00-04:00",
+      "reference_period": "Oct. 23 midday market",
       "source": "The Associated Press",
-      "source_url": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2",
+      "source_url": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963",
       "popover": {
         "title": "What moved",
-        "plain": "Large AI-linked shares fell.",
-        "precise": "Nvidia, Meta, Lam Research, and CoreWeave declined.",
-        "source_url": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
+        "plain": "The global oil benchmark climbed.",
+        "precise": "Brent rose 3.6% to $117.20.",
+        "source_url": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
       }
     },
     {
-      "id": "global-selloff",
-      "layer": "Spread",
+      "id": "cost-channel",
+      "layer": "Link",
       "type": "MECHANISM",
       "tier": 1,
-      "label": "Technology indexes moved lower",
+      "label": "Fuel and shipping costs can rise",
       "reference_period": "Current market relationship",
-      "mechanism_id": "weights-to-indexes",
+      "mechanism_id": "oil-to-costs",
+      "source": "U.S. Energy Information Administration",
+      "source_url": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php",
+      "popover": {
+        "title": "How oil spreads",
+        "plain": "Oil is an input for transport and production.",
+        "precise": "Persistent increases can reach gasoline, freight, food, and manufactured goods.",
+        "source_url": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
+      }
+    },
+    {
+      "id": "broad-decline",
+      "layer": "Markets",
+      "type": "MECHANISM",
+      "tier": 1,
+      "label": "Most large-company shares fell",
+      "reference_period": "Current market relationship",
+      "mechanism_id": "costs-to-margins",
       "source": "The Associated Press",
-      "source_url": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2",
+      "source_url": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963",
+      "story_anchor": "story-background",
       "popover": {
-        "title": "How it spread",
-        "plain": "Large technology companies carry heavy index weights.",
-        "precise": "The Nasdaq lost more than the Dow while Asian technology markets also fell.",
-        "source_url": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
+        "title": "Why breadth weakened",
+        "plain": "Higher costs can reduce company profit margins.",
+        "precise": "Three quarters of S&P 500 members declined.",
+        "source_url": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
       }
     },
     {
-      "id": "safer-bonds",
-      "layer": "Response",
-      "type": "MECHANISM",
-      "tier": 1,
-      "label": "Demand shifted toward government bonds",
-      "reference_period": "Current market relationship",
-      "mechanism_id": "risk-to-bonds",
-      "source": "Federal Reserve",
-      "source_url": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm",
-      "popover": {
-        "title": "Why yields fell",
-        "plain": "More bond buying raises prices and lowers yields.",
-        "precise": "The 10-year Treasury yield moved to 5.01%.",
-        "source_url": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
-      }
-    },
-    {
-      "id": "split-market",
+      "id": "tech-offset",
       "layer": "Could mean",
       "type": "MECHANISM",
       "tier": 1,
-      "label": "Market weakness stayed concentrated",
+      "label": "Large technology gains softened the drop",
       "reference_period": "Current market relationship",
-      "mechanism_id": "breadth-to-risk",
+      "mechanism_id": "weights-to-indexes",
       "source": "The Associated Press",
-      "source_url": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2",
-      "story_anchor": "story-background",
+      "source_url": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963",
       "popover": {
-        "title": "Why breadth matters",
-        "plain": "Most S&P 500 stocks rose despite the index decline.",
-        "precise": "Large technology losses outweighed gains in many smaller index members.",
-        "source_url": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
+        "title": "Why indexes split",
+        "plain": "Large companies can outweigh many smaller moves.",
+        "precise": "Technology gains kept the Nasdaq positive while the Dow fell.",
+        "source_url": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
       }
     }
   ],
   "edges": [
     {
-      "id": "ai-to-indexes",
-      "from": "ai-weakness",
-      "to": "global-selloff",
+      "id": "oil-to-costs",
+      "from": "oil-rise",
+      "to": "cost-channel",
       "type": "MECHANISM",
       "tier": 1,
-      "mechanism_id": "weights-to-indexes",
+      "mechanism_id": "oil-to-costs",
+      "direction": "up"
+    },
+    {
+      "id": "costs-to-stocks",
+      "from": "cost-channel",
+      "to": "broad-decline",
+      "type": "MECHANISM",
+      "tier": 1,
+      "mechanism_id": "costs-to-margins",
       "direction": "down"
     },
     {
-      "id": "indexes-to-bonds",
-      "from": "global-selloff",
-      "to": "safer-bonds",
+      "id": "stocks-to-tech",
+      "from": "broad-decline",
+      "to": "tech-offset",
       "type": "MECHANISM",
       "tier": 1,
-      "mechanism_id": "risk-to-bonds",
-      "direction": "out"
-    },
-    {
-      "id": "bonds-to-breadth",
-      "from": "safer-bonds",
-      "to": "split-market",
-      "type": "MECHANISM",
-      "tier": 1,
-      "mechanism_id": "breadth-to-risk",
+      "mechanism_id": "weights-to-indexes",
       "direction": "out"
     }
   ],
-  "takeaway": "AI-linked losses pulled major indexes lower, while demand for safer government bonds reduced yields and broad stock performance stayed less weak.",
-  "other_factors_note": "Oil, company results, and global news can also move markets.",
+  "takeaway": "Higher oil costs weighed on most stocks, while gains in a few large technology companies kept the Nasdaq slightly positive.",
+  "other_factors_note": "Company results, interest rates, and global news can also move markets.",
   "enabled": true
 }
