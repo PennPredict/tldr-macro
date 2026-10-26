@@ -11,8 +11,9 @@ import AnnotatedText from "./AnnotatedText";
 import EconomicThread from "./EconomicThread";
 import threadConfig from "../config/thread.json";
 import ReaderTools from "./ReaderTools";
+import renderedThread from "../content/economic-thread.rendered.json";
 
-export default function Home(){const summary=generateSummary(edition),positions=threadConfig.stories as Record<string,"Report"|"Reaction"|"Background">,orderedHeadlines=[...headlines].sort((a,b)=>threadConfig.story_order.indexOf(positions[a.topic_tag])-threadConfig.story_order.indexOf(positions[b.topic_tag]));return <main className="shell"><Header updated={edition.updated_at} summary={summary.sentence}/><ReaderTools/>
+export default function Home(){const summary=generateSummary(edition),positions=threadConfig.stories as Record<string,"Report"|"Reaction"|"Background">,orderedHeadlines=[...headlines].sort((a,b)=>threadConfig.story_order.indexOf(positions[a.topic_tag])-threadConfig.story_order.indexOf(positions[b.topic_tag]));return <main className="shell"><Header updated={edition.updated_at} summary={summary.sentence} insight={renderedThread.takeaway}/><ReaderTools/>
   <EconomicThread/>
   <MarketSnapshot markets={edition.markets}/>
   <section className="stories" aria-labelledby="stories-title"><div className="section-heading stories-heading"><h2 id="stories-title">Top Stories</h2></div><div className="headline-list">{orderedHeadlines.map(headline=>{const targetId=headline.topic_tag==="inflation_reports"?"story-inflation":headline.topic_tag==="interest_rates_and_yields"?"story-rates":headline.topic_tag==="companies"?"story-background":undefined;return <HeadlineCard headline={headline} definitions={lensDefinitions} id={targetId} position={positions[headline.topic_tag]||"Background"} key={headline.headline}/>})}</div></section>

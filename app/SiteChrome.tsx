@@ -13,11 +13,11 @@ function BrandImage({ placement }: { placement: "header" | "footer" }) {
   return <Link className={`brand-image brand-image-${placement}`} href="./" aria-label="TL;DR Macro home"><img src="./tldr-macro-logo-wide.png" alt={alt} width="2172" height="724" fetchPriority="high" /></Link>;
 }
 
-export function Header({ updated, summary }: { updated?: string; summary:string }) {
+export function Header({ updated, summary, insight }: { updated?: string; summary:string; insight:string }) {
   const format=(includeYear:boolean)=>updated?`${new Intl.DateTimeFormat("en-US",{month:"short",day:"numeric",...(includeYear?{year:"numeric"}:{}),hour:"numeric",minute:"2-digit",timeZone:"America/New_York"}).format(new Date(updated))} ET`:"About this briefing";
   const label=format(true);
   const compactLabel=format(false);
-  return <><header className="topbar" id="top"><div className="topbar-main"><BrandImage placement="header" /><div className="edition"><time dateTime={updated}>{label}</time></div></div><EditionSummary text={summary}/><p className="summary-why">Why it matters: a narrow technology rebound is meeting still-expensive borrowing and elevated energy costs.</p></header><StickyHeader updated={updated} label={compactLabel} summary={summary}/></>;
+  return <><header className="topbar" id="top"><div className="topbar-main"><BrandImage placement="header" /><div className="edition"><time dateTime={updated}>{label}</time></div></div><div className="daily-brief"><p className="brief-kicker">Latest verified market brief</p><EditionSummary text={summary}/><p className="summary-why">{insight}</p></div></header><StickyHeader updated={updated} label={compactLabel} summary={summary}/></>;
 }
 
 export function Footer() {

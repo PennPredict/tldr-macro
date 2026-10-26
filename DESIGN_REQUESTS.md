@@ -1,5 +1,9 @@
 # Design requests
 
+## 2026-10-26 — Compact editorial dashboard
+
+Approved by the user in chat with a supplied visual reference. Make the homepage more efficient and captivating by tightening vertical rhythm; elevating the daily summary into a concise editorial brief; presenting primary market readings as a compact horizontal dashboard; styling Top Stories as clearly numbered key developments with concise significance panels; and grouping the existing Economic Thread, TL;DR Global, and Next on TL;DR Macro content into denser, responsive cards. Preserve TL;DR Macro branding, accessibility, source links, glossary interactions, responsive behavior, the approved section order, and all publication guardrails. The reference image is directional rather than copy to reproduce.
+
 ## 2026-10-14 — Raise the Economic Thread
 
 Approved by the user in chat. Move the existing Economic Thread directly below the full header and above Market Snapshot so readers encounter the day’s directional framework before individual charts and stories. Preserve the thread component’s existing visual tokens and all other section order.
