@@ -1,5 +1,9 @@
 # Design requests
 
+## 2026-10-27 — Self-contained definitions and collision-free charts
+
+Approved by the user in chat. Remove visible glossary navigation and glossary calls-to-action; keep definitions, synonyms, relevance, and viewpoint explanations inside the existing contextual info and term popovers. Limit rendered prose blocks to no more than three sentences, and move the prior-close chart label into a dedicated legend row so it cannot overlap the sparkline, endpoint, or date labels. Preserve the underlying verified data, sources, accessibility text, keyboard behavior, and responsive design.
+
 ## 2026-10-27 — Dense visual briefing hierarchy
 
 Approved by the user in chat with a supplied visual reference. Rework the homepage into a more concise, eye-catching briefing: a compact editorial hero with a non-redundant visual accent; a denser primary-market strip; clearly numbered Top Stories; a compact story-connection diagram directly after Top Stories; and tighter TL;DR Global and Next on TL;DR Macro modules. Preserve verified copy, source links, glossary interactions, accessibility, mobile behavior, and the required relative order of Market Snapshot, Top Stories, TL;DR Global, and Next on TL;DRM. The reference is a structural and visual direction, not branding or copy to reproduce.

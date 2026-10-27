@@ -536,6 +536,8 @@ body {
 .market-title h3 { font-size:11px; }
 .market-value strong { font-size:19px; }
 .sparkline { height:41px; margin:5px 0 0; }
+.spark-reference-label { min-height:12px; display:flex; align-items:center; gap:5px; margin-top:3px; color:#8093a1; font-size:8px; line-height:1; text-transform:uppercase; letter-spacing:.06em; }
+.spark-reference-label i { width:15px; height:0; border-top:1px dashed #667b89; }
 .market>p,.market-description { margin-top:6px; font-size:10px; line-height:1.42; }
 .market-sources { padding-top:7px; }
 .market-sources a { font-size:7px; }
