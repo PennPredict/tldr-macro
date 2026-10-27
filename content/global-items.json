@@ -2,85 +2,85 @@
   {
     "tag": "Global markets",
     "qualifies": true,
-    "headline": "Eurozone Business Growth Slows",
-    "what": "The eurozone flash business index declined to 51.9 in October.",
-    "context": "A reading above 50 still indicates growth, but activity cooled from September.",
-    "why_it_matters": "Europe is a major customer for U.S. exporters, so slower demand can reach multinational sales.",
+    "headline": "South Korea’s Economy Expands",
+    "what": "South Korea’s economy grew 1.0% from the prior quarter and 3.4% from a year earlier.",
+    "context": "Semiconductor demand remained an important part of the expansion.",
+    "why_it_matters": "Korea sits near the center of the global chip supply chain, giving the report relevance for U.S. technology demand.",
     "concept_terms": [
-      "flash business index",
-      "multinational"
+      "gross domestic product",
+      "semiconductor"
     ],
     "sources": [
       {
-        "name": "S&P Global",
-        "href": "https://www.spglobal.com/marketintelligence/en/mi/research-analysis/economic-calendar.html",
+        "name": "Bank of Korea",
+        "href": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?nttId=11065943",
         "type": "primary"
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963",
+        "href": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2",
         "type": "wire"
       }
     ],
     "developing": false,
-    "as_of": "2026-10-23T12:42:00-04:00",
-    "importance_score": 94,
+    "as_of": "2026-10-27T10:30:00-04:00",
+    "importance_score": 96,
     "needs_human_check": false
   },
   {
-    "tag": "Global markets",
+    "tag": "Trade",
     "qualifies": true,
-    "headline": "British Business Activity Accelerates",
-    "what": "The United Kingdom’s flash business index rose to 53.1 in October.",
-    "context": "Services and manufacturing output both strengthened from September.",
-    "why_it_matters": "Stronger British demand can support U.S. exporters while influencing the pound and global rate expectations.",
+    "headline": "Seoul Stocks Jump",
+    "what": "South Korea’s main stock index gained 3.1% Tuesday.",
+    "context": "Large chipmakers helped lead the advance.",
+    "why_it_matters": "Korean shares provide an early view of global semiconductor demand before U.S. trading begins.",
     "concept_terms": [
-      "business index",
-      "exporter"
+      "stock index",
+      "semiconductor"
     ],
     "sources": [
       {
-        "name": "S&P Global",
-        "href": "https://www.spglobal.com/marketintelligence/en/mi/research-analysis/economic-calendar.html",
+        "name": "Korea Exchange",
+        "href": "https://global.krx.co.kr/",
         "type": "primary"
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963",
+        "href": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2",
         "type": "wire"
       }
     ],
     "developing": false,
-    "as_of": "2026-10-23T12:42:00-04:00",
-    "importance_score": 89,
+    "as_of": "2026-10-27T10:30:00-04:00",
+    "importance_score": 91,
     "needs_human_check": false
   },
   {
-    "tag": "Global markets",
+    "tag": "Policy",
     "qualifies": true,
-    "headline": "Asian Markets Move in Different Directions",
-    "what": "Japan’s Nikkei slipped while China’s Shanghai index advanced.",
-    "context": "The mixed moves followed Thursday’s technology-led global selloff.",
-    "why_it_matters": "Asian indexes offer an early read on chip demand, trade, and investor risk before U.S. markets open.",
+    "headline": "Global Rate Decisions Approach",
+    "what": "The Federal Reserve and other major central banks are entering closely watched policy meetings.",
+    "context": "Government bond yields remain elevated in several large economies.",
+    "why_it_matters": "Different rate paths can move currencies, borrowing costs, and demand for U.S. exports.",
     "concept_terms": [
-      "global selloff",
-      "investor risk"
+      "central bank",
+      "bond yield"
     ],
     "sources": [
       {
-        "name": "Bank of Japan",
-        "href": "https://www.boj.or.jp/en/statistics/market/index.htm",
+        "name": "Federal Reserve",
+        "href": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar",
         "type": "primary"
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963",
+        "href": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2",
         "type": "wire"
       }
     ],
     "developing": false,
-    "as_of": "2026-10-23T12:42:00-04:00",
-    "importance_score": 84,
+    "as_of": "2026-10-27T10:30:00-04:00",
+    "importance_score": 86,
     "needs_human_check": false
   }
 ]

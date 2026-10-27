@@ -1,325 +1,326 @@
 [
   {
-    "topic_tag": "oil_and_energy",
-    "headline": "Oil Reaches a Seven-Month High",
-    "headline_evidence": {
-      "bucket": "oil_and_energy",
-      "rule": "Brent rose 3.6% to its highest level since March.",
-      "data": "Associated Press 12:33 PM ET market report"
-    },
-    "commentary": "Brent crude climbed to $117.20, its highest price since March. Costly oil can raise gasoline, shipping, and production costs across the economy.",
-    "defines": [
-      {
-        "term": "Brent crude",
-        "definition": "A widely used reference price for oil sold around the world.",
-        "used_by_and_why": "Businesses and investors compare energy contracts with the Brent price."
-      }
-    ],
-    "explains": [
-      {
-        "anchor_text": "can raise gasoline",
-        "why": "Crude oil is a major input for fuel and transport.",
-        "other_reading": "Refining costs, taxes, and local demand also affect prices."
-      }
-    ],
-    "visual": null,
-    "visual_gate": {
-      "passed": false,
-      "failures": [
-        "The Economic Thread already maps the main relationship."
-      ],
-      "needs_human_check": false
-    },
-    "views": [
-      {
-        "view_id": "household",
-        "body": "Higher crude can raise fuel and travel bills. Those costs can leave less room for other spending.",
-        "keep_wondering": "How quickly will crude changes reach gasoline prices?",
-        "claims": [
-          {
-            "sentence_id": "oil_and_energy-household-1",
-            "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
-          },
-          {
-            "sentence_id": "oil_and_energy-household-2",
-            "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
-          }
-        ]
-      },
-      {
-        "view_id": "business",
-        "body": "Fuel-intensive companies face uncertain transport and production costs. Wide price swings make budgets and contracts harder to plan.",
-        "keep_wondering": "Which businesses can pass higher costs to customers?",
-        "claims": [
-          {
-            "sentence_id": "oil_and_energy-business-1",
-            "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
-          },
-          {
-            "sentence_id": "oil_and_energy-business-2",
-            "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
-          }
-        ]
-      },
-      {
-        "view_id": "global",
-        "body": "Oil moves across borders through a small number of major shipping routes. Supply uncertainty can affect import bills and inflation far from the conflict.",
-        "keep_wondering": "Can producers replace disrupted supply quickly?",
-        "claims": [
-          {
-            "sentence_id": "oil_and_energy-global-1",
-            "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
-          },
-          {
-            "sentence_id": "oil_and_energy-global-2",
-            "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
-          }
-        ]
-      }
-    ],
-    "sources": [
-      {
-        "name": "U.S. Energy Information Administration",
-        "href": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
-      },
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
-      }
-    ],
-    "data_note": "Market readings are from the 12:33 PM ET report and can change during the session.",
-    "claims": [
-      {
-        "sentence_id": "oil_and_energy-commentary-1",
-        "type": "fact",
-        "evidence": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
-      },
-      {
-        "sentence_id": "oil_and_energy-commentary-2",
-        "type": "mechanism",
-        "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
-      }
-    ]
-  },
-  {
     "topic_tag": "companies",
-    "headline": "Technology Shares Limit Index Losses",
+    "headline": "AI Shares Lift Major Indexes",
     "headline_evidence": {
       "bucket": "companies",
-      "rule": "The Nasdaq rose slightly while three quarters of S&P 500 stocks fell.",
-      "data": "Associated Press 12:33 PM ET market report"
+      "rule": "The Nasdaq gained 0.6% while most S&P 500 members declined.",
+      "data": "Associated Press 10:30 AM ET market report"
     },
-    "commentary": "Big technology companies have large index weights. Gains in Micron, Microsoft, and AMD kept the Nasdaq slightly positive.",
+    "commentary": "AI-related shares lifted the largest indexes, while most large-company shares moved lower. Broadcom gained after banks announced a $63 billion plan to finance computing equipment.",
     "defines": [
       {
-        "term": "Index weight",
-        "definition": "The amount one company influences a market index.",
-        "used_by_and_why": "Large companies can offset moves across many smaller index members."
+        "term": "index",
+        "definition": "A group of investments tracked as one market measure.",
+        "used_by_and_why": "Readers use indexes to compare broad market moves."
       }
     ],
     "explains": [
       {
-        "anchor_text": "keep the Nasdaq",
-        "why": "Large technology companies carry heavy weights in that index.",
-        "other_reading": "Most S&P 500 companies still declined."
+        "anchor_text": "lifted the largest indexes",
+        "why": "Large technology companies carry heavy weights in major indexes.",
+        "other_reading": "Most companies in the S&P 500 still declined."
       }
     ],
     "visual": null,
     "visual_gate": {
       "passed": false,
       "failures": [
-        "The Economic Thread already maps the main relationship."
+        "The Economic Thread maps the relationship."
       ],
       "needs_human_check": false
     },
     "views": [
       {
         "view_id": "household",
-        "body": "Large technology companies sit in many retirement funds. Mixed results can move account balances even when the broad market is calm.",
+        "body": "Large technology companies sit in many retirement funds. A narrow index gain may not match every account.",
         "keep_wondering": "How concentrated is your fund in large technology companies?",
         "claims": [
           {
             "sentence_id": "companies-household-1",
             "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+            "evidence": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2"
           },
           {
             "sentence_id": "companies-household-2",
             "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+            "evidence": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2"
           }
         ]
       },
       {
         "view_id": "business",
-        "body": "Companies are being judged on future demand, not only past profit. Strong outlooks can make costly expansion easier to defend.",
-        "keep_wondering": "Which investments are producing reliable demand?",
+        "body": "The financing plan expands access to costly computing equipment. It also adds debt to the AI investment cycle.",
+        "keep_wondering": "Will future AI revenue cover today’s financing commitments?",
         "claims": [
           {
             "sentence_id": "companies-business-1",
             "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+            "evidence": "https://investors.broadcom.com/news-releases/news-release-details/bank-america-blackstone-citi-and-morgan-stanley-announce"
           },
           {
             "sentence_id": "companies-business-2",
             "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+            "evidence": "https://investors.broadcom.com/news-releases/news-release-details/bank-america-blackstone-citi-and-morgan-stanley-announce"
           }
         ]
       },
       {
         "view_id": "policy",
-        "body": "AI spending can support investment and productivity. Uneven results show that the gains are not reaching every company equally.",
-        "keep_wondering": "Will AI investment spread beyond a few large firms?",
+        "body": "Large AI projects now rely on banks and private capital. Regulators may watch how that debt spreads through financial markets.",
+        "keep_wondering": "Who carries the risk if AI demand slows?",
         "claims": [
           {
             "sentence_id": "companies-policy-1",
             "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+            "evidence": "https://investors.broadcom.com/news-releases/news-release-details/bank-america-blackstone-citi-and-morgan-stanley-announce"
           },
           {
             "sentence_id": "companies-policy-2",
             "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+            "evidence": "https://investors.broadcom.com/news-releases/news-release-details/bank-america-blackstone-citi-and-morgan-stanley-announce"
           }
         ]
       }
     ],
     "sources": [
       {
-        "name": "U.S. Securities and Exchange Commission",
-        "href": "https://www.sec.gov/edgar/search/"
+        "name": "Broadcom",
+        "href": "https://investors.broadcom.com/news-releases/news-release-details/bank-america-blackstone-citi-and-morgan-stanley-announce"
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
+        "href": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2"
       }
     ],
-    "data_note": "Market readings are from the 12:33 PM ET report and can change during the session.",
+    "data_note": "Market readings are from the 10:30 AM ET report and can change during the session.",
     "claims": [
       {
         "sentence_id": "companies-commentary-1",
-        "type": "fact",
-        "evidence": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
+        "type": "attributed_cause",
+        "evidence": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2",
+        "attribution": "The Associated Press market report"
       },
       {
         "sentence_id": "companies-commentary-2",
-        "type": "mechanism",
-        "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
+        "type": "fact",
+        "evidence": "https://investors.broadcom.com/news-releases/news-release-details/bank-america-blackstone-citi-and-morgan-stanley-announce"
       }
     ]
   },
   {
-    "topic_tag": "interest_rates_and_yields",
-    "headline": "Treasury Yields Edge Higher",
+    "topic_tag": "inflation_reports",
+    "headline": "Consumers Feel More Confident",
     "headline_evidence": {
-      "bucket": "interest_rates_and_yields",
-      "rule": "The 10-year Treasury yield rose to 4.99% from 4.96% late Thursday.",
-      "data": "Associated Press 12:33 PM ET market report"
+      "bucket": "inflation_reports",
+      "rule": "October confidence improved instead of declining as economists expected.",
+      "data": "Conference Board survey reported October 27"
     },
-    "commentary": "The 10-year Treasury yield rose to 4.99% after Thursday’s drop. That rate helps shape mortgages and long-term business loans.",
+    "commentary": "U.S. consumer confidence improved in October instead of declining as forecast. The survey tracks how households view business conditions, jobs, and income.",
     "defines": [
       {
-        "term": "Treasury yield",
-        "definition": "The return investors receive for holding U.S. government debt.",
-        "used_by_and_why": "Lenders use it as a reference when pricing many long-term loans."
+        "term": "consumer confidence",
+        "definition": "A survey measure of how households view the economy now and ahead.",
+        "used_by_and_why": "Businesses and investors use it for clues about future spending."
       }
     ],
     "explains": [
       {
-        "anchor_text": "helps shape mortgages",
-        "why": "Many long-term loan rates move with Treasury yields; both compete for investor money.",
-        "other_reading": "Mortgage rates also reflect lender costs, borrower risk, and housing demand."
+        "anchor_text": "consumer confidence improved",
+        "why": "More households gave positive answers about current or future conditions.",
+        "other_reading": "Actual spending data can differ from survey responses."
       }
     ],
     "visual": null,
     "visual_gate": {
       "passed": false,
       "failures": [
-        "The Economic Thread already maps the main relationship."
+        "The release is clearer in text."
       ],
       "needs_human_check": false
     },
     "views": [
       {
-        "view_id": "business",
-        "body": "A higher reference rate can raise the cost of financing equipment or expansion. Today’s small move does not erase Thursday’s larger decline.",
-        "keep_wondering": "How long could yields stay lower before companies borrow more?",
+        "view_id": "household",
+        "body": "Confidence does not measure actual spending. It captures how secure households feel about jobs, income, and the economy.",
+        "keep_wondering": "Will stronger confidence turn into more purchases?",
         "claims": [
           {
-            "sentence_id": "interest_rates_and_yields-business-1",
+            "sentence_id": "confidence-household-1",
             "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+            "evidence": "https://www.conference-board.org/topics/consumer-confidence/index.cfm"
           },
           {
-            "sentence_id": "interest_rates_and_yields-business-2",
+            "sentence_id": "confidence-household-2",
             "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+            "evidence": "https://www.conference-board.org/topics/consumer-confidence/index.cfm"
+          }
+        ]
+      },
+      {
+        "view_id": "business",
+        "body": "Consumer spending supplies most U.S. demand. A stronger outlook can help companies plan sales, hiring, and inventory.",
+        "keep_wondering": "Which industries see spending change first?",
+        "claims": [
+          {
+            "sentence_id": "confidence-business-1",
+            "type": "mechanism",
+            "evidence": "https://www.bea.gov/data/consumer-spending/main"
+          },
+          {
+            "sentence_id": "confidence-business-2",
+            "type": "mechanism",
+            "evidence": "https://www.bea.gov/data/consumer-spending/main"
           }
         ]
       },
       {
         "view_id": "policy",
-        "body": "Treasury yields show the borrowing conditions set by markets. Officials watch them since higher yields can slow spending even without a rate increase.",
-        "keep_wondering": "Are markets expecting stronger growth or firmer inflation?",
+        "body": "Officials compare surveys with spending and job data. One improved reading does not settle the outlook.",
+        "keep_wondering": "Do later spending reports confirm the survey?",
         "claims": [
           {
-            "sentence_id": "interest_rates_and_yields-policy-1",
+            "sentence_id": "confidence-policy-1",
             "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+            "evidence": "https://www.conference-board.org/topics/consumer-confidence/index.cfm"
           },
           {
-            "sentence_id": "interest_rates_and_yields-policy-2",
+            "sentence_id": "confidence-policy-2",
             "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
-          }
-        ]
-      },
-      {
-        "view_id": "dealer",
-        "body": "Bond prices fall when yields rise. Dealers watch whether investors keep demanding long-term government debt near 5%.",
-        "keep_wondering": "Will investors demand still higher yields to hold long-term debt?",
-        "claims": [
-          {
-            "sentence_id": "interest_rates_and_yields-dealer-1",
-            "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
-          },
-          {
-            "sentence_id": "interest_rates_and_yields-dealer-2",
-            "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+            "evidence": "https://www.conference-board.org/topics/consumer-confidence/index.cfm"
           }
         ]
       }
     ],
     "sources": [
       {
-        "name": "U.S. Treasury",
-        "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"
+        "name": "The Conference Board",
+        "href": "https://www.conference-board.org/topics/consumer-confidence/index.cfm"
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
+        "href": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2"
       }
     ],
-    "data_note": "Market reading is from the 12:33 PM ET report and can change during the session.",
+    "data_note": "The October survey was released at 10:00 AM ET.",
     "claims": [
       {
-        "sentence_id": "interest_rates_and_yields-commentary-1",
+        "sentence_id": "confidence-commentary-1",
         "type": "fact",
-        "evidence": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
+        "evidence": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2"
       },
       {
-        "sentence_id": "interest_rates_and_yields-commentary-2",
+        "sentence_id": "confidence-commentary-2",
         "type": "mechanism",
-        "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+        "evidence": "https://www.conference-board.org/topics/consumer-confidence/index.cfm"
+      }
+    ]
+  },
+  {
+    "topic_tag": "interest_rates_and_yields",
+    "headline": "Markets Await the Fed",
+    "headline_evidence": {
+      "bucket": "interest_rates_and_yields",
+      "rule": "The 10-year Treasury yield held near 5% before Wednesday’s decision.",
+      "data": "Federal Reserve calendar and Associated Press market report"
+    },
+    "commentary": "The Federal Reserve began a two-day meeting with the 10-year Treasury yield near 5%. Officials announce their rate decision Wednesday and explain how they view inflation and growth.",
+    "defines": [
+      {
+        "term": "Federal Reserve",
+        "definition": "The U.S. central bank.",
+        "used_by_and_why": "It sets a key short-term interest rate that influences credit across the economy."
+      }
+    ],
+    "explains": [
+      {
+        "anchor_text": "Treasury yield near 5%",
+        "why": "Bond investors weigh inflation, growth, and expected Federal Reserve policy.",
+        "other_reading": "Treasury yields can move independently of the Fed’s current target."
+      }
+    ],
+    "visual": null,
+    "visual_gate": {
+      "passed": false,
+      "failures": [
+        "The scheduled decision is clearer in the calendar."
+      ],
+      "needs_human_check": false
+    },
+    "views": [
+      {
+        "view_id": "business",
+        "body": "Interest rates shape the cost of loans and expansion. The Fed’s explanation can matter as much as the rate decision.",
+        "keep_wondering": "How long do officials expect rates to stay high?",
+        "claims": [
+          {
+            "sentence_id": "fed-business-1",
+            "type": "mechanism",
+            "evidence": "https://www.federalreserve.gov/monetarypolicy.htm"
+          },
+          {
+            "sentence_id": "fed-business-2",
+            "type": "mechanism",
+            "evidence": "https://www.federalreserve.gov/monetarypolicy.htm"
+          }
+        ]
+      },
+      {
+        "view_id": "policy",
+        "body": "Officials are balancing inflation against slower growth risks. Their statement will clarify which concern carries more weight.",
+        "keep_wondering": "Which part of the economy concerns officials most?",
+        "claims": [
+          {
+            "sentence_id": "fed-policy-1",
+            "type": "mechanism",
+            "evidence": "https://www.federalreserve.gov/monetarypolicy.htm"
+          },
+          {
+            "sentence_id": "fed-policy-2",
+            "type": "mechanism",
+            "evidence": "https://www.federalreserve.gov/monetarypolicy.htm"
+          }
+        ]
+      },
+      {
+        "view_id": "dealer",
+        "body": "Treasury prices can move when the Fed changes its outlook. Traders will compare the statement with current market expectations.",
+        "keep_wondering": "Does the bond market read the decision differently?",
+        "claims": [
+          {
+            "sentence_id": "fed-dealer-1",
+            "type": "mechanism",
+            "evidence": "https://www.federalreserve.gov/monetarypolicy.htm"
+          },
+          {
+            "sentence_id": "fed-dealer-2",
+            "type": "mechanism",
+            "evidence": "https://www.federalreserve.gov/monetarypolicy.htm"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "name": "Federal Reserve",
+        "href": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar"
+      },
+      {
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2"
+      }
+    ],
+    "data_note": "The policy decision is scheduled for October 28 at 2:00 PM ET.",
+    "claims": [
+      {
+        "sentence_id": "fed-commentary-1",
+        "type": "fact",
+        "evidence": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2"
+      },
+      {
+        "sentence_id": "fed-commentary-2",
+        "type": "fact",
+        "evidence": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar"
       }
     ]
   }

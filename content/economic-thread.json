@@ -1,115 +1,115 @@
 {
   "schema_version": 1,
-  "edition_date": "2026-10-23",
-  "reported_node_id": "oil-rise",
+  "edition_date": "2026-10-27",
+  "reported_node_id": "confidence",
   "mobile_order": [
-    "oil-rise",
-    "cost-channel",
-    "broad-decline",
-    "tech-offset"
+    "confidence",
+    "spending",
+    "ai-shares",
+    "narrow-breadth"
   ],
   "nodes": [
     {
-      "id": "oil-rise",
+      "id": "confidence",
       "layer": "Happened",
       "type": "FACT",
       "tier": 1,
-      "label": "Oil moved higher",
-      "subline": "Brent reached a seven-month high",
-      "event_time": "2026-10-23T12:33:00-04:00",
-      "reference_period": "Oct. 23 midday market",
-      "source": "The Associated Press",
-      "source_url": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963",
+      "label": "Consumer confidence improved",
+      "subline": "Households felt better about the outlook",
+      "event_time": "2026-10-27T10:00:00-04:00",
+      "reference_period": "October survey",
+      "source": "The Conference Board",
+      "source_url": "https://www.conference-board.org/topics/consumer-confidence/index.cfm",
       "popover": {
-        "title": "What moved",
-        "plain": "The global oil benchmark climbed.",
-        "precise": "Brent rose 3.6% to $117.20.",
-        "source_url": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
+        "title": "What changed",
+        "plain": "Households reported a brighter outlook.",
+        "precise": "The index improved contrary to forecasts for another decline.",
+        "source_url": "https://www.conference-board.org/topics/consumer-confidence/index.cfm"
       }
     },
     {
-      "id": "cost-channel",
+      "id": "spending",
       "layer": "Link",
       "type": "MECHANISM",
       "tier": 1,
-      "label": "Fuel and shipping costs can rise",
-      "reference_period": "Current market relationship",
-      "mechanism_id": "oil-to-costs",
-      "source": "U.S. Energy Information Administration",
-      "source_url": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php",
+      "label": "Spending expectations can firm",
+      "reference_period": "Current economic relationship",
+      "mechanism_id": "confidence-to-spending",
+      "source": "Bureau of Economic Analysis",
+      "source_url": "https://www.bea.gov/data/consumer-spending/main",
       "popover": {
-        "title": "How oil spreads",
-        "plain": "Oil is an input for transport and production.",
-        "precise": "Persistent increases can reach gasoline, freight, food, and manufactured goods.",
-        "source_url": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
+        "title": "Why confidence matters",
+        "plain": "Households may spend more when they feel secure.",
+        "precise": "Actual spending data are needed to confirm the survey signal.",
+        "source_url": "https://www.bea.gov/data/consumer-spending/main"
       }
     },
     {
-      "id": "broad-decline",
+      "id": "ai-shares",
       "layer": "Markets",
       "type": "MECHANISM",
       "tier": 1,
-      "label": "Most large-company shares fell",
-      "reference_period": "Current market relationship",
-      "mechanism_id": "costs-to-margins",
+      "label": "AI shares raised the indexes",
+      "reference_period": "Tuesday morning market",
+      "mechanism_id": "spending-to-markets",
       "source": "The Associated Press",
-      "source_url": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963",
+      "source_url": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2",
       "story_anchor": "story-background",
       "popover": {
-        "title": "Why breadth weakened",
-        "plain": "Higher costs can reduce company profit margins.",
-        "precise": "Three quarters of S&P 500 members declined.",
-        "source_url": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
+        "title": "What led",
+        "plain": "Large AI-related companies gained.",
+        "precise": "Their index weights offset declines across many other companies.",
+        "source_url": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2"
       }
     },
     {
-      "id": "tech-offset",
+      "id": "narrow-breadth",
       "layer": "Could mean",
       "type": "MECHANISM",
       "tier": 1,
-      "label": "Large technology gains softened the drop",
-      "reference_period": "Current market relationship",
-      "mechanism_id": "weights-to-indexes",
+      "label": "The market gain stayed narrow",
+      "reference_period": "Tuesday morning market",
+      "mechanism_id": "weights-to-breadth",
       "source": "The Associated Press",
-      "source_url": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963",
+      "source_url": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2",
       "popover": {
-        "title": "Why indexes split",
-        "plain": "Large companies can outweigh many smaller moves.",
-        "precise": "Technology gains kept the Nasdaq positive while the Dow fell.",
-        "source_url": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
+        "title": "Why breadth matters",
+        "plain": "Most large-company shares still fell.",
+        "precise": "A few large companies carried much of the index advance.",
+        "source_url": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2"
       }
     }
   ],
   "edges": [
     {
-      "id": "oil-to-costs",
-      "from": "oil-rise",
-      "to": "cost-channel",
+      "id": "confidence-spending",
+      "from": "confidence",
+      "to": "spending",
       "type": "MECHANISM",
       "tier": 1,
-      "mechanism_id": "oil-to-costs",
+      "mechanism_id": "confidence-to-spending",
       "direction": "up"
     },
     {
-      "id": "costs-to-stocks",
-      "from": "cost-channel",
-      "to": "broad-decline",
+      "id": "spending-markets",
+      "from": "spending",
+      "to": "ai-shares",
       "type": "MECHANISM",
       "tier": 1,
-      "mechanism_id": "costs-to-margins",
-      "direction": "down"
+      "mechanism_id": "spending-to-markets",
+      "direction": "up"
     },
     {
-      "id": "stocks-to-tech",
-      "from": "broad-decline",
-      "to": "tech-offset",
+      "id": "markets-breadth",
+      "from": "ai-shares",
+      "to": "narrow-breadth",
       "type": "MECHANISM",
       "tier": 1,
-      "mechanism_id": "weights-to-indexes",
+      "mechanism_id": "weights-to-breadth",
       "direction": "out"
     }
   ],
   "caption_candidates": [],
-  "takeaway": "Higher oil costs weighed on most stocks, while gains in a few large technology companies kept the Nasdaq slightly positive.",
+  "takeaway": "Improved confidence and strong AI shares supported the major indexes, but falling shares across most of the S&P 500 kept the advance narrow.",
   "other_factors_note": "Company results, interest rates, and global news can also move markets."
 }

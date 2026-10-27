@@ -1,18 +1,18 @@
 {
-  "edition_date": "2026-10-23",
-  "updated_at": "2026-10-23T12:42:00-04:00",
-  "summary": "Shares slipped; Treasury yields edged up; crude oil jumped.",
+  "edition_date": "2026-10-27",
+  "updated_at": "2026-10-27T10:30:00-04:00",
+  "summary": "Shares edged up; Treasury yields held steady; crude oil slipped.",
   "markets": [
     {
       "name": "S&P 500",
       "kind": "equity_index",
-      "value": 7649.16,
-      "display_value": "7,649.16",
+      "value": 7692.12,
+      "display_value": "7,692.12",
       "baseline": "prior_close",
-      "prior_close": 7663.43,
-      "change_percent": -0.19,
-      "display_change": "−0.2%",
-      "description": "The S&P 500 tracks 500 large U.S. companies and anchors many retirement funds. It slipped 0.2% as most member stocks declined.",
+      "prior_close": 7676.77,
+      "change_percent": 0.2,
+      "display_change": "+0.2%",
+      "description": "The S&P 500 tracks 500 large U.S. companies and anchors many retirement funds. It edged up while most member stocks fell.",
       "so_what": {
         "channel_id": "sp500",
         "context": {
@@ -24,23 +24,20 @@
       "explains": [],
       "claims": [
         {
-          "sentence_id": "sp500-description-1",
+          "sentence_id": "s-p-500-description-1",
           "type": "mechanism",
           "evidence": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/"
         },
         {
-          "sentence_id": "sp500-description-2",
+          "sentence_id": "s-p-500-description-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
+          "evidence": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2"
         }
       ],
       "data_source": "S&P Dow Jones Indices and The Associated Press",
-      "fetched_at": "2026-10-23T12:42:00-04:00",
-      "range": "Thursday close 7,663.43 · Friday 12:42 PM −0.2%",
+      "fetched_at": "2026-10-27T10:30:00-04:00",
+      "range": "Monday close 7,676.77 · Tuesday 10:30 AM +0.2%",
       "points": [
-        7818.93,
-        7801.77,
-        7765.36,
         7779,
         7794,
         7811.54,
@@ -55,7 +52,10 @@
         7648.57,
         7649.16,
         7649.16,
-        7649.16
+        7649.16,
+        7692.12,
+        7692.12,
+        7692.12
       ],
       "sources": [
         {
@@ -68,9 +68,6 @@
         }
       ],
       "series_dates": [
-        "2026-10-05T14:00:00.000Z",
-        "2026-10-06T14:00:00.000Z",
-        "2026-10-07T14:00:00.000Z",
         "2026-10-08T14:00:00.000Z",
         "2026-10-09T14:00:00.000Z",
         "2026-10-12T14:00:00.000Z",
@@ -85,7 +82,10 @@
         "2026-10-22T10:45:00-04:00",
         "2026-10-23T12:42:00-04:00",
         "2026-10-23T12:42:00-04:00",
-        "2026-10-23T12:42:00-04:00"
+        "2026-10-23T12:42:00-04:00",
+        "2026-10-27T10:30:00-04:00",
+        "2026-10-27T10:30:00-04:00",
+        "2026-10-27T10:30:00-04:00"
       ]
     },
     {
@@ -94,10 +94,10 @@
       "value": 4.99,
       "display_value": "4.99%",
       "baseline": "prior_close",
-      "prior_close": 4.96,
-      "change_percent": 0.6,
-      "display_change": "+0.03 points",
-      "description": "The 10-year Treasury yield helps set many long-term borrowing costs. It rose to 4.99%, keeping a key reference rate near 5%.",
+      "prior_close": 5,
+      "change_percent": -0.2,
+      "display_change": "−0.01 points",
+      "description": "The 10-year Treasury yield helps set long-term borrowing costs. It held near 5% before Wednesday’s Federal Reserve decision.",
       "so_what": {
         "channel_id": "yield10",
         "context": {
@@ -109,22 +109,20 @@
       "explains": [],
       "claims": [
         {
-          "sentence_id": "yield10-description-1",
+          "sentence_id": "10-year-treasury-yield-description-1",
           "type": "mechanism",
           "evidence": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"
         },
         {
-          "sentence_id": "yield10-description-2",
+          "sentence_id": "10-year-treasury-yield-description-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
+          "evidence": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2"
         }
       ],
       "data_source": "U.S. Treasury and The Associated Press",
-      "fetched_at": "2026-10-23T12:33:00-04:00",
-      "range": "Thursday close 4.96% · Friday 12:42 PM +0.03 points",
+      "fetched_at": "2026-10-27T10:30:00-04:00",
+      "range": "Monday close 5.00% · Tuesday 10:30 AM −0.01 points",
       "points": [
-        5.18,
-        5.23,
         5.29,
         5.27,
         5.22,
@@ -139,6 +137,9 @@
         5.01,
         4.99,
         4.99,
+        4.99,
+        4.99,
+        4.99,
         4.99
       ],
       "sources": [
@@ -148,8 +149,6 @@
         }
       ],
       "series_dates": [
-        "2026-10-06T14:00:00.000Z",
-        "2026-10-07T14:00:00.000Z",
         "2026-10-08T14:00:00.000Z",
         "2026-10-09T14:00:00.000Z",
         "2026-10-12T14:00:00.000Z",
@@ -164,19 +163,22 @@
         "2026-10-22T10:45:00-04:00",
         "2026-10-23T12:33:00-04:00",
         "2026-10-23T12:33:00-04:00",
-        "2026-10-23T12:33:00-04:00"
+        "2026-10-23T12:33:00-04:00",
+        "2026-10-27T10:30:00-04:00",
+        "2026-10-27T10:30:00-04:00",
+        "2026-10-27T10:30:00-04:00"
       ]
     },
     {
       "name": "Brent crude oil",
       "kind": "commodity",
-      "value": 117.2,
-      "display_value": "$117.20",
+      "value": 110.37,
+      "display_value": "$110.37",
       "baseline": "prior_close",
-      "prior_close": 113.13,
-      "change_percent": 3.6,
-      "display_change": "+3.6%",
-      "description": "Brent is a reference price for oil sold worldwide. It jumped 3.6% to its highest level since March.",
+      "prior_close": 110.7,
+      "change_percent": -0.3,
+      "display_change": "−0.3%",
+      "description": "Brent is a reference price for oil sold worldwide. It declined slightly, but stayed high enough to keep fuel and shipping costs in focus.",
       "so_what": {
         "channel_id": "brent",
         "context": {
@@ -189,22 +191,20 @@
       "explains": [],
       "claims": [
         {
-          "sentence_id": "brent-description-1",
+          "sentence_id": "brent-crude-oil-description-1",
           "type": "mechanism",
           "evidence": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html"
         },
         {
-          "sentence_id": "brent-description-2",
+          "sentence_id": "brent-crude-oil-description-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
+          "evidence": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2"
         }
       ],
       "data_source": "CME Group · Brent crude futures and The Associated Press",
-      "fetched_at": "2026-10-23T12:33:00-04:00",
-      "range": "Thursday close $113.13 · Friday 12:42 PM +3.6%",
+      "fetched_at": "2026-10-27T10:30:00-04:00",
+      "range": "Monday close $110.70 · Tuesday 10:30 AM −0.3%",
       "points": [
-        101.94,
-        100.31,
         100.58,
         104.3,
         102.5,
@@ -219,7 +219,10 @@
         111.6,
         117.2,
         117.2,
-        117.2
+        117.2,
+        110.37,
+        110.37,
+        110.37
       ],
       "sources": [
         {
@@ -232,8 +235,6 @@
         }
       ],
       "series_dates": [
-        "2026-10-06T14:00:00.000Z",
-        "2026-10-07T14:00:00.000Z",
         "2026-10-08T14:00:00.000Z",
         "2026-10-09T14:00:00.000Z",
         "2026-10-12T14:00:00.000Z",
@@ -248,19 +249,22 @@
         "2026-10-22T10:45:00-04:00",
         "2026-10-23T12:33:00-04:00",
         "2026-10-23T12:33:00-04:00",
-        "2026-10-23T12:33:00-04:00"
+        "2026-10-23T12:33:00-04:00",
+        "2026-10-27T10:30:00-04:00",
+        "2026-10-27T10:30:00-04:00",
+        "2026-10-27T10:30:00-04:00"
       ]
     },
     {
       "name": "Nasdaq Composite",
       "kind": "equity_index",
-      "value": 26052.38,
-      "display_value": "26,052.38",
+      "value": 26326.4,
+      "display_value": "26,326.40",
       "baseline": "prior_close",
-      "prior_close": 26008.86,
-      "change_percent": 0.17,
-      "display_change": "+0.2%",
-      "description": "The Nasdaq includes many technology companies and reacts strongly to AI spending. It gained 0.2% as several large chip and software shares advanced.",
+      "prior_close": 26169.38,
+      "change_percent": 0.6,
+      "display_change": "+0.6%",
+      "description": "The Nasdaq tracks many listed companies and leans toward technology. AI-related shares raised the index even as the broader market weakened.",
       "so_what": {
         "channel_id": "nasdaq",
         "context": {
@@ -272,22 +276,20 @@
       "explains": [],
       "claims": [
         {
-          "sentence_id": "nasdaq-description-1",
+          "sentence_id": "nasdaq-composite-description-1",
           "type": "mechanism",
           "evidence": "https://www.nasdaq.com/market-activity/index/comp"
         },
         {
-          "sentence_id": "nasdaq-description-2",
+          "sentence_id": "nasdaq-composite-description-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
+          "evidence": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2"
         }
       ],
       "data_source": "Nasdaq Composite and The Associated Press",
-      "fetched_at": "2026-10-23T12:42:00-04:00",
-      "range": "Thursday close 26,008.86 · Friday 12:42 PM +0.2%",
+      "fetched_at": "2026-10-27T10:30:00-04:00",
+      "range": "Monday close 26,169.38 · Tuesday 10:30 AM +0.6%",
       "points": [
-        27599.79,
-        27538.69,
         27193.34,
         27240,
         27366.17,
@@ -302,7 +304,10 @@
         26115.4,
         26052.38,
         26052.38,
-        26052.38
+        26052.38,
+        26326.4,
+        26326.4,
+        26326.4
       ],
       "sources": [
         {
@@ -311,8 +316,6 @@
         }
       ],
       "series_dates": [
-        "2026-10-06T14:00:00.000Z",
-        "2026-10-07T14:00:00.000Z",
         "2026-10-08T14:00:00.000Z",
         "2026-10-09T14:00:00.000Z",
         "2026-10-12T14:00:00.000Z",
@@ -327,19 +330,22 @@
         "2026-10-22T10:45:00-04:00",
         "2026-10-23T12:42:00-04:00",
         "2026-10-23T12:42:00-04:00",
-        "2026-10-23T12:42:00-04:00"
+        "2026-10-23T12:42:00-04:00",
+        "2026-10-27T10:30:00-04:00",
+        "2026-10-27T10:30:00-04:00",
+        "2026-10-27T10:30:00-04:00"
       ]
     },
     {
       "name": "Dow Jones Industrial Average",
       "kind": "equity_index",
-      "value": 52380.13,
-      "display_value": "52,380.13",
+      "value": 52273.58,
+      "display_value": "52,273.58",
       "baseline": "prior_close",
-      "prior_close": 52867.98,
-      "change_percent": -0.92,
-      "display_change": "−0.9%",
-      "description": "The Dow follows 30 large established U.S. companies. It lost 0.9% as financial and industrial shares weakened.",
+      "prior_close": 52361.58,
+      "change_percent": -0.17,
+      "display_change": "−0.2%",
+      "description": "The Dow tracks 30 established U.S. companies. It slipped as losses outside large technology companies outweighed gains elsewhere.",
       "so_what": {
         "channel_id": "dow",
         "context": {
@@ -351,22 +357,20 @@
       "explains": [],
       "claims": [
         {
-          "sentence_id": "dow-description-1",
+          "sentence_id": "dow-jones-industrial-average-description-1",
           "type": "mechanism",
           "evidence": "https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/"
         },
         {
-          "sentence_id": "dow-description-2",
+          "sentence_id": "dow-jones-industrial-average-description-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
+          "evidence": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2"
         }
       ],
       "data_source": "S&P Dow Jones Indices and The Associated Press",
-      "fetched_at": "2026-10-23T12:42:00-04:00",
-      "range": "Thursday close 52,867.98 · Friday 12:42 PM −0.9%",
+      "fetched_at": "2026-10-27T10:30:00-04:00",
+      "range": "Monday close 52,361.58 · Tuesday 10:30 AM −0.2%",
       "points": [
-        51521.28,
-        51179.87,
         51231.64,
         51360,
         51654.95,
@@ -381,7 +385,10 @@
         52561.09,
         52380.13,
         52380.13,
-        52380.13
+        52380.13,
+        52273.58,
+        52273.58,
+        52273.58
       ],
       "sources": [
         {
@@ -390,8 +397,6 @@
         }
       ],
       "series_dates": [
-        "2026-10-06T14:00:00.000Z",
-        "2026-10-07T14:00:00.000Z",
         "2026-10-08T14:00:00.000Z",
         "2026-10-09T14:00:00.000Z",
         "2026-10-12T14:00:00.000Z",
@@ -406,19 +411,22 @@
         "2026-10-22T10:45:00-04:00",
         "2026-10-23T12:42:00-04:00",
         "2026-10-23T12:42:00-04:00",
-        "2026-10-23T12:42:00-04:00"
+        "2026-10-23T12:42:00-04:00",
+        "2026-10-27T10:30:00-04:00",
+        "2026-10-27T10:30:00-04:00",
+        "2026-10-27T10:30:00-04:00"
       ]
     },
     {
       "name": "Expected volatility",
       "kind": "volatility",
-      "value": 19.79,
-      "display_value": "19.79",
+      "value": 18.42,
+      "display_value": "18.42",
       "baseline": "prior_close",
-      "prior_close": 19.03,
-      "change_percent": 3.99,
-      "display_change": "+4.0%",
-      "description": "Expected volatility estimates the size of near-term S&P 500 swings. It rose to 19.79 as demand for market protection increased.",
+      "prior_close": 18.39,
+      "change_percent": 0.16,
+      "display_change": "+0.2%",
+      "description": "The VIX estimates expected S&P 500 swings over the next month. It changed little before the Federal Reserve’s decision.",
       "so_what": {
         "channel_id": "vix",
         "context": {
@@ -430,22 +438,20 @@
       "explains": [],
       "claims": [
         {
-          "sentence_id": "vix-description-1",
+          "sentence_id": "expected-volatility-description-1",
           "type": "mechanism",
           "evidence": "https://www.cboe.com/tradable-products/vix/"
         },
         {
-          "sentence_id": "vix-description-2",
+          "sentence_id": "expected-volatility-description-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
+          "evidence": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2"
         }
       ],
       "data_source": "Cboe VIX",
-      "fetched_at": "2026-10-23T12:42:00-04:00",
-      "range": "Thursday close 19.03 · Friday 12:42 PM +4.0%",
+      "fetched_at": "2026-10-27T10:30:00-04:00",
+      "range": "Monday close 18.39 · Tuesday 10:30 AM +0.2%",
       "points": [
-        15.38,
-        15.08,
         15.41,
         15.2,
         15.01,
@@ -460,7 +466,10 @@
         18.15,
         19.79,
         19.79,
-        19.79
+        19.79,
+        18.42,
+        18.42,
+        18.42
       ],
       "sources": [
         {
@@ -469,8 +478,6 @@
         }
       ],
       "series_dates": [
-        "2026-10-06T14:00:00.000Z",
-        "2026-10-07T14:00:00.000Z",
         "2026-10-08T14:00:00.000Z",
         "2026-10-09T14:00:00.000Z",
         "2026-10-12T14:00:00.000Z",
@@ -485,7 +492,10 @@
         "2026-10-22T10:45:00-04:00",
         "2026-10-23T12:42:00-04:00",
         "2026-10-23T12:42:00-04:00",
-        "2026-10-23T12:42:00-04:00"
+        "2026-10-23T12:42:00-04:00",
+        "2026-10-27T10:30:00-04:00",
+        "2026-10-27T10:30:00-04:00",
+        "2026-10-27T10:30:00-04:00"
       ]
     }
   ],

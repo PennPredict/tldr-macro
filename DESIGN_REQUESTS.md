@@ -1,5 +1,9 @@
 # Design requests
 
+## 2026-10-27 — Section-level status labels
+
+Approved by the user in chat. Remove repeated status headers and freshness badges from individual cards when the same idea applies across a section. Show one concise status line in the section heading, retain distinct observation dates inside charts and accessible labels, rename the stale-market disclosure without repeating “updated today,” and show repeated TL;DR Global category labels only on their first occurrence. Preserve source links, evidence dates, and accessibility.
+
 ## 2026-10-26 — Compact editorial dashboard
 
 Approved by the user in chat with a supplied visual reference. Make the homepage more efficient and captivating by tightening vertical rhythm; elevating the daily summary into a concise editorial brief; presenting primary market readings as a compact horizontal dashboard; styling Top Stories as clearly numbered key developments with concise significance panels; and grouping the existing Economic Thread, TL;DR Global, and Next on TL;DR Macro content into denser, responsive cards. Preserve TL;DR Macro branding, accessibility, source links, glossary interactions, responsive behavior, the approved section order, and all publication guardrails. The reference image is directional rather than copy to reproduce.

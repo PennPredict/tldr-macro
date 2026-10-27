@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T21:51:56.347Z",
+  "generated_at": "2026-10-27T14:58:40.857Z",
   "status": "passed",
   "checks": {
     "instrument_count": 16,
@@ -9,13 +9,7 @@
       "Brent crude oil",
       "Nasdaq Composite",
       "Dow Jones Industrial Average",
-      "Expected volatility",
-      "DAX",
-      "Nikkei 225",
-      "30-year fixed mortgage rate",
-      "WTI crude oil",
-      "Copper",
-      "Gold"
+      "Expected volatility"
     ],
     "global_items_visible": 3,
     "badge_signs": []

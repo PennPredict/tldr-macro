@@ -39,7 +39,9 @@
     "pboc.gov.cn",
     "ec.europa.eu",
     "ons.gov.uk",
-    "freddiemac.com"
+    "freddiemac.com",
+    "bok.or.kr",
+    "broadcom.com"
     ,"nar.realtor"
   ],
   "market_data": [
@@ -57,7 +59,8 @@
     "deutsche-boerse.com"
   ],
   "company_evidence": [
-    "sec.gov"
+    "sec.gov",
+    "broadcom.com"
   ],
   "reporting": [
     "reuters.com",
