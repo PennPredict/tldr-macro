@@ -1,5 +1,9 @@
 # Design requests
 
+## 2026-10-27 — Remove beginner-mode toggle
+
+Approved by the user in chat. Remove the “New to markets?” control, its saved local preference, and the duplicate beginner-only market explanation block. Keep contextual info buttons and term popovers as the single definition system. Preserve section navigation, read-time text, accessibility, and responsive behavior.
+
 ## 2026-10-27 — Neutral term links and balanced event outcomes
 
 Approved by the user in chat with a screenshot of the current event cards and the earlier compact-dashboard reference. Replace green dotted term decoration with a quiet neutral solid underline while preserving contextual definitions. Rebuild each Next on TL;DR Macro card as a compact date-and-title overview followed by equal-width orange and green outcome panels with identical spacing, type hierarchy, and prominence. Reduce excess card height and preserve verified copy, sources, keyboard access, responsive behavior, and scenario neutrality.
