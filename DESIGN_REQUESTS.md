@@ -1,5 +1,9 @@
 # Design requests
 
+## 2026-10-27 — Neutral term links and balanced event outcomes
+
+Approved by the user in chat with a screenshot of the current event cards and the earlier compact-dashboard reference. Replace green dotted term decoration with a quiet neutral solid underline while preserving contextual definitions. Rebuild each Next on TL;DR Macro card as a compact date-and-title overview followed by equal-width orange and green outcome panels with identical spacing, type hierarchy, and prominence. Reduce excess card height and preserve verified copy, sources, keyboard access, responsive behavior, and scenario neutrality.
+
 ## 2026-10-27 — Self-contained definitions and collision-free charts
 
 Approved by the user in chat. Remove visible glossary navigation and glossary calls-to-action; keep definitions, synonyms, relevance, and viewpoint explanations inside the existing contextual info and term popovers. Limit rendered prose blocks to no more than three sentences, and move the prior-close chart label into a dedicated legend row so it cannot overlap the sparkline, endpoint, or date labels. Preserve the underlying verified data, sources, accessibility text, keyboard behavior, and responsive design.
