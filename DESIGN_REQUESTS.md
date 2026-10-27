@@ -1,5 +1,9 @@
 # Design requests
 
+## 2026-10-27 — Dense visual briefing hierarchy
+
+Approved by the user in chat with a supplied visual reference. Rework the homepage into a more concise, eye-catching briefing: a compact editorial hero with a non-redundant visual accent; a denser primary-market strip; clearly numbered Top Stories; a compact story-connection diagram directly after Top Stories; and tighter TL;DR Global and Next on TL;DR Macro modules. Preserve verified copy, source links, glossary interactions, accessibility, mobile behavior, and the required relative order of Market Snapshot, Top Stories, TL;DR Global, and Next on TL;DRM. The reference is a structural and visual direction, not branding or copy to reproduce.
+
 ## 2026-10-27 — Section-level status labels
 
 Approved by the user in chat. Remove repeated status headers and freshness badges from individual cards when the same idea applies across a section. Show one concise status line in the section heading, retain distinct observation dates inside charts and accessible labels, rename the stale-market disclosure without repeating “updated today,” and show repeated TL;DR Global category labels only on their first occurrence. Preserve source links, evidence dates, and accessibility.

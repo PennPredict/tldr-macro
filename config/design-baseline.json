@@ -1,6 +1,6 @@
 {
   "guarded_hashes": {
-    "app/globals.css": "c1880b6e95d9f8fd874b7c97261617ccd731526121c9db99924bf30d77fa5061",
+    "app/globals.css": "21770acc856ef5285d447c938b9ec21f28d5f5e226973a8ec0420f2a233c8e09",
     "public/tldr-macro-logo-wide.png": "a4a01b92c7e033a8469120c672064a9a7f82541814bf09e537ea3cd696de2234",
     "public/favicon.svg": "e6d2e59b7b5bbb0342e0fb496dfc262decbfe4426bbb7b047aec8d467d1dc6f7",
     "public/og.png": "410f61499cc4828d8744d7313ba10f614ac81794f2df571fe493c68926cef23e"
