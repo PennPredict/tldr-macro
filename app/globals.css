@@ -604,8 +604,8 @@ body {
 }
 
 /* Approved Oct. 27 neutral definitions and balanced event outcomes. */
-button.term,.term,.market-title .term { text-decoration-line:underline; text-decoration-style:solid; text-decoration-thickness:1px; text-decoration-color:#7895a8; text-underline-offset:3px; }
-button.term:hover,.term:hover { text-decoration-color:#a9c4d4; }
+button.term,.term,.market-title .term { border-bottom:0!important; text-decoration:none!important; }
+button.term:hover,.term:hover,button.term:focus-visible,.term:focus-visible { text-decoration-line:underline!important; text-decoration-style:solid!important; text-decoration-thickness:1px!important; text-decoration-color:#8ea9ba!important; text-underline-offset:3px; }
 .event-list article { display:flex; min-height:0; flex-direction:column; gap:10px; padding:14px; }
 .event-overview { display:grid; grid-template-columns:78px minmax(0,1fr); gap:12px; align-items:start; }
 .event-overview time { padding:8px 7px; border:1px solid #425d6d; border-radius:7px; background:#102330; font-size:13px; line-height:1.05; text-align:center; }
