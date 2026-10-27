@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T14:58:40.764Z",
+  "generated_at": "2026-10-27T15:27:08.591Z",
   "edition_date": "2026-10-27",
   "policy_version": 1,
   "status": "passed",
@@ -638,48 +638,48 @@
   },
   "global_items": [
     {
-      "headline": "South Korea’s Economy Expands",
+      "headline": "Middle East Talks Leave Oil Risk",
       "sources": [
         {
-          "name": "Bank of Korea",
-          "href": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?nttId=11065943",
-          "type": "primary"
+          "name": "The Associated Press · regional talks",
+          "href": "https://apnews.com/article/36486edb61b3bf4e0df67e8a17123e44",
+          "type": "wire"
         },
         {
-          "name": "The Associated Press",
-          "href": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2",
-          "type": "wire"
+          "name": "U.S. Energy Information Administration",
+          "href": "https://www.eia.gov/outlooks/steo/archives/Oct26.pdf",
+          "type": "primary"
         }
       ],
       "needs_human_check": false
     },
     {
-      "headline": "Seoul Stocks Jump",
+      "headline": "European Protests Test Fragile Economies",
       "sources": [
         {
-          "name": "Korea Exchange",
-          "href": "https://global.krx.co.kr/",
-          "type": "primary"
+          "name": "The Associated Press · European protests",
+          "href": "https://apnews.com/article/b41b5adf5a749440abb88693059eeced",
+          "type": "wire"
         },
         {
-          "name": "The Associated Press",
-          "href": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2",
-          "type": "wire"
+          "name": "European Commission · France forecast",
+          "href": "https://economy-finance.ec.europa.eu/economic-surveillance-eu-member-states/country-pages-including-country-reports/france/economic-forecast-france_en",
+          "type": "primary"
         }
       ],
       "needs_human_check": false
     },
     {
-      "headline": "Global Rate Decisions Approach",
+      "headline": "Brazilian Markets Reprice Election Result",
       "sources": [
         {
-          "name": "Federal Reserve",
-          "href": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar",
+          "name": "Brazilian Superior Electoral Court",
+          "href": "https://www.tse.jus.br/comunicacao/noticias/2026/Outubro/presidente-do-tse-anuncia-reeleicao-de-lula-e-faz-balanco-do-2o-turno-das-eleicoes-2026",
           "type": "primary"
         },
         {
-          "name": "The Associated Press",
-          "href": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2",
+          "name": "The Associated Press · global markets",
+          "href": "https://apnews.com/article/088e6d5a0e6df20d3d8614c7f7f82baa",
           "type": "wire"
         }
       ],
@@ -695,11 +695,12 @@
       "cmegroup.com": 1,
       "nasdaq.com": 1,
       "cboe.com": 1,
-      "bok.or.kr": 1,
-      "global.krx.co.kr": 1,
-      "federalreserve.gov": 2,
+      "eia.gov": 1,
+      "economy-finance.ec.europa.eu": 1,
+      "tse.jus.br": 1,
       "investors.broadcom.com": 1,
-      "conference-board.org": 1
+      "conference-board.org": 1,
+      "federalreserve.gov": 1
     },
     "snapshot_cards_by_domain": {
       "spglobal.com": 2,

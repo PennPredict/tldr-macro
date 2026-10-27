@@ -1,86 +1,53 @@
 [
   {
-    "tag": "Global markets",
+    "tag": "Energy",
     "qualifies": true,
-    "headline": "South Korea’s Economy Expands",
-    "what": "South Korea’s economy grew 1.0% from the prior quarter and 3.4% from a year earlier.",
-    "context": "Semiconductor demand remained an important part of the expansion.",
-    "why_it_matters": "Korea sits near the center of the global chip supply chain, giving the report relevance for U.S. technology demand.",
-    "concept_terms": [
-      "gross domestic product",
-      "semiconductor"
-    ],
+    "headline": "Middle East Talks Leave Oil Risk",
+    "what": "Saudi, Turkish, Pakistani, and Iranian officials held talks aimed at preventing renewed fighting.",
+    "context": "The talks produced no timetable for a broader agreement, while attacks still threaten regional energy routes.",
+    "why_it_matters": "The region supplies much of the world’s oil, so disruption can reach fuel prices, shipping costs, inflation, and interest rates.",
+    "concept_terms": ["energy route", "oil supply"],
     "sources": [
-      {
-        "name": "Bank of Korea",
-        "href": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?nttId=11065943",
-        "type": "primary"
-      },
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2",
-        "type": "wire"
-      }
+      {"name": "The Associated Press · regional talks", "href": "https://apnews.com/article/36486edb61b3bf4e0df67e8a17123e44", "type": "wire"},
+      {"name": "U.S. Energy Information Administration", "href": "https://www.eia.gov/outlooks/steo/archives/Oct26.pdf", "type": "primary"}
     ],
     "developing": false,
     "as_of": "2026-10-27T10:30:00-04:00",
-    "importance_score": 96,
-    "needs_human_check": false
-  },
-  {
-    "tag": "Trade",
-    "qualifies": true,
-    "headline": "Seoul Stocks Jump",
-    "what": "South Korea’s main stock index gained 3.1% Tuesday.",
-    "context": "Large chipmakers helped lead the advance.",
-    "why_it_matters": "Korean shares provide an early view of global semiconductor demand before U.S. trading begins.",
-    "concept_terms": [
-      "stock index",
-      "semiconductor"
-    ],
-    "sources": [
-      {
-        "name": "Korea Exchange",
-        "href": "https://global.krx.co.kr/",
-        "type": "primary"
-      },
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2",
-        "type": "wire"
-      }
-    ],
-    "developing": false,
-    "as_of": "2026-10-27T10:30:00-04:00",
-    "importance_score": 91,
+    "importance_score": 98,
     "needs_human_check": false
   },
   {
     "tag": "Policy",
     "qualifies": true,
-    "headline": "Global Rate Decisions Approach",
-    "what": "The Federal Reserve and other major central banks are entering closely watched policy meetings.",
-    "context": "Government bond yields remain elevated in several large economies.",
-    "why_it_matters": "Different rate paths can move currencies, borrowing costs, and demand for U.S. exports.",
-    "concept_terms": [
-      "central bank",
-      "bond yield"
-    ],
+    "headline": "European Protests Test Fragile Economies",
+    "what": "Cost-of-living, housing, and public-service protests continued across several European countries.",
+    "context": "France faces especially weak growth, high public debt, and difficult budget choices.",
+    "why_it_matters": "Prolonged unrest can interrupt commerce, complicate government budgets, and raise borrowing costs for European companies and governments.",
+    "concept_terms": ["public debt", "borrowing cost"],
     "sources": [
-      {
-        "name": "Federal Reserve",
-        "href": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar",
-        "type": "primary"
-      },
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2",
-        "type": "wire"
-      }
+      {"name": "The Associated Press · European protests", "href": "https://apnews.com/article/b41b5adf5a749440abb88693059eeced", "type": "wire"},
+      {"name": "European Commission · France forecast", "href": "https://economy-finance.ec.europa.eu/economic-surveillance-eu-member-states/country-pages-including-country-reports/france/economic-forecast-france_en", "type": "primary"}
     ],
     "developing": false,
     "as_of": "2026-10-27T10:30:00-04:00",
-    "importance_score": 86,
+    "importance_score": 94,
+    "needs_human_check": false
+  },
+  {
+    "tag": "Global markets",
+    "qualifies": true,
+    "headline": "Brazilian Markets Reprice Election Result",
+    "what": "Brazilian stocks fell sharply after President Luiz Inácio Lula da Silva won reelection.",
+    "context": "The result surprised some investors and renewed attention on the country’s fiscal policy.",
+    "why_it_matters": "Brazil is a major commodity producer and emerging market, making its currency, debt, and shares relevant to global funds and U.S. companies.",
+    "concept_terms": ["fiscal policy", "emerging market"],
+    "sources": [
+      {"name": "Brazilian Superior Electoral Court", "href": "https://www.tse.jus.br/comunicacao/noticias/2026/Outubro/presidente-do-tse-anuncia-reeleicao-de-lula-e-faz-balanco-do-2o-turno-das-eleicoes-2026", "type": "primary"},
+      {"name": "The Associated Press · global markets", "href": "https://apnews.com/article/088e6d5a0e6df20d3d8614c7f7f82baa", "type": "wire"}
+    ],
+    "developing": false,
+    "as_of": "2026-10-27T10:30:00-04:00",
+    "importance_score": 89,
     "needs_human_check": false
   }
 ]
