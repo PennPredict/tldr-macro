@@ -12,12 +12,22 @@
     "build": "npm run validate:content && vinext build && npm run test:popovers",
     "build:pages": "npm run validate:content && npm run validate:review && next build",
     "start": "vinext start",
-    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern .security --ignore-pattern out --ignore-pattern publish",
+    "build:v2": "node scripts/build-v2.mjs",
+    "dev:v2": "npm run build:v2 && python3 -m http.server 4184 -d out",
+    "test:v2:data": "node scripts/test-v2-data-gates.mjs",
+    "test:v2:copy": "node scripts/test-v2-copy.mjs",
+    "test:v2:browser": "node scripts/test-v2-browser.mjs",
+    "verify:v2": "npm run test:v2:data && npm run test:v2:copy && npm run lint && npm run build:v2",
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern .security --ignore-pattern out --ignore-pattern publish --ignore-pattern 'publish 2'",
     "test:popovers": "node scripts/test-popovers.mjs",
     "test:acceptance": "node scripts/test-acceptance.mjs"
     ,"test:terms": "node scripts/test-term-matcher.mjs"
     ,"test:status": "node scripts/test-edition-status.mjs"
     ,"test:browser-integrity": "node scripts/test-browser-integrity.mjs"
+    ,"test:hero-flow": "node scripts/test-hero-flow.mjs"
+    ,"generate:og": "node scripts/generate-og.mjs"
+    ,"test:hero-visual": "node scripts/test-hero-visual.mjs"
+    ,"test:flow-band": "node scripts/test-flow-band.mjs"
     ,"test:url-sanitizer": "node scripts/test-url-sanitizer.mjs"
     ,"test:outsider": "node scripts/test-outsider-local.mjs"
     ,"security:prepare": "node scripts/prepare-publish.mjs out publish"
@@ -32,7 +42,7 @@
     ,"thread:recheck": "node scripts/thread-recheck.mjs"
     ,"test:mortgage": "node scripts/test-mortgage-math.mjs"
     ,"validate:thread": "node scripts/validate-thread.mjs"
-    ,"verify": "npm run validate:content && npm run validate:markets && npm run validate:thread && npm run test:mortgage && npm run thread:prepare && npm run validate:review && npm run verify:guardrails && npm run test:terms && npm run test:status && npm run lint && npm run build:pages && npm run security:prepare && npm run test:url-sanitizer && npm run security:scan && npm run security:gitleaks && npm run test:browser-integrity && npm run test:outsider"
+    ,"verify": "npm run validate:content && npm run validate:markets && npm run validate:thread && npm run test:mortgage && npm run thread:prepare && npm run validate:review && npm run verify:guardrails && npm run test:terms && npm run test:status && npm run generate:og && npm run lint && npm run build:pages && npm run security:prepare && npm run test:url-sanitizer && npm run security:scan && npm run security:gitleaks && npm run test:browser-integrity && npm run test:hero-flow && npm run test:hero-visual && npm run test:flow-band && npm run test:outsider"
   },
   "dependencies": {
     "next": "16.2.6",

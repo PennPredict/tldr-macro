@@ -1,5 +1,6 @@
 {
   "enabled": true,
+  "flow": {"variant":"inline_chain"},
   "withheld_display": "hide",
   "takeaway_position": "above",
   "layer_icons": false,

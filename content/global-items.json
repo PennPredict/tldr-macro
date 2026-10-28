@@ -1,53 +1,86 @@
 [
   {
-    "tag": "Energy",
+    "tag": "Conflict",
     "qualifies": true,
-    "headline": "Middle East Talks Leave Oil Risk",
-    "what": "Saudi, Turkish, Pakistani, and Iranian officials held talks aimed at preventing renewed fighting.",
-    "context": "The talks produced no timetable for a broader agreement, while attacks still threaten regional energy routes.",
-    "why_it_matters": "The region supplies much of the world’s oil, so disruption can reach fuel prices, shipping costs, inflation, and interest rates.",
-    "concept_terms": ["energy route", "oil supply"],
+    "headline": "Israel Vote Leaves Coalition Unclear",
+    "what": "Israeli votes were still being counted after exit polls showed no bloc with a governing majority.",
+    "context": "Coalition talks may take weeks while the region faces renewed conflict risk.",
+    "why_it_matters": "Political uncertainty can affect regional security, energy routes, and oil prices watched by U.S. markets.",
+    "concept_terms": [
+      "coalition",
+      "energy route"
+    ],
     "sources": [
-      {"name": "The Associated Press · regional talks", "href": "https://apnews.com/article/36486edb61b3bf4e0df67e8a17123e44", "type": "wire"},
-      {"name": "U.S. Energy Information Administration", "href": "https://www.eia.gov/outlooks/steo/archives/Oct26.pdf", "type": "primary"}
+      {
+        "name": "The Associated Press · Israel election",
+        "href": "https://apnews.com/article/52c6f5a0a720a4ffc08633229e796415",
+        "type": "wire"
+      },
+      {
+        "name": "U.S. Energy Information Administration",
+        "href": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints",
+        "type": "primary"
+      }
+    ],
+    "developing": true,
+    "as_of": "2026-10-28T10:00:00-04:00",
+    "importance_score": 99,
+    "needs_human_check": true
+  },
+  {
+    "tag": "Global markets",
+    "qualifies": true,
+    "headline": "Asian Chip Shares Surge",
+    "what": "South Korea’s KOSPI jumped 6.6%, while Japan’s Nikkei 225 gained 1.3%.",
+    "context": "Large chipmakers led the advance before major U.S. technology companies report results.",
+    "why_it_matters": "Asian chip shares provide an early read on global demand for semiconductors and AI equipment.",
+    "concept_terms": [
+      "semiconductor",
+      "AI equipment"
+    ],
+    "sources": [
+      {
+        "name": "The Associated Press · global markets",
+        "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-b07c5abe1fbaacc7618aeb610eaa91e0",
+        "type": "wire"
+      },
+      {
+        "name": "Bank of Japan",
+        "href": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
+        "type": "primary"
+      }
     ],
     "developing": false,
-    "as_of": "2026-10-27T10:30:00-04:00",
-    "importance_score": 98,
+    "as_of": "2026-10-28T10:00:00-04:00",
+    "importance_score": 95,
     "needs_human_check": false
   },
   {
     "tag": "Policy",
     "qualifies": true,
-    "headline": "European Protests Test Fragile Economies",
+    "headline": "European Protests Strain Budgets",
     "what": "Cost-of-living, housing, and public-service protests continued across several European countries.",
-    "context": "France faces especially weak growth, high public debt, and difficult budget choices.",
-    "why_it_matters": "Prolonged unrest can interrupt commerce, complicate government budgets, and raise borrowing costs for European companies and governments.",
-    "concept_terms": ["public debt", "borrowing cost"],
+    "context": "France faces weak growth, high public debt, and difficult budget choices.",
+    "why_it_matters": "Prolonged unrest can interrupt commerce and raise borrowing costs for European governments and companies.",
+    "concept_terms": [
+      "public debt",
+      "borrowing cost"
+    ],
     "sources": [
-      {"name": "The Associated Press · European protests", "href": "https://apnews.com/article/b41b5adf5a749440abb88693059eeced", "type": "wire"},
-      {"name": "European Commission · France forecast", "href": "https://economy-finance.ec.europa.eu/economic-surveillance-eu-member-states/country-pages-including-country-reports/france/economic-forecast-france_en", "type": "primary"}
+      {
+        "name": "The Associated Press · European protests",
+        "href": "https://apnews.com/article/210ff22c6746b9ec66438ac80740bc0e",
+        "type": "wire"
+      },
+      {
+        "name": "European Commission · France forecast",
+        "href": "https://economy-finance.ec.europa.eu/economic-surveillance-eu-member-states/country-pages-including-country-reports/france/economic-forecast-france_en",
+        "type": "primary"
+      }
     ],
     "developing": false,
-    "as_of": "2026-10-27T10:30:00-04:00",
-    "importance_score": 94,
-    "needs_human_check": false
-  },
-  {
-    "tag": "Global markets",
-    "qualifies": true,
-    "headline": "Brazilian Markets Reprice Election Result",
-    "what": "Brazilian stocks fell sharply after President Luiz Inácio Lula da Silva won reelection.",
-    "context": "The result surprised some investors and renewed attention on the country’s fiscal policy.",
-    "why_it_matters": "Brazil is a major commodity producer and emerging market, making its currency, debt, and shares relevant to global funds and U.S. companies.",
-    "concept_terms": ["fiscal policy", "emerging market"],
-    "sources": [
-      {"name": "Brazilian Superior Electoral Court", "href": "https://www.tse.jus.br/comunicacao/noticias/2026/Outubro/presidente-do-tse-anuncia-reeleicao-de-lula-e-faz-balanco-do-2o-turno-das-eleicoes-2026", "type": "primary"},
-      {"name": "The Associated Press · global markets", "href": "https://apnews.com/article/088e6d5a0e6df20d3d8614c7f7f82baa", "type": "wire"}
-    ],
-    "developing": false,
-    "as_of": "2026-10-27T10:30:00-04:00",
-    "importance_score": 89,
+    "as_of": "2026-10-28T10:00:00-04:00",
+    "importance_score": 90,
     "needs_human_check": false
   }
 ]

@@ -1,242 +1,25 @@
 [
   {
-    "topic_tag": "companies",
-    "headline": "AI Shares Lift Major Indexes",
-    "headline_evidence": {
-      "bucket": "companies",
-      "rule": "The Nasdaq gained 0.6% while most S&P 500 members declined.",
-      "data": "Associated Press 10:30 AM ET market report"
-    },
-    "commentary": "AI-related shares lifted the largest indexes, while most large-company shares moved lower. Broadcom gained after banks announced a $63 billion plan to finance computing equipment.",
-    "defines": [
-      {
-        "term": "index",
-        "definition": "A group of investments tracked as one market measure.",
-        "used_by_and_why": "Readers use indexes to compare broad market moves."
-      }
-    ],
-    "explains": [
-      {
-        "anchor_text": "lifted the largest indexes",
-        "why": "Large technology companies carry heavy weights in major indexes.",
-        "other_reading": "Most companies in the S&P 500 still declined."
-      }
-    ],
-    "visual": null,
-    "visual_gate": {
-      "passed": false,
-      "failures": [
-        "The Economic Thread maps the relationship."
-      ],
-      "needs_human_check": false
-    },
-    "views": [
-      {
-        "view_id": "household",
-        "body": "Large technology companies sit in many retirement funds. A narrow index gain may not match every account.",
-        "keep_wondering": "How concentrated is your fund in large technology companies?",
-        "claims": [
-          {
-            "sentence_id": "companies-household-1",
-            "type": "mechanism",
-            "evidence": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2"
-          },
-          {
-            "sentence_id": "companies-household-2",
-            "type": "mechanism",
-            "evidence": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2"
-          }
-        ]
-      },
-      {
-        "view_id": "business",
-        "body": "The financing plan expands access to costly computing equipment. It also adds debt to the AI investment cycle.",
-        "keep_wondering": "Will future AI revenue cover today’s financing commitments?",
-        "claims": [
-          {
-            "sentence_id": "companies-business-1",
-            "type": "mechanism",
-            "evidence": "https://investors.broadcom.com/news-releases/news-release-details/bank-america-blackstone-citi-and-morgan-stanley-announce"
-          },
-          {
-            "sentence_id": "companies-business-2",
-            "type": "mechanism",
-            "evidence": "https://investors.broadcom.com/news-releases/news-release-details/bank-america-blackstone-citi-and-morgan-stanley-announce"
-          }
-        ]
-      },
-      {
-        "view_id": "policy",
-        "body": "Large AI projects now rely on banks and private capital. Regulators may watch how that debt spreads through financial markets.",
-        "keep_wondering": "Who carries the risk if AI demand slows?",
-        "claims": [
-          {
-            "sentence_id": "companies-policy-1",
-            "type": "mechanism",
-            "evidence": "https://investors.broadcom.com/news-releases/news-release-details/bank-america-blackstone-citi-and-morgan-stanley-announce"
-          },
-          {
-            "sentence_id": "companies-policy-2",
-            "type": "mechanism",
-            "evidence": "https://investors.broadcom.com/news-releases/news-release-details/bank-america-blackstone-citi-and-morgan-stanley-announce"
-          }
-        ]
-      }
-    ],
-    "sources": [
-      {
-        "name": "Broadcom",
-        "href": "https://investors.broadcom.com/news-releases/news-release-details/bank-america-blackstone-citi-and-morgan-stanley-announce"
-      },
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2"
-      }
-    ],
-    "data_note": "Market readings are from the 10:30 AM ET report and can change during the session.",
-    "claims": [
-      {
-        "sentence_id": "companies-commentary-1",
-        "type": "attributed_cause",
-        "evidence": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2",
-        "attribution": "The Associated Press market report"
-      },
-      {
-        "sentence_id": "companies-commentary-2",
-        "type": "fact",
-        "evidence": "https://investors.broadcom.com/news-releases/news-release-details/bank-america-blackstone-citi-and-morgan-stanley-announce"
-      }
-    ]
-  },
-  {
-    "topic_tag": "inflation_reports",
-    "headline": "Consumers Feel More Confident",
-    "headline_evidence": {
-      "bucket": "inflation_reports",
-      "rule": "October confidence improved instead of declining as economists expected.",
-      "data": "Conference Board survey reported October 27"
-    },
-    "commentary": "U.S. consumer confidence improved in October instead of declining as forecast. The survey tracks how households view business conditions, jobs, and income.",
-    "defines": [
-      {
-        "term": "consumer confidence",
-        "definition": "A survey measure of how households view the economy now and ahead.",
-        "used_by_and_why": "Businesses and investors use it for clues about future spending."
-      }
-    ],
-    "explains": [
-      {
-        "anchor_text": "consumer confidence improved",
-        "why": "More households gave positive answers about current or future conditions.",
-        "other_reading": "Actual spending data can differ from survey responses."
-      }
-    ],
-    "visual": null,
-    "visual_gate": {
-      "passed": false,
-      "failures": [
-        "The release is clearer in text."
-      ],
-      "needs_human_check": false
-    },
-    "views": [
-      {
-        "view_id": "household",
-        "body": "Confidence does not measure actual spending. It captures how secure households feel about jobs, income, and the economy.",
-        "keep_wondering": "Will stronger confidence turn into more purchases?",
-        "claims": [
-          {
-            "sentence_id": "confidence-household-1",
-            "type": "mechanism",
-            "evidence": "https://www.conference-board.org/topics/consumer-confidence/index.cfm"
-          },
-          {
-            "sentence_id": "confidence-household-2",
-            "type": "mechanism",
-            "evidence": "https://www.conference-board.org/topics/consumer-confidence/index.cfm"
-          }
-        ]
-      },
-      {
-        "view_id": "business",
-        "body": "Consumer spending supplies most U.S. demand. A stronger outlook can help companies plan sales, hiring, and inventory.",
-        "keep_wondering": "Which industries see spending change first?",
-        "claims": [
-          {
-            "sentence_id": "confidence-business-1",
-            "type": "mechanism",
-            "evidence": "https://www.bea.gov/data/consumer-spending/main"
-          },
-          {
-            "sentence_id": "confidence-business-2",
-            "type": "mechanism",
-            "evidence": "https://www.bea.gov/data/consumer-spending/main"
-          }
-        ]
-      },
-      {
-        "view_id": "policy",
-        "body": "Officials compare surveys with spending and job data. One improved reading does not settle the outlook.",
-        "keep_wondering": "Do later spending reports confirm the survey?",
-        "claims": [
-          {
-            "sentence_id": "confidence-policy-1",
-            "type": "mechanism",
-            "evidence": "https://www.conference-board.org/topics/consumer-confidence/index.cfm"
-          },
-          {
-            "sentence_id": "confidence-policy-2",
-            "type": "mechanism",
-            "evidence": "https://www.conference-board.org/topics/consumer-confidence/index.cfm"
-          }
-        ]
-      }
-    ],
-    "sources": [
-      {
-        "name": "The Conference Board",
-        "href": "https://www.conference-board.org/topics/consumer-confidence/index.cfm"
-      },
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2"
-      }
-    ],
-    "data_note": "The October survey was released at 10:00 AM ET.",
-    "claims": [
-      {
-        "sentence_id": "confidence-commentary-1",
-        "type": "fact",
-        "evidence": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2"
-      },
-      {
-        "sentence_id": "confidence-commentary-2",
-        "type": "mechanism",
-        "evidence": "https://www.conference-board.org/topics/consumer-confidence/index.cfm"
-      }
-    ]
-  },
-  {
     "topic_tag": "interest_rates_and_yields",
-    "headline": "Markets Await the Fed",
+    "headline": "Fed Decision Takes Center Stage",
     "headline_evidence": {
       "bucket": "interest_rates_and_yields",
-      "rule": "The 10-year Treasury yield held near 5% before Wednesday’s decision.",
-      "data": "Federal Reserve calendar and Associated Press market report"
+      "rule": "The October policy decision is scheduled for 2:00 PM ET.",
+      "data": "Federal Reserve calendar"
     },
-    "commentary": "The Federal Reserve began a two-day meeting with the 10-year Treasury yield near 5%. Officials announce their rate decision Wednesday and explain how they view inflation and growth.",
+    "commentary": "The Federal Reserve shares its rate decision at 2:00 PM ET. Its statement may offer clues about inflation, growth, and December policy.",
     "defines": [
       {
-        "term": "Federal Reserve",
-        "definition": "The U.S. central bank.",
-        "used_by_and_why": "It sets a key short-term interest rate that influences credit across the economy."
+        "term": "rate decision",
+        "definition": "The central bank’s choice about its main short-term interest-rate target.",
+        "used_by_and_why": "Borrowers and investors use it to understand where credit costs may head."
       }
     ],
     "explains": [
       {
-        "anchor_text": "Treasury yield near 5%",
-        "why": "Bond investors weigh inflation, growth, and expected Federal Reserve policy.",
-        "other_reading": "Treasury yields can move independently of the Fed’s current target."
+        "anchor_text": "may offer clues",
+        "why": "The statement describes how officials view the economy.",
+        "other_reading": "Future policy can change with new data."
       }
     ],
     "visual": null,
@@ -250,52 +33,52 @@
     "views": [
       {
         "view_id": "business",
-        "body": "Interest rates shape the cost of loans and expansion. The Fed’s explanation can matter as much as the rate decision.",
+        "body": "Interest rates shape the cost of loans and expansion. The Fed’s explanation can matter as much as its decision.",
         "keep_wondering": "How long do officials expect rates to stay high?",
         "claims": [
           {
             "sentence_id": "fed-business-1",
             "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/monetarypolicy.htm"
+            "evidence": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar"
           },
           {
             "sentence_id": "fed-business-2",
             "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/monetarypolicy.htm"
+            "evidence": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar"
           }
         ]
       },
       {
         "view_id": "policy",
-        "body": "Officials are balancing inflation against slower growth risks. Their statement will clarify which concern carries more weight.",
+        "body": "Officials are balancing high inflation against slower growth risks. Their statement will show which concern carries more weight.",
         "keep_wondering": "Which part of the economy concerns officials most?",
         "claims": [
           {
             "sentence_id": "fed-policy-1",
             "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/monetarypolicy.htm"
+            "evidence": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar"
           },
           {
             "sentence_id": "fed-policy-2",
             "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/monetarypolicy.htm"
+            "evidence": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar"
           }
         ]
       },
       {
         "view_id": "dealer",
-        "body": "Treasury prices can move when the Fed changes its outlook. Traders will compare the statement with current market expectations.",
+        "body": "Treasury prices can move when the Fed changes its outlook. Traders will compare the statement with current expectations.",
         "keep_wondering": "Does the bond market read the decision differently?",
         "claims": [
           {
             "sentence_id": "fed-dealer-1",
             "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/monetarypolicy.htm"
+            "evidence": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar"
           },
           {
             "sentence_id": "fed-dealer-2",
             "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/monetarypolicy.htm"
+            "evidence": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar"
           }
         ]
       }
@@ -307,20 +90,237 @@
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2"
+        "href": "https://apnews.com/article/inflation-warsh-interest-rates-federal-reserve-c06793b0c50641444701d5d098ccc2c8"
       }
     ],
-    "data_note": "The policy decision is scheduled for October 28 at 2:00 PM ET.",
+    "data_note": "The decision remains scheduled and was not released at the 10:00 AM ET cutoff.",
     "claims": [
       {
         "sentence_id": "fed-commentary-1",
         "type": "fact",
-        "evidence": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2"
+        "evidence": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar"
       },
       {
         "sentence_id": "fed-commentary-2",
-        "type": "fact",
+        "type": "mechanism",
         "evidence": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar"
+      }
+    ]
+  },
+  {
+    "topic_tag": "oil_and_energy",
+    "headline": "Oil Prices Move Higher",
+    "headline_evidence": {
+      "bucket": "oil_and_energy",
+      "rule": "Brent rose almost 2% in early trading.",
+      "data": "Associated Press early market report"
+    },
+    "commentary": "Brent crude climbed almost 2% after an attack on a major Saudi refinery. The move keeps fuel, freight, and inflation risks in focus.",
+    "defines": [
+      {
+        "term": "Brent crude",
+        "definition": "A widely used reference price for oil sold around the world.",
+        "used_by_and_why": "Businesses and investors use it to track global energy costs."
+      }
+    ],
+    "explains": [
+      {
+        "anchor_text": "climbed almost 2% after",
+        "why": "The Associated Press linked the move with the refinery attack.",
+        "other_reading": "Oil prices also reflect demand, inventories, and shipping conditions."
+      }
+    ],
+    "visual": null,
+    "visual_gate": {
+      "passed": false,
+      "failures": [
+        "No verified causal diagram was available at cutoff."
+      ],
+      "needs_human_check": false
+    },
+    "views": [
+      {
+        "view_id": "household",
+        "body": "Oil prices can reach gasoline and airline costs. Sustained increases can leave households with less money for other purchases.",
+        "keep_wondering": "How quickly will higher crude prices reach fuel bills?",
+        "claims": [
+          {
+            "sentence_id": "oil-household-1",
+            "type": "mechanism",
+            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
+          },
+          {
+            "sentence_id": "oil-household-2",
+            "type": "mechanism",
+            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
+          }
+        ]
+      },
+      {
+        "view_id": "business",
+        "body": "Fuel and shipping are costs for many companies. Higher energy prices can narrow profits or reach customers through prices.",
+        "keep_wondering": "Which industries have the least room to absorb higher costs?",
+        "claims": [
+          {
+            "sentence_id": "oil-business-1",
+            "type": "mechanism",
+            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
+          },
+          {
+            "sentence_id": "oil-business-2",
+            "type": "mechanism",
+            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
+          }
+        ]
+      },
+      {
+        "view_id": "global",
+        "body": "Brent links global supply with buyers across many countries. Middle East disruptions can affect prices far beyond the region.",
+        "keep_wondering": "Do shipping routes remain open and insured?",
+        "claims": [
+          {
+            "sentence_id": "oil-global-1",
+            "type": "mechanism",
+            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
+          },
+          {
+            "sentence_id": "oil-global-2",
+            "type": "mechanism",
+            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "name": "U.S. Energy Information Administration",
+        "href": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
+      },
+      {
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-b07c5abe1fbaacc7618aeb610eaa91e0"
+      }
+    ],
+    "data_note": "Brent was $111.38 in the early AP market report.",
+    "claims": [
+      {
+        "sentence_id": "oil-commentary-1",
+        "type": "attributed_cause",
+        "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-b07c5abe1fbaacc7618aeb610eaa91e0",
+        "attribution": "The Associated Press market report"
+      },
+      {
+        "sentence_id": "oil-commentary-2",
+        "type": "mechanism",
+        "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
+      }
+    ]
+  },
+  {
+    "topic_tag": "companies",
+    "headline": "Technology Earnings Enter Focus",
+    "headline_evidence": {
+      "bucket": "companies",
+      "rule": "Alphabet and Microsoft report after Wednesday’s closing bell.",
+      "data": "Associated Press market report"
+    },
+    "commentary": "Alphabet and Microsoft report after the closing bell. The reports can show whether AI spending is producing enough sales and profit.",
+    "defines": [
+      {
+        "term": "reports",
+        "definition": "A company’s report on sales, costs, and profit for three months.",
+        "used_by_and_why": "Investors use it to compare business performance with expectations."
+      }
+    ],
+    "explains": [
+      {
+        "anchor_text": "can show",
+        "why": "Company reports disclose sales, costs, and profit.",
+        "other_reading": "One quarter does not settle the longer trend."
+      }
+    ],
+    "visual": null,
+    "visual_gate": {
+      "passed": false,
+      "failures": [
+        "The earnings releases were not available at cutoff."
+      ],
+      "needs_human_check": false
+    },
+    "views": [
+      {
+        "view_id": "household",
+        "body": "Large technology companies sit in many retirement funds. Their earnings can move broad indexes even when other shares are quiet.",
+        "keep_wondering": "How concentrated is your fund in large technology companies?",
+        "claims": [
+          {
+            "sentence_id": "tech-household-1",
+            "type": "mechanism",
+            "evidence": "https://www.sec.gov/answers/form10q.htm"
+          },
+          {
+            "sentence_id": "tech-household-2",
+            "type": "mechanism",
+            "evidence": "https://www.sec.gov/answers/form10q.htm"
+          }
+        ]
+      },
+      {
+        "view_id": "business",
+        "body": "Major technology earnings show whether heavy AI spending is producing revenue. Results can shape investment plans across the supply chain.",
+        "keep_wondering": "Will revenue growth justify current AI spending?",
+        "claims": [
+          {
+            "sentence_id": "tech-business-1",
+            "type": "mechanism",
+            "evidence": "https://www.sec.gov/answers/form10q.htm"
+          },
+          {
+            "sentence_id": "tech-business-2",
+            "type": "mechanism",
+            "evidence": "https://www.sec.gov/answers/form10q.htm"
+          }
+        ]
+      },
+      {
+        "view_id": "policy",
+        "body": "Large data centers require power, land, and financing. Officials may watch how fast those demands spread through local economies.",
+        "keep_wondering": "Which public systems face the greatest new demand?",
+        "claims": [
+          {
+            "sentence_id": "tech-policy-1",
+            "type": "mechanism",
+            "evidence": "https://www.sec.gov/answers/form10q.htm"
+          },
+          {
+            "sentence_id": "tech-policy-2",
+            "type": "mechanism",
+            "evidence": "https://www.sec.gov/answers/form10q.htm"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "name": "U.S. Securities and Exchange Commission",
+        "href": "https://www.sec.gov/answers/form10q.htm"
+      },
+      {
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-b07c5abe1fbaacc7618aeb610eaa91e0"
+      }
+    ],
+    "data_note": "The reports are scheduled after the market closes and are not included as outcomes.",
+    "claims": [
+      {
+        "sentence_id": "tech-commentary-1",
+        "type": "fact",
+        "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-b07c5abe1fbaacc7618aeb610eaa91e0"
+      },
+      {
+        "sentence_id": "tech-commentary-2",
+        "type": "mechanism",
+        "evidence": "https://www.sec.gov/answers/form10q.htm"
       }
     ]
   }

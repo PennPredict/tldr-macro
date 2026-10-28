@@ -1,5 +1,37 @@
 # Design requests
 
+## 2026-10-28 — Brand-color hero mark
+
+Approved by the user in chat. Keep the compact converging-lines fallback rather than restoring the duplicated full lockup, but bring it closer to the original logo by assigning its three paths the established sky-blue, mint, and deeper-blue brand colors. Apply the same mark treatment to the dated share image and preserve all existing data gates, sizing, accessibility, and no-effects constraints.
+
+## 2026-10-28 — Verified lead-asset hero visual
+
+Approved by the user through the supplied implementation specification. Limit changes to the right-hand hero visual, its lead-asset data gate and renderer, responsive styles, edition share-image generator, configuration, and tests. Default `hero.visual` to `chart`, but render the standalone converging-lines mark whenever the named lead asset fails any hard series gate. Keep the chart single-series, evidence-linked, keyboard accessible, and free of logos, gradients, glow, shadow, or event markers. Do not commit, push, publish, or deploy.
+
+## 2026-10-28 — Compact evidence-linked connections band
+
+Approved by the user through the supplied implementation specification. Limit changes to the “How Today’s Stories Connect” band, its flow data, configuration, responsive styles, and verification. Replace the mini-card board with one generated three-to-four-node ordered chain, real dashed edge labels, one short legend, focusable evidence popovers, and a vertical phone treatment. Keep `inline_chain` as the production default and expose `node_cards` and `icon_flow` only for local staging comparison. Do not commit, push, publish, or deploy.
+
+## 2026-10-28 — Simplified hero and four-step connections flow
+
+Approved by the user through the supplied implementation specification. Limit changes to the hero and flow bands, their generators, configuration, and tests. Replace the decorative hero chart with the existing transparent full-lockup logo alone on a solid card; generate a six-word-or-fewer factual headline and a 20-word-or-fewer summary; move the detailed one-liner to sticky and distribution metadata; remove the floating timestamp and in-hero navigation/read-time row; reduce the flow to at most four five-word nodes with details in evidence popovers; enforce a combined 70-word budget, duplicate-sentence checks, logo DOM/pixel checks, and four responsive screenshots. Do not modify existing logo assets or commit, push, publish, or deploy.
+
+## 2026-10-28 — Multi-factor, reader-centered Economic Thread
+
+Approved by the user in chat. Replace the single linear Economic Thread with a concise three-stage map: multiple verified daily inputs on the left, the market relationships they put in focus in the center, and multiple practical household or portfolio implications on the right. For the current edition, include oil, equities, and the Federal Reserve as inputs, then connect them to borrowing, housing, retail or fuel costs, and portfolio sensitivity using cautious “can” or “may” language. Keep dashed connectors, primary sources, plain language, accessible reading order, and a collision-free stacked phone layout.
+
+## 2026-10-28 — Move hero logo into the market visual
+
+Approved by the user in chat with a screenshot of the current hero. Remove the full logo from the upper-left top bar and place that same linked brand asset inside the right-side hero visual, while retaining the edition timestamp above. Keep the logo legible but subordinate to the briefing headline, preserve its home link and accessible name, and scale the combined visual cleanly on phones without introducing overlap.
+
+## 2026-10-28 — Collision-free mobile event cards
+
+Approved by the user in chat after reporting overlapping text on phones, especially in Next on TL;DR Macro. At narrow-phone widths, stack each event's date chip above its title and definition, keep both outcome panels in a single column, and allow long labels, annotated terms, and source links to wrap within the card. Preserve the desktop layout, verified copy, scenario balance, source links, and keyboard-accessible definitions.
+
+## 2026-10-27 — Feature-gated v2 mockup redesign
+
+Approved by the user in the supplied specification. Build a local-only `design.v2` implementation, default off, using the supplied mockup only for layout and visual language. The task lifts the design freeze only for the v2 files and the feature-gated integration required to build both versions. Preserve all content, evidence, freshness, security, accessibility, popover, agent-view, section-name, sticky-bar, and section-navigation rules. Do not run `design:approve`; do not commit, push, deploy, or change the production default. Where current registry data fails the new data gates, withhold the affected visualization or row and document the reason rather than inventing or repairing unsupported observations.
+
 ## 2026-10-27 — Remove beginner-mode toggle
 
 Approved by the user in chat. Remove the “New to markets?” control, its saved local preference, and the duplicate beginner-only market explanation block. Keep contextual info buttons and term popovers as the single definition system. Preserve section navigation, read-time text, accessibility, and responsive behavior.

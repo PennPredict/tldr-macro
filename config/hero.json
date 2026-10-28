@@ -1,0 +1,15 @@
+{
+  "visual": "chart",
+  "visual_mobile": "shown",
+  "headline_max_words": 6,
+  "summary_max_words": 20,
+  "directions": {
+    "flat": "holds steady",
+    "small_up": "edges up",
+    "small_down": "slips",
+    "medium_up": "rises",
+    "medium_down": "falls",
+    "large_up": "jumps",
+    "large_down": "drops"
+  }
+}

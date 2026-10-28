@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-27T20:58:57.058Z",
-  "edition_date": "2026-10-27",
+  "generated_at": "2026-10-28T18:06:25.682Z",
+  "edition_date": "2026-10-28",
   "policy_version": 1,
   "status": "passed",
   "freshness_limit_minutes": 360,
   "calendar_last_verified": "2026-10-14",
   "copy_counts": {
-    "pressure": 1,
+    "pressure": 0,
     "eased": 2
   },
   "claim_ledger": {
@@ -16,7 +16,7 @@
   },
   "snapshot_checks": {
     "summary_words": 10,
-    "summary_characters": 64,
+    "summary_characters": 68,
     "priority_order": [
       "S&P 500",
       "10-year Treasury yield",
@@ -87,10 +87,10 @@
   },
   "edition_summary": {
     "facts": {
-      "edition_date": "2026-10-27",
+      "edition_date": "2026-10-28",
       "stocks": {
         "name": "S&P 500",
-        "value": 7692.12,
+        "value": 7738.05,
         "change_percent": 0.2,
         "bucket": "small_up",
         "record": null,
@@ -106,8 +106,8 @@
       },
       "rates": {
         "name": "10-year Treasury yield",
-        "value": 4.99,
-        "change_basis_points": -1,
+        "value": 5,
+        "change_basis_points": 1,
         "bucket": "flat",
         "record": null,
         "streak": null,
@@ -118,77 +118,84 @@
       },
       "oil": {
         "name": "Brent crude oil",
-        "value": 110.37,
-        "change_percent": -0.3,
-        "bucket": "small_down",
+        "value": 111.38,
+        "change_percent": 1.81,
+        "bucket": "large_up",
         "record": null,
         "streak": null,
         "first_in": null,
         "range_position": null,
-        "move": "down",
+        "move": "up",
         "qualifier": {
           "type": "size",
-          "bucket": "small_down",
-          "text": "slightly"
+          "bucket": "large_up",
+          "text": "sharply"
         }
       },
       "release": null,
       "nasdaq": {
         "name": "Nasdaq Composite",
-        "value": 26326.4,
-        "change_percent": 0.6,
-        "bucket": "medium_up"
+        "value": 26583.72,
+        "change_percent": 0.4,
+        "bucket": "small_up"
       }
     },
-    "generated_sentence": "Shares edged up; Treasury yields held steady; crude oil slipped.",
+    "generated_sentence": "Stocks edged up; government borrowing rates held steady; oil jumped.",
     "lint": {
       "passed": true,
       "errors": [],
       "warnings": [],
-      "characters": 64,
+      "characters": 68,
       "words": 10,
-      "grade": 3.7
+      "grade": 6
     },
     "similarity_scores": [
       {
-        "date": "2026-10-23",
-        "edit_similarity": 0.656,
-        "token_similarity": 0.727,
+        "date": "2026-10-27",
+        "edit_similarity": 0.462,
+        "token_similarity": 0.333,
         "first_four_match": false,
         "limit": 0.6
       },
       {
+        "date": "2026-10-23",
+        "edit_similarity": 0.338,
+        "token_similarity": 0.267,
+        "first_four_match": false,
+        "limit": 0.75
+      },
+      {
         "date": "2026-10-22",
-        "edit_similarity": 0.279,
-        "token_similarity": 0.063,
+        "edit_similarity": 0.754,
+        "token_similarity": 0.545,
         "first_four_match": false,
         "limit": 0.75
       },
       {
         "date": "2026-10-21",
-        "edit_similarity": 0.59,
-        "token_similarity": 1,
+        "edit_similarity": 0.246,
+        "token_similarity": 0.333,
         "first_four_match": false,
         "limit": 0.75
       },
       {
         "date": "2026-10-19",
-        "edit_similarity": 0.951,
-        "token_similarity": 0.818,
-        "first_four_match": true,
+        "edit_similarity": 0.462,
+        "token_similarity": 0.333,
+        "first_four_match": false,
         "limit": 0.75
       },
       {
         "date": "2026-10-14",
-        "edit_similarity": 0.262,
+        "edit_similarity": 0.215,
         "token_similarity": 0,
         "first_four_match": false,
         "limit": 0.75
       },
       {
         "date": "2026-10-07",
-        "edit_similarity": 0.25,
-        "token_similarity": 0.053,
+        "edit_similarity": 0.738,
+        "token_similarity": 0.429,
         "first_four_match": false,
         "limit": 0.75
       }
@@ -501,46 +508,46 @@
     "count": 3,
     "items": [
       {
-        "headline": "AI Shares Lift Major Indexes",
-        "evidence": {
-          "bucket": "companies",
-          "rule": "The Nasdaq gained 0.6% while most S&P 500 members declined.",
-          "data": "Associated Press 10:30 AM ET market report"
-        },
-        "visual_gate": {
-          "passed": false,
-          "failures": [
-            "The Economic Thread maps the relationship."
-          ],
-          "needs_human_check": false
-        }
-      },
-      {
-        "headline": "Consumers Feel More Confident",
-        "evidence": {
-          "bucket": "inflation_reports",
-          "rule": "October confidence improved instead of declining as economists expected.",
-          "data": "Conference Board survey reported October 27"
-        },
-        "visual_gate": {
-          "passed": false,
-          "failures": [
-            "The release is clearer in text."
-          ],
-          "needs_human_check": false
-        }
-      },
-      {
-        "headline": "Markets Await the Fed",
+        "headline": "Fed Decision Takes Center Stage",
         "evidence": {
           "bucket": "interest_rates_and_yields",
-          "rule": "The 10-year Treasury yield held near 5% before Wednesday’s decision.",
-          "data": "Federal Reserve calendar and Associated Press market report"
+          "rule": "The October policy decision is scheduled for 2:00 PM ET.",
+          "data": "Federal Reserve calendar"
         },
         "visual_gate": {
           "passed": false,
           "failures": [
             "The scheduled decision is clearer in the calendar."
+          ],
+          "needs_human_check": false
+        }
+      },
+      {
+        "headline": "Oil Prices Move Higher",
+        "evidence": {
+          "bucket": "oil_and_energy",
+          "rule": "Brent rose almost 2% in early trading.",
+          "data": "Associated Press early market report"
+        },
+        "visual_gate": {
+          "passed": false,
+          "failures": [
+            "No verified causal diagram was available at cutoff."
+          ],
+          "needs_human_check": false
+        }
+      },
+      {
+        "headline": "Technology Earnings Enter Focus",
+        "evidence": {
+          "bucket": "companies",
+          "rule": "Alphabet and Microsoft report after Wednesday’s closing bell.",
+          "data": "Associated Press market report"
+        },
+        "visual_gate": {
+          "passed": false,
+          "failures": [
+            "The earnings releases were not available at cutoff."
           ],
           "needs_human_check": false
         }
@@ -638,49 +645,49 @@
   },
   "global_items": [
     {
-      "headline": "Middle East Talks Leave Oil Risk",
+      "headline": "Israel Vote Leaves Coalition Unclear",
       "sources": [
         {
-          "name": "The Associated Press · regional talks",
-          "href": "https://apnews.com/article/36486edb61b3bf4e0df67e8a17123e44",
+          "name": "The Associated Press · Israel election",
+          "href": "https://apnews.com/article/52c6f5a0a720a4ffc08633229e796415",
           "type": "wire"
         },
         {
           "name": "U.S. Energy Information Administration",
-          "href": "https://www.eia.gov/outlooks/steo/archives/Oct26.pdf",
+          "href": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints",
+          "type": "primary"
+        }
+      ],
+      "needs_human_check": true
+    },
+    {
+      "headline": "Asian Chip Shares Surge",
+      "sources": [
+        {
+          "name": "The Associated Press · global markets",
+          "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-b07c5abe1fbaacc7618aeb610eaa91e0",
+          "type": "wire"
+        },
+        {
+          "name": "Bank of Japan",
+          "href": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
           "type": "primary"
         }
       ],
       "needs_human_check": false
     },
     {
-      "headline": "European Protests Test Fragile Economies",
+      "headline": "European Protests Strain Budgets",
       "sources": [
         {
           "name": "The Associated Press · European protests",
-          "href": "https://apnews.com/article/b41b5adf5a749440abb88693059eeced",
+          "href": "https://apnews.com/article/210ff22c6746b9ec66438ac80740bc0e",
           "type": "wire"
         },
         {
           "name": "European Commission · France forecast",
           "href": "https://economy-finance.ec.europa.eu/economic-surveillance-eu-member-states/country-pages-including-country-reports/france/economic-forecast-france_en",
           "type": "primary"
-        }
-      ],
-      "needs_human_check": false
-    },
-    {
-      "headline": "Brazilian Markets Reprice Election Result",
-      "sources": [
-        {
-          "name": "Brazilian Superior Electoral Court",
-          "href": "https://www.tse.jus.br/comunicacao/noticias/2026/Outubro/presidente-do-tse-anuncia-reeleicao-de-lula-e-faz-balanco-do-2o-turno-das-eleicoes-2026",
-          "type": "primary"
-        },
-        {
-          "name": "The Associated Press · global markets",
-          "href": "https://apnews.com/article/088e6d5a0e6df20d3d8614c7f7f82baa",
-          "type": "wire"
         }
       ],
       "needs_human_check": false
@@ -695,12 +702,11 @@
       "cmegroup.com": 1,
       "nasdaq.com": 1,
       "cboe.com": 1,
-      "eia.gov": 1,
+      "eia.gov": 2,
+      "boj.or.jp": 1,
       "economy-finance.ec.europa.eu": 1,
-      "tse.jus.br": 1,
-      "investors.broadcom.com": 1,
-      "conference-board.org": 1,
-      "federalreserve.gov": 1
+      "federalreserve.gov": 1,
+      "sec.gov": 1
     },
     "snapshot_cards_by_domain": {
       "spglobal.com": 2,
@@ -726,13 +732,13 @@
     },
     {
       "name": "Brent crude oil",
-      "current_provider": "CME Group · Brent crude futures and The Associated Press",
+      "current_provider": "CME Group and The Associated Press",
       "historical_provider": "Existing edition series; redistribution terms require provider review",
       "licensing_note": "Official or approved-source links are published; raw historical datasets are not redistributed."
     },
     {
       "name": "Nasdaq Composite",
-      "current_provider": "Nasdaq Composite and The Associated Press",
+      "current_provider": "Nasdaq",
       "historical_provider": "Existing edition series; redistribution terms require provider review",
       "licensing_note": "Official or approved-source links are published; raw historical datasets are not redistributed."
     },
@@ -747,82 +753,97 @@
       "current_provider": "Cboe VIX",
       "historical_provider": "Existing edition series; redistribution terms require provider review",
       "licensing_note": "Official or approved-source links are published; raw historical datasets are not redistributed."
+    },
+    {
+      "name": "DAX",
+      "current_provider": "Deutsche Börse/Xetra via Börse Stuttgart",
+      "historical_provider": "Deutsche Börse/Xetra via Börse Stuttgart",
+      "licensing_note": "Exchange index data are proprietary; linked exchange and market sources retained."
+    },
+    {
+      "name": "Nikkei 225",
+      "current_provider": "Nikkei Inc.",
+      "historical_provider": "Nikkei Inc.",
+      "licensing_note": "Nikkei index data are copyrighted; citation and linked source retained."
+    },
+    {
+      "name": "KOSPI",
+      "current_provider": "Korea Exchange via KB Financial Group",
+      "historical_provider": "Korea Exchange via KB Financial Group",
+      "licensing_note": "Korea Exchange index data are proprietary; linked exchange and issuer sources retained."
     }
   ],
   "fact_cards": [],
   "observations": [
     {
       "name": "S&P 500",
-      "value": 7692.12,
-      "prior_close": 7676.77,
+      "value": 7738.05,
+      "prior_close": 7722.6,
       "change_percent": 0.2,
       "source": "S&P Dow Jones Indices and The Associated Press",
       "source_url": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/",
-      "fetched_at": "2026-10-27T10:30:00-04:00",
+      "fetched_at": "2026-10-28T10:00:00-04:00",
       "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "10-year Treasury yield",
-      "value": 4.99,
-      "prior_close": 5,
-      "change_percent": -0.2,
+      "value": 5,
+      "prior_close": 4.99,
+      "change_percent": 0.2,
       "source": "U.S. Treasury and The Associated Press",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
-      "fetched_at": "2026-10-27T10:30:00-04:00",
+      "fetched_at": "2026-10-28T10:00:00-04:00",
       "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "Brent crude oil",
-      "value": 110.37,
-      "prior_close": 110.7,
-      "change_percent": -0.3,
-      "source": "CME Group · Brent crude futures and The Associated Press",
+      "value": 111.38,
+      "prior_close": 109.4,
+      "change_percent": 1.81,
+      "source": "CME Group and The Associated Press",
       "source_url": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html",
-      "fetched_at": "2026-10-27T10:30:00-04:00",
+      "fetched_at": "2026-10-28T10:00:00-04:00",
       "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "Nasdaq Composite",
-      "value": 26326.4,
-      "prior_close": 26169.38,
-      "change_percent": 0.6,
-      "source": "Nasdaq Composite and The Associated Press",
+      "value": 26583.72,
+      "prior_close": 26477.81,
+      "change_percent": 0.4,
+      "source": "Nasdaq",
       "source_url": "https://www.nasdaq.com/market-activity/index/comp",
-      "fetched_at": "2026-10-27T10:30:00-04:00",
+      "fetched_at": "2026-10-28T10:00:00-04:00",
       "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "Dow Jones Industrial Average",
-      "value": 52273.58,
-      "prior_close": 52361.58,
-      "change_percent": -0.17,
+      "value": 52421.57,
+      "prior_close": 52377.57,
+      "change_percent": 0.08,
       "source": "S&P Dow Jones Indices and The Associated Press",
       "source_url": "https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/",
-      "fetched_at": "2026-10-27T10:30:00-04:00",
+      "fetched_at": "2026-10-28T10:00:00-04:00",
       "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "Expected volatility",
-      "value": 18.42,
-      "prior_close": 18.39,
-      "change_percent": 0.16,
+      "value": 17.55,
+      "prior_close": 17.52,
+      "change_percent": 0.17,
       "source": "Cboe VIX",
       "source_url": "https://www.cboe.com/tradable-products/vix/",
-      "fetched_at": "2026-10-27T10:30:00-04:00",
+      "fetched_at": "2026-10-28T10:00:00-04:00",
       "age_minutes": 0,
       "status": "checked"
     }
   ],
   "warnings": [
-    "Edition summary resembles 2026-10-23; documented override is active",
-    "Edition summary resembles 2026-10-21; documented override is active",
-    "Edition summary resembles 2026-10-19; documented override is active",
-    "More Markets has 0 verified International Indices cards; unsupported cards are withheld rather than padded",
+    "Edition summary resembles 2026-10-22; documented override is active",
     "More Markets has 0 verified Rates cards; unsupported cards are withheld rather than padded",
     "More Markets has 0 verified Currencies cards; unsupported cards are withheld rather than padded",
     "More Markets has 0 verified Commodities cards; unsupported cards are withheld rather than padded",

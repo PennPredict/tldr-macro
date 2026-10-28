@@ -1,0 +1,13 @@
+{
+  "default": {
+    "stories": "Top Stories",
+    "global": "TL;DR Global",
+    "next": "Next on TL;DR Macro"
+  },
+  "alt": {
+    "stories": "Key developments",
+    "global": "Other notable updates",
+    "next": "What to watch next"
+  },
+  "use_alt": false
+}

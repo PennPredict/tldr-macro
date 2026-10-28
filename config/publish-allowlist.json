@@ -20,6 +20,7 @@
     ,"archive/": [".html", ".txt"]
   },
   "allowedRootPatterns": [
+    "^og-\\d{4}-\\d{2}-\\d{2}\\.png$",
     "^__next\\..+\\.txt$",
     "^index\\.txt$"
   ],

@@ -1,115 +1,20 @@
 {
-  "schema_version": 1,
-  "edition_date": "2026-10-27",
-  "reported_node_id": "confidence",
-  "mobile_order": [
-    "confidence",
-    "spending",
-    "ai-shares",
-    "narrow-breadth"
-  ],
+  "schema_version": 3,
+  "edition_date": "2026-10-28",
+  "reported_node_id": "oil",
+  "mobile_order": ["oil", "prices", "rates", "households"],
   "nodes": [
-    {
-      "id": "confidence",
-      "layer": "Happened",
-      "type": "FACT",
-      "tier": 1,
-      "label": "Consumer confidence improved",
-      "subline": "Households felt better about the outlook",
-      "event_time": "2026-10-27T10:00:00-04:00",
-      "reference_period": "October survey",
-      "source": "The Conference Board",
-      "source_url": "https://www.conference-board.org/topics/consumer-confidence/index.cfm",
-      "popover": {
-        "title": "What changed",
-        "plain": "Households reported a brighter outlook.",
-        "precise": "The index improved contrary to forecasts for another decline.",
-        "source_url": "https://www.conference-board.org/topics/consumer-confidence/index.cfm"
-      }
-    },
-    {
-      "id": "spending",
-      "layer": "Link",
-      "type": "MECHANISM",
-      "tier": 1,
-      "label": "Spending expectations can firm",
-      "reference_period": "Current economic relationship",
-      "mechanism_id": "confidence-to-spending",
-      "source": "Bureau of Economic Analysis",
-      "source_url": "https://www.bea.gov/data/consumer-spending/main",
-      "popover": {
-        "title": "Why confidence matters",
-        "plain": "Households may spend more when they feel secure.",
-        "precise": "Actual spending data are needed to confirm the survey signal.",
-        "source_url": "https://www.bea.gov/data/consumer-spending/main"
-      }
-    },
-    {
-      "id": "ai-shares",
-      "layer": "Markets",
-      "type": "MECHANISM",
-      "tier": 1,
-      "label": "AI shares raised the indexes",
-      "reference_period": "Tuesday morning market",
-      "mechanism_id": "spending-to-markets",
-      "source": "The Associated Press",
-      "source_url": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2",
-      "story_anchor": "story-background",
-      "popover": {
-        "title": "What led",
-        "plain": "Large AI-related companies gained.",
-        "precise": "Their index weights offset declines across many other companies.",
-        "source_url": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2"
-      }
-    },
-    {
-      "id": "narrow-breadth",
-      "layer": "Could mean",
-      "type": "MECHANISM",
-      "tier": 1,
-      "label": "The market gain stayed narrow",
-      "reference_period": "Tuesday morning market",
-      "mechanism_id": "weights-to-breadth",
-      "source": "The Associated Press",
-      "source_url": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2",
-      "popover": {
-        "title": "Why breadth matters",
-        "plain": "Most large-company shares still fell.",
-        "precise": "A few large companies carried much of the index advance.",
-        "source_url": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2"
-      }
-    }
+    {"id":"oil","layer":"Fact","type":"FACT","tier":1,"label":"Oil jumped","subline":"Brent climbed in early trading after a refinery attack raised supply concerns.","precise":"Brent traded at $108.13 at 10:00 AM ET.","event_time":"2026-10-28T10:00:00-04:00","reference_period":"Wednesday early market","source":"CME Group","source_url":"https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html"},
+    {"id":"prices","layer":"Mechanism","type":"MECHANISM","tier":1,"label":"Energy can add to inflation","subline":"Oil affects fuel, shipping, and production costs.","precise":"Higher petroleum costs can pass through to transportation and goods prices.","event_time":"2026-10-28T10:00:00-04:00","reference_period":"Current economic relationship","mechanism_id":"oil-to-inflation-up","source":"U.S. Energy Information Administration","source_url":"https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"},
+    {"id":"rates","layer":"Mechanism","type":"MECHANISM","tier":1,"label":"Rates can stay high","subline":"Persistent inflation can limit room for rate cuts.","precise":"The Federal Reserve uses higher rates to slow demand and price growth.","event_time":"2026-10-28T10:00:00-04:00","reference_period":"Current economic relationship","mechanism_id":"inflation-to-rate-expectations","source":"Federal Reserve","source_url":"https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm","story_anchor":"story-rates"},
+    {"id":"households","layer":"Possible implication","type":"MECHANISM","tier":1,"label":"Loans can cost more","subline":"Mortgages, auto loans, and credit cards can become more expensive.","precise":"Market and policy rates influence the interest charged on household credit.","event_time":"2026-10-28T10:00:00-04:00","reference_period":"Current economic relationship","mechanism_id":"rates-to-borrowing","source":"Federal Reserve","source_url":"https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"}
   ],
   "edges": [
-    {
-      "id": "confidence-spending",
-      "from": "confidence",
-      "to": "spending",
-      "type": "MECHANISM",
-      "tier": 1,
-      "mechanism_id": "confidence-to-spending",
-      "direction": "up"
-    },
-    {
-      "id": "spending-markets",
-      "from": "spending",
-      "to": "ai-shares",
-      "type": "MECHANISM",
-      "tier": 1,
-      "mechanism_id": "spending-to-markets",
-      "direction": "up"
-    },
-    {
-      "id": "markets-breadth",
-      "from": "ai-shares",
-      "to": "narrow-breadth",
-      "type": "MECHANISM",
-      "tier": 1,
-      "mechanism_id": "weights-to-breadth",
-      "direction": "out"
-    }
+    {"id":"oil-prices","from":"oil","to":"prices","type":"MECHANISM","tier":1,"mechanism_id":"oil-to-inflation-up","direction":"up"},
+    {"id":"prices-rates","from":"prices","to":"rates","type":"MECHANISM","tier":1,"mechanism_id":"inflation-to-rate-expectations","direction":"up"},
+    {"id":"rates-households","from":"rates","to":"households","type":"MECHANISM","tier":1,"mechanism_id":"rates-to-borrowing","direction":"up"}
   ],
   "caption_candidates": [],
-  "takeaway": "Improved confidence and strong AI shares supported the major indexes, but falling shares across most of the S&P 500 kept the advance narrow.",
-  "other_factors_note": "Company results, interest rates, and global news can also move markets."
+  "takeaway": "",
+  "other_factors_note": "Dashed links, not predictions."
 }

@@ -12,5 +12,12 @@
     "reason": "The required checked three-market template resembles recent editions, while today’s verified stock, yield, and oil directions and observations are distinct.",
     "evidence_url": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2",
     "expires_at": "2026-10-28T10:30:00-04:00"
+  },
+  {
+    "id": "summary-similarity-2026-10-28",
+    "owner": "TL;DR Macro editorial",
+    "reason": "The checked template resembles the prior edition because stocks again rose modestly, while today’s oil direction changed and each supporting observation is distinct.",
+    "evidence_url": "https://apnews.com/article/stock-markets-ai-earnings-oil-b07c5abe1fbaacc7618aeb610eaa91e0",
+    "expires_at": "2026-10-28T17:00:00-04:00"
   }
 ]
