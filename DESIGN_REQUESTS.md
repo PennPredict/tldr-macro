@@ -1,5 +1,9 @@
 # Design requests
 
+## 2026-10-28 — Supplied convergence artwork hero
+
+Approved by the user in chat with the finished “Waves Converging Into Light” artwork. Use the supplied image as the top-right hero visual, preserve the full convergence point with a contained crop at every breakpoint, and reuse it in the dated share image. Keep all other page bands, copy, evidence gates, and interactions unchanged.
+
 ## 2026-10-28 — Brand-color hero mark
 
 Approved by the user in chat. Keep the compact converging-lines fallback rather than restoring the duplicated full lockup, but bring it closer to the original logo by assigning its three paths the established sky-blue, mint, and deeper-blue brand colors. Apply the same mark treatment to the dated share image and preserve all existing data gates, sizing, accessibility, and no-effects constraints.

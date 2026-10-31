@@ -1,10 +1,10 @@
 "use client";
 import {useState,useSyncExternalStore} from "react";
 
-type Choice="chart"|"mark"|"logo"|"none";
+type Choice="image"|"chart"|"mark"|"logo"|"none";
 type HeroMarket={name:string;kind?:string;value:number;display_value:string;prior_close:number;change_percent:number;display_change:string;points:number[];series_dates:string[];fetched_at:string};
 type HeroModel={requested:string;rendered:string;lead:HeroMarket;gate:{passed:boolean;reasons:string[];points:number[];dates:string[]};edition_date:string};
-const valid=(value:string|null):value is Choice=>["chart","mark","logo","none"].includes(value||"");
+const valid=(value:string|null):value is Choice=>["image","chart","mark","logo","none"].includes(value||"");
 const fmtDate=(value:string)=>new Intl.DateTimeFormat("en-US",{month:"short",day:"numeric",timeZone:"America/New_York"}).format(new Date(value));
 const Mark=()=> <svg className="hero-mark" viewBox="0 0 180 74" role="img" aria-label="TL;DR Macro converging-lines mark"><path className="hero-mark-sky" d="M4 18 28 4l22 18 24-12 30 25 72 2"/><path className="hero-mark-mint" d="M4 38 28 25l22 11 25-20 29 21 72 0"/><path className="hero-mark-blue" d="M4 58 29 43l22 14 24-12 29-8 72 0"/></svg>;
 
@@ -21,5 +21,5 @@ function Chart({model}:{model:HeroModel}){
 export default function HeroVisual({model}:{model:HeroModel}){
   const choice=useSyncExternalStore(()=>()=>{},()=>{const value=new URLSearchParams(window.location.search).get("heroVisual");return valid(value)?value:model.requested as Choice},()=>model.requested as Choice),rendered=choice==="chart"?(model.gate.passed?"chart":"mark"):choice;
   if(rendered==="none")return null;
-  return <div className="brief-visual" data-requested-visual={choice} data-rendered-visual={rendered}>{rendered==="chart"?<Chart model={model}/>:rendered==="logo"?<img src="./tldr-macro-logo-wide.png" alt="TL;DR Macro. Market intelligence, for everyone." width="2172" height="724"/>:<Mark/>}</div>;
+  return <div className="brief-visual" data-requested-visual={choice} data-rendered-visual={rendered}>{rendered==="chart"?<Chart model={model}/>:rendered==="image"?<img className="hero-art" src="./waves-converging-into-light.png" alt="Blue and mint market waves converging into a single line of light." width="1774" height="887" fetchPriority="high"/>:rendered==="logo"?<img src="./tldr-macro-logo-wide.png" alt="TL;DR Macro. Market intelligence, for everyone." width="2172" height="724"/>:<Mark/>}</div>;
 }
