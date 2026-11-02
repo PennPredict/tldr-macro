@@ -1,86 +1,53 @@
 [
   {
-    "tag": "Conflict",
+    "tag": "Policy",
     "qualifies": true,
-    "headline": "Israel Vote Leaves Coalition Unclear",
-    "what": "Israeli votes were still being counted after exit polls showed no bloc with a governing majority.",
-    "context": "Coalition talks may take weeks while the region faces renewed conflict risk.",
-    "why_it_matters": "Political uncertainty can affect regional security, energy routes, and oil prices watched by U.S. markets.",
-    "concept_terms": [
-      "coalition",
-      "energy route"
-    ],
+    "headline": "European Protests Continue",
+    "what": "Large demonstrations over living costs, housing, and public services continued across France, Germany, and Portugal.",
+    "context": "France also faces new transport and public-service strikes this week.",
+    "why_it_matters": "Prolonged unrest can interrupt commerce and increase demands on already stretched public budgets.",
+    "concept_terms": ["public budget", "general strike"],
     "sources": [
-      {
-        "name": "The Associated Press · Israel election",
-        "href": "https://apnews.com/article/52c6f5a0a720a4ffc08633229e796415",
-        "type": "wire"
-      },
-      {
-        "name": "U.S. Energy Information Administration",
-        "href": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints",
-        "type": "primary"
-      }
+      {"name":"The Associated Press · European protests","href":"https://apnews.com/article/547697d5a2604aee0278db33c7306894","type":"wire"},
+      {"name":"European Commission · France forecast","href":"https://economy-finance.ec.europa.eu/economic-surveillance-eu-member-states/country-pages-including-country-reports/france/economic-forecast-france_en","type":"primary"}
     ],
     "developing": true,
-    "as_of": "2026-10-28T10:00:00-04:00",
-    "importance_score": 99,
-    "needs_human_check": true
+    "as_of": "2026-11-02T10:15:00-05:00",
+    "importance_score": 98,
+    "needs_human_check": false
   },
   {
     "tag": "Global markets",
     "qualifies": true,
-    "headline": "Asian Chip Shares Surge",
-    "what": "South Korea’s KOSPI jumped 6.6%, while Japan’s Nikkei 225 gained 1.3%.",
-    "context": "Large chipmakers led the advance before major U.S. technology companies report results.",
-    "why_it_matters": "Asian chip shares provide an early read on global demand for semiconductors and AI equipment.",
-    "concept_terms": [
-      "semiconductor",
-      "AI equipment"
-    ],
+    "headline": "China Expands Market Support",
+    "what": "The People’s Bank of China announced a program that could deploy about 100 billion yuan to support markets.",
+    "context": "Stocks rose in Shanghai and Hong Kong after steep recent declines.",
+    "why_it_matters": "Chinese demand and financial conditions can reach global manufacturers, commodity producers, and U.S. companies selling there.",
+    "concept_terms": ["market support", "financial conditions"],
     "sources": [
-      {
-        "name": "The Associated Press · global markets",
-        "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-b07c5abe1fbaacc7618aeb610eaa91e0",
-        "type": "wire"
-      },
-      {
-        "name": "Bank of Japan",
-        "href": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
-        "type": "primary"
-      }
+      {"name":"The Associated Press · global markets","href":"https://apnews.com/article/stocks-markets-ai-earnings-oil-iran-048328e49e47ce7afe6c1fb9d9acf13d","type":"wire"},
+      {"name":"World Bank · China overview","href":"https://www.worldbank.org/en/country/china/overview","type":"primary"}
     ],
     "developing": false,
-    "as_of": "2026-10-28T10:00:00-04:00",
-    "importance_score": 95,
+    "as_of": "2026-11-02T10:15:00-05:00",
+    "importance_score": 94,
     "needs_human_check": false
   },
   {
     "tag": "Policy",
     "qualifies": true,
-    "headline": "European Protests Strain Budgets",
-    "what": "Cost-of-living, housing, and public-service protests continued across several European countries.",
-    "context": "France faces weak growth, high public debt, and difficult budget choices.",
-    "why_it_matters": "Prolonged unrest can interrupt commerce and raise borrowing costs for European governments and companies.",
-    "concept_terms": [
-      "public debt",
-      "borrowing cost"
-    ],
+    "headline": "Australia Rate Decision Nears",
+    "what": "The Reserve Bank of Australia announces its policy decision Tuesday afternoon in Sydney.",
+    "context": "The decision can change Australian borrowing costs and the value of its currency.",
+    "why_it_matters": "Australia is a major commodity exporter, so its rates and currency can provide clues about demand across Asia.",
+    "concept_terms": ["policy rate", "commodity exporter"],
     "sources": [
-      {
-        "name": "The Associated Press · European protests",
-        "href": "https://apnews.com/article/210ff22c6746b9ec66438ac80740bc0e",
-        "type": "wire"
-      },
-      {
-        "name": "European Commission · France forecast",
-        "href": "https://economy-finance.ec.europa.eu/economic-surveillance-eu-member-states/country-pages-including-country-reports/france/economic-forecast-france_en",
-        "type": "primary"
-      }
+      {"name":"Reserve Bank of Australia · release schedule","href":"https://www.rba.gov.au/schedules-events/","type":"primary"},
+      {"name":"Reserve Bank of Australia · monetary policy","href":"https://www.rba.gov.au/monetary-policy/","type":"primary"}
     ],
     "developing": false,
-    "as_of": "2026-10-28T10:00:00-04:00",
-    "importance_score": 90,
+    "as_of": "2026-11-02T10:15:00-05:00",
+    "importance_score": 88,
     "needs_human_check": false
   }
 ]

@@ -2,7 +2,8 @@
   {
     "group": "International Indices",
     "name": "DAX",
-    "available": true,
+    "available": false,
+    "withheld_reason": "stale source observation",
     "display_value": "25,598.39",
     "display_change": "+0.1%",
     "change_percent": 0.1,
@@ -66,7 +67,8 @@
   {
     "group": "International Indices",
     "name": "Nikkei 225",
-    "available": true,
+    "available": false,
+    "withheld_reason": "stale source observation",
     "display_value": "64,094.51",
     "display_change": "+1.3%",
     "change_percent": 1.3,
@@ -138,7 +140,8 @@
   {
     "group": "International Indices",
     "name": "KOSPI",
-    "available": true,
+    "available": false,
+    "withheld_reason": "stale source observation",
     "display_value": "6,012.44",
     "display_change": "+6.6%",
     "change_percent": 6.6,

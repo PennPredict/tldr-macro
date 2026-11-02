@@ -1,20 +1,72 @@
 {
   "schema_version": 3,
-  "edition_date": "2026-10-28",
+  "edition_date": "2026-11-02",
   "reported_node_id": "oil",
-  "mobile_order": ["oil", "prices", "rates", "households"],
+  "mobile_order": ["oil", "prices", "rates", "borrowing"],
   "nodes": [
-    {"id":"oil","layer":"Fact","type":"FACT","tier":1,"label":"Oil jumped","subline":"Brent climbed in early trading after a refinery attack raised supply concerns.","precise":"Brent traded at $108.13 at 10:00 AM ET.","event_time":"2026-10-28T10:00:00-04:00","reference_period":"Wednesday early market","source":"CME Group","source_url":"https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html"},
-    {"id":"prices","layer":"Mechanism","type":"MECHANISM","tier":1,"label":"Energy can add to inflation","subline":"Oil affects fuel, shipping, and production costs.","precise":"Higher petroleum costs can pass through to transportation and goods prices.","event_time":"2026-10-28T10:00:00-04:00","reference_period":"Current economic relationship","mechanism_id":"oil-to-inflation-up","source":"U.S. Energy Information Administration","source_url":"https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"},
-    {"id":"rates","layer":"Mechanism","type":"MECHANISM","tier":1,"label":"Rates can stay high","subline":"Persistent inflation can limit room for rate cuts.","precise":"The Federal Reserve uses higher rates to slow demand and price growth.","event_time":"2026-10-28T10:00:00-04:00","reference_period":"Current economic relationship","mechanism_id":"inflation-to-rate-expectations","source":"Federal Reserve","source_url":"https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm","story_anchor":"story-rates"},
-    {"id":"households","layer":"Possible implication","type":"MECHANISM","tier":1,"label":"Loans can cost more","subline":"Mortgages, auto loans, and credit cards can become more expensive.","precise":"Market and policy rates influence the interest charged on household credit.","event_time":"2026-10-28T10:00:00-04:00","reference_period":"Current economic relationship","mechanism_id":"rates-to-borrowing","source":"Federal Reserve","source_url":"https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"}
+    {
+      "id": "oil",
+      "layer": "Fact",
+      "type": "FACT",
+      "tier": 1,
+      "label": "Oil prices fell",
+      "subline": "Brent dropped as Iran proposed reopening a major shipping route.",
+      "precise": "The Associated Press reported the early market move.",
+      "event_time": "2026-11-02T10:15:00-05:00",
+      "reference_period": "Monday early market",
+      "source": "The Associated Press",
+      "source_url": "https://apnews.com/article/stocks-markets-ai-earnings-oil-iran-048328e49e47ce7afe6c1fb9d9acf13d"
+    },
+    {
+      "id": "prices",
+      "layer": "Mechanism",
+      "type": "MECHANISM",
+      "tier": 1,
+      "label": "Energy inflation can ease",
+      "subline": "Cheaper oil can reduce fuel, shipping, and production costs.",
+      "precise": "The effect depends on how long lower prices last.",
+      "event_time": "2026-11-02T10:15:00-05:00",
+      "reference_period": "Current economic relationship",
+      "mechanism_id": "oil-to-inflation",
+      "source": "U.S. Energy Information Administration",
+      "source_url": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
+    },
+    {
+      "id": "rates",
+      "layer": "Possible implication",
+      "type": "MECHANISM",
+      "tier": 1,
+      "label": "Higher-rate odds can fall",
+      "subline": "Less inflation can reduce the need for higher interest rates.",
+      "precise": "Jobs, wages, and other prices still matter for Federal Reserve policy.",
+      "event_time": "2026-11-02T10:15:00-05:00",
+      "reference_period": "Current economic relationship",
+      "mechanism_id": "inflation-to-yield",
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm",
+      "story_anchor": "story-rates"
+    },
+    {
+      "id": "borrowing",
+      "layer": "Reader impact",
+      "type": "MECHANISM",
+      "tier": 1,
+      "label": "Loan costs may ease",
+      "subline": "Lower rates can make mortgages and other loans less expensive.",
+      "precise": "Actual borrowing costs also depend on the lender and borrower.",
+      "event_time": "2026-11-02T10:15:00-05:00",
+      "reference_period": "Current economic relationship",
+      "mechanism_id": "rates-to-borrowing",
+      "source": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+    }
   ],
   "edges": [
-    {"id":"oil-prices","from":"oil","to":"prices","type":"MECHANISM","tier":1,"mechanism_id":"oil-to-inflation-up","direction":"up"},
-    {"id":"prices-rates","from":"prices","to":"rates","type":"MECHANISM","tier":1,"mechanism_id":"inflation-to-rate-expectations","direction":"up"},
-    {"id":"rates-households","from":"rates","to":"households","type":"MECHANISM","tier":1,"mechanism_id":"rates-to-borrowing","direction":"up"}
+    {"id":"oil-prices","from":"oil","to":"prices","type":"MECHANISM","tier":1,"mechanism_id":"oil-to-inflation","direction":"down"},
+    {"id":"prices-rates","from":"prices","to":"rates","type":"MECHANISM","tier":1,"mechanism_id":"inflation-to-yield","direction":"down"},
+    {"id":"rates-borrowing","from":"rates","to":"borrowing","type":"MECHANISM","tier":1,"mechanism_id":"rates-to-borrowing","direction":"up"}
   ],
   "caption_candidates": [],
   "takeaway": "",
-  "other_factors_note": "Dashed links, not predictions."
+  "other_factors_note": "Possible links, not predictions."
 }

@@ -1,327 +1,56 @@
 [
   {
-    "topic_tag": "interest_rates_and_yields",
-    "headline": "Fed Decision Takes Center Stage",
-    "headline_evidence": {
-      "bucket": "interest_rates_and_yields",
-      "rule": "The October policy decision is scheduled for 2:00 PM ET.",
-      "data": "Federal Reserve calendar"
-    },
-    "commentary": "The Federal Reserve shares its rate decision at 2:00 PM ET. Its statement may offer clues about inflation, growth, and December policy.",
-    "defines": [
-      {
-        "term": "rate decision",
-        "definition": "The central bank’s choice about its main short-term interest-rate target.",
-        "used_by_and_why": "Borrowers and investors use it to understand where credit costs may head."
-      }
-    ],
-    "explains": [
-      {
-        "anchor_text": "may offer clues",
-        "why": "The statement describes how officials view the economy.",
-        "other_reading": "Future policy can change with new data."
-      }
-    ],
-    "visual": null,
-    "visual_gate": {
-      "passed": false,
-      "failures": [
-        "The scheduled decision is clearer in the calendar."
-      ],
-      "needs_human_check": false
-    },
-    "views": [
-      {
-        "view_id": "business",
-        "body": "Interest rates shape the cost of loans and expansion. The Fed’s explanation can matter as much as its decision.",
-        "keep_wondering": "How long do officials expect rates to stay high?",
-        "claims": [
-          {
-            "sentence_id": "fed-business-1",
-            "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar"
-          },
-          {
-            "sentence_id": "fed-business-2",
-            "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar"
-          }
-        ]
-      },
-      {
-        "view_id": "policy",
-        "body": "Officials are balancing high inflation against slower growth risks. Their statement will show which concern carries more weight.",
-        "keep_wondering": "Which part of the economy concerns officials most?",
-        "claims": [
-          {
-            "sentence_id": "fed-policy-1",
-            "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar"
-          },
-          {
-            "sentence_id": "fed-policy-2",
-            "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar"
-          }
-        ]
-      },
-      {
-        "view_id": "dealer",
-        "body": "Treasury prices can move when the Fed changes its outlook. Traders will compare the statement with current expectations.",
-        "keep_wondering": "Does the bond market read the decision differently?",
-        "claims": [
-          {
-            "sentence_id": "fed-dealer-1",
-            "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar"
-          },
-          {
-            "sentence_id": "fed-dealer-2",
-            "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar"
-          }
-        ]
-      }
-    ],
-    "sources": [
-      {
-        "name": "Federal Reserve",
-        "href": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar"
-      },
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/inflation-warsh-interest-rates-federal-reserve-c06793b0c50641444701d5d098ccc2c8"
-      }
-    ],
-    "data_note": "The decision remains scheduled and was not released at the 10:00 AM ET cutoff.",
-    "claims": [
-      {
-        "sentence_id": "fed-commentary-1",
-        "type": "fact",
-        "evidence": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar"
-      },
-      {
-        "sentence_id": "fed-commentary-2",
-        "type": "mechanism",
-        "evidence": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar"
-      }
-    ]
-  },
-  {
     "topic_tag": "oil_and_energy",
-    "headline": "Oil Prices Move Higher",
-    "headline_evidence": {
-      "bucket": "oil_and_energy",
-      "rule": "Brent rose almost 2% in early trading.",
-      "data": "Associated Press early market report"
-    },
-    "commentary": "Brent crude climbed almost 2% after an attack on a major Saudi refinery. The move keeps fuel, freight, and inflation risks in focus.",
-    "defines": [
-      {
-        "term": "Brent crude",
-        "definition": "A widely used reference price for oil sold around the world.",
-        "used_by_and_why": "Businesses and investors use it to track global energy costs."
-      }
-    ],
-    "explains": [
-      {
-        "anchor_text": "climbed almost 2% after",
-        "why": "The Associated Press linked the move with the refinery attack.",
-        "other_reading": "Oil prices also reflect demand, inventories, and shipping conditions."
-      }
-    ],
+    "headline": "Oil Prices Drop",
+    "headline_evidence": {"bucket":"oil_and_energy","rule":"Brent fell more than the large-move threshold.","data":"Brent was down 6.7% at 10:15 AM ET."},
+    "commentary": "Brent crude fell as Iran outlined a two-day plan to reopen the Strait of Hormuz. Cheaper oil can lower fuel and shipping costs if the move lasts.",
+    "defines": [{"term":"Brent crude","definition":"A widely used reference price for oil sold around the world.","used_by_and_why":"Businesses and investors use it to follow global energy costs."}],
+    "explains": [{"anchor_text":"fell as Iran outlined","why":"The Associated Press linked the price move with Iran’s reopening proposal.","other_reading":"Oil also changes with demand, inventories, and shipping conditions."}],
     "visual": null,
-    "visual_gate": {
-      "passed": false,
-      "failures": [
-        "No verified causal diagram was available at cutoff."
-      ],
-      "needs_human_check": false
-    },
+    "visual_gate": {"passed":false,"failures":["The market snapshot already presents the checked price move."],"needs_human_check":false},
     "views": [
-      {
-        "view_id": "household",
-        "body": "Oil prices can reach gasoline and airline costs. Sustained increases can leave households with less money for other purchases.",
-        "keep_wondering": "How quickly will higher crude prices reach fuel bills?",
-        "claims": [
-          {
-            "sentence_id": "oil-household-1",
-            "type": "mechanism",
-            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
-          },
-          {
-            "sentence_id": "oil-household-2",
-            "type": "mechanism",
-            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
-          }
-        ]
-      },
-      {
-        "view_id": "business",
-        "body": "Fuel and shipping are costs for many companies. Higher energy prices can narrow profits or reach customers through prices.",
-        "keep_wondering": "Which industries have the least room to absorb higher costs?",
-        "claims": [
-          {
-            "sentence_id": "oil-business-1",
-            "type": "mechanism",
-            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
-          },
-          {
-            "sentence_id": "oil-business-2",
-            "type": "mechanism",
-            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
-          }
-        ]
-      },
-      {
-        "view_id": "global",
-        "body": "Brent links global supply with buyers across many countries. Middle East disruptions can affect prices far beyond the region.",
-        "keep_wondering": "Do shipping routes remain open and insured?",
-        "claims": [
-          {
-            "sentence_id": "oil-global-1",
-            "type": "mechanism",
-            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
-          },
-          {
-            "sentence_id": "oil-global-2",
-            "type": "mechanism",
-            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
-          }
-        ]
-      }
+      {"view_id":"household","body":"Oil prices can reach gasoline and airline costs. A lasting decline may leave households with more money for other purchases.","keep_wondering":"Will lower crude prices reach fuel bills?","claims":[{"sentence_id":"oil-household-1","type":"mechanism","evidence":"https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"},{"sentence_id":"oil-household-2","type":"mechanism","evidence":"https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"}]},
+      {"view_id":"business","body":"Fuel and shipping are major costs for airlines and delivery firms. Lower prices can improve margins when companies keep customer prices unchanged.","keep_wondering":"Which industries gain most from cheaper fuel?","claims":[{"sentence_id":"oil-business-1","type":"mechanism","evidence":"https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"},{"sentence_id":"oil-business-2","type":"mechanism","evidence":"https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"}]},
+      {"view_id":"global","body":"The Strait of Hormuz is a key route for global energy shipments. Reopening it may reduce delays and insurance costs.","keep_wondering":"Will shipping resume without new disruptions?","claims":[{"sentence_id":"oil-global-1","type":"mechanism","evidence":"https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"},{"sentence_id":"oil-global-2","type":"mechanism","evidence":"https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"}]}
     ],
-    "sources": [
-      {
-        "name": "U.S. Energy Information Administration",
-        "href": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
-      },
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-b07c5abe1fbaacc7618aeb610eaa91e0"
-      }
-    ],
-    "data_note": "Brent was $111.38 in the early AP market report.",
-    "claims": [
-      {
-        "sentence_id": "oil-commentary-1",
-        "type": "attributed_cause",
-        "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-b07c5abe1fbaacc7618aeb610eaa91e0",
-        "attribution": "The Associated Press market report"
-      },
-      {
-        "sentence_id": "oil-commentary-2",
-        "type": "mechanism",
-        "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
-      }
-    ]
+    "sources": [{"name":"U.S. Energy Information Administration","href":"https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"},{"name":"The Associated Press","href":"https://apnews.com/article/stocks-markets-ai-earnings-oil-iran-048328e49e47ce7afe6c1fb9d9acf13d"}],
+    "data_note": "Brent was $105.87 at 10:15 AM ET.",
+    "claims": [{"sentence_id":"oil-commentary-1","type":"attributed_cause","evidence":"https://apnews.com/article/stocks-markets-ai-earnings-oil-iran-048328e49e47ce7afe6c1fb9d9acf13d","attribution":"The Associated Press market report"},{"sentence_id":"oil-commentary-2","type":"mechanism","evidence":"https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"}]
   },
   {
     "topic_tag": "companies",
-    "headline": "Technology Earnings Enter Focus",
-    "headline_evidence": {
-      "bucket": "companies",
-      "rule": "Alphabet and Microsoft report after Wednesday’s closing bell.",
-      "data": "Associated Press market report"
-    },
-    "commentary": "Alphabet and Microsoft report after the closing bell. The reports can show whether AI spending is producing enough sales and profit.",
-    "defines": [
-      {
-        "term": "reports",
-        "definition": "A company’s report on sales, costs, and profit for three months.",
-        "used_by_and_why": "Investors use it to compare business performance with expectations."
-      }
-    ],
-    "explains": [
-      {
-        "anchor_text": "can show",
-        "why": "Company reports disclose sales, costs, and profit.",
-        "other_reading": "One quarter does not settle the longer trend."
-      }
-    ],
+    "headline": "Technology Shares Recover",
+    "headline_evidence": {"bucket":"companies","rule":"Major technology shares regained part of Friday’s decline.","data":"Alphabet rose 2.4% and Nvidia rose 1.9% at 10:15 AM ET."},
+    "commentary": "Alphabet and Nvidia regained part of Friday’s drop. Investors want to see if artificial intelligence (AI) spending pays off.",
+    "defines": [{"term":"artificial intelligence (AI) spending","definition":"Money used for chips, data centers, software, and staff that build AI systems.","used_by_and_why":"Investors compare this spending with the sales and profit it creates."}],
+    "explains": [{"anchor_text":"regained part","why":"The Associated Press reported both shares higher in early trading.","other_reading":"One morning does not erase the wider decline."}],
     "visual": null,
-    "visual_gate": {
-      "passed": false,
-      "failures": [
-        "The earnings releases were not available at cutoff."
-      ],
-      "needs_human_check": false
-    },
+    "visual_gate": {"passed":false,"failures":["No separate checked causal visual was available at cutoff."],"needs_human_check":false},
     "views": [
-      {
-        "view_id": "household",
-        "body": "Large technology companies sit in many retirement funds. Their earnings can move broad indexes even when other shares are quiet.",
-        "keep_wondering": "How concentrated is your fund in large technology companies?",
-        "claims": [
-          {
-            "sentence_id": "tech-household-1",
-            "type": "mechanism",
-            "evidence": "https://www.sec.gov/answers/form10q.htm"
-          },
-          {
-            "sentence_id": "tech-household-2",
-            "type": "mechanism",
-            "evidence": "https://www.sec.gov/answers/form10q.htm"
-          }
-        ]
-      },
-      {
-        "view_id": "business",
-        "body": "Major technology earnings show whether heavy AI spending is producing revenue. Results can shape investment plans across the supply chain.",
-        "keep_wondering": "Will revenue growth justify current AI spending?",
-        "claims": [
-          {
-            "sentence_id": "tech-business-1",
-            "type": "mechanism",
-            "evidence": "https://www.sec.gov/answers/form10q.htm"
-          },
-          {
-            "sentence_id": "tech-business-2",
-            "type": "mechanism",
-            "evidence": "https://www.sec.gov/answers/form10q.htm"
-          }
-        ]
-      },
-      {
-        "view_id": "policy",
-        "body": "Large data centers require power, land, and financing. Officials may watch how fast those demands spread through local economies.",
-        "keep_wondering": "Which public systems face the greatest new demand?",
-        "claims": [
-          {
-            "sentence_id": "tech-policy-1",
-            "type": "mechanism",
-            "evidence": "https://www.sec.gov/answers/form10q.htm"
-          },
-          {
-            "sentence_id": "tech-policy-2",
-            "type": "mechanism",
-            "evidence": "https://www.sec.gov/answers/form10q.htm"
-          }
-        ]
-      }
+      {"view_id":"household","body":"Technology shares appear in many retirement and college savings funds. Large moves can change account balances even when other sectors are steady.","keep_wondering":"How concentrated is my fund in large technology companies?","claims":[{"sentence_id":"tech-household-1","type":"mechanism","evidence":"https://www.nasdaq.com/market-activity/index/comp"},{"sentence_id":"tech-household-2","type":"mechanism","evidence":"https://www.nasdaq.com/market-activity/index/comp"}]},
+      {"view_id":"business","body":"Large technology firms are spending heavily on computing capacity. Their results help suppliers judge demand for chips, power, and data centers.","keep_wondering":"Is AI investment producing enough new revenue?","claims":[{"sentence_id":"tech-business-1","type":"fact","evidence":"https://apnews.com/article/stocks-markets-ai-earnings-oil-iran-048328e49e47ce7afe6c1fb9d9acf13d"},{"sentence_id":"tech-business-2","type":"mechanism","evidence":"https://apnews.com/article/stocks-markets-ai-earnings-oil-iran-048328e49e47ce7afe6c1fb9d9acf13d"}]},
+      {"view_id":"policy","body":"Technology investment can raise productivity over time. Policymakers also watch competition and energy use around large data centers.","keep_wondering":"How will officials balance investment with competition concerns?","claims":[{"sentence_id":"tech-policy-1","type":"mechanism","evidence":"https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm"},{"sentence_id":"tech-policy-2","type":"mechanism","evidence":"https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm"}]}
     ],
-    "sources": [
-      {
-        "name": "U.S. Securities and Exchange Commission",
-        "href": "https://www.sec.gov/answers/form10q.htm"
-      },
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-b07c5abe1fbaacc7618aeb610eaa91e0"
-      }
+    "sources": [{"name":"Nasdaq Composite","href":"https://www.nasdaq.com/market-activity/index/comp"},{"name":"The Associated Press","href":"https://apnews.com/article/stocks-markets-ai-earnings-oil-iran-048328e49e47ce7afe6c1fb9d9acf13d"}],
+    "data_note": "The Nasdaq Composite was up 1.0% at 10:15 AM ET.",
+    "claims": [{"sentence_id":"tech-commentary-1","type":"fact","evidence":"https://apnews.com/article/stocks-markets-ai-earnings-oil-iran-048328e49e47ce7afe6c1fb9d9acf13d"},{"sentence_id":"tech-commentary-2","type":"fact","evidence":"https://apnews.com/article/stocks-markets-ai-earnings-oil-iran-048328e49e47ce7afe6c1fb9d9acf13d"}]
+  },
+  {
+    "topic_tag": "inflation_reports",
+    "headline": "Factory Price Growth Slows",
+    "headline_evidence": {"bucket":"inflation_reports","rule":"The manufacturing survey’s price measure rose more slowly.","data":"Institute for Supply Management survey released November 2."},
+    "commentary": "A Monday survey said U.S. manufacturing grew faster than economists expected. Its price measure rose more slowly, offering a current look at factory demand and input costs.",
+    "defines": [{"term":"price measure","definition":"A survey reading that tracks whether factories report paying more or less for supplies.","used_by_and_why":"Businesses and policymakers use it as an early sign of changing production costs."}],
+    "explains": [{"anchor_text":"grew faster","why":"The official survey improved more than economists expected.","other_reading":"One month does not establish a lasting trend."}],
+    "visual": null,
+    "visual_gate": {"passed":false,"failures":["The official release is clearer as text than as a causal diagram."],"needs_human_check":false},
+    "views": [
+      {"view_id":"household","body":"Factory costs can eventually reach prices for household goods. A slower increase does not mean prices are falling.","keep_wondering":"Will slower cost growth reach store prices?","claims":[{"sentence_id":"factory-household-1","type":"mechanism","evidence":"https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/"},{"sentence_id":"factory-household-2","type":"mechanism","evidence":"https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/"}]},
+      {"view_id":"business","body":"Manufacturers use the survey to compare new orders and supply costs. Better activity with slower cost growth can support planning.","keep_wondering":"Are new orders broad across industries?","claims":[{"sentence_id":"factory-business-1","type":"mechanism","evidence":"https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/"},{"sentence_id":"factory-business-2","type":"mechanism","evidence":"https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/"}]},
+      {"view_id":"policy","body":"The Federal Reserve watches both economic activity and prices. One survey adds evidence but does not settle the wider trend.","keep_wondering":"Do official price reports confirm the survey?","claims":[{"sentence_id":"factory-policy-1","type":"mechanism","evidence":"https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm"},{"sentence_id":"factory-policy-2","type":"mechanism","evidence":"https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/"}]}
     ],
-    "data_note": "The reports are scheduled after the market closes and are not included as outcomes.",
-    "claims": [
-      {
-        "sentence_id": "tech-commentary-1",
-        "type": "fact",
-        "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-b07c5abe1fbaacc7618aeb610eaa91e0"
-      },
-      {
-        "sentence_id": "tech-commentary-2",
-        "type": "mechanism",
-        "evidence": "https://www.sec.gov/answers/form10q.htm"
-      }
-    ]
+    "sources": [{"name":"Institute for Supply Management","href":"https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/"},{"name":"The Associated Press","href":"https://apnews.com/article/stocks-markets-ai-earnings-oil-iran-048328e49e47ce7afe6c1fb9d9acf13d"}],
+    "data_note": "The survey was released Monday morning.",
+    "claims": [{"sentence_id":"factory-commentary-1","type":"fact","evidence":"https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/"},{"sentence_id":"factory-commentary-2","type":"fact","evidence":"https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/"}]
   }
 ]

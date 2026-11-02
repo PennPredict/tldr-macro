@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T20:14:05.822Z",
+  "generated_at": "2026-11-02T15:41:39.630Z",
   "status": "passed",
   "checks": {
     "instrument_count": 16,
@@ -9,10 +9,7 @@
       "Brent crude oil",
       "Nasdaq Composite",
       "Dow Jones Industrial Average",
-      "Expected volatility",
-      "DAX",
-      "Nikkei 225",
-      "KOSPI"
+      "Expected volatility"
     ],
     "global_items_visible": 3,
     "badge_signs": []

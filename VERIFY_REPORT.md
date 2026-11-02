@@ -1,7 +1,7 @@
 # Verification report
 
-Generated: 2026-10-31T20:13:31.662Z
-Edition: 2026-10-28
+Generated: 2026-11-02T15:41:35.871Z
+Edition: 2026-11-02
 Status: PASSED
 
 ## Fixed
@@ -12,6 +12,9 @@ Status: PASSED
 - Hid inactive responsive market representation from assistive technology
 
 ## Withheld
+- DAX: stale source observation
+- Nikkei 225: stale source observation
+- KOSPI: stale source observation
 - Nasdaq Composite: stale source observation
 - Dow Jones Industrial Average: stale source observation
 - Russell 2000: 9:35 AM observation was not verified from an approved source
@@ -28,6 +31,7 @@ Status: PASSED
 - Silver futures: The latest approved-source observation was outside the edition freshness window
 
 ## Warnings
+- International Indices: 0 verified cards remain; withheld cards need new primary-source observations before restoration
 - Stocks: 0 verified cards remain; withheld cards need new primary-source observations before restoration
 - Rates: 0 verified cards remain; withheld cards need new primary-source observations before restoration
 - Currencies: 0 verified cards remain; withheld cards need new primary-source observations before restoration
