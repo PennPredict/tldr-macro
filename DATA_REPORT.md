@@ -1,6 +1,6 @@
 # Data Report
 
-Generated: 2026-11-02T15:41:39.629Z
+Generated: 2026-11-03T16:05:42.657Z
 
 | Instrument | Provider | Series | Frequency | Latest timestamp | Baseline | Chart points | Status |
 |---|---|---|---|---|---|---:|---|
@@ -51,12 +51,12 @@ Generated: 2026-11-02T15:41:39.629Z
 
 | Instrument | Fetched timestamp | Baseline | Display | Provider |
 |---|---|---|---|---|
-| S&P 500 | 2026-11-02T10:15:00-05:00 | Friday close 7,580.07 · Monday 10:15 AM +0.8% | 7,640.71 (+0.8%) | S&P Dow Jones Indices and The Associated Press |
-| 10-year Treasury yield | 2026-11-02T10:15:00-05:00 | Friday close 4.93% · Monday 10:15 AM 4.92% | 4.92% (−0.01 points) | U.S. Treasury and delayed market data |
-| Brent crude oil | 2026-11-02T10:15:00-05:00 | Friday close about $113.47 · Monday 10:15 AM $105.87 | $105.87 (−6.7%) | CME Group and The Associated Press |
-| Nasdaq Composite | 2026-11-02T10:15:00-05:00 | Friday close 25,437.00 · Monday 10:15 AM +1.0% | 25,691.37 (+1.0%) | Nasdaq and The Associated Press |
-| Dow Jones Industrial Average | 2026-11-02T10:15:00-05:00 | Friday close 51,770.31 · Monday 10:15 AM +547 points | 52,317.31 (+1.1%) | S&P Dow Jones Indices and The Associated Press |
-| Expected volatility | 2026-11-02T10:15:00-05:00 | Friday close 19.42 · Monday 10:15 AM 18.93 | 18.93 (−2.5%) | Cboe VIX |
+| S&P 500 | 2026-11-03T10:55:00-05:00 | Friday close 7,580.07 · Monday 10:15 AM +0.8% | 7,564.02 (+0.8%) | S&P Dow Jones Indices and The Associated Press |
+| 10-year Treasury yield | 2026-11-03T10:55:00-05:00 | Friday close 4.93% · Monday 10:15 AM 4.92% | 4.96% (−0.01 points) | U.S. Treasury and delayed market data |
+| Brent crude oil | 2026-11-03T10:55:00-05:00 | Friday close about $113.47 · Monday 10:15 AM $105.87 | $103.37 (−6.7%) | CME Group and The Associated Press |
+| Nasdaq Composite | 2026-11-03T10:55:00-05:00 | Monday close 25,164.36 · Tuesday 10:55 AM +0.9% | 25,390.45 (+0.9%) | Nasdaq and The Associated Press |
+| Dow Jones Industrial Average | 2026-11-03T10:55:00-05:00 | Friday close 51,770.31 · Monday 10:15 AM +547 points | 52,317.31 (+1.1%) | S&P Dow Jones Indices and The Associated Press |
+| Expected volatility | 2026-11-03T10:55:00-05:00 | Friday close 19.42 · Monday 10:15 AM 18.93 | 18.93 (−2.5%) | Cboe VIX |
 
 - Nasdaq Composite: 2026-10-02T16:00:00-04:00; 27,190.86; +1.19%; Nasdaq via FRED
 - Dow Jones Industrial Average: 2026-10-05T10:10:00-04:00; 51,267.90; +0.18%; S&P Dow Jones Indices via FRED

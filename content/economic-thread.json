@@ -1,8 +1,13 @@
 {
   "schema_version": 3,
-  "edition_date": "2026-11-02",
+  "edition_date": "2026-11-03",
   "reported_node_id": "oil",
-  "mobile_order": ["oil", "prices", "rates", "borrowing"],
+  "mobile_order": [
+    "oil",
+    "prices",
+    "rates",
+    "borrowing"
+  ],
   "nodes": [
     {
       "id": "oil",
@@ -10,22 +15,22 @@
       "type": "FACT",
       "tier": 1,
       "label": "Oil prices fell",
-      "subline": "Brent dropped as Iran proposed reopening a major shipping route.",
+      "subline": "Brent moved lower after a wide trading range.",
       "precise": "The Associated Press reported the early market move.",
-      "event_time": "2026-11-02T10:15:00-05:00",
-      "reference_period": "Monday early market",
+      "event_time": "2026-11-03T10:15:00-05:00",
+      "reference_period": "Tuesday early market",
       "source": "The Associated Press",
-      "source_url": "https://apnews.com/article/stocks-markets-ai-earnings-oil-iran-048328e49e47ce7afe6c1fb9d9acf13d"
+      "source_url": "https://apnews.com/article/0d235af127a92c68da0cc2c45c028cef"
     },
     {
       "id": "prices",
       "layer": "Mechanism",
       "type": "MECHANISM",
       "tier": 1,
-      "label": "Energy inflation can ease",
-      "subline": "Cheaper oil can reduce fuel, shipping, and production costs.",
+      "label": "Energy costs may ease",
+      "subline": "Cheaper oil can reduce fuel and shipping costs.",
       "precise": "The effect depends on how long lower prices last.",
-      "event_time": "2026-11-02T10:15:00-05:00",
+      "event_time": "2026-11-03T10:15:00-05:00",
       "reference_period": "Current economic relationship",
       "mechanism_id": "oil-to-inflation",
       "source": "U.S. Energy Information Administration",
@@ -36,10 +41,10 @@
       "layer": "Possible implication",
       "type": "MECHANISM",
       "tier": 1,
-      "label": "Higher-rate odds can fall",
-      "subline": "Less inflation can reduce the need for higher interest rates.",
+      "label": "Rate pressure can ease",
+      "subline": "Less price pressure can reduce the need for higher rates.",
       "precise": "Jobs, wages, and other prices still matter for Federal Reserve policy.",
-      "event_time": "2026-11-02T10:15:00-05:00",
+      "event_time": "2026-11-03T10:15:00-05:00",
       "reference_period": "Current economic relationship",
       "mechanism_id": "inflation-to-yield",
       "source": "Federal Reserve",
@@ -51,10 +56,10 @@
       "layer": "Reader impact",
       "type": "MECHANISM",
       "tier": 1,
-      "label": "Loan costs may ease",
-      "subline": "Lower rates can make mortgages and other loans less expensive.",
-      "precise": "Actual borrowing costs also depend on the lender and borrower.",
-      "event_time": "2026-11-02T10:15:00-05:00",
+      "label": "Loans may cost less",
+      "subline": "Lower rates can reduce some loan payments.",
+      "precise": "Actual costs also depend on the lender and borrower.",
+      "event_time": "2026-11-03T10:15:00-05:00",
       "reference_period": "Current economic relationship",
       "mechanism_id": "rates-to-borrowing",
       "source": "Federal Reserve",
@@ -62,9 +67,33 @@
     }
   ],
   "edges": [
-    {"id":"oil-prices","from":"oil","to":"prices","type":"MECHANISM","tier":1,"mechanism_id":"oil-to-inflation","direction":"down"},
-    {"id":"prices-rates","from":"prices","to":"rates","type":"MECHANISM","tier":1,"mechanism_id":"inflation-to-yield","direction":"down"},
-    {"id":"rates-borrowing","from":"rates","to":"borrowing","type":"MECHANISM","tier":1,"mechanism_id":"rates-to-borrowing","direction":"up"}
+    {
+      "id": "oil-prices",
+      "from": "oil",
+      "to": "prices",
+      "type": "MECHANISM",
+      "tier": 1,
+      "mechanism_id": "oil-to-inflation",
+      "direction": "down"
+    },
+    {
+      "id": "prices-rates",
+      "from": "prices",
+      "to": "rates",
+      "type": "MECHANISM",
+      "tier": 1,
+      "mechanism_id": "inflation-to-yield",
+      "direction": "down"
+    },
+    {
+      "id": "rates-borrowing",
+      "from": "rates",
+      "to": "borrowing",
+      "type": "MECHANISM",
+      "tier": 1,
+      "mechanism_id": "rates-to-borrowing",
+      "direction": "up"
+    }
   ],
   "caption_candidates": [],
   "takeaway": "",

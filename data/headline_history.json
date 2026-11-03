@@ -112,5 +112,20 @@
     "date": "2026-11-02",
     "topic": "inflation_reports",
     "headline": "Factory Price Growth Slows"
+  },
+  {
+    "date": "2026-11-03",
+    "topic": "jobs_and_wages",
+    "headline": "Job Openings Increase"
+  },
+  {
+    "date": "2026-11-03",
+    "topic": "companies",
+    "headline": "Big Technology Shares Split"
+  },
+  {
+    "date": "2026-11-03",
+    "topic": "oil_and_energy",
+    "headline": "Oil Prices Swing Lower"
   }
 ]

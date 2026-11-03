@@ -1,7 +1,7 @@
 # Verification report
 
-Generated: 2026-11-02T15:41:35.871Z
-Edition: 2026-11-02
+Generated: 2026-11-03T16:05:39.277Z
+Edition: 2026-11-03
 Status: PASSED
 
 ## Fixed
@@ -12,23 +12,28 @@ Status: PASSED
 - Hid inactive responsive market representation from assistive technology
 
 ## Withheld
-- DAX: stale source observation
-- Nikkei 225: stale source observation
-- KOSPI: stale source observation
-- Nasdaq Composite: stale source observation
-- Dow Jones Industrial Average: stale source observation
-- Russell 2000: 9:35 AM observation was not verified from an approved source
-- 2-year Treasury yield: daily source observation was relabeled with a current timestamp
-- 10-year minus 2-year yield spread: daily source observation was relabeled with a current timestamp
-- 30-year fixed mortgage rate: not verified
-- Euro to dollar: The latest approved-source observation was outside the edition freshness window
-- Dollar to yen: The latest approved-source observation was outside the edition freshness window
-- Pound to dollar: The latest approved-source observation was outside the edition freshness window
-- WTI crude oil: The latest approved-source observation was outside the edition freshness window
-- Natural gas: The latest approved-source observation was outside the edition freshness window
-- Copper: not verified
-- Gold: not verified
-- Silver futures: The latest approved-source observation was outside the edition freshness window
+- S&P 500: No approved exact index level was available within the publication window.
+- 10-year Treasury yield: The latest approved report was outside the ten-minute quote window.
+- Brent crude oil: The latest approved report was outside the ten-minute quote window.
+- Dow Jones Industrial Average: No approved exact index level was available within the publication window.
+- Expected volatility: No approved exact index level was available within the publication window.
+- DAX: No approved current observation was available at the edition cutoff.
+- Nikkei 225: No approved current observation was available at the edition cutoff.
+- KOSPI: No approved current observation was available at the edition cutoff.
+- Nasdaq Composite: No approved current observation was available at the edition cutoff.
+- Dow Jones Industrial Average: No approved current observation was available at the edition cutoff.
+- Russell 2000: No approved current observation was available at the edition cutoff.
+- 2-year Treasury yield: No approved current observation was available at the edition cutoff.
+- 10-year minus 2-year yield spread: No approved current observation was available at the edition cutoff.
+- 30-year fixed mortgage rate: No approved current observation was available at the edition cutoff.
+- Euro to dollar: No approved current observation was available at the edition cutoff.
+- Dollar to yen: No approved current observation was available at the edition cutoff.
+- Pound to dollar: No approved current observation was available at the edition cutoff.
+- WTI crude oil: No approved current observation was available at the edition cutoff.
+- Natural gas: No approved current observation was available at the edition cutoff.
+- Copper: No approved current observation was available at the edition cutoff.
+- Gold: No approved current observation was available at the edition cutoff.
+- Silver futures: No approved current observation was available at the edition cutoff.
 
 ## Warnings
 - International Indices: 0 verified cards remain; withheld cards need new primary-source observations before restoration
