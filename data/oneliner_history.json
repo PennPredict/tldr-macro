@@ -82,5 +82,17 @@
     "template_id": "three-market-plain",
     "lead_item": "oil",
     "qualifiers": []
+  },
+  {
+    "date": "2026-11-04",
+    "final_sentence": "Stocks jumped; government borrowing rates slipped; oil dropped.",
+    "facts": {
+      "stocks": 1.8,
+      "rates_basis_points": -5,
+      "oil": -9.2
+    },
+    "template_id": "three-market-plain",
+    "lead_item": "stocks",
+    "qualifiers": []
   }
 ]

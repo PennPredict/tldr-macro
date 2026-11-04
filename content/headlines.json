@@ -1,309 +1,98 @@
 [
   {
-    "topic_tag": "jobs_and_wages",
-    "headline": "Job Openings Increase",
-    "headline_evidence": {
-      "bucket": "jobs_and_wages",
-      "rule": "The official count rose from the revised prior month.",
-      "data": "September openings increased to 7.5 million from 7.19 million in August."
-    },
-    "commentary": "U.S. employers posted 7.5 million job openings in September, the most since May. Hiring rose and layoffs fell, but one month does not end the longer hiring slowdown.",
-    "defines": [
-      {
-        "term": "job openings",
-        "definition": "Positions employers are actively trying to fill.",
-        "used_by_and_why": "They help show demand for workers before jobs are filled."
-      }
-    ],
-    "explains": [
-      {
-        "anchor_text": "Hiring rose",
-        "why": "The official labor-turnover report recorded more hires and fewer layoffs.",
-        "other_reading": "Several months of improvement would be needed to establish a trend."
-      }
-    ],
+    "topic_tag": "budget_tariffs_taxes",
+    "headline": "Election Result Reshapes Markets",
+    "headline_evidence": {"bucket": "budget_tariffs_taxes", "rule": "The election changed control of Congress and produced broad sector moves.", "data": "Democrats won both chambers; the S&P 500 gained 1.8% by noon."},
+    "commentary": "Democrats won Congress, ending one-party control. Hospital, clean-energy, and discount-store shares rose; defense and energy shares fell.",
+    "defines": [{"term": "one-party control", "definition": "One political party controls the presidency and both chambers of Congress.", "used_by_and_why": "Divided control can limit large changes to taxes, spending, and regulation."}],
+    "explains": [{"anchor_text": "shares climbed", "why": "Investors reassessed which industries may gain or lose under a Democratic Congress.", "other_reading": "Company profits and interest rates usually matter more over time than one election."}],
     "visual": null,
-    "visual_gate": {
-      "passed": false,
-      "failures": [
-        "The official release is clearer as text than as a causal diagram."
-      ],
-      "needs_human_check": false
-    },
+    "visual_gate": {"passed": false, "failures": ["The verified sector moves are clearer as concise text."], "needs_human_check": false},
     "views": [
-      {
-        "view_id": "household",
-        "body": "More openings can improve workers’ choices and bargaining power. Open positions do not guarantee that employers will hire quickly.",
-        "keep_wondering": "Will openings turn into sustained hiring?",
-        "claims": [
-          {
-            "sentence_id": "jolts-household-1",
-            "type": "mechanism",
-            "evidence": "https://www.bls.gov/news.release/jolts.nr0.htm"
-          },
-          {
-            "sentence_id": "jolts-household-2",
-            "type": "mechanism",
-            "evidence": "https://www.bls.gov/news.release/jolts.nr0.htm"
-          }
-        ]
-      },
-      {
-        "view_id": "policy",
-        "body": "The Federal Reserve watches labor demand alongside inflation. Stronger demand can reduce urgency to lower interest rates.",
-        "keep_wondering": "Do payrolls confirm the improvement?",
-        "claims": [
-          {
-            "sentence_id": "jolts-policy-1",
-            "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm"
-          },
-          {
-            "sentence_id": "jolts-policy-2",
-            "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm"
-          }
-        ]
-      }
+      {"view_id": "business", "body": "Companies may face a different mix of oversight, taxes, and public spending. Executive authority over trade and foreign policy remains.", "keep_wondering": "Which policy changes can Congress actually pass?", "claims": [
+        {"sentence_id": "election-business-1", "type": "mechanism", "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"},
+        {"sentence_id": "election-business-2", "type": "fact", "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"}
+      ]},
+      {"view_id": "policy", "body": "A divided federal government can slow major fiscal changes. It may also increase investigations and bargaining over budgets.", "keep_wondering": "Will divided control restrain federal borrowing?", "claims": [
+        {"sentence_id": "election-policy-1", "type": "mechanism", "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"},
+        {"sentence_id": "election-policy-2", "type": "mechanism", "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"}
+      ]},
+      {"view_id": "global", "body": "The president still has broad authority over trade and foreign policy. Allies and exporters will watch tariffs, NATO spending, and the Iran war.", "keep_wondering": "Which foreign-policy choices change first?", "claims": [
+        {"sentence_id": "election-global-1", "type": "fact", "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"},
+        {"sentence_id": "election-global-2", "type": "mechanism", "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"}
+      ]}
     ],
     "sources": [
-      {
-        "name": "Bureau of Labor Statistics",
-        "href": "https://www.bls.gov/news.release/jolts.nr0.htm"
-      },
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/job-openings-economy-inflation-layoffs-4f6f06216c943fc2f8306306fd3056e3"
-      }
+      {"name": "S&P 500", "href": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/"},
+      {"name": "The Associated Press", "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"}
     ],
-    "data_note": "September openings: 7.5 million.",
+    "data_note": "S&P 500: +1.8% at noon ET.",
     "claims": [
-      {
-        "sentence_id": "jolts-commentary-1",
-        "type": "fact",
-        "evidence": "https://www.bls.gov/news.release/jolts.nr0.htm"
-      },
-      {
-        "sentence_id": "jolts-commentary-2",
-        "type": "fact",
-        "evidence": "https://apnews.com/article/job-openings-economy-inflation-layoffs-4f6f06216c943fc2f8306306fd3056e3"
-      }
+      {"sentence_id": "election-commentary-1", "type": "fact", "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"},
+      {"sentence_id": "election-commentary-2", "type": "fact", "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"}
     ]
   },
   {
-    "topic_tag": "companies",
-    "headline": "Big Technology Shares Split",
-    "headline_evidence": {
-      "bucket": "companies",
-      "rule": "Large technology companies moved in opposite directions.",
-      "data": "Nvidia, Broadcom, and AMD rose while Apple and Palantir fell at 10:15 AM ET."
-    },
-    "commentary": "Nvidia, Broadcom, and AMD advanced while Apple and Palantir declined. The split shows that one index gain can hide very different company results.",
-    "defines": [
-      {
-        "term": "index gain",
-        "definition": "An increase in the combined value of companies inside a market index.",
-        "used_by_and_why": "Large companies can lift the total even when many members fall."
-      }
-    ],
-    "explains": [
-      {
-        "anchor_text": "split shows",
-        "why": "The cited companies moved in opposite directions in the same session.",
-        "other_reading": "Company-specific news also shaped each move."
-      }
-    ],
+    "topic_tag": "inflation_reports",
+    "headline": "Service Growth Cools Slightly",
+    "headline_evidence": {"bucket": "inflation_reports", "rule": "The official services index remained above 50 but declined from September.", "data": "October Services PMI was 54.5, down from 54.9."},
+    "commentary": "The Services PMI indicated a twenty-eighth month of expansion, though at a slower pace. Employment improved, but high prices and slower deliveries remained concerns.",
+    "defines": [{"term": "Services PMI", "definition": "A survey of activity across service businesses such as retail, finance, and healthcare.", "used_by_and_why": "Readings above 50 usually signal expansion."}],
+    "explains": [{"anchor_text": "more slowly", "why": "The headline index fell to 54.5 from 54.9 in September.", "other_reading": "The index still showed broad expansion across fifteen industries."}],
     "visual": null,
-    "visual_gate": {
-      "passed": false,
-      "failures": [
-        "No separate checked causal visual was available at cutoff."
-      ],
-      "needs_human_check": false
-    },
+    "visual_gate": {"passed": false, "failures": ["The official index and subindexes are clearer as text."], "needs_human_check": false},
     "views": [
-      {
-        "view_id": "household",
-        "body": "Large technology companies occupy a big share of many retirement funds. Diversification matters when a few stocks drive the index.",
-        "keep_wondering": "How concentrated is my fund?",
-        "claims": [
-          {
-            "sentence_id": "split-household-1",
-            "type": "mechanism",
-            "evidence": "https://indexes.nasdaq.com/docs/FS_COMP.pdf"
-          },
-          {
-            "sentence_id": "split-household-2",
-            "type": "mechanism",
-            "evidence": "https://indexes.nasdaq.com/docs/FS_COMP.pdf"
-          }
-        ]
-      },
-      {
-        "view_id": "business",
-        "body": "Chipmakers gained while Apple warned that memory costs could reduce margins. Suppliers are benefiting unevenly from technology spending.",
-        "keep_wondering": "Which costs are rising fastest?",
-        "claims": [
-          {
-            "sentence_id": "split-business-1",
-            "type": "fact",
-            "evidence": "https://apnews.com/article/0d235af127a92c68da0cc2c45c028cef"
-          },
-          {
-            "sentence_id": "split-business-2",
-            "type": "mechanism",
-            "evidence": "https://apnews.com/article/0d235af127a92c68da0cc2c45c028cef"
-          }
-        ]
-      },
-      {
-        "view_id": "policy",
-        "body": "Heavy index concentration can amplify moves in a few companies. Regulators and investors watch whether market gains remain broad.",
-        "keep_wondering": "Are more companies participating?",
-        "claims": [
-          {
-            "sentence_id": "split-policy-1",
-            "type": "mechanism",
-            "evidence": "https://indexes.nasdaq.com/docs/FS_COMP.pdf"
-          },
-          {
-            "sentence_id": "split-policy-2",
-            "type": "mechanism",
-            "evidence": "https://indexes.nasdaq.com/docs/FS_COMP.pdf"
-          }
-        ]
-      }
+      {"view_id": "household", "body": "Service hiring improved for a second month. High input prices can still reach bills for travel, repairs, and other services.", "keep_wondering": "Will service prices reach household bills?", "claims": [
+        {"sentence_id": "services-household-1", "type": "fact", "evidence": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"},
+        {"sentence_id": "services-household-2", "type": "mechanism", "evidence": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"}
+      ]},
+      {"view_id": "business", "body": "Orders and activity grew more slowly while backlogs increased. Tariffs and fuel remained common concerns for purchasing managers.", "keep_wondering": "Can firms absorb higher input costs?", "claims": [
+        {"sentence_id": "services-business-1", "type": "fact", "evidence": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"},
+        {"sentence_id": "services-business-2", "type": "fact", "evidence": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"}
+      ]},
+      {"view_id": "policy", "body": "The survey showed expansion alongside persistent price increases. The Federal Reserve weighs activity and employment against those costs.", "keep_wondering": "Will price measures cool further?", "claims": [
+        {"sentence_id": "services-policy-1", "type": "fact", "evidence": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"},
+        {"sentence_id": "services-policy-2", "type": "mechanism", "evidence": "https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm"}
+      ]}
     ],
-    "sources": [
-      {
-        "name": "Nasdaq Composite",
-        "href": "https://www.nasdaq.com/market-activity/index/comp"
-      },
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/0d235af127a92c68da0cc2c45c028cef"
-      }
-    ],
-    "data_note": "Nasdaq Composite: +0.9% at 10:55 AM ET.",
+    "sources": [{"name": "Institute for Supply Management", "href": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"}],
+    "data_note": "October Services PMI: 54.5.",
     "claims": [
-      {
-        "sentence_id": "split-commentary-1",
-        "type": "fact",
-        "evidence": "https://apnews.com/article/0d235af127a92c68da0cc2c45c028cef"
-      },
-      {
-        "sentence_id": "split-commentary-2",
-        "type": "mechanism",
-        "evidence": "https://indexes.nasdaq.com/docs/FS_COMP.pdf"
-      }
+      {"sentence_id": "services-commentary-1", "type": "fact", "evidence": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"},
+      {"sentence_id": "services-commentary-2", "type": "fact", "evidence": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"}
     ]
   },
   {
     "topic_tag": "oil_and_energy",
-    "headline": "Oil Prices Swing Lower",
-    "headline_evidence": {
-      "bucket": "oil_and_energy",
-      "rule": "Brent moved lower after a wide intraday range.",
-      "data": "The Associated Press reported Brent down 1.3% after trading above $107 and below $101."
-    },
-    "commentary": "Brent crude fell after moving more than $6 from high to low. War and shipping risks keep fuel and transportation costs unstable.",
-    "defines": [
-      {
-        "term": "Brent crude",
-        "definition": "A widely used reference price for oil sold around the world.",
-        "used_by_and_why": "Businesses and investors use it to follow global energy costs."
-      }
-    ],
-    "explains": [
-      {
-        "anchor_text": "fell after moving",
-        "why": "The Associated Press documented the decline and the wide trading range.",
-        "other_reading": "Oil also changes with demand, inventories, and shipping conditions."
-      }
-    ],
+    "headline": "Oil Drops Below One Hundred Dollars",
+    "headline_evidence": {"bucket": "oil_and_energy", "rule": "The reported Brent price moved below $100 and fell more than the large-move threshold.", "data": "Brent fell 9.2% to $94.11 at noon."},
+    "commentary": "Brent crude fell 9.2% to $94.11 as the election changed expectations for the Iran war. Lower oil can reduce fuel and shipping costs, but the conflict still leaves supply uncertain.",
+    "defines": [{"term": "Brent crude", "definition": "A widely used reference price for oil sold around the world.", "used_by_and_why": "It helps track global energy costs."}],
+    "explains": [{"anchor_text": "changed expectations", "why": "A Democratic Congress may press for a pullback from the Iran war.", "other_reading": "The president retains authority over foreign policy and the conflict remains unresolved."}],
     "visual": null,
-    "visual_gate": {
-      "passed": false,
-      "failures": [
-        "No fresh exact price passed the publication window."
-      ],
-      "needs_human_check": false
-    },
+    "visual_gate": {"passed": false, "failures": ["The verified move does not have a clean daily series for a chart."], "needs_human_check": false},
     "views": [
-      {
-        "view_id": "household",
-        "body": "Oil prices can reach gasoline and airline costs. Large swings make household energy bills harder to predict.",
-        "keep_wondering": "Will lower crude prices reach fuel bills?",
-        "claims": [
-          {
-            "sentence_id": "oil-household-1",
-            "type": "mechanism",
-            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
-          },
-          {
-            "sentence_id": "oil-household-2",
-            "type": "mechanism",
-            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
-          }
-        ]
-      },
-      {
-        "view_id": "business",
-        "body": "Fuel and shipping are major costs for airlines, delivery firms, and manufacturers. Volatility complicates budgets even when the latest move is lower.",
-        "keep_wondering": "Which industries can pass on fuel costs?",
-        "claims": [
-          {
-            "sentence_id": "oil-business-1",
-            "type": "mechanism",
-            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
-          },
-          {
-            "sentence_id": "oil-business-2",
-            "type": "mechanism",
-            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
-          }
-        ]
-      },
-      {
-        "view_id": "global",
-        "body": "The Strait of Hormuz remains a key route for energy shipments. Disruption risk can raise freight and insurance costs worldwide.",
-        "keep_wondering": "Will shipping conditions stabilize?",
-        "claims": [
-          {
-            "sentence_id": "oil-global-1",
-            "type": "mechanism",
-            "evidence": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
-          },
-          {
-            "sentence_id": "oil-global-2",
-            "type": "mechanism",
-            "evidence": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
-          }
-        ]
-      }
+      {"view_id": "household", "body": "Oil prices can reach gasoline and airline costs. A lasting decline could ease household energy bills.", "keep_wondering": "Will lower crude reach gas prices?", "claims": [
+        {"sentence_id": "oil-household-1", "type": "mechanism", "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"},
+        {"sentence_id": "oil-household-2", "type": "mechanism", "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"}
+      ]},
+      {"view_id": "business", "body": "Fuel and shipping are major costs for airlines, delivery firms, and manufacturers. Lower crude can help margins if the move lasts.", "keep_wondering": "How long will the decline last?", "claims": [
+        {"sentence_id": "oil-business-1", "type": "mechanism", "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"},
+        {"sentence_id": "oil-business-2", "type": "mechanism", "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"}
+      ]},
+      {"view_id": "global", "body": "The Iran war still threatens oil production and shipping routes. Any renewed disruption could reverse the decline quickly.", "keep_wondering": "Will oil shipments remain secure?", "claims": [
+        {"sentence_id": "oil-global-1", "type": "fact", "evidence": "https://apnews.com/article/iran-midterms-trump-war-f3c48a92df2bd8a658d3e704a7291d11"},
+        {"sentence_id": "oil-global-2", "type": "mechanism", "evidence": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"}
+      ]}
     ],
     "sources": [
-      {
-        "name": "U.S. Energy Information Administration",
-        "href": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
-      },
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/0d235af127a92c68da0cc2c45c028cef"
-      }
+      {"name": "The Associated Press", "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"},
+      {"name": "U.S. Energy Information Administration", "href": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"}
     ],
-    "data_note": "Brent was down 1.3% in the 10:15 AM ET market report.",
+    "data_note": "Brent: $94.11, down 9.2% at noon ET.",
     "claims": [
-      {
-        "sentence_id": "oil-commentary-1",
-        "type": "fact",
-        "evidence": "https://apnews.com/article/0d235af127a92c68da0cc2c45c028cef"
-      },
-      {
-        "sentence_id": "oil-commentary-2",
-        "type": "mechanism",
-        "evidence": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
-      }
+      {"sentence_id": "oil-commentary-1", "type": "attributed_cause", "attribution": "The Associated Press", "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"},
+      {"sentence_id": "oil-commentary-2", "type": "mechanism", "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"}
     ]
   }
 ]

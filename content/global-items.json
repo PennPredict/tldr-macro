@@ -1,86 +1,53 @@
 [
   {
-    "tag": "Policy",
+    "tag": "Global markets",
     "qualifies": true,
-    "headline": "Australia Raises Interest Rates",
-    "what": "The Reserve Bank of Australia raised its cash-rate target by 0.25 percentage point to 4.85%.",
-    "context": "It was the bank’s fifth increase this year.",
-    "why_it_matters": "Australian rates influence its currency, housing costs, and a commodity-exporting economy tied closely to Asian demand.",
-    "concept_terms": [
-      "cash-rate target",
-      "commodity exporter"
-    ],
+    "headline": "World Shares Advance Unevenly",
+    "what": "Indexes gained 2% in Paris, 2.2% in Shanghai, and 1.8% in London, while Japan’s Nikkei 225 fell 1.4%.",
+    "context": "Markets worldwide reacted differently to the U.S. election result and its possible policy effects.",
+    "why_it_matters": "Foreign moves can reach U.S. exporters, retirement funds, currencies, and technology supply chains.",
+    "concept_terms": ["Nikkei 225", "global index"],
     "sources": [
-      {
-        "name": "Reserve Bank of Australia",
-        "href": "https://www.rba.gov.au/monetary-policy/int-rate-decisions/2026/mp-decision-2026-11-03.html",
-        "type": "primary"
-      },
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/0d235af127a92c68da0cc2c45c028cef",
-        "type": "wire"
-      }
+      {"name": "S&P Dow Jones Indices", "href": "https://www.spglobal.com/spdji/en/indices/equity/sp-global-1200/", "type": "primary"},
+      {"name": "The Associated Press", "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182", "type": "wire"}
     ],
     "developing": false,
-    "as_of": "2026-11-03T10:15:00-05:00",
-    "importance_score": 98,
+    "as_of": "2026-11-04T12:00:00-05:00",
+    "importance_score": 99,
     "needs_human_check": false
   },
   {
-    "tag": "Global markets",
+    "tag": "Conflict",
     "qualifies": true,
-    "headline": "South Korean Technology Shares Fall",
-    "what": "South Korea’s KOSPI fell 3.6% as Samsung Electronics and SK Hynix declined.",
-    "context": "The index is heavily exposed to memory chips and global technology demand.",
-    "why_it_matters": "Weakness in major chipmakers can signal pressure on a supply chain used by U.S. technology companies.",
-    "concept_terms": [
-      "KOSPI",
-      "memory chips"
-    ],
+    "headline": "Iran War Outlook Shifts",
+    "what": "Iranian leaders said the U.S. election rejected the war, while talks continued and U.S. troops remained near Iran.",
+    "context": "A naval blockade still limits Iranian oil shipments and renewed fighting remains possible.",
+    "why_it_matters": "The conflict can move oil prices, shipping costs, inflation, and government budgets worldwide.",
+    "concept_terms": ["naval blockade", "oil shipments"],
     "sources": [
-      {
-        "name": "Korea Exchange",
-        "href": "https://www.krx.co.kr/",
-        "type": "primary"
-      },
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/0d235af127a92c68da0cc2c45c028cef",
-        "type": "wire"
-      }
-    ],
-    "developing": false,
-    "as_of": "2026-11-03T10:15:00-05:00",
-    "importance_score": 94,
-    "needs_human_check": false
-  },
-  {
-    "tag": "Global markets",
-    "qualifies": true,
-    "headline": "European Markets Trade Unevenly",
-    "what": "Major European indexes were mixed while investors weighed higher oil prices and shifting interest-rate expectations.",
-    "context": "The region imports substantial energy and trades heavily with the United States and Asia.",
-    "why_it_matters": "Changes in European demand can reach U.S. exporters, banks, and global manufacturers.",
-    "concept_terms": [
-      "interest-rate expectations",
-      "energy importer"
-    ],
-    "sources": [
-      {
-        "name": "European Central Bank",
-        "href": "https://www.ecb.europa.eu/stats/macroeconomic_and_sectoral/eaa/html/index.en.html",
-        "type": "primary"
-      },
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/0d235af127a92c68da0cc2c45c028cef",
-        "type": "wire"
-      }
+      {"name": "U.S. Energy Information Administration", "href": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints", "type": "primary"},
+      {"name": "The Associated Press", "href": "https://apnews.com/article/iran-midterms-trump-war-f3c48a92df2bd8a658d3e704a7291d11", "type": "wire"}
     ],
     "developing": true,
-    "as_of": "2026-11-03T10:15:00-05:00",
-    "importance_score": 84,
+    "as_of": "2026-11-04T12:00:00-05:00",
+    "importance_score": 97,
+    "needs_human_check": true
+  },
+  {
+    "tag": "Policy",
+    "qualifies": true,
+    "headline": "European Cost Protests Continue",
+    "what": "Demonstrations across several European countries have focused on housing, education, fuel, and public services.",
+    "context": "The protests reflect strain from living costs and limited government budgets.",
+    "why_it_matters": "Public demands can alter taxes, spending, energy policy, and demand for goods sold by U.S. companies.",
+    "concept_terms": ["cost of living", "public spending"],
+    "sources": [
+      {"name": "Eurostat", "href": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Housing_in_Europe_–_2025_edition", "type": "primary"},
+      {"name": "The Associated Press", "href": "https://apnews.com/article/210ff22c6746b9ec66438ac80740bc0e", "type": "wire"}
+    ],
+    "developing": true,
+    "as_of": "2026-11-04T12:00:00-05:00",
+    "importance_score": 89,
     "needs_human_check": false
   }
 ]

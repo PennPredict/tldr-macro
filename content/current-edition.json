@@ -1,18 +1,18 @@
 {
-  "edition_date": "2026-11-03",
-  "updated_at": "2026-11-03T10:55:00-05:00",
-  "summary": "Shares edged up; Treasury yields edged up; crude oil fell.",
+  "edition_date": "2026-11-04",
+  "updated_at": "2026-11-04T13:17:00-05:00",
+  "summary": "Stocks jumped; government borrowing rates slipped; oil dropped.",
   "markets": [
     {
       "name": "S&P 500",
       "kind": "equity_index",
-      "value": 7564.02,
-      "display_value": "7,564.02",
+      "value": 7700.18,
+      "display_value": "7,700.18",
       "baseline": "prior_close",
-      "prior_close": 7541.4,
-      "change_percent": 0.3,
-      "display_change": "+0.8%",
-      "description": "The S&P 500 tracks large U.S. companies and many retirement funds. Its broad gain points to improving investor confidence after Friday’s selloff.",
+      "prior_close": 7564.02,
+      "change_percent": 1.8,
+      "display_change": "+1.8%",
+      "description": "The S&P 500 tracks large U.S. companies and many retirement funds. It rose broadly after the midterm election.",
       "so_what": {
         "channel_id": "sp500",
         "context": {
@@ -31,12 +31,12 @@
         {
           "sentence_id": "sp500-description-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stocks-markets-ai-earnings-oil-iran-048328e49e47ce7afe6c1fb9d9acf13d"
+          "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"
         }
       ],
       "data_source": "S&P Dow Jones Indices and The Associated Press",
-      "fetched_at": "2026-11-03T10:55:00-05:00",
-      "range": "Friday close 7,580.07 · Monday 10:15 AM +0.8%",
+      "fetched_at": "2026-11-04T13:17:00-05:00",
+      "range": "Tuesday close 7,564.02 · Wednesday noon +1.8%",
       "points": [
         7718.94,
         7744.06,
@@ -54,7 +54,7 @@
         7692.12,
         7738.05,
         7640.71,
-        7564.02
+        7700.18
       ],
       "sources": [
         {
@@ -79,7 +79,7 @@
         "2026-10-27T10:30:00-04:00",
         "2026-10-28T10:00:00-04:00",
         "2026-11-02T10:15:00-05:00",
-        "2026-11-03T10:55:00-05:00"
+        "2026-11-04T13:17:00-05:00"
       ],
       "available": false,
       "withheld_reason": "No approved exact index level was available within the publication window."
@@ -87,13 +87,13 @@
     {
       "name": "10-year Treasury yield",
       "kind": "yield",
-      "value": 4.96,
-      "display_value": "4.96%",
+      "value": 4.9,
+      "display_value": "4.90%",
       "baseline": "prior_close",
-      "prior_close": 4.91,
-      "change_percent": 1.02,
-      "display_change": "−0.01 points",
-      "description": "The 10-year Treasury yield helps set long-term borrowing costs. It was nearly unchanged in early trading.",
+      "prior_close": 4.95,
+      "change_percent": -1.01,
+      "display_change": "−0.05 points",
+      "description": "The 10-year Treasury yield helps set long-term borrowing costs. It fell five hundredths of a percentage point.",
       "so_what": {
         "channel_id": "yield10",
         "context": {
@@ -116,8 +116,8 @@
         }
       ],
       "data_source": "U.S. Treasury and delayed market data",
-      "fetched_at": "2026-11-03T10:55:00-05:00",
-      "range": "Friday close 4.93% · Monday 10:15 AM 4.92%",
+      "fetched_at": "2026-11-04T13:17:00-05:00",
+      "range": "Tuesday close 4.95% · Wednesday noon 4.90%",
       "points": [
         5.19,
         5.1,
@@ -135,7 +135,7 @@
         4.99,
         5,
         4.921,
-        4.96
+        4.9
       ],
       "sources": [
         {
@@ -160,7 +160,7 @@
         "2026-10-27T10:30:00-04:00",
         "2026-10-28T10:00:00-04:00",
         "2026-11-02T10:15:00-05:00",
-        "2026-11-03T10:55:00-05:00"
+        "2026-11-04T13:17:00-05:00"
       ],
       "available": false,
       "withheld_reason": "The latest approved report was outside the ten-minute quote window."
@@ -168,13 +168,13 @@
     {
       "name": "Brent crude oil",
       "kind": "commodity",
-      "value": 103.37,
-      "display_value": "$103.37",
+      "value": 94.11,
+      "display_value": "$94.11",
       "baseline": "prior_close",
-      "prior_close": 104.73,
-      "change_percent": -1.3,
-      "display_change": "−6.7%",
-      "description": "Brent is a reference price for oil sold worldwide. It dropped as Iran outlined a plan to reopen the Strait of Hormuz.",
+      "prior_close": 103.65,
+      "change_percent": -9.2,
+      "display_change": "−9.2%",
+      "description": "Brent is a reference price for oil sold worldwide. It fell below $100 as investors reassessed the Iran war after the election.",
       "so_what": {
         "channel_id": "brent",
         "context": {
@@ -194,12 +194,12 @@
         {
           "sentence_id": "brent-description-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stocks-markets-ai-earnings-oil-iran-048328e49e47ce7afe6c1fb9d9acf13d"
+          "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"
         }
       ],
       "data_source": "CME Group and The Associated Press",
-      "fetched_at": "2026-11-03T10:55:00-05:00",
-      "range": "Friday close about $113.47 · Monday 10:15 AM $105.87",
+      "fetched_at": "2026-11-04T13:17:00-05:00",
+      "range": "Tuesday close about $103.65 · Wednesday noon $94.11",
       "points": [
         106.65,
         105.92,
@@ -217,7 +217,7 @@
         110.37,
         111.38,
         105.87,
-        103.37
+        94.11
       ],
       "sources": [
         {
@@ -242,7 +242,7 @@
         "2026-10-27T10:30:00-04:00",
         "2026-10-28T10:00:00-04:00",
         "2026-11-02T10:15:00-05:00",
-        "2026-11-03T10:55:00-05:00"
+        "2026-11-04T13:17:00-05:00"
       ],
       "available": false,
       "withheld_reason": "The latest approved report was outside the ten-minute quote window."
@@ -250,13 +250,13 @@
     {
       "name": "Nasdaq Composite",
       "kind": "equity_index",
-      "value": 25390.45,
-      "display_value": "25,390.45",
+      "value": 25900.84,
+      "display_value": "25,900.84",
       "baseline": "prior_close",
-      "prior_close": 25164.36,
-      "change_percent": 0.9,
-      "display_change": "+0.9%",
-      "description": "The Nasdaq has many technology stocks. Nvidia, Broadcom, and AMD rose while Apple and Palantir fell.",
+      "prior_close": 25372.01,
+      "change_percent": 2.08,
+      "display_change": "+2.08%",
+      "description": "The Nasdaq has many technology stocks. It rose even as Nvidia slipped and tighter AI rules remained possible.",
       "so_what": {
         "channel_id": "nasdaq",
         "context": {
@@ -275,12 +275,12 @@
         {
           "sentence_id": "nasdaq-description-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/0d235af127a92c68da0cc2c45c028cef"
+          "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"
         }
       ],
       "data_source": "Nasdaq and The Associated Press",
-      "fetched_at": "2026-11-03T10:55:00-05:00",
-      "range": "Monday close 25,164.36 · Tuesday 10:55 AM +0.9%",
+      "fetched_at": "2026-11-04T13:17:00-05:00",
+      "range": "Tuesday close 25,372.01 · Wednesday 1:17 PM 25,900.84",
       "points": [
         26272.3,
         26530.52,
@@ -294,7 +294,7 @@
         26326.4,
         26583.72,
         25691.37,
-        25390.45
+        25900.84
       ],
       "sources": [
         {
@@ -303,7 +303,7 @@
         },
         {
           "name": "The Associated Press",
-          "href": "https://apnews.com/article/0d235af127a92c68da0cc2c45c028cef"
+          "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"
         }
       ],
       "series_dates": [
@@ -319,20 +319,20 @@
         "2026-10-27T10:30:00-04:00",
         "2026-10-28T10:00:00-04:00",
         "2026-11-02T10:15:00-05:00",
-        "2026-11-03T10:55:00-05:00"
+        "2026-11-04T13:17:00-05:00"
       ],
       "available": true
     },
     {
       "name": "Dow Jones Industrial Average",
       "kind": "equity_index",
-      "value": 52317.31,
-      "display_value": "52,317.31",
+      "value": 53841.31,
+      "display_value": "53,841.31",
       "baseline": "prior_close",
-      "prior_close": 51770.31,
-      "change_percent": 1.06,
-      "display_change": "+1.1%",
-      "description": "The Dow tracks 30 established U.S. companies. It gained about 547 points in early trading.",
+      "prior_close": 52317.31,
+      "change_percent": 2.91,
+      "display_change": "+2.9%",
+      "description": "The Dow tracks 30 established U.S. companies. It gained about 1,524 points by noon.",
       "so_what": {
         "channel_id": "dow",
         "context": {
@@ -355,8 +355,8 @@
         }
       ],
       "data_source": "S&P Dow Jones Indices and The Associated Press",
-      "fetched_at": "2026-11-03T10:55:00-05:00",
-      "range": "Friday close 51,770.31 · Monday 10:15 AM +547 points",
+      "fetched_at": "2026-11-04T13:17:00-05:00",
+      "range": "Tuesday close 52,317.31 · Wednesday noon +1,524 points",
       "points": [
         51621.48,
         52177.69,
@@ -374,7 +374,7 @@
         52273.58,
         52421.57,
         52317.31,
-        52317.31
+        53841.31
       ],
       "sources": [
         {
@@ -399,7 +399,7 @@
         "2026-10-27T10:30:00-04:00",
         "2026-10-28T10:00:00-04:00",
         "2026-11-02T10:15:00-05:00",
-        "2026-11-03T10:55:00-05:00"
+        "2026-11-04T13:17:00-05:00"
       ],
       "available": false,
       "withheld_reason": "No approved exact index level was available within the publication window."
@@ -436,7 +436,7 @@
         }
       ],
       "data_source": "Cboe VIX",
-      "fetched_at": "2026-11-03T10:55:00-05:00",
+      "fetched_at": "2026-11-04T13:17:00-05:00",
       "range": "Friday close 19.42 · Monday 10:15 AM 18.93",
       "points": [
         15.21,
@@ -480,7 +480,7 @@
         "2026-10-27T10:30:00-04:00",
         "2026-10-28T10:00:00-04:00",
         "2026-11-02T10:15:00-05:00",
-        "2026-11-03T10:55:00-05:00"
+        "2026-11-04T13:17:00-05:00"
       ],
       "available": false,
       "withheld_reason": "No approved exact index level was available within the publication window."
@@ -488,34 +488,19 @@
   ],
   "calendar": [
     {
-      "date": "NOV 4",
+      "date": "NOV 5",
       "time": "8:30 AM ET",
-      "start_at": "2026-11-04T08:30:00-05:00",
-      "title": "International Trade",
-      "definition": "Measures the gap between what the United States sells abroad and buys from other countries.",
-      "prior": "September trade report · BEA and Census Bureau",
+      "start_at": "2026-11-05T08:30:00-05:00",
+      "title": "Productivity and Costs",
+      "definition": "Measures how much workers produce and how labor costs change per unit of output.",
+      "prior": "Third-quarter preliminary report · BLS",
       "consensus": "",
-      "hot_label": "If the trade gap widens",
-      "cool_label": "If the trade gap narrows",
-      "hot": "More imports than exports can subtract from measured economic growth.",
-      "cool": "A smaller gap can add to measured economic growth.",
-      "source": "Bureau of Economic Analysis release schedule",
-      "href": "https://www.bea.gov/news/schedule"
-    },
-    {
-      "date": "NOV 4",
-      "time": "10:00 AM ET",
-      "start_at": "2026-11-04T10:00:00-05:00",
-      "title": "ISM Services Index",
-      "definition": "Surveys activity, hiring, and prices across service businesses.",
-      "prior": "October services survey · ISM",
-      "consensus": "",
-      "hot_label": "If activity strengthens",
-      "cool_label": "If activity weakens",
-      "hot": "Faster service growth can support jobs while keeping price concerns active.",
-      "cool": "Slower activity can point to weaker demand across most of the economy.",
-      "source": "Institute for Supply Management",
-      "href": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/"
+      "hot_label": "If productivity rises",
+      "cool_label": "If labor costs accelerate",
+      "hot": "More output per hour can support wages without the same rise in prices.",
+      "cool": "Faster labor costs can squeeze business margins or reach prices.",
+      "source": "BLS release calendar",
+      "href": "https://www.bls.gov/schedule/2026/11_sched.htm"
     },
     {
       "date": "NOV 5",
@@ -544,6 +529,21 @@
       "cool_label": "If job growth weakens",
       "hot": "Strong demand for workers can keep inflation concerns active.",
       "cool": "A softer report can increase concern about growth and jobs.",
+      "source": "BLS release calendar",
+      "href": "https://www.bls.gov/schedule/2026/11_sched.htm"
+    },
+    {
+      "date": "NOV 10",
+      "time": "8:30 AM ET",
+      "start_at": "2026-11-10T08:30:00-05:00",
+      "title": "Consumer Price Index",
+      "definition": "Tracks changes in prices paid by households for common goods and services.",
+      "prior": "October inflation report · BLS",
+      "consensus": "",
+      "hot_label": "If prices rise faster",
+      "cool_label": "If price growth slows",
+      "hot": "Higher inflation can keep borrowing costs elevated for longer.",
+      "cool": "Slower inflation can give the Federal Reserve more policy flexibility.",
       "source": "BLS release calendar",
       "href": "https://www.bls.gov/schedule/2026/11_sched.htm"
     }
