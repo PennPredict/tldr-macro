@@ -142,5 +142,20 @@
     "date": "2026-11-04",
     "topic": "oil_and_energy",
     "headline": "Oil Drops Below One Hundred Dollars"
+  },
+  {
+    "date": "2026-11-06",
+    "topic": "jobs_and_wages",
+    "headline": "Hiring Accelerates"
+  },
+  {
+    "date": "2026-11-06",
+    "topic": "companies",
+    "headline": "AI Shares Recover"
+  },
+  {
+    "date": "2026-11-06",
+    "topic": "interest_rates_and_yields",
+    "headline": "Treasury Yields Edge Higher"
   }
 ]

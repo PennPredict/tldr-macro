@@ -33,5 +33,12 @@
     "reason": "The required three-market template resembles earlier editions, while today’s stock gain, yield decline, and oil drop are separately verified.",
     "evidence_url": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182",
     "expires_at": "2026-11-04T17:00:00-05:00"
+  },
+  {
+    "id": "summary-similarity-2026-11-06",
+    "owner": "TL;DR Macro editorial",
+    "reason": "The required checked template resembles the November 4 edition, while Friday's verified stock, yield, and oil directions and closing observations are distinct.",
+    "evidence_url": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89",
+    "expires_at": "2026-11-06T23:59:00-05:00"
   }
 ]

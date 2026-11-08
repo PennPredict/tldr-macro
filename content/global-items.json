@@ -2,52 +2,85 @@
   {
     "tag": "Global markets",
     "qualifies": true,
-    "headline": "World Shares Advance Unevenly",
-    "what": "Indexes gained 2% in Paris, 2.2% in Shanghai, and 1.8% in London, while Japan’s Nikkei 225 fell 1.4%.",
-    "context": "Markets worldwide reacted differently to the U.S. election result and its possible policy effects.",
-    "why_it_matters": "Foreign moves can reach U.S. exporters, retirement funds, currencies, and technology supply chains.",
-    "concept_terms": ["Nikkei 225", "global index"],
+    "headline": "Asian Markets Drop Sharply",
+    "what": "Major indexes in Tokyo and Seoul lost about 6% Friday.",
+    "context": "Technology shares remained under strain after Thursday's U.S. sell-off.",
+    "why_it_matters": "Asian moves can reach U.S. technology suppliers and global funds.",
+    "concept_terms": [
+      "Asian indexes",
+      "technology shares"
+    ],
     "sources": [
-      {"name": "S&P Dow Jones Indices", "href": "https://www.spglobal.com/spdji/en/indices/equity/sp-global-1200/", "type": "primary"},
-      {"name": "The Associated Press", "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182", "type": "wire"}
+      {
+        "name": "Korea Exchange",
+        "href": "https://global.krx.co.kr/",
+        "type": "primary"
+      },
+      {
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89",
+        "type": "wire"
+      }
     ],
     "developing": false,
-    "as_of": "2026-11-04T12:00:00-05:00",
+    "as_of": "2026-11-06T16:00:00-05:00",
     "importance_score": 99,
     "needs_human_check": false
   },
   {
-    "tag": "Conflict",
+    "tag": "Global markets",
     "qualifies": true,
-    "headline": "Iran War Outlook Shifts",
-    "what": "Iranian leaders said the U.S. election rejected the war, while talks continued and U.S. troops remained near Iran.",
-    "context": "A naval blockade still limits Iranian oil shipments and renewed fighting remains possible.",
-    "why_it_matters": "The conflict can move oil prices, shipping costs, inflation, and government budgets worldwide.",
-    "concept_terms": ["naval blockade", "oil shipments"],
-    "sources": [
-      {"name": "U.S. Energy Information Administration", "href": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints", "type": "primary"},
-      {"name": "The Associated Press", "href": "https://apnews.com/article/iran-midterms-trump-war-f3c48a92df2bd8a658d3e704a7291d11", "type": "wire"}
+    "headline": "German Stocks Lose Ground",
+    "what": "Germany's DAX declined 1.9% even though Europe has fewer AI-heavy indexes.",
+    "context": "The move extended a global week of sharp repricing.",
+    "why_it_matters": "European weakness can affect U.S. exporters and international funds.",
+    "concept_terms": [
+      "DAX",
+      "European stocks"
     ],
-    "developing": true,
-    "as_of": "2026-11-04T12:00:00-05:00",
-    "importance_score": 97,
-    "needs_human_check": true
+    "sources": [
+      {
+        "name": "Deutsche Börse",
+        "href": "https://www.deutsche-boerse.com/dbg-en/",
+        "type": "primary"
+      },
+      {
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89",
+        "type": "wire"
+      }
+    ],
+    "developing": false,
+    "as_of": "2026-11-06T16:00:00-05:00",
+    "importance_score": 94,
+    "needs_human_check": false
   },
   {
     "tag": "Policy",
     "qualifies": true,
-    "headline": "European Cost Protests Continue",
-    "what": "Demonstrations across several European countries have focused on housing, education, fuel, and public services.",
-    "context": "The protests reflect strain from living costs and limited government budgets.",
-    "why_it_matters": "Public demands can alter taxes, spending, energy policy, and demand for goods sold by U.S. companies.",
-    "concept_terms": ["cost of living", "public spending"],
+    "headline": "Data Center Protests Spread",
+    "what": "Protests reached projects across Europe, including a Microsoft site in Amsterdam.",
+    "context": "Campaigners cited electricity, water, and local oversight concerns.",
+    "why_it_matters": "Delays could change demand for chips, power, construction, and cloud capacity.",
+    "concept_terms": [
+      "data centers",
+      "power demand"
+    ],
     "sources": [
-      {"name": "Eurostat", "href": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Housing_in_Europe_–_2025_edition", "type": "primary"},
-      {"name": "The Associated Press", "href": "https://apnews.com/article/210ff22c6746b9ec66438ac80740bc0e", "type": "wire"}
+      {
+        "name": "European Commission",
+        "href": "https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-products/data-centres_en",
+        "type": "primary"
+      },
+      {
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/b4f3f9f368697bb37416bcb4fabdd67c",
+        "type": "wire"
+      }
     ],
     "developing": true,
-    "as_of": "2026-11-04T12:00:00-05:00",
-    "importance_score": 89,
+    "as_of": "2026-11-06T16:00:00-05:00",
+    "importance_score": 90,
     "needs_human_check": false
   }
 ]

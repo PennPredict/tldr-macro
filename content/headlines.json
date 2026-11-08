@@ -1,98 +1,306 @@
 [
   {
-    "topic_tag": "budget_tariffs_taxes",
-    "headline": "Election Result Reshapes Markets",
-    "headline_evidence": {"bucket": "budget_tariffs_taxes", "rule": "The election changed control of Congress and produced broad sector moves.", "data": "Democrats won both chambers; the S&P 500 gained 1.8% by noon."},
-    "commentary": "Democrats won Congress, ending one-party control. Hospital, clean-energy, and discount-store shares rose; defense and energy shares fell.",
-    "defines": [{"term": "one-party control", "definition": "One political party controls the presidency and both chambers of Congress.", "used_by_and_why": "Divided control can limit large changes to taxes, spending, and regulation."}],
-    "explains": [{"anchor_text": "shares climbed", "why": "Investors reassessed which industries may gain or lose under a Democratic Congress.", "other_reading": "Company profits and interest rates usually matter more over time than one election."}],
+    "topic_tag": "jobs_and_wages",
+    "headline": "Hiring Accelerates",
+    "headline_evidence": {
+      "bucket": "jobs_and_wages",
+      "rule": "The official payroll count increased faster than in recent months.",
+      "data": "October payrolls rose by 165,000; unemployment was 4.1%."
+    },
+    "commentary": "U.S. employers added 165,000 jobs in October, and unemployment held near 4.1%. Wage growth reached 3.1% over the year.",
+    "defines": [
+      {
+        "term": "unemployment",
+        "definition": "The share of people seeking work who do not have a job.",
+        "used_by_and_why": "It helps show how easy or difficult it is to find work."
+      }
+    ],
+    "explains": [
+      {
+        "anchor_text": "added 165,000 jobs",
+        "why": "The official employer survey counted a net increase in payroll positions.",
+        "other_reading": "The separate household survey showed unemployment near 4.1%."
+      }
+    ],
     "visual": null,
-    "visual_gate": {"passed": false, "failures": ["The verified sector moves are clearer as concise text."], "needs_human_check": false},
+    "visual_gate": {
+      "passed": false,
+      "failures": [
+        "The official figures are clearer as concise text."
+      ],
+      "needs_human_check": false
+    },
     "views": [
-      {"view_id": "business", "body": "Companies may face a different mix of oversight, taxes, and public spending. Executive authority over trade and foreign policy remains.", "keep_wondering": "Which policy changes can Congress actually pass?", "claims": [
-        {"sentence_id": "election-business-1", "type": "mechanism", "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"},
-        {"sentence_id": "election-business-2", "type": "fact", "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"}
-      ]},
-      {"view_id": "policy", "body": "A divided federal government can slow major fiscal changes. It may also increase investigations and bargaining over budgets.", "keep_wondering": "Will divided control restrain federal borrowing?", "claims": [
-        {"sentence_id": "election-policy-1", "type": "mechanism", "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"},
-        {"sentence_id": "election-policy-2", "type": "mechanism", "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"}
-      ]},
-      {"view_id": "global", "body": "The president still has broad authority over trade and foreign policy. Allies and exporters will watch tariffs, NATO spending, and the Iran war.", "keep_wondering": "Which foreign-policy choices change first?", "claims": [
-        {"sentence_id": "election-global-1", "type": "fact", "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"},
-        {"sentence_id": "election-global-2", "type": "mechanism", "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"}
-      ]}
+      {
+        "view_id": "household",
+        "body": "More hiring can improve job options. Wage gains may help incomes keep pace with prices.",
+        "keep_wondering": "Will hiring remain broad?",
+        "claims": [
+          {
+            "sentence_id": "jobs-household-1",
+            "type": "mechanism",
+            "evidence": "https://www.bls.gov/news.release/archives/empsit_11062026.pdf"
+          },
+          {
+            "sentence_id": "jobs-household-2",
+            "type": "mechanism",
+            "evidence": "https://www.bls.gov/news.release/archives/empsit_11062026.pdf"
+          }
+        ]
+      },
+      {
+        "view_id": "policy",
+        "body": "Strong hiring gives the Federal Reserve less reason to support demand. Officials will also weigh inflation and wage growth.",
+        "keep_wondering": "Will the Fed raise rates in December?",
+        "claims": [
+          {
+            "sentence_id": "jobs-policy-1",
+            "type": "mechanism",
+            "evidence": "https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm"
+          },
+          {
+            "sentence_id": "jobs-policy-2",
+            "type": "mechanism",
+            "evidence": "https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm"
+          }
+        ]
+      }
     ],
     "sources": [
-      {"name": "S&P 500", "href": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/"},
-      {"name": "The Associated Press", "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"}
+      {
+        "name": "U.S. Bureau of Labor Statistics",
+        "href": "https://www.bls.gov/news.release/archives/empsit_11062026.pdf"
+      }
     ],
-    "data_note": "S&P 500: +1.8% at noon ET.",
+    "data_note": "October payrolls: +165,000; unemployment: 4.1%.",
     "claims": [
-      {"sentence_id": "election-commentary-1", "type": "fact", "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"},
-      {"sentence_id": "election-commentary-2", "type": "fact", "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"}
+      {
+        "sentence_id": "jobs-commentary-1",
+        "type": "fact",
+        "evidence": "https://www.bls.gov/news.release/archives/empsit_11062026.pdf"
+      },
+      {
+        "sentence_id": "jobs-commentary-2",
+        "type": "fact",
+        "evidence": "https://www.bls.gov/news.release/archives/empsit_11062026.pdf"
+      }
     ]
   },
   {
-    "topic_tag": "inflation_reports",
-    "headline": "Service Growth Cools Slightly",
-    "headline_evidence": {"bucket": "inflation_reports", "rule": "The official services index remained above 50 but declined from September.", "data": "October Services PMI was 54.5, down from 54.9."},
-    "commentary": "The Services PMI indicated a twenty-eighth month of expansion, though at a slower pace. Employment improved, but high prices and slower deliveries remained concerns.",
-    "defines": [{"term": "Services PMI", "definition": "A survey of activity across service businesses such as retail, finance, and healthcare.", "used_by_and_why": "Readings above 50 usually signal expansion."}],
-    "explains": [{"anchor_text": "more slowly", "why": "The headline index fell to 54.5 from 54.9 in September.", "other_reading": "The index still showed broad expansion across fifteen industries."}],
-    "visual": null,
-    "visual_gate": {"passed": false, "failures": ["The official index and subindexes are clearer as text."], "needs_human_check": false},
-    "views": [
-      {"view_id": "household", "body": "Service hiring improved for a second month. High input prices can still reach bills for travel, repairs, and other services.", "keep_wondering": "Will service prices reach household bills?", "claims": [
-        {"sentence_id": "services-household-1", "type": "fact", "evidence": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"},
-        {"sentence_id": "services-household-2", "type": "mechanism", "evidence": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"}
-      ]},
-      {"view_id": "business", "body": "Orders and activity grew more slowly while backlogs increased. Tariffs and fuel remained common concerns for purchasing managers.", "keep_wondering": "Can firms absorb higher input costs?", "claims": [
-        {"sentence_id": "services-business-1", "type": "fact", "evidence": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"},
-        {"sentence_id": "services-business-2", "type": "fact", "evidence": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"}
-      ]},
-      {"view_id": "policy", "body": "The survey showed expansion alongside persistent price increases. The Federal Reserve weighs activity and employment against those costs.", "keep_wondering": "Will price measures cool further?", "claims": [
-        {"sentence_id": "services-policy-1", "type": "fact", "evidence": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"},
-        {"sentence_id": "services-policy-2", "type": "mechanism", "evidence": "https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm"}
-      ]}
+    "topic_tag": "companies",
+    "headline": "AI Shares Recover",
+    "headline_evidence": {
+      "bucket": "companies",
+      "rule": "Major AI-linked shares rose after two days of sharp declines.",
+      "data": "Nvidia rose 2.8%; the Nasdaq gained 1.1%."
+    },
+    "commentary": "AI-linked shares recovered part of their two-day sell-off, with Nvidia gaining 2.8%. The rebound remained narrow: more index members declined than advanced.",
+    "defines": [
+      {
+        "term": "AI-linked shares",
+        "definition": "Stocks of companies tied to artificial-intelligence chips, software, or data centers.",
+        "used_by_and_why": "Their size can move broad indexes even when many other stocks decline."
+      }
     ],
-    "sources": [{"name": "Institute for Supply Management", "href": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"}],
-    "data_note": "October Services PMI: 54.5.",
+    "explains": [
+      {
+        "anchor_text": "recovered part",
+        "why": "Several large AI-linked companies rose after two steep down days.",
+        "other_reading": "Market breadth stayed weak as more S&P 500 members declined than advanced."
+      }
+    ],
+    "visual": null,
+    "visual_gate": {
+      "passed": false,
+      "failures": [
+        "The breadth contrast is clearer as concise text."
+      ],
+      "needs_human_check": false
+    },
+    "views": [
+      {
+        "view_id": "household",
+        "body": "Large technology holdings can move retirement accounts quickly. A narrow rebound may not reflect the full market.",
+        "keep_wondering": "Will the recovery broaden?",
+        "claims": [
+          {
+            "sentence_id": "ai-household-1",
+            "type": "mechanism",
+            "evidence": "https://www.sec.gov/investor/pubs/investop.htm"
+          },
+          {
+            "sentence_id": "ai-household-2",
+            "type": "mechanism",
+            "evidence": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
+          }
+        ]
+      },
+      {
+        "view_id": "business",
+        "body": "Data-center builders still face high financing and power costs. New projects may receive more political review.",
+        "keep_wondering": "Will investment plans slow?",
+        "claims": [
+          {
+            "sentence_id": "ai-business-1",
+            "type": "fact",
+            "evidence": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
+          },
+          {
+            "sentence_id": "ai-business-2",
+            "type": "fact",
+            "evidence": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
+          }
+        ]
+      },
+      {
+        "view_id": "policy",
+        "body": "Officials are hearing more concern about data-center power use. Split control in Washington may limit federal action.",
+        "keep_wondering": "Will states act first?",
+        "claims": [
+          {
+            "sentence_id": "ai-policy-1",
+            "type": "fact",
+            "evidence": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
+          },
+          {
+            "sentence_id": "ai-policy-2",
+            "type": "fact",
+            "evidence": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "name": "Nasdaq Composite",
+        "href": "https://www.nasdaq.com/market-activity/index/comp"
+      },
+      {
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
+      }
+    ],
+    "data_note": "Nasdaq: +1.1%; Nvidia: +2.8%.",
     "claims": [
-      {"sentence_id": "services-commentary-1", "type": "fact", "evidence": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"},
-      {"sentence_id": "services-commentary-2", "type": "fact", "evidence": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"}
+      {
+        "sentence_id": "ai-commentary-1",
+        "type": "fact",
+        "evidence": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
+      },
+      {
+        "sentence_id": "ai-commentary-2",
+        "type": "fact",
+        "evidence": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
+      }
     ]
   },
   {
-    "topic_tag": "oil_and_energy",
-    "headline": "Oil Drops Below One Hundred Dollars",
-    "headline_evidence": {"bucket": "oil_and_energy", "rule": "The reported Brent price moved below $100 and fell more than the large-move threshold.", "data": "Brent fell 9.2% to $94.11 at noon."},
-    "commentary": "Brent crude fell 9.2% to $94.11 as the election changed expectations for the Iran war. Lower oil can reduce fuel and shipping costs, but the conflict still leaves supply uncertain.",
-    "defines": [{"term": "Brent crude", "definition": "A widely used reference price for oil sold around the world.", "used_by_and_why": "It helps track global energy costs."}],
-    "explains": [{"anchor_text": "changed expectations", "why": "A Democratic Congress may press for a pullback from the Iran war.", "other_reading": "The president retains authority over foreign policy and the conflict remains unresolved."}],
+    "topic_tag": "interest_rates_and_yields",
+    "headline": "Treasury Yields Edge Higher",
+    "headline_evidence": {
+      "bucket": "interest_rates_and_yields",
+      "rule": "The benchmark 10-year yield finished above Thursday's close.",
+      "data": "The 10-year yield moved to 4.86% from 4.84%."
+    },
+    "commentary": "The 10-year Treasury yield increased to 4.86% after the stronger jobs report. Higher yields can reach mortgage, business, and government borrowing costs.",
+    "defines": [
+      {
+        "term": "Treasury yield",
+        "definition": "The return investors receive for lending to the U.S. government.",
+        "used_by_and_why": "It is a benchmark for many long-term interest rates."
+      }
+    ],
+    "explains": [
+      {
+        "anchor_text": "after the stronger jobs report",
+        "why": "The Associated Press reported that the jobs data supported yields and raised the perceived chance of a December rate increase.",
+        "other_reading": "Inflation data and Federal Reserve guidance can change that view."
+      }
+    ],
     "visual": null,
-    "visual_gate": {"passed": false, "failures": ["The verified move does not have a clean daily series for a chart."], "needs_human_check": false},
+    "visual_gate": {
+      "passed": false,
+      "failures": [
+        "The daily move is clearer in the market snapshot."
+      ],
+      "needs_human_check": false
+    },
     "views": [
-      {"view_id": "household", "body": "Oil prices can reach gasoline and airline costs. A lasting decline could ease household energy bills.", "keep_wondering": "Will lower crude reach gas prices?", "claims": [
-        {"sentence_id": "oil-household-1", "type": "mechanism", "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"},
-        {"sentence_id": "oil-household-2", "type": "mechanism", "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"}
-      ]},
-      {"view_id": "business", "body": "Fuel and shipping are major costs for airlines, delivery firms, and manufacturers. Lower crude can help margins if the move lasts.", "keep_wondering": "How long will the decline last?", "claims": [
-        {"sentence_id": "oil-business-1", "type": "mechanism", "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"},
-        {"sentence_id": "oil-business-2", "type": "mechanism", "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"}
-      ]},
-      {"view_id": "global", "body": "The Iran war still threatens oil production and shipping routes. Any renewed disruption could reverse the decline quickly.", "keep_wondering": "Will oil shipments remain secure?", "claims": [
-        {"sentence_id": "oil-global-1", "type": "fact", "evidence": "https://apnews.com/article/iran-midterms-trump-war-f3c48a92df2bd8a658d3e704a7291d11"},
-        {"sentence_id": "oil-global-2", "type": "mechanism", "evidence": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"}
-      ]}
+      {
+        "view_id": "business",
+        "body": "Higher benchmark yields can raise financing costs. Projects that depend on cheap credit may look less attractive.",
+        "keep_wondering": "Will borrowing costs remain high?",
+        "claims": [
+          {
+            "sentence_id": "yield-business-1",
+            "type": "mechanism",
+            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+          },
+          {
+            "sentence_id": "yield-business-2",
+            "type": "mechanism",
+            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+          }
+        ]
+      },
+      {
+        "view_id": "policy",
+        "body": "The jobs report showed continued demand for workers. The Federal Reserve will compare that strength with Tuesday's inflation report.",
+        "keep_wondering": "What will inflation add to the picture?",
+        "claims": [
+          {
+            "sentence_id": "yield-policy-1",
+            "type": "fact",
+            "evidence": "https://www.bls.gov/news.release/archives/empsit_11062026.pdf"
+          },
+          {
+            "sentence_id": "yield-policy-2",
+            "type": "mechanism",
+            "evidence": "https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm"
+          }
+        ]
+      },
+      {
+        "view_id": "dealer",
+        "body": "Bond prices and yields move in opposite directions. Traders raised the perceived chance of a December rate increase.",
+        "keep_wondering": "Will the move hold after CPI?",
+        "claims": [
+          {
+            "sentence_id": "yield-dealer-1",
+            "type": "mechanism",
+            "evidence": "https://www.sec.gov/answers/bondprices.htm"
+          },
+          {
+            "sentence_id": "yield-dealer-2",
+            "type": "fact",
+            "evidence": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
+          }
+        ]
+      }
     ],
     "sources": [
-      {"name": "The Associated Press", "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"},
-      {"name": "U.S. Energy Information Administration", "href": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"}
+      {
+        "name": "U.S. Treasury",
+        "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"
+      },
+      {
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
+      }
     ],
-    "data_note": "Brent: $94.11, down 9.2% at noon ET.",
+    "data_note": "10-year Treasury: 4.86%, up from 4.84%.",
     "claims": [
-      {"sentence_id": "oil-commentary-1", "type": "attributed_cause", "attribution": "The Associated Press", "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"},
-      {"sentence_id": "oil-commentary-2", "type": "mechanism", "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"}
+      {
+        "sentence_id": "yield-commentary-1",
+        "type": "attributed_cause",
+        "attribution": "The Associated Press",
+        "evidence": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
+      },
+      {
+        "sentence_id": "yield-commentary-2",
+        "type": "mechanism",
+        "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+      }
     ]
   }
 ]

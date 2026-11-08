@@ -1,7 +1,7 @@
 # Verification report
 
-Generated: 2026-11-04T18:28:56.163Z
-Edition: 2026-11-04
+Generated: 2026-11-08T23:42:45.019Z
+Edition: 2026-11-06
 Status: PASSED
 
 ## Fixed
@@ -12,11 +12,6 @@ Status: PASSED
 - Hid inactive responsive market representation from assistive technology
 
 ## Withheld
-- S&P 500: No approved exact index level was available within the publication window.
-- 10-year Treasury yield: The latest approved report was outside the ten-minute quote window.
-- Brent crude oil: The latest approved report was outside the ten-minute quote window.
-- Dow Jones Industrial Average: No approved exact index level was available within the publication window.
-- Expected volatility: No approved exact index level was available within the publication window.
 - DAX: No approved current observation was available at the edition cutoff.
 - Nikkei 225: No approved current observation was available at the edition cutoff.
 - KOSPI: No approved current observation was available at the edition cutoff.

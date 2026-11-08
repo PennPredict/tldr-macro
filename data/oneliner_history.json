@@ -94,5 +94,17 @@
     "template_id": "three-market-plain",
     "lead_item": "stocks",
     "qualifiers": []
+  },
+  {
+    "date": "2026-11-06",
+    "final_sentence": "Stocks edged up; government borrowing rates edged up; oil slipped.",
+    "facts": {
+      "stocks": 0.31,
+      "rates_basis_points": 2,
+      "oil": -0.33
+    },
+    "template_id": "three-market-plain",
+    "lead_item": "stocks",
+    "qualifiers": []
   }
 ]
