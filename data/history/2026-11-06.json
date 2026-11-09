@@ -1,0 +1,414 @@
+{
+  "edition_date": "2026-11-06",
+  "updated_at": "2026-11-06T16:00:00-05:00",
+  "summary": "Stocks edged up; government borrowing rates edged up; oil slipped.",
+  "markets": [
+    {
+      "name": "S&P 500",
+      "kind": "equity_index",
+      "value": 7376.86,
+      "display_value": "7,376.86",
+      "baseline": "prior_close",
+      "prior_close": 7353.73,
+      "change_percent": 0.31,
+      "display_change": "+0.31%",
+      "description": "The S&P 500 tracks large U.S. companies and many retirement funds. It gained slightly Friday, though more members fell than rose.",
+      "so_what": {
+        "channel_id": "sp500",
+        "context": {
+          "type": "signal",
+          "text": "",
+          "evidence": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/"
+        }
+      },
+      "explains": [],
+      "claims": [
+        {
+          "sentence_id": "sp500-friday-1",
+          "type": "mechanism",
+          "evidence": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/"
+        },
+        {
+          "sentence_id": "sp500-friday-2",
+          "type": "fact",
+          "evidence": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
+        }
+      ],
+      "data_source": "S&P Dow Jones Indices and The Associated Press",
+      "fetched_at": "2026-11-06T16:00:00-05:00",
+      "range": "Thursday close 7,353.73 · Friday close 7,376.86",
+      "points": [
+        7640.71,
+        7700.18,
+        7353.73,
+        7376.86
+      ],
+      "sources": [
+        {
+          "name": "S&P Dow Jones Indices",
+          "href": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/"
+        },
+        {
+          "name": "The Associated Press",
+          "href": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
+        }
+      ],
+      "series_dates": [
+        "2026-11-02T10:15:00-05:00",
+        "2026-11-04T13:17:00-05:00",
+        "2026-11-05T16:00:00-05:00",
+        "2026-11-06T16:00:00-05:00"
+      ],
+      "available": true,
+      "frequency": "Daily"
+    },
+    {
+      "name": "10-year Treasury yield",
+      "kind": "yield",
+      "value": 4.86,
+      "display_value": "4.86%",
+      "baseline": "prior_close",
+      "prior_close": 4.84,
+      "change_percent": 0.41,
+      "display_change": "+0.02 points",
+      "description": "The 10-year Treasury yield helps set long-term borrowing costs. It rose two hundredths of a percentage point after the jobs report.",
+      "so_what": {
+        "channel_id": "yield10",
+        "context": {
+          "type": "signal",
+          "text": "",
+          "evidence": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates"
+        }
+      },
+      "explains": [],
+      "claims": [
+        {
+          "sentence_id": "yield-friday-1",
+          "type": "mechanism",
+          "evidence": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"
+        },
+        {
+          "sentence_id": "yield-friday-2",
+          "type": "fact",
+          "evidence": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
+        }
+      ],
+      "data_source": "U.S. Treasury and The Associated Press",
+      "fetched_at": "2026-11-06T16:00:00-05:00",
+      "range": "Thursday close 4.84% · Friday close 4.86%",
+      "points": [
+        4.921,
+        4.9,
+        4.84,
+        4.86
+      ],
+      "sources": [
+        {
+          "name": "U.S. Treasury",
+          "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"
+        },
+        {
+          "name": "The Associated Press",
+          "href": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
+        }
+      ],
+      "series_dates": [
+        "2026-11-02T10:15:00-05:00",
+        "2026-11-04T13:17:00-05:00",
+        "2026-11-05T16:00:00-05:00",
+        "2026-11-06T16:00:00-05:00"
+      ],
+      "available": true,
+      "frequency": "Daily"
+    },
+    {
+      "name": "Brent crude oil",
+      "kind": "commodity",
+      "value": 97.97,
+      "display_value": "$97.97",
+      "baseline": "prior_close",
+      "prior_close": 98.29,
+      "change_percent": -0.33,
+      "display_change": "−0.33%",
+      "description": "Brent is a reference price for oil sold worldwide. It finished slightly lower Friday after large swings earlier in the week.",
+      "so_what": {
+        "channel_id": "brent",
+        "context": {
+          "type": "attributed",
+          "text": "Oil prices can reach fuel, shipping, and household energy costs.",
+          "source_url": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php",
+          "evidence": "Brent closed Friday at $97.97."
+        }
+      },
+      "explains": [],
+      "claims": [
+        {
+          "sentence_id": "brent-friday-1",
+          "type": "mechanism",
+          "evidence": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html"
+        },
+        {
+          "sentence_id": "brent-friday-2",
+          "type": "fact",
+          "evidence": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil-last-day.settlements.html"
+        }
+      ],
+      "data_source": "CME Group",
+      "fetched_at": "2026-11-06T16:00:00-05:00",
+      "range": "Thursday close $98.29 · Friday close $97.97",
+      "points": [
+        105.87,
+        94.62,
+        98.29,
+        97.97
+      ],
+      "sources": [
+        {
+          "name": "CME Group",
+          "href": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil.html"
+        },
+        {
+          "name": "CME Group settlements",
+          "href": "https://www.cmegroup.com/markets/energy/crude-oil/brent-crude-oil-last-day.settlements.html"
+        }
+      ],
+      "series_dates": [
+        "2026-11-02T10:15:00-05:00",
+        "2026-11-04T16:00:00-05:00",
+        "2026-11-05T16:00:00-05:00",
+        "2026-11-06T16:00:00-05:00"
+      ],
+      "available": true,
+      "frequency": "Daily"
+    },
+    {
+      "name": "Nasdaq Composite",
+      "kind": "equity_index",
+      "value": 24579.42,
+      "display_value": "24,579.42",
+      "baseline": "prior_close",
+      "prior_close": 24314.99,
+      "change_percent": 1.09,
+      "display_change": "+1.09%",
+      "description": "The Nasdaq includes many technology companies. It rebounded Friday, but still ended the week lower.",
+      "so_what": {
+        "channel_id": "nasdaq",
+        "context": {
+          "type": "signal",
+          "text": "",
+          "evidence": "https://www.nasdaq.com/market-activity/index/comp"
+        }
+      },
+      "explains": [],
+      "claims": [
+        {
+          "sentence_id": "nasdaq-friday-1",
+          "type": "mechanism",
+          "evidence": "https://indexes.nasdaq.com/docs/FS_COMP.pdf"
+        },
+        {
+          "sentence_id": "nasdaq-friday-2",
+          "type": "fact",
+          "evidence": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
+        }
+      ],
+      "data_source": "Nasdaq and The Associated Press",
+      "fetched_at": "2026-11-06T16:00:00-05:00",
+      "range": "Thursday close 24,314.99 · Friday close 24,579.42",
+      "points": [
+        25691.37,
+        25900.84,
+        24314.99,
+        24579.42
+      ],
+      "sources": [
+        {
+          "name": "Nasdaq Composite",
+          "href": "https://www.nasdaq.com/market-activity/index/comp"
+        }
+      ],
+      "series_dates": [
+        "2026-11-02T10:15:00-05:00",
+        "2026-11-04T13:17:00-05:00",
+        "2026-11-05T16:00:00-05:00",
+        "2026-11-06T16:00:00-05:00"
+      ],
+      "available": true,
+      "frequency": "Daily"
+    },
+    {
+      "name": "Dow Jones Industrial Average",
+      "kind": "equity_index",
+      "value": 51285.73,
+      "display_value": "51,285.73",
+      "baseline": "prior_close",
+      "prior_close": 51523.06,
+      "change_percent": -0.46,
+      "display_change": "−0.46%",
+      "description": "The Dow tracks 30 established U.S. companies. It declined Friday while technology shares recovered.",
+      "so_what": {
+        "channel_id": "dow",
+        "context": {
+          "type": "signal",
+          "text": "",
+          "evidence": "https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/"
+        }
+      },
+      "explains": [],
+      "claims": [
+        {
+          "sentence_id": "dow-friday-1",
+          "type": "mechanism",
+          "evidence": "https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/"
+        },
+        {
+          "sentence_id": "dow-friday-2",
+          "type": "fact",
+          "evidence": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
+        }
+      ],
+      "data_source": "S&P Dow Jones Indices and The Associated Press",
+      "fetched_at": "2026-11-06T16:00:00-05:00",
+      "range": "Thursday close 51,523.06 · Friday close 51,285.73",
+      "points": [
+        52317.31,
+        53841.31,
+        51523.06,
+        51285.73
+      ],
+      "sources": [
+        {
+          "name": "S&P Dow Jones Indices",
+          "href": "https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/"
+        }
+      ],
+      "series_dates": [
+        "2026-11-02T10:15:00-05:00",
+        "2026-11-04T13:17:00-05:00",
+        "2026-11-05T16:00:00-05:00",
+        "2026-11-06T16:00:00-05:00"
+      ],
+      "available": true,
+      "frequency": "Daily"
+    },
+    {
+      "name": "Expected volatility",
+      "kind": "volatility",
+      "value": 25.64,
+      "display_value": "25.64",
+      "baseline": "prior_close",
+      "prior_close": 28.18,
+      "change_percent": -9.01,
+      "display_change": "−9.01%",
+      "description": "The VIX estimates expected S&P 500 swings over the next month. It fell Friday but remained above its late-October level.",
+      "so_what": {
+        "channel_id": "vix",
+        "context": {
+          "type": "signal",
+          "text": "",
+          "evidence": "https://www.cboe.com/tradable-products/vix/"
+        }
+      },
+      "explains": [],
+      "claims": [
+        {
+          "sentence_id": "vix-friday-1",
+          "type": "mechanism",
+          "evidence": "https://www.cboe.com/tradable-products/vix/"
+        },
+        {
+          "sentence_id": "vix-friday-2",
+          "type": "fact",
+          "evidence": "https://www.cboe.com/delayed_quotes/_vix/quote_table"
+        }
+      ],
+      "data_source": "Cboe VIX",
+      "fetched_at": "2026-11-06T16:00:00-05:00",
+      "range": "Thursday close 28.18 · Friday close 25.64",
+      "points": [
+        21.15,
+        20.83,
+        16.61,
+        28.18,
+        25.64
+      ],
+      "sources": [
+        {
+          "name": "Cboe VIX",
+          "href": "https://www.cboe.com/delayed_quotes/_vix/quote_table"
+        }
+      ],
+      "series_dates": [
+        "2026-11-02T16:00:00-05:00",
+        "2026-11-03T16:00:00-05:00",
+        "2026-11-04T16:00:00-05:00",
+        "2026-11-05T16:00:00-05:00",
+        "2026-11-06T16:00:00-05:00"
+      ],
+      "available": true,
+      "frequency": "Daily"
+    }
+  ],
+  "calendar": [
+    {
+      "date": "NOV 10",
+      "time": "8:30 AM ET",
+      "start_at": "2026-11-10T08:30:00-05:00",
+      "title": "Consumer Price Index",
+      "definition": "Tracks changes in prices paid by households for common goods and services.",
+      "prior": "October inflation report · BLS",
+      "consensus": "",
+      "hot_label": "If prices rise faster",
+      "cool_label": "If price growth slows",
+      "hot": "Higher inflation can keep borrowing costs elevated for longer.",
+      "cool": "Slower inflation can give the Federal Reserve more policy flexibility.",
+      "source": "BLS release calendar",
+      "href": "https://www.bls.gov/schedule/2026/11_sched.htm"
+    },
+    {
+      "date": "NOV 13",
+      "time": "8:30 AM ET",
+      "start_at": "2026-11-13T08:30:00-05:00",
+      "title": "Producer Price Index",
+      "definition": "Tracks prices received by domestic producers before goods and services reach consumers.",
+      "prior": "October producer-price report · BLS",
+      "consensus": "",
+      "hot_label": "If producer prices rise faster",
+      "cool_label": "If producer prices slow",
+      "hot": "Businesses may face more cost increases to absorb or pass along.",
+      "cool": "Less producer-price growth can reduce future price increases.",
+      "source": "BLS release calendar",
+      "href": "https://www.bls.gov/schedule/2026/11_sched.htm"
+    },
+    {
+      "date": "NOV 17",
+      "time": "8:30 AM ET",
+      "start_at": "2026-11-17T08:30:00-05:00",
+      "title": "Import and Export Prices",
+      "definition": "Measures price changes for goods bought from and sold to other countries.",
+      "prior": "October trade-price report · BLS",
+      "consensus": "",
+      "hot_label": "If import prices accelerate",
+      "cool_label": "If import prices decline",
+      "hot": "Imported goods can become more expensive for businesses and households.",
+      "cool": "Lower import prices can reduce some cost increases.",
+      "source": "BLS release calendar",
+      "href": "https://www.bls.gov/schedule/2026/11_sched.htm"
+    },
+    {
+      "date": "NOV 20",
+      "time": "10:00 AM ET",
+      "start_at": "2026-11-20T10:00:00-05:00",
+      "title": "State Employment",
+      "definition": "Shows job and unemployment changes across states.",
+      "prior": "October state labor report · BLS",
+      "consensus": "",
+      "hot_label": "If gains are widespread",
+      "cool_label": "If weakness spreads",
+      "hot": "Broad hiring can signal durable demand for workers.",
+      "cool": "More state-level declines can reveal labor-market weakness.",
+      "source": "BLS release calendar",
+      "href": "https://www.bls.gov/schedule/2026/11_sched.htm"
+    }
+  ]
+}

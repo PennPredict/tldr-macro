@@ -1,7 +1,7 @@
 # Verification report
 
-Generated: 2026-11-08T23:42:45.019Z
-Edition: 2026-11-06
+Generated: 2026-11-09T16:03:56.989Z
+Edition: 2026-11-09
 Status: PASSED
 
 ## Fixed
@@ -28,14 +28,13 @@ Status: PASSED
 - Natural gas: No approved current observation was available at the edition cutoff.
 - Copper: No approved current observation was available at the edition cutoff.
 - Gold: No approved current observation was available at the edition cutoff.
-- Silver futures: No approved current observation was available at the edition cutoff.
 
 ## Warnings
 - International Indices: 0 verified cards remain; withheld cards need new primary-source observations before restoration
 - Stocks: 0 verified cards remain; withheld cards need new primary-source observations before restoration
 - Rates: 0 verified cards remain; withheld cards need new primary-source observations before restoration
 - Currencies: 0 verified cards remain; withheld cards need new primary-source observations before restoration
-- Commodities: 0 verified cards remain; withheld cards need new primary-source observations before restoration
+- Commodities: 1 verified cards remain; withheld cards need new primary-source observations before restoration
 
 ## Failures
 - None

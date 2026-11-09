@@ -1,305 +1,291 @@
 [
   {
-    "topic_tag": "jobs_and_wages",
-    "headline": "Hiring Accelerates",
+    "topic_tag": "market_volatility",
+    "headline": "Stocks Rebound Broadly",
     "headline_evidence": {
-      "bucket": "jobs_and_wages",
-      "rule": "The official payroll count increased faster than in recent months.",
-      "data": "October payrolls rose by 165,000; unemployment was 4.1%."
+      "bucket": "market_volatility",
+      "rule": "Major U.S. indexes advanced and most S&P sectors rose.",
+      "data": "At 10:57 AM, SPY rose 2.18% and the Nasdaq rose 2.70%."
     },
-    "commentary": "U.S. employers added 165,000 jobs in October, and unemployment held near 4.1%. Wage growth reached 3.1% over the year.",
+    "commentary": "Large U.S. stock benchmarks climbed Monday morning, and nine of eleven S&P 500 sectors rose. The gains recovered part of last week's decline.",
     "defines": [
       {
-        "term": "unemployment",
-        "definition": "The share of people seeking work who do not have a job.",
-        "used_by_and_why": "It helps show how easy or difficult it is to find work."
+        "term": "stock benchmarks",
+        "definition": "Indexes or funds used to measure a broad part of the stock market.",
+        "used_by_and_why": "They show whether gains extend beyond one company."
       }
     ],
-    "explains": [
-      {
-        "anchor_text": "added 165,000 jobs",
-        "why": "The official employer survey counted a net increase in payroll positions.",
-        "other_reading": "The separate household survey showed unemployment near 4.1%."
-      }
-    ],
+    "explains": [{"anchor_text":"recovered part","why":"Monday's gains followed a sharp drop last week.","other_reading":"The recovery did not erase all of last week's decline."}],
     "visual": null,
     "visual_gate": {
       "passed": false,
       "failures": [
-        "The official figures are clearer as concise text."
+        "The market snapshot already shows the verified moves."
       ],
       "needs_human_check": false
     },
     "views": [
       {
         "view_id": "household",
-        "body": "More hiring can improve job options. Wage gains may help incomes keep pace with prices.",
-        "keep_wondering": "Will hiring remain broad?",
+        "body": "Broad gains can lift diversified retirement accounts. One morning does not erase last week's losses.",
+        "keep_wondering": "Will the rebound last?",
         "claims": [
           {
-            "sentence_id": "jobs-household-1",
+            "sentence_id": "household-1",
             "type": "mechanism",
-            "evidence": "https://www.bls.gov/news.release/archives/empsit_11062026.pdf"
+            "evidence": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
           },
           {
-            "sentence_id": "jobs-household-2",
+            "sentence_id": "household-2",
             "type": "mechanism",
-            "evidence": "https://www.bls.gov/news.release/archives/empsit_11062026.pdf"
-          }
-        ]
-      },
-      {
-        "view_id": "policy",
-        "body": "Strong hiring gives the Federal Reserve less reason to support demand. Officials will also weigh inflation and wage growth.",
-        "keep_wondering": "Will the Fed raise rates in December?",
-        "claims": [
-          {
-            "sentence_id": "jobs-policy-1",
-            "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm"
-          },
-          {
-            "sentence_id": "jobs-policy-2",
-            "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm"
-          }
-        ]
-      }
-    ],
-    "sources": [
-      {
-        "name": "U.S. Bureau of Labor Statistics",
-        "href": "https://www.bls.gov/news.release/archives/empsit_11062026.pdf"
-      }
-    ],
-    "data_note": "October payrolls: +165,000; unemployment: 4.1%.",
-    "claims": [
-      {
-        "sentence_id": "jobs-commentary-1",
-        "type": "fact",
-        "evidence": "https://www.bls.gov/news.release/archives/empsit_11062026.pdf"
-      },
-      {
-        "sentence_id": "jobs-commentary-2",
-        "type": "fact",
-        "evidence": "https://www.bls.gov/news.release/archives/empsit_11062026.pdf"
-      }
-    ]
-  },
-  {
-    "topic_tag": "companies",
-    "headline": "AI Shares Recover",
-    "headline_evidence": {
-      "bucket": "companies",
-      "rule": "Major AI-linked shares rose after two days of sharp declines.",
-      "data": "Nvidia rose 2.8%; the Nasdaq gained 1.1%."
-    },
-    "commentary": "AI-linked shares recovered part of their two-day sell-off, with Nvidia gaining 2.8%. The rebound remained narrow: more index members declined than advanced.",
-    "defines": [
-      {
-        "term": "AI-linked shares",
-        "definition": "Stocks of companies tied to artificial-intelligence chips, software, or data centers.",
-        "used_by_and_why": "Their size can move broad indexes even when many other stocks decline."
-      }
-    ],
-    "explains": [
-      {
-        "anchor_text": "recovered part",
-        "why": "Several large AI-linked companies rose after two steep down days.",
-        "other_reading": "Market breadth stayed weak as more S&P 500 members declined than advanced."
-      }
-    ],
-    "visual": null,
-    "visual_gate": {
-      "passed": false,
-      "failures": [
-        "The breadth contrast is clearer as concise text."
-      ],
-      "needs_human_check": false
-    },
-    "views": [
-      {
-        "view_id": "household",
-        "body": "Large technology holdings can move retirement accounts quickly. A narrow rebound may not reflect the full market.",
-        "keep_wondering": "Will the recovery broaden?",
-        "claims": [
-          {
-            "sentence_id": "ai-household-1",
-            "type": "mechanism",
-            "evidence": "https://www.sec.gov/investor/pubs/investop.htm"
-          },
-          {
-            "sentence_id": "ai-household-2",
-            "type": "mechanism",
-            "evidence": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
-          }
-        ]
-      },
-      {
-        "view_id": "business",
-        "body": "Data-center builders still face high financing and power costs. New projects may receive more political review.",
-        "keep_wondering": "Will investment plans slow?",
-        "claims": [
-          {
-            "sentence_id": "ai-business-1",
-            "type": "fact",
-            "evidence": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
-          },
-          {
-            "sentence_id": "ai-business-2",
-            "type": "fact",
-            "evidence": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
-          }
-        ]
-      },
-      {
-        "view_id": "policy",
-        "body": "Officials are hearing more concern about data-center power use. Split control in Washington may limit federal action.",
-        "keep_wondering": "Will states act first?",
-        "claims": [
-          {
-            "sentence_id": "ai-policy-1",
-            "type": "fact",
-            "evidence": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
-          },
-          {
-            "sentence_id": "ai-policy-2",
-            "type": "fact",
-            "evidence": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
-          }
-        ]
-      }
-    ],
-    "sources": [
-      {
-        "name": "Nasdaq Composite",
-        "href": "https://www.nasdaq.com/market-activity/index/comp"
-      },
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
-      }
-    ],
-    "data_note": "Nasdaq: +1.1%; Nvidia: +2.8%.",
-    "claims": [
-      {
-        "sentence_id": "ai-commentary-1",
-        "type": "fact",
-        "evidence": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
-      },
-      {
-        "sentence_id": "ai-commentary-2",
-        "type": "fact",
-        "evidence": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
-      }
-    ]
-  },
-  {
-    "topic_tag": "interest_rates_and_yields",
-    "headline": "Treasury Yields Edge Higher",
-    "headline_evidence": {
-      "bucket": "interest_rates_and_yields",
-      "rule": "The benchmark 10-year yield finished above Thursday's close.",
-      "data": "The 10-year yield moved to 4.86% from 4.84%."
-    },
-    "commentary": "The 10-year Treasury yield increased to 4.86% after the stronger jobs report. Higher yields can reach mortgage, business, and government borrowing costs.",
-    "defines": [
-      {
-        "term": "Treasury yield",
-        "definition": "The return investors receive for lending to the U.S. government.",
-        "used_by_and_why": "It is a benchmark for many long-term interest rates."
-      }
-    ],
-    "explains": [
-      {
-        "anchor_text": "after the stronger jobs report",
-        "why": "The Associated Press reported that the jobs data supported yields and raised the perceived chance of a December rate increase.",
-        "other_reading": "Inflation data and Federal Reserve guidance can change that view."
-      }
-    ],
-    "visual": null,
-    "visual_gate": {
-      "passed": false,
-      "failures": [
-        "The daily move is clearer in the market snapshot."
-      ],
-      "needs_human_check": false
-    },
-    "views": [
-      {
-        "view_id": "business",
-        "body": "Higher benchmark yields can raise financing costs. Projects that depend on cheap credit may look less attractive.",
-        "keep_wondering": "Will borrowing costs remain high?",
-        "claims": [
-          {
-            "sentence_id": "yield-business-1",
-            "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
-          },
-          {
-            "sentence_id": "yield-business-2",
-            "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
-          }
-        ]
-      },
-      {
-        "view_id": "policy",
-        "body": "The jobs report showed continued demand for workers. The Federal Reserve will compare that strength with Tuesday's inflation report.",
-        "keep_wondering": "What will inflation add to the picture?",
-        "claims": [
-          {
-            "sentence_id": "yield-policy-1",
-            "type": "fact",
-            "evidence": "https://www.bls.gov/news.release/archives/empsit_11062026.pdf"
-          },
-          {
-            "sentence_id": "yield-policy-2",
-            "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm"
+            "evidence": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
           }
         ]
       },
       {
         "view_id": "dealer",
-        "body": "Bond prices and yields move in opposite directions. Traders raised the perceived chance of a December rate increase.",
-        "keep_wondering": "Will the move hold after CPI?",
+        "body": "More stocks advanced than declined Monday morning. Traders still face a major inflation report Tuesday.",
+        "keep_wondering": "Will market breadth stay strong?",
         "claims": [
           {
-            "sentence_id": "yield-dealer-1",
+            "sentence_id": "dealer-1",
             "type": "mechanism",
-            "evidence": "https://www.sec.gov/answers/bondprices.htm"
+            "evidence": "https://www.reuters.com/business/wall-st-futures-rise-after-rough-week-nvidia-unsettles-investors-2026-11-09/"
           },
           {
-            "sentence_id": "yield-dealer-2",
-            "type": "fact",
-            "evidence": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
+            "sentence_id": "dealer-2",
+            "type": "mechanism",
+            "evidence": "https://www.reuters.com/business/wall-st-futures-rise-after-rough-week-nvidia-unsettles-investors-2026-11-09/"
           }
         ]
       }
     ],
     "sources": [
       {
-        "name": "U.S. Treasury",
-        "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"
+        "name": "Nasdaq market data",
+        "href": "https://www.nasdaq.com/market-activity"
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
+        "href": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
       }
     ],
-    "data_note": "10-year Treasury: 4.86%, up from 4.84%.",
+    "data_note": "SPY +2.18%; Nasdaq Composite +2.70% at 10:57 AM ET.",
     "claims": [
       {
-        "sentence_id": "yield-commentary-1",
-        "type": "attributed_cause",
-        "attribution": "The Associated Press",
-        "evidence": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
+        "sentence_id": "stocks-commentary-1",
+        "type": "fact",
+        "evidence": "https://www.reuters.com/business/wall-st-futures-rise-after-rough-week-nvidia-unsettles-investors-2026-11-09/"
       },
       {
-        "sentence_id": "yield-commentary-2",
+        "sentence_id": "stocks-commentary-2",
+        "type": "fact",
+        "evidence": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
+      }
+    ]
+  },
+  {
+    "topic_tag": "oil_and_energy",
+    "headline": "Oil Prices Pull Back",
+    "headline_evidence": {
+      "bucket": "oil_and_energy",
+      "rule": "Brent-linked prices fell sharply from Friday.",
+      "data": "BNO fell 3.29% by 10:57 AM ET."
+    },
+    "commentary": "Brent-linked prices fell as diplomatic talks reduced some fears of renewed U.S. strikes on Iran. Lower oil can ease fuel and shipping costs if the decline lasts.",
+    "defines": [
+      {
+        "term": "Brent",
+        "definition": "A benchmark used to price much of the world's oil.",
+        "used_by_and_why": "Its moves can reach fuel, shipping, and production costs."
+      }
+    ],
+    "explains": [
+      {
+        "anchor_text": "if the decline lasts",
+        "why": "Retail fuel and transport costs do not always adjust immediately.",
+        "other_reading": "Supply disruptions could reverse the move."
+      }
+    ],
+    "visual": null,
+    "visual_gate": {
+      "passed": false,
+      "failures": [
+        "A fresh fund reading is already shown in Market Snapshot."
+      ],
+      "needs_human_check": false
+    },
+    "views": [
+      {
+        "view_id": "household",
+        "body": "Lower oil can reduce pressure on gasoline and delivery costs. The effect depends on how long prices stay lower.",
+        "keep_wondering": "Will fuel prices follow?",
+        "claims": [
+          {
+            "sentence_id": "household-1",
+            "type": "mechanism",
+            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
+          },
+          {
+            "sentence_id": "household-2",
+            "type": "mechanism",
+            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
+          }
+        ]
+      },
+      {
+        "view_id": "business",
+        "body": "Cheaper oil can lower transport and production costs. Airlines and delivery firms may feel the change first.",
+        "keep_wondering": "Will costs remain lower?",
+        "claims": [
+          {
+            "sentence_id": "business-1",
+            "type": "mechanism",
+            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
+          },
+          {
+            "sentence_id": "business-2",
+            "type": "mechanism",
+            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
+          }
+        ]
+      },
+      {
+        "view_id": "global",
+        "body": "Oil remains exposed to Iran talks and shipping risks. Another disruption could quickly change prices.",
+        "keep_wondering": "Will talks reduce supply risk?",
+        "claims": [
+          {
+            "sentence_id": "global-1",
+            "type": "mechanism",
+            "evidence": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
+          },
+          {
+            "sentence_id": "global-2",
+            "type": "mechanism",
+            "evidence": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "name": "Nasdaq market data · BNO",
+        "href": "https://www.nasdaq.com/market-activity/etf/bno"
+      },
+      {
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
+      }
+    ],
+    "data_note": "BNO −3.29% at 10:57 AM ET.",
+    "claims": [
+      {
+        "sentence_id": "oil-commentary-1",
+        "type": "attributed_cause",
+        "attribution": "The Associated Press",
+        "evidence": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
+      },
+      {
+        "sentence_id": "oil-commentary-2",
         "type": "mechanism",
-        "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+        "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
+      }
+    ]
+  },
+  {
+    "topic_tag": "companies",
+    "headline": "Nvidia Shares Diverge",
+    "headline_evidence": {
+      "bucket": "companies",
+      "rule": "Nvidia shares declined while broad technology benchmarks advanced.",
+      "data": "AP reported Nvidia down 3.8% while the Nasdaq rose 2.5% at 10:30 AM."
+    },
+    "commentary": "Nvidia fell while most technology shares rose. A board inquiry involving its chief added company-specific risk.",
+    "defines": [
+      {
+        "term": "company-specific risk",
+        "definition": "Risk tied to one business rather than the whole market.",
+        "used_by_and_why": "It can make a stock move differently from its industry."
+      }
+    ],
+    "explains": [{"anchor_text":"risk tied to one company","why":"Company news can move one stock differently from its industry.","other_reading":"The Nasdaq still rose Monday morning."}],
+    "visual": null,
+    "visual_gate": {
+      "passed": false,
+      "failures": [
+        "The story is qualitative and does not need another price visual."
+      ],
+      "needs_human_check": false
+    },
+    "views": [
+      {
+        "view_id": "household",
+        "body": "A single large stock can affect technology-heavy funds. Diversification can reduce dependence on one company.",
+        "keep_wondering": "Will Nvidia stabilize?",
+        "claims": [
+          {
+            "sentence_id": "household-1",
+            "type": "mechanism",
+            "evidence": "https://www.sec.gov/investor/pubs/investop.htm"
+          },
+          {
+            "sentence_id": "household-2",
+            "type": "mechanism",
+            "evidence": "https://www.sec.gov/investor/pubs/investop.htm"
+          }
+        ]
+      },
+      {
+        "view_id": "business",
+        "body": "The inquiry adds uncertainty around a major supplier of AI chips. Customers and partners may watch for governance changes.",
+        "keep_wondering": "Will operations be affected?",
+        "claims": [
+          {
+            "sentence_id": "business-1",
+            "type": "mechanism",
+            "evidence": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
+          },
+          {
+            "sentence_id": "business-2",
+            "type": "mechanism",
+            "evidence": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
+          }
+        ]
+      },
+      {
+        "view_id": "policy",
+        "body": "The inquiry touches national-security and technology concerns. Regulators may watch for any evidence involving protected information.",
+        "keep_wondering": "Will officials seek more details?",
+        "claims": [
+          {
+            "sentence_id": "policy-1",
+            "type": "mechanism",
+            "evidence": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
+          },
+          {
+            "sentence_id": "policy-2",
+            "type": "mechanism",
+            "evidence": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {"name":"Nasdaq Composite","href":"https://www.nasdaq.com/market-activity/index/comp"},
+      {"name":"The Associated Press","href":"https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"}
+    ],
+    "data_note": "Nvidia −3.8% at 10:30 AM ET; Nasdaq +2.5%.",
+    "claims": [
+      {
+        "sentence_id": "nvidia-commentary-1",
+        "type": "fact",
+        "evidence": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
+      },
+      {
+        "sentence_id": "nvidia-commentary-2",
+        "type": "fact",
+        "evidence": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
       }
     ]
   }

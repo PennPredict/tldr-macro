@@ -40,5 +40,12 @@
     "reason": "The required checked template resembles the November 4 edition, while Friday's verified stock, yield, and oil directions and closing observations are distinct.",
     "evidence_url": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89",
     "expires_at": "2026-11-06T23:59:00-05:00"
+  },
+  {
+    "id": "summary-similarity-2026-11-09",
+    "owner": "TL;DR Macro editorial",
+    "reason": "The required checked three-market template resembles earlier editions, while Monday's verified stock, long-term bond-fund, and oil-fund observations are distinct and clearly labeled.",
+    "evidence_url": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b",
+    "expires_at": "2026-11-09T16:00:00-05:00"
   }
 ]

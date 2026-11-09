@@ -2,85 +2,85 @@
   {
     "tag": "Global markets",
     "qualifies": true,
-    "headline": "Asian Markets Drop Sharply",
-    "what": "Major indexes in Tokyo and Seoul lost about 6% Friday.",
-    "context": "Technology shares remained under strain after Thursday's U.S. sell-off.",
-    "why_it_matters": "Asian moves can reach U.S. technology suppliers and global funds.",
+    "headline": "Japan Stocks Jump",
+    "what": "The Nikkei 225 climbed 2.3% Monday.",
+    "context": "Japanese technology shares recovered part of last week's losses.",
+    "why_it_matters": "Japan is central to global chip, equipment, and manufacturing supply chains.",
     "concept_terms": [
-      "Asian indexes",
+      "Nikkei 225",
       "technology shares"
     ],
     "sources": [
       {
-        "name": "Korea Exchange",
-        "href": "https://global.krx.co.kr/",
-        "type": "primary"
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b",
+        "type": "wire"
       },
       {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89",
+        "name": "Reuters",
+        "href": "https://www.reuters.com/world/china/global-markets-view-europe-2026-11-09/",
         "type": "wire"
       }
     ],
     "developing": false,
-    "as_of": "2026-11-06T16:00:00-05:00",
-    "importance_score": 99,
+    "as_of": "2026-11-09T10:57:00-05:00",
+    "importance_score": 98,
     "needs_human_check": false
   },
   {
     "tag": "Global markets",
     "qualifies": true,
-    "headline": "German Stocks Lose Ground",
-    "what": "Germany's DAX declined 1.9% even though Europe has fewer AI-heavy indexes.",
-    "context": "The move extended a global week of sharp repricing.",
-    "why_it_matters": "European weakness can affect U.S. exporters and international funds.",
+    "headline": "Taiwan Shares Surge",
+    "what": "Taiwan's Taiex jumped 4.9% after support measures were announced.",
+    "context": "The rebound followed heavy losses in Asian technology markets.",
+    "why_it_matters": "Taiwan is a major center for advanced chip production used by U.S. companies.",
     "concept_terms": [
-      "DAX",
-      "European stocks"
+      "Taiex",
+      "support measures"
     ],
     "sources": [
       {
-        "name": "Deutsche Börse",
-        "href": "https://www.deutsche-boerse.com/dbg-en/",
-        "type": "primary"
+        "name": "Financial Times",
+        "href": "https://www.ft.com/content/b8644327-86e7-4d1c-a71f-3fb1d552723b",
+        "type": "wire"
       },
       {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89",
+        "name": "Reuters",
+        "href": "https://www.reuters.com/world/china/global-markets-view-europe-2026-11-09/",
         "type": "wire"
       }
     ],
     "developing": false,
-    "as_of": "2026-11-06T16:00:00-05:00",
-    "importance_score": 94,
+    "as_of": "2026-11-09T10:57:00-05:00",
+    "importance_score": 96,
     "needs_human_check": false
   },
   {
-    "tag": "Policy",
+    "tag": "Global markets",
     "qualifies": true,
-    "headline": "Data Center Protests Spread",
-    "what": "Protests reached projects across Europe, including a Microsoft site in Amsterdam.",
-    "context": "Campaigners cited electricity, water, and local oversight concerns.",
-    "why_it_matters": "Delays could change demand for chips, power, construction, and cloud capacity.",
+    "headline": "China Markets Finish Mixed",
+    "what": "Shanghai gained 0.3% while Hong Kong slipped 0.1%.",
+    "context": "The split came during a broader rebound in Asian technology shares.",
+    "why_it_matters": "China and Hong Kong influence global demand, trade, and international funds.",
     "concept_terms": [
-      "data centers",
-      "power demand"
+      "Shanghai index",
+      "Hong Kong stocks"
     ],
     "sources": [
       {
-        "name": "European Commission",
-        "href": "https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-products/data-centres_en",
-        "type": "primary"
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b",
+        "type": "wire"
       },
       {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/b4f3f9f368697bb37416bcb4fabdd67c",
+        "name": "Reuters",
+        "href": "https://www.reuters.com/world/china/global-markets-view-europe-2026-11-09/",
         "type": "wire"
       }
     ],
-    "developing": true,
-    "as_of": "2026-11-06T16:00:00-05:00",
-    "importance_score": 90,
+    "developing": false,
+    "as_of": "2026-11-09T10:57:00-05:00",
+    "importance_score": 91,
     "needs_human_check": false
   }
 ]
