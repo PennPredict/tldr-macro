@@ -169,5 +169,20 @@
   {
     "date": "2026-11-09",
     "headline": "Nvidia Breaks From Rally"
+  },
+  {
+    "date": "2026-11-10",
+    "topic": "inflation_reports",
+    "headline": "Inflation Stays Elevated"
+  },
+  {
+    "date": "2026-11-10",
+    "topic": "interest_rates_and_yields",
+    "headline": "Treasury Yields Jump"
+  },
+  {
+    "date": "2026-11-10",
+    "topic": "companies",
+    "headline": "Homebuilders Lose Ground"
   }
 ]

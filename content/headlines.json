@@ -1,291 +1,325 @@
 [
   {
-    "topic_tag": "market_volatility",
-    "headline": "Stocks Rebound Broadly",
+    "topic_tag": "inflation_reports",
+    "headline": "Inflation Stays Elevated",
     "headline_evidence": {
-      "bucket": "market_volatility",
-      "rule": "Major U.S. indexes advanced and most S&P sectors rose.",
-      "data": "At 10:57 AM, SPY rose 2.18% and the Nasdaq rose 2.70%."
+      "bucket": "inflation_reports",
+      "rule": "Monthly consumer-price growth exceeded forecasts.",
+      "data": "The CPI rose 0.4% in October; core CPI rose 0.3%."
     },
-    "commentary": "Large U.S. stock benchmarks climbed Monday morning, and nine of eleven S&P 500 sectors rose. The gains recovered part of last week's decline.",
+    "commentary": "Consumer prices rose 0.4% in October, more than expected. Groceries rose 0.4%, while electricity increased 0.9%.",
     "defines": [
       {
-        "term": "stock benchmarks",
-        "definition": "Indexes or funds used to measure a broad part of the stock market.",
-        "used_by_and_why": "They show whether gains extend beyond one company."
-      }
-    ],
-    "explains": [{"anchor_text":"recovered part","why":"Monday's gains followed a sharp drop last week.","other_reading":"The recovery did not erase all of last week's decline."}],
-    "visual": null,
-    "visual_gate": {
-      "passed": false,
-      "failures": [
-        "The market snapshot already shows the verified moves."
-      ],
-      "needs_human_check": false
-    },
-    "views": [
-      {
-        "view_id": "household",
-        "body": "Broad gains can lift diversified retirement accounts. One morning does not erase last week's losses.",
-        "keep_wondering": "Will the rebound last?",
-        "claims": [
-          {
-            "sentence_id": "household-1",
-            "type": "mechanism",
-            "evidence": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
-          },
-          {
-            "sentence_id": "household-2",
-            "type": "mechanism",
-            "evidence": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
-          }
-        ]
-      },
-      {
-        "view_id": "dealer",
-        "body": "More stocks advanced than declined Monday morning. Traders still face a major inflation report Tuesday.",
-        "keep_wondering": "Will market breadth stay strong?",
-        "claims": [
-          {
-            "sentence_id": "dealer-1",
-            "type": "mechanism",
-            "evidence": "https://www.reuters.com/business/wall-st-futures-rise-after-rough-week-nvidia-unsettles-investors-2026-11-09/"
-          },
-          {
-            "sentence_id": "dealer-2",
-            "type": "mechanism",
-            "evidence": "https://www.reuters.com/business/wall-st-futures-rise-after-rough-week-nvidia-unsettles-investors-2026-11-09/"
-          }
-        ]
-      }
-    ],
-    "sources": [
-      {
-        "name": "Nasdaq market data",
-        "href": "https://www.nasdaq.com/market-activity"
-      },
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
-      }
-    ],
-    "data_note": "SPY +2.18%; Nasdaq Composite +2.70% at 10:57 AM ET.",
-    "claims": [
-      {
-        "sentence_id": "stocks-commentary-1",
-        "type": "fact",
-        "evidence": "https://www.reuters.com/business/wall-st-futures-rise-after-rough-week-nvidia-unsettles-investors-2026-11-09/"
-      },
-      {
-        "sentence_id": "stocks-commentary-2",
-        "type": "fact",
-        "evidence": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
-      }
-    ]
-  },
-  {
-    "topic_tag": "oil_and_energy",
-    "headline": "Oil Prices Pull Back",
-    "headline_evidence": {
-      "bucket": "oil_and_energy",
-      "rule": "Brent-linked prices fell sharply from Friday.",
-      "data": "BNO fell 3.29% by 10:57 AM ET."
-    },
-    "commentary": "Brent-linked prices fell as diplomatic talks reduced some fears of renewed U.S. strikes on Iran. Lower oil can ease fuel and shipping costs if the decline lasts.",
-    "defines": [
-      {
-        "term": "Brent",
-        "definition": "A benchmark used to price much of the world's oil.",
-        "used_by_and_why": "Its moves can reach fuel, shipping, and production costs."
+        "term": "consumer prices",
+        "definition": "A measure of how prices change for goods and services bought by households.",
+        "used_by_and_why": "Students can use it to compare changes in everyday living costs."
       }
     ],
     "explains": [
       {
-        "anchor_text": "if the decline lasts",
-        "why": "Retail fuel and transport costs do not always adjust immediately.",
-        "other_reading": "Supply disruptions could reverse the move."
+        "anchor_text": "more than expected",
+        "why": "Economists' forecasts help markets judge whether inflation is improving.",
+        "other_reading": "One month does not establish a lasting trend."
       }
     ],
     "visual": null,
     "visual_gate": {
       "passed": false,
       "failures": [
-        "A fresh fund reading is already shown in Market Snapshot."
+        "The official release is clearer than another chart."
       ],
       "needs_human_check": false
     },
     "views": [
       {
         "view_id": "household",
-        "body": "Lower oil can reduce pressure on gasoline and delivery costs. The effect depends on how long prices stay lower.",
-        "keep_wondering": "Will fuel prices follow?",
+        "body": "Food and electricity cost more in October. Those increases can strain budgets even when some other prices decline.",
+        "keep_wondering": "Will everyday price growth slow?",
         "claims": [
           {
-            "sentence_id": "household-1",
-            "type": "mechanism",
-            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
+            "sentence_id": "inflation-household-1",
+            "type": "fact",
+            "evidence": "https://www.bls.gov/news.release/cpi.htm"
           },
           {
-            "sentence_id": "household-2",
+            "sentence_id": "inflation-household-2",
             "type": "mechanism",
-            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
+            "evidence": "https://www.bls.gov/news.release/cpi.htm"
           }
         ]
       },
       {
         "view_id": "business",
-        "body": "Cheaper oil can lower transport and production costs. Airlines and delivery firms may feel the change first.",
-        "keep_wondering": "Will costs remain lower?",
+        "body": "Costs rose across several consumer categories. Companies can absorb increases or change prices.",
+        "keep_wondering": "Will businesses pass along more costs?",
         "claims": [
           {
-            "sentence_id": "business-1",
-            "type": "mechanism",
-            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
+            "sentence_id": "inflation-business-1",
+            "type": "fact",
+            "evidence": "https://www.bls.gov/news.release/cpi.htm"
           },
           {
-            "sentence_id": "business-2",
+            "sentence_id": "inflation-business-2",
             "type": "mechanism",
-            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
-          }
-        ]
-      },
-      {
-        "view_id": "global",
-        "body": "Oil remains exposed to Iran talks and shipping risks. Another disruption could quickly change prices.",
-        "keep_wondering": "Will talks reduce supply risk?",
-        "claims": [
-          {
-            "sentence_id": "global-1",
-            "type": "mechanism",
-            "evidence": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
-          },
-          {
-            "sentence_id": "global-2",
-            "type": "mechanism",
-            "evidence": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
-          }
-        ]
-      }
-    ],
-    "sources": [
-      {
-        "name": "Nasdaq market data · BNO",
-        "href": "https://www.nasdaq.com/market-activity/etf/bno"
-      },
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
-      }
-    ],
-    "data_note": "BNO −3.29% at 10:57 AM ET.",
-    "claims": [
-      {
-        "sentence_id": "oil-commentary-1",
-        "type": "attributed_cause",
-        "attribution": "The Associated Press",
-        "evidence": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
-      },
-      {
-        "sentence_id": "oil-commentary-2",
-        "type": "mechanism",
-        "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
-      }
-    ]
-  },
-  {
-    "topic_tag": "companies",
-    "headline": "Nvidia Shares Diverge",
-    "headline_evidence": {
-      "bucket": "companies",
-      "rule": "Nvidia shares declined while broad technology benchmarks advanced.",
-      "data": "AP reported Nvidia down 3.8% while the Nasdaq rose 2.5% at 10:30 AM."
-    },
-    "commentary": "Nvidia fell while most technology shares rose. A board inquiry involving its chief added company-specific risk.",
-    "defines": [
-      {
-        "term": "company-specific risk",
-        "definition": "Risk tied to one business rather than the whole market.",
-        "used_by_and_why": "It can make a stock move differently from its industry."
-      }
-    ],
-    "explains": [{"anchor_text":"risk tied to one company","why":"Company news can move one stock differently from its industry.","other_reading":"The Nasdaq still rose Monday morning."}],
-    "visual": null,
-    "visual_gate": {
-      "passed": false,
-      "failures": [
-        "The story is qualitative and does not need another price visual."
-      ],
-      "needs_human_check": false
-    },
-    "views": [
-      {
-        "view_id": "household",
-        "body": "A single large stock can affect technology-heavy funds. Diversification can reduce dependence on one company.",
-        "keep_wondering": "Will Nvidia stabilize?",
-        "claims": [
-          {
-            "sentence_id": "household-1",
-            "type": "mechanism",
-            "evidence": "https://www.sec.gov/investor/pubs/investop.htm"
-          },
-          {
-            "sentence_id": "household-2",
-            "type": "mechanism",
-            "evidence": "https://www.sec.gov/investor/pubs/investop.htm"
-          }
-        ]
-      },
-      {
-        "view_id": "business",
-        "body": "The inquiry adds uncertainty around a major supplier of AI chips. Customers and partners may watch for governance changes.",
-        "keep_wondering": "Will operations be affected?",
-        "claims": [
-          {
-            "sentence_id": "business-1",
-            "type": "mechanism",
-            "evidence": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
-          },
-          {
-            "sentence_id": "business-2",
-            "type": "mechanism",
-            "evidence": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
+            "evidence": "https://www.bls.gov/news.release/cpi.htm"
           }
         ]
       },
       {
         "view_id": "policy",
-        "body": "The inquiry touches national-security and technology concerns. Regulators may watch for any evidence involving protected information.",
-        "keep_wondering": "Will officials seek more details?",
+        "body": "Inflation remains above the Federal Reserve's goal. Officials may keep rates higher to cool spending.",
+        "keep_wondering": "Will the Fed raise rates in December?",
         "claims": [
           {
-            "sentence_id": "policy-1",
-            "type": "mechanism",
-            "evidence": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
+            "sentence_id": "inflation-policy-1",
+            "type": "fact",
+            "evidence": "https://apnews.com/article/consumer-prices-holiday-inflation-tariffs-trump-fcd3c7766d3cdb36057f6dab19ff3a8e"
           },
           {
-            "sentence_id": "policy-2",
+            "sentence_id": "inflation-policy-2",
             "type": "mechanism",
-            "evidence": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
+            "evidence": "https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm"
           }
         ]
       }
     ],
     "sources": [
-      {"name":"Nasdaq Composite","href":"https://www.nasdaq.com/market-activity/index/comp"},
-      {"name":"The Associated Press","href":"https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"}
-    ],
-    "data_note": "Nvidia −3.8% at 10:30 AM ET; Nasdaq +2.5%.",
-    "claims": [
       {
-        "sentence_id": "nvidia-commentary-1",
-        "type": "fact",
-        "evidence": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
+        "name": "U.S. Bureau of Labor Statistics",
+        "href": "https://www.bls.gov/news.release/cpi.htm"
       },
       {
-        "sentence_id": "nvidia-commentary-2",
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/consumer-prices-holiday-inflation-tariffs-trump-fcd3c7766d3cdb36057f6dab19ff3a8e"
+      }
+    ],
+    "data_note": "October CPI +0.4%; core CPI +0.3%.",
+    "claims": [
+      {
+        "sentence_id": "inflation-commentary-1",
         "type": "fact",
-        "evidence": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b"
+        "evidence": "https://www.bls.gov/news.release/cpi.htm"
+      },
+      {
+        "sentence_id": "inflation-commentary-2",
+        "type": "fact",
+        "evidence": "https://www.bls.gov/news.release/cpi.htm"
+      }
+    ]
+  },
+  {
+    "topic_tag": "interest_rates_and_yields",
+    "headline": "Treasury Yields Jump",
+    "headline_evidence": {
+      "bucket": "interest_rates_and_yields",
+      "rule": "The 10-year yield rose by more than ten basis points.",
+      "data": "The 10-year yield rose to 4.99% from 4.88%."
+    },
+    "commentary": "The 10-year Treasury yield rose to 4.99% from 4.88% late Monday. This yield helps shape mortgage and business-loan rates.",
+    "defines": [
+      {
+        "term": "Treasury yield",
+        "definition": "The return investors receive for lending money to the U.S. government.",
+        "used_by_and_why": "Lenders use it as a reference when pricing many long-term loans."
+      }
+    ],
+    "explains": [
+      {
+        "anchor_text": "helps shape",
+        "why": "Lenders compare many loan rates with government bond yields.",
+        "other_reading": "Credit risk and loan terms also affect the final rate."
+      }
+    ],
+    "visual": null,
+    "visual_gate": {
+      "passed": false,
+      "failures": [
+        "The verified bond-fund move is already shown in Market Snapshot."
+      ],
+      "needs_human_check": false
+    },
+    "views": [
+      {
+        "view_id": "business",
+        "body": "Higher long-term rates can raise financing costs. Projects that depend on cheap credit may become less attractive.",
+        "keep_wondering": "Will financing costs keep rising?",
+        "claims": [
+          {
+            "sentence_id": "rates-business-1",
+            "type": "mechanism",
+            "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-ffe205fbc4fddf65c3e8e64e740355b7"
+          },
+          {
+            "sentence_id": "rates-business-2",
+            "type": "mechanism",
+            "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-ffe205fbc4fddf65c3e8e64e740355b7"
+          }
+        ]
+      },
+      {
+        "view_id": "policy",
+        "body": "Traders increased expectations for future Fed rate increases. The next inflation and jobs reports can change those expectations.",
+        "keep_wondering": "Will the Fed move by a larger amount?",
+        "claims": [
+          {
+            "sentence_id": "rates-policy-1",
+            "type": "fact",
+            "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-ffe205fbc4fddf65c3e8e64e740355b7"
+          },
+          {
+            "sentence_id": "rates-policy-2",
+            "type": "mechanism",
+            "evidence": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+          }
+        ]
+      },
+      {
+        "view_id": "dealer",
+        "body": "Bond prices fell as yields rose. That move also reduced the appeal of highly priced stocks.",
+        "keep_wondering": "Will yields remain near five percent?",
+        "claims": [
+          {
+            "sentence_id": "rates-dealer-1",
+            "type": "fact",
+            "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-ffe205fbc4fddf65c3e8e64e740355b7"
+          },
+          {
+            "sentence_id": "rates-dealer-2",
+            "type": "mechanism",
+            "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-ffe205fbc4fddf65c3e8e64e740355b7"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "name": "U.S. Treasury",
+        "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates"
+      },
+      {
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-ffe205fbc4fddf65c3e8e64e740355b7"
+      }
+    ],
+    "data_note": "10-year Treasury yield 4.99%, up from 4.88% Monday.",
+    "claims": [
+      {
+        "sentence_id": "rates-commentary-1",
+        "type": "fact",
+        "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-ffe205fbc4fddf65c3e8e64e740355b7"
+      },
+      {
+        "sentence_id": "rates-commentary-2",
+        "type": "mechanism",
+        "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-ffe205fbc4fddf65c3e8e64e740355b7"
+      }
+    ]
+  },
+  {
+    "topic_tag": "companies",
+    "headline": "Homebuilders Lose Ground",
+    "headline_evidence": {
+      "bucket": "companies",
+      "rule": "Major homebuilder shares declined as long-term yields rose.",
+      "data": "Lennar fell 5.4%; D.R. Horton fell 3.8%; PulteGroup fell 3.9%."
+    },
+    "commentary": "Lennar fell 5.4%; DR Horton and PulteGroup also declined. Higher mortgage rates can keep potential buyers away from new homes.",
+    "defines": [
+      {
+        "term": "mortgage rates",
+        "definition": "Interest rates charged on loans used to buy homes.",
+        "used_by_and_why": "They help determine a buyer's monthly payment and housing budget."
+      }
+    ],
+    "explains": [
+      {
+        "anchor_text": "Higher mortgage rates",
+        "why": "Home loans become more expensive when long-term borrowing rates rise.",
+        "other_reading": "Local supply, wages, and home prices also shape demand."
+      }
+    ],
+    "visual": null,
+    "visual_gate": {
+      "passed": false,
+      "failures": [
+        "The story compares several companies without a single verified series."
+      ],
+      "needs_human_check": false
+    },
+    "views": [
+      {
+        "view_id": "household",
+        "body": "Higher mortgage rates raise monthly payments for many buyers. That can reduce the price of a home they can afford.",
+        "keep_wondering": "Will home financing become less affordable?",
+        "claims": [
+          {
+            "sentence_id": "housing-household-1",
+            "type": "mechanism",
+            "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-ffe205fbc4fddf65c3e8e64e740355b7"
+          },
+          {
+            "sentence_id": "housing-household-2",
+            "type": "mechanism",
+            "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-ffe205fbc4fddf65c3e8e64e740355b7"
+          }
+        ]
+      },
+      {
+        "view_id": "business",
+        "body": "Builders face fewer potential buyers when loan costs rise. Suppliers can also feel weaker demand for construction materials.",
+        "keep_wondering": "Will builders slow new projects?",
+        "claims": [
+          {
+            "sentence_id": "housing-business-1",
+            "type": "mechanism",
+            "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-ffe205fbc4fddf65c3e8e64e740355b7"
+          },
+          {
+            "sentence_id": "housing-business-2",
+            "type": "mechanism",
+            "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-ffe205fbc4fddf65c3e8e64e740355b7"
+          }
+        ]
+      },
+      {
+        "view_id": "policy",
+        "body": "Housing is sensitive to long-term interest rates. Persistent weakness could complicate efforts to cool inflation without stalling construction.",
+        "keep_wondering": "Will housing activity weaken further?",
+        "claims": [
+          {
+            "sentence_id": "housing-policy-1",
+            "type": "mechanism",
+            "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-ffe205fbc4fddf65c3e8e64e740355b7"
+          },
+          {
+            "sentence_id": "housing-policy-2",
+            "type": "interpretation",
+            "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-ffe205fbc4fddf65c3e8e64e740355b7"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "name": "Nasdaq market data · Lennar",
+        "href": "https://www.nasdaq.com/market-activity/stocks/len"
+      },
+      {
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-ffe205fbc4fddf65c3e8e64e740355b7"
+      }
+    ],
+    "data_note": "Lennar −5.4%; D.R. Horton −3.8%; PulteGroup −3.9%.",
+    "claims": [
+      {
+        "sentence_id": "housing-commentary-1",
+        "type": "fact",
+        "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-ffe205fbc4fddf65c3e8e64e740355b7"
+      },
+      {
+        "sentence_id": "housing-commentary-2",
+        "type": "mechanism",
+        "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-ffe205fbc4fddf65c3e8e64e740355b7"
       }
     ]
   }

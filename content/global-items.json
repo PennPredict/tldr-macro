@@ -2,85 +2,85 @@
   {
     "tag": "Global markets",
     "qualifies": true,
-    "headline": "Japan Stocks Jump",
-    "what": "The Nikkei 225 climbed 2.3% Monday.",
-    "context": "Japanese technology shares recovered part of last week's losses.",
-    "why_it_matters": "Japan is central to global chip, equipment, and manufacturing supply chains.",
+    "headline": "Europe Shares Gain",
+    "what": "The Stoxx Europe 600 rose Tuesday.",
+    "context": "Lower oil prices helped offset concern about U.S. inflation.",
+    "why_it_matters": "European markets connect U.S. investors with global banks, manufacturers, and trade.",
     "concept_terms": [
-      "Nikkei 225",
-      "technology shares"
+      "Stoxx Europe 600",
+      "European markets"
     ],
     "sources": [
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b",
+        "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-ffe205fbc4fddf65c3e8e64e740355b7",
         "type": "wire"
       },
       {
         "name": "Reuters",
-        "href": "https://www.reuters.com/world/china/global-markets-view-europe-2026-11-09/",
+        "href": "https://www.reuters.com/markets/europe/european-shares-near-record-high-lower-oil-prices-boost-sentiment-2026-11-10/",
         "type": "wire"
       }
     ],
     "developing": false,
-    "as_of": "2026-11-09T10:57:00-05:00",
-    "importance_score": 98,
-    "needs_human_check": false
-  },
-  {
-    "tag": "Global markets",
-    "qualifies": true,
-    "headline": "Taiwan Shares Surge",
-    "what": "Taiwan's Taiex jumped 4.9% after support measures were announced.",
-    "context": "The rebound followed heavy losses in Asian technology markets.",
-    "why_it_matters": "Taiwan is a major center for advanced chip production used by U.S. companies.",
-    "concept_terms": [
-      "Taiex",
-      "support measures"
-    ],
-    "sources": [
-      {
-        "name": "Financial Times",
-        "href": "https://www.ft.com/content/b8644327-86e7-4d1c-a71f-3fb1d552723b",
-        "type": "wire"
-      },
-      {
-        "name": "Reuters",
-        "href": "https://www.reuters.com/world/china/global-markets-view-europe-2026-11-09/",
-        "type": "wire"
-      }
-    ],
-    "developing": false,
-    "as_of": "2026-11-09T10:57:00-05:00",
+    "as_of": "2026-11-10T16:05:00-05:00",
     "importance_score": 96,
     "needs_human_check": false
   },
   {
     "tag": "Global markets",
     "qualifies": true,
-    "headline": "China Markets Finish Mixed",
-    "what": "Shanghai gained 0.3% while Hong Kong slipped 0.1%.",
-    "context": "The split came during a broader rebound in Asian technology shares.",
-    "why_it_matters": "China and Hong Kong influence global demand, trade, and international funds.",
+    "headline": "Korea Stocks Rebound",
+    "what": "South Korea's Kospi jumped 4.4% Tuesday.",
+    "context": "Samsung Electronics and SK Hynix led the recovery.",
+    "why_it_matters": "Korea's chipmakers supply memory used in phones, computers, and AI systems.",
     "concept_terms": [
-      "Shanghai index",
-      "Hong Kong stocks"
+      "Kospi",
+      "memory chips"
     ],
     "sources": [
       {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b",
-        "type": "wire"
+        "name": "Korea Exchange",
+        "href": "https://global.krx.co.kr/",
+        "type": "primary"
       },
       {
-        "name": "Reuters",
-        "href": "https://www.reuters.com/world/china/global-markets-view-europe-2026-11-09/",
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-ffe205fbc4fddf65c3e8e64e740355b7",
         "type": "wire"
       }
     ],
     "developing": false,
-    "as_of": "2026-11-09T10:57:00-05:00",
-    "importance_score": 91,
+    "as_of": "2026-11-10T16:05:00-05:00",
+    "importance_score": 94,
     "needs_human_check": false
+  },
+  {
+    "tag": "Conflict",
+    "qualifies": true,
+    "headline": "Shipping Risks Remain",
+    "what": "The Strait of Hormuz remained disrupted despite signs of easing conflict.",
+    "context": "Countries continued talks about protecting global shipping routes.",
+    "why_it_matters": "Delays at major sea lanes can change oil, freight, and imported-goods costs.",
+    "concept_terms": [
+      "Strait of Hormuz",
+      "shipping routes"
+    ],
+    "sources": [
+      {
+        "name": "U.S. Energy Information Administration",
+        "href": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints",
+        "type": "primary"
+      },
+      {
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/49f273e626ca4bab0e5a2d32e4943014",
+        "type": "wire"
+      }
+    ],
+    "developing": true,
+    "as_of": "2026-11-10T16:05:00-05:00",
+    "importance_score": 92,
+    "needs_human_check": true
   }
 ]

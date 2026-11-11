@@ -1001,19 +1001,21 @@
     "name": "Silver futures",
     "display_name": "Silver fund (SLV)",
     "available": true,
-    "display_value": "$47.72",
-    "display_change": "+1.81%",
-    "change_percent": 1.81,
-    "description": "SLV is a fund backed by silver. It rose Monday morning; silver links investment demand with electronics and solar manufacturing.",
+    "display_value": "$46.48",
+    "display_change": "−3.45%",
+    "change_percent": -3.45,
+    "description": "SLV is a fund that tracks silver prices. It fell Tuesday; silver matters to both investors and manufacturers of electronics and solar equipment.",
     "points": [
       46.2,
       46.87,
-      47.72
+      47.72,
+      48.14,
+      46.48
     ],
-    "fetched_at": "2026-11-09T10:57:00-05:00",
-    "frequency": "Intraday",
+    "fetched_at": "2026-11-10T16:00:00-05:00",
+    "frequency": "Daily close",
     "data_provider": "Nasdaq market data · SLV",
-    "licensing_note": "Live exchange-listed fund quote; Nasdaq source retained.",
+    "licensing_note": "Exchange-listed fund data are linked to the Nasdaq source.",
     "sources": [
       {
         "name": "Nasdaq market data · SLV",
@@ -1023,7 +1025,10 @@
     "series_dates": [
       "2026-11-05T16:00:00-05:00",
       "2026-11-06T16:00:00-05:00",
-      "2026-11-09T10:57:00-05:00"
-    ]
+      "2026-11-09T10:57:00-05:00",
+      "2026-11-09T16:00:00-05:00",
+      "2026-11-10T16:00:00-05:00"
+    ],
+    "value": 46.48
   }
 ]
