@@ -184,5 +184,20 @@
     "date": "2026-11-10",
     "topic": "companies",
     "headline": "Homebuilders Lose Ground"
+  },
+  {
+    "date": "2026-11-11",
+    "topic": "companies",
+    "headline": "AI Shares Rebound"
+  },
+  {
+    "date": "2026-11-11",
+    "topic": "market_volatility",
+    "headline": "Market Breadth Stays Narrow"
+  },
+  {
+    "date": "2026-11-11",
+    "topic": "oil_and_energy",
+    "headline": "Oil Prices Rebound"
   }
 ]

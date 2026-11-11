@@ -1,18 +1,18 @@
 {
-  "edition_date": "2026-11-10",
-  "updated_at": "2026-11-10T16:05:00-05:00",
-  "summary": "Prices rose 0.4% in October; government borrowing rates rose; Nasdaq fell.",
+  "edition_date": "2026-11-11",
+  "updated_at": "2026-11-11T10:49:00-05:00",
+  "summary": "Shares rose; Treasury yields edged up; crude oil jumped.",
   "markets": [
     {
       "name": "S&P 500",
       "kind": "equity_index",
-      "value": 750.02,
-      "display_value": "$750.02",
+      "value": 757.29,
+      "display_value": "$757.29",
       "baseline": "prior_close",
-      "prior_close": 752.69,
-      "change_percent": -0.35,
-      "display_change": "−0.35%",
-      "description": "SPY is a fund designed to track the S&P 500. It slipped Tuesday, showing a modest decline across large U.S. stocks.",
+      "prior_close": 749.92,
+      "change_percent": 0.98,
+      "display_change": "+0.98%",
+      "description": "SPY is a fund designed to track the S&P 500. It rose Wednesday, although more index members fell than gained.",
       "so_what": {
         "channel_id": "sp500",
         "context": {
@@ -24,25 +24,25 @@
       "explains": [],
       "claims": [
         {
-          "sentence_id": "s-p--definition",
+          "sentence_id": "s-p--wed-1",
           "type": "mechanism",
           "evidence": "https://www.nasdaq.com/market-activity/etf/spy"
         },
         {
-          "sentence_id": "s-p--close",
+          "sentence_id": "s-p--wed-2",
           "type": "fact",
-          "evidence": "https://www.nasdaq.com/market-activity/etf/spy"
+          "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"
         }
       ],
       "data_source": "State Street · SPY",
-      "fetched_at": "2026-11-10T16:00:00-05:00",
-      "range": "Monday close 752.69 · Tuesday close 750.02",
+      "fetched_at": "2026-11-11T10:49:00-05:00",
+      "range": "Tuesday close 749.92 · Wednesday 10:48 AM 757.29",
       "points": [
-        7376.86,
         735.29,
         751.3,
         752.69,
-        750.02
+        750.02,
+        757.29
       ],
       "sources": [
         {
@@ -52,13 +52,13 @@
       ],
       "series_dates": [
         "2026-11-06T16:00:00-05:00",
-        "2026-11-06T16:00:00-05:00",
         "2026-11-09T10:57:00-05:00",
         "2026-11-09T16:00:00-05:00",
-        "2026-11-10T16:00:00-05:00"
+        "2026-11-10T16:00:00-05:00",
+        "2026-11-11T10:49:00-05:00"
       ],
       "available": true,
-      "frequency": "Daily close",
+      "frequency": "Intraday",
       "display_name": "S&P 500 fund (SPY)",
       "source": "Nasdaq market data · SPY",
       "url": "https://www.nasdaq.com/market-activity/etf/spy"
@@ -66,13 +66,13 @@
     {
       "name": "10-year Treasury yield",
       "kind": "yield",
-      "value": 80.88,
-      "display_value": "$80.88",
+      "value": 80.515,
+      "display_value": "$80.52",
       "baseline": "prior_close",
-      "prior_close": 81.96,
-      "change_percent": -1.32,
-      "display_change": "−1.32%",
-      "description": "TLT holds long-term U.S. government bonds; its price fell Tuesday. Bond prices usually move opposite rates.",
+      "prior_close": 80.88,
+      "change_percent": -0.45,
+      "display_change": "−0.45%",
+      "description": "TLT holds long-term U.S. government bonds. The fund traded Wednesday while the cash Treasury market was closed for Veterans Day.",
       "so_what": {
         "channel_id": "yield10",
         "context": {
@@ -84,25 +84,25 @@
       "explains": [],
       "claims": [
         {
-          "sentence_id": "-year-treasury-yield-definition",
+          "sentence_id": "-year-treasury-yield-wed-1",
           "type": "mechanism",
           "evidence": "https://www.nasdaq.com/market-activity/etf/tlt"
         },
         {
-          "sentence_id": "-year-treasury-yield-close",
+          "sentence_id": "-year-treasury-yield-wed-2",
           "type": "fact",
-          "evidence": "https://www.nasdaq.com/market-activity/etf/tlt"
+          "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"
         }
       ],
       "data_source": "Nasdaq market data · TLT",
-      "fetched_at": "2026-11-10T16:00:00-05:00",
-      "range": "Monday close 81.96 · Tuesday close 80.88",
+      "fetched_at": "2026-11-11T10:49:00-05:00",
+      "range": "Tuesday close 80.88 · Wednesday 10:48 AM 80.515",
       "points": [
-        4.86,
         81.92,
         81.87,
         81.96,
-        80.88
+        80.88,
+        80.515
       ],
       "sources": [
         {
@@ -112,13 +112,13 @@
       ],
       "series_dates": [
         "2026-11-06T16:00:00-05:00",
-        "2026-11-06T16:00:00-05:00",
         "2026-11-09T10:57:00-05:00",
         "2026-11-09T16:00:00-05:00",
-        "2026-11-10T16:00:00-05:00"
+        "2026-11-10T16:00:00-05:00",
+        "2026-11-11T10:49:00-05:00"
       ],
       "available": true,
-      "frequency": "Daily close",
+      "frequency": "Intraday",
       "display_name": "Long-term Treasury fund (TLT)",
       "source": "Nasdaq market data · TLT",
       "url": "https://www.nasdaq.com/market-activity/etf/tlt",
@@ -127,13 +127,13 @@
     {
       "name": "Brent crude oil",
       "kind": "commodity",
-      "value": 58.365,
-      "display_value": "$58.37",
+      "value": 59.79,
+      "display_value": "$59.79",
       "baseline": "prior_close",
-      "prior_close": 58.93,
-      "change_percent": -0.96,
-      "display_change": "−0.96%",
-      "description": "BNO is a fund tied to Brent crude futures. It fell Tuesday as the global oil benchmark settled at $91.49 a barrel.",
+      "prior_close": 58.36,
+      "change_percent": 2.45,
+      "display_change": "+2.45%",
+      "description": "BNO is a fund tied to Brent crude futures. It jumped Wednesday as oil recovered part of this week's decline.",
       "so_what": {
         "channel_id": "brent",
         "context": {
@@ -146,25 +146,25 @@
       "explains": [],
       "claims": [
         {
-          "sentence_id": "brent-crude-oil-definition",
+          "sentence_id": "brent-crude-oil-wed-1",
           "type": "mechanism",
           "evidence": "https://www.nasdaq.com/market-activity/etf/bno"
         },
         {
-          "sentence_id": "brent-crude-oil-close",
+          "sentence_id": "brent-crude-oil-wed-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-ffe205fbc4fddf65c3e8e64e740355b7"
+          "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"
         }
       ],
       "data_source": "USCF · BNO",
-      "fetched_at": "2026-11-10T16:00:00-05:00",
-      "range": "Monday close 58.93 · Tuesday close 58.365",
+      "fetched_at": "2026-11-11T10:49:00-05:00",
+      "range": "Tuesday close 58.36 · Wednesday 10:49 AM 59.79",
       "points": [
-        97.97,
         62.22,
         60.17,
         58.93,
-        58.365
+        58.365,
+        59.79
       ],
       "sources": [
         {
@@ -174,13 +174,13 @@
       ],
       "series_dates": [
         "2026-11-06T16:00:00-05:00",
-        "2026-11-06T16:00:00-05:00",
         "2026-11-09T10:57:00-05:00",
         "2026-11-09T16:00:00-05:00",
-        "2026-11-10T16:00:00-05:00"
+        "2026-11-10T16:00:00-05:00",
+        "2026-11-11T10:49:00-05:00"
       ],
       "available": true,
-      "frequency": "Daily close",
+      "frequency": "Intraday",
       "display_name": "Brent oil fund (BNO)",
       "source": "Nasdaq market data · BNO",
       "url": "https://www.nasdaq.com/market-activity/etf/bno"
@@ -188,13 +188,13 @@
     {
       "name": "Nasdaq Composite",
       "kind": "equity_index",
-      "value": 25065.88,
-      "display_value": "25,065.88",
+      "value": 25458.16,
+      "display_value": "25,458.16",
       "baseline": "prior_close",
-      "prior_close": 25253.14,
-      "change_percent": -0.74,
-      "display_change": "−0.74%",
-      "description": "The Nasdaq follows many tech companies. It fell Tuesday while several large tech shares declined.",
+      "prior_close": 25065.88,
+      "change_percent": 1.56,
+      "display_change": "+1.56%",
+      "description": "The Nasdaq follows many tech companies. It jumped Wednesday with several large tech shares.",
       "so_what": {
         "channel_id": "nasdaq",
         "context": {
@@ -206,25 +206,25 @@
       "explains": [],
       "claims": [
         {
-          "sentence_id": "nasdaq-composite-definition",
+          "sentence_id": "nasdaq-composite-wed-1",
           "type": "mechanism",
           "evidence": "https://www.nasdaq.com/market-activity/index/comp"
         },
         {
-          "sentence_id": "nasdaq-composite-close",
+          "sentence_id": "nasdaq-composite-wed-2",
           "type": "fact",
-          "evidence": "https://www.nasdaq.com/market-activity/index/comp"
+          "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"
         }
       ],
       "data_source": "Nasdaq Composite",
-      "fetched_at": "2026-11-10T16:00:00-05:00",
-      "range": "Monday close 25,253.14 · Tuesday close 25,065.88",
+      "fetched_at": "2026-11-11T10:49:00-05:00",
+      "range": "Tuesday close 25,065.88 · Wednesday 10:47 AM 25,458.16",
       "points": [
-        24579.42,
         24579.42,
         25243.57,
         25253.14,
-        25065.88
+        25065.88,
+        25458.16
       ],
       "sources": [
         {
@@ -234,26 +234,26 @@
       ],
       "series_dates": [
         "2026-11-06T16:00:00-05:00",
-        "2026-11-06T16:00:00-05:00",
         "2026-11-09T10:57:00-05:00",
         "2026-11-09T16:00:00-05:00",
-        "2026-11-10T16:00:00-05:00"
+        "2026-11-10T16:00:00-05:00",
+        "2026-11-11T10:49:00-05:00"
       ],
       "available": true,
-      "frequency": "Daily close",
+      "frequency": "Intraday",
       "source": "Nasdaq Composite",
       "url": "https://www.nasdaq.com/market-activity/index/comp"
     },
     {
       "name": "Dow Jones Industrial Average",
       "kind": "equity_index",
-      "value": 521.76,
-      "display_value": "$521.76",
+      "value": 520.865,
+      "display_value": "$520.87",
       "baseline": "prior_close",
-      "prior_close": 523.33,
-      "change_percent": -0.3,
-      "display_change": "−0.30%",
-      "description": "DIA is a fund designed to track the 30-company Dow. It edged lower Tuesday, a smaller decline than the Nasdaq.",
+      "prior_close": 521.73,
+      "change_percent": -0.17,
+      "display_change": "−0.17%",
+      "description": "DIA is a fund designed to track the 30-company Dow. It edged lower Wednesday as gains remained concentrated in technology.",
       "so_what": {
         "channel_id": "dow",
         "context": {
@@ -265,25 +265,25 @@
       "explains": [],
       "claims": [
         {
-          "sentence_id": "dow-jones-industrial-average-definition",
+          "sentence_id": "dow-jones-industrial-average-wed-1",
           "type": "mechanism",
           "evidence": "https://www.nasdaq.com/market-activity/etf/dia"
         },
         {
-          "sentence_id": "dow-jones-industrial-average-close",
+          "sentence_id": "dow-jones-industrial-average-wed-2",
           "type": "fact",
-          "evidence": "https://www.nasdaq.com/market-activity/etf/dia"
+          "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"
         }
       ],
       "data_source": "State Street · DIA",
-      "fetched_at": "2026-11-10T16:00:00-05:00",
-      "range": "Monday close 523.33 · Tuesday close 521.76",
+      "fetched_at": "2026-11-11T10:49:00-05:00",
+      "range": "Tuesday close 521.73 · Wednesday 10:49 AM 520.865",
       "points": [
-        51285.73,
         512.22,
         521.26,
         523.33,
-        521.76
+        521.76,
+        520.865
       ],
       "sources": [
         {
@@ -293,13 +293,13 @@
       ],
       "series_dates": [
         "2026-11-06T16:00:00-05:00",
-        "2026-11-06T16:00:00-05:00",
         "2026-11-09T10:57:00-05:00",
         "2026-11-09T16:00:00-05:00",
-        "2026-11-10T16:00:00-05:00"
+        "2026-11-10T16:00:00-05:00",
+        "2026-11-11T10:49:00-05:00"
       ],
       "available": true,
-      "frequency": "Daily close",
+      "frequency": "Intraday",
       "display_name": "Dow fund (DIA)",
       "source": "Nasdaq market data · DIA",
       "url": "https://www.nasdaq.com/market-activity/etf/dia"
@@ -307,13 +307,13 @@
     {
       "name": "Expected volatility",
       "kind": "volatility",
-      "value": 369.4,
-      "display_value": "$369.40",
+      "value": 366.93,
+      "display_value": "$366.93",
       "baseline": "prior_close",
-      "prior_close": 379.53,
-      "change_percent": -2.67,
-      "display_change": "−2.67%",
-      "description": "GLD is a fund backed by gold, a common store of value. It fell Tuesday.",
+      "prior_close": 369.36,
+      "change_percent": -0.66,
+      "display_change": "−0.66%",
+      "description": "GLD is a fund backed by gold, a common store of value. It slipped Wednesday morning.",
       "so_what": {
         "channel_id": "vix",
         "context": {
@@ -325,25 +325,25 @@
       "explains": [],
       "claims": [
         {
-          "sentence_id": "expected-volatility-definition",
+          "sentence_id": "expected-volatility-wed-1",
           "type": "mechanism",
           "evidence": "https://www.nasdaq.com/market-activity/etf/gld"
         },
         {
-          "sentence_id": "expected-volatility-close",
+          "sentence_id": "expected-volatility-wed-2",
           "type": "fact",
-          "evidence": "https://www.nasdaq.com/market-activity/etf/gld"
+          "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"
         }
       ],
       "data_source": "NYSE market data · GLD",
-      "fetched_at": "2026-11-10T16:00:00-05:00",
-      "range": "Monday close 379.53 · Tuesday close 369.40",
+      "fetched_at": "2026-11-11T10:49:00-05:00",
+      "range": "Tuesday close 369.36 · Wednesday 10:48 AM 366.93",
       "points": [
-        25.64,
         372.52,
         377.6832,
         379.53,
-        369.4
+        369.4,
+        366.93
       ],
       "sources": [
         {
@@ -353,13 +353,13 @@
       ],
       "series_dates": [
         "2026-11-06T16:00:00-05:00",
-        "2026-11-06T16:00:00-05:00",
         "2026-11-09T10:57:00-05:00",
         "2026-11-09T16:00:00-05:00",
-        "2026-11-10T16:00:00-05:00"
+        "2026-11-10T16:00:00-05:00",
+        "2026-11-11T10:49:00-05:00"
       ],
       "available": true,
-      "frequency": "Daily close",
+      "frequency": "Intraday",
       "display_name": "Gold fund (GLD)",
       "source": "Nasdaq market data · GLD",
       "url": "https://www.nasdaq.com/market-activity/etf/gld"

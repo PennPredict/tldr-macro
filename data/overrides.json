@@ -47,5 +47,12 @@
     "reason": "The required checked three-market template resembles earlier editions, while Monday's verified stock, long-term bond-fund, and oil-fund observations are distinct and clearly labeled.",
     "evidence_url": "https://apnews.com/article/stocks-markets-ai-trump-oil-d938f8e6ff42b3706e1d36e6245ec56b",
     "expires_at": "2026-11-09T16:00:00-05:00"
+  },
+  {
+    "id": "summary-similarity-2026-11-11",
+    "owner": "TL;DR Macro editorial",
+    "reason": "The required checked template resembles earlier editions, while Wednesday's verified stock, bond-fund, and oil-fund observations are distinct and clearly labeled.",
+    "evidence_url": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e",
+    "expires_at": "2026-11-11T16:00:00-05:00"
   }
 ]

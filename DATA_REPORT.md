@@ -1,6 +1,6 @@
 # Data Report
 
-Generated: 2026-11-11T00:47:06.145Z
+Generated: 2026-11-11T15:52:40.979Z
 
 | Instrument | Provider | Series | Frequency | Latest timestamp | Baseline | Chart points | Status |
 |---|---|---|---|---|---|---:|---|
@@ -51,13 +51,13 @@ Generated: 2026-11-11T00:47:06.145Z
 
 | Instrument | Fetched timestamp | Baseline | Display | Provider |
 |---|---|---|---|---|
-| S&P 500 | 2026-11-10T16:00:00-05:00 | Monday close 752.69 · Tuesday close 750.02 | $750.02 (−0.35%) | State Street · SPY |
-| 10-year Treasury yield | 2026-11-10T16:00:00-05:00 | Monday close 81.96 · Tuesday close 80.88 | $80.88 (−1.32%) | Nasdaq market data · TLT |
-| Brent crude oil | 2026-11-10T16:00:00-05:00 | Monday close 58.93 · Tuesday close 58.365 | $58.37 (−0.96%) | USCF · BNO |
-| Nasdaq Composite | 2026-11-10T16:00:00-05:00 | Monday close 25,253.14 · Tuesday close 25,065.88 | 25,065.88 (−0.74%) | Nasdaq Composite |
-| Dow Jones Industrial Average | 2026-11-10T16:00:00-05:00 | Monday close 523.33 · Tuesday close 521.76 | $521.76 (−0.30%) | State Street · DIA |
-| Expected volatility | 2026-11-10T16:00:00-05:00 | Monday close 379.53 · Tuesday close 369.40 | $369.40 (−2.67%) | NYSE market data · GLD |
+| S&P 500 | 2026-11-11T10:49:00-05:00 | Tuesday close 749.92 · Wednesday 10:48 AM 757.29 | $757.29 (+0.98%) | State Street · SPY |
+| 10-year Treasury yield | 2026-11-11T10:49:00-05:00 | Tuesday close 80.88 · Wednesday 10:48 AM 80.515 | $80.52 (−0.45%) | Nasdaq market data · TLT |
+| Brent crude oil | 2026-11-11T10:49:00-05:00 | Tuesday close 58.36 · Wednesday 10:49 AM 59.79 | $59.79 (+2.45%) | USCF · BNO |
+| Nasdaq Composite | 2026-11-11T10:49:00-05:00 | Tuesday close 25,065.88 · Wednesday 10:47 AM 25,458.16 | 25,458.16 (+1.56%) | Nasdaq Composite |
+| Dow Jones Industrial Average | 2026-11-11T10:49:00-05:00 | Tuesday close 521.73 · Wednesday 10:49 AM 520.865 | $520.87 (−0.17%) | State Street · DIA |
+| Expected volatility | 2026-11-11T10:49:00-05:00 | Tuesday close 369.36 · Wednesday 10:48 AM 366.93 | $366.93 (−0.66%) | NYSE market data · GLD |
 
 - Nasdaq Composite: 2026-10-02T16:00:00-04:00; 27,190.86; +1.19%; Nasdaq via FRED
 - Dow Jones Industrial Average: 2026-10-05T10:10:00-04:00; 51,267.90; +0.18%; S&P Dow Jones Indices via FRED
-- Silver futures: 2026-11-10T16:00:00-05:00; $46.48; −3.45%; Nasdaq market data · SLV
+- Silver futures: 2026-11-11T10:49:00-05:00; $47.18; +1.50%; Nasdaq market data · SLV

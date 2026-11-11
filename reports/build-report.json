@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-11T00:47:06.055Z",
-  "edition_date": "2026-11-10",
+  "generated_at": "2026-11-11T15:52:40.891Z",
+  "edition_date": "2026-11-11",
   "policy_version": 1,
   "status": "passed",
   "freshness_limit_minutes": 360,
@@ -11,12 +11,12 @@
   },
   "claim_ledger": {
     "headline_claims": 6,
-    "view_claims": 18,
+    "view_claims": 16,
     "market_claims": 12
   },
   "snapshot_checks": {
-    "summary_words": 11,
-    "summary_characters": 74,
+    "summary_words": 9,
+    "summary_characters": 56,
     "priority_order": [
       "S&P 500",
       "10-year Treasury yield",
@@ -87,27 +87,11 @@
   },
   "edition_summary": {
     "facts": {
-      "edition_date": "2026-11-10",
+      "edition_date": "2026-11-11",
       "stocks": {
         "name": "S&P 500",
-        "value": 750.02,
-        "change_percent": -0.35,
-        "bucket": "small_down",
-        "record": null,
-        "streak": null,
-        "first_in": null,
-        "range_position": null,
-        "move": "down",
-        "qualifier": {
-          "type": "size",
-          "bucket": "small_down",
-          "text": "slightly"
-        }
-      },
-      "rates": {
-        "name": "10-year Treasury yield",
-        "value": 80.88,
-        "change_basis_points": 13.2,
+        "value": 757.29,
+        "change_percent": 0.98,
         "bucket": "medium_up",
         "record": null,
         "streak": null,
@@ -116,120 +100,144 @@
         "move": "up",
         "qualifier": null
       },
-      "oil": {
-        "name": "Brent crude oil",
-        "value": 58.365,
-        "change_percent": -0.96,
-        "bucket": "medium_down",
+      "rates": {
+        "name": "10-year Treasury yield",
+        "value": 80.515,
+        "change_basis_points": 4.5,
+        "bucket": "small_up",
         "record": null,
         "streak": null,
         "first_in": null,
         "range_position": null,
-        "move": "down",
-        "qualifier": null
+        "move": "up",
+        "qualifier": {
+          "type": "size",
+          "bucket": "small_up",
+          "text": "slightly"
+        }
       },
-      "release": {
-        "label": "Prices rose 0.4% in October",
-        "source_url": "https://www.bls.gov/news.release/cpi.htm"
+      "oil": {
+        "name": "Brent crude oil",
+        "value": 59.79,
+        "change_percent": 2.45,
+        "bucket": "large_up",
+        "record": null,
+        "streak": null,
+        "first_in": null,
+        "range_position": null,
+        "move": "up",
+        "qualifier": {
+          "type": "size",
+          "bucket": "large_up",
+          "text": "sharply"
+        }
       },
+      "release": null,
       "nasdaq": {
         "name": "Nasdaq Composite",
-        "value": 25065.88,
-        "change_percent": -0.74,
-        "bucket": "medium_down"
+        "value": 25458.16,
+        "change_percent": 1.56,
+        "bucket": "large_up"
       }
     },
-    "generated_sentence": "Prices rose 0.4% in October; government borrowing rates rose; Nasdaq fell.",
+    "generated_sentence": "Shares rose; Treasury yields edged up; crude oil jumped.",
     "lint": {
       "passed": true,
       "errors": [],
       "warnings": [],
-      "characters": 74,
-      "words": 12,
-      "grade": 6.4
+      "characters": 56,
+      "words": 9,
+      "grade": 2.3
     },
     "similarity_scores": [
       {
-        "date": "2026-11-09",
-        "edit_similarity": 0.188,
-        "token_similarity": 0,
+        "date": "2026-11-10",
+        "edit_similarity": 0.261,
+        "token_similarity": 0.056,
         "first_four_match": false,
         "limit": 0.6
       },
       {
+        "date": "2026-11-09",
+        "edit_similarity": 0.695,
+        "token_similarity": 0.5,
+        "first_four_match": false,
+        "limit": 0.75
+      },
+      {
         "date": "2026-11-06",
-        "edit_similarity": 0.464,
-        "token_similarity": 0.2,
+        "edit_similarity": 0.333,
+        "token_similarity": 0.214,
         "first_four_match": false,
         "limit": 0.75
       },
       {
         "date": "2026-11-04",
-        "edit_similarity": 0.464,
-        "token_similarity": 0.2,
+        "edit_similarity": 0.3,
+        "token_similarity": 0.133,
         "first_four_match": false,
         "limit": 0.75
       },
       {
         "date": "2026-11-03",
-        "edit_similarity": 0.261,
-        "token_similarity": 0.059,
+        "edit_similarity": 0.764,
+        "token_similarity": 0.7,
         "first_four_match": false,
         "limit": 0.75
       },
       {
         "date": "2026-11-02",
-        "edit_similarity": 0.464,
-        "token_similarity": 0.267,
+        "edit_similarity": 0.371,
+        "token_similarity": 0.125,
         "first_four_match": false,
         "limit": 0.75
       },
       {
         "date": "2026-10-27",
-        "edit_similarity": 0.217,
-        "token_similarity": 0,
+        "edit_similarity": 0.672,
+        "token_similarity": 0.583,
         "first_four_match": false,
         "limit": 0.75
       },
       {
         "date": "2026-10-23",
-        "edit_similarity": 0.203,
-        "token_similarity": 0,
+        "edit_similarity": 0.893,
+        "token_similarity": 0.8,
         "first_four_match": false,
         "limit": 0.75
       },
       {
         "date": "2026-10-22",
-        "edit_similarity": 0.493,
-        "token_similarity": 0.308,
+        "edit_similarity": 0.315,
+        "token_similarity": 0.143,
         "first_four_match": false,
         "limit": 0.75
       },
       {
         "date": "2026-10-21",
-        "edit_similarity": 0.188,
-        "token_similarity": 0,
+        "edit_similarity": 0.607,
+        "token_similarity": 0.583,
         "first_four_match": false,
         "limit": 0.75
       },
       {
         "date": "2026-10-19",
-        "edit_similarity": 0.217,
-        "token_similarity": 0,
+        "edit_similarity": 0.672,
+        "token_similarity": 0.583,
         "first_four_match": false,
         "limit": 0.75
       },
       {
         "date": "2026-10-14",
-        "edit_similarity": 0.565,
-        "token_similarity": 0.333,
+        "edit_similarity": 0.277,
+        "token_similarity": 0.056,
         "first_four_match": false,
         "limit": 0.75
       },
       {
         "date": "2026-10-07",
-        "edit_similarity": 0.536,
-        "token_similarity": 0.333,
+        "edit_similarity": 0.328,
+        "token_similarity": 0.188,
         "first_four_match": false,
         "limit": 0.75
       }
@@ -542,46 +550,46 @@
     "count": 3,
     "items": [
       {
-        "headline": "Inflation Stays Elevated",
-        "evidence": {
-          "bucket": "inflation_reports",
-          "rule": "Monthly consumer-price growth exceeded forecasts.",
-          "data": "The CPI rose 0.4% in October; core CPI rose 0.3%."
-        },
-        "visual_gate": {
-          "passed": false,
-          "failures": [
-            "The official release is clearer than another chart."
-          ],
-          "needs_human_check": false
-        }
-      },
-      {
-        "headline": "Treasury Yields Jump",
-        "evidence": {
-          "bucket": "interest_rates_and_yields",
-          "rule": "The 10-year yield rose by more than ten basis points.",
-          "data": "The 10-year yield rose to 4.99% from 4.88%."
-        },
-        "visual_gate": {
-          "passed": false,
-          "failures": [
-            "The verified bond-fund move is already shown in Market Snapshot."
-          ],
-          "needs_human_check": false
-        }
-      },
-      {
-        "headline": "Homebuilders Lose Ground",
+        "headline": "AI Shares Rebound",
         "evidence": {
           "bucket": "companies",
-          "rule": "Major homebuilder shares declined as long-term yields rose.",
-          "data": "Lennar fell 5.4%; D.R. Horton fell 3.8%; PulteGroup fell 3.9%."
+          "rule": "Several large AI-related shares recovered.",
+          "data": "Micron and Broadcom each rose 5.6%; Nvidia rose 2.9% in early trading."
         },
         "visual_gate": {
           "passed": false,
           "failures": [
-            "The story compares several companies without a single verified series."
+            "The market snapshot already shows the broader technology move."
+          ],
+          "needs_human_check": false
+        }
+      },
+      {
+        "headline": "Market Breadth Stays Narrow",
+        "evidence": {
+          "bucket": "market_volatility",
+          "rule": "The major indexes diverged and more S&P 500 members fell than rose.",
+          "data": "Nasdaq +1.56%; DIA −0.17% at about 10:49 AM ET."
+        },
+        "visual_gate": {
+          "passed": false,
+          "failures": [
+            "The market cards already show the index split."
+          ],
+          "needs_human_check": false
+        }
+      },
+      {
+        "headline": "Oil Prices Rebound",
+        "evidence": {
+          "bucket": "oil_and_energy",
+          "rule": "The Brent-linked fund rose more than two percent.",
+          "data": "BNO rose 2.45% by 10:49 AM ET."
+        },
+        "visual_gate": {
+          "passed": false,
+          "failures": [
+            "The verified fund move already appears in Market Snapshot."
           ],
           "needs_human_check": false
         }
@@ -667,8 +675,8 @@
         "reason": "streak phrase without a three-close streak flag"
       }
     ],
-    "history_count": 37,
-    "views": 9,
+    "history_count": 40,
+    "views": 8,
     "definitions": [
       "household",
       "business",
@@ -679,48 +687,48 @@
   },
   "global_items": [
     {
-      "headline": "Europe Shares Gain",
+      "headline": "Spain Strike Disrupts Transit",
       "sources": [
         {
           "name": "The Associated Press",
-          "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-ffe205fbc4fddf65c3e8e64e740355b7",
+          "href": "https://apnews.com/article/spain-strike-housing-elections-pedro-sanchez-68a061a72d7cdf842b7803a816e46ef0",
           "type": "wire"
         },
         {
-          "name": "Reuters",
-          "href": "https://www.reuters.com/markets/europe/european-shares-near-record-high-lower-oil-prices-boost-sentiment-2026-11-10/",
-          "type": "wire"
+          "name": "European Commission · housing",
+          "href": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Housing_in_Europe_-_2026_edition",
+          "type": "primary"
         }
       ],
       "needs_human_check": false
     },
     {
-      "headline": "Korea Stocks Rebound",
+      "headline": "China Car Exports Surge",
       "sources": [
         {
-          "name": "Korea Exchange",
-          "href": "https://global.krx.co.kr/",
-          "type": "primary"
+          "name": "The Associated Press",
+          "href": "https://apnews.com/article/china-autos-exports-evs-hybrids-cars-2779fbbf91f391dd8a59c7ee626cb1b5",
+          "type": "wire"
         },
         {
-          "name": "The Associated Press",
-          "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-ffe205fbc4fddf65c3e8e64e740355b7",
-          "type": "wire"
+          "name": "World Trade Organization · China profile",
+          "href": "https://www.wto.org/english/res_e/statis_e/daily_update_e/trade_profiles/CN_e.pdf",
+          "type": "primary"
         }
       ],
       "needs_human_check": false
     },
     {
-      "headline": "Shipping Risks Remain",
+      "headline": "Ukraine Talks Yield Little",
       "sources": [
         {
-          "name": "U.S. Energy Information Administration",
-          "href": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints",
-          "type": "primary"
+          "name": "The Associated Press · talks",
+          "href": "https://apnews.com/article/russia-ukraine-war-putin-zelenskyy-uae-3d878a3e56d5df5bd198a6d20c824d18",
+          "type": "wire"
         },
         {
-          "name": "The Associated Press",
-          "href": "https://apnews.com/article/49f273e626ca4bab0e5a2d32e4943014",
+          "name": "The Associated Press · negotiation history",
+          "href": "https://apnews.com/article/russia-ukraine-war-negotiations-talks-timeline-a19c5072ddf0b8f9ab2a11672db103d8",
           "type": "wire"
         }
       ],
@@ -734,12 +742,11 @@
       "nasdaq.com": 3,
       "uscfinvestments.com": 1,
       "nyse.com": 1,
-      "apnews.com": 6,
-      "reuters.com": 1,
-      "global.krx.co.kr": 1,
-      "eia.gov": 1,
-      "bls.gov": 1,
-      "home.treasury.gov": 1
+      "apnews.com": 7,
+      "ec.europa.eu": 1,
+      "wto.org": 1,
+      "spglobal.com": 1,
+      "eia.gov": 1
     },
     "snapshot_cards_by_domain": {
       "ssga.com": 2,
@@ -796,77 +803,79 @@
   "observations": [
     {
       "name": "S&P 500",
-      "value": 750.02,
-      "prior_close": 752.69,
-      "change_percent": -0.35,
+      "value": 757.29,
+      "prior_close": 749.92,
+      "change_percent": 0.98,
       "source": "State Street · SPY",
       "source_url": "https://www.ssga.com/us/en/intermediary/etfs/spdr-sp-500-etf-trust-spy",
-      "fetched_at": "2026-11-10T16:00:00-05:00",
-      "age_minutes": 5,
+      "fetched_at": "2026-11-11T10:49:00-05:00",
+      "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "10-year Treasury yield",
-      "value": 80.88,
-      "prior_close": 81.96,
-      "change_percent": -1.32,
+      "value": 80.515,
+      "prior_close": 80.88,
+      "change_percent": -0.45,
       "source": "Nasdaq market data · TLT",
       "source_url": "https://www.nasdaq.com/market-activity/etf/tlt",
-      "fetched_at": "2026-11-10T16:00:00-05:00",
-      "age_minutes": 5,
+      "fetched_at": "2026-11-11T10:49:00-05:00",
+      "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "Brent crude oil",
-      "value": 58.365,
-      "prior_close": 58.93,
-      "change_percent": -0.96,
+      "value": 59.79,
+      "prior_close": 58.36,
+      "change_percent": 2.45,
       "source": "USCF · BNO",
       "source_url": "https://www.uscfinvestments.com/bno",
-      "fetched_at": "2026-11-10T16:00:00-05:00",
-      "age_minutes": 5,
+      "fetched_at": "2026-11-11T10:49:00-05:00",
+      "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "Nasdaq Composite",
-      "value": 25065.88,
-      "prior_close": 25253.14,
-      "change_percent": -0.74,
+      "value": 25458.16,
+      "prior_close": 25065.88,
+      "change_percent": 1.56,
       "source": "Nasdaq Composite",
       "source_url": "https://www.nasdaq.com/market-activity/index/comp",
-      "fetched_at": "2026-11-10T16:00:00-05:00",
-      "age_minutes": 5,
+      "fetched_at": "2026-11-11T10:49:00-05:00",
+      "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "Dow Jones Industrial Average",
-      "value": 521.76,
-      "prior_close": 523.33,
-      "change_percent": -0.3,
+      "value": 520.865,
+      "prior_close": 521.73,
+      "change_percent": -0.17,
       "source": "State Street · DIA",
       "source_url": "https://www.ssga.com/us/en/intermediary/etfs/spdr-dow-jones-industrial-average-etf-trust-dia",
-      "fetched_at": "2026-11-10T16:00:00-05:00",
-      "age_minutes": 5,
+      "fetched_at": "2026-11-11T10:49:00-05:00",
+      "age_minutes": 0,
       "status": "checked"
     },
     {
       "name": "Expected volatility",
-      "value": 369.4,
-      "prior_close": 379.53,
-      "change_percent": -2.67,
+      "value": 366.93,
+      "prior_close": 369.36,
+      "change_percent": -0.66,
       "source": "NYSE market data · GLD",
       "source_url": "https://www.nyse.com/quote/ARCX:GLD",
-      "fetched_at": "2026-11-10T16:00:00-05:00",
-      "age_minutes": 5,
+      "fetched_at": "2026-11-11T10:49:00-05:00",
+      "age_minutes": 0,
       "status": "checked"
     }
   ],
   "warnings": [
+    "Edition summary resembles 2026-11-03; documented override is active",
+    "Edition summary resembles 2026-10-23; documented override is active",
     "More Markets has 0 verified International Indices cards; unsupported cards are withheld rather than padded",
     "More Markets has 0 verified Rates cards; unsupported cards are withheld rather than padded",
     "More Markets has 0 verified Currencies cards; unsupported cards are withheld rather than padded",
     "More Markets has 1 verified Commodities cards; unsupported cards are withheld rather than padded",
-    "Source diversity: apnews.com accounts for 6 of 18 links, above 25% after unsupported items were withheld"
+    "Source diversity: apnews.com accounts for 7 of 18 links, above 25% after unsupported items were withheld"
   ],
   "failures": []
 }

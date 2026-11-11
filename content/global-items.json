@@ -1,86 +1,86 @@
 [
   {
-    "tag": "Global markets",
+    "tag": "Policy",
     "qualifies": true,
-    "headline": "Europe Shares Gain",
-    "what": "The Stoxx Europe 600 rose Tuesday.",
-    "context": "Lower oil prices helped offset concern about U.S. inflation.",
-    "why_it_matters": "European markets connect U.S. investors with global banks, manufacturers, and trade.",
+    "headline": "Spain Strike Disrupts Transit",
+    "what": "A nationwide strike closed businesses and public transportation.",
+    "context": "Workers protested housing costs before Spain's election.",
+    "why_it_matters": "Disruptions in the eurozone's fourth-largest economy can affect travel, trade, and investor confidence.",
     "concept_terms": [
-      "Stoxx Europe 600",
-      "European markets"
+      "general strike",
+      "eurozone"
     ],
     "sources": [
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-ffe205fbc4fddf65c3e8e64e740355b7",
+        "href": "https://apnews.com/article/spain-strike-housing-elections-pedro-sanchez-68a061a72d7cdf842b7803a816e46ef0",
         "type": "wire"
       },
       {
-        "name": "Reuters",
-        "href": "https://www.reuters.com/markets/europe/european-shares-near-record-high-lower-oil-prices-boost-sentiment-2026-11-10/",
-        "type": "wire"
+        "name": "European Commission · housing",
+        "href": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Housing_in_Europe_-_2026_edition",
+        "type": "primary"
       }
     ],
-    "developing": false,
-    "as_of": "2026-11-10T16:05:00-05:00",
-    "importance_score": 96,
+    "developing": true,
+    "as_of": "2026-11-11T10:49:00-05:00",
+    "importance_score": 97,
     "needs_human_check": false
   },
   {
-    "tag": "Global markets",
+    "tag": "Trade",
     "qualifies": true,
-    "headline": "Korea Stocks Rebound",
-    "what": "South Korea's Kospi jumped 4.4% Tuesday.",
-    "context": "Samsung Electronics and SK Hynix led the recovery.",
-    "why_it_matters": "Korea's chipmakers supply memory used in phones, computers, and AI systems.",
+    "headline": "China Car Exports Surge",
+    "what": "China's passenger-car exports rose sharply in October.",
+    "context": "Weak domestic demand pushed automakers toward overseas buyers.",
+    "why_it_matters": "More exports can intensify competition and trade tension in Europe and other markets.",
     "concept_terms": [
-      "Kospi",
-      "memory chips"
+      "car exports",
+      "domestic demand"
     ],
     "sources": [
       {
-        "name": "Korea Exchange",
-        "href": "https://global.krx.co.kr/",
-        "type": "primary"
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/china-autos-exports-evs-hybrids-cars-2779fbbf91f391dd8a59c7ee626cb1b5",
+        "type": "wire"
       },
       {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-ffe205fbc4fddf65c3e8e64e740355b7",
-        "type": "wire"
+        "name": "World Trade Organization · China profile",
+        "href": "https://www.wto.org/english/res_e/statis_e/daily_update_e/trade_profiles/CN_e.pdf",
+        "type": "primary"
       }
     ],
     "developing": false,
-    "as_of": "2026-11-10T16:05:00-05:00",
-    "importance_score": 94,
+    "as_of": "2026-11-11T10:49:00-05:00",
+    "importance_score": 95,
     "needs_human_check": false
   },
   {
     "tag": "Conflict",
     "qualifies": true,
-    "headline": "Shipping Risks Remain",
-    "what": "The Strait of Hormuz remained disrupted despite signs of easing conflict.",
-    "context": "Countries continued talks about protecting global shipping routes.",
-    "why_it_matters": "Delays at major sea lanes can change oil, freight, and imported-goods costs.",
+    "headline": "Ukraine Talks Yield Little",
+    "what": "Russia and Ukraine agreed to a prisoner exchange.",
+    "context": "The talks produced no major breakthrough toward ending the war.",
+    "why_it_matters": "The conflict continues to affect energy routes, European budgets, and geopolitical risk.",
     "concept_terms": [
-      "Strait of Hormuz",
-      "shipping routes"
+      "prisoner exchange",
+      "geopolitical risk"
     ],
     "sources": [
       {
-        "name": "U.S. Energy Information Administration",
-        "href": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints",
-        "type": "primary"
+        "name": "The Associated Press · talks",
+        "href": "https://apnews.com/article/russia-ukraine-war-putin-zelenskyy-uae-3d878a3e56d5df5bd198a6d20c824d18",
+        "type": "wire"
       },
       {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/49f273e626ca4bab0e5a2d32e4943014",
+        "name": "The Associated Press · negotiation history",
+        "href": "https://apnews.com/article/russia-ukraine-war-negotiations-talks-timeline-a19c5072ddf0b8f9ab2a11672db103d8",
         "type": "wire"
       }
     ],
     "developing": true,
-    "as_of": "2026-11-10T16:05:00-05:00",
-    "importance_score": 92,
+    "as_of": "2026-11-11T10:49:00-05:00",
+    "importance_score": 93,
     "needs_human_check": true
   }
 ]
