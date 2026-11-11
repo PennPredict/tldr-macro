@@ -16,6 +16,10 @@ The missing layer was upstream selection. Before this change, no reusable config
 6. Update each theme incrementally: replace today's evidence when verified, change a six-month or three-to-five-year statement only when a dated series supports it, and otherwise retain the last verified context with a clear availability label.
 7. Run `npm run verify`. Only a passing build may be committed and deployed. On failure, keep the last verified edition live and record the failure rather than publishing a partial briefing.
 
+## Display-copy rules
+
+Every generated display field is one sentence and 15 words or fewer. Do not add hedging boilerplate or restate facts already visible elsewhere. The “one session does not establish a trend” caution belongs only in Bottom Line. Mark unavailable theme horizons with `has_data: false`; templates preserve the data but do not render that field. When a selected daily change overlaps a persistent theme, the theme links to Today instead of repeating the idea. The build logs default-visible prose above 700 words and every visible sentence above 15 words.
+
 ## Candidate source metadata
 
 Every source needs `name`, `url`, and `type`. Reporting, wire, and company sources require `published_at`. Primary and market-data sources require either `published_at` or the actual `observation_date`. This avoids inventing publication dates for continuously updated official datasets.

@@ -1,5 +1,9 @@
 # Design requests
 
+## 2026-11-11 — Progressive-disclosure prose reduction
+
+Approved by the user in chat. Preserve the existing navy/teal brand, typography, logo, data, links, archives, RSS, methodology, accessibility, and mobile behavior while reducing default-visible homepage prose to 700 words or fewer. Collapse theme evidence and release detail, hide explicitly flagged unavailable theme horizons, merge daily-story outlook into significance, render markets as compact sparkline rows, shorten section titles, move the connections caveat into an info popover, and remove the completion tagline. Keep collapsed material in the DOM, add explicit data-availability flags and generation budgets, and report visible prose and overlong sentences at build time.
+
 ## 2026-11-11 — Persistent macro-theme editorial hierarchy
 
 Approved by the user in chat. Preserve the existing dark navy and teal identity, typography, logo, responsive behavior, market-data infrastructure, evidence popovers, and source treatment. Replace the volume-led daily hierarchy with five persistent macro-theme cards, a maximum-three “What Actually Changed Today” section, the existing evidence-linked economic connection band, a compact market snapshot, the existing forward calendar, and a two-sentence Bottom Line with a restrained completion message. Remove duplicate Top Stories and TL;DR Global presentation while retaining their verified source material as inputs to the new theme and daily-change components. Long-horizon fields must state when verified trend evidence is unavailable rather than infer a structural change from one session.

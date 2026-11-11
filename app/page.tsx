@@ -16,11 +16,11 @@ import WhatChangedToday from "./WhatChangedToday";
 import BottomLine from "./BottomLine";
 
 export default function Home(){if(features.design.v2)return <V2Home/>;const summary=generateSummary(edition),hero=generateHeroCopy(edition);return <main className="shell"><Header updated={edition.updated_at} summary={summary.sentence} heroHeadline={hero.headline} heroSummary={hero.summary}/>
-  <MacroThemes themes={themes}/>
+  <MacroThemes themes={themes} storyTopics={assessments.map(item=>item.topic_tag)}/>
   <WhatChangedToday stories={headlines} assessments={assessments}/>
   <EconomicThread/>
   <MarketSnapshot markets={edition.markets} compact/>
-  <section className="watch" id="next" aria-labelledby="watch-title"><div className="section-heading"><h2 id="watch-title">Next on TL;DR Macro</h2><p>Historical relationship, not prediction.</p></div><EventCalendar events={edition.calendar} published={edition.updated_at}/></section>
+  <section className="watch" id="next" aria-labelledby="watch-title"><div className="section-heading"><h2 id="watch-title">Next</h2></div><EventCalendar events={edition.calendar} published={edition.updated_at}/></section>
   <BottomLine sentences={bottomLine.sentences} closing={bottomLine.closing}/>
   <Footer/>
 </main>}

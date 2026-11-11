@@ -69,6 +69,7 @@ for(const theme of macroThemes){
   for(const field of ["current_status","central_question","trajectory_note"])if(!theme[field])failures.push(`${theme.title}: missing ${field}`);
   for(const [label,horizon] of [["today",theme.today],["six_month",theme.six_month],["long_term",theme.long_term]]){
     if(!horizon?.text||!horizon?.as_of||!horizon?.verification_status)failures.push(`${theme.title}: incomplete ${label} horizon`);
+    if(typeof horizon?.has_data!=="boolean")failures.push(`${theme.title}: ${label} horizon requires an explicit has_data flag`);
     if(!["verified","unavailable","methodology"].includes(horizon?.verification_status))failures.push(`${theme.title}: invalid ${label} verification status`);
     if(horizon?.source_url){const url=new URL(horizon.source_url);if(!approved(url.hostname))failures.push(`${theme.title}: unapproved ${label} source ${url.hostname}`);if(url.pathname==="/"||url.pathname==="")failures.push(`${theme.title}: ${label} source must link to a document or series`);}
   }

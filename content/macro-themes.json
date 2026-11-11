@@ -6,9 +6,9 @@
     "central_question": "Are price increases cooling enough to give the Federal Reserve room to lower rates?",
     "trajectory": "unchanged",
     "trajectory_note": "Today’s oil move is relevant to costs, but one session does not establish a new inflation trend.",
-    "today": {"text": "The Brent-linked oil fund rose 2.45% Wednesday morning.", "as_of": "2026-11-11T10:49:00-05:00", "verification_status": "verified", "source_name": "Nasdaq market data · BNO", "source_url": "https://www.nasdaq.com/market-activity/etf/bno"},
-    "six_month": {"text": "No verified six-month inflation series was refreshed for this edition; the prior structural view is retained.", "as_of": "2026-11-11", "verification_status": "unavailable"},
-    "long_term": {"text": "A multi-year conclusion requires the official CPI or PCE series, not one day of energy prices.", "as_of": "2026-11-11", "verification_status": "methodology", "source_name": "Bureau of Labor Statistics", "source_url": "https://www.bls.gov/cpi/"},
+    "today": {"has_data": true, "text": "The Brent-linked oil fund rose 2.45% Wednesday morning.", "as_of": "2026-11-11T10:49:00-05:00", "verification_status": "verified", "source_name": "Nasdaq market data · BNO", "source_url": "https://www.nasdaq.com/market-activity/etf/bno"},
+    "six_month": {"has_data": false, "text": "No verified six-month inflation series was refreshed for this edition; the prior structural view is retained.", "as_of": "2026-11-11", "verification_status": "unavailable"},
+    "long_term": {"has_data": false, "text": "A multi-year conclusion requires the official CPI or PCE series, not one day of energy prices.", "as_of": "2026-11-11", "verification_status": "methodology", "source_name": "Bureau of Labor Statistics", "source_url": "https://www.bls.gov/cpi/"},
     "recent_evidence": [{"text": "Producer prices are scheduled for Nov. 13.", "as_of": "2026-11-11", "source_name": "BLS release calendar", "source_url": "https://www.bls.gov/schedule/2026/11_sched.htm"}]
   },
   {
@@ -18,9 +18,9 @@
     "central_question": "Can household spending and hiring remain resilient as borrowing stays expensive?",
     "trajectory": "unchanged",
     "trajectory_note": "Today’s verified edition contains no release strong enough to alter the growth outlook.",
-    "today": {"text": "No new verified consumer, labor, or output release changed the outlook.", "as_of": "2026-11-11T10:49:00-05:00", "verification_status": "verified"},
-    "six_month": {"text": "No verified six-month growth series was refreshed for this edition; the last verified view is retained.", "as_of": "2026-11-11", "verification_status": "unavailable"},
-    "long_term": {"text": "The durable question is whether wages, productivity, and real spending can support growth over several years.", "as_of": "2026-11-11", "verification_status": "methodology", "source_name": "Bureau of Economic Analysis", "source_url": "https://www.bea.gov/data/consumer-spending/main"},
+    "today": {"has_data": false, "text": "No new verified consumer, labor, or output release changed the outlook.", "as_of": "2026-11-11T10:49:00-05:00", "verification_status": "verified"},
+    "six_month": {"has_data": false, "text": "No verified six-month growth series was refreshed for this edition; the last verified view is retained.", "as_of": "2026-11-11", "verification_status": "unavailable"},
+    "long_term": {"has_data": false, "text": "The durable question is whether wages, productivity, and real spending can support growth over several years.", "as_of": "2026-11-11", "verification_status": "methodology", "source_name": "Bureau of Economic Analysis", "source_url": "https://www.bea.gov/data/consumer-spending/main"},
     "recent_evidence": [{"text": "State employment data are scheduled for Nov. 20.", "as_of": "2026-11-11", "source_name": "BLS release calendar", "source_url": "https://www.bls.gov/schedule/2026/11_sched.htm"}]
   },
   {
@@ -30,9 +30,9 @@
     "central_question": "Will government borrowing and inflation keep longer-term financing costs elevated?",
     "trajectory": "unchanged",
     "trajectory_note": "A bond-fund move while the cash market is closed is not enough to reset the rate outlook.",
-    "today": {"text": "The long-term Treasury fund fell 0.45% while the cash Treasury market was closed for Veterans Day.", "as_of": "2026-11-11T10:49:00-05:00", "verification_status": "verified", "source_name": "Nasdaq market data · TLT", "source_url": "https://www.nasdaq.com/market-activity/etf/tlt"},
-    "six_month": {"text": "No verified six-month yield or credit-spread series was refreshed for this edition.", "as_of": "2026-11-11", "verification_status": "unavailable"},
-    "long_term": {"text": "The multi-year issue remains how inflation, deficits, and debt demand shape borrowing costs.", "as_of": "2026-11-11", "verification_status": "methodology", "source_name": "U.S. Treasury", "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates"},
+    "today": {"has_data": true, "text": "The long-term Treasury fund fell 0.45% while the cash Treasury market was closed for Veterans Day.", "as_of": "2026-11-11T10:49:00-05:00", "verification_status": "verified", "source_name": "Nasdaq market data · TLT", "source_url": "https://www.nasdaq.com/market-activity/etf/tlt"},
+    "six_month": {"has_data": false, "text": "No verified six-month yield or credit-spread series was refreshed for this edition.", "as_of": "2026-11-11", "verification_status": "unavailable"},
+    "long_term": {"has_data": false, "text": "The multi-year issue remains how inflation, deficits, and debt demand shape borrowing costs.", "as_of": "2026-11-11", "verification_status": "methodology", "source_name": "U.S. Treasury", "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates"},
     "recent_evidence": [{"text": "Use the next verified cash-market close before judging the direction of yields.", "as_of": "2026-11-11", "source_name": "U.S. Treasury", "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates"}]
   },
   {
@@ -42,9 +42,9 @@
     "central_question": "Can AI investment produce earnings broad enough to justify concentrated valuations?",
     "trajectory": "unchanged",
     "trajectory_note": "The rebound reinforces the importance of AI leaders but does not resolve concentration or return-on-investment questions.",
-    "today": {"text": "Several AI-related shares rose while fewer large stocks gained than declined.", "as_of": "2026-11-11T10:49:00-05:00", "verification_status": "verified", "source_name": "The Associated Press", "source_url": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"},
-    "six_month": {"text": "No verified six-month breadth or AI-investment series was refreshed for this edition.", "as_of": "2026-11-11", "verification_status": "unavailable"},
-    "long_term": {"text": "The structural test is whether heavy AI capital spending produces durable cash flow across more companies.", "as_of": "2026-11-11", "verification_status": "methodology", "source_name": "SEC filings", "source_url": "https://www.sec.gov/edgar/search/"},
+    "today": {"has_data": true, "text": "Several AI-related shares rose while fewer large stocks gained than declined.", "as_of": "2026-11-11T10:49:00-05:00", "verification_status": "verified", "source_name": "The Associated Press", "source_url": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"},
+    "six_month": {"has_data": false, "text": "No verified six-month breadth or AI-investment series was refreshed for this edition.", "as_of": "2026-11-11", "verification_status": "unavailable"},
+    "long_term": {"has_data": false, "text": "The structural test is whether heavy AI capital spending produces durable cash flow across more companies.", "as_of": "2026-11-11", "verification_status": "methodology", "source_name": "SEC filings", "source_url": "https://www.sec.gov/edgar/search/"},
     "recent_evidence": [{"text": "Nasdaq gains exceeded the Dow’s move Wednesday morning.", "as_of": "2026-11-11T10:49:00-05:00", "source_name": "Nasdaq Composite", "source_url": "https://www.nasdaq.com/market-activity/index/comp"}]
   },
   {
@@ -54,9 +54,9 @@
     "central_question": "Which policy, trade, or security developments could spill into inflation, growth, or capital flows?",
     "trajectory": "unchanged",
     "trajectory_note": "Today’s developments reinforce fragmentation risks but do not establish a new global regime.",
-    "today": {"text": "Spain’s strike, China’s auto exports, and limited Ukraine talks added separate global risks.", "as_of": "2026-11-11T10:49:00-05:00", "verification_status": "verified", "source_name": "The Associated Press", "source_url": "https://apnews.com/article/spain-strike-housing-elections-pedro-sanchez-68a061a72d7cdf842b7803a816e46ef0"},
-    "six_month": {"text": "No verified cross-country six-month series was refreshed for this edition.", "as_of": "2026-11-11", "verification_status": "unavailable"},
-    "long_term": {"text": "The multi-year theme is greater friction in trade, security, energy routes, and industrial policy.", "as_of": "2026-11-11", "verification_status": "methodology", "source_name": "World Trade Organization", "source_url": "https://www.wto.org/english/res_e/statis_e/statis_e.htm"},
+    "today": {"has_data": true, "text": "Spain’s strike, China’s auto exports, and limited Ukraine talks added separate global risks.", "as_of": "2026-11-11T10:49:00-05:00", "verification_status": "verified", "source_name": "The Associated Press", "source_url": "https://apnews.com/article/spain-strike-housing-elections-pedro-sanchez-68a061a72d7cdf842b7803a816e46ef0"},
+    "six_month": {"has_data": false, "text": "No verified cross-country six-month series was refreshed for this edition.", "as_of": "2026-11-11", "verification_status": "unavailable"},
+    "long_term": {"has_data": false, "text": "The multi-year theme is greater friction in trade, security, energy routes, and industrial policy.", "as_of": "2026-11-11", "verification_status": "methodology", "source_name": "World Trade Organization", "source_url": "https://www.wto.org/english/res_e/statis_e/statis_e.htm"},
     "recent_evidence": [
       {"text": "China’s passenger-car exports rose sharply in October.", "as_of": "2026-11-11", "source_name": "The Associated Press", "source_url": "https://apnews.com/article/china-autos-exports-evs-hybrids-cars-2779fbbf91f391dd8a59c7ee626cb1b5"},
       {"text": "Russia and Ukraine agreed to a prisoner exchange without a major peace breakthrough.", "as_of": "2026-11-11", "source_name": "The Associated Press", "source_url": "https://apnews.com/article/russia-ukraine-war-putin-zelenskyy-uae-3d878a3e56d5df5bd198a6d20c824d18"}
