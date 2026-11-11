@@ -1,19 +1,19 @@
-# Automated weekday publishing
+# Daily editorial refresh
 
-TL;DR Macro can update without a daily manual prompt. The production workflow should run through GitHub Actions shortly after the U.S. market opens.
+TL;DR Macro now has a fail-closed editorial planning command, but unattended source collection is not enabled. The production deployment republishes only content that is committed and passes the full verification suite.
 
-## Proposed schedule
+## Supported schedule
 
-- Weekdays at 9:35 a.m. America/New_York.
-- Skip weekends and U.S. market holidays.
-- Allow a manual run for corrections or major events.
+- Morning plan at 8:00 a.m. America/New_York.
+- Afternoon revision at 4:30 p.m. America/New_York.
+- Skip weekends and U.S. market holidays, and allow a manual correction run.
 
 ## Pipeline
 
 1. Collect market levels from a licensed market-data API.
 2. Collect releases and calendars from primary sources: Federal Reserve, Treasury, BEA, BLS, SEC, EIA, FRED, exchanges, and company investor-relations pages.
 3. Use the OpenAI Responses API with web search restricted to an approved domain list for current context and citations.
-4. Generate a briefing that conforms to a strict JSON schema.
+4. Build a verified 15–25 item candidate file and run `npm run editorial:plan -- --input <file> --edition morning|afternoon`.
 5. Reject publication when a number lacks a source, cited sources disagree, timestamps are stale, or confidence is low.
 6. Write the approved briefing to the repository, preserve the prior edition in the archive, and deploy through GitHub Pages.
 
@@ -37,4 +37,6 @@ Store secrets in GitHub Actions secrets. Never expose them to browser code or co
 
 ## Human involvement
 
-Routine editions can publish automatically once the data-collection and generation steps are connected. Until then, the scheduled GitHub Pages workflow republishes the latest validated edition already committed to `main`. A human should review low-confidence causal claims, conflicting sources, major geopolitical events, and corrections. The system should fail closed rather than publish an unsupported explanation.
+Routine editions can publish automatically once licensed data collection and permitted source retrieval are connected. Until then, a human supplies the candidate file, reviews the generated editorial plan, updates the existing content files, and runs `npm run verify`. Low-confidence causal claims, conflicting sources, major geopolitical events, and corrections remain human-review items. The system fails closed rather than publish an unsupported explanation.
+
+See [EDITORIAL_SYSTEM.md](EDITORIAL_SYSTEM.md) for the candidate contract, ranking behavior, and scheduling boundary.

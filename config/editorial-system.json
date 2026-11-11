@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "mission": "Market intelligence, for everyone.",
+  "timezone": "America/New_York",
+  "editions": {
+    "morning": {"target_time": "08:00", "purpose": "Overnight developments, the economic calendar, market expectations, and material premarket news."},
+    "afternoon": {"target_time": "16:30", "purpose": "Closing performance, releases, policy decisions, earnings trends, and geopolitical developments.", "revision_policy": "Revise the morning edition; retain a still-important morning story unless a newer candidate is at least 10 points more significant."}
+  },
+  "candidate_pool": {"minimum": 15, "maximum": 25, "selected_minimum": 6, "selected_maximum": 9, "major_minimum": 3, "major_maximum": 4, "maximum_per_category": 3, "maximum_ai_stories": 2, "duplicate_token_similarity": 0.58},
+  "categories": ["monetary_policy_and_inflation", "bonds_and_credit", "equities_and_corporate_performance", "growth_and_consumers", "politics_and_geopolitics", "global_economy"],
+  "score_weights": {"economic_significance": 3, "market_impact": 2, "policy_significance": 2, "broader_relevance": 1.5, "novelty": 1.5, "educational_value": 1},
+  "ongoing_themes": ["inflation_and_monetary_policy", "fiscal_deficits_and_treasury_yields", "ai_capital_expenditure_and_credit_risk", "consumer_resilience", "housing_affordability", "energy_and_geopolitical_risk", "global_economic_fragmentation"],
+  "required_story_fields": ["today", "trend", "what_happened", "why_it_matters", "bigger_picture", "what_to_watch"],
+  "verification_statuses": ["verified", "uncertain", "withheld"],
+  "publication_rule": "Only verified candidates may be selected. Fewer than six verified, distinct candidates stops the refresh and leaves the last verified edition unchanged."
+}
