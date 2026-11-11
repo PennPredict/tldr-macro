@@ -46,7 +46,9 @@ jobs:
 
       - name: Install browser test runtime
         if: steps.market_open.outputs.run == 'true'
-        run: npx playwright install --with-deps chromium
+        env:
+          PLAYWRIGHT_DOWNLOAD_CONNECTION_TIMEOUT: 120000
+        run: npx playwright install chromium
 
       - name: Set project path
         if: steps.market_open.outputs.run == 'true'
@@ -124,9 +126,11 @@ jobs:
           cache: npm
 
       - name: Install verification runtime
+        env:
+          PLAYWRIGHT_DOWNLOAD_CONNECTION_TIMEOUT: 120000
         run: |
           npm ci
-          npx playwright install --with-deps chromium
+          npx playwright install chromium
 
       - name: Run outsider check against deployed site
         env:
