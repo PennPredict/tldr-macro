@@ -12,8 +12,9 @@ The missing layer was upstream selection. Before this change, no reusable config
 2. Prefer direct primary or market-data evidence. Reporting may add context but cannot replace evidence for a material number.
 3. Run `npm run editorial:plan -- --input /absolute/path/candidates.json --edition morning`. For the closing revision, use `--edition afternoon`. The command writes `reports/editorial-plan.json` by default.
 4. The command rejects uncertain, future-dated, incomplete, or duplicate candidates. It selects 6–9 stories, designates 3–4 as major, limits category and AI concentration, and surfaces candidate mechanisms for the daily connection diagram.
-5. An editor maps the accepted plan into the existing content files. The present content validator and claim ledger remain the final authority; the ranking stage does not publish or bypass evidence gates.
-6. Run `npm run verify`. Only a passing build may be committed and deployed. On failure, keep the last verified edition live and record the failure rather than publishing a partial briefing.
+5. An editor maps the accepted plan into `content/macro-themes.json` and selects no more than three genuinely new developments for `content/daily-assessments.json`. Existing headline and global files remain evidence inputs, not duplicate homepage sections.
+6. Update each theme incrementally: replace today's evidence when verified, change a six-month or three-to-five-year statement only when a dated series supports it, and otherwise retain the last verified context with a clear availability label.
+7. Run `npm run verify`. Only a passing build may be committed and deployed. On failure, keep the last verified edition live and record the failure rather than publishing a partial briefing.
 
 ## Candidate source metadata
 

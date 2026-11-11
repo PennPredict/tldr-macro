@@ -8,7 +8,7 @@ These rules are release gates, not suggestions. `npm run verify` must pass befor
 - Headlines stay factual and non-causal unless the accompanying copy attributes the causal claim to named evidence.
 - Sources must resolve to the cited document or series, not a generic landing page. Time-sensitive claims require direct support.
 - Glossary matches whole words only. Acronyms are case-sensitive. Longer phrases win, matches cannot overlap, and one term is annotated once per content block.
-- Daily sections remain in this order: Market Snapshot, Top Stories, TL;DR Global, Next on TL;DRM. More Markets retains the configured group order.
+- Daily sections remain in this order: persistent macro themes, What Actually Changed Today, economic connections, compact Market Snapshot, Next on TL;DR Macro, Bottom Line. Legacy Top Stories and TL;DR Global data may feed the themes, but the same story must not render twice. More Markets retains the configured group order.
 - Stylesheets, design tokens, fonts, logos, layout structure, and card-group structure are frozen. A visual change requires a dated entry in `DESIGN_REQUESTS.md` and explicit design approval.
 - Corrections are appended to `data/revisions.json`; published snapshots are retained in `data/history/`.
 

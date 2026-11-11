@@ -1,5 +1,9 @@
 # Design requests
 
+## 2026-11-11 — Persistent macro-theme editorial hierarchy
+
+Approved by the user in chat. Preserve the existing dark navy and teal identity, typography, logo, responsive behavior, market-data infrastructure, evidence popovers, and source treatment. Replace the volume-led daily hierarchy with five persistent macro-theme cards, a maximum-three “What Actually Changed Today” section, the existing evidence-linked economic connection band, a compact market snapshot, the existing forward calendar, and a two-sentence Bottom Line with a restrained completion message. Remove duplicate Top Stories and TL;DR Global presentation while retaining their verified source material as inputs to the new theme and daily-change components. Long-horizon fields must state when verified trend evidence is unavailable rather than infer a structural change from one session.
+
 ## 2026-10-28 — Supplied convergence artwork hero
 
 Approved by the user in chat with the finished “Waves Converging Into Light” artwork. Use the supplied image as the top-right hero visual, preserve the full convergence point with a contained crop at every breakpoint, and reuse it in the dated share image. Keep all other page bands, copy, evidence gates, and interactions unchanged.

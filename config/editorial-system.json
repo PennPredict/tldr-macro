@@ -9,7 +9,8 @@
   "candidate_pool": {"minimum": 15, "maximum": 25, "selected_minimum": 6, "selected_maximum": 9, "major_minimum": 3, "major_maximum": 4, "maximum_per_category": 3, "maximum_ai_stories": 2, "duplicate_token_similarity": 0.58},
   "categories": ["monetary_policy_and_inflation", "bonds_and_credit", "equities_and_corporate_performance", "growth_and_consumers", "politics_and_geopolitics", "global_economy"],
   "score_weights": {"economic_significance": 3, "market_impact": 2, "policy_significance": 2, "broader_relevance": 1.5, "novelty": 1.5, "educational_value": 1},
-  "ongoing_themes": ["inflation_and_monetary_policy", "fiscal_deficits_and_treasury_yields", "ai_capital_expenditure_and_credit_risk", "consumer_resilience", "housing_affordability", "energy_and_geopolitical_risk", "global_economic_fragmentation"],
+  "ongoing_themes": ["inflation_and_fed", "growth_and_consumers", "bonds_and_credit", "equities_and_ai", "global_and_geopolitics"],
+  "persistent_theme_rule": "Update a theme only with dated, verified evidence. Preserve prior six-month and three-to-five-year context when no newer verified series is available, and label the gap rather than infer a trend.",
   "required_story_fields": ["today", "trend", "what_happened", "why_it_matters", "bigger_picture", "what_to_watch"],
   "verification_statuses": ["verified", "uncertain", "withheld"],
   "publication_rule": "Only verified candidates may be selected. Fewer than six verified, distinct candidates stops the refresh and leaves the last verified edition unchanged."

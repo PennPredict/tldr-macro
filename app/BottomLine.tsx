@@ -1,0 +1,2 @@
+import AnnotatedText from "./AnnotatedText";
+export default function BottomLine({sentences,closing}:{sentences:string[];closing:string}){return <section className="bottom-line" id="bottom-line" aria-labelledby="bottom-line-title"><p className="section-eyebrow">Synthesis</p><h2 id="bottom-line-title">Bottom Line</h2><div>{sentences.slice(0,2).map(sentence=><p key={sentence}><AnnotatedText text={sentence}/></p>)}</div><p className="caught-up">{closing}</p></section>}
