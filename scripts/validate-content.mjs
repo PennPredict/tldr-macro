@@ -67,6 +67,7 @@ for(const theme of macroThemes){
   if(expectedThemes.get(theme.id)!==theme.title)failures.push(`${theme.title||theme.id}: unexpected persistent theme`);
   if(!["strengthening","weakening","unchanged"].includes(theme.trajectory))failures.push(`${theme.title}: invalid trajectory ${theme.trajectory}`);
   for(const field of ["current_status","central_question","trajectory_note"])if(!theme[field])failures.push(`${theme.title}: missing ${field}`);
+  if(wordCount(theme.current_status)>6)failures.push(`${theme.title}: current status exceeds six words`);
   for(const [label,horizon] of [["today",theme.today],["six_month",theme.six_month],["long_term",theme.long_term]]){
     if(!horizon?.text||!horizon?.as_of||!horizon?.verification_status)failures.push(`${theme.title}: incomplete ${label} horizon`);
     if(typeof horizon?.has_data!=="boolean")failures.push(`${theme.title}: ${label} horizon requires an explicit has_data flag`);
@@ -77,7 +78,7 @@ for(const theme of macroThemes){
   for(const evidence of theme.recent_evidence||[])if(!evidence.text||!evidence.as_of||!evidence.source_name||!evidence.source_url)failures.push(`${theme.title}: incomplete recent evidence`);
 }
 if(dailyAssessments.length>3)failures.push("What Actually Changed Today may contain at most three developments");
-const assessmentTopics=new Set();for(const item of dailyAssessments){if(assessmentTopics.has(item.topic_tag))failures.push(`Daily assessment repeats ${item.topic_tag}`);assessmentTopics.add(item.topic_tag);if(!headlines.some(headline=>headline.topic_tag===item.topic_tag))failures.push(`Daily assessment ${item.topic_tag} has no matching verified story`);if(!["changes","reinforces"].includes(item.outlook_effect))failures.push(`Daily assessment ${item.topic_tag} has invalid outlook effect`);if(!item.assessment||!item.what_to_watch)failures.push(`Daily assessment ${item.topic_tag} is incomplete`);}
+const assessmentTopics=new Set();for(const item of dailyAssessments){if(assessmentTopics.has(item.topic_tag))failures.push(`Daily assessment repeats ${item.topic_tag}`);assessmentTopics.add(item.topic_tag);if(!headlines.some(headline=>headline.topic_tag===item.topic_tag))failures.push(`Daily assessment ${item.topic_tag} has no matching verified story`);if(!["changes","reinforces"].includes(item.outlook_effect))failures.push(`Daily assessment ${item.topic_tag} has invalid outlook effect`);if(!item.assessment||!item.what_to_watch)failures.push(`Daily assessment ${item.topic_tag} is incomplete`);if(/^\s*watch\s*:?/i.test(item.what_to_watch))warnings.push(`Daily assessment ${item.topic_tag}: generator should omit the Watch prefix`);}
 if(!Array.isArray(bottomLine.sentences)||bottomLine.sentences.length!==2)failures.push("Bottom Line must contain exactly two sentences");
 for(const sentence of bottomLine.sentences||[])if(sentenceCount(sentence)!==1)failures.push("Each Bottom Line entry must be one sentence");
 if(bottomLine.closing!=="You’re caught up on the big picture.")failures.push("Bottom Line closing must use the restrained caught-up message");

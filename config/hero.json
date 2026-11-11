@@ -1,6 +1,6 @@
 {
   "visual": "image",
-  "visual_mobile": "shown",
+  "visual_mobile": "hidden",
   "headline_max_words": 6,
   "summary_max_words": 15,
   "directions": {

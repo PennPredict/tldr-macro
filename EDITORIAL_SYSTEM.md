@@ -18,7 +18,7 @@ The missing layer was upstream selection. Before this change, no reusable config
 
 ## Display-copy rules
 
-Every generated display field is one sentence and 15 words or fewer. Do not add hedging boilerplate or restate facts already visible elsewhere. The “one session does not establish a trend” caution belongs only in Bottom Line. Mark unavailable theme horizons with `has_data: false`; templates preserve the data but do not render that field. When a selected daily change overlaps a persistent theme, the theme links to Today instead of repeating the idea. The build logs default-visible prose above 700 words and every visible sentence above 15 words.
+Every generated display field is one sentence and 15 words or fewer. Theme status lines use six words or fewer and never repeat a Today story. The `what_to_watch` value begins with the substance, never “Watch” or “Watch:”. Hero subheads use past tense, add magnitude or a verified driver, and share at most one content word with the headline. Do not add hedging boilerplate or restate facts already visible elsewhere. The “one session does not establish a trend” caution belongs only in Bottom Line. Mark unavailable theme horizons with `has_data: false`; templates preserve the data but do not render that field. When a selected daily change overlaps a persistent theme, the theme links to Today instead of repeating the idea. The build logs default-visible prose above 700 words and every visible sentence above 15 words.
 
 ## Candidate source metadata
 

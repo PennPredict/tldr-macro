@@ -91,3 +91,6 @@ Approved by the user in the supplied specification. Inside the thread only, add 
 ## 2026-10-14 — Simplified approval-gated thread
 
 Approved by the user in the supplied specification. Within the Economic Thread only, replace the 10-node composition with a maximum six-node, five-edge layout; move components into a node sub-line; use existing node and arrow tokens; add a small calendar pointer; and provide a breakpoint-specific vertical list. No new colors or page-wide styles are introduced.
+## 2026-11-11 — Compact theme and market polish
+
+Approved by the user in chat. Keep glossary terms inline inside theme questions; standardize theme-card footers; hide default status tags; group compact market rows by asset class; add accessible five-day point tooltips; tighten the hero image; and use a horizontal scroll-snap theme rail below 640px. Preserve the existing navy/teal identity, verified data gates, source links, progressive disclosure, and responsive behavior.

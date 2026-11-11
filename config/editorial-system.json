@@ -11,7 +11,7 @@
   "score_weights": {"economic_significance": 3, "market_impact": 2, "policy_significance": 2, "broader_relevance": 1.5, "novelty": 1.5, "educational_value": 1},
   "ongoing_themes": ["inflation_and_fed", "growth_and_consumers", "bonds_and_credit", "equities_and_ai", "global_and_geopolitics"],
   "persistent_theme_rule": "Update a theme only with dated, verified evidence. Preserve prior six-month and three-to-five-year context when no newer verified series is available, and label the gap rather than infer a trend.",
-  "display_copy_rules": {"maximum_words_per_sentence": 15, "maximum_sentences_per_field": 1, "maximum_daily_changes": 3, "visible_prose_budget": 700, "no_hedging_boilerplate": true, "no_cross_section_restatement": true, "trend_caution_location": "bottom_line_only"},
+  "display_copy_rules": {"maximum_words_per_sentence": 15, "maximum_sentences_per_field": 1, "maximum_theme_status_words": 6, "maximum_daily_changes": 3, "visible_prose_budget": 700, "watch_field_starts_with_label": false, "hero_subhead_adds_magnitude_or_driver": true, "hero_subhead_maximum_shared_content_words": 1, "no_hedging_boilerplate": true, "no_cross_section_restatement": true, "trend_caution_location": "bottom_line_only"},
   "required_story_fields": ["today", "trend", "what_happened", "why_it_matters", "bigger_picture", "what_to_watch"],
   "verification_statuses": ["verified", "uncertain", "withheld"],
   "publication_rule": "Only verified candidates may be selected. Fewer than six verified, distinct candidates stops the refresh and leaves the last verified edition unchanged."

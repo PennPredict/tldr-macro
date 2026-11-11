@@ -21,7 +21,8 @@ for(const width of[1440,1280,768,375]){
   await page.goto(base,{waitUntil:"networkidle"});
   await page.screenshot({path:path.join(root,"reports",`hero-flow-after-${width}.png`),fullPage:true});
   const visual=page.locator(".brief-visual");
-  if(await visual.count()!==1||!await visual.isVisible())failures.push(`${width}px hero visual is missing`);
+  if(width<640){if(await visual.isVisible())failures.push(`${width}px hero visual should be hidden`)}
+  else if(await visual.count()!==1||!await visual.isVisible())failures.push(`${width}px hero visual is missing`);
   else{const dom=await visual.evaluate(element=>{const style=getComputedStyle(element),image=element.querySelector(".hero-art");return{backgroundImage:style.backgroundImage,filter:style.filter,shadow:style.boxShadow,rendered:element.getAttribute("data-rendered-visual"),imageCount:element.querySelectorAll(".hero-art").length,imageAlt:image?.getAttribute("alt")||""}});if(dom.backgroundImage!=="none"||dom.filter!=="none"||dom.shadow!=="none")failures.push(`${width}px hero visual contains a forbidden effect`);if(dom.rendered!=="image"||dom.imageCount!==1||!dom.imageAlt)failures.push(`${width}px supplied hero image did not render accessibly`)}
 
   const visibleWords=await page.locator(".brief-kicker,.hero-headline,.daily-brief .summary-why,.economic-thread .section-heading h2,.thread-node-trigger,.thread-other-factors").evaluateAll(elements=>elements.filter(element=>{const style=getComputedStyle(element);return style.display!=="none"&&style.visibility!=="hidden"}).map(element=>element.textContent||"").join(" ").match(/[A-Za-z0-9%]+/g)?.length||0);
@@ -37,4 +38,4 @@ for(const width of[1440,1280,768,375]){
 }
 await browser.close();server.kill();
 if(failures.length){console.error([...new Set(failures)].join("\n"));process.exit(1)}
-console.log(`Hero/flow passed: headline ${hero.words.headline} words; summary ${hero.words.summary} words; four viewport presence, effect, budget, and duplicate checks passed.`);
+console.log(`Hero/flow passed: headline ${hero.words.headline} words; summary ${hero.words.summary} words; responsive visibility, effect, budget, and duplicate checks passed.`);
