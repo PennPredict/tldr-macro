@@ -24,5 +24,5 @@ export function Header({ updated, summary, heroHeadline, heroSummary }: { update
 }
 
 export function Footer() {
-  return <footer><div className="footer-meta"><div><nav aria-label="Footer navigation"><Link href="/about/">About &amp; methodology</Link><Link href="/archive/">Archive</Link><a href="/rss.xml">RSS</a></nav><p className="footer-note">{fullDisclaimer}</p></div><BrandImage placement="footer" /></div></footer>;
+  return <footer><div className="footer-meta"><div><nav aria-label="Footer navigation"><Link href="/archive/">Archive</Link></nav><p className="footer-note">{fullDisclaimer}</p></div><BrandImage placement="footer" /></div></footer>;
 }

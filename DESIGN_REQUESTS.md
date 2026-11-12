@@ -94,3 +94,6 @@ Approved by the user in the supplied specification. Within the Economic Thread o
 ## 2026-11-11 — Compact theme and market polish
 
 Approved by the user in chat. Keep glossary terms inline inside theme questions; standardize theme-card footers; hide default status tags; group compact market rows by asset class; add accessible five-day point tooltips; tighten the hero image; and use a horizontal scroll-snap theme rail below 640px. Preserve the existing navy/teal identity, verified data gates, source links, progressive disclosure, and responsive behavior.
+## 2026-11-11 — Simplified footer navigation
+
+Approved by the user in chat. Remove the visible About & methodology and RSS links from production and feature-gated footers while retaining the underlying routes and preserving Archive, the disclaimer, and the brand link.

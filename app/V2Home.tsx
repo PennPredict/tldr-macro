@@ -25,6 +25,6 @@ export default function V2Home(){
     <V2MarketDashboard markets={edition.markets} extras={extras} updated={edition.updated_at}/>
     <V2Stories stories={headlines}/><V2Flow/><V2Global items={globals}/>
     <V2NextBottom events={edition.calendar} updated={edition.updated_at} summary={summary} stories={headlines}/>
-    <footer className="v2-footer"><nav><Link href="/about/">About &amp; methodology</Link><Link href="/archive/">Archive</Link><a href="/rss.xml">RSS</a></nav><p>Educational context only; not investment advice. Check primary sources.</p><a href="#top">TL<span>;</span>DRM</a></footer>
+    <footer className="v2-footer"><nav><Link href="/archive/">Archive</Link></nav><p>Educational context only; not investment advice. Check primary sources.</p><a href="#top">TL<span>;</span>DRM</a></footer>
   </main>
 }
