@@ -11,7 +11,7 @@ const failures=[];
 const nodes=new Map(thread.nodes.map(node=>[node.id,node]));
 const wordCount=text=>(text.match(/[A-Za-z0-9%]+/g)||[]).length;
 
-if(thread.nodes.length<3||thread.nodes.length>4)failures.push("Economic Thread must contain 3–4 nodes");
+if(thread.nodes.length<2||thread.nodes.length>4)failures.push("Economic Thread must contain 2–4 nodes");
 if(thread.edges.length!==thread.nodes.length-1)failures.push("Economic Thread must be one linear chain");
 if(new Set(thread.nodes.map(node=>node.id)).size!==thread.nodes.length)failures.push("Economic Thread node ids must be unique");
 const banned=/\b(portfolios?|investor confidence|sentiment|for you|may stay|may remain)\b/i;

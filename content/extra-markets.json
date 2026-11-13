@@ -1001,34 +1001,35 @@
     "name": "Silver futures",
     "display_name": "Silver fund (SLV)",
     "available": true,
-    "display_value": "$47.18",
-    "display_change": "+1.50%",
-    "change_percent": 1.5,
-    "description": "SLV is a fund that tracks silver prices. It rose Wednesday; silver matters to investors and makers of electronics and solar equipment.",
+    "display_value": "$45.11",
+    "display_change": "−3.30%",
+    "change_percent": -3.3,
+    "description": "SLV holds physical silver. It fell Thursday as precious metals weakened.",
     "points": [
-      47.72,
+      46.87,
       48.14,
       46.48,
-      46.48,
-      47.175
+      46.65,
+      45.11
     ],
-    "fetched_at": "2026-11-11T10:49:00-05:00",
+    "fetched_at": "2026-11-12T16:00:00-05:00",
     "frequency": "Intraday",
     "data_provider": "Nasdaq market data · SLV",
     "licensing_note": "Exchange-listed fund data are linked to the Nasdaq source.",
     "sources": [
       {
-        "name": "Nasdaq market data · SLV",
-        "href": "https://www.nasdaq.com/market-activity/etf/slv"
+        "name": "CME silver",
+        "href": "https://www.cmegroup.com/markets/metals/precious/silver.html"
       }
     ],
     "series_dates": [
-      "2026-11-09T10:57:00-05:00",
+      "2026-11-06T16:00:00-05:00",
       "2026-11-09T16:00:00-05:00",
       "2026-11-10T16:00:00-05:00",
-      "2026-11-10T16:00:00-05:00",
-      "2026-11-11T10:49:00-05:00"
+      "2026-11-11T16:00:00-05:00",
+      "2026-11-12T16:00:00-05:00"
     ],
-    "value": 47.175
+    "value": 45.11,
+    "prior_close": 46.65
   }
 ]

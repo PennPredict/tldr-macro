@@ -97,3 +97,7 @@ Approved by the user in chat. Keep glossary terms inline inside theme questions;
 ## 2026-11-11 — Simplified footer navigation
 
 Approved by the user in chat. Remove the visible About & methodology and RSS links from production and feature-gated footers while retaining the underlying routes and preserving Archive, the disclaimer, and the brand link.
+
+## 2026-11-11 — Evidence-first persistent Themes
+
+Approved by the user in the supplied specification. Replace the compact theme summaries with five evidence-first cards, deterministic state chips, one-open accessible detail panels, responsive 5/3/accordion layouts, indicator sparklines, dated developments, catalysts, and progressive structural context. Preserve existing tokens and update only the Themes, Today, Connections, Markets, Next, hero-copy, and Bottom Line bands named in the request.

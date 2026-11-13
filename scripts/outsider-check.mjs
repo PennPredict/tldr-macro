@@ -9,6 +9,7 @@ const requests = new Map();
 const sensitivePaths = [
   "/.env", "/.git/config", "/.github/workflows/deploy-pages.yml", "/package.json",
   "/package-lock.json", "/config/publish-allowlist.json", "/data/revisions.json",
+  "/data/themes/state.json",
   "/reports/build-report.json", "/scripts/security-check.mjs", "/SECURITY_REPORT.md",
   "/AUTOMATION.md", "/README.md", "/next.config.ts",
 ];

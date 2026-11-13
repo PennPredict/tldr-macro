@@ -1,18 +1,18 @@
 {
-  "edition_date": "2026-11-11",
-  "updated_at": "2026-11-11T10:49:00-05:00",
-  "summary": "Shares rose; Treasury yields edged up; crude oil jumped.",
+  "edition_date": "2026-11-12",
+  "updated_at": "2026-11-12T16:09:00-05:00",
+  "summary": "Stocks slipped; government borrowing rates rose; oil jumped.",
   "markets": [
     {
       "name": "S&P 500",
       "kind": "equity_index",
-      "value": 757.29,
-      "display_value": "$757.29",
+      "value": 757.16,
+      "display_value": "$757.16",
       "baseline": "prior_close",
-      "prior_close": 749.92,
-      "change_percent": 0.98,
-      "display_change": "+0.98%",
-      "description": "SPY is a fund designed to track the S&P 500. It rose Wednesday, although more index members fell than gained.",
+      "prior_close": 759.81,
+      "change_percent": -0.35,
+      "display_change": "−0.35%",
+      "description": "SPY is a fund designed to track the S&P 500. It recovered most early losses before closing modestly lower.",
       "so_what": {
         "channel_id": "sp500",
         "context": {
@@ -35,14 +35,14 @@
         }
       ],
       "data_source": "State Street · SPY",
-      "fetched_at": "2026-11-11T10:49:00-05:00",
-      "range": "Tuesday close 749.92 · Wednesday 10:48 AM 757.29",
+      "fetched_at": "2026-11-12T16:00:00-05:00",
+      "range": "Wednesday close 759.81 · Thursday close 757.16",
       "points": [
         735.29,
         751.3,
-        752.69,
         750.02,
-        757.29
+        759.81,
+        757.16
       ],
       "sources": [
         {
@@ -52,10 +52,10 @@
       ],
       "series_dates": [
         "2026-11-06T16:00:00-05:00",
-        "2026-11-09T10:57:00-05:00",
         "2026-11-09T16:00:00-05:00",
         "2026-11-10T16:00:00-05:00",
-        "2026-11-11T10:49:00-05:00"
+        "2026-11-11T16:00:00-05:00",
+        "2026-11-12T16:00:00-05:00"
       ],
       "available": true,
       "frequency": "Intraday",
@@ -66,13 +66,13 @@
     {
       "name": "10-year Treasury yield",
       "kind": "yield",
-      "value": 80.515,
-      "display_value": "$80.52",
+      "value": 79.72,
+      "display_value": "$79.72",
       "baseline": "prior_close",
-      "prior_close": 80.88,
-      "change_percent": -0.45,
-      "display_change": "−0.45%",
-      "description": "TLT holds long-term U.S. government bonds. The fund traded Wednesday while the cash Treasury market was closed for Veterans Day.",
+      "prior_close": 80.92,
+      "change_percent": -1.48,
+      "display_change": "−1.48%",
+      "description": "TLT holds long-term U.S. government bonds. It fell Thursday as long-bond prices declined.",
       "so_what": {
         "channel_id": "yield10",
         "context": {
@@ -95,27 +95,27 @@
         }
       ],
       "data_source": "Nasdaq market data · TLT",
-      "fetched_at": "2026-11-11T10:49:00-05:00",
-      "range": "Tuesday close 80.88 · Wednesday 10:48 AM 80.515",
+      "fetched_at": "2026-11-12T16:00:00-05:00",
+      "range": "Wednesday close 80.92 · Thursday close 79.72",
       "points": [
         81.92,
-        81.87,
         81.96,
         80.88,
-        80.515
+        80.92,
+        79.72
       ],
       "sources": [
         {
-          "name": "Nasdaq market data · TLT",
-          "href": "https://www.nasdaq.com/market-activity/etf/tlt"
+          "name": "iShares · TLT",
+          "href": "https://www.ishares.com/us/products/239454/ishares-20-year-treasury-bond-etf"
         }
       ],
       "series_dates": [
         "2026-11-06T16:00:00-05:00",
-        "2026-11-09T10:57:00-05:00",
         "2026-11-09T16:00:00-05:00",
         "2026-11-10T16:00:00-05:00",
-        "2026-11-11T10:49:00-05:00"
+        "2026-11-11T16:00:00-05:00",
+        "2026-11-12T16:00:00-05:00"
       ],
       "available": true,
       "frequency": "Intraday",
@@ -127,13 +127,13 @@
     {
       "name": "Brent crude oil",
       "kind": "commodity",
-      "value": 59.79,
-      "display_value": "$59.79",
+      "value": 61.01,
+      "display_value": "$61.01",
       "baseline": "prior_close",
-      "prior_close": 58.36,
-      "change_percent": 2.45,
-      "display_change": "+2.45%",
-      "description": "BNO is a fund tied to Brent crude futures. It jumped Wednesday as oil recovered part of this week's decline.",
+      "prior_close": 58.75,
+      "change_percent": 3.85,
+      "display_change": "+3.85%",
+      "description": "BNO is a fund tied to Brent crude futures. It climbed Thursday while Iran tensions increased.",
       "so_what": {
         "channel_id": "brent",
         "context": {
@@ -148,23 +148,23 @@
         {
           "sentence_id": "brent-crude-oil-wed-1",
           "type": "mechanism",
-          "evidence": "https://www.nasdaq.com/market-activity/etf/bno"
+          "evidence": "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a"
         },
         {
           "sentence_id": "brent-crude-oil-wed-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"
+          "evidence": "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a"
         }
       ],
       "data_source": "USCF · BNO",
-      "fetched_at": "2026-11-11T10:49:00-05:00",
-      "range": "Tuesday close 58.36 · Wednesday 10:49 AM 59.79",
+      "fetched_at": "2026-11-12T16:00:00-05:00",
+      "range": "Wednesday close 58.75 · Thursday close 61.01",
       "points": [
         62.22,
-        60.17,
         58.93,
-        58.365,
-        59.79
+        58.36,
+        58.75,
+        61.01
       ],
       "sources": [
         {
@@ -174,10 +174,10 @@
       ],
       "series_dates": [
         "2026-11-06T16:00:00-05:00",
-        "2026-11-09T10:57:00-05:00",
         "2026-11-09T16:00:00-05:00",
         "2026-11-10T16:00:00-05:00",
-        "2026-11-11T10:49:00-05:00"
+        "2026-11-11T16:00:00-05:00",
+        "2026-11-12T16:00:00-05:00"
       ],
       "available": true,
       "frequency": "Intraday",
@@ -188,13 +188,13 @@
     {
       "name": "Nasdaq Composite",
       "kind": "equity_index",
-      "value": 25458.16,
-      "display_value": "25,458.16",
+      "value": 25366.09,
+      "display_value": "25,366.09",
       "baseline": "prior_close",
-      "prior_close": 25065.88,
-      "change_percent": 1.56,
-      "display_change": "+1.56%",
-      "description": "The Nasdaq follows many tech companies. It jumped Wednesday with several large tech shares.",
+      "prior_close": 25466.19,
+      "change_percent": -0.39,
+      "display_change": "−0.39%",
+      "description": "The Nasdaq tracks many technology companies. It recovered most early losses as chip shares split.",
       "so_what": {
         "channel_id": "nasdaq",
         "context": {
@@ -217,14 +217,14 @@
         }
       ],
       "data_source": "Nasdaq Composite",
-      "fetched_at": "2026-11-11T10:49:00-05:00",
-      "range": "Tuesday close 25,065.88 · Wednesday 10:47 AM 25,458.16",
+      "fetched_at": "2026-11-12T16:00:00-05:00",
+      "range": "Wednesday close 25,466.19 · Thursday close 25,366.09",
       "points": [
         24579.42,
-        25243.57,
         25253.14,
         25065.88,
-        25458.16
+        25466.19,
+        25366.09
       ],
       "sources": [
         {
@@ -234,10 +234,10 @@
       ],
       "series_dates": [
         "2026-11-06T16:00:00-05:00",
-        "2026-11-09T10:57:00-05:00",
         "2026-11-09T16:00:00-05:00",
         "2026-11-10T16:00:00-05:00",
-        "2026-11-11T10:49:00-05:00"
+        "2026-11-11T16:00:00-05:00",
+        "2026-11-12T16:00:00-05:00"
       ],
       "available": true,
       "frequency": "Intraday",
@@ -247,13 +247,13 @@
     {
       "name": "Dow Jones Industrial Average",
       "kind": "equity_index",
-      "value": 520.865,
-      "display_value": "$520.87",
+      "value": 522.79,
+      "display_value": "$522.79",
       "baseline": "prior_close",
-      "prior_close": 521.73,
-      "change_percent": -0.17,
-      "display_change": "−0.17%",
-      "description": "DIA is a fund designed to track the 30-company Dow. It edged lower Wednesday as gains remained concentrated in technology.",
+      "prior_close": 524.44,
+      "change_percent": -0.31,
+      "display_change": "−0.31%",
+      "description": "DIA tracks the 30-company Dow. It ended modestly lower after a volatile session.",
       "so_what": {
         "channel_id": "dow",
         "context": {
@@ -276,14 +276,14 @@
         }
       ],
       "data_source": "State Street · DIA",
-      "fetched_at": "2026-11-11T10:49:00-05:00",
-      "range": "Tuesday close 521.73 · Wednesday 10:49 AM 520.865",
+      "fetched_at": "2026-11-12T16:00:00-05:00",
+      "range": "Wednesday close 524.44 · Thursday close 522.79",
       "points": [
         512.22,
-        521.26,
         523.33,
-        521.76,
-        520.865
+        521.73,
+        524.44,
+        522.79
       ],
       "sources": [
         {
@@ -293,10 +293,10 @@
       ],
       "series_dates": [
         "2026-11-06T16:00:00-05:00",
-        "2026-11-09T10:57:00-05:00",
         "2026-11-09T16:00:00-05:00",
         "2026-11-10T16:00:00-05:00",
-        "2026-11-11T10:49:00-05:00"
+        "2026-11-11T16:00:00-05:00",
+        "2026-11-12T16:00:00-05:00"
       ],
       "available": true,
       "frequency": "Intraday",
@@ -307,13 +307,13 @@
     {
       "name": "Expected volatility",
       "kind": "volatility",
-      "value": 366.93,
-      "display_value": "$366.93",
+      "value": 354.89,
+      "display_value": "$354.89",
       "baseline": "prior_close",
-      "prior_close": 369.36,
-      "change_percent": -0.66,
-      "display_change": "−0.66%",
-      "description": "GLD is a fund backed by gold, a common store of value. It slipped Wednesday morning.",
+      "prior_close": 365.17,
+      "change_percent": -2.82,
+      "display_change": "−2.82%",
+      "description": "GLD holds physical gold. It fell Thursday alongside other precious metals.",
       "so_what": {
         "channel_id": "vix",
         "context": {
@@ -335,28 +335,28 @@
           "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"
         }
       ],
-      "data_source": "NYSE market data · GLD",
-      "fetched_at": "2026-11-11T10:49:00-05:00",
-      "range": "Tuesday close 369.36 · Wednesday 10:48 AM 366.93",
+      "data_source": "State Street · GLD",
+      "fetched_at": "2026-11-12T16:00:00-05:00",
+      "range": "Wednesday close 365.17 · Thursday close 354.89",
       "points": [
         372.52,
-        377.6832,
         379.53,
-        369.4,
-        366.93
+        369.36,
+        365.17,
+        354.89
       ],
       "sources": [
         {
-          "name": "NYSE market data · GLD",
-          "href": "https://www.nyse.com/quote/ARCX:GLD"
+          "name": "SPDR Gold Shares · GLD",
+          "href": "https://www.spdrgoldshares.com/usa/"
         }
       ],
       "series_dates": [
         "2026-11-06T16:00:00-05:00",
-        "2026-11-09T10:57:00-05:00",
         "2026-11-09T16:00:00-05:00",
         "2026-11-10T16:00:00-05:00",
-        "2026-11-11T10:49:00-05:00"
+        "2026-11-11T16:00:00-05:00",
+        "2026-11-12T16:00:00-05:00"
       ],
       "available": true,
       "frequency": "Intraday",
@@ -385,31 +385,61 @@
       "date": "NOV 17",
       "time": "8:30 AM ET",
       "start_at": "2026-11-17T08:30:00-05:00",
-      "title": "Import and Export Prices",
-      "definition": "Measures price changes for goods bought from and sold to other countries.",
-      "prior": "October trade-price report · BLS",
+      "title": "Retail Sales",
+      "definition": "Measures monthly spending at U.S. stores, restaurants, and online retailers.",
+      "prior": "October advance retail-sales report · Census",
       "consensus": "",
-      "hot_label": "If import prices accelerate",
-      "cool_label": "If import prices decline",
-      "hot": "Imported goods can become more expensive for businesses and households.",
-      "cool": "Lower import prices can reduce some cost increases.",
-      "source": "BLS release calendar",
-      "href": "https://www.bls.gov/schedule/2026/11_sched.htm"
+      "hot_label": "If spending strengthens",
+      "cool_label": "If spending slows",
+      "hot": "Consumer demand may support near-term growth.",
+      "cool": "Businesses may face softer household demand.",
+      "source": "Census release schedule",
+      "href": "https://www.census.gov/retail/release_schedule.html"
     },
     {
-      "date": "NOV 20",
-      "time": "10:00 AM ET",
-      "start_at": "2026-11-20T10:00:00-05:00",
-      "title": "State Employment",
-      "definition": "Shows job and unemployment changes across states.",
-      "prior": "October state labor report · BLS",
+      "date": "NOV 18",
+      "time": "2:00 PM ET",
+      "start_at": "2026-11-18T14:00:00-05:00",
+      "title": "Federal Reserve Minutes",
+      "definition": "Summarizes officials’ views on inflation, employment, and policy risks.",
+      "prior": "October 27–28 meeting · Federal Reserve",
       "consensus": "",
-      "hot_label": "If gains are widespread",
-      "cool_label": "If weakness spreads",
-      "hot": "Broad hiring can signal durable demand for workers.",
-      "cool": "More state-level declines can reveal labor-market weakness.",
+      "hot_label": "If officials stress inflation",
+      "cool_label": "If officials stress slower growth",
+      "hot": "Rate cuts may look less urgent.",
+      "cool": "Officials may see more room to lower rates.",
+      "source": "Federal Reserve calendar",
+      "href": "https://www.federalreserve.gov/monetarypolicy.htm"
+    },
+    {
+      "date": "DEC 4",
+      "time": "8:30 AM ET",
+      "start_at": "2026-12-04T08:30:00-05:00",
+      "title": "Jobs Report",
+      "definition": "Measures payroll growth, unemployment, wages, and labor-force participation.",
+      "prior": "November employment report · BLS",
+      "consensus": "",
+      "hot_label": "If hiring strengthens",
+      "cool_label": "If hiring weakens",
+      "hot": "Household income and demand may remain resilient.",
+      "cool": "Growth concerns may increase.",
       "source": "BLS release calendar",
-      "href": "https://www.bls.gov/schedule/2026/11_sched.htm"
+      "href": "https://www.bls.gov/schedule/2026/"
+    },
+    {
+      "date": "DEC 10",
+      "time": "8:30 AM ET",
+      "start_at": "2026-12-10T08:30:00-05:00",
+      "title": "Consumer Price Index",
+      "definition": "Measures monthly price changes for goods and services purchased by consumers.",
+      "prior": "November consumer-price report · BLS",
+      "consensus": "",
+      "hot_label": "If inflation accelerates",
+      "cool_label": "If inflation slows",
+      "hot": "Rate cuts may look less urgent.",
+      "cool": "Pressure on household budgets may ease.",
+      "source": "BLS CPI schedule",
+      "href": "https://www.bls.gov/schedule/news_release/cpi.htm"
     }
   ]
 }

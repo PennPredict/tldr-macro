@@ -45,7 +45,9 @@
     ,"validate:thread": "node scripts/validate-thread.mjs"
     ,"editorial:plan": "node scripts/editorial-plan.mjs"
     ,"test:editorial": "node scripts/test-editorial-intelligence.mjs"
-    ,"verify": "npm run test:editorial && npm run validate:content && npm run validate:markets && npm run validate:thread && npm run test:mortgage && npm run thread:prepare && npm run validate:review && npm run verify:guardrails && npm run test:terms && npm run test:status && npm run generate:og && npm run lint && npm run build:pages && npm run security:prepare && npm run test:url-sanitizer && npm run security:scan && npm run security:gitleaks && npm run test:browser-integrity && npm run test:hero-flow && npm run test:hero-visual && npm run test:flow-band && npm run test:outsider"
+    ,"test:themes": "node scripts/test-theme-system.mjs"
+    ,"themes:update": "node scripts/update-theme-state.mjs"
+    ,"verify": "npm run themes:update && npm run test:editorial && npm run test:themes && npm run validate:content && npm run validate:markets && npm run validate:thread && npm run test:mortgage && npm run thread:prepare && npm run validate:review && npm run verify:guardrails && npm run test:terms && npm run test:status && npm run generate:og && npm run lint && npm run build:pages && npm run security:prepare && npm run test:url-sanitizer && npm run security:scan && npm run security:gitleaks && npm run test:browser-integrity && npm run test:hero-flow && npm run test:hero-visual && npm run test:flow-band && npm run test:outsider"
   },
   "dependencies": {
     "next": "16.2.6",

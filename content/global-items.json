@@ -1,86 +1,86 @@
 [
   {
-    "tag": "Policy",
+    "tag": "Energy",
     "qualifies": true,
-    "headline": "Spain Strike Disrupts Transit",
-    "what": "A nationwide strike closed businesses and public transportation.",
-    "context": "Workers protested housing costs before Spain's election.",
-    "why_it_matters": "Disruptions in the eurozone's fourth-largest economy can affect travel, trade, and investor confidence.",
+    "headline": "Iran Tensions Raise Energy Risk",
+    "what": "The U.S. president rejected further talks with Iran.",
+    "context": "Oil shipments had recovered toward earlier levels after months of disruption.",
+    "why_it_matters": "Renewed tension can affect energy routes, inflation, and global shipping costs.",
     "concept_terms": [
-      "general strike",
-      "eurozone"
+      "energy routes",
+      "inflation"
     ],
     "sources": [
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/spain-strike-housing-elections-pedro-sanchez-68a061a72d7cdf842b7803a816e46ef0",
+        "href": "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a",
         "type": "wire"
       },
       {
-        "name": "European Commission · housing",
-        "href": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Housing_in_Europe_-_2026_edition",
+        "name": "U.S. Energy Information Administration",
+        "href": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php",
         "type": "primary"
       }
     ],
     "developing": true,
-    "as_of": "2026-11-11T10:49:00-05:00",
-    "importance_score": 97,
+    "as_of": "2026-11-12T16:09:00-05:00",
+    "importance_score": 99,
+    "needs_human_check": false
+  },
+  {
+    "tag": "Global markets",
+    "qualifies": true,
+    "headline": "Global Tech Shares Diverge",
+    "what": "Technology shares fell across several Asian markets while European consumer stocks gained.",
+    "context": "The change followed new uncertainty around Nvidia leadership.",
+    "why_it_matters": "Different regional moves show that AI risk is spreading unevenly across markets.",
+    "concept_terms": [
+      "technology shares",
+      "regional markets"
+    ],
+    "sources": [
+      {
+        "name": "International Monetary Fund",
+        "href": "https://www.imfconnect.org/content/dam/imf/News%20and%20Generic%20Content/GMM/archive/GMM%20November%2012%2C%202026.pdf",
+        "type": "primary"
+      },
+      {
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a",
+        "type": "wire"
+      }
+    ],
+    "developing": false,
+    "as_of": "2026-11-12T16:09:00-05:00",
+    "importance_score": 96,
     "needs_human_check": false
   },
   {
     "tag": "Trade",
     "qualifies": true,
-    "headline": "China Car Exports Surge",
-    "what": "China's passenger-car exports rose sharply in October.",
-    "context": "Weak domestic demand pushed automakers toward overseas buyers.",
-    "why_it_matters": "More exports can intensify competition and trade tension in Europe and other markets.",
+    "headline": "Yen Nears Key Threshold",
+    "what": "The yen traded near 160 per dollar as Japanese officials warned about rapid moves.",
+    "context": "Rate differences continue to shape currency demand.",
+    "why_it_matters": "A weaker yen can raise Japanese import costs and alter export earnings.",
     "concept_terms": [
-      "car exports",
-      "domestic demand"
+      "yen",
+      "currency demand"
     ],
     "sources": [
       {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/china-autos-exports-evs-hybrids-cars-2779fbbf91f391dd8a59c7ee626cb1b5",
-        "type": "wire"
+        "name": "International Monetary Fund",
+        "href": "https://www.imfconnect.org/content/dam/imf/News%20and%20Generic%20Content/GMM/archive/GMM%20November%2012%2C%202026.pdf",
+        "type": "primary"
       },
       {
-        "name": "World Trade Organization · China profile",
-        "href": "https://www.wto.org/english/res_e/statis_e/daily_update_e/trade_profiles/CN_e.pdf",
+        "name": "Bank of Japan",
+        "href": "https://www.boj.or.jp/en/statistics/market/forex/index.htm",
         "type": "primary"
       }
     ],
-    "developing": false,
-    "as_of": "2026-11-11T10:49:00-05:00",
-    "importance_score": 95,
-    "needs_human_check": false
-  },
-  {
-    "tag": "Conflict",
-    "qualifies": true,
-    "headline": "Ukraine Talks Yield Little",
-    "what": "Russia and Ukraine agreed to a prisoner exchange.",
-    "context": "The talks produced no major breakthrough toward ending the war.",
-    "why_it_matters": "The conflict continues to affect energy routes, European budgets, and geopolitical risk.",
-    "concept_terms": [
-      "prisoner exchange",
-      "geopolitical risk"
-    ],
-    "sources": [
-      {
-        "name": "The Associated Press · talks",
-        "href": "https://apnews.com/article/russia-ukraine-war-putin-zelenskyy-uae-3d878a3e56d5df5bd198a6d20c824d18",
-        "type": "wire"
-      },
-      {
-        "name": "The Associated Press · negotiation history",
-        "href": "https://apnews.com/article/russia-ukraine-war-negotiations-talks-timeline-a19c5072ddf0b8f9ab2a11672db103d8",
-        "type": "wire"
-      }
-    ],
     "developing": true,
-    "as_of": "2026-11-11T10:49:00-05:00",
-    "importance_score": 93,
-    "needs_human_check": true
+    "as_of": "2026-11-12T16:09:00-05:00",
+    "importance_score": 92,
+    "needs_human_check": false
   }
 ]

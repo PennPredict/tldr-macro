@@ -16,7 +16,8 @@ const terms=read("content/terms.json").terms;
 const snapshotConfig=read("config/snapshot.json");
 const extraMarkets=read("content/extra-markets.json");
 const globalItems=read("content/global-items.json");
-const macroThemes=read("content/macro-themes.json");
+const themeConfig=read("config/themes.json");
+const themeState=read("data/themes/state.json");
 const dailyAssessments=read("content/daily-assessments.json");
 const bottomLine=read("content/bottom-line.json");
 const channelConfig=read("config/channel-lines.json");
@@ -29,7 +30,7 @@ const failures=[];
 const warnings=[];
 const approved=host=>[...allowed].some(domain=>host===domain||host.endsWith(`.${domain}`));
 const collect=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(entry=>entry.isDirectory()?collect(path.join(dir,entry.name)):[path.join(dir,entry.name)]);
-const copyFiles=[...collect(path.join(root,"app")).filter(file=>/\.(tsx|ts)$/.test(file)),path.join(root,"content/current-edition.json"),path.join(root,"content/headlines.json"),path.join(root,"content/global-items.json"),path.join(root,"content/macro-themes.json"),path.join(root,"content/daily-assessments.json"),path.join(root,"content/bottom-line.json")];
+const copyFiles=[...collect(path.join(root,"app")).filter(file=>/\.(tsx|ts)$/.test(file)),path.join(root,"content/current-edition.json"),path.join(root,"content/headlines.json"),path.join(root,"content/global-items.json"),path.join(root,"config/themes.json"),path.join(root,"data/themes/state.json"),path.join(root,"content/daily-assessments.json"),path.join(root,"content/bottom-line.json")];
 
 for(const file of copyFiles){
   const relative=path.relative(root,file),text=fs.readFileSync(file,"utf8");
@@ -61,21 +62,17 @@ const editionReference=new Date(edition.updated_at).getTime();
 const wordCount=text=>(text||"").trim().split(/\s+/).filter(Boolean).length;
 const normalized=text=>(text||"").toLowerCase().replace(/[^a-z0-9\s]/g,"").replace(/\s+/g," ").trim();
 const proseStrings=value=>typeof value==="string"?[value]:Array.isArray(value)?value.flatMap(proseStrings):value&&typeof value==="object"?Object.values(value).flatMap(proseStrings):[];
-const expectedThemes=new Map([["inflation-fed","Inflation & Fed"],["growth-consumers","Growth & Consumers"],["bonds-credit","Bonds & Credit"],["equities-ai","Equities & AI"],["global-geopolitics","Global & Geopolitics"]]);
-if(!Array.isArray(macroThemes)||macroThemes.length!==5)failures.push("Macro themes must contain exactly five persistent themes");
-for(const theme of macroThemes){
-  if(expectedThemes.get(theme.id)!==theme.title)failures.push(`${theme.title||theme.id}: unexpected persistent theme`);
-  if(!["strengthening","weakening","unchanged"].includes(theme.trajectory))failures.push(`${theme.title}: invalid trajectory ${theme.trajectory}`);
-  for(const field of ["current_status","central_question","trajectory_note"])if(!theme[field])failures.push(`${theme.title}: missing ${field}`);
-  if(wordCount(theme.current_status)>6)failures.push(`${theme.title}: current status exceeds six words`);
-  for(const [label,horizon] of [["today",theme.today],["six_month",theme.six_month],["long_term",theme.long_term]]){
-    if(!horizon?.text||!horizon?.as_of||!horizon?.verification_status)failures.push(`${theme.title}: incomplete ${label} horizon`);
-    if(typeof horizon?.has_data!=="boolean")failures.push(`${theme.title}: ${label} horizon requires an explicit has_data flag`);
-    if(!["verified","unavailable","methodology"].includes(horizon?.verification_status))failures.push(`${theme.title}: invalid ${label} verification status`);
-    if(horizon?.source_url){const url=new URL(horizon.source_url);if(!approved(url.hostname))failures.push(`${theme.title}: unapproved ${label} source ${url.hostname}`);if(url.pathname==="/"||url.pathname==="")failures.push(`${theme.title}: ${label} source must link to a document or series`);}
-  }
-  if(!Array.isArray(theme.recent_evidence)||!theme.recent_evidence.length)failures.push(`${theme.title}: recent evidence is required`);
-  for(const evidence of theme.recent_evidence||[])if(!evidence.text||!evidence.as_of||!evidence.source_name||!evidence.source_url)failures.push(`${theme.title}: incomplete recent evidence`);
+const expectedThemes=new Map([["inflation-fed","Inflation & Fed"],["growth-consumers","Growth & Consumers"],["bonds-credit","Bonds & Credit"],["equities-ai","Equities & AI"],["global-geopolitics","Global & Geopolitics"]]),filler=/not refreshed|no verified .* refreshed|does not establish|unchanged/i;
+if(!Array.isArray(themeConfig.themes)||themeConfig.themes.length!==5)failures.push("Theme config must contain exactly five persistent themes");
+for(const theme of themeConfig.themes){
+  if(expectedThemes.get(theme.id)!==theme.name)failures.push(`${theme.name||theme.id}: unexpected persistent theme`);
+  if(wordCount(theme.question)>12)failures.push(`${theme.name}: question exceeds 12 words`);
+  if(wordCount(theme.structural_note?.text)>30)failures.push(`${theme.name}: structural note exceeds 30 words`);
+  if(!theme.structural_note?.source_url||!theme.structural_note?.last_reviewed)failures.push(`${theme.name}: structural note is incomplete`);
+  if((editionReference-new Date(`${theme.structural_note.last_reviewed}T12:00:00-05:00`).getTime())/86400000>180)failures.push(`${theme.name}: structural note is more than 180 days old`);
+  if(!Array.isArray(theme.indicators))failures.push(`${theme.name}: indicators are required`);
+  for(const indicator of theme.indicators||[]){for(const field of ["id","label","series","provider","frequency","unit","kind","role","source_url"])if(!indicator[field])failures.push(`${theme.name}: indicator ${indicator.id||"unknown"} lacks ${field}`);if(indicator.license_ok!==true)warnings.push(`${theme.name}: ${indicator.label} hidden because licensing is not approved`);}
+  const state=themeState.themes?.[theme.id];if(!state)failures.push(`${theme.name}: persistent state missing`);else {for(const development of state.developments||[]){if(wordCount(development.headline)>12)failures.push(`${theme.name}: development headline exceeds 12 words`);if(wordCount(development.line)>25)failures.push(`${theme.name}: development line exceeds 25 words`);if(!development.source_urls?.length)failures.push(`${theme.name}: development lacks sources`);if((editionReference-new Date(`${development.date}T12:00:00-05:00`).getTime())/86400000>90)failures.push(`${theme.name}: development older than 90 days remains in state`);}if(proseStrings(state).some(text=>filler.test(text)))failures.push(`${theme.name}: filler text is forbidden`);}
 }
 if(dailyAssessments.length>3)failures.push("What Actually Changed Today may contain at most three developments");
 const assessmentTopics=new Set();for(const item of dailyAssessments){if(assessmentTopics.has(item.topic_tag))failures.push(`Daily assessment repeats ${item.topic_tag}`);assessmentTopics.add(item.topic_tag);if(!headlines.some(headline=>headline.topic_tag===item.topic_tag))failures.push(`Daily assessment ${item.topic_tag} has no matching verified story`);if(!["changes","reinforces"].includes(item.outlook_effect))failures.push(`Daily assessment ${item.topic_tag} has invalid outlook effect`);if(!item.assessment||!item.what_to_watch)failures.push(`Daily assessment ${item.topic_tag} is incomplete`);if(/^\s*watch\s*:?/i.test(item.what_to_watch))warnings.push(`Daily assessment ${item.topic_tag}: generator should omit the Watch prefix`);}

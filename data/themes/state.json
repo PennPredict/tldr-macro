@@ -1,0 +1,264 @@
+{
+  "edition_id": "2026-11-12",
+  "generated_at": "2026-11-12T16:09:00-05:00",
+  "themes": {
+    "inflation-fed": {
+      "last_new_evidence_date": "2026-11-12",
+      "developments": [
+        {
+          "date": "2026-11-12",
+          "headline": "Oil Jumps on Iran Tensions",
+          "line": "Brent crude climbed 3.",
+          "source_urls": [
+            "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php",
+            "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a"
+          ],
+          "origin": "story",
+          "edition_id": "2026-11-12"
+        },
+        {
+          "date": "2026-11-11",
+          "headline": "Oil fund moved higher",
+          "line": "A Brent-linked oil fund rose 2.44% during Wednesday trading.",
+          "source_urls": [
+            "https://www.nasdaq.com/market-activity/etf/bno"
+          ],
+          "origin": "story",
+          "edition_id": "2026-11-11"
+        },
+        {
+          "date": "2026-11-10",
+          "headline": "Consumer prices increased",
+          "line": "Consumer prices rose 0.4% in October; core prices rose 0.3%.",
+          "source_urls": [
+            "https://www.bls.gov/news.release/cpi.htm"
+          ],
+          "origin": "release",
+          "edition_id": "2026-11-11"
+        }
+      ],
+      "indicators": [
+        {
+          "id": "cpi-monthly",
+          "value": 0.4,
+          "previous": 0.6,
+          "display_value": "+0.4%",
+          "display_change": "−0.2 pp",
+          "period": "October 2026",
+          "as_of": "2026-11-10",
+          "observations": [
+            {
+              "date": "2026-04-01",
+              "value": 0.6
+            },
+            {
+              "date": "2026-05-01",
+              "value": 0.5
+            },
+            {
+              "date": "2026-06-01",
+              "value": -0.4
+            },
+            {
+              "date": "2026-07-01",
+              "value": 0.1
+            },
+            {
+              "date": "2026-08-01",
+              "value": 0.4
+            },
+            {
+              "date": "2026-09-01",
+              "value": 0.6
+            },
+            {
+              "date": "2026-10-01",
+              "value": 0.4
+            }
+          ]
+        },
+        {
+          "id": "core-cpi-monthly",
+          "value": 0.3,
+          "previous": 0.3,
+          "display_value": "+0.3%",
+          "display_change": "no change",
+          "period": "October 2026",
+          "as_of": "2026-11-10",
+          "observations": []
+        },
+        {
+          "id": "bno",
+          "value": 59.79,
+          "previous": 58.365,
+          "display_value": "$59.79",
+          "display_change": "+2.44%",
+          "period": "intraday",
+          "as_of": "2026-11-11",
+          "observations": []
+        }
+      ]
+    },
+    "growth-consumers": {
+      "last_new_evidence_date": "2026-11-06",
+      "developments": [
+        {
+          "date": "2026-11-06",
+          "headline": "October jobs report released",
+          "line": "The October employment report supplied the latest official labor-market update.",
+          "source_urls": [
+            "https://www.bls.gov/news.release/empsit.htm"
+          ],
+          "origin": "release",
+          "edition_id": "2026-11-11"
+        }
+      ],
+      "indicators": []
+    },
+    "bonds-credit": {
+      "last_new_evidence_date": "2026-11-12",
+      "developments": [
+        {
+          "date": "2026-11-12",
+          "headline": "Treasury Yield Tops Five Percent",
+          "line": "The 10-year Treasury yield rose to 5.",
+          "source_urls": [
+            "https://home.treasury.gov/resource-center/data-chart-center/interest-rates",
+            "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a"
+          ],
+          "origin": "story",
+          "edition_id": "2026-11-12"
+        },
+        {
+          "date": "2026-11-11",
+          "headline": "Cash Treasury market closed",
+          "line": "Veterans Day delayed the next official cash Treasury yield reading.",
+          "source_urls": [
+            "https://home.treasury.gov/resource-center/data-chart-center/interest-rates"
+          ],
+          "origin": "event",
+          "edition_id": "2026-11-11"
+        }
+      ],
+      "indicators": []
+    },
+    "equities-ai": {
+      "last_new_evidence_date": "2026-11-12",
+      "developments": [
+        {
+          "date": "2026-11-12",
+          "headline": "Nvidia Leadership Shock Tests AI Trade",
+          "line": "Nvidia fell after chief executive Jensen Huang resigned.",
+          "source_urls": [
+            "https://investor.nvidia.com/",
+            "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a"
+          ],
+          "origin": "story",
+          "edition_id": "2026-11-12"
+        },
+        {
+          "date": "2026-11-11",
+          "headline": "AI shares rebounded",
+          "line": "Several AI-related shares rose while market participation remained narrow.",
+          "source_urls": [
+            "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"
+          ],
+          "origin": "story",
+          "edition_id": "2026-11-11"
+        }
+      ],
+      "indicators": [
+        {
+          "id": "spy",
+          "value": 757.29,
+          "previous": 750.02,
+          "display_value": "$757.29",
+          "display_change": "+0.97%",
+          "period": "intraday",
+          "as_of": "2026-11-11",
+          "observations": []
+        },
+        {
+          "id": "nasdaq",
+          "value": 25458.16,
+          "previous": 25065.88,
+          "display_value": "25,458.16",
+          "display_change": "+1.56%",
+          "period": "intraday",
+          "as_of": "2026-11-11",
+          "observations": []
+        }
+      ]
+    },
+    "global-geopolitics": {
+      "last_new_evidence_date": "2026-11-12",
+      "developments": [
+        {
+          "date": "2026-11-12",
+          "headline": "Yen Nears Key Threshold",
+          "line": "The yen traded near 160 per dollar as Japanese officials warned about rapid moves.",
+          "source_urls": [
+            "https://www.imfconnect.org/content/dam/imf/News%20and%20Generic%20Content/GMM/archive/GMM%20November%2012%2C%202026.pdf",
+            "https://www.boj.or.jp/en/statistics/market/forex/index.htm"
+          ],
+          "origin": "global",
+          "edition_id": "2026-11-12"
+        },
+        {
+          "date": "2026-11-12",
+          "headline": "Global Tech Shares Diverge",
+          "line": "Technology shares fell across several Asian markets while European consumer stocks gained.",
+          "source_urls": [
+            "https://www.imfconnect.org/content/dam/imf/News%20and%20Generic%20Content/GMM/archive/GMM%20November%2012%2C%202026.pdf",
+            "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a"
+          ],
+          "origin": "global",
+          "edition_id": "2026-11-12"
+        },
+        {
+          "date": "2026-11-12",
+          "headline": "Iran Tensions Lift Oil",
+          "line": "The U.",
+          "source_urls": [
+            "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a",
+            "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
+          ],
+          "origin": "global",
+          "edition_id": "2026-11-12"
+        },
+        {
+          "date": "2026-11-11",
+          "headline": "Spain held a nationwide strike",
+          "line": "A strike focused on housing and wages disrupted transport and public services.",
+          "source_urls": [
+            "https://apnews.com/article/spain-strike-housing-elections-pedro-sanchez-68a061a72d7cdf842b7803a816e46ef0"
+          ],
+          "origin": "global",
+          "edition_id": "2026-11-11"
+        },
+        {
+          "date": "2026-11-11",
+          "headline": "China auto exports increased",
+          "line": "China reported a sharp October increase in passenger-car exports.",
+          "source_urls": [
+            "https://apnews.com/article/china-autos-exports-evs-hybrids-cars-2779fbbf91f391dd8a59c7ee626cb1b5"
+          ],
+          "origin": "global",
+          "edition_id": "2026-11-11"
+        },
+        {
+          "date": "2026-11-11",
+          "headline": "Prisoner exchange agreed",
+          "line": "Russia and Ukraine agreed to exchange prisoners without a broader peace agreement.",
+          "source_urls": [
+            "https://apnews.com/article/russia-ukraine-war-putin-zelenskyy-uae-3d878a3e56d5df5bd198a6d20c824d18",
+            "https://apnews.com/article/russia-ukraine-war-negotiations-talks-timeline-a19c5072ddf0b8f9ab2a11672db103d8"
+          ],
+          "origin": "global",
+          "edition_id": "2026-11-11"
+        }
+      ],
+      "indicators": []
+    }
+  }
+}

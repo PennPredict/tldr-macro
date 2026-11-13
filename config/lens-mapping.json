@@ -2,6 +2,7 @@
   "jobs_and_wages":["household","policy"],
   "inflation_reports":["household","business","policy"],
   "interest_rates_and_yields":["business","policy","dealer"],
+  "rates":["household","dealer"],
   "oil_and_energy":["household","business","global"],
   "dollar_and_foreign_markets":["business","global"],
   "fed_meeting":["policy","dealer"],

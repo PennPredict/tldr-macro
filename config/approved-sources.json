@@ -25,6 +25,7 @@
     "nfib.com",
     "umich.edu",
     "imf.org",
+    "imfconnect.org",
     "worldbank.org",
     "oecd.org",
     "bis.org",
@@ -60,10 +61,13 @@
     "deutsche-boerse.com"
     ,"ssga.com"
     ,"uscfinvestments.com"
+    ,"ishares.com"
+    ,"spdrgoldshares.com"
   ],
   "company_evidence": [
     "sec.gov",
-    "broadcom.com"
+    "broadcom.com",
+    "nvidia.com"
   ],
   "reporting": [
     "reuters.com",

@@ -1,18 +1,18 @@
 [
   {
     "topic_tag": "companies",
-    "headline": "AI Shares Rebound",
+    "headline": "Nvidia Leadership Shock Tests AI Trade",
     "headline_evidence": {
       "bucket": "companies",
-      "rule": "Several large AI-related shares recovered.",
-      "data": "Micron and Broadcom each rose 5.6%; Nvidia rose 2.9% in early trading."
+      "rule": "A major AI company changed leadership and its shares fell.",
+      "data": "Nvidia fell 4.3% after trimming a 14% opening drop."
     },
-    "commentary": "AI-related shares rose Wednesday after recent losses. CoreWeave reported a smaller loss and raised its sales forecast.",
+    "commentary": "Nvidia fell after its leader resigned. Other chipmakers gained during the change.",
     "defines": [
       {
-        "term": "AI-related shares",
-        "definition": "Stocks of companies that make or use artificial-intelligence technology.",
-        "used_by_and_why": "They can affect technology-heavy funds and broad indexes."
+        "term": "chipmakers",
+        "definition": "Companies that design or produce computer chips.",
+        "used_by_and_why": "Their products power phones, data centers, vehicles, and AI systems."
       }
     ],
     "explains": [
@@ -56,12 +56,12 @@
           {
             "sentence_id": "ai-business-1",
             "type": "fact",
-            "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"
+            "evidence": "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a"
           },
           {
             "sentence_id": "ai-business-2",
             "type": "interpretation",
-            "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"
+            "evidence": "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a"
           }
         ]
       },
@@ -85,42 +85,42 @@
     ],
     "sources": [
       {
-        "name": "Nasdaq market data",
-        "href": "https://www.nasdaq.com/market-activity"
+        "name": "U.S. Securities and Exchange Commission",
+        "href": "https://www.sec.gov/edgar/browse/?CIK=1045810&owner=exclude"
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"
+        "href": "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a"
       }
     ],
-    "data_note": "Micron +5.6%; Broadcom +5.6%; Nvidia +2.9% in early trading.",
+    "data_note": "Nvidia −4.3%; Broadcom +5.5%; AMD +5.9% at Thursday close.",
     "claims": [
       {
         "sentence_id": "ai-commentary-1",
         "type": "fact",
-        "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"
+        "evidence": "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a"
       },
       {
         "sentence_id": "ai-commentary-2",
         "type": "fact",
-        "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"
+        "evidence": "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a"
       }
     ]
   },
   {
-    "topic_tag": "market_volatility",
-    "headline": "Market Breadth Stays Narrow",
+    "topic_tag": "rates",
+    "headline": "Treasury Yield Tops Five Percent",
     "headline_evidence": {
-      "bucket": "market_volatility",
-      "rule": "The major indexes diverged and more S&P 500 members fell than rose.",
-      "data": "Nasdaq +1.56%; DIA −0.17% at about 10:49 AM ET."
+      "bucket": "rates",
+      "rule": "The 10-year yield moved above five percent.",
+      "data": "The 10-year Treasury yield rose to 5.12% from 4.98% Tuesday."
     },
-    "commentary": "Market breadth was narrow as the Nasdaq climbed while the Dow edged lower. Fewer large stocks gained than declined.",
+    "commentary": "The 10-year Treasury yield reached 5.12% Thursday. Higher yields can increase borrowing costs.",
     "defines": [
       {
-        "term": "market breadth",
-        "definition": "The share of stocks rising compared with those falling.",
-        "used_by_and_why": "It shows whether an index move depends on many companies or only a few."
+        "term": "Treasury yield",
+        "definition": "The return investors receive from a U.S. government bond.",
+        "used_by_and_why": "It helps set many mortgage and business borrowing rates."
       }
     ],
     "explains": [
@@ -164,54 +164,54 @@
           {
             "sentence_id": "breadth-dealer-1",
             "type": "fact",
-            "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"
+            "evidence": "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a"
           },
           {
             "sentence_id": "breadth-dealer-2",
             "type": "interpretation",
-            "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"
+            "evidence": "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a"
           }
         ]
       }
     ],
     "sources": [
       {
-        "name": "S&P Dow Jones Indices",
-        "href": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/"
+        "name": "U.S. Treasury",
+        "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates"
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"
+        "href": "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a"
       }
     ],
-    "data_note": "Nasdaq +1.56%; SPY +0.98%; DIA −0.17% near 10:49 AM ET.",
+    "data_note": "10-year Treasury yield: 5.12%, up from 4.98% Tuesday.",
     "claims": [
       {
         "sentence_id": "breadth-commentary-1",
         "type": "fact",
-        "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"
+        "evidence": "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a"
       },
       {
         "sentence_id": "breadth-commentary-2",
         "type": "fact",
-        "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"
+        "evidence": "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a"
       }
     ]
   },
   {
     "topic_tag": "oil_and_energy",
-    "headline": "Oil Prices Rebound",
+    "headline": "Oil Prices Jump",
     "headline_evidence": {
       "bucket": "oil_and_energy",
-      "rule": "The Brent-linked fund rose more than two percent.",
-      "data": "BNO rose 2.45% by 10:49 AM ET."
+      "rule": "Brent rose more than three percent.",
+      "data": "Brent crude climbed 3.3% to $95.82."
     },
-    "commentary": "Brent-linked prices recovered part of their recent decline Wednesday. A lasting increase could reach fuel, shipping, and airline costs.",
+    "commentary": "Brent crude climbed 3.3% Thursday. A lasting increase could reach fuel and shipping costs.",
     "defines": [
       {
-        "term": "Brent-linked prices",
-        "definition": "Prices connected with Brent, a global benchmark for crude oil.",
-        "used_by_and_why": "Businesses use Brent to follow changes in global energy costs."
+        "term": "Brent crude",
+        "definition": "A widely used global benchmark for oil prices.",
+        "used_by_and_why": "Businesses watch it for changes in fuel and transport costs."
       }
     ],
     "explains": [
@@ -289,20 +289,20 @@
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"
+        "href": "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a"
       }
     ],
-    "data_note": "BNO +2.45% at 10:49 AM ET.",
+    "data_note": "Brent crude +3.3% to $95.82 a barrel.",
     "claims": [
       {
         "sentence_id": "oil-commentary-1",
         "type": "fact",
-        "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"
+        "evidence": "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a"
       },
       {
         "sentence_id": "oil-commentary-2",
         "type": "mechanism",
-        "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
+        "evidence": "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a"
       }
     ]
   }

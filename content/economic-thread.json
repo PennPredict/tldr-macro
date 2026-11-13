@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "edition_date": "2026-11-11",
+  "edition_date": "2026-11-12",
   "reported_node_id": "oil",
   "mobile_order": [
     "oil",
@@ -15,12 +15,12 @@
       "type": "FACT",
       "tier": 1,
       "label": "Oil prices jumped",
-      "subline": "The Brent-linked fund rose Wednesday morning.",
-      "precise": "BNO gained 2.45% by 10:49 AM ET.",
-      "event_time": "2026-11-11T10:49:00-05:00",
-      "reference_period": "Wednesday morning",
-      "source": "Nasdaq market data · BNO",
-      "source_url": "https://www.nasdaq.com/market-activity/etf/bno"
+      "subline": "Brent crude rose after renewed Iran tension.",
+      "precise": "Brent gained 3.3% to $95.82 Thursday.",
+      "event_time": "2026-11-12T16:00:00-05:00",
+      "reference_period": "Thursday close",
+      "source": "The Associated Press",
+      "source_url": "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a"
     },
     {
       "id": "prices",
@@ -29,8 +29,8 @@
       "tier": 1,
       "label": "Price pressure may rise",
       "subline": "Higher oil can increase fuel and shipping costs.",
-      "precise": "The effect depends on how long prices stay higher.",
-      "event_time": "2026-11-11T10:49:00-05:00",
+      "precise": "The effect depends on how long oil stays higher.",
+      "event_time": "2026-11-12T16:00:00-05:00",
       "reference_period": "Current economic relationship",
       "mechanism_id": "oil-to-inflation-up",
       "source": "U.S. Energy Information Administration",
@@ -42,13 +42,13 @@
       "type": "MECHANISM",
       "tier": 1,
       "label": "Rate expectations may rise",
-      "subline": "Persistent inflation can lead to higher policy rates.",
-      "precise": "The cash Treasury market was closed Wednesday.",
-      "event_time": "2026-11-11T10:49:00-05:00",
-      "reference_period": "Current economic relationship",
+      "subline": "Persistent price increases can support higher rates.",
+      "precise": "The 10-year Treasury yield reached 5.12%.",
+      "event_time": "2026-11-12T16:00:00-05:00",
+      "reference_period": "Thursday close",
       "mechanism_id": "inflation-to-rate-expectations",
-      "source": "Federal Reserve",
-      "source_url": "https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm"
+      "source": "U.S. Treasury",
+      "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates"
     },
     {
       "id": "borrowing",
@@ -58,7 +58,7 @@
       "label": "Loans may cost more",
       "subline": "Higher rates can raise mortgage and business-loan costs.",
       "precise": "Actual rates depend on the lender and borrower.",
-      "event_time": "2026-11-11T10:49:00-05:00",
+      "event_time": "2026-11-12T16:00:00-05:00",
       "reference_period": "Current economic relationship",
       "mechanism_id": "rates-to-borrowing",
       "source": "Federal Reserve",

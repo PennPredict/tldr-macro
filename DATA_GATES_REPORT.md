@@ -1,38 +1,20 @@
-# V2 data-gates report
+# Data gates report — 2026-11-11
 
-Edition checked: 2026-10-27. The v2 presentation does not repair, interpolate, or invent market observations.
+## Before
 
-| Gate | Before | V2 result |
-|---|---|---|
-| Series/date integrity | Several histories contain duplicate dates and repeated latest values. | The affected sparkline is withheld; the verified point-in-time value remains visible. |
-| Prior close | Histories do not consistently contain the declared prior close. | Sparkline withheld when the baseline cannot be found in history. |
-| Freshness | Main readings are timestamped; extra markets include stale or unavailable rows. | Intraday data older than 90 minutes is withheld; daily data is delayed after one business day and withheld after three; weekly data is withheld after eight days. |
-| Contaminated series | WTI and several international series are already marked unavailable or under review. | They remain withheld. No replacement value was inferred. |
-| Change math | Displayed changes coexist with raw value and prior close. | Direction is computed from raw values; yield moves are labeled in points. |
-| Sentence parsing | Abbreviations can create false sentence boundaries. | V2 uses an abbreviation-aware first-sentence helper and fixed word caps. |
-| Event dates | Calendar dates and countdowns can cross time zones. | Countdown labels are derived in America/New_York. |
-| Topic mapping | Existing topic tags vary by desk. | V2 maps only known tags and uses the neutral “Economy” fallback. |
-| Verification label | A label could imply checks ran when they did not. | No verification claim is displayed by default. Existing verification remains authoritative. |
+- The compact series mixed same-day intraday points with closes, which could overstate a five-day history.
+- Several prior-close fields differed from the immediately preceding stored point.
+- “Earlier verified readings” rendered stale and known-invalid series, including re-dated values and incompatible frequencies.
+- The Treasury row displayed TLT, an inverse-moving bond fund, under a cash-yield name.
 
-## Withheld in v2
+## After
 
-- All primary sparklines currently fail at least one history gate because of duplicate observation dates and/or a missing prior-close observation.
-- Extra-market rows already marked unavailable stay withheld.
-- The Economic Thread has no chain whose mechanism IDs all appear in `config/mechanisms.json`; v2 shows “No verified shared driver today” instead of an unsupported causal chain.
+- Weekend and holiday dates are rejected by the existing market-series validator.
+- Displayed row changes are computed from the last two displayed observations.
+- The stale “Earlier verified readings” group is excluded from the DOM until every candidate series passes date, identity, freshness, sign, and immutability gates.
+- TLT remains explicitly labeled “Long-term Treasury fund (TLT)”; no yield direction is inferred on the cash-market holiday.
+- Official 10-year Treasury and weekly mortgage indicators are configured but withheld because this build lacks verified, correctly dated observations. No figures were invented.
 
-## Word-count limits
+## Remaining coverage gaps
 
-| Surface | Limit |
-|---|---:|
-| Hero headline | 6 words |
-| Hero summary | 50 words |
-| Story headline | 6 words |
-| Story commentary | 40 words |
-| Why it matters | 25 words |
-| Global headline | 8 words |
-| Global paragraph | 35 words |
-| Event description | 14 words |
-| Bottom-line heading | 22 words |
-| Bottom-line paragraph | 40 words |
-
-The interface truncates presentation copies at these limits without modifying source content.
+The known invalid WTI, KOSPI, mortgage, spread, and re-dated international-index series remain in internal source data only. They are not rendered. Cross-edition immutability must be enforced when the provider ingestion job is next revised; published snapshots remain retained in `data/history/`.

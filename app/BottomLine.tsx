@@ -1,3 +1,2 @@
 import AnnotatedText from "./AnnotatedText";
-const concise=(sentence:string,index:number)=>index===0?sentence.split(/, but\b/i)[0].replace(/[.!?]*$/,"."):"One morning’s prices do not establish a trend; official releases provide stronger signals.";
-export default function BottomLine({sentences}:{sentences:string[];closing:string}){return <section className="bottom-line" id="bottom-line" aria-labelledby="bottom-line-title"><h2 id="bottom-line-title">Bottom Line</h2><div>{sentences.slice(0,2).map((sentence,index)=><p key={sentence}><AnnotatedText text={concise(sentence,index)}/></p>)}</div></section>}
+export default function BottomLine({sentences}:{sentences:string[];closing:string}){return <section className="bottom-line" id="bottom-line" aria-labelledby="bottom-line-title"><h2 id="bottom-line-title">Bottom Line</h2><div>{sentences.slice(0,2).map(sentence=><p key={sentence}><AnnotatedText text={sentence}/></p>)}</div></section>}

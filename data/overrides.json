@@ -54,5 +54,12 @@
     "reason": "The required checked template resembles earlier editions, while Wednesday's verified stock, bond-fund, and oil-fund observations are distinct and clearly labeled.",
     "evidence_url": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e",
     "expires_at": "2026-11-11T16:00:00-05:00"
+  },
+  {
+    "id": "summary-similarity-2026-11-12",
+    "owner": "TL;DR Macro editorial",
+    "reason": "The required checked template resembles October 23, while Thursday's stock decline, yield rise, and oil gain are separately verified.",
+    "evidence_url": "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a",
+    "expires_at": "2026-11-12T23:59:00-05:00"
   }
 ]

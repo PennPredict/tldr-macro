@@ -1,0 +1,88 @@
+{
+  "title": "Where Things Stand",
+  "subtitle": "Five long-running themes, updated when new evidence arrives.",
+  "thresholds": {
+    "equity_fund": 1,
+    "bond_fund": 0.75,
+    "fx": 0.5,
+    "oil_fund": 2
+  },
+  "themes": [
+    {
+      "id": "inflation-fed",
+      "name": "Inflation & Fed",
+      "question": "Are prices cooling enough for the Fed to lower rates?",
+      "topics": ["oil_and_energy", "inflation", "monetary_policy"],
+      "catalyst_tags": ["cpi", "pce", "ppi", "fomc"],
+      "why_it_matters": "Inflation can shape rates and household costs; slower inflation can ease both.",
+      "structural_note": {
+        "text": "The Fed balances price stability with maximum employment when setting interest rates.",
+        "source_url": "https://www.federalreserve.gov/monetarypolicy.htm",
+        "last_reviewed": "2026-11-11"
+      },
+      "indicators": [
+        {"id":"cpi-monthly","label":"Consumer prices","series":"CPI-U monthly change","provider":"BLS","frequency":"monthly","unit":"percent","kind":"official","role":"primary","move_threshold":0.2,"source_url":"https://www.bls.gov/news.release/cpi.htm","license_ok":true},
+        {"id":"core-cpi-monthly","label":"Core consumer prices","series":"CPI-U excluding food and energy","provider":"BLS","frequency":"monthly","unit":"percent","kind":"official","role":"primary","move_threshold":0.2,"source_url":"https://www.bls.gov/news.release/cpi.htm","license_ok":true},
+        {"id":"fed-target","label":"Federal funds target","series":"Federal funds target range","provider":"Federal Reserve","frequency":"daily","unit":"percent","kind":"official","role":"primary","move_threshold":0.25,"source_url":"https://www.federalreserve.gov/monetarypolicy/openmarket.htm","license_ok":true},
+        {"id":"bno","label":"Brent oil fund","series":"BNO","provider":"Nasdaq market data","frequency":"daily","unit":"dollars","kind":"market_proxy","role":"context","move_threshold":2,"source_url":"https://www.nasdaq.com/market-activity/etf/bno","license_ok":true}
+      ]
+    },
+    {
+      "id": "growth-consumers",
+      "name": "Growth & Consumers",
+      "question": "Can spending and hiring hold up as borrowing stays expensive?",
+      "topics": ["labor", "consumer", "growth"],
+      "catalyst_tags": ["jobs", "claims", "retail-sales", "gdp"],
+      "why_it_matters": "Hiring and spending can support growth; weaker demand can slow business activity.",
+      "structural_note": {"text":"Consumer spending is the largest component of U.S. economic output.","source_url":"https://www.bea.gov/data/consumer-spending/main","last_reviewed":"2026-11-11"},
+      "indicators": [
+        {"id":"unemployment","label":"Unemployment rate","series":"LNS14000000","provider":"BLS","frequency":"monthly","unit":"percent","kind":"official","role":"primary","move_threshold":0.2,"source_url":"https://www.bls.gov/news.release/empsit.htm","license_ok":true},
+        {"id":"payrolls","label":"Payrolls","series":"CES0000000001","provider":"BLS","frequency":"monthly","unit":"jobs","kind":"official","role":"primary","move_threshold":100000,"source_url":"https://www.bls.gov/news.release/empsit.htm","license_ok":true},
+        {"id":"retail-sales","label":"Retail sales","series":"Advance monthly retail sales","provider":"Census","frequency":"monthly","unit":"percent","kind":"official","role":"primary","move_threshold":0.5,"source_url":"https://www.census.gov/retail/index.html","license_ok":true},
+        {"id":"real-gdp","label":"Real GDP","series":"Real GDP annualized change","provider":"BEA","frequency":"quarterly","unit":"percent","kind":"official","role":"context","move_threshold":0.5,"source_url":"https://www.bea.gov/data/gdp/gross-domestic-product","license_ok":true},
+        {"id":"claims","label":"Jobless claims","series":"Initial claims","provider":"DOL","frequency":"weekly","unit":"claims","kind":"official","role":"context","move_threshold":25000,"source_url":"https://www.dol.gov/ui/data.pdf","license_ok":true}
+      ]
+    },
+    {
+      "id": "bonds-credit",
+      "name": "Bonds & Credit",
+      "question": "Will inflation keep long-term borrowing costs elevated?",
+      "topics": ["rates", "credit", "housing"],
+      "catalyst_tags": ["treasury", "mortgage", "fomc"],
+      "why_it_matters": "Higher yields can raise borrowing costs; lower yields can ease financing pressure.",
+      "structural_note": {"text":"Treasury yields influence many borrowing rates, including mortgages and business credit.","source_url":"https://home.treasury.gov/resource-center/data-chart-center/interest-rates","last_reviewed":"2026-11-11"},
+      "indicators": [
+        {"id":"treasury-10y","label":"10-year Treasury yield","series":"10-year Treasury constant maturity","provider":"U.S. Treasury","frequency":"daily","unit":"percent","kind":"official","role":"primary","move_threshold":0.1,"source_url":"https://home.treasury.gov/resource-center/data-chart-center/interest-rates","license_ok":true},
+        {"id":"mortgage-30y","label":"30-year mortgage rate","series":"PMMS","provider":"Freddie Mac","frequency":"weekly","unit":"percent","kind":"official","role":"primary","move_threshold":0.1,"source_url":"https://www.freddiemac.com/pmms","license_ok":true},
+        {"id":"spread-10y2y","label":"10Y–2Y spread","series":"T10Y2Y","provider":"FRED","frequency":"daily","unit":"percentage points","kind":"official","role":"context","move_threshold":0.1,"source_url":"https://fred.stlouisfed.org/series/T10Y2Y","license_ok":true}
+      ]
+    },
+    {
+      "id": "equities-ai",
+      "name": "Equities & AI",
+      "question": "Can AI earnings broaden beyond a few market leaders?",
+      "topics": ["companies", "market_volatility", "equities", "ai"],
+      "catalyst_tags": ["earnings", "breadth", "volatility"],
+      "why_it_matters": "Narrow leadership can lift indexes while leaving many holdings behind.",
+      "structural_note": {"text":"Capital-weighted indexes give larger companies greater influence over headline market returns.","source_url":"https://www.spglobal.com/spdji/en/indices/equity/sp-500/","last_reviewed":"2026-11-11"},
+      "indicators": [
+        {"id":"spy","label":"S&P 500 fund","series":"SPY","provider":"Nasdaq market data","frequency":"daily","unit":"dollars","kind":"market_proxy","role":"primary","move_threshold":1,"source_url":"https://www.nasdaq.com/market-activity/etf/spy","license_ok":true},
+        {"id":"nasdaq","label":"Nasdaq Composite","series":"COMP","provider":"Nasdaq","frequency":"daily","unit":"index points","kind":"official","role":"primary","move_threshold":1,"source_url":"https://www.nasdaq.com/market-activity/index/comp","license_ok":true},
+        {"id":"vix","label":"Expected volatility","series":"VIX","provider":"Cboe","frequency":"daily","unit":"index points","kind":"market_proxy","role":"context","move_threshold":10,"source_url":"https://www.cboe.com/tradable_products/vix/","license_ok":true}
+      ]
+    },
+    {
+      "id": "global-geopolitics",
+      "name": "Global & Geopolitics",
+      "question": "Which global developments could affect prices, growth, or capital flows?",
+      "topics": ["global", "trade", "geopolitics", "oil_and_energy"],
+      "catalyst_tags": ["trade", "conflict", "fx"],
+      "why_it_matters": "Trade and security shocks can affect energy, currencies, supply chains, and demand.",
+      "structural_note": {"text":"Trade, security, energy routes, and industrial policy shape cross-border costs and investment.","source_url":"https://www.wto.org/english/res_e/statis_e/statis_e.htm","last_reviewed":"2026-11-11"},
+      "indicators": [
+        {"id":"dollar-euro","label":"Dollar per euro","series":"DEXUSEU","provider":"Federal Reserve","frequency":"daily","unit":"dollars","kind":"official","role":"context","move_threshold":0.5,"source_url":"https://www.federalreserve.gov/releases/h10/current/","license_ok":true},
+        {"id":"global-bno","label":"Brent oil fund","series":"BNO","provider":"Nasdaq market data","frequency":"daily","unit":"dollars","kind":"market_proxy","role":"context","move_threshold":2,"source_url":"https://www.nasdaq.com/market-activity/etf/bno","license_ok":true}
+      ]
+    }
+  ]
+}

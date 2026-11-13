@@ -1,5 +1,20 @@
 [
-  {"topic_tag": "companies", "outlook_effect": "reinforces", "assessment": "The rebound confirms that a small group of AI companies can still move broad indexes; it does not settle valuation or financing concerns.", "what_to_watch": "Watch whether gains broaden beyond the largest technology companies."},
-  {"topic_tag": "market_volatility", "outlook_effect": "reinforces", "assessment": "Narrow participation reinforces the concentration theme rather than signaling a broad improvement in risk appetite.", "what_to_watch": "Watch the share of S&P 500 members rising with the index."},
-  {"topic_tag": "oil_and_energy", "outlook_effect": "reinforces", "assessment": "The jump keeps energy-related inflation risk visible, but one morning does not establish a lasting price trend.", "what_to_watch": "Watch whether oil holds the gain across several verified closes."}
+  {
+    "topic_tag": "companies",
+    "outlook_effect": "reinforces",
+    "assessment": "Nvidia leadership risk challenged concentrated AI leadership while rival chipmakers gained.",
+    "what_to_watch": "Whether chip demand broadens beyond Nvidia."
+  },
+  {
+    "topic_tag": "rates",
+    "outlook_effect": "changes",
+    "assessment": "The 10-year Treasury yield moved above five percent, increasing economy-wide financing costs.",
+    "what_to_watch": "Whether yields remain above five percent."
+  },
+  {
+    "topic_tag": "oil_and_energy",
+    "outlook_effect": "changes",
+    "assessment": "The oil jump renewed inflation risk tied to the Iran conflict.",
+    "what_to_watch": "Whether oil holds the gain across verified closes."
+  }
 ]
