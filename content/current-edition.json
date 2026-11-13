@@ -1,18 +1,18 @@
 {
-  "edition_date": "2026-11-12",
-  "updated_at": "2026-11-12T16:09:00-05:00",
-  "summary": "Stocks slipped; government borrowing rates rose; oil jumped.",
+  "edition_date": "2026-11-13",
+  "updated_at": "2026-11-13T15:44:00-05:00",
+  "summary": "Prices rose 0.3% in October; government borrowing rates edged up; Nasdaq fell.",
   "markets": [
     {
       "name": "S&P 500",
       "kind": "equity_index",
-      "value": 757.16,
-      "display_value": "$757.16",
+      "value": 752.6,
+      "display_value": "$752.60",
       "baseline": "prior_close",
-      "prior_close": 759.81,
-      "change_percent": -0.35,
-      "display_change": "−0.35%",
-      "description": "SPY is a fund designed to track the S&P 500. It recovered most early losses before closing modestly lower.",
+      "prior_close": 757.12,
+      "change_percent": -0.6,
+      "display_change": "−0.60%",
+      "description": "SPY tracks the S&P 500. It fell as several large AI stocks outweighed gains elsewhere.",
       "so_what": {
         "channel_id": "sp500",
         "context": {
@@ -31,18 +31,18 @@
         {
           "sentence_id": "s-p--wed-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"
+          "evidence": "https://www.nasdaq.com/market-activity/etf/spy"
         }
       ],
       "data_source": "State Street · SPY",
-      "fetched_at": "2026-11-12T16:00:00-05:00",
-      "range": "Wednesday close 759.81 · Thursday close 757.16",
+      "fetched_at": "2026-11-13T15:44:00-05:00",
+      "range": "Thursday close 757.12 · Friday 3:44 PM 752.6",
       "points": [
-        735.29,
-        751.3,
         750.02,
         759.81,
-        757.16
+        757.16,
+        752.6,
+        752.6
       ],
       "sources": [
         {
@@ -51,11 +51,11 @@
         }
       ],
       "series_dates": [
-        "2026-11-06T16:00:00-05:00",
-        "2026-11-09T16:00:00-05:00",
         "2026-11-10T16:00:00-05:00",
         "2026-11-11T16:00:00-05:00",
-        "2026-11-12T16:00:00-05:00"
+        "2026-11-12T16:00:00-05:00",
+        "2026-11-13T15:44:00-05:00",
+        "2026-11-13T15:44:00-05:00"
       ],
       "available": true,
       "frequency": "Intraday",
@@ -66,13 +66,13 @@
     {
       "name": "10-year Treasury yield",
       "kind": "yield",
-      "value": 79.72,
-      "display_value": "$79.72",
+      "value": 79.345,
+      "display_value": "$79.35",
       "baseline": "prior_close",
-      "prior_close": 80.92,
-      "change_percent": -1.48,
-      "display_change": "−1.48%",
-      "description": "TLT holds long-term U.S. government bonds. It fell Thursday as long-bond prices declined.",
+      "prior_close": 79.72,
+      "change_percent": -0.47,
+      "display_change": "−0.47%",
+      "description": "TLT holds long-term Treasury bonds. The fund fell during Friday trading.",
       "so_what": {
         "channel_id": "yield10",
         "context": {
@@ -91,18 +91,18 @@
         {
           "sentence_id": "-year-treasury-yield-wed-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"
+          "evidence": "https://www.nasdaq.com/market-activity/etf/tlt"
         }
       ],
       "data_source": "Nasdaq market data · TLT",
-      "fetched_at": "2026-11-12T16:00:00-05:00",
-      "range": "Wednesday close 80.92 · Thursday close 79.72",
+      "fetched_at": "2026-11-13T15:44:00-05:00",
+      "range": "Thursday close 79.72 · Friday 3:44 PM 79.345",
       "points": [
-        81.92,
-        81.96,
         80.88,
         80.92,
-        79.72
+        79.72,
+        79.345,
+        79.345
       ],
       "sources": [
         {
@@ -111,11 +111,11 @@
         }
       ],
       "series_dates": [
-        "2026-11-06T16:00:00-05:00",
-        "2026-11-09T16:00:00-05:00",
         "2026-11-10T16:00:00-05:00",
         "2026-11-11T16:00:00-05:00",
-        "2026-11-12T16:00:00-05:00"
+        "2026-11-12T16:00:00-05:00",
+        "2026-11-13T15:44:00-05:00",
+        "2026-11-13T15:44:00-05:00"
       ],
       "available": true,
       "frequency": "Intraday",
@@ -130,10 +130,10 @@
       "value": 61.01,
       "display_value": "$61.01",
       "baseline": "prior_close",
-      "prior_close": 58.75,
-      "change_percent": 3.85,
-      "display_change": "+3.85%",
-      "description": "BNO is a fund tied to Brent crude futures. It climbed Thursday while Iran tensions increased.",
+      "prior_close": 61.01,
+      "change_percent": 0,
+      "display_change": "0.00%",
+      "description": "BNO tracks Brent crude futures. It was unchanged while oil prices swung during Friday trading.",
       "so_what": {
         "channel_id": "brent",
         "context": {
@@ -148,22 +148,22 @@
         {
           "sentence_id": "brent-crude-oil-wed-1",
           "type": "mechanism",
-          "evidence": "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a"
+          "evidence": "https://www.nasdaq.com/market-activity/etf/bno"
         },
         {
           "sentence_id": "brent-crude-oil-wed-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a"
+          "evidence": "https://www.nasdaq.com/market-activity/etf/bno"
         }
       ],
       "data_source": "USCF · BNO",
-      "fetched_at": "2026-11-12T16:00:00-05:00",
-      "range": "Wednesday close 58.75 · Thursday close 61.01",
+      "fetched_at": "2026-11-13T15:44:00-05:00",
+      "range": "Thursday close 61.01 · Friday 3:44 PM 61.01",
       "points": [
-        62.22,
-        58.93,
         58.36,
         58.75,
+        61.01,
+        61.01,
         61.01
       ],
       "sources": [
@@ -173,11 +173,11 @@
         }
       ],
       "series_dates": [
-        "2026-11-06T16:00:00-05:00",
-        "2026-11-09T16:00:00-05:00",
         "2026-11-10T16:00:00-05:00",
         "2026-11-11T16:00:00-05:00",
-        "2026-11-12T16:00:00-05:00"
+        "2026-11-12T16:00:00-05:00",
+        "2026-11-13T15:44:00-05:00",
+        "2026-11-13T15:44:00-05:00"
       ],
       "available": true,
       "frequency": "Intraday",
@@ -188,13 +188,13 @@
     {
       "name": "Nasdaq Composite",
       "kind": "equity_index",
-      "value": 25366.09,
-      "display_value": "25,366.09",
+      "value": 25097.49,
+      "display_value": "25,097.49",
       "baseline": "prior_close",
-      "prior_close": 25466.19,
-      "change_percent": -0.39,
-      "display_change": "−0.39%",
-      "description": "The Nasdaq tracks many technology companies. It recovered most early losses as chip shares split.",
+      "prior_close": 25366.09,
+      "change_percent": -1.06,
+      "display_change": "−1.06%",
+      "description": "The Nasdaq tracks many technology companies. It fell as several large AI stocks declined.",
       "so_what": {
         "channel_id": "nasdaq",
         "context": {
@@ -213,18 +213,18 @@
         {
           "sentence_id": "nasdaq-composite-wed-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"
+          "evidence": "https://www.nasdaq.com/market-activity/index/comp"
         }
       ],
       "data_source": "Nasdaq Composite",
-      "fetched_at": "2026-11-12T16:00:00-05:00",
-      "range": "Wednesday close 25,466.19 · Thursday close 25,366.09",
+      "fetched_at": "2026-11-13T15:44:00-05:00",
+      "range": "Thursday close 25,366.09 · Friday 3:44 PM 25,097.49",
       "points": [
-        24579.42,
-        25253.14,
         25065.88,
         25466.19,
-        25366.09
+        25366.09,
+        25097.49,
+        25097.49
       ],
       "sources": [
         {
@@ -233,11 +233,11 @@
         }
       ],
       "series_dates": [
-        "2026-11-06T16:00:00-05:00",
-        "2026-11-09T16:00:00-05:00",
         "2026-11-10T16:00:00-05:00",
         "2026-11-11T16:00:00-05:00",
-        "2026-11-12T16:00:00-05:00"
+        "2026-11-12T16:00:00-05:00",
+        "2026-11-13T15:44:00-05:00",
+        "2026-11-13T15:44:00-05:00"
       ],
       "available": true,
       "frequency": "Intraday",
@@ -247,13 +247,13 @@
     {
       "name": "Dow Jones Industrial Average",
       "kind": "equity_index",
-      "value": 522.79,
-      "display_value": "$522.79",
+      "value": 522.36,
+      "display_value": "$522.36",
       "baseline": "prior_close",
-      "prior_close": 524.44,
-      "change_percent": -0.31,
-      "display_change": "−0.31%",
-      "description": "DIA tracks the 30-company Dow. It ended modestly lower after a volatile session.",
+      "prior_close": 522.47,
+      "change_percent": -0.02,
+      "display_change": "−0.02%",
+      "description": "DIA tracks the 30-company Dow. It was nearly unchanged late Friday.",
       "so_what": {
         "channel_id": "dow",
         "context": {
@@ -272,18 +272,18 @@
         {
           "sentence_id": "dow-jones-industrial-average-wed-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"
+          "evidence": "https://www.nasdaq.com/market-activity/etf/dia"
         }
       ],
       "data_source": "State Street · DIA",
-      "fetched_at": "2026-11-12T16:00:00-05:00",
-      "range": "Wednesday close 524.44 · Thursday close 522.79",
+      "fetched_at": "2026-11-13T15:44:00-05:00",
+      "range": "Thursday close 522.47 · Friday 3:44 PM 522.36",
       "points": [
-        512.22,
-        523.33,
         521.73,
         524.44,
-        522.79
+        522.79,
+        522.36,
+        522.36
       ],
       "sources": [
         {
@@ -292,11 +292,11 @@
         }
       ],
       "series_dates": [
-        "2026-11-06T16:00:00-05:00",
-        "2026-11-09T16:00:00-05:00",
         "2026-11-10T16:00:00-05:00",
         "2026-11-11T16:00:00-05:00",
-        "2026-11-12T16:00:00-05:00"
+        "2026-11-12T16:00:00-05:00",
+        "2026-11-13T15:44:00-05:00",
+        "2026-11-13T15:44:00-05:00"
       ],
       "available": true,
       "frequency": "Intraday",
@@ -307,13 +307,13 @@
     {
       "name": "Expected volatility",
       "kind": "volatility",
-      "value": 354.89,
-      "display_value": "$354.89",
+      "value": 354.87,
+      "display_value": "$354.87",
       "baseline": "prior_close",
-      "prior_close": 365.17,
-      "change_percent": -2.82,
-      "display_change": "−2.82%",
-      "description": "GLD holds physical gold. It fell Thursday alongside other precious metals.",
+      "prior_close": 354.89,
+      "change_percent": -0.01,
+      "display_change": "−0.01%",
+      "description": "GLD holds physical gold. It was nearly unchanged late Friday.",
       "so_what": {
         "channel_id": "vix",
         "context": {
@@ -332,18 +332,18 @@
         {
           "sentence_id": "expected-volatility-wed-2",
           "type": "fact",
-          "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-297d040c83844a9563327340b370c24e"
+          "evidence": "https://www.nasdaq.com/market-activity/etf/gld"
         }
       ],
       "data_source": "State Street · GLD",
-      "fetched_at": "2026-11-12T16:00:00-05:00",
-      "range": "Wednesday close 365.17 · Thursday close 354.89",
+      "fetched_at": "2026-11-13T15:44:00-05:00",
+      "range": "Thursday close 354.89 · Friday 3:44 PM 354.87",
       "points": [
-        372.52,
-        379.53,
         369.36,
         365.17,
-        354.89
+        354.89,
+        354.87,
+        354.87
       ],
       "sources": [
         {
@@ -352,11 +352,11 @@
         }
       ],
       "series_dates": [
-        "2026-11-06T16:00:00-05:00",
-        "2026-11-09T16:00:00-05:00",
         "2026-11-10T16:00:00-05:00",
         "2026-11-11T16:00:00-05:00",
-        "2026-11-12T16:00:00-05:00"
+        "2026-11-12T16:00:00-05:00",
+        "2026-11-13T15:44:00-05:00",
+        "2026-11-13T15:44:00-05:00"
       ],
       "available": true,
       "frequency": "Intraday",
@@ -366,21 +366,6 @@
     }
   ],
   "calendar": [
-    {
-      "date": "NOV 13",
-      "time": "8:30 AM ET",
-      "start_at": "2026-11-13T08:30:00-05:00",
-      "title": "Producer Price Index",
-      "definition": "Tracks prices received by domestic producers before goods and services reach consumers.",
-      "prior": "October producer-price report · BLS",
-      "consensus": "",
-      "hot_label": "If producer prices rise faster",
-      "cool_label": "If producer prices slow",
-      "hot": "Businesses may face more cost increases to absorb or pass along.",
-      "cool": "Less producer-price growth can reduce future price increases.",
-      "source": "BLS release calendar",
-      "href": "https://www.bls.gov/schedule/2026/11_sched.htm"
-    },
     {
       "date": "NOV 17",
       "time": "8:30 AM ET",

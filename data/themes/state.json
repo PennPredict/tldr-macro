@@ -1,6 +1,6 @@
 {
-  "edition_id": "2026-11-12",
-  "generated_at": "2026-11-12T16:09:00-05:00",
+  "edition_id": "2026-11-13",
+  "generated_at": "2026-11-13T15:44:00-05:00",
   "themes": {
     "inflation-fed": {
       "last_new_evidence_date": "2026-11-12",
@@ -116,8 +116,19 @@
       "indicators": []
     },
     "bonds-credit": {
-      "last_new_evidence_date": "2026-11-12",
+      "last_new_evidence_date": "2026-11-13",
       "developments": [
+        {
+          "date": "2026-11-13",
+          "headline": "Ten-Year Yield Reaches 5.15 Percent",
+          "line": "The 10-year Treasury yield rose to 5.",
+          "source_urls": [
+            "https://home.treasury.gov/resource-center/data-chart-center/interest-rates",
+            "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+          ],
+          "origin": "story",
+          "edition_id": "2026-11-13"
+        },
         {
           "date": "2026-11-12",
           "headline": "Treasury Yield Tops Five Percent",
@@ -143,8 +154,19 @@
       "indicators": []
     },
     "equities-ai": {
-      "last_new_evidence_date": "2026-11-12",
+      "last_new_evidence_date": "2026-11-13",
       "developments": [
+        {
+          "date": "2026-11-13",
+          "headline": "AI Leaders Pull Indexes Lower",
+          "line": "Large AI stocks pulled major indexes lower.",
+          "source_urls": [
+            "https://www.sec.gov/edgar/browse/?CIK=1045810&owner=exclude",
+            "https://apnews.com/article/stocks-markets-ai-us-oil-f8edd0eeb1494d4d2584715686c5e619"
+          ],
+          "origin": "story",
+          "edition_id": "2026-11-13"
+        },
         {
           "date": "2026-11-12",
           "headline": "Nvidia Leadership Shock Tests AI Trade",
@@ -191,8 +213,41 @@
       ]
     },
     "global-geopolitics": {
-      "last_new_evidence_date": "2026-11-12",
+      "last_new_evidence_date": "2026-11-13",
       "developments": [
+        {
+          "date": "2026-11-13",
+          "headline": "Microsoft Outage Exposes Global Reliance",
+          "line": "A worldwide Microsoft outage disrupted business and government services.",
+          "source_urls": [
+            "https://apnews.com/article/d92547a821930290db2964388016979a",
+            "https://status.cloud.microsoft/"
+          ],
+          "origin": "global",
+          "edition_id": "2026-11-13"
+        },
+        {
+          "date": "2026-11-13",
+          "headline": "Yen Crosses 160 Per Dollar",
+          "line": "Japan warned against rapid currency moves as the yen weakened.",
+          "source_urls": [
+            "https://www.boj.or.jp/en/statistics/market/forex/index.htm",
+            "https://www.marketscreener.com/news/japan-s-finance-minister-vows-action-as-yen-breaches-160-threshold-ce785ed9db89f027"
+          ],
+          "origin": "global",
+          "edition_id": "2026-11-13"
+        },
+        {
+          "date": "2026-11-13",
+          "headline": "Iran Conflict Keeps Oil Risk Elevated",
+          "line": "Iranian drones and U.",
+          "source_urls": [
+            "https://apnews.com/article/5d73a23b5b8647d2515c35b267b36c08",
+            "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
+          ],
+          "origin": "global",
+          "edition_id": "2026-11-13"
+        },
         {
           "date": "2026-11-12",
           "headline": "Yen Nears Key Threshold",

@@ -2,18 +2,18 @@
   {
     "tag": "Energy",
     "qualifies": true,
-    "headline": "Iran Tensions Raise Energy Risk",
-    "what": "The U.S. president rejected further talks with Iran.",
-    "context": "Oil shipments had recovered toward earlier levels after months of disruption.",
-    "why_it_matters": "Renewed tension can affect energy routes, inflation, and global shipping costs.",
+    "headline": "Iran Conflict Threatens Shipping Routes",
+    "what": "Iranian drones and U.S. strikes kept regional conflict active.",
+    "context": "Tankers still face risks around a critical oil-shipping route.",
+    "why_it_matters": "Disruptions can affect fuel supplies and shipping costs across countries.",
     "concept_terms": [
-      "energy routes",
-      "inflation"
+      "oil-shipping route",
+      "tankers"
     ],
     "sources": [
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a",
+        "href": "https://apnews.com/article/5d73a23b5b8647d2515c35b267b36c08",
         "type": "wire"
       },
       {
@@ -23,64 +23,64 @@
       }
     ],
     "developing": true,
-    "as_of": "2026-11-12T16:09:00-05:00",
+    "as_of": "2026-11-13T15:44:00-05:00",
     "importance_score": 99,
-    "needs_human_check": false
+    "needs_human_check": true
   },
   {
     "tag": "Global markets",
     "qualifies": true,
-    "headline": "Global Tech Shares Diverge",
-    "what": "Technology shares fell across several Asian markets while European consumer stocks gained.",
-    "context": "The change followed new uncertainty around Nvidia leadership.",
-    "why_it_matters": "Different regional moves show that AI risk is spreading unevenly across markets.",
-    "concept_terms": [
-      "technology shares",
-      "regional markets"
-    ],
-    "sources": [
-      {
-        "name": "International Monetary Fund",
-        "href": "https://www.imfconnect.org/content/dam/imf/News%20and%20Generic%20Content/GMM/archive/GMM%20November%2012%2C%202026.pdf",
-        "type": "primary"
-      },
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/stock-markets-oil-ai-earnings-nvidia-8bf08407eafe1655ed73112f7494029a",
-        "type": "wire"
-      }
-    ],
-    "developing": false,
-    "as_of": "2026-11-12T16:09:00-05:00",
-    "importance_score": 96,
-    "needs_human_check": false
-  },
-  {
-    "tag": "Trade",
-    "qualifies": true,
-    "headline": "Yen Nears Key Threshold",
-    "what": "The yen traded near 160 per dollar as Japanese officials warned about rapid moves.",
-    "context": "Rate differences continue to shape currency demand.",
-    "why_it_matters": "A weaker yen can raise Japanese import costs and alter export earnings.",
+    "headline": "Yen Breaches Key Threshold",
+    "what": "Japan warned against rapid currency moves as the yen weakened.",
+    "context": "Large U.S.-Japan rate differences continue to weigh on the currency.",
+    "why_it_matters": "A weaker yen raises import costs and changes exporters’ overseas earnings.",
     "concept_terms": [
       "yen",
-      "currency demand"
+      "rate differences"
     ],
     "sources": [
-      {
-        "name": "International Monetary Fund",
-        "href": "https://www.imfconnect.org/content/dam/imf/News%20and%20Generic%20Content/GMM/archive/GMM%20November%2012%2C%202026.pdf",
-        "type": "primary"
-      },
       {
         "name": "Bank of Japan",
         "href": "https://www.boj.or.jp/en/statistics/market/forex/index.htm",
         "type": "primary"
+      },
+      {
+        "name": "Reuters via MarketScreener",
+        "href": "https://www.marketscreener.com/news/japan-s-finance-minister-vows-action-as-yen-breaches-160-threshold-ce785ed9db89f027",
+        "type": "wire"
       }
     ],
     "developing": true,
-    "as_of": "2026-11-12T16:09:00-05:00",
-    "importance_score": 92,
+    "as_of": "2026-11-13T15:44:00-05:00",
+    "importance_score": 96,
     "needs_human_check": false
+  },
+  {
+    "tag": "Policy",
+    "qualifies": true,
+    "headline": "Europe Joins Ukraine Negotiations",
+    "what": "European diplomats will join the next U.S.-led Ukraine talks.",
+    "context": "Leaders want a role in wider security and territorial discussions.",
+    "why_it_matters": "Negotiations can affect defense spending, energy risk, and regional confidence.",
+    "concept_terms": [
+      "security",
+      "defense spending"
+    ],
+    "sources": [
+      {
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/2a96d57210055edd2e76f71693e0a37c",
+        "type": "wire"
+      },
+      {
+        "name": "European Commission",
+        "href": "https://ec.europa.eu/commission/presscorner/home/en",
+        "type": "primary"
+      }
+    ],
+    "developing": true,
+    "as_of": "2026-11-13T15:44:00-05:00",
+    "importance_score": 92,
+    "needs_human_check": true
   }
 ]

@@ -1,20 +1,20 @@
 [
   {
+    "topic_tag": "inflation_reports",
+    "outlook_effect": "reinforces",
+    "assessment": "Wholesale inflation stayed elevated despite slower monthly growth.",
+    "what_to_watch": "Whether business costs reach consumer prices."
+  },
+  {
     "topic_tag": "companies",
     "outlook_effect": "reinforces",
-    "assessment": "Nvidia leadership risk challenged concentrated AI leadership while rival chipmakers gained.",
-    "what_to_watch": "Whether chip demand broadens beyond Nvidia."
+    "assessment": "Large AI companies again drove index weakness despite positive market breadth.",
+    "what_to_watch": "Whether losses spread beyond AI leaders."
   },
   {
     "topic_tag": "rates",
-    "outlook_effect": "changes",
-    "assessment": "The 10-year Treasury yield moved above five percent, increasing economy-wide financing costs.",
-    "what_to_watch": "Whether yields remain above five percent."
-  },
-  {
-    "topic_tag": "oil_and_energy",
-    "outlook_effect": "changes",
-    "assessment": "The oil jump renewed inflation risk tied to the Iran conflict.",
-    "what_to_watch": "Whether oil holds the gain across verified closes."
+    "outlook_effect": "reinforces",
+    "assessment": "The 10-year yield remained above five percent as inflation stayed high.",
+    "what_to_watch": "Whether yields stay above five percent."
   }
 ]
