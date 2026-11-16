@@ -1001,18 +1001,18 @@
     "name": "Silver futures",
     "display_name": "Silver fund (SLV)",
     "available": true,
-    "display_value": "$44.04",
-    "display_change": "−2.40%",
-    "change_percent": -2.4,
-    "description": "SLV holds physical silver. It fell late Friday as precious metals remained weak.",
+    "display_value": "$42.42",
+    "display_change": "−3.87%",
+    "change_percent": -3.87,
+    "description": "SLV holds physical silver. It dropped during Monday trading.",
     "points": [
       46.48,
       46.65,
       45.11,
       44.035,
-      44.035
+      42.42
     ],
-    "fetched_at": "2026-11-13T15:44:00-05:00",
+    "fetched_at": "2026-11-16T14:47:00-05:00",
     "frequency": "Intraday",
     "data_provider": "Nasdaq market data · SLV",
     "licensing_note": "Exchange-listed fund data are linked to the Nasdaq source.",
@@ -1027,9 +1027,9 @@
       "2026-11-11T16:00:00-05:00",
       "2026-11-12T16:00:00-05:00",
       "2026-11-13T15:44:00-05:00",
-      "2026-11-13T15:44:00-05:00"
+      "2026-11-16T14:47:00-05:00"
     ],
-    "value": 44.035,
-    "prior_close": 45.12
+    "value": 42.42,
+    "prior_close": 44.13
   }
 ]

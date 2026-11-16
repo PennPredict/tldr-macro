@@ -1,182 +1,74 @@
 [
   {
-    "topic_tag": "inflation_reports",
-    "headline": "Wholesale Inflation Remains Elevated",
-    "headline_evidence": {
-      "bucket": "inflation_reports",
-      "rule": "October producer prices rose while annual inflation accelerated.",
-      "data": "PPI +0.3% monthly and +6.5% yearly."
-    },
-    "commentary": "Producer prices rose 0.3% in October. Annual wholesale inflation reached 6.5%, its fastest pace since November 2022.",
-    "defines": [
-      {
-        "term": "Producer prices",
-        "definition": "Prices businesses receive before goods and services reach consumers.",
-        "used_by_and_why": "They can signal future strain on store prices and business costs."
-      }
-    ],
-    "explains": [
-      {
-        "anchor_text": "Producer prices",
-        "why": "Prices businesses receive before goods and services reach consumers.",
-        "other_reading": "They can signal future strain on store prices and business costs."
-      }
-    ],
-    "visual": null,
-    "visual_gate": {
-      "passed": false,
-      "failures": [
-        "The evidence is clearer in the text than in a separate visual."
-      ],
-      "needs_human_check": false
-    },
-    "views": [
-      {
-        "view_id": "household",
-        "body": "Wholesale costs can reach food, delivery, and retail prices. The timing varies by product.",
-        "keep_wondering": "Will businesses pass costs onward?",
-        "claims": [
-          {
-            "sentence_id": "ppi-household-1",
-            "type": "fact",
-            "evidence": "https://www.bls.gov/news.release/ppi.nr0.htm"
-          },
-          {
-            "sentence_id": "ppi-household-2",
-            "type": "mechanism",
-            "evidence": "https://www.bls.gov/news.release/ppi.nr0.htm"
-          }
-        ]
-      },
-      {
-        "view_id": "business",
-        "body": "Food and transportation costs rose sharply. Companies may absorb increases or pass them to customers.",
-        "keep_wondering": "Will margins absorb the increase?",
-        "claims": [
-          {
-            "sentence_id": "ppi-business-1",
-            "type": "fact",
-            "evidence": "https://apnews.com/article/producer-prices-inflation-economy-iran-5f427443fd31a4aa2bd2a1b6cebfe549"
-          },
-          {
-            "sentence_id": "ppi-business-2",
-            "type": "mechanism",
-            "evidence": "https://apnews.com/article/producer-prices-inflation-economy-iran-5f427443fd31a4aa2bd2a1b6cebfe549"
-          }
-        ]
-      },
-      {
-        "view_id": "policy",
-        "body": "Persistent inflation can keep Federal Reserve policy restrictive. Officials also weigh employment and growth.",
-        "keep_wondering": "Will the Fed raise rates again?",
-        "claims": [
-          {
-            "sentence_id": "ppi-policy-1",
-            "type": "fact",
-            "evidence": "https://www.federalreserve.gov/monetarypolicy.htm"
-          },
-          {
-            "sentence_id": "ppi-policy-2",
-            "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/monetarypolicy.htm"
-          }
-        ]
-      }
-    ],
-    "sources": [
-      {
-        "name": "U.S. Bureau of Labor Statistics",
-        "href": "https://www.bls.gov/news.release/ppi.nr0.htm"
-      },
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/producer-prices-inflation-economy-iran-5f427443fd31a4aa2bd2a1b6cebfe549"
-      }
-    ],
-    "data_note": "October PPI: +0.3% monthly; +6.5% yearly.",
-    "claims": [
-      {
-        "sentence_id": "inflation_reports-commentary-1",
-        "type": "fact",
-        "evidence": "https://www.bls.gov/news.release/ppi.nr0.htm"
-      },
-      {
-        "sentence_id": "inflation_reports-commentary-2",
-        "type": "interpretation",
-        "evidence": "https://apnews.com/article/producer-prices-inflation-economy-iran-5f427443fd31a4aa2bd2a1b6cebfe549"
-      }
-    ]
-  },
-  {
     "topic_tag": "companies",
-    "headline": "AI Leaders Pull Indexes Lower",
+    "headline": "AI Shares Extend Decline",
     "headline_evidence": {
       "bucket": "companies",
-      "rule": "Several large AI stocks fell while more S&P 500 stocks advanced.",
-      "data": "Nasdaq −0.9% at 3:05 PM; Nvidia −2%; Broadcom −5.1%; AMD −9%."
+      "rule": "Large AI-linked stocks fell and pulled major indexes lower.",
+      "data": "SPY −2.09%; Nasdaq −2.59%; Nvidia −4.6% at 1:37 PM."
     },
-    "commentary": "Large AI stocks pulled major indexes lower. Their size outweighed gains elsewhere in the market.",
+    "commentary": "AI-linked stocks extended their decline. The Nasdaq fell more than the broader market.",
     "defines": [
       {
-        "term": "major indexes",
-        "definition": "Benchmarks tracking broad groups of large companies.",
-        "used_by_and_why": "They summarize market direction but can be dominated by the largest stocks."
+        "term": "AI-linked stocks",
+        "definition": "Shares of companies building or supplying artificial-intelligence systems.",
+        "used_by_and_why": "Large AI companies carry heavy weight in major U.S. indexes."
       }
     ],
     "explains": [
       {
-        "anchor_text": "major indexes",
-        "why": "Benchmarks tracking broad groups of large companies.",
-        "other_reading": "They summarize market direction but can be dominated by the largest stocks."
+        "anchor_text": "AI-linked stocks",
+        "why": "Shares of companies building or supplying artificial-intelligence systems.",
+        "other_reading": "Large AI companies carry heavy weight in major U.S. indexes."
       }
     ],
     "visual": null,
     "visual_gate": {
       "passed": false,
       "failures": [
-        "The evidence is clearer in the text than in a separate visual."
+        "The verified evidence is clearer in concise text."
       ],
       "needs_human_check": false
     },
     "views": [
       {
         "view_id": "household",
-        "body": "Index funds can fall when a few large holdings decline. Broad participation can tell a different story.",
-        "keep_wondering": "Will losses spread beyond AI?",
+        "body": "Technology-heavy funds can move sharply when their largest holdings fall. Diversified funds may still share that exposure.",
+        "keep_wondering": "Will losses spread further?",
         "claims": [
           {
             "sentence_id": "ai-household-1",
             "type": "fact",
-            "evidence": "https://apnews.com/article/stocks-markets-ai-us-oil-f8edd0eeb1494d4d2584715686c5e619"
+            "evidence": "https://apnews.com/article/stocks-markets-ai-nvidia-oil-us-35786b8f539ec95f16ae0500f71cfcc7"
           },
           {
             "sentence_id": "ai-household-2",
             "type": "mechanism",
-            "evidence": "https://apnews.com/article/stocks-markets-ai-us-oil-f8edd0eeb1494d4d2584715686c5e619"
+            "evidence": "https://apnews.com/article/stocks-markets-ai-nvidia-oil-us-35786b8f539ec95f16ae0500f71cfcc7"
           }
         ]
       },
       {
         "view_id": "business",
-        "body": "AI spending remains under scrutiny after Nvidia leadership changes. Suppliers face uneven investor expectations.",
-        "keep_wondering": "Will AI spending justify valuations?",
+        "body": "Nvidia leadership uncertainty is testing confidence across suppliers and data-center partners. Tuesday results offer another test.",
+        "keep_wondering": "Will demand justify AI spending?",
         "claims": [
           {
             "sentence_id": "ai-business-1",
             "type": "fact",
-            "evidence": "https://apnews.com/article/stocks-markets-ai-us-oil-f8edd0eeb1494d4d2584715686c5e619"
+            "evidence": "https://apnews.com/article/stocks-markets-ai-nvidia-oil-us-35786b8f539ec95f16ae0500f71cfcc7"
           },
           {
             "sentence_id": "ai-business-2",
             "type": "mechanism",
-            "evidence": "https://apnews.com/article/stocks-markets-ai-us-oil-f8edd0eeb1494d4d2584715686c5e619"
+            "evidence": "https://apnews.com/article/stocks-markets-ai-nvidia-oil-us-35786b8f539ec95f16ae0500f71cfcc7"
           }
         ]
       },
       {
         "view_id": "policy",
-        "body": "Export controls remain important for advanced chips. Restrictions can reshape customers and supply chains.",
-        "keep_wondering": "Will chip restrictions tighten?",
+        "body": "Proposed data-center restrictions add policy uncertainty. Export rules also shape chip customers and supply chains.",
+        "keep_wondering": "Will AI rules tighten?",
         "claims": [
           {
             "sentence_id": "ai-policy-1",
@@ -198,10 +90,10 @@
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/stocks-markets-ai-us-oil-f8edd0eeb1494d4d2584715686c5e619"
+        "href": "https://apnews.com/article/stocks-markets-ai-nvidia-oil-us-35786b8f539ec95f16ae0500f71cfcc7"
       }
     ],
-    "data_note": "Nasdaq −0.9% at 3:05 PM ET; Nvidia −2%; Broadcom −5.1%; AMD −9%.",
+    "data_note": "SPY −2.09% and Nasdaq −2.59% at 2:45 PM ET; Nvidia −4.6% at 1:37 PM ET.",
     "claims": [
       {
         "sentence_id": "companies-commentary-1",
@@ -211,98 +103,206 @@
       {
         "sentence_id": "companies-commentary-2",
         "type": "interpretation",
-        "evidence": "https://apnews.com/article/stocks-markets-ai-us-oil-f8edd0eeb1494d4d2584715686c5e619"
+        "evidence": "https://apnews.com/article/stocks-markets-ai-nvidia-oil-us-35786b8f539ec95f16ae0500f71cfcc7"
       }
     ]
   },
   {
-    "topic_tag": "rates",
-    "headline": "Treasury Yield Climbs Further",
+    "topic_tag": "oil_and_energy",
+    "headline": "Oil Prices Drop",
     "headline_evidence": {
-      "bucket": "rates",
-      "rule": "The 10-year Treasury yield rose five basis points.",
-      "data": "10-year yield: 5.15%, up from 5.10%."
+      "bucket": "oil_and_energy",
+      "rule": "Brent crude and its tracking fund fell more than three percent.",
+      "data": "BNO −3.82%; Brent crude −3.3% to $92.72."
     },
-    "commentary": "The 10-year Treasury yield rose to 5.15%. That benchmark influences mortgages and other long-term borrowing costs.",
+    "commentary": "Brent crude retreated after recent swings. Lower oil can reduce fuel and shipping costs.",
     "defines": [
       {
-        "term": "Treasury yield",
-        "definition": "The return investors receive from a U.S. government bond.",
-        "used_by_and_why": "It influences mortgage, corporate, and other long-term borrowing rates."
+        "term": "Brent crude",
+        "definition": "A widely used benchmark for global oil prices.",
+        "used_by_and_why": "Its moves can affect fuel, freight, and production costs."
       }
     ],
     "explains": [
       {
-        "anchor_text": "Treasury yield",
-        "why": "The return investors receive from a U.S. government bond.",
-        "other_reading": "It influences mortgage, corporate, and other long-term borrowing rates."
+        "anchor_text": "Brent crude",
+        "why": "A widely used benchmark for global oil prices.",
+        "other_reading": "Its moves can affect fuel, freight, and production costs."
       }
     ],
     "visual": null,
     "visual_gate": {
       "passed": false,
       "failures": [
-        "The evidence is clearer in the text than in a separate visual."
+        "The verified evidence is clearer in concise text."
       ],
       "needs_human_check": false
     },
     "views": [
       {
         "view_id": "household",
-        "body": "Higher benchmark yields can keep mortgage and auto-loan rates elevated. Actual offers vary by borrower.",
-        "keep_wondering": "Will borrowing costs remain high?",
+        "body": "Lower oil can eventually reduce gasoline and delivery costs. Retail prices may adjust slowly.",
+        "keep_wondering": "Will fuel prices follow?",
         "claims": [
           {
-            "sentence_id": "rates-household-1",
+            "sentence_id": "oil-household-1",
             "type": "fact",
-            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
           },
           {
-            "sentence_id": "rates-household-2",
+            "sentence_id": "oil-household-2",
             "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
           }
         ]
       },
       {
-        "view_id": "dealer",
-        "body": "The two-year yield also rose. Shorter yields closely reflect expectations for Federal Reserve policy.",
-        "keep_wondering": "Will markets price another hike?",
+        "view_id": "business",
+        "body": "Transport and production costs can ease when oil remains lower. Airlines and delivery firms are especially sensitive.",
+        "keep_wondering": "Will oil remain lower?",
         "claims": [
           {
-            "sentence_id": "rates-dealer-1",
+            "sentence_id": "oil-business-1",
             "type": "fact",
-            "evidence": "https://apnews.com/article/stocks-markets-ai-us-oil-f8edd0eeb1494d4d2584715686c5e619"
+            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
           },
           {
-            "sentence_id": "rates-dealer-2",
+            "sentence_id": "oil-business-2",
             "type": "mechanism",
-            "evidence": "https://apnews.com/article/stocks-markets-ai-us-oil-f8edd0eeb1494d4d2584715686c5e619"
+            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
+          }
+        ]
+      },
+      {
+        "view_id": "global",
+        "body": "Oil remains vulnerable to Iran-war shipping disruptions. Another supply shock could reverse Monday’s decline.",
+        "keep_wondering": "Will shipping risks return?",
+        "claims": [
+          {
+            "sentence_id": "oil-global-1",
+            "type": "fact",
+            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
+          },
+          {
+            "sentence_id": "oil-global-2",
+            "type": "mechanism",
+            "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
           }
         ]
       }
     ],
     "sources": [
       {
-        "name": "U.S. Treasury",
-        "href": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates"
+        "name": "Nasdaq market data · BNO",
+        "href": "https://www.nasdaq.com/market-activity/etf/bno"
       },
       {
-        "name": "Federal Reserve",
-        "href": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+        "name": "U.S. Energy Information Administration",
+        "href": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
       }
     ],
-    "data_note": "10-year Treasury yield: 5.15%, up from 5.10% Thursday.",
+    "data_note": "BNO −3.82% at 2:40 PM ET; Brent −3.3% to $92.72.",
     "claims": [
       {
-        "sentence_id": "rates-commentary-1",
+        "sentence_id": "oil_and_energy-commentary-1",
         "type": "fact",
-        "evidence": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates"
+        "evidence": "https://www.nasdaq.com/market-activity/etf/bno"
       },
       {
-        "sentence_id": "rates-commentary-2",
+        "sentence_id": "oil_and_energy-commentary-2",
         "type": "interpretation",
-        "evidence": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
+        "evidence": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
+      }
+    ]
+  },
+  {
+    "topic_tag": "fed_meeting",
+    "headline": "Fed Chair Frames AI Tradeoffs",
+    "headline_evidence": {
+      "bucket": "fed_meeting",
+      "rule": "The Fed chair described possible AI growth and employment effects.",
+      "data": "Warsh discussed faster innovation, job losses, valuations, and productivity."
+    },
+    "commentary": "Fed Chair Kevin Warsh outlined AI’s potential to raise productivity and its economic risks. He gave no new rate guidance.",
+    "defines": [
+      {
+        "term": "productivity",
+        "definition": "How much output workers and businesses produce from available resources.",
+        "used_by_and_why": "Higher productivity can support growth without the same increase in costs."
+      }
+    ],
+    "explains": [
+      {
+        "anchor_text": "productivity",
+        "why": "How much output workers and businesses produce from available resources.",
+        "other_reading": "Higher productivity can support growth without the same increase in costs."
+      }
+    ],
+    "visual": null,
+    "visual_gate": {
+      "passed": false,
+      "failures": [
+        "The verified evidence is clearer in concise text."
+      ],
+      "needs_human_check": false
+    },
+    "views": [
+      {
+        "view_id": "policy",
+        "body": "Fed staff is studying several AI scenarios. Officials still face elevated inflation and uncertain employment effects.",
+        "keep_wondering": "How will AI affect policy?",
+        "claims": [
+          {
+            "sentence_id": "fed-policy-1",
+            "type": "fact",
+            "evidence": "https://apnews.com/article/inflation-warsh-ai-federal-reserve-6f9dc54229bbdd80beb4ee3431a01641"
+          },
+          {
+            "sentence_id": "fed-policy-2",
+            "type": "mechanism",
+            "evidence": "https://apnews.com/article/inflation-warsh-ai-federal-reserve-6f9dc54229bbdd80beb4ee3431a01641"
+          }
+        ]
+      },
+      {
+        "view_id": "dealer",
+        "body": "Higher productivity could support growth, while weak returns could lower valuations. Neither outcome is certain.",
+        "keep_wondering": "Which scenario will evidence support?",
+        "claims": [
+          {
+            "sentence_id": "fed-dealer-1",
+            "type": "fact",
+            "evidence": "https://apnews.com/article/inflation-warsh-ai-federal-reserve-6f9dc54229bbdd80beb4ee3431a01641"
+          },
+          {
+            "sentence_id": "fed-dealer-2",
+            "type": "mechanism",
+            "evidence": "https://apnews.com/article/inflation-warsh-ai-federal-reserve-6f9dc54229bbdd80beb4ee3431a01641"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "name": "Federal Reserve Bank of San Francisco",
+        "href": "https://www.frbsf.org/news-and-media/events/2026/11/productivity-and-jobs-task-force-conference/"
+      },
+      {
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/inflation-warsh-ai-federal-reserve-6f9dc54229bbdd80beb4ee3431a01641"
+      }
+    ],
+    "data_note": "Warsh spoke at the San Francisco Fed’s AI and productivity conference.",
+    "claims": [
+      {
+        "sentence_id": "fed_meeting-commentary-1",
+        "type": "fact",
+        "evidence": "https://www.frbsf.org/news-and-media/events/2026/11/productivity-and-jobs-task-force-conference/"
+      },
+      {
+        "sentence_id": "fed_meeting-commentary-2",
+        "type": "interpretation",
+        "evidence": "https://apnews.com/article/inflation-warsh-ai-federal-reserve-6f9dc54229bbdd80beb4ee3431a01641"
       }
     ]
   }

@@ -1,20 +1,20 @@
 [
   {
-    "topic_tag": "inflation_reports",
-    "outlook_effect": "reinforces",
-    "assessment": "Wholesale inflation stayed elevated despite slower monthly growth.",
-    "what_to_watch": "Whether business costs reach consumer prices."
-  },
-  {
     "topic_tag": "companies",
-    "outlook_effect": "reinforces",
-    "assessment": "Large AI companies again drove index weakness despite positive market breadth.",
-    "what_to_watch": "Whether losses spread beyond AI leaders."
+    "outlook_effect": "changes",
+    "assessment": "AI leadership weakened further as losses spread across related companies.",
+    "what_to_watch": "Whether Tuesday results stabilize AI shares."
   },
   {
-    "topic_tag": "rates",
+    "topic_tag": "oil_and_energy",
+    "outlook_effect": "changes",
+    "assessment": "Oil reversed Friday’s level and reduced near-term energy-cost strain.",
+    "what_to_watch": "Whether oil holds the decline."
+  },
+  {
+    "topic_tag": "fed_meeting",
     "outlook_effect": "reinforces",
-    "assessment": "The 10-year yield remained above five percent as inflation stayed high.",
-    "what_to_watch": "Whether yields stay above five percent."
+    "assessment": "The Fed chair framed AI as both a growth driver and economic risk.",
+    "what_to_watch": "How incoming data shapes rate decisions."
   }
 ]

@@ -1,85 +1,85 @@
 [
   {
-    "tag": "Energy",
-    "qualifies": true,
-    "headline": "Iran Conflict Threatens Shipping Routes",
-    "what": "Iranian drones and U.S. strikes kept regional conflict active.",
-    "context": "Tankers still face risks around a critical oil-shipping route.",
-    "why_it_matters": "Disruptions can affect fuel supplies and shipping costs across countries.",
-    "concept_terms": [
-      "oil-shipping route",
-      "tankers"
-    ],
-    "sources": [
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/5d73a23b5b8647d2515c35b267b36c08",
-        "type": "wire"
-      },
-      {
-        "name": "U.S. Energy Information Administration",
-        "href": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php",
-        "type": "primary"
-      }
-    ],
-    "developing": true,
-    "as_of": "2026-11-13T15:44:00-05:00",
-    "importance_score": 99,
-    "needs_human_check": true
-  },
-  {
     "tag": "Global markets",
     "qualifies": true,
-    "headline": "Yen Breaches Key Threshold",
-    "what": "Japan warned against rapid currency moves as the yen weakened.",
-    "context": "Large U.S.-Japan rate differences continue to weigh on the currency.",
-    "why_it_matters": "A weaker yen raises import costs and changes exporters’ overseas earnings.",
+    "headline": "Japan Economy Contracts Slightly",
+    "what": "Japan’s economy shrank at a 0.1% annualized rate.",
+    "context": "Consumer spending weakened while oil imports remained expensive.",
+    "why_it_matters": "Weak growth and costly imports complicate Japan’s rate and budget choices.",
     "concept_terms": [
-      "yen",
-      "rate differences"
+      "annualized rate",
+      "consumer spending"
     ],
     "sources": [
       {
-        "name": "Bank of Japan",
-        "href": "https://www.boj.or.jp/en/statistics/market/forex/index.htm",
+        "name": "Japan Cabinet Office",
+        "href": "https://www.esri.cao.go.jp/en/sna/data/sokuhou/files/2026/qe263/pdf/gaiyou2631_e.pdf",
         "type": "primary"
       },
       {
-        "name": "Reuters via MarketScreener",
-        "href": "https://www.marketscreener.com/news/japan-s-finance-minister-vows-action-as-yen-breaches-160-threshold-ce785ed9db89f027",
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/japan-economy-growth-oil-energy-inflation-263988f2ec1894d3bf88522fd12500a6",
+        "type": "wire"
+      }
+    ],
+    "developing": false,
+    "as_of": "2026-11-16T14:47:00-05:00",
+    "importance_score": 99,
+    "needs_human_check": false
+  },
+  {
+    "tag": "Trade",
+    "qualifies": true,
+    "headline": "APEC Talks Put Trade in Focus",
+    "what": "Asia-Pacific leaders will meet in Shenzhen this week.",
+    "context": "The agenda includes trade, artificial intelligence, and economic resilience.",
+    "why_it_matters": "Agreements could influence tariffs, technology access, and regional investment.",
+    "concept_terms": [
+      "tariffs",
+      "technology access"
+    ],
+    "sources": [
+      {
+        "name": "Asia-Pacific Economic Cooperation",
+        "href": "https://www.apec.org/press/news-releases/2026/apec-advances-trade--ai-cooperation-ahead-of-leaders--week",
+        "type": "primary"
+      },
+      {
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/ffc5e5a2d384f00960034ec10087502e",
         "type": "wire"
       }
     ],
     "developing": true,
-    "as_of": "2026-11-13T15:44:00-05:00",
+    "as_of": "2026-11-16T14:47:00-05:00",
     "importance_score": 96,
     "needs_human_check": false
   },
   {
-    "tag": "Policy",
+    "tag": "Conflict",
     "qualifies": true,
-    "headline": "Europe Joins Ukraine Negotiations",
-    "what": "European diplomats will join the next U.S.-led Ukraine talks.",
-    "context": "Leaders want a role in wider security and territorial discussions.",
-    "why_it_matters": "Negotiations can affect defense spending, energy risk, and regional confidence.",
+    "headline": "Ukraine Strikes Target Russian Refineries",
+    "what": "Russia reported intercepting more than 1,300 Ukrainian drones.",
+    "context": "Long-range attacks have repeatedly targeted oil refineries.",
+    "why_it_matters": "Refinery disruption can affect Russian revenue and regional fuel supplies.",
     "concept_terms": [
-      "security",
-      "defense spending"
+      "oil refineries",
+      "fuel supplies"
     ],
     "sources": [
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/2a96d57210055edd2e76f71693e0a37c",
+        "href": "https://apnews.com/article/242cb3fd47fc79293cf264c321b93800",
         "type": "wire"
       },
       {
-        "name": "European Commission",
-        "href": "https://ec.europa.eu/commission/presscorner/home/en",
+        "name": "U.S. Energy Information Administration",
+        "href": "https://www.eia.gov/international/content/analysis/countries_long/Russia/",
         "type": "primary"
       }
     ],
     "developing": true,
-    "as_of": "2026-11-13T15:44:00-05:00",
+    "as_of": "2026-11-16T14:47:00-05:00",
     "importance_score": 92,
     "needs_human_check": true
   }

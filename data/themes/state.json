@@ -1,10 +1,21 @@
 {
-  "edition_id": "2026-11-13",
-  "generated_at": "2026-11-13T15:44:00-05:00",
+  "edition_id": "2026-11-16",
+  "generated_at": "2026-11-16T14:47:00-05:00",
   "themes": {
     "inflation-fed": {
-      "last_new_evidence_date": "2026-11-12",
+      "last_new_evidence_date": "2026-11-16",
       "developments": [
+        {
+          "date": "2026-11-16",
+          "headline": "Oil Prices Drop Sharply",
+          "line": "Brent crude retreated after recent swings.",
+          "source_urls": [
+            "https://www.nasdaq.com/market-activity/etf/bno",
+            "https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php"
+          ],
+          "origin": "story",
+          "edition_id": "2026-11-16"
+        },
         {
           "date": "2026-11-12",
           "headline": "Oil Jumps on Iran Tensions",
@@ -154,8 +165,19 @@
       "indicators": []
     },
     "equities-ai": {
-      "last_new_evidence_date": "2026-11-13",
+      "last_new_evidence_date": "2026-11-16",
       "developments": [
+        {
+          "date": "2026-11-16",
+          "headline": "AI Selloff Deepens",
+          "line": "AI-linked stocks extended their decline.",
+          "source_urls": [
+            "https://www.sec.gov/edgar/browse/?CIK=1045810&owner=exclude",
+            "https://apnews.com/article/stocks-markets-ai-nvidia-oil-us-35786b8f539ec95f16ae0500f71cfcc7"
+          ],
+          "origin": "story",
+          "edition_id": "2026-11-16"
+        },
         {
           "date": "2026-11-13",
           "headline": "AI Leaders Pull Indexes Lower",
@@ -213,8 +235,41 @@
       ]
     },
     "global-geopolitics": {
-      "last_new_evidence_date": "2026-11-13",
+      "last_new_evidence_date": "2026-11-16",
       "developments": [
+        {
+          "date": "2026-11-16",
+          "headline": "Ukraine Strikes Target Russian Refineries",
+          "line": "Russia reported intercepting more than 1,300 Ukrainian drones.",
+          "source_urls": [
+            "https://apnews.com/article/242cb3fd47fc79293cf264c321b93800",
+            "https://www.eia.gov/international/content/analysis/countries_long/Russia/"
+          ],
+          "origin": "global",
+          "edition_id": "2026-11-16"
+        },
+        {
+          "date": "2026-11-16",
+          "headline": "APEC Talks Put Trade in Focus",
+          "line": "Asia-Pacific leaders will meet in Shenzhen this week.",
+          "source_urls": [
+            "https://www.apec.org/press/news-releases/2026/apec-advances-trade--ai-cooperation-ahead-of-leaders--week",
+            "https://apnews.com/article/ffc5e5a2d384f00960034ec10087502e"
+          ],
+          "origin": "global",
+          "edition_id": "2026-11-16"
+        },
+        {
+          "date": "2026-11-16",
+          "headline": "Japan Economy Contracts Slightly",
+          "line": "Japan’s economy shrank at a 0.",
+          "source_urls": [
+            "https://www.esri.cao.go.jp/en/sna/data/sokuhou/files/2026/qe263/pdf/gaiyou2631_e.pdf",
+            "https://apnews.com/article/japan-economy-growth-oil-energy-inflation-263988f2ec1894d3bf88522fd12500a6"
+          ],
+          "origin": "global",
+          "edition_id": "2026-11-16"
+        },
         {
           "date": "2026-11-13",
           "headline": "Microsoft Outage Exposes Global Reliance",

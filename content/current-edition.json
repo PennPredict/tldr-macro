@@ -1,18 +1,18 @@
 {
-  "edition_date": "2026-11-13",
-  "updated_at": "2026-11-13T15:44:00-05:00",
-  "summary": "Prices rose 0.3% in October; government borrowing rates edged up; Nasdaq fell.",
+  "edition_date": "2026-11-16",
+  "updated_at": "2026-11-16T14:47:00-05:00",
+  "summary": "U.S. stocks dropped; long-term Treasury yields slipped; crude oil dropped.",
   "markets": [
     {
       "name": "S&P 500",
       "kind": "equity_index",
-      "value": 752.6,
-      "display_value": "$752.60",
+      "value": 738.58,
+      "display_value": "$738.58",
       "baseline": "prior_close",
-      "prior_close": 757.12,
-      "change_percent": -0.6,
-      "display_change": "−0.60%",
-      "description": "SPY tracks the S&P 500. It fell as several large AI stocks outweighed gains elsewhere.",
+      "prior_close": 754.37,
+      "change_percent": -2.09,
+      "display_change": "−2.09%",
+      "description": "SPY tracks the S&P 500. It fell as losses spread across AI-linked companies.",
       "so_what": {
         "channel_id": "sp500",
         "context": {
@@ -35,14 +35,14 @@
         }
       ],
       "data_source": "State Street · SPY",
-      "fetched_at": "2026-11-13T15:44:00-05:00",
-      "range": "Thursday close 757.12 · Friday 3:44 PM 752.6",
+      "fetched_at": "2026-11-16T14:47:00-05:00",
+      "range": "Friday close 754.37 · Monday 2:47 PM 738.58",
       "points": [
         750.02,
         759.81,
         757.16,
         752.6,
-        752.6
+        738.58
       ],
       "sources": [
         {
@@ -55,7 +55,7 @@
         "2026-11-11T16:00:00-05:00",
         "2026-11-12T16:00:00-05:00",
         "2026-11-13T15:44:00-05:00",
-        "2026-11-13T15:44:00-05:00"
+        "2026-11-16T14:47:00-05:00"
       ],
       "available": true,
       "frequency": "Intraday",
@@ -66,13 +66,13 @@
     {
       "name": "10-year Treasury yield",
       "kind": "yield",
-      "value": 79.345,
-      "display_value": "$79.35",
+      "value": 79.555,
+      "display_value": "$79.56",
       "baseline": "prior_close",
-      "prior_close": 79.72,
-      "change_percent": -0.47,
-      "display_change": "−0.47%",
-      "description": "TLT holds long-term Treasury bonds. The fund fell during Friday trading.",
+      "prior_close": 79.38,
+      "change_percent": 0.22,
+      "display_change": "+0.22%",
+      "description": "TLT holds long-term Treasury bonds. It rose as long-term yields moved lower.",
       "so_what": {
         "channel_id": "yield10",
         "context": {
@@ -95,14 +95,14 @@
         }
       ],
       "data_source": "Nasdaq market data · TLT",
-      "fetched_at": "2026-11-13T15:44:00-05:00",
-      "range": "Thursday close 79.72 · Friday 3:44 PM 79.345",
+      "fetched_at": "2026-11-16T14:47:00-05:00",
+      "range": "Friday close 79.38 · Monday 2:47 PM 79.555",
       "points": [
         80.88,
         80.92,
         79.72,
         79.345,
-        79.345
+        79.555
       ],
       "sources": [
         {
@@ -115,7 +115,7 @@
         "2026-11-11T16:00:00-05:00",
         "2026-11-12T16:00:00-05:00",
         "2026-11-13T15:44:00-05:00",
-        "2026-11-13T15:44:00-05:00"
+        "2026-11-16T14:47:00-05:00"
       ],
       "available": true,
       "frequency": "Intraday",
@@ -127,13 +127,13 @@
     {
       "name": "Brent crude oil",
       "kind": "commodity",
-      "value": 61.01,
-      "display_value": "$61.01",
+      "value": 58.66,
+      "display_value": "$58.66",
       "baseline": "prior_close",
-      "prior_close": 61.01,
-      "change_percent": 0,
-      "display_change": "0.00%",
-      "description": "BNO tracks Brent crude futures. It was unchanged while oil prices swung during Friday trading.",
+      "prior_close": 61.06,
+      "change_percent": -3.93,
+      "display_change": "−3.93%",
+      "description": "BNO tracks Brent crude futures. It dropped as oil prices retreated.",
       "so_what": {
         "channel_id": "brent",
         "context": {
@@ -157,14 +157,14 @@
         }
       ],
       "data_source": "USCF · BNO",
-      "fetched_at": "2026-11-13T15:44:00-05:00",
-      "range": "Thursday close 61.01 · Friday 3:44 PM 61.01",
+      "fetched_at": "2026-11-16T14:47:00-05:00",
+      "range": "Friday close 61.06 · Monday 2:47 PM 58.66",
       "points": [
         58.36,
         58.75,
         61.01,
         61.01,
-        61.01
+        58.66
       ],
       "sources": [
         {
@@ -177,7 +177,7 @@
         "2026-11-11T16:00:00-05:00",
         "2026-11-12T16:00:00-05:00",
         "2026-11-13T15:44:00-05:00",
-        "2026-11-13T15:44:00-05:00"
+        "2026-11-16T14:47:00-05:00"
       ],
       "available": true,
       "frequency": "Intraday",
@@ -188,13 +188,13 @@
     {
       "name": "Nasdaq Composite",
       "kind": "equity_index",
-      "value": 25097.49,
-      "display_value": "25,097.49",
+      "value": 24486.18,
+      "display_value": "24,486.18",
       "baseline": "prior_close",
-      "prior_close": 25366.09,
-      "change_percent": -1.06,
-      "display_change": "−1.06%",
-      "description": "The Nasdaq tracks many technology companies. It fell as several large AI stocks declined.",
+      "prior_close": 25136.27,
+      "change_percent": -2.59,
+      "display_change": "−2.59%",
+      "description": "The Nasdaq tracks many technology companies. It led the decline as AI shares weakened.",
       "so_what": {
         "channel_id": "nasdaq",
         "context": {
@@ -217,14 +217,14 @@
         }
       ],
       "data_source": "Nasdaq Composite",
-      "fetched_at": "2026-11-13T15:44:00-05:00",
-      "range": "Thursday close 25,366.09 · Friday 3:44 PM 25,097.49",
+      "fetched_at": "2026-11-16T14:47:00-05:00",
+      "range": "Friday close 25,136.27 · Monday 2:47 PM 24,486.18",
       "points": [
         25065.88,
         25466.19,
         25366.09,
         25097.49,
-        25097.49
+        24486.18
       ],
       "sources": [
         {
@@ -237,7 +237,7 @@
         "2026-11-11T16:00:00-05:00",
         "2026-11-12T16:00:00-05:00",
         "2026-11-13T15:44:00-05:00",
-        "2026-11-13T15:44:00-05:00"
+        "2026-11-16T14:47:00-05:00"
       ],
       "available": true,
       "frequency": "Intraday",
@@ -247,13 +247,13 @@
     {
       "name": "Dow Jones Industrial Average",
       "kind": "equity_index",
-      "value": 522.36,
-      "display_value": "$522.36",
+      "value": 514.715,
+      "display_value": "$514.72",
       "baseline": "prior_close",
-      "prior_close": 522.47,
-      "change_percent": -0.02,
-      "display_change": "−0.02%",
-      "description": "DIA tracks the 30-company Dow. It was nearly unchanged late Friday.",
+      "prior_close": 523.15,
+      "change_percent": -1.61,
+      "display_change": "−1.61%",
+      "description": "DIA tracks the 30-company Dow. It fell less than the technology-heavy Nasdaq.",
       "so_what": {
         "channel_id": "dow",
         "context": {
@@ -276,14 +276,14 @@
         }
       ],
       "data_source": "State Street · DIA",
-      "fetched_at": "2026-11-13T15:44:00-05:00",
-      "range": "Thursday close 522.47 · Friday 3:44 PM 522.36",
+      "fetched_at": "2026-11-16T14:47:00-05:00",
+      "range": "Friday close 523.15 · Monday 2:47 PM 514.715",
       "points": [
         521.73,
         524.44,
         522.79,
         522.36,
-        522.36
+        514.715
       ],
       "sources": [
         {
@@ -296,7 +296,7 @@
         "2026-11-11T16:00:00-05:00",
         "2026-11-12T16:00:00-05:00",
         "2026-11-13T15:44:00-05:00",
-        "2026-11-13T15:44:00-05:00"
+        "2026-11-16T14:47:00-05:00"
       ],
       "available": true,
       "frequency": "Intraday",
@@ -307,13 +307,13 @@
     {
       "name": "Expected volatility",
       "kind": "volatility",
-      "value": 354.87,
-      "display_value": "$354.87",
+      "value": 353.925,
+      "display_value": "$353.93",
       "baseline": "prior_close",
-      "prior_close": 354.89,
-      "change_percent": -0.01,
-      "display_change": "−0.01%",
-      "description": "GLD holds physical gold. It was nearly unchanged late Friday.",
+      "prior_close": 355.45,
+      "change_percent": -0.43,
+      "display_change": "−0.43%",
+      "description": "GLD holds physical gold. It moved modestly lower during Monday trading.",
       "so_what": {
         "channel_id": "vix",
         "context": {
@@ -336,14 +336,14 @@
         }
       ],
       "data_source": "State Street · GLD",
-      "fetched_at": "2026-11-13T15:44:00-05:00",
-      "range": "Thursday close 354.89 · Friday 3:44 PM 354.87",
+      "fetched_at": "2026-11-16T14:47:00-05:00",
+      "range": "Friday close 355.45 · Monday 2:47 PM 353.925",
       "points": [
         369.36,
         365.17,
         354.89,
         354.87,
-        354.87
+        353.925
       ],
       "sources": [
         {
@@ -356,7 +356,7 @@
         "2026-11-11T16:00:00-05:00",
         "2026-11-12T16:00:00-05:00",
         "2026-11-13T15:44:00-05:00",
-        "2026-11-13T15:44:00-05:00"
+        "2026-11-16T14:47:00-05:00"
       ],
       "available": true,
       "frequency": "Intraday",
