@@ -18,7 +18,9 @@ assert(component.includes("setOpen(expanded?null:theme.id)"),"one-open panel sta
 assert(component.includes("ArrowRight")&&component.includes("aria-expanded"),"keyboard and disclosure semantics");
 for(const theme of config.themes){assert(state.themes[theme.id],`${theme.id} state persists`);assert(theme.question.split(/\s+/).length<=12,`${theme.id} question budget`);for(const item of state.themes[theme.id].developments)assert(item.source_urls.length,`${theme.id} development source`);}
 const dates=edition.calendar.map(item=>item.start_at);assert.deepEqual(dates,[...dates].sort(),"calendar order");
-for(const title of ["Retail Sales","Federal Reserve Minutes","Jobs Report","Consumer Price Index"])assert(edition.calendar.some(item=>item.title===title),`${title} completeness`);
+assert(edition.calendar.length>=3&&edition.calendar.length<=5,"calendar contains 3–5 significant releases");
+assert(edition.calendar.every(item=>new Date(item.start_at)>new Date(edition.updated_at)),"calendar excludes released events");
+assert(edition.calendar.some(item=>item.title==="Federal Reserve Minutes"),"Federal Reserve Minutes completeness");
 assert(!market.includes("Earlier verified readings"),"older readings excluded from DOM");
 if(edition.edition_date==="2026-11-11")assert(!/Treasury yields/.test(edition.summary),"holiday one-liner omits yield direction");
 console.log("Theme system passed: chips, filler, persistence, calendar, holiday consistency, and stale-reading exclusion.");

@@ -1,20 +1,20 @@
 [
   {
-    "topic_tag": "companies",
-    "outlook_effect": "changes",
-    "assessment": "AI leadership weakened further as losses spread across related companies.",
-    "what_to_watch": "Whether Tuesday results stabilize AI shares."
-  },
-  {
-    "topic_tag": "oil_and_energy",
-    "outlook_effect": "changes",
-    "assessment": "Oil reversed Friday’s level and reduced near-term energy-cost strain.",
-    "what_to_watch": "Whether oil holds the decline."
-  },
-  {
-    "topic_tag": "fed_meeting",
+    "topic_tag": "jobs_and_wages",
     "outlook_effect": "reinforces",
-    "assessment": "The Fed chair framed AI as both a growth driver and economic risk.",
-    "what_to_watch": "How incoming data shapes rate decisions."
+    "assessment": "Consumer spending continued growing, but at a slower monthly pace.",
+    "what_to_watch": "Whether November demand stays firm."
+  },
+  {
+    "topic_tag": "infrastructure",
+    "outlook_effect": "changes",
+    "assessment": "Overall production fell despite an increase in manufacturing output.",
+    "what_to_watch": "Whether factory gains broaden."
+  },
+  {
+    "topic_tag": "inflation_reports",
+    "outlook_effect": "changes",
+    "assessment": "Import prices added another source of higher business costs.",
+    "what_to_watch": "Whether firms pass costs onward."
   }
 ]

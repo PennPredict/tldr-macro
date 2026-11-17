@@ -1,85 +1,85 @@
 [
   {
-    "tag": "Global markets",
+    "tag": "Energy",
     "qualifies": true,
-    "headline": "Japan Economy Contracts Slightly",
-    "what": "Japan’s economy shrank at a 0.1% annualized rate.",
-    "context": "Consumer spending weakened while oil imports remained expensive.",
-    "why_it_matters": "Weak growth and costly imports complicate Japan’s rate and budget choices.",
+    "headline": "Asia Builds Oil Security Framework",
+    "what": "Asian partners created a task force for emergency oil cooperation.",
+    "context": "Japan and the IEA also proposed a regional oil-security hub.",
+    "why_it_matters": "Shared reserves could reduce disruption during future supply shocks.",
     "concept_terms": [
-      "annualized rate",
-      "consumer spending"
+      "oil reserves",
+      "supply shocks"
     ],
     "sources": [
       {
-        "name": "Japan Cabinet Office",
-        "href": "https://www.esri.cao.go.jp/en/sna/data/sokuhou/files/2026/qe263/pdf/gaiyou2631_e.pdf",
+        "name": "Japan Ministry of Foreign Affairs",
+        "href": "https://www.mofa.go.jp/files/101120169.pdf",
         "type": "primary"
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/japan-economy-growth-oil-energy-inflation-263988f2ec1894d3bf88522fd12500a6",
+        "href": "https://apnews.com/article/3d7df3b2038c83441874c8c4be09eda5",
         "type": "wire"
       }
     ],
     "developing": false,
-    "as_of": "2026-11-16T14:47:00-05:00",
+    "as_of": "2026-11-17T10:37:00-05:00",
     "importance_score": 99,
     "needs_human_check": false
   },
   {
-    "tag": "Trade",
+    "tag": "Policy",
     "qualifies": true,
-    "headline": "APEC Talks Put Trade in Focus",
-    "what": "Asia-Pacific leaders will meet in Shenzhen this week.",
-    "context": "The agenda includes trade, artificial intelligence, and economic resilience.",
-    "why_it_matters": "Agreements could influence tariffs, technology access, and regional investment.",
+    "headline": "Climate Funding Gap Draws Focus",
+    "what": "Nepal sought more financing for climate-disaster recovery.",
+    "context": "Climate talks include funding, adaptation, and loss-and-damage support.",
+    "why_it_matters": "Financing choices affect public budgets and rebuilding capacity.",
     "concept_terms": [
-      "tariffs",
-      "technology access"
+      "climate finance",
+      "loss and damage"
     ],
     "sources": [
       {
-        "name": "Asia-Pacific Economic Cooperation",
-        "href": "https://www.apec.org/press/news-releases/2026/apec-advances-trade--ai-cooperation-ahead-of-leaders--week",
+        "name": "United Nations Climate Change",
+        "href": "https://unfccc.int/sites/default/files/resource/message_to_parties_and_observers_high_level%20_events_united_nations_climate_change_conference_cop31.pdf",
         "type": "primary"
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/ffc5e5a2d384f00960034ec10087502e",
+        "href": "https://apnews.com/article/77a91aafbd547b5bcc881f1e16a28e9e",
         "type": "wire"
       }
     ],
     "developing": true,
-    "as_of": "2026-11-16T14:47:00-05:00",
-    "importance_score": 96,
+    "as_of": "2026-11-17T10:37:00-05:00",
+    "importance_score": 95,
     "needs_human_check": false
   },
   {
     "tag": "Conflict",
     "qualifies": true,
-    "headline": "Ukraine Strikes Target Russian Refineries",
-    "what": "Russia reported intercepting more than 1,300 Ukrainian drones.",
-    "context": "Long-range attacks have repeatedly targeted oil refineries.",
-    "why_it_matters": "Refinery disruption can affect Russian revenue and regional fuel supplies.",
+    "headline": "EU Expands Support for Ukraine",
+    "what": "EU ministers approved nearly €8 billion for Ukraine.",
+    "context": "They also discussed energy security and winter infrastructure needs.",
+    "why_it_matters": "Support and sanctions affect European budgets, trade, and energy resilience.",
     "concept_terms": [
-      "oil refineries",
-      "fuel supplies"
+      "sanctions",
+      "energy resilience"
     ],
     "sources": [
       {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/242cb3fd47fc79293cf264c321b93800",
-        "type": "wire"
+        "name": "Council of the European Union",
+        "href": "https://www.consilium.europa.eu/en/meetings/fac/2026/11/16/",
+        "type": "primary"
       },
       {
-        "name": "U.S. Energy Information Administration",
-        "href": "https://www.eia.gov/international/content/analysis/countries_long/Russia/",
-        "type": "primary"
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/cde686fba0e452b10ca613b3517e884e",
+        "type": "wire"
       }
     ],
     "developing": true,
-    "as_of": "2026-11-16T14:47:00-05:00",
+    "as_of": "2026-11-17T10:37:00-05:00",
     "importance_score": 92,
     "needs_human_check": true
   }
