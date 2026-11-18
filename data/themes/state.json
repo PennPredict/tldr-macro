@@ -1,6 +1,6 @@
 {
-  "edition_id": "2026-11-17",
-  "generated_at": "2026-11-17T10:37:00-05:00",
+  "edition_id": "2026-11-18",
+  "generated_at": "2026-11-18T14:54:00-05:00",
   "themes": {
     "inflation-fed": {
       "last_new_evidence_date": "2026-11-16",
@@ -165,8 +165,19 @@
       "indicators": []
     },
     "equities-ai": {
-      "last_new_evidence_date": "2026-11-16",
+      "last_new_evidence_date": "2026-11-18",
       "developments": [
+        {
+          "date": "2026-11-18",
+          "headline": "AI Leadership Stays Fragile",
+          "line": "Nvidia reported sharply higher quarterly revenue.",
+          "source_urls": [
+            "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm",
+            "https://apnews.com/article/stock-markets-ai-earnings-oil-apec-shenzhen-dad5715bc91b4aba23a567a40e22b1fc"
+          ],
+          "origin": "story",
+          "edition_id": "2026-11-18"
+        },
         {
           "date": "2026-11-16",
           "headline": "AI Selloff Deepens",
@@ -235,8 +246,30 @@
       ]
     },
     "global-geopolitics": {
-      "last_new_evidence_date": "2026-11-17",
+      "last_new_evidence_date": "2026-11-18",
       "developments": [
+        {
+          "date": "2026-11-18",
+          "headline": "Europe Proposes New Ukraine Loan",
+          "line": "The European Commission proposed €45 billion in additional borrowing.",
+          "source_urls": [
+            "https://enlargement.ec.europa.eu/news/commission-proposes-eur45-billion-additional-financial-support-ukraine-2027-2026-11-18_en",
+            "https://apnews.com/article/europe-ukraine-loan-russia-summit-8c1baf00b55973a2"
+          ],
+          "origin": "global",
+          "edition_id": "2026-11-18"
+        },
+        {
+          "date": "2026-11-18",
+          "headline": "APEC Leaders Debate Open Trade",
+          "line": "Asia-Pacific leaders called for fewer trade barriers.",
+          "source_urls": [
+            "https://www.apec.org/",
+            "https://apnews.com/article/apec-china-economy-trump-putin-ai-1e3b6161b31196c9716ca02ac8c7720c"
+          ],
+          "origin": "global",
+          "edition_id": "2026-11-18"
+        },
         {
           "date": "2026-11-17",
           "headline": "EU Expands Support for Ukraine",

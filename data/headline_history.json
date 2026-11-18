@@ -199,5 +199,20 @@
     "date": "2026-11-11",
     "topic": "oil_and_energy",
     "headline": "Oil Prices Rebound"
+  },
+  {
+    "date": "2026-11-18",
+    "topic": "fed_meeting",
+    "headline": "Fed Signals More Tightening"
+  },
+  {
+    "date": "2026-11-18",
+    "topic": "infrastructure",
+    "headline": "Housing Starts Rise"
+  },
+  {
+    "date": "2026-11-18",
+    "topic": "companies",
+    "headline": "AI Leadership Stays Fragile"
   }
 ]

@@ -1,20 +1,20 @@
 [
   {
-    "topic_tag": "jobs_and_wages",
-    "outlook_effect": "reinforces",
-    "assessment": "Consumer spending continued growing, but at a slower monthly pace.",
-    "what_to_watch": "Whether November demand stays firm."
+    "topic_tag": "fed_meeting",
+    "outlook_effect": "changes",
+    "assessment": "Officials broadly expected additional tightening to restrain inflation.",
+    "what_to_watch": "Whether December brings another rate increase."
   },
   {
     "topic_tag": "infrastructure",
-    "outlook_effect": "changes",
-    "assessment": "Overall production fell despite an increase in manufacturing output.",
-    "what_to_watch": "Whether factory gains broaden."
+    "outlook_effect": "reinforces",
+    "assessment": "Housing starts improved while permits weakened.",
+    "what_to_watch": "Whether construction gains persist."
   },
   {
-    "topic_tag": "inflation_reports",
-    "outlook_effect": "changes",
-    "assessment": "Import prices added another source of higher business costs.",
-    "what_to_watch": "Whether firms pass costs onward."
+    "topic_tag": "companies",
+    "outlook_effect": "reinforces",
+    "assessment": "Strong AI revenue did not broaden market leadership.",
+    "what_to_watch": "Whether gains spread beyond major technology shares."
   }
 ]

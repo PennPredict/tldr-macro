@@ -1,86 +1,86 @@
 [
   {
-    "tag": "Energy",
+    "tag": "Trade",
     "qualifies": true,
-    "headline": "Asia Builds Oil Security Framework",
-    "what": "Asian partners created a task force for emergency oil cooperation.",
-    "context": "Japan and the IEA also proposed a regional oil-security hub.",
-    "why_it_matters": "Shared reserves could reduce disruption during future supply shocks.",
+    "headline": "APEC Leaders Debate Open Trade",
+    "what": "Asia-Pacific leaders called for fewer trade barriers.",
+    "context": "U.S.-China technology restrictions remain a central source of friction.",
+    "why_it_matters": "Trade rules shape supply chains, investment, and technology access.",
     "concept_terms": [
-      "oil reserves",
-      "supply shocks"
+      "trade barriers",
+      "supply chains"
     ],
     "sources": [
       {
-        "name": "Japan Ministry of Foreign Affairs",
-        "href": "https://www.mofa.go.jp/files/101120169.pdf",
+        "name": "Asia-Pacific Economic Cooperation",
+        "href": "https://www.apec.org/",
         "type": "primary"
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/3d7df3b2038c83441874c8c4be09eda5",
+        "href": "https://apnews.com/article/apec-china-economy-trump-putin-ai-1e3b6161b31196c9716ca02ac8c7720c",
         "type": "wire"
       }
     ],
-    "developing": false,
-    "as_of": "2026-11-17T10:37:00-05:00",
+    "developing": true,
+    "as_of": "2026-11-18T14:36:00-05:00",
     "importance_score": 99,
     "needs_human_check": false
   },
   {
     "tag": "Policy",
     "qualifies": true,
-    "headline": "Climate Funding Gap Draws Focus",
-    "what": "Nepal sought more financing for climate-disaster recovery.",
-    "context": "Climate talks include funding, adaptation, and loss-and-damage support.",
-    "why_it_matters": "Financing choices affect public budgets and rebuilding capacity.",
+    "headline": "Europe Proposes New Ukraine Loan",
+    "what": "The European Commission proposed €45 billion in additional borrowing.",
+    "context": "The funds would support Ukraine’s economy and military in 2027.",
+    "why_it_matters": "New debt would affect European budgets and capital markets.",
     "concept_terms": [
-      "climate finance",
-      "loss and damage"
+      "public borrowing",
+      "capital markets"
     ],
     "sources": [
       {
-        "name": "United Nations Climate Change",
-        "href": "https://unfccc.int/sites/default/files/resource/message_to_parties_and_observers_high_level%20_events_united_nations_climate_change_conference_cop31.pdf",
+        "name": "European Commission",
+        "href": "https://enlargement.ec.europa.eu/news/commission-proposes-eur45-billion-additional-financial-support-ukraine-2027-2026-11-18_en",
         "type": "primary"
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/77a91aafbd547b5bcc881f1e16a28e9e",
+        "href": "https://apnews.com/article/europe-ukraine-loan-russia-summit-8c1baf00b55973a2",
         "type": "wire"
       }
     ],
     "developing": true,
-    "as_of": "2026-11-17T10:37:00-05:00",
-    "importance_score": 95,
+    "as_of": "2026-11-18T14:36:00-05:00",
+    "importance_score": 96,
     "needs_human_check": false
   },
   {
-    "tag": "Conflict",
+    "tag": "Policy",
     "qualifies": true,
-    "headline": "EU Expands Support for Ukraine",
-    "what": "EU ministers approved nearly €8 billion for Ukraine.",
-    "context": "They also discussed energy security and winter infrastructure needs.",
-    "why_it_matters": "Support and sanctions affect European budgets, trade, and energy resilience.",
+    "headline": "UK Inflation Edges Higher",
+    "what": "UK consumer inflation reached 3.6% in October.",
+    "context": "Transport costs made the largest upward contribution.",
+    "why_it_matters": "Persistent inflation can keep British borrowing costs elevated.",
     "concept_terms": [
-      "sanctions",
-      "energy resilience"
+      "consumer inflation",
+      "borrowing costs"
     ],
     "sources": [
       {
-        "name": "Council of the European Union",
-        "href": "https://www.consilium.europa.eu/en/meetings/fac/2026/11/16/",
+        "name": "UK Office for National Statistics",
+        "href": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/october2026",
         "type": "primary"
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/cde686fba0e452b10ca613b3517e884e",
+        "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-apec-shenzhen-dad5715bc91b4aba23a567a40e22b1fc",
         "type": "wire"
       }
     ],
     "developing": true,
-    "as_of": "2026-11-17T10:37:00-05:00",
-    "importance_score": 92,
-    "needs_human_check": true
+    "as_of": "2026-11-18T14:36:00-05:00",
+    "importance_score": 93,
+    "needs_human_check": false
   }
 ]

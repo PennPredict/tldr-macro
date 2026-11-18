@@ -1,175 +1,67 @@
 [
   {
-    "topic_tag": "jobs_and_wages",
-    "headline": "Retail Spending Grows",
+    "topic_tag": "fed_meeting",
+    "headline": "Fed Signals More Tightening",
     "headline_evidence": {
-      "bucket": "jobs_and_wages",
-      "rule": "Official estimates showed a small monthly increase in retail and food-service sales.",
-      "data": "October retail sales +0.2%; September +0.8%."
+      "bucket": "fed_meeting",
+      "rule": "Official minutes showed broad support for additional rate increases.",
+      "data": "Almost all participants expected further tightening under their baseline outlooks."
     },
-    "commentary": "Retail sales rose 0.2% in October after September’s 0.8% increase. The estimate’s confidence range included zero.",
+    "commentary": "Fed minutes showed almost all officials expected further rate increases. Inflation remained above their 2% goal.",
     "defines": [
       {
-        "term": "retail sales",
-        "definition": "Spending at stores, restaurants, and online retailers.",
-        "used_by_and_why": "Consumer spending is a major part of U.S. economic activity."
+        "term": "Fed minutes",
+        "definition": "The detailed record of a Federal Reserve policy meeting.",
+        "used_by_and_why": "They reveal how officials weighed inflation, employment, and financial risks."
       }
     ],
     "explains": [
       {
-        "anchor_text": "retail sales",
-        "why": "Spending at stores, restaurants, and online retailers.",
-        "other_reading": "Consumer spending is a major part of U.S. economic activity."
+        "anchor_text": "further rate increases",
+        "why": "Higher policy rates can raise borrowing costs.",
+        "other_reading": "Officials said future decisions still depend on incoming information."
       }
     ],
     "visual": null,
     "visual_gate": {
       "passed": false,
       "failures": [
-        "The verified evidence is clearer in concise text."
+        "The official record is clearer in concise text."
       ],
       "needs_human_check": false
     },
     "views": [
       {
-        "view_id": "household",
-        "body": "Spending grew more slowly overall. Sales excluding autos still rose 0.6%.",
-        "keep_wondering": "Will spending remain resilient?",
-        "claims": [
-          {
-            "sentence_id": "retail-household-1",
-            "type": "fact",
-            "evidence": "https://www.census.gov/retail/marts/www/marts_current.pdf?release=20261117"
-          },
-          {
-            "sentence_id": "retail-household-2",
-            "type": "mechanism",
-            "evidence": "https://www.census.gov/retail/marts/www/marts_current.pdf?release=20261117"
-          }
-        ]
-      },
-      {
         "view_id": "policy",
-        "body": "The report provides an early demand reading. It is not adjusted for price changes.",
-        "keep_wondering": "How much reflected higher prices?",
+        "body": "Officials favored gathering more data before changing rates. Most still expected additional tightening.",
+        "keep_wondering": "How quickly will inflation slow?",
         "claims": [
           {
-            "sentence_id": "retail-policy-1",
+            "sentence_id": "fed-policy-1",
             "type": "fact",
-            "evidence": "https://www.census.gov/retail/marts/www/marts_current.pdf?release=20261117"
+            "evidence": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
           },
           {
-            "sentence_id": "retail-policy-2",
+            "sentence_id": "fed-policy-2",
             "type": "mechanism",
-            "evidence": "https://www.census.gov/retail/marts/www/marts_current.pdf?release=20261117"
-          }
-        ]
-      }
-    ],
-    "sources": [
-      {
-        "name": "U.S. Census Bureau",
-        "href": "https://www.census.gov/retail/marts/www/marts_current.pdf?release=20261117"
-      },
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/4d5a35288288389d894e63e6bebe8240"
-      }
-    ],
-    "data_note": "October retail and food-service sales rose 0.2%; the 90% confidence interval included zero.",
-    "claims": [
-      {
-        "sentence_id": "jobs_and_wages-commentary-1",
-        "type": "fact",
-        "evidence": "https://www.census.gov/retail/marts/www/marts_current.pdf?release=20261117"
-      },
-      {
-        "sentence_id": "jobs_and_wages-commentary-2",
-        "type": "interpretation",
-        "evidence": "https://apnews.com/article/4d5a35288288389d894e63e6bebe8240"
-      }
-    ]
-  },
-  {
-    "topic_tag": "infrastructure",
-    "headline": "Industrial Output Contracts",
-    "headline_evidence": {
-      "bucket": "infrastructure",
-      "rule": "The Federal Reserve reported a monthly decline in total industrial production.",
-      "data": "October industrial production −0.4%; manufacturing +0.3%."
-    },
-    "commentary": "Industrial output fell 0.4% in October. Factories made more, but mines and utilities made less.",
-    "defines": [
-      {
-        "term": "industrial output",
-        "definition": "Output from factories, mines, and utilities.",
-        "used_by_and_why": "The measure tracks activity across major goods-producing industries."
-      }
-    ],
-    "explains": [
-      {
-        "anchor_text": "industrial output",
-        "why": "Output from factories, mines, and utilities.",
-        "other_reading": "The measure tracks activity across major goods-producing industries."
-      }
-    ],
-    "visual": null,
-    "visual_gate": {
-      "passed": false,
-      "failures": [
-        "The verified evidence is clearer in concise text."
-      ],
-      "needs_human_check": false
-    },
-    "views": [
-      {
-        "view_id": "household",
-        "body": "Utility output fell as overall production declined. Household bills depend on usage and local rates.",
-        "keep_wondering": "Will utility demand recover?",
-        "claims": [
-          {
-            "sentence_id": "ip-household-1",
-            "type": "fact",
-            "evidence": "https://www.federalreserve.gov/releases/g17/20261117/default.htm"
-          },
-          {
-            "sentence_id": "ip-household-2",
-            "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/releases/g17/20261117/default.htm"
+            "evidence": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
           }
         ]
       },
       {
-        "view_id": "business",
-        "body": "Factory output improved despite the broader decline. Utilities fell 4.3%.",
-        "keep_wondering": "Will manufacturing gains persist?",
+        "view_id": "dealer",
+        "body": "Higher expected policy rates can influence Treasury yields. Market pricing can change before the next meeting.",
+        "keep_wondering": "Will yields remain elevated?",
         "claims": [
           {
-            "sentence_id": "ip-business-1",
+            "sentence_id": "fed-dealer-1",
             "type": "fact",
-            "evidence": "https://www.federalreserve.gov/releases/g17/20261117/default.htm"
+            "evidence": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
           },
           {
-            "sentence_id": "ip-business-2",
+            "sentence_id": "fed-dealer-2",
             "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/releases/g17/20261117/default.htm"
-          }
-        ]
-      },
-      {
-        "view_id": "policy",
-        "body": "Capacity use fell below its long-run average. That signals available production room.",
-        "keep_wondering": "Will demand absorb spare capacity?",
-        "claims": [
-          {
-            "sentence_id": "ip-policy-1",
-            "type": "fact",
-            "evidence": "https://www.federalreserve.gov/releases/g17/20261117/default.htm"
-          },
-          {
-            "sentence_id": "ip-policy-2",
-            "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/releases/g17/20261117/default.htm"
+            "evidence": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
           }
         ]
       }
@@ -177,124 +69,240 @@
     "sources": [
       {
         "name": "Federal Reserve",
-        "href": "https://www.federalreserve.gov/releases/g17/20261117/default.htm"
-      }
-    ],
-    "data_note": "October industrial production −0.4%; manufacturing +0.3%; capacity utilization 76.4%.",
-    "claims": [
-      {
-        "sentence_id": "infrastructure-commentary-1",
-        "type": "fact",
-        "evidence": "https://www.federalreserve.gov/releases/g17/20261117/default.htm"
+        "href": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
       },
       {
-        "sentence_id": "infrastructure-commentary-2",
-        "type": "interpretation",
-        "evidence": "https://www.federalreserve.gov/releases/g17/20261117/default.htm"
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/9e72f3b6e3484173471cc382d6918de0"
+      }
+    ],
+    "data_note": "October meeting minutes: almost all participants expected further rate increases under baseline outlooks.",
+    "claims": [
+      {
+        "sentence_id": "fed-commentary-1",
+        "type": "fact",
+        "evidence": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
+      },
+      {
+        "sentence_id": "fed-commentary-2",
+        "type": "fact",
+        "evidence": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
       }
     ]
   },
   {
-    "topic_tag": "inflation_reports",
-    "headline": "Import Costs Climb",
+    "topic_tag": "infrastructure",
+    "headline": "Housing Starts Rise",
     "headline_evidence": {
-      "bucket": "inflation_reports",
-      "rule": "The Bureau of Labor Statistics reported higher import and export prices.",
-      "data": "October import prices +1.1%; export prices +1.1%."
+      "bucket": "infrastructure",
+      "rule": "The Census Bureau reported more housing starts in October.",
+      "data": "Total starts +9.9%; single-family starts +4.0%; permits −7.4%."
     },
-    "commentary": "Import prices rose 1.1% in October, led by nonfuel goods. Export prices also increased 1.1%.",
+    "commentary": "Housing starts rose 9.9% in October, although the estimate was imprecise. Building permits fell 7.4%.",
     "defines": [
       {
-        "term": "import prices",
-        "definition": "Prices U.S. buyers pay for goods and services purchased abroad.",
-        "used_by_and_why": "Persistent increases can raise costs for businesses using foreign inputs."
+        "term": "housing starts",
+        "definition": "New homes where construction has begun.",
+        "used_by_and_why": "Starts help track future housing supply and construction activity."
       }
     ],
     "explains": [
       {
-        "anchor_text": "import prices",
-        "why": "Prices U.S. buyers pay for goods and services purchased abroad.",
-        "other_reading": "Persistent increases can raise costs for businesses using foreign inputs."
+        "anchor_text": "housing starts",
+        "why": "More starts can expand housing supply over time.",
+        "other_reading": "Permits provide a separate signal about future construction."
       }
     ],
     "visual": null,
     "visual_gate": {
       "passed": false,
       "failures": [
-        "The verified evidence is clearer in concise text."
+        "The confidence range makes concise text more appropriate."
       ],
       "needs_human_check": false
     },
     "views": [
       {
         "view_id": "household",
-        "body": "Higher imported-input costs can reach consumer prices. The timing and size vary.",
-        "keep_wondering": "Will businesses pass through costs?",
+        "body": "More construction can add homes over time. Affordability also depends on prices and mortgage rates.",
+        "keep_wondering": "Will new supply reach buyers?",
         "claims": [
           {
-            "sentence_id": "import-household-1",
+            "sentence_id": "housing-household-1",
             "type": "fact",
-            "evidence": "https://www.bls.gov/news.release/archives/ximpim_11172026.htm"
+            "evidence": "https://www.census.gov/construction/nrc/current/"
           },
           {
-            "sentence_id": "import-household-2",
+            "sentence_id": "housing-household-2",
             "type": "mechanism",
-            "evidence": "https://www.bls.gov/news.release/archives/ximpim_11172026.htm"
+            "evidence": "https://www.census.gov/construction/nrc/current/"
           }
         ]
       },
       {
         "view_id": "business",
-        "body": "Nonfuel imports drove the monthly increase. Firms may absorb or pass along those costs.",
-        "keep_wondering": "Will margins or prices adjust?",
+        "body": "Starts increased while permits declined. Builders face mixed signals about future projects.",
+        "keep_wondering": "Will permits recover?",
         "claims": [
           {
-            "sentence_id": "import-business-1",
+            "sentence_id": "housing-business-1",
             "type": "fact",
-            "evidence": "https://www.bls.gov/news.release/archives/ximpim_11172026.htm"
+            "evidence": "https://www.census.gov/construction/nrc/current/"
           },
           {
-            "sentence_id": "import-business-2",
+            "sentence_id": "housing-business-2",
             "type": "mechanism",
-            "evidence": "https://www.bls.gov/news.release/archives/ximpim_11172026.htm"
+            "evidence": "https://www.census.gov/construction/nrc/current/"
           }
         ]
       },
       {
         "view_id": "policy",
-        "body": "Officials watch import prices as one influence on inflation. Domestic prices use broader measures.",
-        "keep_wondering": "Will broader inflation follow?",
+        "body": "The monthly starts estimate had a wide confidence range. Officials will need additional observations.",
+        "keep_wondering": "Will the increase persist?",
         "claims": [
           {
-            "sentence_id": "import-policy-1",
+            "sentence_id": "housing-policy-1",
             "type": "fact",
-            "evidence": "https://www.bls.gov/news.release/archives/ximpim_11172026.htm"
+            "evidence": "https://www.census.gov/construction/nrc/current/"
           },
           {
-            "sentence_id": "import-policy-2",
+            "sentence_id": "housing-policy-2",
             "type": "mechanism",
-            "evidence": "https://www.bls.gov/news.release/archives/ximpim_11172026.htm"
+            "evidence": "https://www.census.gov/construction/nrc/current/"
           }
         ]
       }
     ],
     "sources": [
       {
-        "name": "U.S. Bureau of Labor Statistics",
-        "href": "https://www.bls.gov/news.release/archives/ximpim_11172026.htm"
-      }
-    ],
-    "data_note": "October import and export prices each rose 1.1%.",
-    "claims": [
-      {
-        "sentence_id": "inflation_reports-commentary-1",
-        "type": "fact",
-        "evidence": "https://www.bls.gov/news.release/archives/ximpim_11172026.htm"
+        "name": "U.S. Census Bureau",
+        "href": "https://www.census.gov/construction/nrc/current/"
       },
       {
-        "sentence_id": "inflation_reports-commentary-2",
-        "type": "interpretation",
-        "evidence": "https://www.bls.gov/news.release/archives/ximpim_11172026.htm"
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-apec-shenzhen-dad5715bc91b4aba23a567a40e22b1fc"
+      }
+    ],
+    "data_note": "October starts +9.9% with a ±16.8% confidence interval; permits −7.4%.",
+    "claims": [
+      {
+        "sentence_id": "housing-commentary-1",
+        "type": "fact",
+        "evidence": "https://www.census.gov/construction/nrc/current/"
+      },
+      {
+        "sentence_id": "housing-commentary-2",
+        "type": "fact",
+        "evidence": "https://www.census.gov/construction/nrc/current/"
+      }
+    ]
+  },
+  {
+    "topic_tag": "companies",
+    "headline": "AI Leadership Stays Fragile",
+    "headline_evidence": {
+      "bucket": "companies",
+      "rule": "Strong company results did not produce a lasting sector-wide advance.",
+      "data": "Nvidia reported higher revenue; its early stock gain reversed."
+    },
+    "commentary": "Nvidia reported sharply higher quarterly revenue. Its early share gain reversed as AI stocks swung widely.",
+    "defines": [
+      {
+        "term": "AI stocks",
+        "definition": "Shares of companies tied to artificial-intelligence computing and services.",
+        "used_by_and_why": "Their large index weights can influence broad market performance."
+      }
+    ],
+    "explains": [
+      {
+        "anchor_text": "AI stocks",
+        "why": "Large technology companies hold substantial weights in major indexes.",
+        "other_reading": "One company’s results do not represent the entire economy."
+      }
+    ],
+    "visual": null,
+    "visual_gate": {
+      "passed": false,
+      "failures": [
+        "Company results and market reaction use different scales."
+      ],
+      "needs_human_check": false
+    },
+    "views": [
+      {
+        "view_id": "household",
+        "body": "Major indexes can move when their largest companies swing. Diversified funds still hold many businesses.",
+        "keep_wondering": "Will gains broaden?",
+        "claims": [
+          {
+            "sentence_id": "ai-household-1",
+            "type": "fact",
+            "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-apec-shenzhen-dad5715bc91b4aba23a567a40e22b1fc"
+          },
+          {
+            "sentence_id": "ai-household-2",
+            "type": "mechanism",
+            "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-apec-shenzhen-dad5715bc91b4aba23a567a40e22b1fc"
+          }
+        ]
+      },
+      {
+        "view_id": "business",
+        "body": "Nvidia reported strong demand, but investors questioned sector durability. Financing needs remain important.",
+        "keep_wondering": "Can customers sustain spending?",
+        "claims": [
+          {
+            "sentence_id": "ai-business-1",
+            "type": "fact",
+            "evidence": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm"
+          },
+          {
+            "sentence_id": "ai-business-2",
+            "type": "mechanism",
+            "evidence": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm"
+          }
+        ]
+      },
+      {
+        "view_id": "policy",
+        "body": "AI investment can support growth while increasing financing demand. Officials are monitoring both effects.",
+        "keep_wondering": "Will investment affect inflation?",
+        "claims": [
+          {
+            "sentence_id": "ai-policy-1",
+            "type": "fact",
+            "evidence": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
+          },
+          {
+            "sentence_id": "ai-policy-2",
+            "type": "mechanism",
+            "evidence": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "name": "U.S. Securities and Exchange Commission",
+        "href": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm"
+      },
+      {
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-apec-shenzhen-dad5715bc91b4aba23a567a40e22b1fc"
+      }
+    ],
+    "data_note": "Nvidia filed quarterly results November 17; its early November 18 share gain reversed.",
+    "claims": [
+      {
+        "sentence_id": "ai-commentary-1",
+        "type": "fact",
+        "evidence": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm"
+      },
+      {
+        "sentence_id": "ai-commentary-2",
+        "type": "fact",
+        "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-apec-shenzhen-dad5715bc91b4aba23a567a40e22b1fc"
       }
     ]
   }

@@ -101,3 +101,7 @@ Approved by the user in chat. Remove the visible About & methodology and RSS lin
 ## 2026-11-11 — Evidence-first persistent Themes
 
 Approved by the user in the supplied specification. Replace the compact theme summaries with five evidence-first cards, deterministic state chips, one-open accessible detail panels, responsive 5/3/accordion layouts, indicator sparklines, dated developments, catalysts, and progressive structural context. Preserve existing tokens and update only the Themes, Today, Connections, Markets, Next, hero-copy, and Bottom Line bands named in the request.
+
+## 2026-11-18 — Render all verified daily market snapshots
+
+Approved by the user's repeated requests to include many market snapshots and specifically retain gold and silver. Correct the existing compact Markets grouping so its identifiers match the verified daily dataset and all seven approved rows render. Preserve the established row design, asset-class order, responsive behavior, and data gates.

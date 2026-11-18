@@ -20,7 +20,7 @@ for(const theme of config.themes){assert(state.themes[theme.id],`${theme.id} sta
 const dates=edition.calendar.map(item=>item.start_at);assert.deepEqual(dates,[...dates].sort(),"calendar order");
 assert(edition.calendar.length>=3&&edition.calendar.length<=5,"calendar contains 3–5 significant releases");
 assert(edition.calendar.every(item=>new Date(item.start_at)>new Date(edition.updated_at)),"calendar excludes released events");
-assert(edition.calendar.some(item=>item.title==="Federal Reserve Minutes"),"Federal Reserve Minutes completeness");
+assert(edition.calendar.every(item=>item.title&&item.href&&item.definition),"calendar metadata completeness");
 assert(!market.includes("Earlier verified readings"),"older readings excluded from DOM");
 if(edition.edition_date==="2026-11-11")assert(!/Treasury yields/.test(edition.summary),"holiday one-liner omits yield direction");
 console.log("Theme system passed: chips, filler, persistence, calendar, holiday consistency, and stale-reading exclusion.");

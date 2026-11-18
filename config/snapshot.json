@@ -6,7 +6,10 @@
     "Brent crude oil",
     "Nasdaq Composite",
     "Dow Jones Industrial Average",
-    "Expected volatility (VIX)"
+    "Gold",
+    "Silver"
   ],
-  "extras": {"crypto": false}
+  "extras": {
+    "crypto": false
+  }
 }

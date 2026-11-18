@@ -3,8 +3,8 @@ import extras from "../content/extra-markets.json";
 
 type Source={name:string;href:string};
 type Market={name:string;display_name?:string;display_value:string;display_change:string;change_percent:number;description:string;points:number[];series_dates?:string[];sources:Source[];fetched_at:string;baseline?:string;prior_close?:number;available?:boolean;withheld_reason?:string;group?:string};
-const labels:Record<string,string>={"S&P 500":"S&P 500 fund (SPY)","Dow Jones Industrial Average":"Dow fund (DIA)","10-year Treasury yield":"Long-term Treasury fund (TLT)","Brent crude oil":"Brent oil fund (BNO)","Expected volatility":"Gold fund (GLD)","Silver futures":"Silver fund (SLV)","Nasdaq Composite":"Nasdaq Composite (index)"};
-const groups=[{label:"Equities",names:["S&P 500","Nasdaq Composite","Dow Jones Industrial Average"]},{label:"Bonds",names:["10-year Treasury yield"]},{label:"Commodities",names:["Brent crude oil","Expected volatility","Silver futures"]}];
+const labels:Record<string,string>={"S&P 500":"S&P 500 fund (SPY)","Dow Jones Industrial Average":"Dow fund (DIA)","10-year Treasury yield":"Long-term Treasury fund (TLT)","Brent crude oil":"Brent oil fund (BNO)","Gold":"Gold fund (GLD)","Silver":"Silver fund (SLV)","Nasdaq Composite":"Nasdaq Composite (index)"};
+const groups=[{label:"Equities",names:["S&P 500","Nasdaq Composite","Dow Jones Industrial Average"]},{label:"Bonds",names:["10-year Treasury yield"]},{label:"Commodities",names:["Brent crude oil","Gold","Silver"]}];
 const note=(text:string)=>(text.match(/^[^.!?]+[.!?]/)?.[0]||text).trim();
 const asPointDate=(value:string)=>new Intl.DateTimeFormat("en-US",{month:"short",day:"numeric",timeZone:"America/New_York"}).format(new Date(value));
 const numeric=(value:number)=>new Intl.NumberFormat("en-US",{maximumFractionDigits:2}).format(value);
