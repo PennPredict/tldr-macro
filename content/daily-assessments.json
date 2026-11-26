@@ -1,20 +1,20 @@
 [
   {
-    "topic_tag": "fed_meeting",
+    "topic_tag": "inflation",
     "outlook_effect": "changes",
-    "assessment": "Officials broadly expected additional tightening to restrain inflation.",
-    "what_to_watch": "Whether December brings another rate increase."
+    "assessment": "Core inflation accelerated above the Fed's goal.",
+    "what_to_watch": "Whether November inflation begins to slow."
   },
   {
-    "topic_tag": "infrastructure",
-    "outlook_effect": "reinforces",
-    "assessment": "Housing starts improved while permits weakened.",
-    "what_to_watch": "Whether construction gains persist."
+    "topic_tag": "growth",
+    "outlook_effect": "changes",
+    "assessment": "Third-quarter growth was revised sharply higher.",
+    "what_to_watch": "Whether newer spending and hiring data confirm it."
   },
   {
-    "topic_tag": "companies",
+    "topic_tag": "consumer",
     "outlook_effect": "reinforces",
-    "assessment": "Strong AI revenue did not broaden market leadership.",
-    "what_to_watch": "Whether gains spread beyond major technology shares."
+    "assessment": "Regional reports showed selective consumer spending.",
+    "what_to_watch": "Whether holiday demand holds up."
   }
 ]

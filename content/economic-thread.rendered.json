@@ -1,73 +1,73 @@
 {
   "schema_version": 3,
-  "edition_date": "2026-11-18",
-  "reported_node_id": "fed",
+  "edition_date": "2026-11-25",
+  "reported_node_id": "inflation",
   "mobile_order": [
-    "fed",
+    "inflation",
     "rates",
-    "housing"
+    "borrowing"
   ],
   "nodes": [
     {
-      "id": "fed",
+      "id": "inflation",
       "layer": "Fact",
       "type": "FACT",
       "tier": 1,
-      "label": "Fed expects higher rates",
-      "subline": "Most officials anticipated additional rate increases.",
-      "precise": "Future decisions still depend on incoming data.",
-      "event_time": "2026-11-18T14:00:00-05:00",
-      "reference_period": "October 27–28 meeting",
-      "source": "Federal Reserve",
-      "source_url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
+      "label": "Core inflation accelerated",
+      "subline": "Core PCE inflation reached 3.3% over the year.",
+      "precise": "The monthly increase was 0.3% in October.",
+      "event_time": "2026-11-25T08:30:00-05:00",
+      "reference_period": "October 2026",
+      "source": "Bureau of Economic Analysis",
+      "source_url": "https://www.bea.gov/sites/default/files/2026-11/pi1026.pdf"
     },
     {
       "id": "rates",
       "layer": "Possible implication",
       "type": "MECHANISM",
       "tier": 1,
-      "label": "Rate expectations rise",
-      "subline": "Policy guidance can change expected borrowing rates.",
-      "precise": "Market rates also reflect growth and inflation expectations.",
-      "event_time": "2026-11-18T14:36:00-05:00",
+      "label": "Rate pressure stays",
+      "subline": "Persistent inflation can keep expected policy rates higher.",
+      "precise": "Growth, employment, and financial conditions also shape policy.",
+      "event_time": "2026-11-25T16:00:00-05:00",
       "reference_period": "Current economic relationship",
-      "mechanism_id": "fed-to-rate-expectations",
+      "mechanism_id": "inflation-to-rate-expectations",
       "source": "Federal Reserve",
       "source_url": "https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm"
     },
     {
-      "id": "housing",
+      "id": "borrowing",
       "layer": "Reader impact",
       "type": "MECHANISM",
       "tier": 1,
-      "label": "Housing stays rate-sensitive",
-      "subline": "Mortgage costs influence affordability and building demand.",
-      "precise": "Supply, income, and local prices also matter.",
-      "event_time": "2026-11-18T14:36:00-05:00",
+      "label": "Loan costs stay high",
+      "subline": "Higher rates can raise payments on mortgages and business loans.",
+      "precise": "Actual loan costs also depend on credit risk and term length.",
+      "event_time": "2026-11-25T16:00:00-05:00",
       "reference_period": "Current economic relationship",
-      "mechanism_id": "borrowing-to-housing",
+      "mechanism_id": "rates-to-borrowing",
       "source": "Federal Reserve",
       "source_url": "https://www.federalreserve.gov/faqs/why-do-interest-rates-matter.htm"
     }
   ],
   "edges": [
     {
-      "id": "fed-rates",
-      "from": "fed",
+      "id": "inflation-rates",
+      "from": "inflation",
       "to": "rates",
       "type": "MECHANISM",
       "tier": 1,
-      "mechanism_id": "fed-to-rate-expectations",
+      "mechanism_id": "inflation-to-rate-expectations",
       "direction": "up"
     },
     {
-      "id": "rates-housing",
+      "id": "rates-borrowing",
       "from": "rates",
-      "to": "housing",
+      "to": "borrowing",
       "type": "MECHANISM",
       "tier": 1,
-      "mechanism_id": "rates-to-housing",
-      "direction": "down"
+      "mechanism_id": "rates-to-borrowing",
+      "direction": "up"
     }
   ],
   "takeaway": "",

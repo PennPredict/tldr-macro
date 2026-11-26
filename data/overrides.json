@@ -68,5 +68,12 @@
     "reason": "The checked release-led template resembles earlier inflation editions, while Friday's producer-price, Treasury-yield, and Nasdaq observations are separately verified.",
     "evidence_url": "https://apnews.com/article/stocks-markets-ai-us-oil-f8edd0eeb1494d4d2584715686c5e619",
     "expires_at": "2026-11-13T23:59:00-05:00"
+  },
+  {
+    "id": "summary-similarity-2026-11-25",
+    "owner": "TL;DR Macro editorial",
+    "reason": "The required checked template resembles earlier editions, while Wednesday's verified stock decline, yield decline, and oil gain are separately sourced.",
+    "evidence_url": "https://apnews.com/article/10044b4fb55d3ff20fde9ba9e9acaab1",
+    "expires_at": "2026-11-25T23:59:00-05:00"
   }
 ]

@@ -122,5 +122,17 @@
   {
     "date": "2026-11-18",
     "final_sentence": "S&P 500 slipped; long-term yields fell; Brent oil declined."
+  },
+  {
+    "date": "2026-11-25",
+    "final_sentence": "Shares slipped; Treasury yields fell; crude oil jumped.",
+    "facts": {
+      "stocks": -0.29,
+      "rates_basis_points": -9.2,
+      "oil": 2.86
+    },
+    "template_id": "three-market-plain",
+    "lead_item": "oil",
+    "qualifiers": []
   }
 ]

@@ -1,67 +1,300 @@
 [
   {
-    "topic_tag": "fed_meeting",
-    "headline": "Fed Signals More Tightening",
+    "topic_tag": "inflation",
+    "headline": "Core Inflation Accelerates",
     "headline_evidence": {
-      "bucket": "fed_meeting",
-      "rule": "Official minutes showed broad support for additional rate increases.",
-      "data": "Almost all participants expected further tightening under their baseline outlooks."
+      "bucket": "inflation",
+      "rule": "Official PCE data showed faster annual core inflation.",
+      "data": "Core PCE inflation rose 3.3% over the year in October, up from 3.1%."
     },
-    "commentary": "Fed minutes showed almost all officials expected further rate increases. Inflation remained above their 2% goal.",
+    "commentary": "Core PCE inflation rose 3.3% from a year earlier in October. The Fed targets 2% inflation over time.",
     "defines": [
       {
-        "term": "Fed minutes",
-        "definition": "The detailed record of a Federal Reserve policy meeting.",
-        "used_by_and_why": "They reveal how officials weighed inflation, employment, and financial risks."
+        "term": "Core PCE inflation",
+        "definition": "Price changes excluding food and energy across consumer spending.",
+        "used_by_and_why": "The Fed watches it for underlying inflation trends."
       }
     ],
     "explains": [
       {
-        "anchor_text": "further rate increases",
-        "why": "Higher policy rates can raise borrowing costs.",
-        "other_reading": "Officials said future decisions still depend on incoming information."
+        "anchor_text": "Core PCE inflation",
+        "why": "It covers a broad range of household spending.",
+        "other_reading": "Monthly inflation was 0.3%."
       }
     ],
     "visual": null,
     "visual_gate": {
       "passed": false,
       "failures": [
-        "The official record is clearer in concise text."
+        "The official release is clearer in concise text."
       ],
       "needs_human_check": false
     },
     "views": [
       {
-        "view_id": "policy",
-        "body": "Officials favored gathering more data before changing rates. Most still expected additional tightening.",
-        "keep_wondering": "How quickly will inflation slow?",
+        "view_id": "household",
+        "body": "Core inflation tracks underlying price changes. Faster gains can strain household budgets.",
+        "keep_wondering": "Will everyday price growth slow?",
         "claims": [
           {
-            "sentence_id": "fed-policy-1",
+            "sentence_id": "household-1",
             "type": "fact",
-            "evidence": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
+            "evidence": "https://www.bea.gov/sites/default/files/2026-11/pi1026.pdf"
           },
           {
-            "sentence_id": "fed-policy-2",
+            "sentence_id": "household-2",
             "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
+            "evidence": "https://www.bea.gov/sites/default/files/2026-11/pi1026.pdf"
           }
         ]
       },
       {
-        "view_id": "dealer",
-        "body": "Higher expected policy rates can influence Treasury yields. Market pricing can change before the next meeting.",
-        "keep_wondering": "Will yields remain elevated?",
+        "view_id": "business",
+        "body": "Price growth remained broad across consumer spending. Cost-conscious buyers may limit optional purchases.",
+        "keep_wondering": "Will demand weaken as prices rise?",
         "claims": [
           {
-            "sentence_id": "fed-dealer-1",
+            "sentence_id": "business-1",
             "type": "fact",
-            "evidence": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
+            "evidence": "https://www.bea.gov/sites/default/files/2026-11/pi1026.pdf"
           },
           {
-            "sentence_id": "fed-dealer-2",
+            "sentence_id": "business-2",
             "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
+            "evidence": "https://www.bea.gov/sites/default/files/2026-11/pi1026.pdf"
+          }
+        ]
+      },
+      {
+        "view_id": "policy",
+        "body": "Core PCE inflation remained above the Fed's goal. Rate decisions remain focused on price stability.",
+        "keep_wondering": "Will the Fed raise rates again?",
+        "claims": [
+          {
+            "sentence_id": "policy-1",
+            "type": "fact",
+            "evidence": "https://www.bea.gov/sites/default/files/2026-11/pi1026.pdf"
+          },
+          {
+            "sentence_id": "policy-2",
+            "type": "mechanism",
+            "evidence": "https://www.bea.gov/sites/default/files/2026-11/pi1026.pdf"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "name": "Bureau of Economic Analysis",
+        "href": "https://www.bea.gov/sites/default/files/2026-11/pi1026.pdf"
+      },
+      {
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/31fab1e32dda1ad3a29c192f620d5733"
+      }
+    ],
+    "data_note": "October core PCE inflation: 0.3% monthly and 3.3% yearly.",
+    "claims": [
+      {
+        "sentence_id": "inflation-commentary-1",
+        "type": "fact",
+        "evidence": "https://www.bea.gov/sites/default/files/2026-11/pi1026.pdf"
+      },
+      {
+        "sentence_id": "inflation-commentary-2",
+        "type": "fact",
+        "evidence": "https://www.federalreserve.gov/faqs/economy_14419.htm"
+      }
+    ]
+  },
+  {
+    "topic_tag": "growth",
+    "headline": "Growth Estimate Jumps",
+    "headline_evidence": {
+      "bucket": "growth",
+      "rule": "BEA revised third-quarter real GDP substantially higher.",
+      "data": "Annualized real GDP growth was revised from 3.4% to 4.3%."
+    },
+    "commentary": "Real GDP grew at a 4.3% annual rate in the third quarter. The previous estimate was 3.4%.",
+    "defines": [
+      {
+        "term": "GDP",
+        "definition": "The total value of goods and services produced domestically.",
+        "used_by_and_why": "It is the broadest standard measure of economic output."
+      }
+    ],
+    "explains": [
+      {
+        "anchor_text": "annual rate",
+        "why": "It expresses one quarter's pace as if it continued for a year.",
+        "other_reading": "The figure describes July through September, not November."
+      }
+    ],
+    "visual": null,
+    "visual_gate": {
+      "passed": false,
+      "failures": [
+        "The two official estimates are clearer in text."
+      ],
+      "needs_human_check": false
+    },
+    "views": [
+      {
+        "view_id": "household",
+        "body": "GDP measures total domestic output. Stronger activity can support jobs and incomes.",
+        "keep_wondering": "Will newer data confirm the strength?",
+        "claims": [
+          {
+            "sentence_id": "household-1",
+            "type": "fact",
+            "evidence": "https://www.bea.gov/sites/default/files/2026-11/gdp3q26-2nd.pdf"
+          },
+          {
+            "sentence_id": "household-2",
+            "type": "mechanism",
+            "evidence": "https://www.bea.gov/sites/default/files/2026-11/gdp3q26-2nd.pdf"
+          }
+        ]
+      },
+      {
+        "view_id": "business",
+        "body": "Private domestic demand was revised higher. Corporate profits also increased during the quarter.",
+        "keep_wondering": "Will business demand remain firm?",
+        "claims": [
+          {
+            "sentence_id": "business-1",
+            "type": "fact",
+            "evidence": "https://www.bea.gov/sites/default/files/2026-11/gdp3q26-2nd.pdf"
+          },
+          {
+            "sentence_id": "business-2",
+            "type": "fact",
+            "evidence": "https://www.bea.gov/sites/default/files/2026-11/gdp3q26-2nd.pdf"
+          }
+        ]
+      },
+      {
+        "view_id": "policy",
+        "body": "The revision shows faster past growth. It does not measure November conditions.",
+        "keep_wondering": "Will current growth remain this strong?",
+        "claims": [
+          {
+            "sentence_id": "policy-1",
+            "type": "fact",
+            "evidence": "https://www.bea.gov/sites/default/files/2026-11/gdp3q26-2nd.pdf"
+          },
+          {
+            "sentence_id": "policy-2",
+            "type": "interpretation",
+            "evidence": "https://www.bea.gov/sites/default/files/2026-11/gdp3q26-2nd.pdf"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "name": "Bureau of Economic Analysis",
+        "href": "https://www.bea.gov/sites/default/files/2026-11/gdp3q26-2nd.pdf"
+      },
+      {
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/10044b4fb55d3ff20fde9ba9e9acaab1"
+      }
+    ],
+    "data_note": "Third-quarter real GDP: 4.3% annualized, revised from 3.4%.",
+    "claims": [
+      {
+        "sentence_id": "growth-commentary-1",
+        "type": "fact",
+        "evidence": "https://www.bea.gov/sites/default/files/2026-11/gdp3q26-2nd.pdf"
+      },
+      {
+        "sentence_id": "growth-commentary-2",
+        "type": "fact",
+        "evidence": "https://www.bea.gov/sites/default/files/2026-11/gdp3q26-2nd.pdf"
+      }
+    ]
+  },
+  {
+    "topic_tag": "consumer",
+    "headline": "Consumers Stay Price Sensitive",
+    "headline_evidence": {
+      "bucket": "consumer",
+      "rule": "Federal Reserve contacts reported cautious discretionary spending.",
+      "data": "Consumer spending changed little while households became more selective."
+    },
+    "commentary": "The Beige Book found little change in consumer spending. Households became choosier about optional purchases.",
+    "defines": [
+      {
+        "term": "Beige Book",
+        "definition": "A Federal Reserve summary of regional business and household conditions.",
+        "used_by_and_why": "It adds timely, qualitative evidence before policy meetings."
+      }
+    ],
+    "explains": [
+      {
+        "anchor_text": "optional purchases",
+        "why": "These are purchases households can postpone more easily.",
+        "other_reading": "Tourism was solid while auto sales softened."
+      }
+    ],
+    "visual": null,
+    "visual_gate": {
+      "passed": false,
+      "failures": [
+        "Regional evidence is clearer in concise text."
+      ],
+      "needs_human_check": false
+    },
+    "views": [
+      {
+        "view_id": "household",
+        "body": "Households kept spending but watched prices closely. Housing activity weakened as affordability limited demand.",
+        "keep_wondering": "Will holiday spending remain steady?",
+        "claims": [
+          {
+            "sentence_id": "household-1",
+            "type": "fact",
+            "evidence": "https://www.federalreserve.gov/monetarypolicy/beigebook202611-summary.htm"
+          },
+          {
+            "sentence_id": "household-2",
+            "type": "fact",
+            "evidence": "https://www.federalreserve.gov/monetarypolicy/beigebook202611-summary.htm"
+          }
+        ]
+      },
+      {
+        "view_id": "business",
+        "body": "Manufacturing grew modestly while consumer demand stayed uneven. Input costs continued to rise.",
+        "keep_wondering": "Will businesses pass costs to customers?",
+        "claims": [
+          {
+            "sentence_id": "business-1",
+            "type": "fact",
+            "evidence": "https://www.federalreserve.gov/monetarypolicy/beigebook202611-summary.htm"
+          },
+          {
+            "sentence_id": "business-2",
+            "type": "fact",
+            "evidence": "https://www.federalreserve.gov/monetarypolicy/beigebook202611-summary.htm"
+          }
+        ]
+      },
+      {
+        "view_id": "policy",
+        "body": "Eight districts reported slight to moderate growth. Four reported no change.",
+        "keep_wondering": "Will regional growth broaden?",
+        "claims": [
+          {
+            "sentence_id": "policy-1",
+            "type": "fact",
+            "evidence": "https://www.federalreserve.gov/monetarypolicy/beigebook202611-summary.htm"
+          },
+          {
+            "sentence_id": "policy-2",
+            "type": "fact",
+            "evidence": "https://www.federalreserve.gov/monetarypolicy/beigebook202611-summary.htm"
           }
         ]
       }
@@ -69,240 +302,20 @@
     "sources": [
       {
         "name": "Federal Reserve",
-        "href": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
-      },
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/9e72f3b6e3484173471cc382d6918de0"
+        "href": "https://www.federalreserve.gov/monetarypolicy/beigebook202611-summary.htm"
       }
     ],
-    "data_note": "October meeting minutes: almost all participants expected further rate increases under baseline outlooks.",
+    "data_note": "Federal Reserve regional summary collected through November 16.",
     "claims": [
       {
-        "sentence_id": "fed-commentary-1",
+        "sentence_id": "consumer-commentary-1",
         "type": "fact",
-        "evidence": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
+        "evidence": "https://www.federalreserve.gov/monetarypolicy/beigebook202611-summary.htm"
       },
       {
-        "sentence_id": "fed-commentary-2",
+        "sentence_id": "consumer-commentary-2",
         "type": "fact",
-        "evidence": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
-      }
-    ]
-  },
-  {
-    "topic_tag": "infrastructure",
-    "headline": "Housing Starts Rise",
-    "headline_evidence": {
-      "bucket": "infrastructure",
-      "rule": "The Census Bureau reported more housing starts in October.",
-      "data": "Total starts +9.9%; single-family starts +4.0%; permits −7.4%."
-    },
-    "commentary": "Housing starts rose 9.9% in October, although the estimate was imprecise. Building permits fell 7.4%.",
-    "defines": [
-      {
-        "term": "housing starts",
-        "definition": "New homes where construction has begun.",
-        "used_by_and_why": "Starts help track future housing supply and construction activity."
-      }
-    ],
-    "explains": [
-      {
-        "anchor_text": "housing starts",
-        "why": "More starts can expand housing supply over time.",
-        "other_reading": "Permits provide a separate signal about future construction."
-      }
-    ],
-    "visual": null,
-    "visual_gate": {
-      "passed": false,
-      "failures": [
-        "The confidence range makes concise text more appropriate."
-      ],
-      "needs_human_check": false
-    },
-    "views": [
-      {
-        "view_id": "household",
-        "body": "More construction can add homes over time. Affordability also depends on prices and mortgage rates.",
-        "keep_wondering": "Will new supply reach buyers?",
-        "claims": [
-          {
-            "sentence_id": "housing-household-1",
-            "type": "fact",
-            "evidence": "https://www.census.gov/construction/nrc/current/"
-          },
-          {
-            "sentence_id": "housing-household-2",
-            "type": "mechanism",
-            "evidence": "https://www.census.gov/construction/nrc/current/"
-          }
-        ]
-      },
-      {
-        "view_id": "business",
-        "body": "Starts increased while permits declined. Builders face mixed signals about future projects.",
-        "keep_wondering": "Will permits recover?",
-        "claims": [
-          {
-            "sentence_id": "housing-business-1",
-            "type": "fact",
-            "evidence": "https://www.census.gov/construction/nrc/current/"
-          },
-          {
-            "sentence_id": "housing-business-2",
-            "type": "mechanism",
-            "evidence": "https://www.census.gov/construction/nrc/current/"
-          }
-        ]
-      },
-      {
-        "view_id": "policy",
-        "body": "The monthly starts estimate had a wide confidence range. Officials will need additional observations.",
-        "keep_wondering": "Will the increase persist?",
-        "claims": [
-          {
-            "sentence_id": "housing-policy-1",
-            "type": "fact",
-            "evidence": "https://www.census.gov/construction/nrc/current/"
-          },
-          {
-            "sentence_id": "housing-policy-2",
-            "type": "mechanism",
-            "evidence": "https://www.census.gov/construction/nrc/current/"
-          }
-        ]
-      }
-    ],
-    "sources": [
-      {
-        "name": "U.S. Census Bureau",
-        "href": "https://www.census.gov/construction/nrc/current/"
-      },
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-apec-shenzhen-dad5715bc91b4aba23a567a40e22b1fc"
-      }
-    ],
-    "data_note": "October starts +9.9% with a ±16.8% confidence interval; permits −7.4%.",
-    "claims": [
-      {
-        "sentence_id": "housing-commentary-1",
-        "type": "fact",
-        "evidence": "https://www.census.gov/construction/nrc/current/"
-      },
-      {
-        "sentence_id": "housing-commentary-2",
-        "type": "fact",
-        "evidence": "https://www.census.gov/construction/nrc/current/"
-      }
-    ]
-  },
-  {
-    "topic_tag": "companies",
-    "headline": "AI Leadership Stays Fragile",
-    "headline_evidence": {
-      "bucket": "companies",
-      "rule": "Strong company results did not produce a lasting sector-wide advance.",
-      "data": "Nvidia reported higher revenue; its early stock gain reversed."
-    },
-    "commentary": "Nvidia reported sharply higher quarterly revenue. Its early share gain reversed as AI stocks swung widely.",
-    "defines": [
-      {
-        "term": "AI stocks",
-        "definition": "Shares of companies tied to artificial-intelligence computing and services.",
-        "used_by_and_why": "Their large index weights can influence broad market performance."
-      }
-    ],
-    "explains": [
-      {
-        "anchor_text": "AI stocks",
-        "why": "Large technology companies hold substantial weights in major indexes.",
-        "other_reading": "One company’s results do not represent the entire economy."
-      }
-    ],
-    "visual": null,
-    "visual_gate": {
-      "passed": false,
-      "failures": [
-        "Company results and market reaction use different scales."
-      ],
-      "needs_human_check": false
-    },
-    "views": [
-      {
-        "view_id": "household",
-        "body": "Major indexes can move when their largest companies swing. Diversified funds still hold many businesses.",
-        "keep_wondering": "Will gains broaden?",
-        "claims": [
-          {
-            "sentence_id": "ai-household-1",
-            "type": "fact",
-            "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-apec-shenzhen-dad5715bc91b4aba23a567a40e22b1fc"
-          },
-          {
-            "sentence_id": "ai-household-2",
-            "type": "mechanism",
-            "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-apec-shenzhen-dad5715bc91b4aba23a567a40e22b1fc"
-          }
-        ]
-      },
-      {
-        "view_id": "business",
-        "body": "Nvidia reported strong demand, but investors questioned sector durability. Financing needs remain important.",
-        "keep_wondering": "Can customers sustain spending?",
-        "claims": [
-          {
-            "sentence_id": "ai-business-1",
-            "type": "fact",
-            "evidence": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm"
-          },
-          {
-            "sentence_id": "ai-business-2",
-            "type": "mechanism",
-            "evidence": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm"
-          }
-        ]
-      },
-      {
-        "view_id": "policy",
-        "body": "AI investment can support growth while increasing financing demand. Officials are monitoring both effects.",
-        "keep_wondering": "Will investment affect inflation?",
-        "claims": [
-          {
-            "sentence_id": "ai-policy-1",
-            "type": "fact",
-            "evidence": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
-          },
-          {
-            "sentence_id": "ai-policy-2",
-            "type": "mechanism",
-            "evidence": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
-          }
-        ]
-      }
-    ],
-    "sources": [
-      {
-        "name": "U.S. Securities and Exchange Commission",
-        "href": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm"
-      },
-      {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-apec-shenzhen-dad5715bc91b4aba23a567a40e22b1fc"
-      }
-    ],
-    "data_note": "Nvidia filed quarterly results November 17; its early November 18 share gain reversed.",
-    "claims": [
-      {
-        "sentence_id": "ai-commentary-1",
-        "type": "fact",
-        "evidence": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm"
-      },
-      {
-        "sentence_id": "ai-commentary-2",
-        "type": "fact",
-        "evidence": "https://apnews.com/article/stock-markets-ai-earnings-oil-apec-shenzhen-dad5715bc91b4aba23a567a40e22b1fc"
+        "evidence": "https://www.federalreserve.gov/monetarypolicy/beigebook202611-summary.htm"
       }
     ]
   }

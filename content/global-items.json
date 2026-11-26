@@ -2,85 +2,85 @@
   {
     "tag": "Trade",
     "qualifies": true,
-    "headline": "APEC Leaders Debate Open Trade",
-    "what": "Asia-Pacific leaders called for fewer trade barriers.",
-    "context": "U.S.-China technology restrictions remain a central source of friction.",
-    "why_it_matters": "Trade rules shape supply chains, investment, and technology access.",
+    "headline": "Tariff Plans Reach Major Economies",
+    "what": "The U.S. proposed new duties on 14 trading partners.",
+    "context": "China, the European Union, Japan, and other major exporters were included.",
+    "why_it_matters": "Tariffs can alter import costs, trade flows, and business investment.",
     "concept_terms": [
-      "trade barriers",
-      "supply chains"
+      "tariffs",
+      "trade flows"
     ],
     "sources": [
       {
-        "name": "Asia-Pacific Economic Cooperation",
-        "href": "https://www.apec.org/",
+        "name": "U.S. Trade Representative",
+        "href": "https://www.ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-makes-determinations-and-proposes-actions-14-section-301-investigations-relating-structural",
         "type": "primary"
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/apec-china-economy-trump-putin-ai-1e3b6161b31196c9716ca02ac8c7720c",
+        "href": "https://apnews.com/article/367083ea32f71fd7f70029ba7df66bf0",
         "type": "wire"
       }
     ],
     "developing": true,
-    "as_of": "2026-11-18T14:36:00-05:00",
-    "importance_score": 99,
+    "as_of": "2026-11-25T16:00:00-05:00",
+    "importance_score": 100,
     "needs_human_check": false
   },
   {
-    "tag": "Policy",
+    "tag": "Global markets",
     "qualifies": true,
-    "headline": "Europe Proposes New Ukraine Loan",
-    "what": "The European Commission proposed €45 billion in additional borrowing.",
-    "context": "The funds would support Ukraine’s economy and military in 2027.",
-    "why_it_matters": "New debt would affect European budgets and capital markets.",
+    "headline": "Global Shares Retreat",
+    "what": "Major European and Asian indexes fell before the U.S. holiday.",
+    "context": "Technology selling and tariff uncertainty affected several regions.",
+    "why_it_matters": "Broad declines can tighten financial conditions beyond U.S. markets.",
     "concept_terms": [
-      "public borrowing",
-      "capital markets"
+      "financial conditions",
+      "indexes"
     ],
     "sources": [
       {
-        "name": "European Commission",
-        "href": "https://enlargement.ec.europa.eu/news/commission-proposes-eur45-billion-additional-financial-support-ukraine-2027-2026-11-18_en",
-        "type": "primary"
+        "name": "The Associated Press",
+        "href": "https://apnews.com/article/10044b4fb55d3ff20fde9ba9e9acaab1",
+        "type": "wire"
       },
       {
-        "name": "The Associated Press",
-        "href": "https://apnews.com/article/europe-ukraine-loan-russia-summit-8c1baf00b55973a2",
-        "type": "wire"
+        "name": "Deutsche Börse",
+        "href": "https://live.deutsche-boerse.com/indices/dax",
+        "type": "primary"
       }
     ],
-    "developing": true,
-    "as_of": "2026-11-18T14:36:00-05:00",
-    "importance_score": 96,
+    "developing": false,
+    "as_of": "2026-11-25T16:00:00-05:00",
+    "importance_score": 91,
     "needs_human_check": false
   },
   {
-    "tag": "Policy",
+    "tag": "Energy",
     "qualifies": true,
-    "headline": "UK Inflation Edges Higher",
-    "what": "UK consumer inflation reached 3.6% in October.",
-    "context": "Transport costs made the largest upward contribution.",
-    "why_it_matters": "Persistent inflation can keep British borrowing costs elevated.",
+    "headline": "Oil Outlook Remains Split",
+    "what": "Oil prices rose while global supply continued to recover.",
+    "context": "Middle East disruptions and improving exports pulled expectations in opposite directions.",
+    "why_it_matters": "Energy costs affect inflation, shipping, and household fuel bills.",
     "concept_terms": [
-      "consumer inflation",
-      "borrowing costs"
+      "oil supply",
+      "energy costs"
     ],
     "sources": [
       {
-        "name": "UK Office for National Statistics",
-        "href": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/october2026",
+        "name": "International Energy Agency",
+        "href": "https://www.iea.org/reports/oil-market-report-november-2026",
         "type": "primary"
       },
       {
         "name": "The Associated Press",
-        "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-apec-shenzhen-dad5715bc91b4aba23a567a40e22b1fc",
+        "href": "https://apnews.com/article/10044b4fb55d3ff20fde9ba9e9acaab1",
         "type": "wire"
       }
     ],
     "developing": true,
-    "as_of": "2026-11-18T14:36:00-05:00",
-    "importance_score": 93,
+    "as_of": "2026-11-25T16:00:00-05:00",
+    "importance_score": 88,
     "needs_human_check": false
   }
 ]

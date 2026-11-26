@@ -1,10 +1,21 @@
 {
-  "edition_id": "2026-11-18",
-  "generated_at": "2026-11-18T14:54:00-05:00",
+  "edition_id": "2026-11-25",
+  "generated_at": "2026-11-25T16:00:00-05:00",
   "themes": {
     "inflation-fed": {
-      "last_new_evidence_date": "2026-11-16",
+      "last_new_evidence_date": "2026-11-25",
       "developments": [
+        {
+          "date": "2026-11-25",
+          "headline": "Core Inflation Accelerates",
+          "line": "Core PCE inflation rose 3.",
+          "source_urls": [
+            "https://www.bea.gov/sites/default/files/2026-11/pi1026.pdf",
+            "https://apnews.com/article/31fab1e32dda1ad3a29c192f620d5733"
+          ],
+          "origin": "story",
+          "edition_id": "2026-11-25"
+        },
         {
           "date": "2026-11-16",
           "headline": "Oil Prices Drop Sharply",
@@ -111,8 +122,19 @@
       ]
     },
     "growth-consumers": {
-      "last_new_evidence_date": "2026-11-06",
+      "last_new_evidence_date": "2026-11-25",
       "developments": [
+        {
+          "date": "2026-11-25",
+          "headline": "Growth Estimate Jumps",
+          "line": "Real GDP grew at a 4.",
+          "source_urls": [
+            "https://www.bea.gov/sites/default/files/2026-11/gdp3q26-2nd.pdf",
+            "https://apnews.com/article/10044b4fb55d3ff20fde9ba9e9acaab1"
+          ],
+          "origin": "story",
+          "edition_id": "2026-11-25"
+        },
         {
           "date": "2026-11-06",
           "headline": "October jobs report released",
@@ -246,8 +268,41 @@
       ]
     },
     "global-geopolitics": {
-      "last_new_evidence_date": "2026-11-18",
+      "last_new_evidence_date": "2026-11-25",
       "developments": [
+        {
+          "date": "2026-11-25",
+          "headline": "Oil Outlook Remains Split",
+          "line": "Oil prices rose while global supply continued to recover.",
+          "source_urls": [
+            "https://www.iea.org/reports/oil-market-report-november-2026",
+            "https://apnews.com/article/10044b4fb55d3ff20fde9ba9e9acaab1"
+          ],
+          "origin": "global",
+          "edition_id": "2026-11-25"
+        },
+        {
+          "date": "2026-11-25",
+          "headline": "Global Shares Retreat",
+          "line": "Major European and Asian indexes fell before the U.",
+          "source_urls": [
+            "https://apnews.com/article/10044b4fb55d3ff20fde9ba9e9acaab1",
+            "https://live.deutsche-boerse.com/indices/dax"
+          ],
+          "origin": "global",
+          "edition_id": "2026-11-25"
+        },
+        {
+          "date": "2026-11-25",
+          "headline": "Tariff Plans Reach Major Economies",
+          "line": "The U.",
+          "source_urls": [
+            "https://www.ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-makes-determinations-and-proposes-actions-14-section-301-investigations-relating-structural",
+            "https://apnews.com/article/367083ea32f71fd7f70029ba7df66bf0"
+          ],
+          "origin": "global",
+          "edition_id": "2026-11-25"
+        },
         {
           "date": "2026-11-18",
           "headline": "Europe Proposes New Ukraine Loan",
